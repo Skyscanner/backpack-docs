@@ -1,9 +1,0 @@
-@import '~bpk-mixins/index';
-
-.bpk-link {
-  @include bpk-link;
-
-  &--active {
-    @include bpk-link--active;
-  }
-}
