@@ -40,54 +40,11 @@ const isPrExternal = !BACKPACK_SQUAD_MEMBERS.includes(author);
 const createdFiles = danger.git.created_files;
 const modifiedFiles = danger.git.modified_files;
 const fileChanges = [...modifiedFiles, ...createdFiles];
-const declaredTrivial = danger.github.pr.title.includes('#trivial');
 const markdown = fileChanges.filter(path => path.endsWith('md'));
 
 // Be nice to our neighbours.
 if (isPrExternal) {
   message('Thanks for the PR 🎉.');
-}
-
-// Ensure new components are extensible by consumers.
-const componentIntroduced = createdFiles.some(filePath =>
-  filePath.match(/packages\/bpk-component.+\/src\/.+\.js/),
-);
-
-if (componentIntroduced) {
-  warn(
-    'It looks like you are introducing a new component. Ensure the component style is extensible via `className`.',
-  );
-}
-
-// If any of the packages have changed, the UNRELEASED log should have been updated.
-const unreleasedModified = includes(modifiedFiles, 'UNRELEASED.md');
-const packagesModified = fileChanges.some(
-  filePath =>
-    filePath.startsWith('packages/') &&
-    !filePath.startsWith('packages/bpk-docs/'),
-);
-if (packagesModified && !unreleasedModified && !declaredTrivial) {
-  warn(
-    "One or more packages have changed, but `UNRELEASED.md` wasn't updated.",
-  );
-}
-
-// If source files have changed, the snapshots should have been updated.
-const componentSourceFilesModified = fileChanges.some(
-  filePath =>
-    // packages/(one or more chars)/src/(one or more chars).js
-    filePath.match(/packages\/.*bpk-component.+\/src\/.+\.js/) &&
-    !filePath.includes('-test.'),
-);
-
-const snapshotsModified = fileChanges.some(filePath =>
-  filePath.endsWith('.js.snap'),
-);
-
-if (componentSourceFilesModified && !snapshotsModified) {
-  warn(
-    "Package source files (e.g. `packages/package-name/src/Component.js`) were updated, but snapshots weren't. Have you checked that the tests still pass?",
-  ); // eslint-disable-line max-len
 }
 
 // Ensure package-lock changes are intentional.
