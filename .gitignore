@@ -4,8 +4,6 @@
 .sass-cache
 /dist
 /coverage
-/packages/bpk-component-icon/*/
-!/packages/bpk-component-icon/src
 node_modules
 npm-debug.*
 lerna-debug.log

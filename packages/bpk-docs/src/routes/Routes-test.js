@@ -7,9 +7,7 @@ import fs from 'fs';
 
 describe('Icons.js', () => {
   it('Icons.js file should be empty', () => {
-    const iconsJsFileContents = fs.readFileSync(
-      'packages/bpk-svgs/src/icons/icons.js',
-    );
+    const iconsJsFileContents = fs.readFileSync('bpk-svgs/src/icons/icons.js');
     expect(iconsJsFileContents.toString()).toEqual('');
   });
 });

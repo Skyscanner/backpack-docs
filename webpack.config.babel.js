@@ -25,10 +25,10 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import StaticSiteGeneratorPlugin from 'static-site-generator-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 
+import { blockComment as licenseHeader } from './backpack/packages/bpk-tokens/formatters/license-header';
 import postCssPlugins from './scripts/webpack/postCssPlugins';
-import sassFunctions from './packages/bpk-mixins/sass-functions';
+import sassFunctions from './packages/bpk-docs/node_modules/bpk-mixins/sass-functions';
 import * as ROUTES from './packages/bpk-docs/src/constants/routes';
-import { blockComment as licenseHeader } from './packages/bpk-tokens/formatters/license-header';
 import redirects from './packages/bpk-docs/src/constants/redirect-routes';
 
 const {
