@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-/* @flow */
+/* @flow strict */
 
 import * as routes from '../constants/routes';
 import ComponentsImage from '../static/components_hero.jpg';
@@ -157,7 +157,7 @@ const ComponentsLinks = [
         id: 'CALENDAR',
         route: routes.CALENDAR,
         children: 'Calendar',
-        tags: ['web'],
+        tags: ['web', 'native'],
       },
       {
         id: 'DATEPICKER',
