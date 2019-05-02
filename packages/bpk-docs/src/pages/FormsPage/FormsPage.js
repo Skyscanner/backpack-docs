@@ -561,6 +561,18 @@ const components = [
         />
       </form>,
       <form className={formClassName}>
+        <BpkLabel htmlFor="textarea_invalid">Invalid Textarea</BpkLabel>
+        <InputContainer
+          FormComponent={BpkTextarea}
+          id="textarea_invalid"
+          name="textarea_invalid"
+          value="@ 123 {\ hi"
+          placeholder="@ 123 {\ hi"
+          onChange={() => null}
+          valid={false}
+        />
+      </form>,
+      <form className={formClassName}>
         <BpkLabel htmlFor="textarea_placeholder">
           Textarea (placeholder)
         </BpkLabel>
@@ -696,13 +708,65 @@ const components = [
       </BpkParagraph>,
     ],
     examples: [
-      <BpkFormValidation id="form_validation" expanded>
-        Please enter a name
-      </BpkFormValidation>,
-      <br />,
-      <BpkFormValidation id="form_validation" expanded isCheckbox>
-        This is required
-      </BpkFormValidation>,
+      <form className={formClassName}>
+        <InputContainer
+          FormComponent={BpkInput}
+          id="input_invalid"
+          name="input_invalid"
+          value="Edinbrvgh"
+          placeholder="Country, city or airport"
+          onChange={() => null}
+          valid={false}
+        />
+        <BpkFormValidation id="form_validation" expanded>
+          Please enter a valid name
+        </BpkFormValidation>
+      </form>,
+      <form className={formClassName}>
+        <InputContainer
+          FormComponent={BpkSelect}
+          id="select_invalid"
+          name="select_invalid"
+          value=""
+          onChange={() => null}
+          valid={false}
+        >
+          <option value="" hidden>
+            Please select...
+          </option>
+          <option value="economy">Economy</option>
+          <option value="premium_economy">Premium Economy</option>
+          <option value="business">Business class</option>
+          <option value="first">First class</option>
+        </InputContainer>
+        <BpkFormValidation id="form_validation" expanded isCheckbox>
+          This option is required
+        </BpkFormValidation>
+      </form>,
+      <form className={formClassName}>
+        <InputContainer
+          FormComponent={BpkCheckbox}
+          name="checkbox"
+          label="Apples"
+        />
+        <BpkFormValidation id="form_validation" expanded isCheckbox>
+          This checkbox is required
+        </BpkFormValidation>
+      </form>,
+      <form className={formClassName}>
+        <InputContainer
+          FormComponent={BpkTextarea}
+          id="textarea"
+          name="textarea"
+          value="@text 123 /}"
+          placeholder="@text 123 /}"
+          onChange={() => null}
+          valid={false}
+        />
+        <BpkFormValidation id="form_validation" expanded>
+          Please enter valid input
+        </BpkFormValidation>
+      </form>,
     ],
     readme: validationReadme,
   },
