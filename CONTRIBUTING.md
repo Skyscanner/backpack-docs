@@ -153,9 +153,9 @@ Take a look at some of the mixin source files to see how to annotate your Sass t
 
 When adding documentation for a new component:
 
- * Add the new dependency in `packages/bpk-docs/package.json` and run `npm run bootstrap` to install it.
- * Add routes for your new component in `packages/bpk-docs/src/constants/Routes.js` and `packages/bpk-docs/src/constants/redirect-routes.js`.
- * Add new link in `packages/bpk-docs/src/layouts/links.js`.
+ * Add the new dependency in `packages/docs/package.json` and run `npm run bootstrap` to install it.
+ * Add routes for your new component in `packages/docs/src/constants/Routes.js` and `packages/docs/src/constants/redirect-routes.js`.
+ * Add new link in `packages/docs/src/layouts/links.js`.
 
  For help writing documentation, see Skyscanner's [copywriting guide](https://backpack.github.io/style-guide/copywriting) and Backpack's [guide for writing docs](/decisions/writing-docs.md).
 
