@@ -27,9 +27,9 @@ import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 import { blockComment as licenseHeader } from './backpack/packages/bpk-tokens/formatters/license-header';
 import postCssPlugins from './scripts/webpack/postCssPlugins';
-import sassFunctions from './packages/bpk-docs/node_modules/bpk-mixins/sass-functions';
-import * as ROUTES from './packages/bpk-docs/src/constants/routes';
-import redirects from './packages/bpk-docs/src/constants/redirect-routes';
+import sassFunctions from './docs/node_modules/bpk-mixins/sass-functions';
+import * as ROUTES from './docs/src/constants/routes';
+import redirects from './docs/src/constants/redirect-routes';
 
 const {
   NODE_ENV,
@@ -57,7 +57,7 @@ const sassOptions = {
 
 const config = {
   entry: {
-    docs: './packages/bpk-docs/src/index.js',
+    docs: './docs/src/index.js',
   },
 
   output: {
@@ -231,7 +231,7 @@ if (isProduction) {
       },
     }),
     new CopyWebpackPlugin([
-      { from: 'packages/bpk-docs/src/README.md', to: 'README.md' },
+      { from: 'docs/src/README.md', to: 'README.md' },
     ]),
   );
 }

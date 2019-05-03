@@ -2,6 +2,109 @@
 
 [Unreleased changes](./UNRELEASED.md).
 
+# 2019-05-01 Bug fixes
+
+**Fixed:**
+
+- bpk-component-datepicker: 9.0.1 => 9.0.2
+- bpk-component-popover: 2.2.26 => 2.2.27
+  - Fixed target and renderTarget types to support being passed references created via `createRef`.
+
+# 2019-04-30 Bug fixes, and a new selected state for map markers
+
+**Added:**
+
+- bpk-component-map: 2.2.8 => 2.3.0
+  - Added `selected` prop for when markers are selected or highlighted. See https://backpack.github.io/components/map?platform=web#map-markers.
+
+**Fixed:**
+
+- bpk-component-autosuggest: 3.0.147 => 3.0.148
+- bpk-component-datepicker: 9.0.0 => 9.0.1
+- bpk-component-popover: 2.2.25 => 2.2.26
+- bpk-react-utils: 2.7.5 => 2.7.6
+  - Fixed issue that caused tests to error if a portal's render target is removed from the DOM before the portal is unmounted
+
+# 2019-04-25 Breaking changes for Calendar and flow fixes for Infinite Scroll
+
+**Breaking:**
+- bpk-component-calendar: 4.5.18 => 5.0.0
+- bpk-component-datepicker: 8.1.54 => 9.0.0
+- bpk-component-scrollable-calendar: 0.1.41 => 1.0.0
+  - `weekStartsOn` is now required, to assist with localisation.
+
+**Fixed:**
+
+- bpk-component-infinite-scroll: 2.2.19 => 2.2.20
+  - Fixed flow definition.
+
+
+# 2019-04-23 Added strict Flow typing
+
+**Updated:**
+- For all packages that utilise `Flow` the `strict` annotation has been added.
+
+# 2019-04-19 Fixed small input styling bugs
+
+**Fixed:**
+
+- bpk-component-fieldset:
+- bpk-component-input:
+- bpk-component-select:
+- bpk-component-textarea:
+- bpk-mixins:
+  - Fixed bug that caused wrong background color when `valid` and `disabled` prop were used together
+
+ - bpk-mixins:
+ - bpk-component-textarea:
+   - Set `max-width` property to provide a more predictable experience when a user resizes the component in their browser.
+
+# 2019-04-17 Added new validation to textarea component
+
+**Added:**
+- bpk-component-textarea: 1.0.116 => 1.1.0
+  - Added `valid` prop to textarea component for handling incorrect input.
+
+- bpk-mixins: 17.17.1 => 17.18.0
+  - Added `bpk-textarea--invalid` mixin.
+
+# 2019-04-11
+
+**Added:**
+- bpk-component-input: 4.0.3 => 4.1.0
+  - When calling `onClear`, provide input `name` in the event.
+
+# 2019-04-10 New icon for price alerts
+
+**Changed**
+- bpk-component-icon: 3.27.5 => 3.27.6
+- bpk-mixins: 17.17.0 => 17.17.1
+- bpk-svgs: 6.4.3 => 6.4.4
+  - Updated `alert--active`, `alert--add`, `alert--expired`, `alert--remove`, `price-alerts` icons
+
+# 2019-04-10 New design for invalid select
+
+**Added**:
+- bpk-mixins: 17.16.4 => 17.17.0
+  - Added `bpk-select--invalid` mixin.
+
+**Changed**:
+- bpk-component-select: 2.2.51 => 2.2.52
+  - Invalid `BpkSelect`s now have a red border and background to match the style of invalid `BpkInput`s.
+
+**Note**: The API hasn't changed, it's only breaking because it's a major visual change.
+
+# 2019-04-08 New design for validation messages
+
+**Breaking**
+- bpk-component-form-validation: 1.0.118 => 2.0.0
+  - Refreshed the design of invalid inputs. See https://backpack.github.io/components/form?platform=web#validation
+- bpk-tokens: 27.4.10 => 27.5.0
+  - Updated `FORM_VALIDATION_COLOR` to red 500
+  - Deprecated `FORM_VALIDATION_MARGIN`, `FORM_VALIDATION_PADDING_Y`, `FORM_VALIDATION_PADDING_X`, `FORM_VALIDATION_BACKGROUND_COLOR`, `FORM_VALIDATION_ARROW_SIZE`, `FORM_VALIDATION_CHECKBOX_ARROW_LEFT` on web
+
+**Note**: The API hasn't changed, it's only breaking because it's a major visual change.
+
 # 2019-04-04 New design for invalid input
 
 **Breaking:**
