@@ -18,9 +18,9 @@
 
 import React from 'react';
 
-import readme from '../../../../../backpack-android/docs/Dialog/README.md';
-import screenshotAlert from '../../../../../backpack-android/docs/Dialog/screenshots/with-cta.png';
-import screenshotBottomSheet from '../../../../../backpack-android/docs/Dialog/screenshots/delete-confirmation.png';
+import readme from '../../../../backpack-android/docs/Dialog/README.md';
+import screenshotAlert from '../../../../backpack-android/docs/Dialog/screenshots/with-cta.png';
+import screenshotBottomSheet from '../../../../backpack-android/docs/Dialog/screenshots/delete-confirmation.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

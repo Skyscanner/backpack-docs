@@ -18,8 +18,8 @@
 
 import React from 'react';
 
-import readme from '../../../../../backpack-android/docs/Icon/README.md';
-import screenshotAll from '../../../../../backpack-android/docs/Icon/screenshots/all.png';
+import readme from '../../../../backpack-android/docs/Icon/README.md';
+import screenshotAll from '../../../../backpack-android/docs/Icon/screenshots/all.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

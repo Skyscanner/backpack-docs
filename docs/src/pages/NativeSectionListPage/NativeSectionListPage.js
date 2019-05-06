@@ -18,11 +18,11 @@
 
 import React from 'react';
 
-import readme from '../../../../../backpack-react-native/packages/react-native-bpk-component-section-list/README.md';
-import iosScreenshotDefault from '../../../../../backpack-react-native/packages/react-native-bpk-component-section-list/screenshots/ios/default.png';
-import androidScreenshotDefault from '../../../../../backpack-react-native/packages/react-native-bpk-component-section-list/screenshots/android/default.png';
-import iosScreenshotWithImages from '../../../../../backpack-react-native/packages/react-native-bpk-component-section-list/screenshots/ios/with-images.png';
-import androidScreenshotWithImages from '../../../../../backpack-react-native/packages/react-native-bpk-component-section-list/screenshots/android/with-images.png';
+import readme from '../../../../backpack-react-native/packages/react-native-bpk-component-section-list/README.md';
+import iosScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-section-list/screenshots/ios/default.png';
+import androidScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-section-list/screenshots/android/default.png';
+import iosScreenshotWithImages from '../../../../backpack-react-native/packages/react-native-bpk-component-section-list/screenshots/ios/with-images.png';
+import androidScreenshotWithImages from '../../../../backpack-react-native/packages/react-native-bpk-component-section-list/screenshots/android/with-images.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

@@ -18,13 +18,13 @@
 
 import React from 'react';
 
-import readme from '../../../../../backpack-ios/Backpack/Button/README.md';
-import screenshotPrimary from '../../../../../backpack-ios/screenshots/Button/primary.png';
-import screenshotSecondary from '../../../../../backpack-ios/screenshots/Button/secondary.png';
-import screenshotDestructive from '../../../../../backpack-ios/screenshots/Button/destructive.png';
-import screenshotFeatured from '../../../../../backpack-ios/screenshots/Button/featured.png';
-import screenshotLink from '../../../../../backpack-ios/screenshots/Button/link.png';
-import screenshotOutline from '../../../../../backpack-ios/screenshots/Button/outline.png';
+import readme from '../../../../backpack-ios/Backpack/Button/README.md';
+import screenshotPrimary from '../../../../backpack-ios/screenshots/Button/primary.png';
+import screenshotSecondary from '../../../../backpack-ios/screenshots/Button/secondary.png';
+import screenshotDestructive from '../../../../backpack-ios/screenshots/Button/destructive.png';
+import screenshotFeatured from '../../../../backpack-ios/screenshots/Button/featured.png';
+import screenshotLink from '../../../../backpack-ios/screenshots/Button/link.png';
+import screenshotOutline from '../../../../backpack-ios/screenshots/Button/outline.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

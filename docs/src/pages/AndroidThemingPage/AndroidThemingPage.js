@@ -20,7 +20,7 @@ import React from 'react';
 import BpkRouterLink from 'bpk-component-router-link';
 import { BpkList, BpkListItem } from 'bpk-component-list';
 
-import readme from '../../../../../backpack-android/docs/THEMING.md';
+import readme from '../../../../backpack-android/docs/THEMING.md';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 import Paragraph from '../../components/Paragraph';
 import { BUTTON, SWITCH } from '../../constants/routes';

@@ -18,12 +18,12 @@
 
 import React from 'react';
 
-import readme from '../../../../../backpack-android/docs/Button/README.md';
-import screenshotPrimary from '../../../../../backpack-android/docs/Button/screenshots/primary.png';
-import screenshotSecondary from '../../../../../backpack-android/docs/Button/screenshots/secondary.png';
-import screenshotDestructive from '../../../../../backpack-android/docs/Button/screenshots/destructive.png';
-import screenshotOutline from '../../../../../backpack-android/docs/Button/screenshots/outline.png';
-import screenshotFeatured from '../../../../../backpack-android/docs/Button/screenshots/featured.png';
+import readme from '../../../../backpack-android/docs/Button/README.md';
+import screenshotPrimary from '../../../../backpack-android/docs/Button/screenshots/primary.png';
+import screenshotSecondary from '../../../../backpack-android/docs/Button/screenshots/secondary.png';
+import screenshotDestructive from '../../../../backpack-android/docs/Button/screenshots/destructive.png';
+import screenshotOutline from '../../../../backpack-android/docs/Button/screenshots/outline.png';
+import screenshotFeatured from '../../../../backpack-android/docs/Button/screenshots/featured.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

@@ -18,8 +18,8 @@
 
 import React from 'react';
 
-import readme from '../../../../../backpack-ios/Backpack/Panel/README.md';
-import screenshotAll from '../../../../../backpack-ios/screenshots/Panel/all.png';
+import readme from '../../../../backpack-ios/Backpack/Panel/README.md';
+import screenshotAll from '../../../../backpack-ios/screenshots/Panel/all.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

@@ -18,10 +18,10 @@
 
 import React from 'react';
 
-import readme from '../../../../../backpack-ios/Backpack/Calendar/README.md';
-import screenshotSingle from '../../../../../backpack-ios/screenshots/Calendar/single.png';
-import screenshotRange from '../../../../../backpack-ios/screenshots/Calendar/range.png';
-import screenshotMultiple from '../../../../../backpack-ios/screenshots/Calendar/multiple.png';
+import readme from '../../../../backpack-ios/Backpack/Calendar/README.md';
+import screenshotSingle from '../../../../backpack-ios/screenshots/Calendar/single.png';
+import screenshotRange from '../../../../backpack-ios/screenshots/Calendar/range.png';
+import screenshotMultiple from '../../../../backpack-ios/screenshots/Calendar/multiple.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

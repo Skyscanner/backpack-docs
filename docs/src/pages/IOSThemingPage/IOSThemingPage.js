@@ -20,7 +20,7 @@ import React from 'react';
 import BpkRouterLink from 'bpk-component-router-link';
 import { BpkList, BpkListItem } from 'bpk-component-list';
 
-import readme from '../../../../../backpack-ios/Backpack/Theme/README.md';
+import readme from '../../../../backpack-ios/Backpack/Theme/README.md';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 import {
   BUTTON,

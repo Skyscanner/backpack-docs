@@ -18,15 +18,15 @@
 
 import React from 'react';
 
-import readme from '../../../../../backpack-ios/Backpack/Card/README.md';
-import screenshotDefault from '../../../../../backpack-ios/screenshots/Card/default.png';
-import screenshotSelected from '../../../../../backpack-ios/screenshots/Card/selected.png';
-import screenshotCornerStyleLarge from '../../../../../backpack-ios/screenshots/Card/corner-style-large.png';
-import screenshotWithoutPadding from '../../../../../backpack-ios/screenshots/Card/without-padding.png';
-import screenshotWithDivider from '../../../../../backpack-ios/screenshots/Card/with-divider.png';
-import screenshotWithDividerWithoutPadding from '../../../../../backpack-ios/screenshots/Card/with-divider-without-padding.png';
-import screenshotWithDividerCornerStyleLarge from '../../../../../backpack-ios/screenshots/Card/with-divider-and-corner-style-large.png';
-import screenshotWithDividerArrangedVertically from '../../../../../backpack-ios/screenshots/Card/with-divider-arranged-vertically.png';
+import readme from '../../../../backpack-ios/Backpack/Card/README.md';
+import screenshotDefault from '../../../../backpack-ios/screenshots/Card/default.png';
+import screenshotSelected from '../../../../backpack-ios/screenshots/Card/selected.png';
+import screenshotCornerStyleLarge from '../../../../backpack-ios/screenshots/Card/corner-style-large.png';
+import screenshotWithoutPadding from '../../../../backpack-ios/screenshots/Card/without-padding.png';
+import screenshotWithDivider from '../../../../backpack-ios/screenshots/Card/with-divider.png';
+import screenshotWithDividerWithoutPadding from '../../../../backpack-ios/screenshots/Card/with-divider-without-padding.png';
+import screenshotWithDividerCornerStyleLarge from '../../../../backpack-ios/screenshots/Card/with-divider-and-corner-style-large.png';
+import screenshotWithDividerArrangedVertically from '../../../../backpack-ios/screenshots/Card/with-divider-arranged-vertically.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

@@ -18,10 +18,10 @@
 
 import React from 'react';
 
-import readme from '../../../../../backpack-android/docs/Text/README.md';
-import screenshotDefault from '../../../../../backpack-android/docs/Text/screenshots/default.png';
-import screenshotEmphasized from '../../../../../backpack-android/docs/Text/screenshots/emphasized.png';
-import screenshotHeavy from '../../../../../backpack-android/docs/Text/screenshots/heavy.png';
+import readme from '../../../../backpack-android/docs/Text/README.md';
+import screenshotDefault from '../../../../backpack-android/docs/Text/screenshots/default.png';
+import screenshotEmphasized from '../../../../backpack-android/docs/Text/screenshots/emphasized.png';
+import screenshotHeavy from '../../../../backpack-android/docs/Text/screenshots/heavy.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

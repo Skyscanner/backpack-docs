@@ -18,15 +18,15 @@
 
 import React from 'react';
 
-import readme from '../../../../../backpack-android/docs/Card/README.md';
-import screenshotDefault from '../../../../../backpack-android/docs/Card/screenshots/default.png';
-import screenshotCornerStyleLarge from '../../../../../backpack-android/docs/Card/screenshots/corner-style-large.png';
-import screenshotSelected from '../../../../../backpack-android/docs/Card/screenshots/selected.png';
-import screenshotWithoutPadding from '../../../../../backpack-android/docs/Card/screenshots/without-padding.png';
-import screenshotWithDivider from '../../../../../backpack-android/docs/Card/screenshots/with-divider.png';
-import screenshotWithDividerArrangedVertically from '../../../../../backpack-android/docs/Card/screenshots/with-divider-arranged-vertically.png';
-import screenshotWithDividerCornerStyleLarge from '../../../../../backpack-android/docs/Card/screenshots/with-divider-and-corner-style-large.png';
-import screenshotWithDividerWithoutPadding from '../../../../../backpack-android/docs/Card/screenshots/with-divider-without-padding.png';
+import readme from '../../../../backpack-android/docs/Card/README.md';
+import screenshotDefault from '../../../../backpack-android/docs/Card/screenshots/default.png';
+import screenshotCornerStyleLarge from '../../../../backpack-android/docs/Card/screenshots/corner-style-large.png';
+import screenshotSelected from '../../../../backpack-android/docs/Card/screenshots/selected.png';
+import screenshotWithoutPadding from '../../../../backpack-android/docs/Card/screenshots/without-padding.png';
+import screenshotWithDivider from '../../../../backpack-android/docs/Card/screenshots/with-divider.png';
+import screenshotWithDividerArrangedVertically from '../../../../backpack-android/docs/Card/screenshots/with-divider-arranged-vertically.png';
+import screenshotWithDividerCornerStyleLarge from '../../../../backpack-android/docs/Card/screenshots/with-divider-and-corner-style-large.png';
+import screenshotWithDividerWithoutPadding from '../../../../backpack-android/docs/Card/screenshots/with-divider-without-padding.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

@@ -32,9 +32,9 @@ import FoodIconSm from 'bpk-component-icon/sm/food';
 import { withRtlSupport } from 'bpk-component-icon';
 import mapReadme from 'bpk-component-map/README.md';
 
-import iosScreenshot from '../../../../../backpack-react-native/packages/react-native-bpk-component-map/screenshots/ios/default.png';
-import androidScreenshot from '../../../../../backpack-react-native/packages/react-native-bpk-component-map/screenshots/android/default.png';
-import nativeMapReadme from '../../../../../backpack-react-native/packages/react-native-bpk-component-map/README.md';
+import iosScreenshot from '../../../../backpack-react-native/packages/react-native-bpk-component-map/screenshots/ios/default.png';
+import androidScreenshot from '../../../../backpack-react-native/packages/react-native-bpk-component-map/screenshots/android/default.png';
+import nativeMapReadme from '../../../../backpack-react-native/packages/react-native-bpk-component-map/README.md';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';

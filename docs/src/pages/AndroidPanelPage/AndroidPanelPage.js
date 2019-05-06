@@ -18,8 +18,8 @@
 
 import React from 'react';
 
-import readme from '../../../../../backpack-android/docs/Panel/README.md';
-import screenshotDefault from '../../../../../backpack-android/docs/Panel/screenshots/all.png';
+import readme from '../../../../backpack-android/docs/Panel/README.md';
+import screenshotDefault from '../../../../backpack-android/docs/Panel/screenshots/all.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
