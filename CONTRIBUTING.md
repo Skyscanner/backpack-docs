@@ -1,4 +1,4 @@
-# Contributing to Backpack
+# Contributing to Backpack documentation
 
 You want to help us enable Skyscanner to create beautiful, coherent products at scale? That's awesome! :heart:
 
@@ -42,10 +42,6 @@ limitations under the License.
 
 </details>
 
-### Decisions
-
-Conventions and squad decisions are kept in the [decisions folder](/decisions). We recommend familiarising yourself with these.
-
 ### Installing Node
 
 Backpack is developed using Node, using the following versions:
@@ -59,13 +55,6 @@ If you use [nvm](https://github.com/creationix/nvm) or [nave](https://github.com
 
 To install npm, use `npm install --global npm@^6.4.1`.
 
-
-### Android, iOS and React Native
-
-Backpack also supports React Native, plus native Android and iOS.
-
-They can be found at [backpack-android](https://github.com/skyscanner/backpack-android) and [backpack-ios](https://github.com/skyscanner/backpack-ios) and [backpack-react-native](https://github.com/skyscanner/backpack-react-native)
-
 ### Code style
 
 Backpack uses a combination of [ESLint](https://eslint.org) and [Prettier](https://prettier.io) to enforce coding styles. ESLint runs as a pre-commit hook, so it isn't possible to commit code that causes ESLint to fail.
@@ -78,84 +67,15 @@ We recommend that you install [a plugin to your editor](https://eslint.org/docs/
 
 Run `npm install` to install dependencies from npm.
 
-<details>
-<summary>A note on dependencies</summary>
-
-Backpack is a multi-package repository, also known as a monorepo. This means that instead of having one code repository for each npm package, we manage them all inside this single repository.
-
-We use [Lerna](https://lernajs.io) to achieve this. Lerna links packages together inside this repo by 'bootstrapping'.
-
-When you run `npm install`, Lerna is bootstrapped automatically as a post-install hook. However, if you change dependencies within a package, you will need to run Lerna manually with `npm run bootstrap`.
-
-</details>
-
-### Build the code
-
-Backpack's code depends on some things that must be built first, such as icon fonts, SVGs and tokens.
-
-Use `npm run build` to do this.
-
-### Run the development environment
-
-We use [Storybook](https://storybook.js.org/) for our development environment.
-
-#### Web
-
-Run `npm start` to start the storybook server, then go to [http://localhost:9001](http://localhost:9001) in a web browser to view it.
-
-## Adding a new component
-
-If you want to add a new component, we will need the following:
-
-- Design (Sketch file)
-- Associated tokens
-- Sass mixin(s)
-- React component
-- Stories
-- Tests
-- Documentation (Including main `README.md`)
-
-### Design
-
-Sketch is the preferred format for non-technical folks. We’d appreciate if you could provide an exact match of your component in Sketch format together with folders for each state e.g. disabled, expanded etc.
-
-### Tokens
-
-Any visual CSS parameters of the component, such as *color, margins, paddings* etc. should not live as magic numbers in the component code, but as **tokens** in the `bpk-tokens` package.
-
-Tokens are defined in the `src/base` directory (with the exception of product-specific tokens, which are in other subdirectories). Tokens come in two layers: In `aliases.json`, all base tokens are defined with concrete values, such as colours, numbers and sizes. The other files then map those aliases to tokens for specific elements.
-
-> You should probably not touch `aliases.json`, as our color palette or grid rarely changes.
-
-### Sass mixins
-
-All Sass mixins are defined in the `bpk-mixins` package. The package also exposes the Sass variables from the `bpk-tokens` package.
-
-If you add a new file of mixins, for example for a new *atom*, make sure you add the file to the imports in `_index.scss`.
-
-### React component
-
-Use `npm run create-component` to create a new skeleton React component. Once this is created, use existing components for code style inspiration.
-
-We use [CSS Modules](https://github.com/css-modules/css-modules) along with [BEM](http://getbem.com/) to prevent collisions and accidental overwrites in CSS.
-
-### Documentation
-
-Our documentation consists of two parts: [Sassdoc](https://backpack.github.io/sassdoc/), which is automatically generated from the `bpk-mixin` sources, and the main [documentation](https://backpack.github.io).
-
-#### Sassdoc
-
-As mentioned, the Sassdoc are automatically generated from source and comments. If you want to double check, you can generate them using `npm run sassdoc` and start a static server to browse the docs, but usually this is not necessary.
-
-Take a look at some of the mixin source files to see how to annotate your Sass to generate proper Sassdoc.
-
 #### Backpack documentation
 
 When adding documentation for a new component:
 
- * Add the new dependency in `docs/package.json` and run `npm run bootstrap` to install it.
+ * Add the new dependency in `package.json` and run `npm i` to install it.
  * Add routes for your new component in `docs/src/constants/Routes.js` and `docs/src/constants/redirect-routes.js`.
  * Add new link in `docs/src/layouts/links.js`.
+
+ Assets from other repositories are accessed via git submodules, which are automatically updated when the docs are deployed.
 
  For help writing documentation, see Skyscanner's [copywriting guide](https://backpack.github.io/style-guide/copywriting) and Backpack's [guide for writing docs](/decisions/writing-docs.md).
 
@@ -196,7 +116,6 @@ The “page” modules themselves contain introductory blurbs and examples for t
 You can run the docs app locally using:
 
 ```sh
-npm run build
 npm run docs
 ```
 
@@ -216,29 +135,9 @@ The web Map component page requires an environment variable named `GOOGLE_MAPS_A
 
 </details>
 
-<details>
-<summary>Publish packages (Backpack squad members only)</summary>
-
-- Update the [unreleased changelog](/unreleased.md) with every package that has changed, separating out breaking changes (*major*), additions (*minor*) and fixes (*patch*) changes (you should see examples of this in previous entries of the [changelog](/changelog.md)).
-  - Some useful commands for determining "what's changed?":
-    - `npm run lerna updated`
-    - `npm run lerna diff <package-name>`
-- Make sure you are an owner of the npm packages (speak to a member of the Backpack squad).
-- **Run `npm run release`** (this will run `lerna publish`). Do not run `npm publish`.
-- You’ll be asked to specify a new version for every package that has changed. Options are *patch*, *minor* or *major*. These should directly align to the entries you put in the [unreleased changelog](/unreleased.md) in step 1.
-- You’ll be asked at the end to confirm. Note you can still exit without making these changes.
-- Move entries from [unreleased.md](/unreleased.md) to the [changelog](/changelog.md). Update the package versions for the new changes, and group them under a title with today’s date and a brief summary of what has changed.
-- Commit and push to master.
-
-Be aware that if `bpk-tokens` has changed, *all* packages in the repository will be updated as they all depend on `bpk-tokens`. Changing an existing token is almost always worth a "major" release, whereas adding a new token is usually a "minor" release.
-
-When a component is released for the first time on npm, remember to add the component to the Skyscanner organisation through the [npm UI](https://www.npmjs.com/settings/skyscanner/teams/team/backpack/access).
-
-</details>
-
 ## Submodules
 
-`backpack-android`, `backpack-ios` and `backpack-react-native` folders are git submodules used solely for documentation. They shouldn't be directly used for anything else.
+`backpack`, `backpack-android`, `backpack-ios` and `backpack-react-native` folders are git submodules.
 
 The documentation build will ensure the local submodules are up to date before using it so there is no need to do any git command directly. That being
 said, from time to time it's good to update the submodules to point to a newer commit so fewer changes will be pulled before each doc build.
