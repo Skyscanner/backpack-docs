@@ -35,7 +35,7 @@ deploy:
   local_dir: dist/
   skip_cleanup: true
   detect_encoding: true
-  repo: backpack-docs/backpack-docs.github.io
+  repo: backpack/backpack-docs.github.io
   target-branch: master
   verbose: true
 
