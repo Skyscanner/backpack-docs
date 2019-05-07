@@ -86,11 +86,11 @@ When adding documentation for a new component:
 
 For anything non-trivial, we strongly recommend speaking to somebody from Backpack squad before starting work on a PR. This lets us pass on any advice or knowledge we already have about the work you're proposing. It might even be something we're already working on. After this, follow the steps below.
 
-1. [Fork the repository](https://github.com/Skyscanner/backpack/fork).
+1. [Fork the repository](https://github.com/Skyscanner/backpack-docs/fork).
 2. Create a new branch.
 3. Make your changes.
 4. Commit and push your new branch.
-5. Submit a [pull request](https://github.com/Skyscanner/backpack/pulls).
+5. Submit a [pull request](https://github.com/Skyscanner/backpack-docs/pulls).
 6. Notify someone in Backpack squad or drop a note in #backpack.
 
 Bear in mind that small, incremental pull requests are likely to be reviewed faster.
