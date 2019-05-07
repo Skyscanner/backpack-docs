@@ -12,7 +12,7 @@ install:
 script:
   - set -e
   - npm run danger
-    # // TODO REINSTATE: - npm test
+  - npm test
   - npm run docs:dist
   - test -e dist/index.html
   - test -e dist/sassdoc/index.html
