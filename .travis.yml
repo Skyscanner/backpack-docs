@@ -15,7 +15,6 @@ script:
   - npm test
   - npm run docs:dist
   - test -e dist/index.html
-  - test -e dist/sassdoc/index.html
 
 cache:
   directories:
