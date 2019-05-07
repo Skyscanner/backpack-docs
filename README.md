@@ -11,11 +11,15 @@
 
 ## Usage
 
-### Installing packages
+For information on using Backpack components, please refer to the platform-specific repos:
 
-```sh
-npm install [package-name] --save-dev
-```
+[Backpack for Web](https://github.io/Skyscanner/backpack/)
+
+[Backpack for React Native](https://github.io/Skyscanner/backpack-react-native/)
+
+[Backpack for Android](https://github.io/Skyscanner/backpack-android/)
+
+[Backpack for iOS](https://github.io/Skyscanner/backpack-ios/)
 
 ## Contributing
 
