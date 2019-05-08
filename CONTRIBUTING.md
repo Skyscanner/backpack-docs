@@ -63,9 +63,19 @@ We recommend that you install [a plugin to your editor](https://eslint.org/docs/
 
 ## Getting started
 
+### Cloning
+
+`backpack-docs` makes use of submodules. Run `git clone --recursive git@github.com:Skyscanner/backpack-docs.git` to clone the repo.
+
+The `--recursive` flag will ensure that you also clone all necessary submodules to run the docs locally.
+
+For more help using submodules, see the [more detailed Submodules section](#submodules)
+
 ### Install dependencies
 
 Run `npm install` to install dependencies from npm.
+
+Then use `npm run build-backpack` to install dependencies for the web submodule, and ensure everything is built.
 
 #### Backpack documentation
 
