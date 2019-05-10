@@ -20,6 +20,7 @@ import { themeAttributes as accordionThemeAttributes } from 'bpk-component-accor
 import { themeAttributes as barchartThemeAttributes } from 'bpk-component-barchart';
 import { themeAttributes as blockquoteThemeAttributes } from 'bpk-component-blockquote';
 import {
+  buttonThemeAttributes,
   primaryThemeAttributes,
   secondaryThemeAttributes,
   destructiveThemeAttributes,
@@ -62,6 +63,7 @@ export default [
   ...accordionThemeAttributes,
   ...barchartThemeAttributes,
   ...blockquoteThemeAttributes,
+  ...buttonThemeAttributes,
   ...primaryThemeAttributes,
   ...secondaryThemeAttributes,
   ...destructiveThemeAttributes,
