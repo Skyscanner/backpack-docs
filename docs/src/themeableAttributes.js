@@ -55,6 +55,12 @@ const docsThemeAttributes = [
   'docsSidebarLinkBorder',
   'docsSidebarSelectedArrowColor',
   'primaryColor',
+  'colorGray50',
+  'colorGray100',
+  'colorGray300',
+  'colorGray500',
+  'colorGray700',
+  'colorGray900',
   'themeName',
   'logoFillColor',
 ];
