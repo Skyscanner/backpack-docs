@@ -22,10 +22,12 @@ import BpkRouterLink from 'bpk-component-router-link';
 import { BpkList, BpkListItem } from 'bpk-component-list';
 import BpkBlockquote from 'bpk-component-blockquote';
 import webReadme from 'bpk-theming/README.md';
+import { cssModules } from 'bpk-react-utils';
 
 import nativeReadme from '../../../../backpack-react-native/packages/react-native-bpk-theming/README.md';
 import Paragraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
+import ColorSwatch from '../../components/ColorSwatch';
 import Android from '../AndroidThemingPage';
 import IOS from '../IOSThemingPage';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
@@ -54,6 +56,10 @@ import {
   SPINNER,
   SWITCH,
 } from '../../constants/routes';
+
+import STYLES from './theming-page.scss';
+
+const getClassName = cssModules(STYLES);
 
 const CONTEXT_API_URL = 'https://reactjs.org/docs/context.html';
 const CSS_VARIABLES_URL =
@@ -98,84 +104,6 @@ const nativeBlurb = [
   </BpkList>,
 ];
 
-const webBlurb = [
-  <Paragraph>The following web components are themeable:</Paragraph>,
-  <BpkList>
-    <BpkListItem>
-      <BpkRouterLink to={ACCORDION}>Accordion</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={BARCHART}>Bar chart</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={BLOCKQUOTE}>Blockquote</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={BREADCRUMB}>Breadcrumb</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={BUTTON}>Button</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={CALENDAR}>Calendar</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={DATEPICKER}>Datepicker</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={DRAWER}>Drawer</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={HORIZONTAL_NAV}>Horizontal navigation</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={LINK}>Link</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={MODAL}>Modal</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={NAVIGATION_BAR}>Navigation bar</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={NUDGER}>Nudgers</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={PAGINATION}>Pagination</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={POPOVER}>Popover</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={PROGRESS}>Progress bar</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={SCROLLABLE_CALENDAR}>
-        Scrollable calendar
-      </BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={SLIDER}>Slider</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={SPINNER}>Spinner</BpkRouterLink>
-    </BpkListItem>
-  </BpkList>,
-  <BpkBlockquote>
-    <strong>Note:</strong> Backpack&#39;s theming is based on
-    <BpkLink href={CSS_VARIABLES_URL} blank>
-      CSS Variables
-    </BpkLink>
-    and thus will not be supported in some browsers. In these cases Backpack
-    components will gracefully degrade to the default Skyscanner theme. For an
-    overview of this check
-    <BpkLink href="https://caniuse.com/#feat=css-variables" blank>
-      caniuse
-    </BpkLink>
-    .
-  </BpkBlockquote>,
-];
-
 const blurb = [
   <IntroBlurb>
     All Backpack components have full theming support through through the theme
@@ -197,9 +125,142 @@ const blurb = [
   </Paragraph>,
 ];
 
+const webComponents = [
+  {
+    id: 'components',
+    title: 'Themeable components',
+    blurb: [
+      <Paragraph>The following web components are themeable:</Paragraph>,
+      <BpkList>
+        <BpkListItem>
+          <BpkRouterLink to={ACCORDION}>Accordion</BpkRouterLink>
+        </BpkListItem>
+        <BpkListItem>
+          <BpkRouterLink to={BARCHART}>Bar chart</BpkRouterLink>
+        </BpkListItem>
+        <BpkListItem>
+          <BpkRouterLink to={BLOCKQUOTE}>Blockquote</BpkRouterLink>
+        </BpkListItem>
+        <BpkListItem>
+          <BpkRouterLink to={BREADCRUMB}>Breadcrumb</BpkRouterLink>
+        </BpkListItem>
+        <BpkListItem>
+          <BpkRouterLink to={BUTTON}>Button</BpkRouterLink>
+        </BpkListItem>
+        <BpkListItem>
+          <BpkRouterLink to={CALENDAR}>Calendar</BpkRouterLink>
+        </BpkListItem>
+        <BpkListItem>
+          <BpkRouterLink to={DATEPICKER}>Datepicker</BpkRouterLink>
+        </BpkListItem>
+        <BpkListItem>
+          <BpkRouterLink to={DRAWER}>Drawer</BpkRouterLink>
+        </BpkListItem>
+        <BpkListItem>
+          <BpkRouterLink to={HORIZONTAL_NAV}>
+            Horizontal navigation
+          </BpkRouterLink>
+        </BpkListItem>
+        <BpkListItem>
+          <BpkRouterLink to={LINK}>Link</BpkRouterLink>
+        </BpkListItem>
+        <BpkListItem>
+          <BpkRouterLink to={MODAL}>Modal</BpkRouterLink>
+        </BpkListItem>
+        <BpkListItem>
+          <BpkRouterLink to={NAVIGATION_BAR}>Navigation bar</BpkRouterLink>
+        </BpkListItem>
+        <BpkListItem>
+          <BpkRouterLink to={NUDGER}>Nudgers</BpkRouterLink>
+        </BpkListItem>
+        <BpkListItem>
+          <BpkRouterLink to={PAGINATION}>Pagination</BpkRouterLink>
+        </BpkListItem>
+        <BpkListItem>
+          <BpkRouterLink to={POPOVER}>Popover</BpkRouterLink>
+        </BpkListItem>
+        <BpkListItem>
+          <BpkRouterLink to={PROGRESS}>Progress bar</BpkRouterLink>
+        </BpkListItem>
+        <BpkListItem>
+          <BpkRouterLink to={SCROLLABLE_CALENDAR}>
+            Scrollable calendar
+          </BpkRouterLink>
+        </BpkListItem>
+        <BpkListItem>
+          <BpkRouterLink to={SLIDER}>Slider</BpkRouterLink>
+        </BpkListItem>
+        <BpkListItem>
+          <BpkRouterLink to={SPINNER}>Spinner</BpkRouterLink>
+        </BpkListItem>
+      </BpkList>,
+      <BpkBlockquote>
+        <strong>Note:</strong> Backpack&#39;s theming is based on&nbsp;
+        <BpkLink href={CSS_VARIABLES_URL} blank>
+          CSS Variables
+        </BpkLink>
+        &nbsp;and thus will not be supported in some browsers. In these cases
+        Backpack components will gracefully degrade to the default Skyscanner
+        theme. For an overview of this check&nbsp;
+        <BpkLink href="https://caniuse.com/#feat=css-variables" blank>
+          caniuse
+        </BpkLink>
+        .
+      </BpkBlockquote>,
+    ],
+  },
+  {
+    id: 'colours',
+    title: 'Themeable colours',
+    blurb: [
+      <div>
+        <Paragraph>
+          The color swatches below change when a theme is applied.
+        </Paragraph>
+        <div className={getClassName('bpkdocs-theming-page__swatch-container')}>
+          <ColorSwatch
+            name="primary-color"
+            whiteColor
+            className={getClassName('bpkdocs-theming-page__swatch--primary')}
+          />
+          <ColorSwatch
+            name="color-gray-50"
+            border
+            className={getClassName('bpkdocs-theming-page__swatch--gray-50')}
+          />
+          <ColorSwatch
+            name="color-gray-100"
+            className={getClassName('bpkdocs-theming-page__swatch--gray-100')}
+          />
+          <ColorSwatch
+            name="color-gray-300"
+            whiteColor
+            className={getClassName('bpkdocs-theming-page__swatch--gray-300')}
+          />
+          <ColorSwatch
+            name="color-gray-500"
+            whiteColor
+            className={getClassName('bpkdocs-theming-page__swatch--gray-500')}
+          />
+          <ColorSwatch
+            name="color-gray-700"
+            whiteColor
+            className={getClassName('bpkdocs-theming-page__swatch--gray-700')}
+          />
+          <ColorSwatch
+            name="color-gray-900"
+            whiteColor
+            className={getClassName('bpkdocs-theming-page__swatch--gray-900')}
+          />
+        </div>
+      </div>,
+    ],
+  },
+];
+
 const WebThemingPage = ({ ...rest }) => (
   <DocsPageBuilder
-    blurb={webBlurb}
+    components={webComponents}
     showMenu={false}
     readme={webReadme}
     {...rest}
