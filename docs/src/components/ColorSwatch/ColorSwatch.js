@@ -38,6 +38,9 @@ const ColorSwatch = props => {
   if (props.border) {
     classNames.push(getClassName('bpkdocs-color-swatch--border'));
   }
+  if (props.className) {
+    classNames.push(props.className);
+  }
 
   return (
     <div style={style} className={classNames.join(' ')}>
@@ -48,6 +51,7 @@ const ColorSwatch = props => {
 
 ColorSwatch.propTypes = {
   name: PropTypes.string.isRequired,
+  className: PropTypes.string,
   color: PropTypes.string,
   whiteColor: PropTypes.bool,
   border: PropTypes.bool,
@@ -56,6 +60,7 @@ ColorSwatch.propTypes = {
 
 ColorSwatch.defaultProps = {
   color: null,
+  className: null,
   whiteColor: false,
   border: false,
   gradient: null,
