@@ -24,6 +24,7 @@
     "lint": "npm run lint:js && npm run lint:scss",
     "flow": "flow",
     "flow-typed": "flow-typed",
+    "start": "npm run docs",
     "docs": "npm run submodules:pull && npm run build-backpack && BPK_BUILT_AT=$( date -u +%s ) webpack-dev-server --open",
     "docs:dist": "npm run submodules:pull && npm run clean:dist && NODE_ENV=production BPK_BUILT_AT=$( date -u +%s ) webpack --progress --display=minimal --bail",
     "test": "npm run lint && npm run flow && npm run spellcheck",
