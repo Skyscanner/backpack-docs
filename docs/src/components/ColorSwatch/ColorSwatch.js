@@ -30,17 +30,15 @@ const ColorSwatch = props => {
     backgroundImage: props.gradient,
   };
 
-  const classNames = [getClassName('bpkdocs-color-swatch')];
-
-  if (props.whiteColor) {
-    classNames.push(getClassName('bpkdocs-color-swatch--light'));
-  }
-  if (props.border) {
-    classNames.push(getClassName('bpkdocs-color-swatch--border'));
-  }
+  const className = getClassName(
+    'bpkdocs-color-swatch',
+    props.whiteColor && 'bpkdocs-color-swatch--light',
+    props.border && 'bpkdocs-color-swatch--border',
+    props.className,
+  );
 
   return (
-    <div style={style} className={classNames.join(' ')}>
+    <div style={style} className={className}>
       {props.name}
     </div>
   );
@@ -48,6 +46,7 @@ const ColorSwatch = props => {
 
 ColorSwatch.propTypes = {
   name: PropTypes.string.isRequired,
+  className: PropTypes.string,
   color: PropTypes.string,
   whiteColor: PropTypes.bool,
   border: PropTypes.bool,
@@ -56,6 +55,7 @@ ColorSwatch.propTypes = {
 
 ColorSwatch.defaultProps = {
   color: null,
+  className: null,
   whiteColor: false,
   border: false,
   gradient: null,
