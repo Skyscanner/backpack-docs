@@ -24,7 +24,7 @@ import { cssModules } from 'bpk-react-utils';
 import BpkCloseButton from 'bpk-component-close-button';
 import BpkBreakpoint, { BREAKPOINTS } from 'bpk-component-breakpoint';
 
-import BackpackLogoWhite from '../../static/backpack-logo-white.svg';
+import { getBackpackLogo } from '../../helpers/logo-helper';
 
 import NavList from './NavList';
 import STYLES from './Sidebar.scss';
@@ -52,6 +52,8 @@ export default (props: Props) => {
     onSectionChange,
   } = props;
 
+  const backpackLogo = getBackpackLogo();
+
   return (
     <nav className={getClassName('bpkdocs-sidebar')}>
       <div className={getClassName('bpkdocs-sidebar__header')}>
@@ -68,7 +70,7 @@ export default (props: Props) => {
         </BpkBreakpoint>
         <Link to="/" className={getClassName('bpkdocs-sidebar__logo-link')}>
           <img
-            src={`/${BackpackLogoWhite}`}
+            src={`/${backpackLogo}`}
             className={getClassName('bpkdocs-sidebar__logo')}
             alt="Backpack Logo"
           />
