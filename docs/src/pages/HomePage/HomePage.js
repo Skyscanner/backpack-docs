@@ -34,11 +34,11 @@ import DesignTokensIcon from '../../static/design_tokens_icon.svg';
 import GitHubIcon from '../../static/github_icon.svg';
 import UsingBackpackIcon from '../../static/using_bpk_icon.svg';
 import StyleGuideIcon from '../../static/style_guide_icon.svg';
-import BackpackLogoWhite from '../../static/backpack-logo-white.svg';
 import HeroImage from '../../static/hero.jpg';
 import LondonHeroImage from '../../static/london_hero.jpg';
 import HongKongHeroImage from '../../static/hongKong_hero.jpg';
 import DohaHeroImage from '../../static/doha_hero.jpg';
+import { getBackpackLogo } from '../../helpers/logo-helper';
 
 import UpdatedAt from './UpdatedAt';
 import STYLES from './home-page.scss';
@@ -123,6 +123,7 @@ const HomePage = (props, context) => {
     return HERO_IMAGE_THEMES[context.theme.themeName];
   };
 
+  const backpackLogo = getBackpackLogo();
   const heroImage = getHeroImageForTheme();
 
   return (
@@ -135,7 +136,7 @@ const HomePage = (props, context) => {
         <div className={getClassName('bpkdocs-home-page__hero-logo-container')}>
           <div style={{ flex: 1 }}>
             <img
-              src={BackpackLogoWhite}
+              src={backpackLogo}
               className={getClassName('bpkdocs-home-page__hero-logo')}
               alt="Backpack Logo"
             />
