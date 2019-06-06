@@ -29,6 +29,7 @@ import BpkBannerAlert, {
   withBannerAlertState,
 } from 'bpk-component-banner-alert';
 import BpkCheckBox from 'bpk-component-checkbox';
+import CurrencyIcon from 'bpk-component-icon/sm/currency';
 import BpkButton from 'bpk-component-button';
 import bannerAlertReadme from 'bpk-component-banner-alert/README.md';
 
@@ -306,6 +307,40 @@ const components = [
       <BannerAlert message={richMessage} type={ALERT_TYPES.SUCCESS} />,
       <BannerAlert message="Warn alert." type={ALERT_TYPES.WARN} />,
       <BannerAlert message="Error alert." type={ALERT_TYPES.ERROR} />,
+    ],
+  },
+  {
+    id: 'withCustomIcon',
+    title: 'With a custom icon',
+    blurb: [
+      <Paragraph>Banner alerts can be configured to show any icon.</Paragraph>,
+    ],
+    examples: [
+      <BannerAlert
+        message="Neutral alert."
+        type={ALERT_TYPES.NEUTRAL}
+        icon={CurrencyIcon}
+      />,
+      <BannerAlert
+        message="Successful alert."
+        type={ALERT_TYPES.SUCCESS}
+        icon={CurrencyIcon}
+      />,
+      <BannerAlert
+        message={richMessage}
+        type={ALERT_TYPES.SUCCESS}
+        icon={CurrencyIcon}
+      />,
+      <BannerAlert
+        message="Warn alert."
+        type={ALERT_TYPES.WARN}
+        icon={CurrencyIcon}
+      />,
+      <BannerAlert
+        message="Error alert."
+        type={ALERT_TYPES.ERROR}
+        icon={CurrencyIcon}
+      />,
     ],
   },
   {
