@@ -36,7 +36,7 @@ const ComponentsLinks = [
         id: 'TEXT',
         route: routes.TEXT,
         children: 'Text',
-        tags: ['web', 'native'],
+        tags: ['web', 'native', 'android', 'ios'],
       },
       {
         id: 'LINK',
@@ -67,19 +67,19 @@ const ComponentsLinks = [
         id: 'BUTTON',
         route: routes.BUTTON,
         children: 'Button',
-        tags: ['web', 'native'],
+        tags: ['web', 'native', 'android', 'ios'],
       },
       {
         id: 'ICON',
         route: routes.ICON,
         children: 'Icon',
-        tags: ['web', 'native'],
+        tags: ['web', 'native', 'android', 'ios'],
       },
       {
         id: 'SPINNER',
         route: routes.SPINNER,
         children: 'Spinner',
-        tags: ['web', 'native'],
+        tags: ['web', 'native', 'android', 'ios'],
       },
       {
         id: 'FORM',
@@ -91,25 +91,25 @@ const ComponentsLinks = [
         id: 'CARD',
         route: routes.CARD,
         children: 'Card',
-        tags: ['web', 'native'],
+        tags: ['web', 'native', 'android', 'ios'],
       },
       {
         id: 'CHIP',
         route: routes.CHIP,
         children: 'Chip',
-        tags: ['web', 'native'],
+        tags: ['web', 'native', 'android', 'ios'],
       },
       {
         id: 'BADGE',
         route: routes.BADGE,
         children: 'Badge',
-        tags: ['web', 'native'],
+        tags: ['web', 'native', 'android', 'ios'],
       },
       {
         id: 'PANEL',
         route: routes.PANEL,
         children: 'Panel',
-        tags: ['web', 'native'],
+        tags: ['web', 'native', 'android', 'ios'],
       },
       {
         id: 'IMAGE',
@@ -157,7 +157,7 @@ const ComponentsLinks = [
         id: 'CALENDAR',
         route: routes.CALENDAR,
         children: 'Calendar',
-        tags: ['web', 'native'],
+        tags: ['web', 'native', 'android', 'ios'],
       },
       {
         id: 'DATEPICKER',
@@ -212,7 +212,7 @@ const ComponentsLinks = [
         id: 'STAR_RATING',
         route: routes.STAR_RATING,
         children: 'Star rating',
-        tags: ['web', 'native'],
+        tags: ['web', 'native', 'android'],
       },
       {
         id: 'BAR_CHART',
@@ -242,7 +242,7 @@ const ComponentsLinks = [
         id: 'DIALOG',
         route: routes.DIALOG,
         children: 'Dialog',
-        tags: ['web'],
+        tags: ['web', 'android', 'ios'],
       },
       {
         id: 'NAVIGATION_BAR',
@@ -298,7 +298,7 @@ const ComponentsLinks = [
         id: 'NATIVE_INPUT',
         route: routes.TEXT_INPUT,
         children: 'Text input',
-        tags: ['native'],
+        tags: ['native', 'ios'],
       },
       // TODO: Uncomment later.
       // {
@@ -316,7 +316,7 @@ const ComponentsLinks = [
         id: 'NATIVE_SECTION_LIST',
         route: routes.SECTION_LIST,
         children: 'Section list',
-        tags: ['native'],
+        tags: ['web', 'native'],
       },
       {
         id: 'NATIVE_SELECT',
@@ -328,7 +328,7 @@ const ComponentsLinks = [
         id: 'NATIVE_SWITCH',
         route: routes.SWITCH,
         children: 'Switch',
-        tags: ['native'],
+        tags: ['native', 'android', 'ios'],
       },
       {
         id: 'NATIVE_CAROUSEL',
@@ -371,7 +371,7 @@ const ComponentsLinks = [
         id: 'THEMING',
         route: routes.THEMING,
         children: 'Theming',
-        tags: ['web', 'native'],
+        tags: ['web', 'native', 'android', 'ios'],
       },
     ],
   },
