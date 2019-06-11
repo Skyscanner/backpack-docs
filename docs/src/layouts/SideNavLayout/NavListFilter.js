@@ -28,6 +28,8 @@ const OPTIONS = {
   all: 'all',
   web: 'web',
   native: 'native',
+  android: 'android',
+  ios: 'ios',
 };
 
 export type Option = $Keys<typeof OPTIONS>;
@@ -71,6 +73,28 @@ const NavListFilter = (props: Props) => (
       onChange={e =>
         e.currentTarget.value === OPTIONS.native &&
         props.onSelectedFilterChange(OPTIONS.native)
+      }
+    />
+    <BpkRadio
+      className={getClassName('bpkdocs-nav-list-filter__option')}
+      value={OPTIONS.android}
+      name="filter"
+      label="Android"
+      checked={props.selected === OPTIONS.android}
+      onChange={e =>
+        e.currentTarget.value === OPTIONS.android &&
+        props.onSelectedFilterChange(OPTIONS.android)
+      }
+    />
+    <BpkRadio
+      className={getClassName('bpkdocs-nav-list-filter__option')}
+      value={OPTIONS.ios}
+      name="filter"
+      label="iOS"
+      checked={props.selected === OPTIONS.ios}
+      onChange={e =>
+        e.currentTarget.value === OPTIONS.ios &&
+        props.onSelectedFilterChange(OPTIONS.ios)
       }
     />
   </form>
