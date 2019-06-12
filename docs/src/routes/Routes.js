@@ -62,6 +62,7 @@ import DescriptionListsPage from '../pages/DescriptionListsPage';
 import DialogsPage from '../pages/DialogsPage';
 import DrawerPage from '../pages/DrawerPage';
 import FieldsetsPage from '../pages/FieldsetsPage';
+import FloatingActionButtonPage from '../pages/FloatingActionButtonPage';
 import FormsPage from '../pages/FormsPage';
 import HorizontalGridPage from '../pages/HorizontalGridPage';
 import HorizontalNavPage from '../pages/HorizontalNavPage';
@@ -188,6 +189,10 @@ export const ROUTES_MAPPINGS = [
       {
         path: ROUTES.FLAT_LIST,
         component: NativeFlatListPage,
+      },
+      {
+        path: ROUTES.FLOATING_ACTION_BUTTON,
+        component: FloatingActionButtonPage,
       },
       { path: ROUTES.FORM, component: FormsPage },
       {
