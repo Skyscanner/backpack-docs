@@ -28,8 +28,10 @@
   }
 
   &__filter {
+    display: flex;
     margin-top: $bpk-spacing-xl;
     margin-bottom: $bpk-spacing-xl;
+    flex-direction: column;
 
     @include bpk-margin-leading($bpk-first-column-size);
   }
