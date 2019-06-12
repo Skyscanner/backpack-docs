@@ -82,6 +82,12 @@ const ComponentsLinks = [
         tags: ['web', 'native', 'android', 'ios'],
       },
       {
+        id: 'FLOATING_ACTION_BUTTON',
+        route: routes.FLOATING_ACTION_BUTTON,
+        children: 'Floating Action Button',
+        tags: ['android'],
+      },
+      {
         id: 'FORM',
         route: routes.FORM,
         children: 'Form elements',
