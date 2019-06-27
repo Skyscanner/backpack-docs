@@ -21,28 +21,25 @@ import BpkRouterLink from 'bpk-component-router-link';
 
 import IntroBlurb from '../../components/IntroBlurb';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
-import IOS from '../IOSTextInputPage';
-import Native from '../NativeTextInputPage';
+import IOS from '../IOSTextViewPage';
 import Paragraph from '../../components/Paragraph';
-import { TEXT_VIEW } from '../../constants/routes';
+import { TEXT_INPUT } from '../../constants/routes';
 
 const blurb = [
   <IntroBlurb>
-    Text inputs are used to capture textual information as well as numbers and
-    passwords.
+    Text views are used to capture large amounts of textual information.
   </IntroBlurb>,
   <Paragraph>
-    Related: <BpkRouterLink to={TEXT_VIEW}>Text views</BpkRouterLink>
+    Related: <BpkRouterLink to={TEXT_INPUT}>Text inputs</BpkRouterLink>
   </Paragraph>,
 ];
 
-const TextInputPage = () => (
+const TextViewPage = () => (
   <DocsPageWrapper
-    title="Text input"
+    title="Text views"
     blurb={blurb}
     iosSubpage={<IOS wrapped />}
-    nativeSubpage={<Native wrapped />}
   />
 );
 
-export default TextInputPage;
+export default TextViewPage;
