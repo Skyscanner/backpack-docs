@@ -81,6 +81,7 @@ export default {
   '/components/native/switches': ROUTES.SWITCH,
   '/components/native/text': ROUTES.TEXT,
   '/components/native/text-input': ROUTES.TEXT_INPUT,
+  '/components/native/text-view': ROUTES.TEXT_VIEW,
   '/components/native/touchable-native-feedback':
     ROUTES.TOUCHABLE_NATIVE_FEEDBACK,
   '/components/native/touchable-overlay': ROUTES.TOUCHABLE_OVERLAY,
