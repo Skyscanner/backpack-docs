@@ -48,6 +48,7 @@ export const COMPONENTS = '/components';
 export const TEXT = '/components/text';
 export const TEXT_INPUT = '/components/text-input';
 export const TEXT_VIEW = '/components/text-view';
+export const TAPPABLE_LINK_LABEL = '/components/tappable-link-label';
 export const LINK = '/components/link';
 export const LIST = '/components/list';
 export const DESCRIPTION_LIST = '/components/description-list';

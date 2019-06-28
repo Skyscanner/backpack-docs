@@ -18,35 +18,35 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-ios/Backpack/TextField/README.md';
-import screenshotDefault from '../../../../backpack-ios/screenshots/TextField/default.png';
+import readme from '../../../../backpack-ios/Backpack/TappableLinkLabel/README.md';
+import screenshotMultiple from '../../../../backpack-ios/screenshots/TappableLinkLabel/multiple.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
   {
-    id: 'default',
-    title: 'Default',
+    id: 'multiple',
+    title: 'With multiple links',
     screenshots: [
       {
         width: 750,
         height: 1334,
-        src: `/${screenshotDefault}`,
-        altText: 'iOS default text input',
+        src: `/${screenshotMultiple}`,
+        altText: 'iOS default text view',
         subText: '(iPhone 8 simulator)',
       },
     ],
   },
 ];
 
-const IOSTextInputPage = ({ ...rest }) => (
+const IOSTextViewPage = ({ ...rest }) => (
   <DocsPageBuilder
-    title="Text Input"
+    title="Tappable Link Label"
     components={components}
     readme={readme}
-    iosDocId="BPKTextInput"
+    iosDocId="BPKTappableLinkLabel"
     showMenu
     {...rest}
   />
 );
 
-export default IOSTextInputPage;
+export default IOSTextViewPage;
