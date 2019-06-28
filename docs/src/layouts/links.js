@@ -312,6 +312,12 @@ const ComponentsLinks = [
         children: 'Text view',
         tags: ['ios'],
       },
+      {
+        id: 'TAPPABLE_LINK_LABEL',
+        route: routes.TAPPABLE_LINK_LABEL,
+        children: 'Tappable link label',
+        tags: ['ios'],
+      },
       // TODO: Uncomment later.
       // {
       //   id: 'NATIVE_PAGINATION_DOT',

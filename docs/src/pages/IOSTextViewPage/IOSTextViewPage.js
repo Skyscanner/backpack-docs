@@ -24,8 +24,8 @@ import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
   {
-    id: 'text-view',
-    title: 'Text view',
+    id: 'default',
+    title: 'Default',
     screenshots: [
       {
         width: 750,
