@@ -96,6 +96,7 @@ import SwitchPage from '../pages/SwitchPage';
 import TablesPage from '../pages/TablesPage';
 import TextInputPage from '../pages/TextInputPage';
 import TextViewPage from '../pages/TextViewPage';
+import TappableLinkLabelPage from '../pages/TappableLinkLabelPage';
 import TextPage from '../pages/TextPage';
 import ThemingPage from '../pages/ThemingPage';
 import TicketsPage from '../pages/TicketsPage';
@@ -257,6 +258,10 @@ export const ROUTES_MAPPINGS = [
       {
         path: ROUTES.TEXT_INPUT,
         component: TextInputPage,
+      },
+      {
+        path: ROUTES.TAPPABLE_LINK_LABEL,
+        component: TappableLinkLabelPage,
       },
       {
         path: ROUTES.TEXT_VIEW,

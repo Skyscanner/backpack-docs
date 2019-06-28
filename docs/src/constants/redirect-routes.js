@@ -82,6 +82,7 @@ export default {
   '/components/native/text': ROUTES.TEXT,
   '/components/native/text-input': ROUTES.TEXT_INPUT,
   '/components/native/text-view': ROUTES.TEXT_VIEW,
+  '/components/native/tappable-link-label': ROUTES.TAPPABLE_LINK_LABEL,
   '/components/native/touchable-native-feedback':
     ROUTES.TOUCHABLE_NATIVE_FEEDBACK,
   '/components/native/touchable-overlay': ROUTES.TOUCHABLE_OVERLAY,
