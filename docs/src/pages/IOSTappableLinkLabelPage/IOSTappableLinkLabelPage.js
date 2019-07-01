@@ -20,6 +20,7 @@ import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/TappableLinkLabel/README.md';
 import screenshotMultiple from '../../../../backpack-ios/screenshots/TappableLinkLabel/multiple.png';
+import screenshotAlternate from '../../../../backpack-ios/screenshots/TappableLinkLabel/alternate.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -31,7 +32,20 @@ const components = [
         width: 750,
         height: 1334,
         src: `/${screenshotMultiple}`,
-        altText: 'iOS default text view',
+        altText: 'iOS Tappable Link Label',
+        subText: '(iPhone 8 simulator)',
+      },
+    ],
+  },
+  {
+    id: 'alternate-style',
+    title: 'Alternate style',
+    screenshots: [
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotAlternate}`,
+        altText: 'iOS Tappable Link Label with Alternate style',
         subText: '(iPhone 8 simulator)',
       },
     ],
