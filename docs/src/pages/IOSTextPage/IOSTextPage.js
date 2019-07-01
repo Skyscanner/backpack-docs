@@ -22,6 +22,7 @@ import readme from '../../../../backpack-ios/Backpack/Label/README.md';
 import screenshotDefault from '../../../../backpack-ios/screenshots/Label/default.png';
 import screenshotEmphasized from '../../../../backpack-ios/screenshots/Label/emphasized.png';
 import screenshotHeavy from '../../../../backpack-ios/screenshots/Label/heavy.png';
+import screenshotMultipleFontStyles from '../../../../backpack-ios/screenshots/Label/multipleFontStyles.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -60,6 +61,19 @@ const components = [
         height: 1334,
         src: `/${screenshotHeavy}`,
         altText: 'iOS heavy text',
+        subText: '(iPhone 8 simulator)',
+      },
+    ],
+  },
+  {
+    id: 'multiple-font-styles',
+    title: 'Multiple font styles',
+    screenshots: [
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotMultipleFontStyles}`,
+        altText: 'iOS text with multiple font styles',
         subText: '(iPhone 8 simulator)',
       },
     ],
