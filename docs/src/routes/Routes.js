@@ -102,6 +102,10 @@ import ThemingPage from '../pages/ThemingPage';
 import TicketsPage from '../pages/TicketsPage';
 import TooltipsPage from '../pages/TooltipsPage';
 import BagCheckPage from '../pages/BagCheckPage';
+import ToastPage from '../pages/ToastPage';
+import TextSpansPage from '../pages/TextSpansPage';
+import CheckboxPage from '../pages/CheckboxPage';
+import StarRatingInteractivePage from '../pages/StarRatingInteractrivePage';
 import { GridColumnDemoPage, GridOffsetDemoPage } from '../pages/GridDemoPages';
 
 export const ROUTES_MAPPINGS = [
@@ -195,6 +199,22 @@ export const ROUTES_MAPPINGS = [
       {
         path: ROUTES.FLOATING_ACTION_BUTTON,
         component: FloatingActionButtonPage,
+      },
+      {
+        path: ROUTES.TOAST,
+        component: ToastPage,
+      },
+      {
+        path: ROUTES.CHECKBOX,
+        component: CheckboxPage,
+      },
+      {
+        path: ROUTES.STAR_RATING_INTERACTIVE,
+        component: StarRatingInteractivePage,
+      },
+      {
+        path: ROUTES.TEXT_SPANS,
+        component: TextSpansPage,
       },
       { path: ROUTES.FORM, component: FormsPage },
       {

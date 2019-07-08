@@ -18,36 +18,34 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-android/docs/StarRating/README.md';
-import screenshotDefault from '../../../../backpack-android/docs/StarRating/screenshots/default.png';
+import readme from '../../../../backpack-android/docs/Toast/README.md';
+import screenshotDefault from '../../../../backpack-android/docs/Toast/screenshots/default.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
   {
     id: 'default',
     title: 'Default',
-    blurb:
-      'By default, star ratings are shown in a static form. These can be set at half star intervals. ', // eslint-disable-line max-len
     screenshots: [
       {
         title: 'Android',
         width: 1080,
         height: 1920,
         src: `/${screenshotDefault}`,
-        altText: 'Android Star Rating Component',
+        altText: 'Android Toast Component',
         subText: '(Google Pixel emulator)',
       },
     ],
   },
 ];
 
-const AndroidStarRatingPage = ({ ...rest }) => (
+const AndroidToastPage = ({ ...rest }) => (
   <DocsPageBuilder
-    title="Star rating"
+    title="Toast"
     components={components}
     readme={readme}
     {...rest}
   />
 );
 
-export default AndroidStarRatingPage;
+export default AndroidToastPage;

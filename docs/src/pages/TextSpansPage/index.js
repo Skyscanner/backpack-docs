@@ -18,26 +18,6 @@
 
 /* @flow strict */
 
-import React from 'react';
+import page from './TextSpansPage';
 
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import IntroBlurb from '../../components/IntroBlurb';
-import Web from '../WebStarRatingPage';
-import Native from '../NativeStarRatingPage';
-import Android from '../AndroidStarRatingPage';
-
-const Page = () => (
-  <DocsPageWrapper
-    title="Star Rating"
-    blurb={[
-      <IntroBlurb>
-        Star Ratings are used for displaying a score within a given range.
-      </IntroBlurb>,
-    ]}
-    webSubpage={<Web wrapped />}
-    nativeSubpage={<Native wrapped />}
-    androidSubpage={<Android wrapped />}
-  />
-);
-
-export default Page;
+export default page;
