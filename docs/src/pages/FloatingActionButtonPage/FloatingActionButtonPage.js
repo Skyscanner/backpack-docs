@@ -26,10 +26,11 @@ import Android from '../AndroidFloatingActionButtonPage';
 
 const Page = () => (
   <DocsPageWrapper
-    title="Floating Action Button"
+    title="Floating action button"
     blurb={[
       <IntroBlurb>
-        Floating Action Button is a Material Design UI component.
+        A floating action button represents the primary action in an
+        application.
       </IntroBlurb>,
     ]}
     androidSubpage={<Android wrapped />}
