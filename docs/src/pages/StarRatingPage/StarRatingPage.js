@@ -28,10 +28,10 @@ import Android from '../AndroidStarRatingPage';
 
 const Page = () => (
   <DocsPageWrapper
-    title="Star rating"
+    title="Star Rating"
     blurb={[
       <IntroBlurb>
-        Star ratings are used for displaying a score within a given range.
+        Star Ratings are used for displaying a score within a given range.
       </IntroBlurb>,
     ]}
     webSubpage={<Web wrapped />}
