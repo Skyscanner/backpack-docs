@@ -22,13 +22,13 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import AndroidToastPage from '../AndroidToastPage';
+import AndroidPage from '../AndroidToastPage';
 
 const Page = () => (
   <DocsPageWrapper
     title="Toast"
     blurb={[<IntroBlurb>Toast is a Material Design UI component.</IntroBlurb>]}
-    androidSubpage={<AndroidToastPage wrapped />}
+    androidSubpage={<AndroidPage wrapped />}
   />
 );
 

@@ -22,7 +22,7 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import AndroidToastPage from '../AndroidCheckboxPage';
+import AndroidPage from '../AndroidCheckboxPage';
 
 const Page = () => (
   <DocsPageWrapper
@@ -30,7 +30,7 @@ const Page = () => (
     blurb={[
       <IntroBlurb>Checkbox is a Material Design UI component.</IntroBlurb>,
     ]}
-    androidSubpage={<AndroidToastPage wrapped />}
+    androidSubpage={<AndroidPage wrapped />}
   />
 );
 

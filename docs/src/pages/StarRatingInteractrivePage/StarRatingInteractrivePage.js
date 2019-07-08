@@ -22,7 +22,7 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import AndroidToastPage from '../AndroidStarRatingInteractivePage';
+import AndroidPage from '../AndroidStarRatingInteractivePage';
 
 const Page = () => (
   <DocsPageWrapper
@@ -30,7 +30,7 @@ const Page = () => (
     blurb={[
       <IntroBlurb>Interactive version of StarRating UI component.</IntroBlurb>,
     ]}
-    androidSubpage={<AndroidToastPage wrapped />}
+    androidSubpage={<AndroidPage wrapped />}
   />
 );
 
