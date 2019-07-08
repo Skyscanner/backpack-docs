@@ -27,7 +27,7 @@ import AndroidPage from '../AndroidToastPage';
 const Page = () => (
   <DocsPageWrapper
     title="Toast"
-    blurb={[<IntroBlurb>Toast is a Material Design UI component.</IntroBlurb>]}
+    blurb={[<IntroBlurb>Toasts provide brief messages about app processes at the bottom of the screen.</IntroBlurb>]}
     androidSubpage={<AndroidPage wrapped />}
   />
 );
