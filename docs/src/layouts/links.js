@@ -42,7 +42,7 @@ const ComponentsLinks = [
         id: 'LINK',
         route: routes.LINK,
         children: 'Link',
-        tags: ['web', 'native'],
+        tags: ['web', 'native', 'android'],
       },
       { id: 'LIST', route: routes.LIST, children: 'List', tags: ['web'] },
       {

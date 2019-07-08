@@ -16,28 +16,6 @@
  * limitations under the License.
  */
 
-/* @flow strict */
+import page from './AndroidLinkPage';
 
-import React from 'react';
-
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import IntroBlurb from '../../components/IntroBlurb';
-import Web from '../WebLinksPage';
-import Native from '../NativeButtonLinkPage';
-import Android from '../AndroidLinkPage';
-
-const Page = () => (
-  <DocsPageWrapper
-    title="Link"
-    blurb={[
-      <IntroBlurb>
-        This component enables links to other resources, pages or views.
-      </IntroBlurb>,
-    ]}
-    webSubpage={<Web wrapped />}
-    nativeSubpage={<Native wrapped />}
-    androidSubpage={<Android wrapped />}
-  />
-);
-
-export default Page;
+export default page;
