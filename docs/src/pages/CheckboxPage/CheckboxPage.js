@@ -22,17 +22,15 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import AndroidPage from '../AndroidTextSpansPage';
+import AndroidToastPage from '../AndroidCheckboxPage';
 
 const Page = () => (
   <DocsPageWrapper
-    title="Text Spans"
+    title="Checkbox"
     blurb={[
-      <IntroBlurb>
-        Text Spans is a set of styles to apply to characters sequence.
-      </IntroBlurb>,
+      <IntroBlurb>Checkbox is a Material Design UI component.</IntroBlurb>,
     ]}
-    androidSubpage={<AndroidPage wrapped />}
+    androidSubpage={<AndroidToastPage wrapped />}
   />
 );
 

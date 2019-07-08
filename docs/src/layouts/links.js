@@ -70,6 +70,18 @@ const ComponentsLinks = [
         tags: ['android'],
       },
       {
+        id: 'CHECKBOX',
+        route: routes.CHECKBOX,
+        children: 'Checkbox',
+        tags: ['android'],
+      },
+      {
+        id: 'STAR_RATING_INTERACTIVE',
+        route: routes.STAR_RATING_INTERACTIVE,
+        children: 'Star Rating: Interactive',
+        tags: ['android'],
+      },
+      {
         id: 'BLOCKQUOTE',
         route: routes.BLOCKQUOTE,
         children: 'Blockquote',
@@ -103,7 +115,7 @@ const ComponentsLinks = [
         id: 'FORM',
         route: routes.FORM,
         children: 'Form elements',
-        tags: ['android', 'web'],
+        tags: ['web'],
       },
       {
         id: 'CARD',

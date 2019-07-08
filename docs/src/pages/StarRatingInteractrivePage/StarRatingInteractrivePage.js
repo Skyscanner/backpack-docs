@@ -22,17 +22,15 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import AndroidPage from '../AndroidTextSpansPage';
+import AndroidToastPage from '../AndroidStarRatingInteractivePage';
 
 const Page = () => (
   <DocsPageWrapper
-    title="Text Spans"
+    title="Star Rating Interactive"
     blurb={[
-      <IntroBlurb>
-        Text Spans is a set of styles to apply to characters sequence.
-      </IntroBlurb>,
+      <IntroBlurb>Interactive version of StarRating UI component.</IntroBlurb>,
     ]}
-    androidSubpage={<AndroidPage wrapped />}
+    androidSubpage={<AndroidToastPage wrapped />}
   />
 );
 

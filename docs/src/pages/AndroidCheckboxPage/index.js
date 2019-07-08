@@ -16,24 +16,6 @@
  * limitations under the License.
  */
 
-/* @flow strict */
+import page from './AndroidCheckboxPage';
 
-import React from 'react';
-
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import IntroBlurb from '../../components/IntroBlurb';
-import AndroidPage from '../AndroidTextSpansPage';
-
-const Page = () => (
-  <DocsPageWrapper
-    title="Text Spans"
-    blurb={[
-      <IntroBlurb>
-        Text Spans is a set of styles to apply to characters sequence.
-      </IntroBlurb>,
-    ]}
-    androidSubpage={<AndroidPage wrapped />}
-  />
-);
-
-export default Page;
+export default page;

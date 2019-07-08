@@ -40,7 +40,6 @@ import DocsPageBuilder from '../../components/DocsPageBuilder';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import BpkParagraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
-import AndroidPage from '../AndroidFormsPage';
 
 import InputContainer from './InputContainer';
 import STYLES from './forms-page.scss';
@@ -787,7 +786,6 @@ const FormsPage = () => (
     title="Forms"
     blurb={blurb}
     webSubpage={<FormsSubPage wrapped />}
-    androidSubpage={<AndroidPage wrapped />}
   />
 );
 

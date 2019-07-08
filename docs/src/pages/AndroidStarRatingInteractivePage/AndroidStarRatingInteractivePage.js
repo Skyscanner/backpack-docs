@@ -18,34 +18,36 @@
 
 import React from 'react';
 
-import readmeCheckbox from '../../../../backpack-android/docs/Checkbox/README.md';
-import screenshotCheckboxDefault from '../../../../backpack-android/docs/Checkbox/screenshots/default.png';
+import readme from '../../../../backpack-android/docs/InteractiveStarRating/README.md';
+import screenshotDefault from '../../../../backpack-android/docs/InteractiveStarRating/screenshots/default.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
   {
     id: 'default',
-    title: 'Checkboxes',
+    title: 'Default',
+    blurb:
+      'An interactive version of Star Rating. These can be set at half star intervals. ', // eslint-disable-line max-len
     screenshots: [
       {
-        title: 'Checkbox',
+        title: 'Android',
         width: 1080,
         height: 1920,
-        src: `/${screenshotCheckboxDefault}`,
-        altText: 'Android Checkbox Component',
+        src: `/${screenshotDefault}`,
+        altText: 'Android Interactive Star Rating Component',
         subText: '(Google Pixel emulator)',
       },
     ],
   },
 ];
 
-const NativeCheckboxPage = ({ ...rest }) => (
+const AndroidStarRatingPage = ({ ...rest }) => (
   <DocsPageBuilder
-    title="Forms elements"
+    title="Star Rating Interactive"
     components={components}
-    readme={readmeCheckbox}
+    readme={readme}
     {...rest}
   />
 );
 
-export default NativeCheckboxPage;
+export default AndroidStarRatingPage;

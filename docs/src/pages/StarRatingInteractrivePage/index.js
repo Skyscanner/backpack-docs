@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
-import page from './AndroidFormsPage';
+/* @flow strict */
+
+import page from './StarRatingInteractrivePage';
 
 export default page;
