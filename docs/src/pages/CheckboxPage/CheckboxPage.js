@@ -28,7 +28,9 @@ const Page = () => (
   <DocsPageWrapper
     title="Checkbox"
     blurb={[
-      <IntroBlurb>Checkboxes allow the user to select one or more items from a set.</IntroBlurb>,
+      <IntroBlurb>
+        Checkboxes allow the user to select one or more items from a set.
+      </IntroBlurb>,
     ]}
     androidSubpage={<AndroidPage wrapped />}
   />
