@@ -58,6 +58,18 @@ const ComponentsLinks = [
         tags: ['web'],
       },
       {
+        id: 'TOAST',
+        route: routes.TOAST,
+        children: 'Toast',
+        tags: ['android'],
+      },
+      {
+        id: 'TEXT_SPANS',
+        route: routes.TEXT_SPANS,
+        children: 'Text Spans',
+        tags: ['android'],
+      },
+      {
         id: 'BLOCKQUOTE',
         route: routes.BLOCKQUOTE,
         children: 'Blockquote',
@@ -91,7 +103,7 @@ const ComponentsLinks = [
         id: 'FORM',
         route: routes.FORM,
         children: 'Form elements',
-        tags: ['web'],
+        tags: ['android', 'web'],
       },
       {
         id: 'CARD',
@@ -206,7 +218,7 @@ const ComponentsLinks = [
         id: 'HORIZONTAL_NAV',
         route: routes.HORIZONTAL_NAV,
         children: 'Horizontal navigation',
-        tags: ['web', 'native'],
+        tags: ['web', 'native', 'android'],
       },
       {
         id: 'FIELDSET',

@@ -102,6 +102,8 @@ import ThemingPage from '../pages/ThemingPage';
 import TicketsPage from '../pages/TicketsPage';
 import TooltipsPage from '../pages/TooltipsPage';
 import BagCheckPage from '../pages/BagCheckPage';
+import ToastPage from '../pages/ToastPage';
+import TextSpansPage from '../pages/TextSpansPage';
 import { GridColumnDemoPage, GridOffsetDemoPage } from '../pages/GridDemoPages';
 
 export const ROUTES_MAPPINGS = [
@@ -195,6 +197,14 @@ export const ROUTES_MAPPINGS = [
       {
         path: ROUTES.FLOATING_ACTION_BUTTON,
         component: FloatingActionButtonPage,
+      },
+      {
+        path: ROUTES.TOAST,
+        component: ToastPage,
+      },
+      {
+        path: ROUTES.TEXT_SPANS,
+        component: TextSpansPage,
       },
       { path: ROUTES.FORM, component: FormsPage },
       {

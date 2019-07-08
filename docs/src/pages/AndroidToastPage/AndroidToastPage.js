@@ -18,8 +18,8 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-android/docs/FloatingActionButton/README.md';
-import screenshotDefault from '../../../../backpack-android/docs/FloatingActionButton/screenshots/default.png';
+import readme from '../../../../backpack-android/docs/Toast/README.md';
+import screenshotDefault from '../../../../backpack-android/docs/Toast/screenshots/default.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -32,20 +32,20 @@ const components = [
         width: 1080,
         height: 1920,
         src: `/${screenshotDefault}`,
-        altText: 'Android Floating Action Button Component',
+        altText: 'Android Toast Component',
         subText: '(Google Pixel emulator)',
       },
     ],
   },
 ];
 
-const AndroidFloatingActionButtonPage = ({ ...rest }) => (
+const AndroidToastPage = ({ ...rest }) => (
   <DocsPageBuilder
-    title="Floating Action Buttons"
+    title="Toast"
     components={components}
     readme={readme}
     {...rest}
   />
 );
 
-export default AndroidFloatingActionButtonPage;
+export default AndroidToastPage;
