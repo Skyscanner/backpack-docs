@@ -44,6 +44,7 @@ const AndroidLinkPage = ({ ...rest }) => (
     title="Links"
     components={components}
     readme={readme}
+    androidDocId="net.skyscanner.backpack.button"
     {...rest}
   />
 );
