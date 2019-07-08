@@ -43,7 +43,7 @@ const components = [
 
 const AndroidStarRatingPage = ({ ...rest }) => (
   <DocsPageBuilder
-    title="Star Rating"
+    title="Star rating"
     components={components}
     readme={readme}
     {...rest}
