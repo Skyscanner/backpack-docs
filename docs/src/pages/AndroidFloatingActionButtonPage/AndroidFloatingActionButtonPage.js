@@ -41,7 +41,7 @@ const components = [
 
 const AndroidFloatingActionButtonPage = ({ ...rest }) => (
   <DocsPageBuilder
-    title="Floating Action Buttons"
+    title="Floating action buttons"
     components={components}
     readme={readme}
     {...rest}

@@ -108,7 +108,7 @@ const ComponentsLinks = [
       {
         id: 'FLOATING_ACTION_BUTTON',
         route: routes.FLOATING_ACTION_BUTTON,
-        children: 'Floating Action Button',
+        children: 'Floating action button',
         tags: ['android'],
       },
       {
