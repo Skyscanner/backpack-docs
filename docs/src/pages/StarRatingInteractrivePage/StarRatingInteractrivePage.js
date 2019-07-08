@@ -26,7 +26,7 @@ import AndroidPage from '../AndroidStarRatingInteractivePage';
 
 const Page = () => (
   <DocsPageWrapper
-    title="Star Rating Interactive"
+    title="Star rating interactive"
     blurb={[
       <IntroBlurb>Interactive version of StarRating UI component.</IntroBlurb>,
     ]}
