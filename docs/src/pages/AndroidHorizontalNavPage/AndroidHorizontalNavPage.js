@@ -25,7 +25,7 @@ import DocsPageBuilder from '../../components/DocsPageBuilder';
 const components = [
   {
     id: 'default',
-    title: 'Default',
+    title: 'All varieties',
     screenshots: [
       {
         title: 'Android',

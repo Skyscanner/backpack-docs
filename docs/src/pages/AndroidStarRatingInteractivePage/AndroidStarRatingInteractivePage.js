@@ -17,17 +17,25 @@
  */
 
 import React from 'react';
+import BpkLink from 'bpk-component-link';
 
 import readme from '../../../../backpack-android/docs/InteractiveStarRating/README.md';
 import screenshotDefault from '../../../../backpack-android/docs/InteractiveStarRating/screenshots/default.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
+import Paragraph from '../../components/Paragraph';
+import * as ROUTES from '../../constants/routes';
 
 const components = [
   {
     id: 'default',
     title: 'Default',
-    blurb:
-      'An interactive version of Star Rating. These can be set at half star intervals. ', // eslint-disable-line max-len
+    blurb: [
+      <Paragraph>
+        An interactive version of{' '}
+        <BpkLink href={ROUTES.STAR_RATING}>Star Rating</BpkLink>. These can be
+        set at half star intervals.
+      </Paragraph>,
+    ],
     screenshots: [
       {
         title: 'Android',
