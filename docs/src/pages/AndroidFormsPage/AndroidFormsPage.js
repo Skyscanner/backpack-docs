@@ -18,20 +18,20 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-android/docs/Checkbox/README.md';
-import screenshotDefault from '../../../../backpack-android/docs/Checkbox/screenshots/default.png';
+import readmeCheckbox from '../../../../backpack-android/docs/Checkbox/README.md';
+import screenshotCheckboxDefault from '../../../../backpack-android/docs/Checkbox/screenshots/default.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
   {
     id: 'default',
-    title: 'Default',
+    title: 'Checkboxes',
     screenshots: [
       {
-        title: 'Android',
+        title: 'Checkbox',
         width: 1080,
         height: 1920,
-        src: `/${screenshotDefault}`,
+        src: `/${screenshotCheckboxDefault}`,
         altText: 'Android Checkbox Component',
         subText: '(Google Pixel emulator)',
       },
@@ -41,9 +41,9 @@ const components = [
 
 const NativeCheckboxPage = ({ ...rest }) => (
   <DocsPageBuilder
-    title="Checkbox"
+    title="Forms elements"
     components={components}
-    readme={readme}
+    readme={readmeCheckbox}
     {...rest}
   />
 );

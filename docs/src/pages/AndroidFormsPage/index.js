@@ -16,6 +16,6 @@
  * limitations under the License.
  */
 
-import page from './AndroidCheckboxPage';
+import page from './AndroidFormsPage';
 
 export default page;
