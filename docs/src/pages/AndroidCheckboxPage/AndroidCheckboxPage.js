@@ -18,36 +18,34 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-android/docs/StarRating/README.md';
-import screenshotDefault from '../../../../backpack-android/docs/StarRating/screenshots/default.png';
+import readme from '../../../../backpack-android/docs/Checkbox/README.md';
+import screenshotDefault from '../../../../backpack-android/docs/Checkbox/screenshots/default.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
   {
     id: 'default',
     title: 'Default',
-    blurb:
-      'By default, star ratings are shown in a static form. These can be set at half star intervals. ', // eslint-disable-line max-len
     screenshots: [
       {
         title: 'Android',
         width: 1080,
         height: 1920,
         src: `/${screenshotDefault}`,
-        altText: 'Android Star Rating Component',
+        altText: 'Android Checkbox Component',
         subText: '(Google Pixel emulator)',
       },
     ],
   },
 ];
 
-const AndroidStarRatingPage = ({ ...rest }) => (
+const AndroidCheckboxPage = ({ ...rest }) => (
   <DocsPageBuilder
-    title="Star rating"
+    title="Checkbox"
     components={components}
     readme={readme}
     {...rest}
   />
 );
 
-export default AndroidStarRatingPage;
+export default AndroidCheckboxPage;

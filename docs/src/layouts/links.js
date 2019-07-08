@@ -58,6 +58,30 @@ const ComponentsLinks = [
         tags: ['web'],
       },
       {
+        id: 'TOAST',
+        route: routes.TOAST,
+        children: 'Toast',
+        tags: ['android'],
+      },
+      {
+        id: 'TEXT_SPANS',
+        route: routes.TEXT_SPANS,
+        children: 'Text Spans',
+        tags: ['android'],
+      },
+      {
+        id: 'CHECKBOX',
+        route: routes.CHECKBOX,
+        children: 'Checkbox',
+        tags: ['android'],
+      },
+      {
+        id: 'STAR_RATING_INTERACTIVE',
+        route: routes.STAR_RATING_INTERACTIVE,
+        children: 'Star rating: interactive',
+        tags: ['android'],
+      },
+      {
         id: 'BLOCKQUOTE',
         route: routes.BLOCKQUOTE,
         children: 'Blockquote',
@@ -206,7 +230,7 @@ const ComponentsLinks = [
         id: 'HORIZONTAL_NAV',
         route: routes.HORIZONTAL_NAV,
         children: 'Horizontal navigation',
-        tags: ['web', 'native'],
+        tags: ['web', 'native', 'android'],
       },
       {
         id: 'FIELDSET',

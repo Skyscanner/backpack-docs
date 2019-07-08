@@ -22,24 +22,15 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import Web from '../WebHorizontalNavPage';
-import Native from '../NativeHorizontalNavPage';
-import Android from '../AndroidHorizontalNavPage';
-
-const blurb = [
-  <IntroBlurb>
-    A simple navigation component, ideal for representing a section of a page
-    that links to other pages or views within the page.
-  </IntroBlurb>,
-];
+import AndroidPage from '../AndroidStarRatingInteractivePage';
 
 const Page = () => (
   <DocsPageWrapper
-    title="Horizontal navigation"
-    blurb={blurb}
-    webSubpage={<Web wrapped />}
-    nativeSubpage={<Native wrapped />}
-    androidSubpage={<Android wrapped />}
+    title="Star rating interactive"
+    blurb={[
+      <IntroBlurb>Interactive version of StarRating UI component.</IntroBlurb>,
+    ]}
+    androidSubpage={<AndroidPage wrapped />}
   />
 );
 

@@ -17,24 +17,32 @@
  */
 
 import React from 'react';
+import BpkLink from 'bpk-component-link';
 
-import readme from '../../../../backpack-android/docs/StarRating/README.md';
-import screenshotDefault from '../../../../backpack-android/docs/StarRating/screenshots/default.png';
+import readme from '../../../../backpack-android/docs/InteractiveStarRating/README.md';
+import screenshotDefault from '../../../../backpack-android/docs/InteractiveStarRating/screenshots/default.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
+import Paragraph from '../../components/Paragraph';
+import * as ROUTES from '../../constants/routes';
 
 const components = [
   {
     id: 'default',
     title: 'Default',
-    blurb:
-      'By default, star ratings are shown in a static form. These can be set at half star intervals. ', // eslint-disable-line max-len
+    blurb: [
+      <Paragraph>
+        An interactive version of{' '}
+        <BpkLink href={ROUTES.STAR_RATING}>Star Rating</BpkLink>. These can be
+        set at half star intervals.
+      </Paragraph>,
+    ],
     screenshots: [
       {
         title: 'Android',
         width: 1080,
         height: 1920,
         src: `/${screenshotDefault}`,
-        altText: 'Android Star Rating Component',
+        altText: 'Android Interactive Star Rating Component',
         subText: '(Google Pixel emulator)',
       },
     ],
@@ -43,7 +51,7 @@ const components = [
 
 const AndroidStarRatingPage = ({ ...rest }) => (
   <DocsPageBuilder
-    title="Star rating"
+    title="Star rating interactive"
     components={components}
     readme={readme}
     {...rest}

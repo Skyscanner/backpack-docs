@@ -39,7 +39,7 @@ const components = [
   },
 ];
 
-const NativeFloatingActionButtonPage = ({ ...rest }) => (
+const AndroidFloatingActionButtonPage = ({ ...rest }) => (
   <DocsPageBuilder
     title="Floating Action Buttons"
     components={components}
@@ -48,4 +48,4 @@ const NativeFloatingActionButtonPage = ({ ...rest }) => (
   />
 );
 
-export default NativeFloatingActionButtonPage;
+export default AndroidFloatingActionButtonPage;

@@ -22,24 +22,17 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import Web from '../WebHorizontalNavPage';
-import Native from '../NativeHorizontalNavPage';
-import Android from '../AndroidHorizontalNavPage';
-
-const blurb = [
-  <IntroBlurb>
-    A simple navigation component, ideal for representing a section of a page
-    that links to other pages or views within the page.
-  </IntroBlurb>,
-];
+import AndroidPage from '../AndroidCheckboxPage';
 
 const Page = () => (
   <DocsPageWrapper
-    title="Horizontal navigation"
-    blurb={blurb}
-    webSubpage={<Web wrapped />}
-    nativeSubpage={<Native wrapped />}
-    androidSubpage={<Android wrapped />}
+    title="Checkbox"
+    blurb={[
+      <IntroBlurb>
+        Checkboxes allow the user to select one or more items from a set.
+      </IntroBlurb>,
+    ]}
+    androidSubpage={<AndroidPage wrapped />}
   />
 );
 

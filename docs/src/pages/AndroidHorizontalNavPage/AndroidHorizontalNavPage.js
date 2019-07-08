@@ -18,36 +18,34 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-android/docs/StarRating/README.md';
-import screenshotDefault from '../../../../backpack-android/docs/StarRating/screenshots/default.png';
+import readme from '../../../../backpack-android/docs/HorizontalNav/README.md';
+import screenshotDefault from '../../../../backpack-android/docs/HorizontalNav/screenshots/default.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
   {
     id: 'default',
-    title: 'Default',
-    blurb:
-      'By default, star ratings are shown in a static form. These can be set at half star intervals. ', // eslint-disable-line max-len
+    title: 'All varieties',
     screenshots: [
       {
         title: 'Android',
         width: 1080,
         height: 1920,
         src: `/${screenshotDefault}`,
-        altText: 'Android Star Rating Component',
+        altText: 'Android HorizontalNav Component',
         subText: '(Google Pixel emulator)',
       },
     ],
   },
 ];
 
-const AndroidStarRatingPage = ({ ...rest }) => (
+const AndroidHorizontalNavPage = ({ ...rest }) => (
   <DocsPageBuilder
-    title="Star rating"
+    title="HorizontalNav"
     components={components}
     readme={readme}
     {...rest}
   />
 );
 
-export default AndroidStarRatingPage;
+export default AndroidHorizontalNavPage;
