@@ -30,7 +30,6 @@ import { cssModules } from 'bpk-react-utils';
 import inputReadme from 'bpk-component-input/README.md';
 import labelReadme from 'bpk-component-label/README.md';
 import radioReadme from 'bpk-component-radio/README.md';
-import selectReadme from 'bpk-component-select/README.md';
 import textareaReadme from 'bpk-component-textarea/README.md';
 import checkboxReadme from 'bpk-component-checkbox/README.md';
 import validationReadme from 'bpk-component-form-validation/README.md';
@@ -224,65 +223,11 @@ const components = [
     title: 'Selects (aka dropdowns)',
     blurb: [
       <BpkParagraph>
-        Backpack selects override the default styles in most modern browsers. In
-        some older browsers they simply fall back to the browser default.
+        <BpkLink href={ROUTES.SELECT}>
+          Selects have been moved to their own page.
+        </BpkLink>
       </BpkParagraph>,
     ],
-    examples: [
-      <form className={formClassName}>
-        <BpkLabel htmlFor="select">Select</BpkLabel>
-        <InputContainer
-          FormComponent={BpkSelect}
-          id="select"
-          name="select"
-          value="economy"
-          onChange={() => null}
-        >
-          <option value="economy">Economy</option>
-          <option value="premium_economy">Premium Economy</option>
-          <option value="business">Business class</option>
-          <option value="first">First class</option>
-        </InputContainer>
-      </form>,
-      <form className={formClassName}>
-        <BpkLabel htmlFor="select_invalid">Invalid select</BpkLabel>
-        <InputContainer
-          FormComponent={BpkSelect}
-          id="select_invalid"
-          name="select_invalid"
-          value=""
-          onChange={() => null}
-          valid={false}
-        >
-          <option value="" hidden>
-            Please select...
-          </option>
-          <option value="economy">Economy</option>
-          <option value="premium_economy">Premium Economy</option>
-          <option value="business">Business class</option>
-          <option value="first">First class</option>
-        </InputContainer>
-      </form>,
-      <form className={formClassName}>
-        <BpkLabel htmlFor="select_disabled" disabled>
-          Disabled select
-        </BpkLabel>
-        <InputContainer
-          FormComponent={BpkSelect}
-          id="select_disabled"
-          name="select_disabled"
-          value="economy"
-          onChange={() => null}
-          disabled
-        >
-          <option value="economy">Economy</option>
-          <option value="premium_economy">Premium Economy</option>
-          <option value="business">Business class</option>
-          <option value="first">First class</option>
-        </InputContainer>
-      </form>,
-    ],
-    readme: selectReadme,
   },
   {
     id: 'docked-inputs-and-selects',

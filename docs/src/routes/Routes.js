@@ -76,7 +76,7 @@ import MobileScrollContainerPage from '../pages/MobileScrollContainerPage';
 import ModalsPage from '../pages/ModalsPage';
 import NativeFlatListPage from '../pages/NativeFlatListPage';
 import NativePickerPage from '../pages/NativePickerPage';
-import NativeSelectPage from '../pages/NativeSelectPage';
+import SelectPage from '../pages/SelectPage';
 import NativeTouchableNativeFeedbackPage from '../pages/NativeTouchableNativeFeedbackPage';
 import NativeTouchableOverlayPage from '../pages/NativeTouchableOverlayPage';
 import NavigationBarPage from '../pages/NavigationBarPage';
@@ -265,7 +265,7 @@ export const ROUTES_MAPPINGS = [
         path: ROUTES.SECTION_LIST,
         component: SectionListPage,
       },
-      { path: ROUTES.SELECT, component: NativeSelectPage },
+      { path: ROUTES.SELECT, component: SelectPage },
       { path: ROUTES.SLIDER, component: SlidersPage },
       { path: ROUTES.SPINNER, component: SpinnerPage },
       {

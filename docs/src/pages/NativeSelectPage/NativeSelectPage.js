@@ -18,12 +18,11 @@
 
 import React from 'react';
 
+import IntroBlurb from '../../components/IntroBlurb';
 import readme from '../../../../backpack-react-native/packages/react-native-bpk-component-select/README.md';
 import iosScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-select/screenshots/ios/default.png';
 import androidScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-select/screenshots/android/default.png';
-import IntroBlurb from '../../components/IntroBlurb';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
-import DocsPageWrapper from '../../components/DocsPageWrapper';
 
 const components = [
   {
@@ -52,27 +51,20 @@ const components = [
 
 const blurb = [
   <IntroBlurb>
-    Selects are styled to look like traditional dropdowns, however provide no
-    functionality. Instead they act as triggers for elements such as the Picker
-    component.
+    React Native selects are styled to look like traditional dropdowns, however
+    provide no functionality. Instead they act as triggers for elements such as
+    the Picker component.
   </IntroBlurb>,
 ];
 
-const NativeSelectSubPage = ({ ...rest }) => (
+const NativeSelectPage = ({ ...rest }) => (
   <DocsPageBuilder
     title="Select"
+    blurb={blurb}
     components={components}
     readme={readme}
     showMenu={false}
     {...rest}
-  />
-);
-
-const NativeSelectPage = () => (
-  <DocsPageWrapper
-    title="Select"
-    blurb={blurb}
-    nativeSubpage={<NativeSelectSubPage wrapped />}
   />
 );
 
