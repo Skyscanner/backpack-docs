@@ -241,7 +241,7 @@ const ComponentsLinks = [
       {
         id: 'STAR_RATING',
         route: routes.STAR_RATING,
-        children: 'Star rating',
+        children: 'Star Rating',
         tags: ['web', 'native', 'android'],
       },
       {
