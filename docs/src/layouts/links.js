@@ -78,7 +78,7 @@ const ComponentsLinks = [
       {
         id: 'STAR_RATING_INTERACTIVE',
         route: routes.STAR_RATING_INTERACTIVE,
-        children: 'Star Rating: Interactive',
+        children: 'Star rating: interactive',
         tags: ['android'],
       },
       {
