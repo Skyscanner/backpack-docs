@@ -364,7 +364,7 @@ const ComponentsLinks = [
         id: 'NATIVE_SELECT',
         route: routes.SELECT,
         children: 'Select',
-        tags: ['native'],
+        tags: ['native', 'web'],
       },
       {
         id: 'NATIVE_SWITCH',
