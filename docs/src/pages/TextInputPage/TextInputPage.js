@@ -23,6 +23,7 @@ import IntroBlurb from '../../components/IntroBlurb';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IOS from '../IOSTextInputPage';
 import Native from '../NativeTextInputPage';
+import Android from '../AndroidTextFieldPage';
 import Paragraph from '../../components/Paragraph';
 import { TEXT_VIEW } from '../../constants/routes';
 
@@ -42,6 +43,7 @@ const TextInputPage = () => (
     blurb={blurb}
     iosSubpage={<IOS wrapped />}
     nativeSubpage={<Native wrapped />}
+    androidSubpage={<Android wrapped />}
   />
 );
 
