@@ -29,4 +29,9 @@
     margin-top: $bpk-spacing-md;
     margin-left: $bpk-spacing-md;
   }
+
+  &__outline {
+    padding-bottom: $bpk-spacing-sm;
+    background-color: $bpk-color-blue-500;
+  }
 }
