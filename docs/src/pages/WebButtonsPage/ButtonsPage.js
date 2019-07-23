@@ -198,8 +198,9 @@ const components = [
     blurb: [
       <Paragraph>This button can be used on coloured backgrounds.</Paragraph>,
     ],
+    dark: true,
     examples: [
-      <div className={getClassName('bpkdocs-buttons-page__outline')}>
+      <div className={buttonContainerClassName}>
         <BpkButton className={buttonClassName} outline>
           Outline
         </BpkButton>
@@ -207,7 +208,7 @@ const components = [
           Disabled
         </BpkButton>
       </div>,
-      <div className={getClassName('bpkdocs-buttons-page__outline')}>
+      <div className={buttonContainerClassName}>
         <BpkButton className={buttonClassName} large outline>
           Outline
         </BpkButton>
