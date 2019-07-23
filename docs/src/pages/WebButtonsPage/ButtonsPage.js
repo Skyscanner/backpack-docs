@@ -193,6 +193,31 @@ const components = [
     ],
   },
   {
+    id: 'outline',
+    title: 'Outline',
+    blurb: [
+      <Paragraph>This button can be used on coloured backgrounds.</Paragraph>,
+    ],
+    examples: [
+      <div className={getClassName('bpkdocs-buttons-page__outline')}>
+        <BpkButton className={buttonClassName} outline>
+          Outline
+        </BpkButton>
+        <BpkButton className={buttonClassName} outline disabled>
+          Disabled
+        </BpkButton>
+      </div>,
+      <div className={getClassName('bpkdocs-buttons-page__outline')}>
+        <BpkButton className={buttonClassName} large outline>
+          Outline
+        </BpkButton>
+        <BpkButton className={buttonClassName} large outline disabled>
+          Disabled
+        </BpkButton>
+      </div>,
+    ],
+  },
+  {
     id: 'with-icons',
     title: 'With icons',
     blurb: [
