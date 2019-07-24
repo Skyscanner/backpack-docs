@@ -23,7 +23,7 @@ import nudgersReadme from 'bpk-component-nudger/README.md';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 import Paragraph from '../../components/Paragraph';
 
-class NudgerContainer extends Component {
+class NudgerContainer extends Component<{ buttonType: ?string }, {}> {
   constructor() {
     super();
 
@@ -37,6 +37,7 @@ class NudgerContainer extends Component {
   };
 
   render() {
+    const { buttonType } = this.props;
     return (
       <BpkNudger
         id="my-nudger"
@@ -46,6 +47,7 @@ class NudgerContainer extends Component {
         onChange={this.handleChange}
         decreaseButtonLabel="Decrease"
         increaseButtonLabel="Increase"
+        buttonType={buttonType}
       />
     );
   }
@@ -62,6 +64,17 @@ const components = [
       </Paragraph>,
     ],
     examples: [<NudgerContainer />],
+  },
+  {
+    id: 'outline',
+    title: 'Outline',
+    blurb: [
+      <Paragraph>
+        Outline version allows for the nudger to be used on dark backgrounds.
+      </Paragraph>,
+    ],
+    dark: true,
+    examples: [<NudgerContainer buttonType="outline" />],
   },
 ];
 
