@@ -242,7 +242,7 @@ const ComponentsLinks = [
         id: 'STAR_RATING',
         route: routes.STAR_RATING,
         children: 'Star rating',
-        tags: ['web', 'native', 'android'],
+        tags: ['web', 'native', 'android', 'ios'],
       },
       {
         id: 'BAR_CHART',
