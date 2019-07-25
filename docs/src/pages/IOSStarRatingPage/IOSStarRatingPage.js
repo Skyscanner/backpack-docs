@@ -38,9 +38,9 @@ const components = [
   },
 ];
 
-const IOSCardPage = ({ ...rest }) => (
+const IOSStarRatingPage = ({ ...rest }) => (
   <DocsPageBuilder
-    title="Card"
+    title="Star rating"
     components={components}
     readme={readme}
     iosDocId="BPKStarRating"
@@ -49,4 +49,4 @@ const IOSCardPage = ({ ...rest }) => (
   />
 );
 
-export default IOSCardPage;
+export default IOSStarRatingPage;
