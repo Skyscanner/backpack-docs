@@ -24,6 +24,7 @@ import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 import WebProgress from '../WebProgressPage';
 import NativeProgress from '../NativeProgressPage';
+import IOSProgress from '../IOSProgressBarPage';
 
 const ProgressPage = () => (
   <DocsPageWrapper
@@ -37,6 +38,7 @@ const ProgressPage = () => (
     ]}
     webSubpage={<WebProgress wrapped />}
     nativeSubpage={<NativeProgress wrapped />}
+    iosSubpage={<IOSProgress wrapped />}
   />
 );
 
