@@ -224,7 +224,7 @@ const ComponentsLinks = [
         id: 'PROGRESS',
         route: routes.PROGRESS,
         children: 'Progress bar',
-        tags: ['web', 'native'],
+        tags: ['web', 'native', 'ios'],
       },
       {
         id: 'TICKET',
