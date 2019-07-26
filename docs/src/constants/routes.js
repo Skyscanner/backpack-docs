@@ -60,6 +60,7 @@ export const BUTTON_LINK = '/components/button-link';
 export const ICON = '/components/icon';
 export const SPINNER = '/components/spinner';
 export const FLOATING_ACTION_BUTTON = '/components/floating-action-button';
+export const RATING = '/components/rating';
 export const TOAST = '/components/toast';
 export const TEXT_SPANS = '/components/text-spans';
 export const STAR_RATING_INTERACTIVE = '/components/star-rating-interactive';
