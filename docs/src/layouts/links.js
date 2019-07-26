@@ -236,7 +236,7 @@ const ComponentsLinks = [
         id: 'HORIZONTAL_NAV',
         route: routes.HORIZONTAL_NAV,
         children: 'Horizontal navigation',
-        tags: ['web', 'native', 'android'],
+        tags: ['web', 'native', 'android', 'ios'],
       },
       {
         id: 'FIELDSET',
