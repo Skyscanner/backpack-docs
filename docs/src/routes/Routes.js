@@ -63,6 +63,7 @@ import DialogsPage from '../pages/DialogsPage';
 import DrawerPage from '../pages/DrawerPage';
 import FieldsetsPage from '../pages/FieldsetsPage';
 import FloatingActionButtonPage from '../pages/FloatingActionButtonPage';
+import RatingPage from '../pages/RatingPage';
 import FormsPage from '../pages/FormsPage';
 import HorizontalGridPage from '../pages/HorizontalGridPage';
 import HorizontalNavPage from '../pages/HorizontalNavPage';
@@ -215,6 +216,10 @@ export const ROUTES_MAPPINGS = [
       {
         path: ROUTES.TEXT_SPANS,
         component: TextSpansPage,
+      },
+      {
+        path: ROUTES.RATING,
+        component: RatingPage,
       },
       { path: ROUTES.FORM, component: FormsPage },
       {
