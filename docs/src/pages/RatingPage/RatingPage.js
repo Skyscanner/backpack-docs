@@ -29,7 +29,7 @@ const Page = () => (
     title="Rating"
     blurb={[
       <IntroBlurb>
-        A rating components displays different scores given to some subject.
+        The rating component is used to represent a score as an exact number.
       </IntroBlurb>,
     ]}
     androidSubpage={<Android wrapped />}
