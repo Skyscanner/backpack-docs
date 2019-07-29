@@ -25,6 +25,7 @@ import IntroBlurb from '../../components/IntroBlurb';
 import Web from '../WebStarRatingPage';
 import Native from '../NativeStarRatingPage';
 import Android from '../AndroidStarRatingPage';
+import IOS from '../IOSStarRatingPage';
 
 const Page = () => (
   <DocsPageWrapper
@@ -37,6 +38,7 @@ const Page = () => (
     webSubpage={<Web wrapped />}
     nativeSubpage={<Native wrapped />}
     androidSubpage={<Android wrapped />}
+    iosSubpage={<IOS wrapped />}
   />
 );
 

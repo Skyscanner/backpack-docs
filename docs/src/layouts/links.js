@@ -112,6 +112,12 @@ const ComponentsLinks = [
         tags: ['android'],
       },
       {
+        id: 'RATING',
+        route: routes.RATING,
+        children: 'Rating',
+        tags: ['android'],
+      },
+      {
         id: 'FORM',
         route: routes.FORM,
         children: 'Form elements',
@@ -218,7 +224,7 @@ const ComponentsLinks = [
         id: 'PROGRESS',
         route: routes.PROGRESS,
         children: 'Progress bar',
-        tags: ['web', 'native'],
+        tags: ['web', 'native', 'ios'],
       },
       {
         id: 'TICKET',
@@ -230,7 +236,7 @@ const ComponentsLinks = [
         id: 'HORIZONTAL_NAV',
         route: routes.HORIZONTAL_NAV,
         children: 'Horizontal navigation',
-        tags: ['web', 'native', 'android'],
+        tags: ['web', 'native', 'android', 'ios'],
       },
       {
         id: 'FIELDSET',
@@ -242,7 +248,7 @@ const ComponentsLinks = [
         id: 'STAR_RATING',
         route: routes.STAR_RATING,
         children: 'Star rating',
-        tags: ['web', 'native', 'android'],
+        tags: ['web', 'native', 'android', 'ios'],
       },
       {
         id: 'BAR_CHART',
