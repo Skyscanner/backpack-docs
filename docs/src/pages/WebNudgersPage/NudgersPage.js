@@ -16,14 +16,23 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React, { Component } from 'react';
-import BpkNudger from 'bpk-component-nudger';
+import BpkNudger, { BpkConfigurableNudger } from 'bpk-component-nudger';
 import nudgersReadme from 'bpk-component-nudger/README.md';
+import { cssModules } from 'bpk-react-utils';
 
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 import Paragraph from '../../components/Paragraph';
 
-class NudgerContainer extends Component<{ buttonType: ?string }, {}> {
+import STYLES from './nudger-page.scss';
+
+const getClassName = cssModules(STYLES);
+class NudgerContainer extends Component<
+  { buttonType: ?string },
+  { value: number },
+> {
   constructor() {
     super();
 
@@ -37,7 +46,6 @@ class NudgerContainer extends Component<{ buttonType: ?string }, {}> {
   };
 
   render() {
-    const { buttonType } = this.props;
     return (
       <BpkNudger
         id="my-nudger"
@@ -47,7 +55,66 @@ class NudgerContainer extends Component<{ buttonType: ?string }, {}> {
         onChange={this.handleChange}
         decreaseButtonLabel="Decrease"
         increaseButtonLabel="Increase"
-        buttonType={buttonType}
+        buttonType={this.props.buttonType}
+      />
+    );
+  }
+}
+
+const options = ['Economy', 'Premium', 'Business', 'First'];
+const compareValues = (a: string, b: string): number => {
+  const [aIndex, bIndex] = [options.indexOf(a), options.indexOf(b)];
+  return aIndex - bIndex;
+};
+
+const incrementValue = (a: string): string => {
+  const currentIndex = options.indexOf(a);
+  const newIndex = currentIndex + 1;
+  if (currentIndex === -1 || newIndex >= options.length) {
+    return a;
+  }
+  return options[newIndex];
+};
+
+const decrementValue = (a: string): string => {
+  const index = options.indexOf(a) - 1;
+  if (index < 0) {
+    return a;
+  }
+  return options[index];
+};
+
+const formatValue = (a: string): string => a.toString();
+
+// eslint-disable-next-line react/no-multi-comp
+class ConfigurableNudgerContainer extends Component<{}, { value: string }> {
+  constructor() {
+    super();
+
+    this.state = {
+      value: 'Premium',
+    };
+  }
+
+  handleChange = value => {
+    this.setState({ value });
+  };
+
+  render() {
+    return (
+      <BpkConfigurableNudger
+        id="nudger"
+        min="Economy"
+        max="First"
+        value={this.state.value}
+        onChange={this.handleChange}
+        decreaseButtonLabel="Decrease"
+        increaseButtonLabel="Increase"
+        compareValues={compareValues}
+        incrementValue={incrementValue}
+        decrementValue={decrementValue}
+        formatValue={formatValue}
+        inputClassName={getClassName('bpk-nudger-configurable')}
       />
     );
   }
@@ -63,7 +130,7 @@ const components = [
         selected value. A minimum and maximum value need to be provided.
       </Paragraph>,
     ],
-    examples: [<NudgerContainer />],
+    examples: [<NudgerContainer buttonType="secondary" />],
   },
   {
     id: 'outline',
@@ -76,9 +143,20 @@ const components = [
     dark: true,
     examples: [<NudgerContainer buttonType="outline" />],
   },
+  {
+    id: 'configurable',
+    title: 'Configurable Nudger',
+    blurb: [
+      <Paragraph>
+        A configurable nudger to support non-numeric variants, for example dates
+        and strings.
+      </Paragraph>,
+    ],
+    examples: [<ConfigurableNudgerContainer />],
+  },
 ];
 
-const NudgersPage = ({ ...rest }) => (
+const NudgersPage = ({ ...rest }: { [string]: any }) => (
   <DocsPageBuilder
     title="Nudgers"
     components={components}
