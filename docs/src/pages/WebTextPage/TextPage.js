@@ -45,6 +45,9 @@ const components = [
         <BpkText textStyle="sm" tagName="p">
           {TEXT}
         </BpkText>
+        <BpkText textStyle="xs" tagName="p">
+          {TEXT}
+        </BpkText>
       </div>,
     ],
   },
