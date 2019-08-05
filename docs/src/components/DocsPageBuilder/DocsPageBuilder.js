@@ -215,7 +215,7 @@ const DocsPageBuilder = props => {
     props.usageTable
       ? Children.toArray([
           <Heading id="usage" level="h2">
-            Do&apos;s & Dont&apos;s
+            Usage advice
           </Heading>,
           <UsageTable data={props.usageTable} />,
         ])
