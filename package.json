@@ -216,6 +216,7 @@
   "greenkeeper": {
     "ignore": [
       "babel-loader",
+      "copy-webpack-plugin",
       "css-loader",
       "danger",
       "extract-text-webpack-plugin",
