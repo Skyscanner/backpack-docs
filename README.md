@@ -13,13 +13,13 @@
 
 For information on using Backpack components, please refer to the platform-specific repos:
 
-[Backpack for Web](https://github.io/Skyscanner/backpack/)
+[Backpack for Web](https://github.com/Skyscanner/backpack/)
 
-[Backpack for React Native](https://github.io/Skyscanner/backpack-react-native/)
+[Backpack for React Native](https://github.com/Skyscanner/backpack-react-native/)
 
-[Backpack for Android](https://github.io/Skyscanner/backpack-android/)
+[Backpack for Android](https://github.com/Skyscanner/backpack-android/)
 
-[Backpack for iOS](https://github.io/Skyscanner/backpack-ios/)
+[Backpack for iOS](https://github.com/Skyscanner/backpack-ios/)
 
 ## Contributing
 
