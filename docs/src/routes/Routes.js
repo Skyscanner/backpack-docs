@@ -104,6 +104,7 @@ import TicketsPage from '../pages/TicketsPage';
 import TooltipsPage from '../pages/TooltipsPage';
 import BagCheckPage from '../pages/BagCheckPage';
 import ToastPage from '../pages/ToastPage';
+import SnackbarPage from '../pages/SnackbarPage';
 import TextSpansPage from '../pages/TextSpansPage';
 import CheckboxPage from '../pages/CheckboxPage';
 import StarRatingInteractivePage from '../pages/StarRatingInteractrivePage';
@@ -220,6 +221,10 @@ export const ROUTES_MAPPINGS = [
       {
         path: ROUTES.RATING,
         component: RatingPage,
+      },
+      {
+        path: ROUTES.SNACKBAR,
+        component: SnackbarPage,
       },
       { path: ROUTES.FORM, component: FormsPage },
       {

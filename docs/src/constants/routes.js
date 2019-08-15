@@ -65,6 +65,7 @@ export const TOAST = '/components/toast';
 export const TEXT_SPANS = '/components/text-spans';
 export const STAR_RATING_INTERACTIVE = '/components/star-rating-interactive';
 export const CHECKBOX = '/components/checkbox';
+export const SNACKBAR = '/components/snackbar';
 export const FORM = '/components/form';
 export const CARD = '/components/card';
 export const CHIP = '/components/chip';
