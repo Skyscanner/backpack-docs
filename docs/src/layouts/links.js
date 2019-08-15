@@ -76,6 +76,12 @@ const ComponentsLinks = [
         tags: ['android'],
       },
       {
+        id: 'SNACKBAR',
+        route: routes.SNACKBAR,
+        children: 'Snackbar',
+        tags: ['android'],
+      },
+      {
         id: 'STAR_RATING_INTERACTIVE',
         route: routes.STAR_RATING_INTERACTIVE,
         children: 'Star rating: interactive',
