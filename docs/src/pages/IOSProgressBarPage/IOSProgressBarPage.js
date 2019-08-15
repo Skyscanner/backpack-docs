@@ -17,49 +17,36 @@
  */
 
 import React from 'react';
-import BpkText from 'bpk-component-text';
-import textReadme from 'bpk-component-text/README.md';
 
+import readme from '../../../../backpack-ios/Backpack/ProgressBar/README.md';
+import screenshotDefault from '../../../../backpack-ios/screenshots/ProgressBar/default.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
-
-const TEXT = 'Lorem ipsum';
 
 const components = [
   {
     id: 'default',
     title: 'Default',
-    examples: [
-      <div>
-        <BpkText textStyle="xxl" tagName="p">
-          {TEXT}
-        </BpkText>
-        <BpkText textStyle="xl" tagName="p">
-          {TEXT}
-        </BpkText>
-        <BpkText textStyle="lg" tagName="p">
-          {TEXT}
-        </BpkText>
-        <BpkText textStyle="base" tagName="p">
-          {TEXT}
-        </BpkText>
-        <BpkText textStyle="sm" tagName="p">
-          {TEXT}
-        </BpkText>
-        <BpkText textStyle="xs" tagName="p">
-          {TEXT}
-        </BpkText>
-      </div>,
+    screenshots: [
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotDefault}`,
+        altText: 'Progress bar for iOS.',
+        subText: '(iPhone 8 simulator)',
+      },
     ],
   },
 ];
 
-const TextPage = ({ ...rest }) => (
+const IOSProgressBarPage = ({ ...rest }) => (
   <DocsPageBuilder
-    title="Text"
-    readme={textReadme}
+    title="Progress bar"
     components={components}
+    readme={readme}
+    iosDocId="BPKProgressBar"
+    showMenu
     {...rest}
   />
 );
 
-export default TextPage;
+export default IOSProgressBarPage;

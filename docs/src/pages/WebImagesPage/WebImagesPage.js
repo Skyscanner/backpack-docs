@@ -21,6 +21,7 @@ import BpkImage, {
   BpkBackgroundImage,
   withLazyLoading,
   withLoadingBehavior,
+  BORDER_RADIUS_STYLES,
 } from 'bpk-component-image';
 import BpkText from 'bpk-component-text';
 import imagesReadme from 'bpk-component-image/README.md';
@@ -69,6 +70,31 @@ const components = [
         sizes={`(min-width: ${BREAKPOINTS.breakpointDesktop}) 48rem,
           (min-width: ${BREAKPOINTS.breakpointTablet}) calc(100vw - 18rem),
           calc(100vw - 4.5rem)`}
+      />,
+    ],
+  },
+  {
+    id: 'withBorderRadius',
+    title: 'With rounded corners',
+    examples: [
+      <BpkImage
+        altText="Lake"
+        width={816}
+        height={544}
+        src={image1}
+        srcSet={`${image1}?resize=320px:213px&quality=100 320w,
+          ${image1}?resize=640px:226px&quality=100 640w,
+          ${image1}?resize=1640px:1427px&quality=100 1640w,
+          ${image1}?resize=3200px:2133px&quality=100 3200w`}
+        // If the viewport is wider than the desktop-breakpoint,
+        // then the image will be 48rem wide. If the viewport
+        // is wider than the tablet-breakpoint it will be 18rem
+        // narrower than the viewport.
+        // Otherwise, it will take up all but 4.5rem.
+        sizes={`(min-width: ${BREAKPOINTS.breakpointDesktop}) 48rem,
+          (min-width: ${BREAKPOINTS.breakpointTablet}) calc(100vw - 18rem),
+          calc(100vw - 4.5rem)`}
+        borderRadiusStyle={BORDER_RADIUS_STYLES.sm}
       />,
     ],
   },

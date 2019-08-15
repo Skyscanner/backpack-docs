@@ -58,8 +58,8 @@ const UsageTable = props => {
     <BpkTable alternate {...rest}>
       <BpkTableHead>
         <BpkTableRow>
-          <BpkTableHeadCell alternate>Do&apos;s</BpkTableHeadCell>
-          <BpkTableHeadCell alternate>Dont&apos;s</BpkTableHeadCell>
+          <BpkTableHeadCell alternate>Do</BpkTableHeadCell>
+          <BpkTableHeadCell alternate>Don&apos;t</BpkTableHeadCell>
         </BpkTableRow>
       </BpkTableHead>
       <BpkTableBody>
