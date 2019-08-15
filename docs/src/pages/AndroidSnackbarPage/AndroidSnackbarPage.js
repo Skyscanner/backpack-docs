@@ -42,6 +42,7 @@ const components = [
 const AndroidSnackbarPage = ({ ...rest }) => (
   <DocsPageBuilder
     title="Snackbar"
+    androidDocId="net.skyscanner.backpack.snackbar"
     components={components}
     readme={readme}
     {...rest}
