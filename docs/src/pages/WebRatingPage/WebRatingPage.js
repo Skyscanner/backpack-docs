@@ -41,21 +41,21 @@ const components = [
     examples: [
       <div className={getClassName('bpk-docs-rating')}>
         <BpkRating
-          className={getClassName('bpk-docs-rating-margin')}
+          className={getClassName('bpk-docs-rating--margin')}
           ariaLabel="9 Excellent would recommend"
           title="Excellent"
           subtitle="This place was amazing"
           value={9}
         />
         <BpkRating
-          className={getClassName('bpk-docs-rating-margin')}
+          className={getClassName('bpk-docs-rating--margin')}
           ariaLabel="6.7 Average might recommend"
           title="Average"
           subtitle="Might recommend"
           value={6.7}
         />
         <BpkRating
-          className={getClassName('bpk-docs-rating-margin')}
+          className={getClassName('bpk-docs-rating--margin')}
           ariaLabel="2.3 Bad avoid here"
           title="Bad"
           subtitle="Avoid here"
