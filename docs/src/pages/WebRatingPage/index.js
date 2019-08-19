@@ -16,26 +16,6 @@
  * limitations under the License.
  */
 
-/* @flow strict */
+import page from './WebRatingPage';
 
-import React from 'react';
-
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import IntroBlurb from '../../components/IntroBlurb';
-import AndroidRating from '../AndroidRatingPage';
-import WebRating from '../WebRatingPage';
-
-const Page = () => (
-  <DocsPageWrapper
-    title="Rating"
-    blurb={[
-      <IntroBlurb>
-        The rating component is used to represent a score as an exact number.
-      </IntroBlurb>,
-    ]}
-    androidSubpage={<AndroidRating wrapped />}
-    webSubpage={<WebRating wrapped />}
-  />
-);
-
-export default Page;
+export default page;
