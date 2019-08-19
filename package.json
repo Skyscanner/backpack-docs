@@ -112,6 +112,7 @@
     "bpk-component-popover": "file:./backpack/packages/bpk-component-popover",
     "bpk-component-progress": "file:./backpack/packages/bpk-component-progress",
     "bpk-component-radio": "file:./backpack/packages/bpk-component-radio",
+    "bpk-component-rating": "file:./backpack/packages/bpk-component-rating",
     "bpk-component-router-link": "file:./backpack/packages/bpk-component-router-link",
     "bpk-component-rtl-toggle": "file:./backpack/packages/bpk-component-rtl-toggle",
     "bpk-component-scrollable-calendar": "file:./backpack/packages/bpk-component-scrollable-calendar",
