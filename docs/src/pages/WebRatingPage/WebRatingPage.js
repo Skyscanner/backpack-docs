@@ -34,8 +34,8 @@ const components = [
     title: 'Default',
     blurb: [
       <Paragraph>
-        The rating component has three colour states high, medium and low which
-        are used to display scores.
+        The rating component&apos;s appearance changes based on the value
+        provided.
       </Paragraph>,
     ],
     examples: [
