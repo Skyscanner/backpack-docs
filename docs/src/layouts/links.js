@@ -284,7 +284,7 @@ const ComponentsLinks = [
         id: 'DIALOG',
         route: routes.DIALOG,
         children: 'Dialog',
-        tags: ['web', 'android', 'ios'],
+        tags: ['web', 'android', 'native', 'ios'],
       },
       {
         id: 'NAVIGATION_BAR',
