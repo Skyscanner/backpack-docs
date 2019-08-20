@@ -25,6 +25,7 @@ import IntroBlurb from '../../components/IntroBlurb';
 import AndroidDialogs from '../AndroidDialogPage';
 import IOSDialogs from '../IOSDialogPage';
 import WebDialogs from '../WebDialogPage';
+import NativeDialogs from '../NativeDialogPage';
 
 const blurb = [
   <IntroBlurb>
@@ -40,6 +41,7 @@ const DialogsPage = () => (
     androidSubpage={<AndroidDialogs wrapped />}
     iosSubpage={<IOSDialogs wrapped />}
     webSubpage={<WebDialogs wrapped />}
+    nativeSubpage={<NativeDialogs wrapped />}
   />
 );
 
