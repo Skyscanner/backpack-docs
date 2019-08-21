@@ -27,7 +27,7 @@ import BpkCalendar, {
 import BpkMobileScrollContainer from 'bpk-component-mobile-scroll-container';
 import { cssModules } from 'bpk-react-utils';
 import calendarReadme from 'bpk-component-calendar/README.md';
-import addMonths from 'date-fns/add_months';
+import addMonths from 'date-fns/addMonths';
 import {
   weekDays,
   weekDaysArabic,
