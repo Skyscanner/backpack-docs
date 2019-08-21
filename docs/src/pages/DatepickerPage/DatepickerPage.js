@@ -29,9 +29,9 @@ import DocsPageWrapper from '../../components/DocsPageWrapper';
 import Paragraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
 
-const formatDate = date => format(date, 'DD/MM/YYYY');
-const formatMonth = date => format(date, 'MMMM YYYY');
-const formatDateFull = date => format(date, 'dddd, Do MMMM YYYY');
+const formatDate = date => format(date, 'dd/MM/yyyy');
+const formatMonth = date => format(date, 'MMMM yyyy');
+const formatDateFull = date => format(date, 'dddd, Do MMMM yyyy');
 
 class DatepickerContainer extends Component {
   constructor() {
