@@ -23,7 +23,7 @@ import PropTypes from 'prop-types';
 import { format } from 'date-fns';
 import BpkText from 'bpk-component-text';
 
-const formatDate = (date: Date): string => format(date, 'DD/MM/YYYY');
+const formatDate = (date: Date): string => format(date, 'dd/MM/yyyy');
 
 type Props = {
   date: Date,

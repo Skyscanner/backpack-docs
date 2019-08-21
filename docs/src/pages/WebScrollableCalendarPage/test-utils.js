@@ -18,13 +18,13 @@
 
 import format from 'date-fns/format';
 
-export const formatDateFull = date => format(date, 'dddd, Do MMMM YYYY');
+export const formatDateFull = date => format(date, 'dddd, Do MMMM yyyy');
 export const formatDateFullArabic = date => {
-  const dateString = 'dddd, DD، MMMM، YYYY';
+  const dateString = 'dddd, dd، MMMM، YYYY';
   const newString = dateString.replace('YYYY', date.getUTCFullYear());
   return format(date, newString);
 };
-export const formatMonth = date => format(date, 'MMMM YYYY');
+export const formatMonth = date => format(date, 'MMMM yyyy');
 export const formatMonthArabic = date => {
   const months = [
     'يناير',
