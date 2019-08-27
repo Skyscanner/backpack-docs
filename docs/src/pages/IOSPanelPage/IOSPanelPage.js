@@ -19,7 +19,9 @@
 import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/Panel/README.md';
-import screenshotAll from '../../../../backpack-ios/screenshots/Panel/all.png';
+import screenshotDefault from '../../../../backpack-ios/screenshots/Panel/default.png';
+import screenshotWithoutPadding from '../../../../backpack-ios/screenshots/Panel/without-padding.png';
+import screenshotElevated from '../../../../backpack-ios/screenshots/Panel/elevated.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -30,7 +32,33 @@ const components = [
       {
         width: 750,
         height: 1334,
-        src: `/${screenshotAll}`,
+        src: `/${screenshotDefault}`,
+        altText: 'Panel for iOS.',
+        subText: '(iPhone 8 simulator)',
+      },
+    ],
+  },
+  {
+    id: 'withoutPadding',
+    title: 'Without padding',
+    screenshots: [
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotWithoutPadding}`,
+        altText: 'Panel for iOS.',
+        subText: '(iPhone 8 simulator)',
+      },
+    ],
+  },
+  {
+    id: 'elevated',
+    title: 'Elevated',
+    screenshots: [
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotElevated}`,
         altText: 'Panel for iOS.',
         subText: '(iPhone 8 simulator)',
       },
