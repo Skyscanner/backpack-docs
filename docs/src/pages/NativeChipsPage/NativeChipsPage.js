@@ -21,8 +21,12 @@ import React from 'react';
 import readme from '../../../../backpack-react-native/packages/react-native-bpk-component-chip/README.md';
 import iosScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-chip/screenshots/ios/default.png';
 import iosScreenshotDismissible from '../../../../backpack-react-native/packages/react-native-bpk-component-chip/screenshots/ios/dismissible.png';
+import iosScreenshotOutline from '../../../../backpack-react-native/packages/react-native-bpk-component-chip/screenshots/ios/outline.png';
+import iosScreenshotOutlineDismissible from '../../../../backpack-react-native/packages/react-native-bpk-component-chip/screenshots/ios/outlineDismissible.png';
 import androidScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-chip/screenshots/android/default.png';
 import androidScreenshotDismissible from '../../../../backpack-react-native/packages/react-native-bpk-component-chip/screenshots/android/dismissible.png';
+import androidScreenshotOutline from '../../../../backpack-react-native/packages/react-native-bpk-component-chip/screenshots/android/outline.png';
+import androidScreenshotOutlineDismissible from '../../../../backpack-react-native/packages/react-native-bpk-component-chip/screenshots/android/outlineDismissible.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -68,6 +72,52 @@ const components = [
         height: 1920,
         src: `/${androidScreenshotDismissible}`,
         altText: 'Android Dismissible Chip Component',
+        subText: '(Google Pixel emulator)',
+      },
+    ],
+  },
+  {
+    id: 'outline',
+    title: 'Outline',
+    blurb: 'Outline Chips can be pressed to function as on/off toggles.',
+    screenshots: [
+      {
+        title: 'iOS',
+        width: 750,
+        height: 1334,
+        src: `/${iosScreenshotOutline}`,
+        altText: 'iOS Outline Chip Component',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        title: 'Android',
+        width: 1080,
+        height: 1920,
+        src: `/${androidScreenshotOutline}`,
+        altText: 'Android Outline Chip Component',
+        subText: '(Google Pixel emulator)',
+      },
+    ],
+  },
+  {
+    id: 'outline-dismissible',
+    title: 'Outline Dismissible',
+    blurb: 'Outline Dismissible chips have a close button to remove them.',
+    screenshots: [
+      {
+        title: 'iOS',
+        width: 750,
+        height: 1334,
+        src: `/${iosScreenshotOutlineDismissible}`,
+        altText: 'iOS Outline Dismissible Chip Component',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        title: 'Android',
+        width: 1080,
+        height: 1920,
+        src: `/${androidScreenshotOutlineDismissible}`,
+        altText: 'Android Outline Dismissible Chip Component',
         subText: '(Google Pixel emulator)',
       },
     ],
