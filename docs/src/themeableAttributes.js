@@ -47,6 +47,7 @@ import { themeAttributes as progressThemeAttributes } from 'bpk-component-progre
 import { themeAttributes as radioThemeAttributes } from 'bpk-component-radio';
 import { themeAttributes as sliderThemeAttributes } from 'bpk-component-slider';
 import { themeAttributes as spinnerThemeAttributes } from 'bpk-component-spinner';
+import { themeAttributes as starRatingThemeAttributes } from 'bpk-component-star-rating';
 import { themeAttributes as navigationBarThemeAttributes } from 'bpk-component-navigation-bar';
 
 const docsThemeAttributes = [
@@ -89,6 +90,7 @@ export default [
   ...radioThemeAttributes,
   ...sliderThemeAttributes,
   ...spinnerThemeAttributes,
+  ...starRatingThemeAttributes,
   ...navigationBarThemeAttributes,
   ...primaryMarkerThemeAttributes,
   ...secondaryMarkerThemeAttributes,
