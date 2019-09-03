@@ -599,6 +599,15 @@ const components = [
           smallLabel
         />
       </form>,
+      <form className={formClassName}>
+        <InputContainer
+          FormComponent={BpkCheckbox}
+          name="small_checkbox"
+          label="Invalid"
+          smallLabel
+          valid={false}
+        />
+      </form>,
     ],
     readme: checkboxReadme,
   },
@@ -613,6 +622,8 @@ const components = [
     ],
     examples: [
       <RadioContainer value="apples" />,
+      <br />,
+      <RadioContainer value="apples" valid={false} />,
       <br />,
       <RadioContainer value="apples" disabled />,
     ],
