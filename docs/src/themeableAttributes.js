@@ -17,6 +17,8 @@
  */
 
 import { themeAttributes as accordionThemeAttributes } from 'bpk-component-accordion';
+import { themeAttributes as badgeThemeAttributes } from 'bpk-component-badge';
+import { themeAttributes as bannerAlertThemeAttributes } from 'bpk-component-banner-alert';
 import { themeAttributes as barchartThemeAttributes } from 'bpk-component-barchart';
 import { themeAttributes as blockquoteThemeAttributes } from 'bpk-component-blockquote';
 import {
@@ -30,7 +32,10 @@ import { themeAttributes as calendarThemeAttributes } from 'bpk-component-calend
 import { themeAttributes as checkboxThemeAttributes } from 'bpk-component-checkbox';
 import { themeAttributes as datepickerThemeAttributes } from 'bpk-component-datepicker';
 import { themeAttributes as drawerThemeAttributes } from 'bpk-component-drawer';
+import { themeAttributes as fieldsetThemeAttributes } from 'bpk-component-fieldset';
+import { themeAttributes as formValidationThemeAttributes } from 'bpk-component-form-validation';
 import { themeAttributes as horizontalNavThemeAttributes } from 'bpk-component-horizontal-nav';
+import { themeAttributes as inputThemeAttributes } from 'bpk-component-input';
 import {
   linkAlternateThemeAttributes,
   themeAttributes as linkThemeAttributes,
@@ -45,9 +50,12 @@ import { themeAttributes as paginationThemeAttributes } from 'bpk-component-pagi
 import { themeAttributes as popoverThemeAttributes } from 'bpk-component-popover';
 import { themeAttributes as progressThemeAttributes } from 'bpk-component-progress';
 import { themeAttributes as radioThemeAttributes } from 'bpk-component-radio';
+import { themeAttributes as ratingThemeAttributes } from 'bpk-component-rating';
+import { themeAttributes as selectThemeAttributes } from 'bpk-component-select';
 import { themeAttributes as sliderThemeAttributes } from 'bpk-component-slider';
 import { themeAttributes as spinnerThemeAttributes } from 'bpk-component-spinner';
 import { themeAttributes as starRatingThemeAttributes } from 'bpk-component-star-rating';
+import { themeAttributes as textareaThemeAttributes } from 'bpk-component-textarea';
 import { themeAttributes as navigationBarThemeAttributes } from 'bpk-component-navigation-bar';
 
 const docsThemeAttributes = [
@@ -68,6 +76,8 @@ const docsThemeAttributes = [
 
 export default [
   ...accordionThemeAttributes,
+  ...badgeThemeAttributes,
+  ...bannerAlertThemeAttributes,
   ...barchartThemeAttributes,
   ...blockquoteThemeAttributes,
   ...buttonThemeAttributes,
@@ -79,7 +89,10 @@ export default [
   ...checkboxThemeAttributes,
   ...datepickerThemeAttributes,
   ...drawerThemeAttributes,
+  ...fieldsetThemeAttributes,
+  ...formValidationThemeAttributes,
   ...horizontalNavThemeAttributes,
+  ...inputThemeAttributes,
   ...linkThemeAttributes,
   ...linkAlternateThemeAttributes,
   ...modalThemeAttributes,
@@ -88,9 +101,12 @@ export default [
   ...popoverThemeAttributes,
   ...progressThemeAttributes,
   ...radioThemeAttributes,
+  ...ratingThemeAttributes,
+  ...selectThemeAttributes,
   ...sliderThemeAttributes,
   ...spinnerThemeAttributes,
   ...starRatingThemeAttributes,
+  ...textareaThemeAttributes,
   ...navigationBarThemeAttributes,
   ...primaryMarkerThemeAttributes,
   ...secondaryMarkerThemeAttributes,
