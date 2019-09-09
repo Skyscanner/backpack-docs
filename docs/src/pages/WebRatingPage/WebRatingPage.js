@@ -17,7 +17,7 @@
  */
 
 import React from 'react';
-import BpkRating from 'bpk-component-rating';
+import BpkRating, { RATING_SIZES } from 'bpk-component-rating';
 import ratingReadme from 'bpk-component-rating/README.md';
 import { cssModules } from 'bpk-react-utils';
 
@@ -60,6 +60,72 @@ const components = [
           title="Bad"
           subtitle="Avoid here"
           value={2.3}
+        />
+      </div>,
+    ],
+  },
+  {
+    id: 'small',
+    title: 'Small rating',
+    blurb: [],
+    examples: [
+      <div className={getClassName('bpk-docs-rating')}>
+        <BpkRating
+          className={getClassName('bpk-docs-rating--margin')}
+          ariaLabel="9 Excellent would recommend"
+          title="Excellent"
+          subtitle="This place was amazing"
+          value={9}
+          size={RATING_SIZES.sm}
+        />
+        <BpkRating
+          className={getClassName('bpk-docs-rating--margin')}
+          ariaLabel="6.7 Average might recommend"
+          title="Average"
+          subtitle="Might recommend"
+          value={6.7}
+          size={RATING_SIZES.sm}
+        />
+        <BpkRating
+          className={getClassName('bpk-docs-rating--margin')}
+          ariaLabel="2.3 Bad avoid here"
+          title="Bad"
+          subtitle="Avoid here"
+          value={2.3}
+          size={RATING_SIZES.sm}
+        />
+      </div>,
+    ],
+  },
+  {
+    id: 'large',
+    title: 'Large rating',
+    blurb: [],
+    examples: [
+      <div className={getClassName('bpk-docs-rating')}>
+        <BpkRating
+          className={getClassName('bpk-docs-rating--margin')}
+          ariaLabel="9 Excellent would recommend"
+          title="Excellent"
+          subtitle="This place was amazing"
+          value={9}
+          size={RATING_SIZES.lg}
+        />
+        <BpkRating
+          className={getClassName('bpk-docs-rating--margin')}
+          ariaLabel="6.7 Average might recommend"
+          title="Average"
+          subtitle="Might recommend"
+          value={6.7}
+          size={RATING_SIZES.lg}
+        />
+        <BpkRating
+          className={getClassName('bpk-docs-rating--margin')}
+          ariaLabel="2.3 Bad avoid here"
+          title="Bad"
+          subtitle="Avoid here"
+          value={2.3}
+          size={RATING_SIZES.lg}
         />
       </div>,
     ],
