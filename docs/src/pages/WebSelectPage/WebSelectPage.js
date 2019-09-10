@@ -33,15 +33,15 @@ const formClassName = getClassName('bpkdocs-forms-page__form');
 
 const components = [
   {
-    id: 'selects',
-    title: 'Selects (aka dropdowns)',
+    id: 'default',
+    title: 'Default',
     examples: [
       <form className={formClassName}>
-        <BpkLabel htmlFor="select">Select</BpkLabel>
+        <BpkLabel htmlFor="select_class">Class</BpkLabel>
         <InputContainer
           FormComponent={BpkSelect}
-          id="select"
-          name="select"
+          id="select_class"
+          name="select_class"
           value="economy"
           onChange={() => null}
         >
@@ -52,32 +52,34 @@ const components = [
         </InputContainer>
       </form>,
       <form className={formClassName}>
-        <BpkLabel htmlFor="select_invalid">Invalid select</BpkLabel>
+        <BpkLabel htmlFor="select_baggage">Baggage</BpkLabel>
         <InputContainer
           FormComponent={BpkSelect}
-          id="select_invalid"
-          name="select_invalid"
+          id="select_baggage"
+          name="select_baggage"
           value=""
           onChange={() => null}
-          valid={false}
         >
           <option value="" hidden>
             Please select...
           </option>
-          <option value="economy">Economy</option>
-          <option value="premium_economy">Premium Economy</option>
-          <option value="business">Business class</option>
-          <option value="first">First class</option>
+          <option value="15kg">15kg</option>
+          <option value="22kg">22kg</option>
+          <option value="35kg">35kg</option>
         </InputContainer>
       </form>,
+    ],
+  },
+  {
+    id: 'disabled',
+    title: 'Disabled',
+    examples: [
       <form className={formClassName}>
-        <BpkLabel htmlFor="select_disabled" disabled>
-          Disabled select
-        </BpkLabel>
+        <BpkLabel htmlFor="select_class_disabled">Class</BpkLabel>
         <InputContainer
           FormComponent={BpkSelect}
-          id="select_disabled"
-          name="select_disabled"
+          id="select_class_disabled"
+          name="select_class_disabled"
           value="economy"
           onChange={() => null}
           disabled
@@ -86,6 +88,64 @@ const components = [
           <option value="premium_economy">Premium Economy</option>
           <option value="business">Business class</option>
           <option value="first">First class</option>
+        </InputContainer>
+      </form>,
+      <form className={formClassName}>
+        <BpkLabel htmlFor="select_baggage_disabled">Baggage</BpkLabel>
+        <InputContainer
+          FormComponent={BpkSelect}
+          id="select_baggage_disabled"
+          name="select_baggage_disabled"
+          value=""
+          onChange={() => null}
+          disabled
+        >
+          <option value="" hidden>
+            Please select...
+          </option>
+          <option value="15kg">15kg</option>
+          <option value="22kg">22kg</option>
+          <option value="35kg">35kg</option>
+        </InputContainer>
+      </form>,
+    ],
+  },
+  {
+    id: 'invalid',
+    title: 'Invalid',
+    examples: [
+      <form className={formClassName}>
+        <BpkLabel htmlFor="select_class_invalid">Class</BpkLabel>
+        <InputContainer
+          FormComponent={BpkSelect}
+          id="select_class_invalid"
+          name="select_class_invalid"
+          value="economy"
+          onChange={() => null}
+          valid={false}
+        >
+          <option value="economy">Economy</option>
+          <option value="premium_economy">Premium Economy</option>
+          <option value="business">Business class</option>
+          <option value="first">First class</option>
+        </InputContainer>
+      </form>,
+      <form className={formClassName}>
+        <BpkLabel htmlFor="select_baggage_invalid">Baggage</BpkLabel>
+        <InputContainer
+          FormComponent={BpkSelect}
+          id="select_baggage_invalid"
+          name="select_baggage_invalid"
+          value=""
+          onChange={() => null}
+          valid={false}
+        >
+          <option value="" hidden>
+            Please select...
+          </option>
+          <option value="15kg">15kg</option>
+          <option value="22kg">22kg</option>
+          <option value="35kg">35kg</option>
         </InputContainer>
       </form>,
     ],
