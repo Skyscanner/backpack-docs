@@ -75,7 +75,9 @@ const components = [
     title: 'Disabled',
     examples: [
       <form className={formClassName}>
-        <BpkLabel htmlFor="select_class_disabled">Class</BpkLabel>
+        <BpkLabel disabled htmlFor="select_class_disabled">
+          Class
+        </BpkLabel>
         <InputContainer
           FormComponent={BpkSelect}
           id="select_class_disabled"
@@ -91,7 +93,9 @@ const components = [
         </InputContainer>
       </form>,
       <form className={formClassName}>
-        <BpkLabel htmlFor="select_baggage_disabled">Baggage</BpkLabel>
+        <BpkLabel disabled htmlFor="select_baggage_disabled">
+          Baggage
+        </BpkLabel>
         <InputContainer
           FormComponent={BpkSelect}
           id="select_baggage_disabled"
@@ -115,7 +119,9 @@ const components = [
     title: 'Invalid',
     examples: [
       <form className={formClassName}>
-        <BpkLabel htmlFor="select_class_invalid">Class</BpkLabel>
+        <BpkLabel valid={false} htmlFor="select_class_invalid">
+          Class
+        </BpkLabel>
         <InputContainer
           FormComponent={BpkSelect}
           id="select_class_invalid"
@@ -131,7 +137,9 @@ const components = [
         </InputContainer>
       </form>,
       <form className={formClassName}>
-        <BpkLabel htmlFor="select_baggage_invalid">Baggage</BpkLabel>
+        <BpkLabel valid={false} htmlFor="select_baggage_invalid">
+          Baggage
+        </BpkLabel>
         <InputContainer
           FormComponent={BpkSelect}
           id="select_baggage_invalid"
