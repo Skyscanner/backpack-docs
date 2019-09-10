@@ -85,6 +85,7 @@ export const TOOLTIP = '/components/tooltip';
 export const ACCORDION = '/components/accordion';
 export const NUDGER = '/components/nudger';
 export const PROGRESS = '/components/progress';
+export const RADIO_BUTTON = '/components/radio-button';
 export const TICKET = '/components/ticket';
 export const HORIZONTAL_NAV = '/components/horizontal-nav';
 export const FIELDSET = '/components/fieldset';
