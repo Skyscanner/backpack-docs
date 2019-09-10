@@ -31,7 +31,6 @@ import inputReadme from 'bpk-component-input/README.md';
 import labelReadme from 'bpk-component-label/README.md';
 import radioReadme from 'bpk-component-radio/README.md';
 import textareaReadme from 'bpk-component-textarea/README.md';
-import checkboxReadme from 'bpk-component-checkbox/README.md';
 import validationReadme from 'bpk-component-form-validation/README.md';
 
 import * as ROUTES from '../../constants/routes';
@@ -552,64 +551,11 @@ const components = [
     title: 'Checkboxes',
     blurb: [
       <BpkParagraph>
-        Similar to selects, checkboxes override the default styles in most
-        modern browsers. In some older browsers they simply fall back to the
-        browser default.
+        <BpkLink href={ROUTES.CHECKBOX}>
+          Checkboxes have been moved to their own page.
+        </BpkLink>
       </BpkParagraph>,
     ],
-    examples: [
-      <form className={formClassName}>
-        <InputContainer
-          FormComponent={BpkCheckbox}
-          name="checkbox"
-          label="Apples"
-          checked
-        />
-      </form>,
-      <form className={formClassName}>
-        <InputContainer
-          FormComponent={BpkCheckbox}
-          name="unchecked_checkbox"
-          label="Bananas"
-          checked={false}
-        />
-      </form>,
-      <form className={formClassName}>
-        <InputContainer
-          FormComponent={BpkCheckbox}
-          name="disabled_checkbox"
-          label="Strawberries"
-          disabled
-        />
-      </form>,
-      <form className={formClassName}>
-        <InputContainer
-          FormComponent={BpkCheckbox}
-          name="disabled_checked_checkbox"
-          label="Pears"
-          disabled
-          checked
-        />
-      </form>,
-      <form className={formClassName}>
-        <InputContainer
-          FormComponent={BpkCheckbox}
-          name="small_checkbox"
-          label="Oranges"
-          smallLabel
-        />
-      </form>,
-      <form className={formClassName}>
-        <InputContainer
-          FormComponent={BpkCheckbox}
-          name="small_checkbox"
-          label="Invalid"
-          smallLabel
-          valid={false}
-        />
-      </form>,
-    ],
-    readme: checkboxReadme,
   },
   {
     id: 'radios',

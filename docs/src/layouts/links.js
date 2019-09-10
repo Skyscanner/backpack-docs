@@ -73,7 +73,7 @@ const ComponentsLinks = [
         id: 'CHECKBOX',
         route: routes.CHECKBOX,
         children: 'Checkbox',
-        tags: ['android'],
+        tags: ['android', 'web'],
       },
       {
         id: 'SNACKBAR',
