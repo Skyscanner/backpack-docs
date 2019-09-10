@@ -29,7 +29,6 @@ import BpkBannerAlert, { ALERT_TYPES } from 'bpk-component-banner-alert';
 import { cssModules } from 'bpk-react-utils';
 import inputReadme from 'bpk-component-input/README.md';
 import labelReadme from 'bpk-component-label/README.md';
-import radioReadme from 'bpk-component-radio/README.md';
 import textareaReadme from 'bpk-component-textarea/README.md';
 import checkboxReadme from 'bpk-component-checkbox/README.md';
 import validationReadme from 'bpk-component-form-validation/README.md';
@@ -42,7 +41,6 @@ import IntroBlurb from '../../components/IntroBlurb';
 
 import InputContainer from './InputContainer';
 import STYLES from './forms-page.scss';
-import RadioContainer from './RadioContainer';
 
 const getClassName = cssModules(STYLES);
 const loremIpsum = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.';
@@ -616,18 +614,11 @@ const components = [
     title: 'Radio buttons',
     blurb: [
       <BpkParagraph>
-        Again, Backpack overrides the browser default styles for radio buttons.
-        In some older browsers they simply fall back to the browser default.
+        <BpkLink href={ROUTES.RADIO_BUTTON}>
+          Radio buttons have been moved to their own page.
+        </BpkLink>
       </BpkParagraph>,
     ],
-    examples: [
-      <RadioContainer value="apples" />,
-      <br />,
-      <RadioContainer value="apples" valid={false} />,
-      <br />,
-      <RadioContainer value="apples" disabled />,
-    ],
-    readme: radioReadme,
   },
   {
     id: 'labels',

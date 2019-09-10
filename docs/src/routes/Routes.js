@@ -88,6 +88,7 @@ import PanelPage from '../pages/PanelPage';
 import PhoneInputPage from '../pages/PhoneInputPage';
 import PopoversPage from '../pages/PopoversPage';
 import ProgressPage from '../pages/ProgressPage';
+import RadioButtonPage from '../pages/RadioButtonPage';
 import ScrollableCalendarPage from '../pages/ScrollableCalendarPage';
 import SectionListPage from '../pages/SectionListPage';
 import SlidersPage from '../pages/SlidersPage';
@@ -267,6 +268,10 @@ export const ROUTES_MAPPINGS = [
       { path: ROUTES.PICKER, component: NativePickerPage },
       { path: ROUTES.POPOVER, component: PopoversPage },
       { path: ROUTES.PROGRESS, component: ProgressPage },
+      {
+        path: ROUTES.RADIO_BUTTON,
+        component: RadioButtonPage,
+      },
       {
         path: ROUTES.SCROLLABLE_CALENDAR,
         component: ScrollableCalendarPage,
