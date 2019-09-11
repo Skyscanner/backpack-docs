@@ -233,6 +233,12 @@ const ComponentsLinks = [
         tags: ['web', 'native', 'ios'],
       },
       {
+        id: 'RADIO_BUTTON',
+        route: routes.RADIO_BUTTON,
+        children: 'Radio button',
+        tags: ['web'],
+      },
+      {
         id: 'TICKET',
         route: routes.TICKET,
         children: 'Ticket',
