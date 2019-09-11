@@ -51,7 +51,7 @@ const blurb = [
 const WebRadioButtonsPage = ({ ...rest }) => (
   <DocsPageBuilder
     title="Radio buttons"
-    sassdocId="forms-mixin-bpk-radio-buttons"
+    sassdocId="forms-mixin-bpk-radio"
     blurb={blurb}
     components={components}
     readme={readme}
