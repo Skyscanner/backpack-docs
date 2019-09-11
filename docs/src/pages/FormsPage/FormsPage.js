@@ -645,6 +645,7 @@ const components = [
       <BpkLabel>This is a label</BpkLabel>,
       <BpkLabel required>This is a required label</BpkLabel>,
       <BpkLabel disabled>This is a disabled label</BpkLabel>,
+      <BpkLabel valid={false}>This is an invalid label</BpkLabel>,
     ],
     readme: labelReadme,
   },
