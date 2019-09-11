@@ -16,26 +16,6 @@
  * limitations under the License.
  */
 
-/* @flow strict */
+import page from './WebCheckboxPage';
 
-import React from 'react';
-
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import IntroBlurb from '../../components/IntroBlurb';
-import AndroidPage from '../AndroidCheckboxPage';
-import WebPage from '../WebCheckboxPage';
-
-const Page = () => (
-  <DocsPageWrapper
-    title="Checkbox"
-    blurb={[
-      <IntroBlurb>
-        Checkboxes allow the user to select one or more items from a set.
-      </IntroBlurb>,
-    ]}
-    androidSubpage={<AndroidPage wrapped />}
-    webSubpage={<WebPage wrapped />}
-  />
-);
-
-export default Page;
+export default page;
