@@ -21,6 +21,7 @@ import React from 'react';
 import readme from '../../../../backpack-ios/Backpack/Chip/README.md';
 import screenshotDefault from '../../../../backpack-ios/screenshots/Chip/default.png';
 import screenshotWithoutShadow from '../../../../backpack-ios/screenshots/Chip/without-shadow.png';
+import screenshotWithBackgroundColor from '../../../../backpack-ios/screenshots/Chip/background-color.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -45,6 +46,19 @@ const components = [
         width: 750,
         height: 1334,
         src: `/${screenshotWithoutShadow}`,
+        altText: 'Chips for iOS.',
+        subText: '(iPhone 8 simulator)',
+      },
+    ],
+  },
+  {
+    id: 'withCustomBackgroundColor',
+    title: 'With custom background color',
+    screenshots: [
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotWithBackgroundColor}`,
         altText: 'Chips for iOS.',
         subText: '(iPhone 8 simulator)',
       },
