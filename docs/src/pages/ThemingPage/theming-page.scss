@@ -27,28 +27,4 @@
   &__swatch--primary {
     @include bpk-apply-primary-color-to(background-color);
   }
-
-  &__swatch--gray-50 {
-    @include bpk-apply-gray-50-to(background-color);
-  }
-
-  &__swatch--gray-100 {
-    @include bpk-apply-gray-100-to(background-color);
-  }
-
-  &__swatch--gray-300 {
-    @include bpk-apply-gray-300-to(background-color);
-  }
-
-  &__swatch--gray-500 {
-    @include bpk-apply-gray-500-to(background-color);
-  }
-
-  &__swatch--gray-700 {
-    @include bpk-apply-gray-700-to(background-color);
-  }
-
-  &__swatch--gray-900 {
-    @include bpk-apply-gray-900-to(background-color);
-  }
 }
