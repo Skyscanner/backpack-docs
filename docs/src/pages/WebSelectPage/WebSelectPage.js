@@ -17,14 +17,17 @@
  */
 
 import React from 'react';
+import BpkLink from 'bpk-component-link';
 import BpkLabel from 'bpk-component-label';
 import BpkSelect from 'bpk-component-select';
 import { cssModules } from 'bpk-react-utils';
 import readme from 'bpk-component-select/README.md';
 
+import * as ROUTES from '../../constants/routes';
 import InputContainer from '../FormsPage/InputContainer';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 import IntroBlurb from '../../components/IntroBlurb';
+import BpkParagraph from '../../components/Paragraph';
 import STYLES from '../FormsPage/forms-page.scss';
 
 const getClassName = cssModules(STYLES);
@@ -156,6 +159,18 @@ const components = [
           <option value="35kg">35kg</option>
         </InputContainer>
       </form>,
+    ],
+  },
+  {
+    id: 'docked-inputs-and-selects',
+    title: 'Docked selects',
+    blurb: [
+      <BpkParagraph>
+        <BpkLink href={ROUTES.TEXT_INPUT}>
+          Refer to the text-input page for information on how selects can be
+          docked.
+        </BpkLink>
+      </BpkParagraph>,
     ],
   },
 ];
