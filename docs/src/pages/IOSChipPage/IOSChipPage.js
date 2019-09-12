@@ -19,7 +19,8 @@
 import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/Chip/README.md';
-import screenshotAll from '../../../../backpack-ios/screenshots/Chip/all.png';
+import screenshotDefault from '../../../../backpack-ios/screenshots/Chip/default.png';
+import screenshotWithoutShadow from '../../../../backpack-ios/screenshots/Chip/without-shadow.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -30,7 +31,20 @@ const components = [
       {
         width: 750,
         height: 1334,
-        src: `/${screenshotAll}`,
+        src: `/${screenshotDefault}`,
+        altText: 'Chips for iOS.',
+        subText: '(iPhone 8 simulator)',
+      },
+    ],
+  },
+  {
+    id: 'withoutShadow',
+    title: 'Without shadow',
+    screenshots: [
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotWithoutShadow}`,
         altText: 'Chips for iOS.',
         subText: '(iPhone 8 simulator)',
       },
