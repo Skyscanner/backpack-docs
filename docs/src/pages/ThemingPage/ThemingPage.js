@@ -223,35 +223,6 @@ const webComponents = [
             whiteColor
             className={getClassName('bpkdocs-theming-page__swatch--primary')}
           />
-          <ColorSwatch
-            name="color-gray-50"
-            border
-            className={getClassName('bpkdocs-theming-page__swatch--gray-50')}
-          />
-          <ColorSwatch
-            name="color-gray-100"
-            className={getClassName('bpkdocs-theming-page__swatch--gray-100')}
-          />
-          <ColorSwatch
-            name="color-gray-300"
-            whiteColor
-            className={getClassName('bpkdocs-theming-page__swatch--gray-300')}
-          />
-          <ColorSwatch
-            name="color-gray-500"
-            whiteColor
-            className={getClassName('bpkdocs-theming-page__swatch--gray-500')}
-          />
-          <ColorSwatch
-            name="color-gray-700"
-            whiteColor
-            className={getClassName('bpkdocs-theming-page__swatch--gray-700')}
-          />
-          <ColorSwatch
-            name="color-gray-900"
-            whiteColor
-            className={getClassName('bpkdocs-theming-page__swatch--gray-900')}
-          />
         </div>
       </div>,
     ],
