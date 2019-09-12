@@ -25,7 +25,6 @@ import BpkTextarea from 'bpk-component-textarea';
 import BpkRouterLink from 'bpk-component-router-link';
 import BpkInput from 'bpk-component-input';
 import BpkFormValidation from 'bpk-component-form-validation';
-import BpkBannerAlert, { ALERT_TYPES } from 'bpk-component-banner-alert';
 import { cssModules } from 'bpk-react-utils';
 import labelReadme from 'bpk-component-label/README.md';
 import textareaReadme from 'bpk-component-textarea/README.md';
@@ -48,22 +47,6 @@ necessitatibus reiciendis, porro temporibus expedita excepturi! Nostrum pariatur
 laudantium quis, tempore iste non, nam magnam.`;
 
 const formClassName = getClassName('bpkdocs-forms-page__form');
-const placeClassName = getClassName('bpkdocs-forms-page__place');
-const dateClassName = getClassName('bpkdocs-forms-page__date');
-const numberClassName = getClassName('bpkdocs-forms-page__number');
-const timeClassName = getClassName('bpkdocs-forms-page__time');
-const destinationClassName = getClassName(
-  'bpkdocs-forms-page__hotels-destination',
-);
-const pickupClassName = getClassName(
-  'bpkdocs-forms-page__car-hire-pickup-location',
-);
-const containerClassName = [
-  'bpkdocs-forms-page__form',
-  'bpkdocs-forms-page__form--desktop-only',
-]
-  .map(getClassName)
-  .join(' ');
 
 const blurb = [
   <IntroBlurb>A range of common inputs for capturing user data.</IntroBlurb>,
@@ -76,7 +59,7 @@ const components = [
     blurb: [
       <BpkParagraph>
         <BpkLink href={ROUTES.TEXT_INPUT}>
-          Inputs have been moved to their own page.
+          Text inputs have been moved to their own page.
         </BpkLink>
       </BpkParagraph>,
     ],
@@ -95,255 +78,12 @@ const components = [
   {
     id: 'docked-inputs-and-selects',
     title: 'Docked inputs & selects',
-    blurb:
-      'Both inputs and selects can be docked together to build a one-line form.',
-    examples: [
-      <div className={getClassName('bpkdocs-forms-page__viewport-alert')}>
-        <BpkBannerAlert
-          type={ALERT_TYPES.WARN}
-          message="These are only suitable for larger viewports - try viewing on a desktop device."
-        />
-      </div>,
-      <form className={containerClassName}>
-        <div>
-          <BpkLabel htmlFor="input_origin" className={placeClassName}>
-            From
-          </BpkLabel>
-          <BpkLabel htmlFor="input_destination" className={placeClassName}>
-            To
-          </BpkLabel>
-          <BpkLabel htmlFor="input_outbound" className={dateClassName}>
-            Depart
-          </BpkLabel>
-          <BpkLabel htmlFor="input_inbound" className={dateClassName}>
-            Return
-          </BpkLabel>
-        </div>
-        <div>
-          <InputContainer
-            FormComponent={BpkInput}
-            id="input_origin"
-            name="input_origin"
-            value="Edinburgh"
-            placeholder="Country, city or airport"
-            onChange={() => null}
-            className={placeClassName}
-            dockedFirst
-            large
-          />
-          <InputContainer
-            FormComponent={BpkInput}
-            id="input_destination"
-            name="input_destination"
-            value=""
-            placeholder="Country, city or airport"
-            onChange={() => null}
-            className={placeClassName}
-            dockedMiddle
-            large
-          />
-          <InputContainer
-            FormComponent={BpkInput}
-            id="input_outbound"
-            name="input_outbound"
-            value={new Date().toLocaleDateString()}
-            placeholder="Depature date"
-            onChange={() => null}
-            className={dateClassName}
-            dockedMiddle
-            large
-          />
-          <InputContainer
-            FormComponent={BpkInput}
-            id="input_inbound"
-            name="input_inbound"
-            value={new Date(
-              new Date().getTime() + 24 * 60 * 60 * 1000,
-            ).toLocaleDateString()}
-            placeholder="Return date"
-            onChange={() => null}
-            className={dateClassName}
-            dockedLast
-            large
-          />
-        </div>
-      </form>,
-      <form className={containerClassName}>
-        <div>
-          <BpkLabel
-            htmlFor="input_hotels_destination"
-            className={destinationClassName}
-          >
-            Find hotel deals
-          </BpkLabel>
-          <BpkLabel htmlFor="input_checkin" className={dateClassName}>
-            Check-in
-          </BpkLabel>
-          <BpkLabel htmlFor="input_checkout" className={dateClassName}>
-            Check-out
-          </BpkLabel>
-          <BpkLabel htmlFor="input_guests" className={numberClassName}>
-            Guests
-          </BpkLabel>
-          <BpkLabel htmlFor="input_rooms" className={numberClassName}>
-            Rooms
-          </BpkLabel>
-        </div>
-        <div>
-          <InputContainer
-            FormComponent={BpkInput}
-            id="input_hotels_destination"
-            name="input_hotels_destination"
-            value=""
-            placeholder="Destination or hotel name"
-            onChange={() => null}
-            className={destinationClassName}
-            dockedFirst
-            large
-          />
-          <InputContainer
-            FormComponent={BpkInput}
-            id="input_checkin"
-            name="input_checkin"
-            value={new Date().toLocaleDateString()}
-            placeholder=""
-            onChange={() => null}
-            className={dateClassName}
-            dockedMiddle
-            large
-          />
-          <InputContainer
-            FormComponent={BpkInput}
-            id="input_checkout"
-            name="input_checkout"
-            value={new Date(
-              new Date().getTime() + 24 * 60 * 60 * 1000,
-            ).toLocaleDateString()}
-            placeholder=""
-            onChange={() => null}
-            className={dateClassName}
-            dockedMiddle
-            large
-          />
-          <InputContainer
-            FormComponent={BpkSelect}
-            id="input_guests"
-            name="input_guests"
-            value="2"
-            onChange={() => null}
-            className={numberClassName}
-            dockedMiddle
-            large
-          >
-            <option value={0}>0</option>
-            <option value={1}>1</option>
-            <option value={2}>2</option>
-            <option value={3}>3</option>
-          </InputContainer>
-          <InputContainer
-            FormComponent={BpkSelect}
-            id="input_rooms"
-            name="input_rooms"
-            value="1"
-            onChange={() => null}
-            className={numberClassName}
-            dockedLast
-            large
-          >
-            <option value={0}>0</option>
-            <option value={1}>1</option>
-            <option value={2}>2</option>
-            <option value={3}>3</option>
-          </InputContainer>
-        </div>
-      </form>,
-      <form className={containerClassName}>
-        <div>
-          <BpkLabel htmlFor="input_pickup_location" className={pickupClassName}>
-            Pick-up location
-          </BpkLabel>
-          <BpkLabel htmlFor="input_pickup_date" className={dateClassName}>
-            Pick-up date
-          </BpkLabel>
-          <BpkLabel htmlFor="input_pickup_time" className={timeClassName}>
-            Pick-up time
-          </BpkLabel>
-          <BpkLabel htmlFor="input_dropoff_date" className={dateClassName}>
-            Drop-off date
-          </BpkLabel>
-          <BpkLabel htmlFor="input_dropoff_time" className={timeClassName}>
-            Drop-off time
-          </BpkLabel>
-        </div>
-        <div>
-          <InputContainer
-            FormComponent={BpkInput}
-            id="input_pickup_location"
-            name="input_pickup_location"
-            value=""
-            placeholder="City or airport"
-            onChange={() => null}
-            className={pickupClassName}
-            dockedFirst
-            large
-          />
-          <InputContainer
-            FormComponent={BpkInput}
-            id="input_pickup_date"
-            name="input_pickup_date"
-            value={new Date().toLocaleDateString()}
-            placeholder=""
-            onChange={() => null}
-            className={dateClassName}
-            dockedMiddle
-            large
-          />
-          <InputContainer
-            FormComponent={BpkSelect}
-            id="input_pickup_time"
-            name="input_pickup_time"
-            value="10:00"
-            placeholder=""
-            onChange={() => null}
-            className={timeClassName}
-            dockedMiddle
-            large
-          >
-            <option value="10:00">10:00</option>
-            <option value="10:15">10:15</option>
-            <option value="10:30">10:30</option>
-            <option value="10:45">10:45</option>
-          </InputContainer>
-          <InputContainer
-            FormComponent={BpkInput}
-            id="input_dropoff_date"
-            name="input_dropoff_date"
-            value={new Date(
-              new Date().getTime() + 24 * 60 * 60 * 1000,
-            ).toLocaleDateString()}
-            placeholder=""
-            onChange={() => null}
-            className={dateClassName}
-            dockedMiddle
-            large
-          />
-          <InputContainer
-            FormComponent={BpkSelect}
-            id="input_dropoff_time"
-            name="input_dropoff_time"
-            value="10:00"
-            onChange={() => null}
-            className={timeClassName}
-            dockedLast
-            large
-          >
-            <option value="10:00">10:00</option>
-            <option value="10:15">10:15</option>
-            <option value="10:30">10:30</option>
-            <option value="10:45">10:45</option>
-          </InputContainer>
-        </div>
-      </form>,
+    blurb: [
+      <BpkParagraph>
+        <BpkLink href={ROUTES.TEXT_INPUT}>
+          Docked inputs are now part of the text input page.
+        </BpkLink>
+      </BpkParagraph>,
     ],
   },
   {
