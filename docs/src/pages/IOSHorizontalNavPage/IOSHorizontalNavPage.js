@@ -21,8 +21,8 @@ import React from 'react';
 import readme from '../../../../backpack-ios/Backpack/HorizontalNavigation/README.md';
 import screenshotDefault from '../../../../backpack-ios/screenshots/HorizontalNavigation/default.png';
 import screenshotSmall from '../../../../backpack-ios/screenshots/HorizontalNavigation/small.png';
-import screenshotWithIcons from '../../../../backpack-ios/screenshots/HorizontalNavigation/withIcons.png';
-import screenshotNoUnderline from '../../../../backpack-ios/screenshots/HorizontalNavigation/withoutUnderline.png';
+import screenshotWithIcons from '../../../../backpack-ios/screenshots/HorizontalNavigation/with-icons.png';
+import screenshotNoUnderline from '../../../../backpack-ios/screenshots/HorizontalNavigation/without-underline.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

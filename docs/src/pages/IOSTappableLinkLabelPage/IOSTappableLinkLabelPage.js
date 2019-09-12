@@ -20,7 +20,7 @@ import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/TappableLinkLabel/README.md';
 import screenshotMultiple from '../../../../backpack-ios/screenshots/TappableLinkLabel/multiple.png';
-import screenshotAlternate from '../../../../backpack-ios/screenshots/TappableLinkLabel/alternateStyle.png';
+import screenshotAlternate from '../../../../backpack-ios/screenshots/TappableLinkLabel/alternate-style.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
