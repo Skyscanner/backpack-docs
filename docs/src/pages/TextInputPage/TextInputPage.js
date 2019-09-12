@@ -22,6 +22,7 @@ import BpkRouterLink from 'bpk-component-router-link';
 import IntroBlurb from '../../components/IntroBlurb';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IOS from '../IOSTextInputPage';
+import Web from '../WebTextInputPage';
 import Native from '../NativeTextInputPage';
 import Android from '../AndroidTextFieldPage';
 import Paragraph from '../../components/Paragraph';
@@ -44,6 +45,7 @@ const TextInputPage = () => (
     iosSubpage={<IOS wrapped />}
     nativeSubpage={<Native wrapped />}
     androidSubpage={<Android wrapped />}
+    webSubpage={<Web wrapped />}
   />
 );
 

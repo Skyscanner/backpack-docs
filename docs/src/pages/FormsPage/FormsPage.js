@@ -23,11 +23,10 @@ import BpkSelect from 'bpk-component-select';
 import BpkCheckbox from 'bpk-component-checkbox';
 import BpkTextarea from 'bpk-component-textarea';
 import BpkRouterLink from 'bpk-component-router-link';
-import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
+import BpkInput from 'bpk-component-input';
 import BpkFormValidation from 'bpk-component-form-validation';
 import BpkBannerAlert, { ALERT_TYPES } from 'bpk-component-banner-alert';
 import { cssModules } from 'bpk-react-utils';
-import inputReadme from 'bpk-component-input/README.md';
 import labelReadme from 'bpk-component-label/README.md';
 import textareaReadme from 'bpk-component-textarea/README.md';
 import validationReadme from 'bpk-component-form-validation/README.md';
@@ -74,146 +73,13 @@ const components = [
   {
     id: 'inputs',
     title: 'Inputs',
-    blurb,
-    examples: [
-      <form className={formClassName}>
-        <BpkLabel htmlFor="input">Input</BpkLabel>
-        <InputContainer
-          FormComponent={BpkInput}
-          id="input"
-          name="input"
-          value="Edinburgh"
-          placeholder="Country, city or airport"
-          onChange={() => null}
-        />
-      </form>,
-      <form className={formClassName}>
-        <BpkLabel htmlFor="input_placeholder">Input (placeholder)</BpkLabel>
-        <InputContainer
-          FormComponent={BpkInput}
-          id="input_placeholder"
-          name="input_placeholder"
-          value=""
-          placeholder="Country, city or airport"
-          onChange={() => null}
-        />
-      </form>,
-      <form className={formClassName}>
-        <BpkLabel htmlFor="input_valid">Valid input</BpkLabel>
-        <InputContainer
-          FormComponent={BpkInput}
-          id="input_valid"
-          name="input_valid"
-          value="Edinburgh"
-          placeholder="Country, city or airport"
-          onChange={() => null}
-          valid
-        />
-      </form>,
-      <form className={formClassName}>
-        <BpkLabel htmlFor="input_invalid">Invalid input</BpkLabel>
-        <InputContainer
-          FormComponent={BpkInput}
-          id="input_invalid"
-          name="input_invalid"
-          value="Edinbrvgh"
-          placeholder="Country, city or airport"
-          onChange={() => null}
-          valid={false}
-        />
-      </form>,
-      <form className={formClassName}>
-        <BpkLabel htmlFor="input_clearable">Clearable while editing</BpkLabel>
-        <InputContainer
-          FormComponent={BpkInput}
-          id="input_clearable"
-          name="input_clearable"
-          value="Edinburgh"
-          placeholder="Country, city or airport"
-          onChange={() => null}
-          clearButtonMode="whileEditing"
-          onClear={() => null}
-          clearButtonLabel="Clear field"
-        />
-      </form>,
-      <form className={formClassName}>
-        <BpkLabel htmlFor="input_clearable">Always clearable</BpkLabel>
-        <InputContainer
-          FormComponent={BpkInput}
-          id="input_clearable"
-          name="input_clearable"
-          value="Edinburgh"
-          placeholder="Country, city or airport"
-          onChange={() => null}
-          clearButtonMode="always"
-          onClear={() => null}
-          clearButtonLabel="Clear field"
-        />
-      </form>,
-      <form className={formClassName}>
-        <BpkLabel htmlFor="input_disabled" disabled>
-          Disabled input
-        </BpkLabel>
-        <InputContainer
-          FormComponent={BpkInput}
-          id="input_disabled"
-          name="input_disabled"
-          value="Edinburgh"
-          placeholder="Country, city or airport"
-          onChange={() => null}
-          disabled
-        />
-      </form>,
-      <form className={formClassName}>
-        <BpkLabel htmlFor="input_email">Email input</BpkLabel>
-        <InputContainer
-          FormComponent={BpkInput}
-          type={INPUT_TYPES.email}
-          id="input_email"
-          name="input_email"
-          value="example@example.com"
-          placeholder="Email address"
-          onChange={() => null}
-        />
-      </form>,
-      <form className={formClassName}>
-        <BpkLabel htmlFor="input_number">Number input</BpkLabel>
-        <InputContainer
-          FormComponent={BpkInput}
-          type={INPUT_TYPES.number}
-          id="input_number"
-          name="input_number"
-          value="0"
-          placeholder="Number of passengers"
-          onChange={() => null}
-        />
-      </form>,
-      <form className={formClassName}>
-        <BpkLabel htmlFor="input_password">Password input</BpkLabel>
-        <InputContainer
-          FormComponent={BpkInput}
-          type={INPUT_TYPES.password}
-          id="input_password"
-          name="input_password"
-          value="letmein"
-          placeholder="Password"
-          onChange={() => null}
-        />
-      </form>,
-      <form className={formClassName}>
-        <BpkLabel htmlFor="input_telephone">Telephone input</BpkLabel>
-        <InputContainer
-          FormComponent={BpkInput}
-          type={INPUT_TYPES.tel}
-          id="input_telephone"
-          name="input_telephone"
-          value="+441234567890"
-          placeholder="Phone number"
-          onChange={() => null}
-        />
-      </form>,
+    blurb: [
+      <BpkParagraph>
+        <BpkLink href={ROUTES.TEXT_INPUT}>
+          Inputs have been moved to their own page.
+        </BpkLink>
+      </BpkParagraph>,
     ],
-    readme: inputReadme,
   },
   {
     id: 'selects',

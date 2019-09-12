@@ -346,7 +346,7 @@ const ComponentsLinks = [
         id: 'NATIVE_INPUT',
         route: routes.TEXT_INPUT,
         children: 'Text input',
-        tags: ['native', 'ios', 'android'],
+        tags: ['native', 'ios', 'android', 'web'],
       },
       {
         id: 'NATIVE_TEXT_VIEW',
