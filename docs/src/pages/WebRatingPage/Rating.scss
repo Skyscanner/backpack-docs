@@ -25,4 +25,8 @@
   &--margin {
     margin-right: $bpk-spacing-lg;
   }
+
+  &-vertical {
+    width: $bpk-spacing-lg * 3;
+  }
 }
