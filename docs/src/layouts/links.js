@@ -121,7 +121,7 @@ const ComponentsLinks = [
         id: 'RATING',
         route: routes.RATING,
         children: 'Rating',
-        tags: ['web', 'android'],
+        tags: ['web', 'android', 'ios'],
       },
       {
         id: 'FORM',
