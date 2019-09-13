@@ -67,6 +67,7 @@ export const STAR_RATING_INTERACTIVE = '/components/star-rating-interactive';
 export const CHECKBOX = '/components/checkbox';
 export const SNACKBAR = '/components/snackbar';
 export const FORM = '/components/form';
+export const FORM_LABEL = '/components/form-label';
 export const CARD = '/components/card';
 export const CHIP = '/components/chip';
 export const BADGE = '/components/badge';
