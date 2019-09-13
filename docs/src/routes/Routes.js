@@ -66,6 +66,7 @@ import FloatingActionButtonPage from '../pages/FloatingActionButtonPage';
 import RatingPage from '../pages/RatingPage';
 import FormsPage from '../pages/FormsPage';
 import FormLabelPage from '../pages/FormLabelPage';
+import ValidationPage from '../pages/ValidationPage';
 import HorizontalGridPage from '../pages/HorizontalGridPage';
 import HorizontalNavPage from '../pages/HorizontalNavPage';
 import IconPage from '../pages/IconPage';
@@ -230,6 +231,7 @@ export const ROUTES_MAPPINGS = [
       },
       { path: ROUTES.FORM, component: FormsPage },
       { path: ROUTES.FORM_LABEL, component: FormLabelPage },
+      { path: ROUTES.VALIDATION, component: ValidationPage },
       {
         path: ROUTES.HORIZONTAL_GRID,
         component: HorizontalGridPage,

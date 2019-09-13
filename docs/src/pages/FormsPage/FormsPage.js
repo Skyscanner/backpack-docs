@@ -127,78 +127,11 @@ const components = [
     title: 'Validation',
     blurb: [
       <BpkParagraph>
-        Validation messages should be used to provide the user with specific
-        feedback about an error with a particular form input field. They can be
-        attached to <BpkLink href="#inputs">inputs</BpkLink>,{' '}
-        <BpkLink href="#selects">selects</BpkLink> and{' '}
-        <BpkLink href="#checkboxes">checkboxes</BpkLink>. They should either be
-        displayed on form submit or on field blur. Have a look at the{' '}
-        <BpkRouterLink to={ROUTES.FIELDSET}>fieldset</BpkRouterLink> component
-        which composes labels, fields and validation messages accordingly.
+        <BpkLink href={ROUTES.VALIDATION}>
+          Form validation has been moved to its own page.
+        </BpkLink>
       </BpkParagraph>,
     ],
-    examples: [
-      <form className={formClassName}>
-        <InputContainer
-          FormComponent={BpkInput}
-          id="input_invalid"
-          name="input_invalid"
-          value="Edinbrvgh"
-          placeholder="Country, city or airport"
-          onChange={() => null}
-          valid={false}
-        />
-        <BpkFormValidation id="form_validation" expanded>
-          Please enter a valid name
-        </BpkFormValidation>
-      </form>,
-      <form className={formClassName}>
-        <InputContainer
-          FormComponent={BpkSelect}
-          id="select_invalid"
-          name="select_invalid"
-          value=""
-          onChange={() => null}
-          valid={false}
-        >
-          <option value="" hidden>
-            Please select...
-          </option>
-          <option value="economy">Economy</option>
-          <option value="premium_economy">Premium Economy</option>
-          <option value="business">Business class</option>
-          <option value="first">First class</option>
-        </InputContainer>
-        <BpkFormValidation id="form_validation" expanded isCheckbox>
-          This option is required
-        </BpkFormValidation>
-      </form>,
-      <form className={formClassName}>
-        <InputContainer
-          FormComponent={BpkCheckbox}
-          name="checkbox"
-          label="Apples"
-        />
-        <BpkFormValidation id="form_validation" expanded isCheckbox>
-          This checkbox is required
-        </BpkFormValidation>
-      </form>,
-      <form className={formClassName}>
-        <InputContainer
-          FormComponent={BpkTextarea}
-          id="textarea"
-          name="textarea"
-          value="@text 123 /}"
-          placeholder="@text 123 /}"
-          onChange={() => null}
-          valid={false}
-        />
-        <BpkFormValidation id="form_validation" expanded>
-          Please enter valid input
-        </BpkFormValidation>
-      </form>,
-    ],
-    readme: validationReadme,
   },
 ];
 
