@@ -27,7 +27,6 @@ import BpkInput from 'bpk-component-input';
 import BpkFormValidation from 'bpk-component-form-validation';
 import { cssModules } from 'bpk-react-utils';
 import labelReadme from 'bpk-component-label/README.md';
-import textareaReadme from 'bpk-component-textarea/README.md';
 import validationReadme from 'bpk-component-form-validation/README.md';
 
 import * as ROUTES from '../../constants/routes';
@@ -40,11 +39,6 @@ import InputContainer from './InputContainer';
 import STYLES from './forms-page.scss';
 
 const getClassName = cssModules(STYLES);
-const loremIpsum = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.';
-
-const loremIpsumLong = `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate repellat assumenda
-necessitatibus reiciendis, porro temporibus expedita excepturi! Nostrum pariatur odit porro, dolorem dignissimos
-laudantium quis, tempore iste non, nam magnam.`;
 
 const formClassName = getClassName('bpkdocs-forms-page__form');
 
@@ -91,64 +85,11 @@ const components = [
     title: 'Textareas',
     blurb: [
       <BpkParagraph>
-        Textareas look almost identical to{' '}
-        <BpkLink href="#inputs">inputs</BpkLink> except they allow long text to
-        wrap across multiple lines.
+        <BpkLink href={ROUTES.TEXT_VIEW}>
+          Text areas have been moved to their own page.
+        </BpkLink>
       </BpkParagraph>,
     ],
-    examples: [
-      <form className={formClassName}>
-        <BpkLabel htmlFor="textarea">Textarea</BpkLabel>
-        <InputContainer
-          FormComponent={BpkTextarea}
-          id="textarea"
-          name="textarea"
-          value={loremIpsumLong}
-          placeholder={loremIpsumLong}
-          onChange={() => null}
-        />
-      </form>,
-      <form className={formClassName}>
-        <BpkLabel htmlFor="textarea_invalid">Invalid Textarea</BpkLabel>
-        <InputContainer
-          FormComponent={BpkTextarea}
-          id="textarea_invalid"
-          name="textarea_invalid"
-          value="@ 123 {\ hi"
-          placeholder="@ 123 {\ hi"
-          onChange={() => null}
-          valid={false}
-        />
-      </form>,
-      <form className={formClassName}>
-        <BpkLabel htmlFor="textarea_placeholder">
-          Textarea (placeholder)
-        </BpkLabel>
-        <InputContainer
-          FormComponent={BpkTextarea}
-          id="textarea_placeholder"
-          name="textarea_placeholder"
-          value=""
-          placeholder={loremIpsum}
-          onChange={() => null}
-        />
-      </form>,
-      <form className={formClassName}>
-        <BpkLabel htmlFor="textarea_disabled" disabled>
-          Disabled textarea
-        </BpkLabel>
-        <InputContainer
-          FormComponent={BpkTextarea}
-          id="textarea_disabled"
-          name="textarea_disabled"
-          value=""
-          placeholder={loremIpsum}
-          onChange={() => null}
-          disabled
-        />
-      </form>,
-    ],
-    readme: textareaReadme,
   },
   {
     id: 'checkboxes',

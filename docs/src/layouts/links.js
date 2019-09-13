@@ -352,7 +352,7 @@ const ComponentsLinks = [
         id: 'NATIVE_TEXT_VIEW',
         route: routes.TEXT_VIEW,
         children: 'Text view',
-        tags: ['ios'],
+        tags: ['ios', 'web'],
       },
       {
         id: 'TAPPABLE_LINK_LABEL',
