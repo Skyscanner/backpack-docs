@@ -130,6 +130,47 @@ const components = [
       </div>,
     ],
   },
+  {
+    id: 'vertical',
+    title: 'Vertical ratings',
+    blurb: [
+      <Paragraph>
+        The rating component&apos;s can also be displayed in a vertical layout.
+      </Paragraph>,
+    ],
+    examples: [
+      <div>
+        <BpkRating
+          className={getClassName('bpk-docs-rating-vertical')}
+          ariaLabel="9 Excellent would recommend"
+          title="Excellent"
+          subtitle="This place was amazing"
+          value={9}
+          size={RATING_SIZES.sm}
+          vertical
+        />
+        <br />
+        <BpkRating
+          className={getClassName('bpk-docs-rating-vertical')}
+          ariaLabel="6.7 Average might recommend"
+          title="Average"
+          subtitle="Might recommend"
+          value={6.7}
+          vertical
+        />
+        <br />
+        <BpkRating
+          className={getClassName('bpk-docs-rating-vertical')}
+          ariaLabel="2.3 Bad avoid here"
+          title="Bad"
+          subtitle="Avoid here"
+          value={2.3}
+          size={RATING_SIZES.lg}
+          vertical
+        />
+      </div>,
+    ],
+  },
 ];
 
 const WebImagesPage = ({ ...rest }) => (
