@@ -22,6 +22,7 @@ import BpkRouterLink from 'bpk-component-router-link';
 import IntroBlurb from '../../components/IntroBlurb';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IOS from '../IOSTextViewPage';
+import Web from '../WebTextAreaPage';
 import Paragraph from '../../components/Paragraph';
 import { TEXT_INPUT } from '../../constants/routes';
 
@@ -39,6 +40,7 @@ const TextViewPage = () => (
     title="Text views"
     blurb={blurb}
     iosSubpage={<IOS wrapped />}
+    webSubpage={<Web wrapped />}
   />
 );
 
