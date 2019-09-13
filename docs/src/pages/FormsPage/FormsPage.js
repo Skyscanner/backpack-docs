@@ -18,7 +18,6 @@
 
 import React from 'react';
 import BpkLink from 'bpk-component-link';
-import BpkLabel from 'bpk-component-label';
 import BpkSelect from 'bpk-component-select';
 import BpkCheckbox from 'bpk-component-checkbox';
 import BpkTextarea from 'bpk-component-textarea';
@@ -26,7 +25,6 @@ import BpkRouterLink from 'bpk-component-router-link';
 import BpkInput from 'bpk-component-input';
 import BpkFormValidation from 'bpk-component-form-validation';
 import { cssModules } from 'bpk-react-utils';
-import labelReadme from 'bpk-component-label/README.md';
 import validationReadme from 'bpk-component-form-validation/README.md';
 
 import * as ROUTES from '../../constants/routes';
@@ -118,20 +116,11 @@ const components = [
     title: 'Labels',
     blurb: [
       <BpkParagraph>
-        Labels should always be used with form elements to provide context to
-        the user. Relying on placeholders alone is not good practise. Have a
-        look at the <BpkRouterLink to={ROUTES.FIELDSET}>fieldset</BpkRouterLink>{' '}
-        component which composes labels, fields and validation messages
-        accordingly.
+        <BpkLink href={ROUTES.FORM_LABEL}>
+          Form labels have been moved to their own page.
+        </BpkLink>
       </BpkParagraph>,
     ],
-    examples: [
-      <BpkLabel>This is a label</BpkLabel>,
-      <BpkLabel required>This is a required label</BpkLabel>,
-      <BpkLabel disabled>This is a disabled label</BpkLabel>,
-      <BpkLabel valid={false}>This is an invalid label</BpkLabel>,
-    ],
-    readme: labelReadme,
   },
   {
     id: 'validation',
