@@ -136,6 +136,12 @@ const ComponentsLinks = [
         tags: ['web'],
       },
       {
+        id: 'FORM_VALIDATION',
+        route: routes.VALIDATIOn,
+        children: 'Validation',
+        tags: ['web'],
+      },
+      {
         id: 'CARD',
         route: routes.CARD,
         children: 'Card',
