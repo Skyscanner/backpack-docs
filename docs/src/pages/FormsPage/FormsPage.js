@@ -18,27 +18,12 @@
 
 import React from 'react';
 import BpkLink from 'bpk-component-link';
-import BpkSelect from 'bpk-component-select';
-import BpkCheckbox from 'bpk-component-checkbox';
-import BpkTextarea from 'bpk-component-textarea';
-import BpkRouterLink from 'bpk-component-router-link';
-import BpkInput from 'bpk-component-input';
-import BpkFormValidation from 'bpk-component-form-validation';
-import { cssModules } from 'bpk-react-utils';
-import validationReadme from 'bpk-component-form-validation/README.md';
 
 import * as ROUTES from '../../constants/routes';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import BpkParagraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
-
-import InputContainer from './InputContainer';
-import STYLES from './forms-page.scss';
-
-const getClassName = cssModules(STYLES);
-
-const formClassName = getClassName('bpkdocs-forms-page__form');
 
 const blurb = [
   <IntroBlurb>A range of common inputs for capturing user data.</IntroBlurb>,
@@ -127,7 +112,7 @@ const components = [
     title: 'Validation',
     blurb: [
       <BpkParagraph>
-        <BpkLink href={ROUTES.VALIDATION}>
+        <BpkLink href={ROUTES.FORM_VALIDATION}>
           Form validation has been moved to its own page.
         </BpkLink>
       </BpkParagraph>,

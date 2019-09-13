@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
-import page from './WebValidationPage';
+/* @flow strict */
+
+import page from './FormValidationPage';
 
 export default page;

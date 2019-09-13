@@ -18,6 +18,25 @@
 
 /* @flow strict */
 
-import page from './ValidationPage';
+import React from 'react';
 
-export default page;
+import DocsPageWrapper from '../../components/DocsPageWrapper';
+import IntroBlurb from '../../components/IntroBlurb';
+import WebValidation from '../WebFormValidationPage';
+
+const blurb = [
+  <IntroBlurb>
+    Label text is used to inform users as to what information is requested for a
+    text field. Every text field should have a label.
+  </IntroBlurb>,
+];
+
+const FormValidationPage = () => (
+  <DocsPageWrapper
+    title="Validation"
+    blurb={blurb}
+    webSubpage={<WebValidation wrapped />}
+  />
+);
+
+export default FormValidationPage;
