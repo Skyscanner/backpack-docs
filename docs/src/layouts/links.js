@@ -130,6 +130,12 @@ const ComponentsLinks = [
         tags: ['web'],
       },
       {
+        id: 'FORM_LABEL',
+        route: routes.FORM_LABEL,
+        children: 'Form label',
+        tags: ['web'],
+      },
+      {
         id: 'CARD',
         route: routes.CARD,
         children: 'Card',
