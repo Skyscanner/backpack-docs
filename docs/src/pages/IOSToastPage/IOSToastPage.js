@@ -16,27 +16,35 @@
  * limitations under the License.
  */
 
-/* @flow strict */
-
 import React from 'react';
 
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import IntroBlurb from '../../components/IntroBlurb';
-import AndroidPage from '../AndroidToastPage';
-import IOSPage from '../IOSToastPage';
+import readme from '../../../../backpack-ios/Backpack/Toast/README.md';
+import screenshotDefault from '../../../../backpack-ios/screenshots/Toast/default.png';
+import DocsPageBuilder from '../../components/DocsPageBuilder';
 
-const Page = () => (
-  <DocsPageWrapper
+const components = [
+  {
+    id: 'default',
+    title: 'Default',
+    screenshots: [
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotDefault}`,
+        altText: 'iOS default toast.',
+        subText: '(iPhone 8 simulator)',
+      },
+    ],
+  },
+];
+
+const IOSToastPage = ({ ...rest }) => (
+  <DocsPageBuilder
     title="Toast"
-    blurb={[
-      <IntroBlurb>
-        Toasts provide brief messages about app processes at the bottom of the
-        screen.
-      </IntroBlurb>,
-    ]}
-    androidSubpage={<AndroidPage wrapped />}
-    iosSubpage={<IOSPage wrapped />}
+    components={components}
+    readme={readme}
+    {...rest}
   />
 );
 
-export default Page;
+export default IOSToastPage;
