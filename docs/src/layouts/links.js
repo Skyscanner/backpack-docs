@@ -137,7 +137,7 @@ const ComponentsLinks = [
       },
       {
         id: 'FORM_VALIDATION',
-        route: routes.VALIDATIOn,
+        route: routes.FORM_VALIDATION,
         children: 'Validation',
         tags: ['web'],
       },
