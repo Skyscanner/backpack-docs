@@ -141,7 +141,7 @@ const components = [
     examples: [
       <div>
         <BpkRating
-          className={getClassName('bpk-docs-rating-vertical')}
+          className={getClassName('bpk-docs-rating--vertical')}
           ariaLabel="9 Excellent would recommend"
           title="Excellent"
           subtitle="This place was amazing"
@@ -149,24 +149,40 @@ const components = [
           size={RATING_SIZES.sm}
           vertical
         />
-        <br />
         <BpkRating
-          className={getClassName('bpk-docs-rating-vertical')}
+          className={getClassName('bpk-docs-rating--vertical')}
           ariaLabel="6.7 Average might recommend"
           title="Average"
           subtitle="Might recommend"
           value={6.7}
           vertical
         />
-        <br />
         <BpkRating
-          className={getClassName('bpk-docs-rating-vertical')}
+          className={getClassName('bpk-docs-rating--vertical')}
           ariaLabel="2.3 Bad avoid here"
           title="Bad"
           subtitle="Avoid here"
           value={2.3}
           size={RATING_SIZES.lg}
           vertical
+        />
+      </div>,
+    ],
+  },
+  {
+    id: 'title',
+    title: 'Title-only ratings',
+    blurb: [
+      <Paragraph>
+        The rating component can have just a title with no subtitle.
+      </Paragraph>,
+    ],
+    examples: [
+      <div>
+        <BpkRating
+          ariaLabel="9 Excellent would recommend"
+          title="Excellent"
+          value={9}
         />
       </div>,
     ],
