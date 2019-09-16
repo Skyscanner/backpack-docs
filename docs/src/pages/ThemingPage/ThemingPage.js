@@ -18,8 +18,6 @@
 
 import React from 'react';
 import BpkLink from 'bpk-component-link';
-import BpkRouterLink from 'bpk-component-router-link';
-import { BpkList, BpkListItem } from 'bpk-component-list';
 import BpkBlockquote from 'bpk-component-blockquote';
 import webReadme from 'bpk-theming/README.md';
 import { cssModules } from 'bpk-react-utils';
@@ -32,30 +30,6 @@ import Android from '../AndroidThemingPage';
 import IOS from '../IOSThemingPage';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
-import {
-  ACCORDION,
-  BARCHART,
-  BLOCKQUOTE,
-  BREADCRUMB,
-  BUTTON,
-  CALENDAR,
-  DATEPICKER,
-  DRAWER,
-  FLAT_LIST,
-  HORIZONTAL_NAV,
-  LINK,
-  MODAL,
-  NAVIGATION_BAR,
-  NUDGER,
-  PAGINATION,
-  POPOVER,
-  PROGRESS,
-  SCROLLABLE_CALENDAR,
-  SECTION_LIST,
-  SLIDER,
-  SPINNER,
-  SWITCH,
-} from '../../constants/routes';
 
 import STYLES from './theming-page.scss';
 
@@ -64,45 +38,6 @@ const getClassName = cssModules(STYLES);
 const CONTEXT_API_URL = 'https://reactjs.org/docs/context.html';
 const CSS_VARIABLES_URL =
   'https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables';
-
-const nativeBlurb = [
-  <Paragraph>The following native components are themeable:</Paragraph>,
-  <BpkList>
-    <BpkListItem>
-      <BpkRouterLink to={BUTTON}>Button</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={CALENDAR}>Calendar</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={FLAT_LIST}>Flat list</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={HORIZONTAL_NAV}>Horizontal navigation</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={LINK}>Link</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={NAVIGATION_BAR}>Navigation bar</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={NUDGER}>Nudger</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={PROGRESS}>Progress</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={SECTION_LIST}>Section list</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={SPINNER}>Spinner</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={SWITCH}>Switch</BpkRouterLink>
-    </BpkListItem>
-  </BpkList>,
-];
 
 const blurb = [
   <IntroBlurb>
@@ -127,73 +62,9 @@ const blurb = [
 
 const webComponents = [
   {
-    id: 'components',
-    title: 'Themeable components',
+    id: 'about',
+    title: 'Technical implementation',
     blurb: [
-      <Paragraph>The following web components are themeable:</Paragraph>,
-      <BpkList>
-        <BpkListItem>
-          <BpkRouterLink to={ACCORDION}>Accordion</BpkRouterLink>
-        </BpkListItem>
-        <BpkListItem>
-          <BpkRouterLink to={BARCHART}>Bar chart</BpkRouterLink>
-        </BpkListItem>
-        <BpkListItem>
-          <BpkRouterLink to={BLOCKQUOTE}>Blockquote</BpkRouterLink>
-        </BpkListItem>
-        <BpkListItem>
-          <BpkRouterLink to={BREADCRUMB}>Breadcrumb</BpkRouterLink>
-        </BpkListItem>
-        <BpkListItem>
-          <BpkRouterLink to={BUTTON}>Button</BpkRouterLink>
-        </BpkListItem>
-        <BpkListItem>
-          <BpkRouterLink to={CALENDAR}>Calendar</BpkRouterLink>
-        </BpkListItem>
-        <BpkListItem>
-          <BpkRouterLink to={DATEPICKER}>Datepicker</BpkRouterLink>
-        </BpkListItem>
-        <BpkListItem>
-          <BpkRouterLink to={DRAWER}>Drawer</BpkRouterLink>
-        </BpkListItem>
-        <BpkListItem>
-          <BpkRouterLink to={HORIZONTAL_NAV}>
-            Horizontal navigation
-          </BpkRouterLink>
-        </BpkListItem>
-        <BpkListItem>
-          <BpkRouterLink to={LINK}>Link</BpkRouterLink>
-        </BpkListItem>
-        <BpkListItem>
-          <BpkRouterLink to={MODAL}>Modal</BpkRouterLink>
-        </BpkListItem>
-        <BpkListItem>
-          <BpkRouterLink to={NAVIGATION_BAR}>Navigation bar</BpkRouterLink>
-        </BpkListItem>
-        <BpkListItem>
-          <BpkRouterLink to={NUDGER}>Nudgers</BpkRouterLink>
-        </BpkListItem>
-        <BpkListItem>
-          <BpkRouterLink to={PAGINATION}>Pagination</BpkRouterLink>
-        </BpkListItem>
-        <BpkListItem>
-          <BpkRouterLink to={POPOVER}>Popover</BpkRouterLink>
-        </BpkListItem>
-        <BpkListItem>
-          <BpkRouterLink to={PROGRESS}>Progress bar</BpkRouterLink>
-        </BpkListItem>
-        <BpkListItem>
-          <BpkRouterLink to={SCROLLABLE_CALENDAR}>
-            Scrollable calendar
-          </BpkRouterLink>
-        </BpkListItem>
-        <BpkListItem>
-          <BpkRouterLink to={SLIDER}>Slider</BpkRouterLink>
-        </BpkListItem>
-        <BpkListItem>
-          <BpkRouterLink to={SPINNER}>Spinner</BpkRouterLink>
-        </BpkListItem>
-      </BpkList>,
       <BpkBlockquote>
         <strong>Note:</strong> Backpack&#39;s theming is based on&nbsp;
         <BpkLink href={CSS_VARIABLES_URL} blank>
@@ -239,12 +110,7 @@ const WebThemingPage = ({ ...rest }) => (
 );
 
 const NativeThemingPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    blurb={nativeBlurb}
-    showMenu={false}
-    readme={nativeReadme}
-    {...rest}
-  />
+  <DocsPageBuilder showMenu={false} readme={nativeReadme} {...rest} />
 );
 
 const ThemingPage = () => (
