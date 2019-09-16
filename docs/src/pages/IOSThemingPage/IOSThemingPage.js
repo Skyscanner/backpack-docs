@@ -17,47 +17,15 @@
  */
 
 import React from 'react';
-import BpkRouterLink from 'bpk-component-router-link';
-import { BpkList, BpkListItem } from 'bpk-component-list';
 
 import readme from '../../../../backpack-ios/Backpack/Theme/README.md';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
-import {
-  BUTTON,
-  CALENDAR,
-  CHIP,
-  SPINNER,
-  SWITCH,
-} from '../../constants/routes';
-import Paragraph from '../../components/Paragraph';
 
 const components = [];
-
-const blurb = [
-  <Paragraph>The following iOS components are themeable:</Paragraph>,
-  <BpkList>
-    <BpkListItem>
-      <BpkRouterLink to={BUTTON}>Button</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={CALENDAR}>Calendar</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={CHIP}>Chip</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={SPINNER}>Spinner</BpkRouterLink>
-    </BpkListItem>
-    <BpkListItem>
-      <BpkRouterLink to={SWITCH}>Switch</BpkRouterLink>
-    </BpkListItem>
-  </BpkList>,
-];
 
 const IOSCardPage = ({ ...rest }) => (
   <DocsPageBuilder
     title="Theming"
-    blurb={blurb}
     components={components}
     readme={readme}
     iosDocId="BPKTheming"
