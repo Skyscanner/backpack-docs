@@ -61,7 +61,7 @@ const ComponentsLinks = [
         id: 'TOAST',
         route: routes.TOAST,
         children: 'Toast',
-        tags: ['android'],
+        tags: ['android', 'ios'],
       },
       {
         id: 'TEXT_SPANS',
