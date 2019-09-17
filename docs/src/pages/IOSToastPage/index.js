@@ -16,27 +16,6 @@
  * limitations under the License.
  */
 
-/* @flow strict */
+import page from './IOSToastPage';
 
-import React from 'react';
-
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import IntroBlurb from '../../components/IntroBlurb';
-import AndroidPage from '../AndroidToastPage';
-import IOSPage from '../IOSToastPage';
-
-const Page = () => (
-  <DocsPageWrapper
-    title="Toast"
-    blurb={[
-      <IntroBlurb>
-        Toasts provide brief messages about app processes at the bottom of the
-        screen.
-      </IntroBlurb>,
-    ]}
-    androidSubpage={<AndroidPage wrapped />}
-    iosSubpage={<IOSPage wrapped />}
-  />
-);
-
-export default Page;
+export default page;
