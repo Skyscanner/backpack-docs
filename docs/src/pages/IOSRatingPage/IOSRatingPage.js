@@ -20,6 +20,8 @@ import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/Rating/README.md';
 import screenshotDefault from '../../../../backpack-ios/screenshots/Rating/default.png';
+import screenshotSubtitle from '../../../../backpack-ios/screenshots/Rating/subtitles.png';
+import screenshotSizes from '../../../../backpack-ios/screenshots/Rating/sizes.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -31,7 +33,33 @@ const components = [
         width: 750,
         height: 1334,
         src: `/${screenshotDefault}`,
-        altText: 'iOS default card.',
+        altText: 'iOS default rating.',
+        subText: '(iPhone 8 simulator)',
+      },
+    ],
+  },
+  {
+    id: 'subtitle',
+    title: 'Subtitle',
+    screenshots: [
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotSubtitle}`,
+        altText: 'iOS default rating.',
+        subText: '(iPhone 8 simulator)',
+      },
+    ],
+  },
+  {
+    id: 'sizes',
+    title: 'Sizes',
+    screenshots: [
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotSizes}`,
+        altText: 'iOS default rating.',
         subText: '(iPhone 8 simulator)',
       },
     ],
