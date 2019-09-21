@@ -16,26 +16,28 @@
  * limitations under the License.
  */
 
-/* @flow strict */
-
 import React from 'react';
+import BpkLink from 'bpk-component-link';
 
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import IntroBlurb from '../../components/IntroBlurb';
-import AndroidPage from '../AndroidStarRatingInteractivePage';
-import IOSPage from '../IOSStarRatingInteractivePage';
-import WebPage from '../WebStarRatingInteractivePage';
+import BpkParagraph from '../../components/Paragraph';
+import DocsPageBuilder from '../../components/DocsPageBuilder';
+import * as ROUTES from '../../constants/routes';
 
-const Page = () => (
-  <DocsPageWrapper
+const components = [];
+
+const WebStarRatingInteractivePage = ({ ...rest }) => (
+  <DocsPageBuilder
     title="Star rating interactive"
+    components={components}
     blurb={[
-      <IntroBlurb>Interactive version of StarRating UI component.</IntroBlurb>,
+      <BpkParagraph>
+        <BpkLink href={ROUTES.STAR_RATING}>
+          For interactive star ratings on web, see the Star Ratings page.
+        </BpkLink>
+      </BpkParagraph>,
     ]}
-    androidSubpage={<AndroidPage wrapped />}
-    iosSubpage={<IOSPage wrapped />}
-    webSubpage={<WebPage wrapped />}
+    {...rest}
   />
 );
 
-export default Page;
+export default WebStarRatingInteractivePage;

@@ -49,7 +49,7 @@ const components = [
   },
 ];
 
-const AndroidStarRatingPage = ({ ...rest }) => (
+const AndroidStarRatingInteractivePage = ({ ...rest }) => (
   <DocsPageBuilder
     title="Star rating interactive"
     components={components}
@@ -58,4 +58,4 @@ const AndroidStarRatingPage = ({ ...rest }) => (
   />
 );
 
-export default AndroidStarRatingPage;
+export default AndroidStarRatingInteractivePage;

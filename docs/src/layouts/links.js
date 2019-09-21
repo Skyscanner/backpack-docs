@@ -85,7 +85,7 @@ const ComponentsLinks = [
         id: 'STAR_RATING_INTERACTIVE',
         route: routes.STAR_RATING_INTERACTIVE,
         children: 'Star rating: interactive',
-        tags: ['android'],
+        tags: ['android', 'ios', 'web'],
       },
       {
         id: 'BLOCKQUOTE',
