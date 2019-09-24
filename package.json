@@ -171,7 +171,7 @@
     "react-dom": "16.4.2",
     "react-helmet": "^5.2.0",
     "react-markdown": "^4.0.6",
-    "react-router-dom": "^4.3.1",
+    "react-router-dom": "^5.1.0",
     "react-svg-loader": "^3.0.2",
     "react-test-renderer": "16.4.2",
     "rimraf": "^2.6.3",
