@@ -65,7 +65,6 @@ const docsThemeAttributes = [
   'docsSidebarSelectedArrowColor',
   'primaryColor',
   'themeName',
-  'logoFillColor',
 ];
 
 export default [
