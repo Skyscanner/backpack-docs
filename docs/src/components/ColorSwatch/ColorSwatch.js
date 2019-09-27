@@ -27,19 +27,18 @@ const getClassName = cssModules(STYLES);
 const ColorSwatch = props => {
   const style = {
     backgroundColor: props.color,
-    backgroundImage: props.gradient,
+    color: props.textColor,
   };
 
   const className = getClassName(
     'bpkdocs-color-swatch',
-    props.whiteColor && 'bpkdocs-color-swatch--light',
     props.border && 'bpkdocs-color-swatch--border',
     props.className,
   );
 
   return (
     <div style={style} className={className}>
-      {props.name}
+      <strong>{props.name}</strong>
     </div>
   );
 };
@@ -48,17 +47,15 @@ ColorSwatch.propTypes = {
   name: PropTypes.string.isRequired,
   className: PropTypes.string,
   color: PropTypes.string,
-  whiteColor: PropTypes.bool,
+  textColor: PropTypes.string,
   border: PropTypes.bool,
-  gradient: PropTypes.string,
 };
 
 ColorSwatch.defaultProps = {
   color: null,
+  textColor: null,
   className: null,
-  whiteColor: false,
   border: false,
-  gradient: null,
 };
 
 export default ColorSwatch;
