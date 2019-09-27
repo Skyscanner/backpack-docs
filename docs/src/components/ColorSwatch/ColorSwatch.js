@@ -28,6 +28,7 @@ const ColorSwatch = props => {
   const style = {
     backgroundColor: props.color,
     backgroundImage: props.gradient,
+    color: props.textColor,
   };
 
   const className = getClassName(
@@ -39,7 +40,7 @@ const ColorSwatch = props => {
 
   return (
     <div style={style} className={className}>
-      {props.name}
+      <strong>{props.name}</strong>
     </div>
   );
 };
@@ -48,6 +49,7 @@ ColorSwatch.propTypes = {
   name: PropTypes.string.isRequired,
   className: PropTypes.string,
   color: PropTypes.string,
+  textColor: PropTypes.string,
   whiteColor: PropTypes.bool,
   border: PropTypes.bool,
   gradient: PropTypes.string,
@@ -55,6 +57,7 @@ ColorSwatch.propTypes = {
 
 ColorSwatch.defaultProps = {
   color: null,
+  textColor: null,
   className: null,
   whiteColor: false,
   border: false,

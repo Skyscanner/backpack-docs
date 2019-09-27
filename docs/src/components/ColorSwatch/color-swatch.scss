@@ -20,7 +20,7 @@
 
 .bpkdocs-color-swatch {
   display: inline-block;
-  min-width: $bpk-spacing-xxl * 4;
+  min-width: $bpk-spacing-lg * 8;
   margin: 0 $bpk-spacing-sm $bpk-spacing-base;
   padding: $bpk-spacing-base $bpk-spacing-sm;
   color: $bpk-color-gray-700;
@@ -32,6 +32,6 @@
   }
 
   &--border {
-    @include bpk-border-sm($bpk-color-gray-100);
+    @include bpk-border-sm($bpk-color-gray-300);
   }
 }
