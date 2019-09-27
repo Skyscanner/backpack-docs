@@ -42,28 +42,28 @@ const components = [
         <ColorSwatch
           name="color-sky-blue"
           color={colors.colorSkyBlue}
-          whiteColor
+          textColor={colors.colorWhite}
         />
         <ColorSwatch
           name="color-sky-blue-shade-03"
           color={colors.colorSkyBlueShade03}
-          whiteColor
+          textColor={colors.colorWhite}
         />
         <ColorSwatch
           name="color-sky-blue-shade-02"
           color={colors.colorSkyBlueShade02}
-          whiteColor
+          textColor={colors.colorWhite}
         />
         <ColorSwatch
           name="color-sky-blue-shade-01"
           color={colors.colorSkyBlueShade01}
-          whiteColor
+          textColor={colors.colorWhite}
         />
 
         <ColorSwatch
           name="color-sky-blue-tint-01"
           color={colors.colorSkyBlueTint01}
-          whiteColor
+          textColor={colors.colorWhite}
         />
         <ColorSwatch
           name="color-sky-blue-tint-02"
@@ -79,12 +79,12 @@ const components = [
         <ColorSwatch
           name="color-monteverde"
           color={colors.colorMonteverde}
-          whiteColor
+          textColor={colors.colorWhite}
         />
         <ColorSwatch
           name="color-glencoe"
           color={colors.colorGlencoe}
-          whiteColor
+          textColor={colors.colorWhite}
         />
         <ColorSwatch
           name="color-sagano"
@@ -95,12 +95,12 @@ const components = [
         <ColorSwatch
           name="color-kolkata"
           color={colors.colorKolkata}
-          whiteColor
+          textColor={colors.colorWhite}
         />
         <ColorSwatch
           name="color-erfoud"
           color={colors.colorErfoud}
-          whiteColor
+          textColor={colors.colorWhite}
         />
         <ColorSwatch
           name="color-bagan"
@@ -108,8 +108,16 @@ const components = [
           textColor={colors.colorKolkata}
         />
         <Heading level="h3">Orange</Heading>
-        <ColorSwatch name="color-bunol" color={colors.colorBunol} whiteColor />
-        <ColorSwatch name="color-petra" color={colors.colorPetra} whiteColor />
+        <ColorSwatch
+          name="color-bunol"
+          color={colors.colorBunol}
+          textColor={colors.colorWhite}
+        />
+        <ColorSwatch
+          name="color-petra"
+          color={colors.colorPetra}
+          textColor={colors.colorWhite}
+        />
         <ColorSwatch
           name="color-nara"
           color={colors.colorNara}
@@ -119,12 +127,12 @@ const components = [
         <ColorSwatch
           name="color-abisko"
           color={colors.colorAbisko}
-          whiteColor
+          textColor={colors.colorWhite}
         />
         <ColorSwatch
           name="color-valensole"
           color={colors.colorValensole}
-          whiteColor
+          textColor={colors.colorWhite}
         />
         <ColorSwatch
           name="color-tochigi"
@@ -135,12 +143,12 @@ const components = [
         <ColorSwatch
           name="color-panjin"
           color={colors.colorPanjin}
-          whiteColor
+          textColor={colors.colorWhite}
         />
         <ColorSwatch
           name="color-hillier"
           color={colors.colorHillier}
-          whiteColor
+          textColor={colors.colorWhite}
         />
         <ColorSwatch
           name="color-harbour"
@@ -161,27 +169,26 @@ const components = [
         <ColorSwatch
           name="color-sky-gray"
           color={colors.colorSkyGray}
-          whiteColor
+          textColor={colors.colorWhite}
         />
         <ColorSwatch
           name="color-sky-gray-tint-01"
           color={colors.colorSkyGrayTint01}
-          whiteColor
+          textColor={colors.colorWhite}
         />
         <ColorSwatch
           name="color-sky-gray-tint-02"
           color={colors.colorSkyGrayTint02}
-          whiteColor
+          textColor={colors.colorWhite}
         />
         <ColorSwatch
           name="color-sky-gray-tint-03"
           color={colors.colorSkyGrayTint03}
-          whiteColor
+          textColor={colors.colorWhite}
         />
         <ColorSwatch
           name="color-sky-gray-tint-04"
           color={colors.colorSkyGrayTint04}
-          whiteColor
         />
         <ColorSwatch
           name="color-sky-gray-tint-05"

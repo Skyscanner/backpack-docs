@@ -27,10 +27,6 @@
 
   @include bpk-border-radius-sm;
 
-  &--light {
-    color: $bpk-color-white;
-  }
-
   &--border {
     @include bpk-border-sm($bpk-color-gray-300);
   }
