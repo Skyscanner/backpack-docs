@@ -33,15 +33,15 @@
       height: $bpk-spacing-xxl * 2;
       justify-content: center;
       align-items: center;
-      color: $bpk-color-gray-700;
+      color: $bpk-color-sky-gray-tint-01;
     }
 
     li:nth-child(2n) {
-      background-color: $bpk-color-gray-50;
+      background-color: $bpk-color-sky-gray-tint-07;
     }
 
     li:nth-child(2n+1) {
-      background-color: $bpk-color-gray-100;
+      background-color: $bpk-color-sky-gray-tint-06;
     }
   }
 

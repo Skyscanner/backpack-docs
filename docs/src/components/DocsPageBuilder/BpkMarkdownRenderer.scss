@@ -27,7 +27,7 @@
     // when used inside a scroll container. This is due to the box-shadow not being measured as part of the
     // width of the child element.
     /* stylelint-disable-next-line unit-blacklist */
-    border: solid 1px $bpk-color-gray-300;
+    border: solid 1px $bpk-color-sky-gray-tint-04;
     box-shadow: none !important;
     /* stylelint-enable */
   }
@@ -39,21 +39,21 @@
   &__mobile-scroll-indicator {
     &--trailing {
       &--dark {
-        @include bpk-scroll-indicator-right($bpk-color-gray-100);
+        @include bpk-scroll-indicator-right($bpk-color-sky-gray-tint-06);
       }
 
       &--light {
-        @include bpk-scroll-indicator-right($bpk-color-gray-50);
+        @include bpk-scroll-indicator-right($bpk-color-sky-gray-tint-07);
       }
     }
 
     &--leading {
       &--dark {
-        @include bpk-scroll-indicator-left($bpk-color-gray-100);
+        @include bpk-scroll-indicator-left($bpk-color-sky-gray-tint-06);
       }
 
       &--light {
-        @include bpk-scroll-indicator-left($bpk-color-gray-50);
+        @include bpk-scroll-indicator-left($bpk-color-sky-gray-tint-07);
       }
     }
   }

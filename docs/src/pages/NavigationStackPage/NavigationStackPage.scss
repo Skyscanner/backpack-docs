@@ -21,9 +21,9 @@
 .bpk-navigation-stack-page {
   min-height: $bpk-spacing-xxl * 12;
   padding: $bpk-one-pixel-rem $bpk-one-pixel-rem 0 $bpk-one-pixel-rem;
-  background-color: $bpk-color-gray-50;
+  background-color: $bpk-color-sky-gray-tint-07;
 
-  @include bpk-border-sm($bpk-color-gray-50);
+  @include bpk-border-sm($bpk-color-sky-gray-tint-07);
 
   &__stack {
     min-height: ($bpk-spacing-xxl * 12) - ($bpk-spacing-base * 2);
@@ -35,10 +35,10 @@
     justify-content: center;
     align-items: center;
     flex: 1;
-    background-color: $bpk-color-gray-50;
+    background-color: $bpk-color-sky-gray-tint-07;
 
     &--alternate {
-      background-color: $bpk-color-gray-100;
+      background-color: $bpk-color-sky-gray-tint-06;
     }
   }
 }
