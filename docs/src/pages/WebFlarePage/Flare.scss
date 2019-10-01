@@ -16,25 +16,10 @@
  * limitations under the License.
  */
 
-/* @flow strict */
+@import '~bpk-mixins/index';
 
-import React from 'react';
-
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import IntroBlurb from '../../components/IntroBlurb';
-import WebFlare from '../WebFlarePage';
-
-const Page = () => (
-  <DocsPageWrapper
-    title="Flare"
-    blurb={[
-      <IntroBlurb>
-        The flare enables you to display content with a pointer to directional
-        content.
-      </IntroBlurb>,
-    ]}
-    webSubpage={<WebFlare wrapped />}
-  />
-);
-
-export default Page;
+.bpk-docs-flare {
+  height: $bpk-spacing-xxl * 5;
+  background-color: $bpk-color-abisko;
+  color: $bpk-color-white;
+}

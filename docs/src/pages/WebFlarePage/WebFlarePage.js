@@ -17,102 +17,43 @@
  */
 
 import React from 'react';
-import BpkRouterLink from 'bpk-component-router-link';
-import BpkLabel from 'bpk-component-label';
+import BpkText from 'bpk-component-text';
+import { BpkContentBubble } from 'bpk-component-flare';
+import flareReadme from 'bpk-component-flare/README.md';
 import { cssModules } from 'bpk-react-utils';
-import readme from 'bpk-component-label/README.md';
 
-import * as ROUTES from '../../constants/routes';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
-import BpkParagraph from '../../components/Paragraph';
-import STYLES from '../FormsPage/forms-page.scss';
+import Paragraph from '../../components/Paragraph';
+
+import STYLES from './Flare.scss';
 
 const getClassName = cssModules(STYLES);
-
-const formClassName = getClassName('bpkdocs-forms-page__form');
 
 const components = [
   {
     id: 'default',
     title: 'Default',
+    blurb: [<Paragraph />],
     examples: [
-      <form className={formClassName}>
-        <BpkLabel htmlFor="select_class">Class</BpkLabel>
-      </form>,
-      <form className={formClassName}>
-        <BpkLabel htmlFor="select_baggage">Baggage</BpkLabel>
-      </form>,
-    ],
-  },
-  {
-    id: 'disabled',
-    title: 'Disabled',
-    examples: [
-      <form className={formClassName}>
-        <BpkLabel disabled htmlFor="select_class_disabled">
-          Class
-        </BpkLabel>
-      </form>,
-      <form className={formClassName}>
-        <BpkLabel disabled htmlFor="select_baggage_disabled">
-          Baggage
-        </BpkLabel>
-      </form>,
-    ],
-  },
-  {
-    id: 'required',
-    title: 'Required',
-    examples: [
-      <form className={formClassName}>
-        <BpkLabel required htmlFor="select_class_invalid">
-          Class
-        </BpkLabel>
-      </form>,
-      <form className={formClassName}>
-        <BpkLabel required htmlFor="select_baggage_invalid">
-          Baggage
-        </BpkLabel>
-      </form>,
-    ],
-  },
-  {
-    id: 'invalid',
-    title: 'Invalid',
-    examples: [
-      <form className={formClassName}>
-        <BpkLabel valid={false} htmlFor="select_class_invalid">
-          Class
-        </BpkLabel>
-      </form>,
-      <form className={formClassName}>
-        <BpkLabel valid={false} htmlFor="select_baggage_invalid">
-          Baggage
-        </BpkLabel>
-      </form>,
+      <div>
+        <BpkContentBubble
+          className={getClassName('bpk-docs-flare')}
+          showPointer
+          rounded={false}
+          content={<BpkText textStyle="xxl">Hello World!</BpkText>}
+        />
+      </div>,
     ],
   },
 ];
 
-const blurb = [
-  <BpkParagraph>
-    Labels should always be used with form elements to provide context to the
-    user. Relying on placeholders alone is not good practise. Have a look at the{' '}
-    <BpkRouterLink to={ROUTES.FIELDSET}>fieldset</BpkRouterLink> component which
-    composes labels, fields and validation messages accordingly.
-  </BpkParagraph>,
-];
-
-const WebFormLabelPage = ({ ...rest }) => (
+const WebFlarePage = ({ ...rest }) => (
   <DocsPageBuilder
-    title="Form label"
-    sassdocId="forms-mixin-bpk-label"
-    blurb={blurb}
+    title="Flare"
     components={components}
-    readme={readme}
-    showMenu={false}
+    readme={flareReadme}
     {...rest}
   />
 );
 
-export default WebFormLabelPage;
+export default WebFlarePage;
