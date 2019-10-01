@@ -33,7 +33,7 @@ const components = [
   {
     id: 'default',
     title: 'Default',
-    blurb: [<Paragraph />],
+    blurb: [],
     examples: [
       <div>
         <BpkContentBubble
