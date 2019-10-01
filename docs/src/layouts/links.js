@@ -432,6 +432,12 @@ const ComponentsLinks = [
         children: 'Alert',
         tags: ['native'],
       },
+      {
+        id: 'FLARE',
+        route: routes.FLARE,
+        children: 'Flare',
+        tags: ['web'],
+      },
       // Utilities.
       {
         id: 'ALIGNMENT',

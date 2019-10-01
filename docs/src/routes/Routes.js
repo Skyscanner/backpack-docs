@@ -62,6 +62,7 @@ import DescriptionListsPage from '../pages/DescriptionListsPage';
 import DialogsPage from '../pages/DialogsPage';
 import DrawerPage from '../pages/DrawerPage';
 import FieldsetsPage from '../pages/FieldsetsPage';
+import FlarePage from '../pages/FlarePage';
 import FloatingActionButtonPage from '../pages/FloatingActionButtonPage';
 import RatingPage from '../pages/RatingPage';
 import FormsPage from '../pages/FormsPage';
@@ -197,6 +198,7 @@ export const ROUTES_MAPPINGS = [
       { path: ROUTES.DIALOG, component: DialogsPage },
       { path: ROUTES.DRAWER, component: DrawerPage },
       { path: ROUTES.FIELDSET, component: FieldsetsPage },
+      { path: ROUTES.FLARE, component: FlarePage },
       {
         path: ROUTES.FLAT_LIST,
         component: NativeFlatListPage,
