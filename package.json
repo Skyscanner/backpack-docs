@@ -88,6 +88,7 @@
     "bpk-component-dialog": "file:./backpack/packages/bpk-component-dialog",
     "bpk-component-drawer": "file:./backpack/packages/bpk-component-drawer",
     "bpk-component-fieldset": "file:./backpack/packages/bpk-component-fieldset",
+    "bpk-component-flare": "file:./backpack/packages/bpk-component-flare",
     "bpk-component-form-validation": "file:./backpack/packages/bpk-component-form-validation",
     "bpk-component-grid": "file:./backpack/packages/bpk-component-grid",
     "bpk-component-grid-toggle": "file:./backpack/packages/bpk-component-grid-toggle",
