@@ -86,7 +86,7 @@ const AlignedArrow = withAlignment(
 <BpkText textStyle="base">
   Search
   &nbsp;
-  <AlignedArrow fill={colors.colorGray700}/>
+  <AlignedArrow fill={colors.colorSkyGrayTint01}/>
 </BpkText>
 `}
       </CodeBlock>,
@@ -94,7 +94,7 @@ const AlignedArrow = withAlignment(
     examples: [
       <BpkText textStyle="base">
         Search &nbsp;
-        <AlignedBaseArrow fill={colors.colorGray700} />
+        <AlignedBaseArrow fill={colors.colorSkyGrayTint01} />
       </BpkText>,
     ],
   },
@@ -119,7 +119,7 @@ const AlignedArrow = withAlignment(
 <BpkText textStyle="lg" >
   Search
   &nbsp;
-  <AlignedArrow fill={colors.colorGray700}/>
+  <AlignedArrow fill={colors.colorSkyGrayTint01}/>
 </BpkText>
 `}
       </CodeBlock>,
@@ -127,7 +127,7 @@ const AlignedArrow = withAlignment(
     examples: [
       <BpkText textStyle="lg">
         Search &nbsp;
-        <AlignedLargeArrow fill={colors.colorGray700} />
+        <AlignedLargeArrow fill={colors.colorSkyGrayTint01} />
       </BpkText>,
     ],
   },
@@ -150,7 +150,7 @@ const AlignedSpan = withAlignment(
 );
 
 <BpkText textStyle="base" >
-  <AwardIcon fill={colors.colorGray700} />
+  <AwardIcon fill={colors.colorSkyGrayTint01} />
   <AlignedSpan >
     &nbsp;
     Search
@@ -161,7 +161,7 @@ const AlignedSpan = withAlignment(
     ],
     examples: [
       <BpkText textStyle="base">
-        <AwardIcon fill={colors.colorGray700} />
+        <AwardIcon fill={colors.colorSkyGrayTint01} />
         <AlignedSpan>&nbsp; Search</AlignedSpan>
       </BpkText>,
     ],
@@ -185,7 +185,7 @@ const AlignedSpanSmall = withAlignment(
 );
 
 <BpkText textStyle="sm" >
-  <AwardIcon fill={colors.colorGray700} />
+  <AwardIcon fill={colors.colorSkyGrayTint01} />
   <AlignedSpanSmall>
     &nbsp;
     Search
@@ -196,7 +196,7 @@ const AlignedSpanSmall = withAlignment(
     ],
     examples: [
       <BpkText textStyle="sm">
-        <AwardIcon fill={colors.colorGray700} />
+        <AwardIcon fill={colors.colorSkyGrayTint01} />
         <AlignedSpanSmall>&nbsp; Search</AlignedSpanSmall>
       </BpkText>,
     ],

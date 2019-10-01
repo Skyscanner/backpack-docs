@@ -25,7 +25,7 @@
   padding: $bpk-spacing-base;
 
   @include bpk-border-radius-sm;
-  @include bpk-border-sm($bpk-color-gray-100);
+  @include bpk-border-sm($bpk-color-sky-gray-tint-06);
 
   > *:last-child {
     margin-bottom: 0;

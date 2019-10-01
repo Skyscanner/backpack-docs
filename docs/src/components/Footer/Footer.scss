@@ -32,7 +32,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    color: $bpk-color-gray-500;
+    color: $bpk-color-sky-gray-tint-02;
 
     @include bpk-text;
     @include bpk-text--sm;
@@ -62,7 +62,7 @@
   }
 
   &__heart {
-    fill: $bpk-color-red-500;
+    fill: $bpk-color-panjin;
   }
 
   &__theme-switcher {

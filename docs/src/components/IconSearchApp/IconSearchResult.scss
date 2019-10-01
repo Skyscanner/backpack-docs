@@ -45,7 +45,7 @@
     align-items: center;
 
     @include bpk-border-radius-xs;
-    @include bpk-border-sm($bpk-color-gray-100);
+    @include bpk-border-sm($bpk-color-sky-gray-tint-06);
 
     @include bpk-breakpoint-mobile {
       width: calc(50% - #{$bpk-spacing-sm});
@@ -53,7 +53,7 @@
   }
 
   &__icon {
-    fill: $bpk-color-gray-700;
+    fill: $bpk-color-sky-gray-tint-01;
 
     &--sm {
       vertical-align: text-bottom;
@@ -71,7 +71,7 @@
   &__name-container {
     padding: $bpk-spacing-xs;
     padding-top: 0;
-    color: $bpk-color-gray-500;
+    color: $bpk-color-sky-gray-tint-02;
     text-align: center;
 
     @include bpk-text;

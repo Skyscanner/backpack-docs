@@ -93,7 +93,7 @@ $bpk-caption-container-height-mobile: $bpk-card-height-mobile - $bpk-image-heigh
     position: absolute;
     bottom: calc((#{$bpk-caption-container-height-tablet} / 2) - (#{$bpk-text-base-line-height} / 2));
     left: $bpk-spacing-base;
-    color: $bpk-color-gray-700;
+    color: $bpk-color-sky-gray-tint-01;
 
     @include bpk-text;
     @include bpk-text-base;
