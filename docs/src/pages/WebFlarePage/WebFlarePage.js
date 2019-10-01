@@ -23,7 +23,6 @@ import flareReadme from 'bpk-component-flare/README.md';
 import { cssModules } from 'bpk-react-utils';
 
 import DocsPageBuilder from '../../components/DocsPageBuilder';
-import Paragraph from '../../components/Paragraph';
 
 import STYLES from './Flare.scss';
 
