@@ -48,6 +48,7 @@ import AutosuggestPage from '../pages/AutosuggestPage';
 import BadgePage from '../pages/BadgePage';
 import BannerAlertPage from '../pages/BannerAlertPage';
 import BarchartsPage from '../pages/BarchartsPage';
+import BottomSheetPage from '../pages/BottomSheetPage';
 import BlockquotesPage from '../pages/BlockquotesPage';
 import BreakpointsPage from '../pages/BreakpointsPage';
 import BreadcrumbPage from '../pages/BreadcrumbPage';
@@ -175,6 +176,10 @@ export const ROUTES_MAPPINGS = [
         component: BannerAlertPage,
       },
       { path: ROUTES.BARCHART, component: BarchartsPage },
+      {
+        path: ROUTES.BOTTOM_SHEET,
+        component: BottomSheetPage,
+      },
       {
         path: ROUTES.BLOCKQUOTE,
         component: BlockquotesPage,

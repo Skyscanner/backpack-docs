@@ -57,6 +57,7 @@ export const BLOCKQUOTE = '/components/blockquote';
 export const CODE = '/components/code';
 export const BUTTON = '/components/button';
 export const BUTTON_LINK = '/components/button-link';
+export const BOTTOM_SHEET = '/components/bottom-sheet';
 export const ICON = '/components/icon';
 export const SPINNER = '/components/spinner';
 export const FLOATING_ACTION_BUTTON = '/components/floating-action-button';
