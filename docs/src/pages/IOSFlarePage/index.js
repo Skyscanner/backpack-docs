@@ -16,27 +16,6 @@
  * limitations under the License.
  */
 
-/* @flow strict */
+import page from './IOSFlarePage';
 
-import React from 'react';
-
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import IntroBlurb from '../../components/IntroBlurb';
-import WebFlare from '../WebFlarePage';
-import IOSFlare from '../IOSFlarePage';
-
-const Page = () => (
-  <DocsPageWrapper
-    title="Flare"
-    blurb={[
-      <IntroBlurb>
-        The flare enables you to display content with a pointer to directional
-        content.
-      </IntroBlurb>,
-    ]}
-    webSubpage={<WebFlare wrapped />}
-    iosSubpage={<IOSFlare wrapped />}
-  />
-);
-
-export default Page;
+export default page;

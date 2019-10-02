@@ -436,7 +436,7 @@ const ComponentsLinks = [
         id: 'FLARE',
         route: routes.FLARE,
         children: 'Flare',
-        tags: ['web'],
+        tags: ['web', 'ios'],
       },
       // Utilities.
       {
