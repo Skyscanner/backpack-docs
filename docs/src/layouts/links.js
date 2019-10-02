@@ -33,6 +33,12 @@ const ComponentsLinks = [
     },
     links: [
       {
+        id: 'BOTTOM_SHEET',
+        route: routes.BOTTOM_SHEET,
+        children: 'Bottom sheet',
+        tags: ['ios'],
+      },
+      {
         id: 'TEXT',
         route: routes.TEXT,
         children: 'Text',
