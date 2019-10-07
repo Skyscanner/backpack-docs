@@ -123,7 +123,7 @@ const HomePage = (props, context) => {
     return HERO_IMAGE_THEMES[context.theme.themeName];
   };
 
-  const backpackLogo = getBackpackLogo();
+  const backpackLogo = getBackpackLogo(true);
   const heroImage = getHeroImageForTheme();
 
   return (
