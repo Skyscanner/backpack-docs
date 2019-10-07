@@ -17,10 +17,18 @@
  */
 
 import BackpackLogoWhite from '../static/backpack-logo-white.svg';
+import BackpackLogoGrey from '../static/backpack-logo-sky-grey.svg';
 import BackpackLogoPride from '../static/backpack-logo-pride.svg';
+import BackpackLogoPrideGrey from '../static/backpack-logo-pride-sky-grey.svg';
 
-export const getBackpackLogo = () => {
+export const getBackpackLogo = (overImage = false) => {
   const isPride = new Date().getMonth() === 5;
+
+  // These logos are used for the main homepage hero
+  if (overImage) {
+    return isPride ? BackpackLogoPrideGrey : BackpackLogoGrey;
+  }
+
   return isPride ? BackpackLogoPride : BackpackLogoWhite;
 };
 
