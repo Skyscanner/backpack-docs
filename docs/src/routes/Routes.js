@@ -41,6 +41,7 @@ import AnimationPage from '../pages/AnimationPage';
 import ZIndexesPage from '../pages/ZIndexesPage';
 import CopywritingPage from '../pages/CopywritingPage';
 import ToneOfVoicePage from '../pages/ToneOfVoicePage';
+import StrategyPage from '../pages/StrategyPage';
 import AccordionsPage from '../pages/AccordionsPage';
 import AlertPage from '../pages/AlertPage';
 import AlignmentPage from '../pages/AlignmentPage';
@@ -156,6 +157,7 @@ export const ROUTES_MAPPINGS = [
     routes: [
       { path: ROUTES.COPYWRITING, component: CopywritingPage },
       { path: ROUTES.TONE_OF_VOICE, component: ToneOfVoicePage },
+      { path: ROUTES.STRATEGY, component: StrategyPage },
     ],
   },
   {
