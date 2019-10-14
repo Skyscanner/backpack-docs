@@ -1,6 +1,8 @@
 [ignore]
 .*/.*test.flow.js
 .*/backpack-react-native/.*
+.*/backpack-android/.*
+.*/backpack-ios/.*
 .*/node_modules/jsonlint/.*
 .*/node_modules/config-chain/test/broken.json
 

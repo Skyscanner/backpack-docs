@@ -25,6 +25,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import themeAttributes from '../../themeableAttributes';
 import Footer from '../../components/Footer';
+import Analytics from '../../components/Analytics';
 
 import STYLES from './default-layout.scss';
 
@@ -41,6 +42,7 @@ const DefaultLayout = props => {
       className={getClassName('bpkdocs-default-layout__container')}
     >
       <div id="pagewrap">
+        <Analytics />
         <Helmet titleTemplate="%s | Backpack" />
         <main>{children}</main>
         <Footer />

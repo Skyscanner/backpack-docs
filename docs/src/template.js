@@ -39,6 +39,13 @@ export default ({ head = {}, html = '', assets = {} }) => `<!doctype html>
   ${html}
 </div>
 
+<!-- Google Analytics -->
+<script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+
 <script src="/${assets.docs.js}" async></script>
 
 </body>

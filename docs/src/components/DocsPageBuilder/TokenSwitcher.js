@@ -25,7 +25,7 @@ import BpkHorizontalNav, {
 import {
   setPlatformInLocalStorage,
   getPlatformFromLocalStorage,
-} from '../../helpers/storage-helper';
+} from '../../helpers/platform-helper';
 
 const platforms = {
   web: {
