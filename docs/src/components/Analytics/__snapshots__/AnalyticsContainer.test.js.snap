@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnalyticsContainer renders correctly 1`] = `
+<section
+  className="bpkdocs-cookie-banner"
+  data-testid="cookie-banner"
+>
+  <div
+    className="bpkdocs-cookie-banner__inner"
+  >
+    <h2
+      className="bpk-text bpk-text--xl"
+      weight="heavy"
+    >
+      Your data. Your choice.
+    </h2>
+    <div
+      className="bpkdocs-cookie-banner__message-wrapper"
+    >
+      <span
+        className="bpk-text bpk-text--base"
+      >
+        Skyscanner uses Google Analytics on this site to help us analyse its use and improve our services. You can opt out by pressing "reject" or at any other time by using the
+         
+        <a
+          className="bpk-link"
+          href="https://tools.google.com/dlpage/gaoptout"
+          onClick={null}
+          rel={null}
+          target="_blank"
+        >
+          Analytics opt-out add-on.
+        </a>
+      </span>
+      <div
+        className="bpkdocs-cookie-banner__buttons"
+      >
+        <button
+          className="bpk-button"
+          data-testid="accept-button"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Accept
+        </button>
+        <button
+          className="bpk-button bpk-button--secondary"
+          data-testid="reject-button"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Reject
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`AnalyticsContainer when concent has been denied renders correctly 1`] = `null`;
+
+exports[`AnalyticsContainer when concent has been granted renders correctly 1`] = `null`;

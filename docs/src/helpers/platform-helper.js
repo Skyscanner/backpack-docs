@@ -16,21 +16,15 @@
  * limitations under the License.
  */
 
+import localstorage from './localstorage';
+
 const LOCAL_STORAGE_KEY = 'BPK_DOCS_platform_preference';
 
-const LOCAL_STORAGE_EXISTS = typeof localStorage !== 'undefined';
-
-export const getPlatformFromLocalStorage = () => {
-  if (!LOCAL_STORAGE_EXISTS) {
-    return null;
-  }
-  const currentPlatform = localStorage.getItem(LOCAL_STORAGE_KEY);
-  return currentPlatform;
-};
+export const getPlatformFromLocalStorage = () =>
+  localstorage.getItem(LOCAL_STORAGE_KEY);
 
 export const setPlatformInLocalStorage = platformName => {
-  if (!LOCAL_STORAGE_EXISTS || platformName === 'all') {
-    return;
+  if (platformName !== 'all') {
+    localStorage.setItem(LOCAL_STORAGE_KEY, platformName);
   }
-  localStorage.setItem(LOCAL_STORAGE_KEY, platformName);
 };
