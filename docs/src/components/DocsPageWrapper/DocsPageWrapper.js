@@ -28,7 +28,7 @@ import { cssModules } from 'bpk-react-utils';
 import {
   setPlatformInLocalStorage,
   getPlatformFromLocalStorage,
-} from '../../helpers/storage-helper';
+} from '../../helpers/platform-helper';
 import Heading from '../Heading';
 
 import Blurb from './Blurb';

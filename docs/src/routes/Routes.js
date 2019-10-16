@@ -115,6 +115,8 @@ import CheckboxPage from '../pages/CheckboxPage';
 import StarRatingInteractivePage from '../pages/StarRatingInteractrivePage';
 import { GridColumnDemoPage, GridOffsetDemoPage } from '../pages/GridDemoPages';
 
+import withPageViewEvent from './withPageViewEvent';
+
 export const ROUTES_MAPPINGS = [
   { path: ROUTES.HOME, component: HomePage },
   {
@@ -338,19 +340,19 @@ export const ROUTES_MAPPINGS = [
 const expandRoutes = routes =>
   routes.reduce((all, routeConfig) => {
     const {
-      component,
+      component: Component,
       routes: childRoutes,
       layout: RouteLayout,
       redirect,
       path,
       ...routeProps
     } = routeConfig;
-    if (component) {
+    if (Component) {
       all.push(
         <Route
           key={path}
           path={path}
-          component={component}
+          render={withPageViewEvent(Component)}
           exact
           {...routeProps}
         />,
