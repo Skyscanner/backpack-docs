@@ -28,10 +28,10 @@ import STYLES from './HeroSection.scss';
 const getClassName = cssModules(STYLES);
 
 type Props = {
-  className: ?string,
+  className: string,
   imageUrl: string,
   heading: string,
-  subHeading: string,
+  subHeading: ?string,
 };
 
 const HeroSection = (props: Props) => {
@@ -53,6 +53,10 @@ const HeroSection = (props: Props) => {
       </section>
     </div>
   );
+};
+
+HeroSection.defaultProps = {
+  subHeading: null,
 };
 
 export default HeroSection;

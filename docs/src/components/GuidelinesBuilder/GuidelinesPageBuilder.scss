@@ -18,40 +18,40 @@
 @import '~bpk-mixins';
 
 .bpk-docs-guidelines-page {
+  &__section {
+    padding: $bpk-spacing-lg * 2;
+    background-color: $bpk-color-white;
+
+    @include bpk-breakpoint-mobile {
+      padding: $bpk-spacing-lg;
+    }
+
+    &--alternate {
+      background-color: $bpk-color-sky-gray-tint-06;
+    }
+
+    &--image {
+      height: $bpk-spacing-sm * 41;
+      color: $bpk-color-sky-gray-tint-01;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 0;
+    color: $bpk-color-sky-gray;
+    text-align: left;
+  }
 
   &__image {
     height: $bpk-spacing-lg * 10;
     color: $bpk-color-sky-gray-tint-01;
   }
 
-  &__section {
-    background-color: $bpk-color-white;
-    padding: $bpk-spacing-xs * 10;
-  }
+  &__content {
+    color: $bpk-color-sky-gray-tint-02;
 
-  &__heading {
-    margin-bottom: 0;
-    color: $bpk-color-sky-gray-tint-01;
-    text-align: left;
-  }
-
-  &__markdown {
-    width: $bpk-spacing-xl * 20;
-    margin-top: $bpk-spacing-xl * 2;
-    margin-bottom: $bpk-spacing-xs * 13;
-  }
-
-  &__navigation {
-    display: flex;
-    background-color: $bpk-color-monteverde;
-    padding: $bpk-spacing-xs * 10;
-    padding-bottom: $bpk-spacing-xs;
-    color: $bpk-color-white;
-    justify-content: space-between;
-
-    &--icon {
-      padding-top: $bpk-spacing-xs * 4.7;
-      fill: $bpk-color-white;
+    &--title {
+      margin-top: $bpk-spacing-lg;
     }
   }
 }

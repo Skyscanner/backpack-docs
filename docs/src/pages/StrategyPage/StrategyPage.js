@@ -18,8 +18,13 @@
 
 import React from 'react';
 
+import getMarkdownString from '../../helpers/markdown-helper';
+import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
 import GuidelinePagesBuilder from '../../components/GuidelinesBuilder';
-import CopywritingHeroImage from '../../static/copywriting_hero.jpg';
+import StrategyHeroImage from '../../static/strategy/strategy_hero.jpg';
+import VisionHeroImage from '../../static/strategy/vision_hero.jpg';
+import MissionHeroImage from '../../static/strategy/mission_hero.jpg';
+import PersonalityHeroImage from '../../static/strategy/personality_hero.jpg';
 
 import intro from './content/intro.md';
 import vision from './content/vision.md';
@@ -29,25 +34,25 @@ import personality from './content/personality.md';
 const sections = [
   {
     id: 'intro',
-    markdown: intro,
+    content: <BpkMarkdownRenderer source={getMarkdownString(intro)} />,
   },
   {
     id: 'our-vision',
     image: {
       heading: `Our vision`,
-      imageUrl: `/${CopywritingHeroImage}`,
+      imageUrl: `/${VisionHeroImage}`,
     },
   },
   {
     id: 'our-vision-content',
     title: 'For everyone to explore our world effortlessly and ethically.',
-    markdown: vision,
+    content: <BpkMarkdownRenderer source={getMarkdownString(vision)} />,
   },
   {
     id: 'our-mission',
     image: {
       heading: `Our mission`,
-      imageUrl: `/${CopywritingHeroImage}`,
+      imageUrl: `/${MissionHeroImage}`,
     },
   },
   {
@@ -59,24 +64,23 @@ const sections = [
     id: 'our-values',
     image: {
       heading: `Our values`,
-      imageUrl: `/${CopywritingHeroImage}`,
+      imageUrl: `/${StrategyHeroImage}`,
     },
   },
   {
     id: 'our-values-content',
-    markdown: values,
+    content: <BpkMarkdownRenderer source={getMarkdownString(values)} />,
   },
   {
     id: 'our-personality',
     image: {
       heading: `Our personality`,
-      imageUrl: `/${CopywritingHeroImage}`,
+      imageUrl: `/${PersonalityHeroImage}`,
     },
   },
   {
     id: 'our-personality-content',
-    title: 'How do you find the right voice?',
-    markdown: personality,
+    content: <BpkMarkdownRenderer source={getMarkdownString(personality)} />,
   },
 ];
 
@@ -85,13 +89,13 @@ const StrategyPage = () => (
     title="Strategy"
     hero={{
       heading: `Strategy`,
-      imageUrl: `/${CopywritingHeroImage}`,
+      imageUrl: `/${StrategyHeroImage}`,
     }}
     sections={sections}
     nextPageLink={{
       title: 'Tone of voice',
       subtitle: 'Next up',
-      nextLink: '#',
+      link: './tone-of-voice',
     }}
   />
 );

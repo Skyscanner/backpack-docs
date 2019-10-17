@@ -23,77 +23,56 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import BpkContentContainer from 'bpk-component-content-container';
 import { cssModules } from 'bpk-react-utils';
-import ChevronRightIcon from 'bpk-component-icon/lg/chevron-right';
-import { withRtlSupport } from 'bpk-component-icon';
 
-import getMarkdownString from '../../helpers/markdown-helper';
 import HeroSection from '../HeroSection';
 import Heading from '../Heading';
-import BpkMarkdownRenderer from '../DocsPageBuilder/BpkMarkdownRenderer';
+import NavigationFooter from '../NavigationFooter';
 
 import STYLES from './GuidelinesPageBuilder.scss';
 
-const RtlSupportedChevron = withRtlSupport(ChevronRightIcon);
 const getClassName = cssModules(STYLES);
 
 type SectionProps = {
   id: string,
   title: string,
-  markdown: ?string,
+  content: Node,
+  alternate: boolean,
 };
 
 type GuidelinesPageBuilderProps = {
   hero: any,
   sections: Array<SectionType>,
   title: string,
-};
-
-type NavigationFooterProps = {
-  id: string,
-  title: string,
-  subtitle: string,
-  link: string,
+  nextPageLink: any,
 };
 
 const Section = (props: SectionProps) => {
-  const { id, markdown, title } = props;
+  const { id, title, content, alternate } = props;
+  const sectionClassName = [
+    getClassName('bpk-docs-guidelines-page__section'),
+    alternate && getClassName('bpk-docs-guidelines-page__section--alternate'),
+  ];
+  const contentClassName = [
+    getClassName('bpk-docs-guidelines-page__content'),
+    title && getClassName('bpk-docs-guidelines-page__content--title'),
+  ];
+
   return (
-    <section className={getClassName('bpk-docs-guidelines-page__section')}>
+    <section className={sectionClassName.join(' ')}>
       {title && (
         <Heading
-          id={id}
+          id={`section_${id}`}
           level="h2"
           className={getClassName('bpk-docs-guidelines-page__heading')}
         >
           {title}
         </Heading>
       )}
-      <div className={getClassName('bpk-docs-guidelines-page__markdown')}>
-        {markdown && (
-          <BpkMarkdownRenderer source={getMarkdownString(markdown)} />
-        )}
-      </div>
-    </section>
-  );
-};
-
-const NavigationFooter = (props: NavigationFooterProps) => {
-  const { id, title, subtitle, link } = props;
-  return (
-    <section className={getClassName('bpk-docs-guidelines-page__navigation')}>
-      <button id="footer" onClick={() => {alert('clicked')}}>
-      <div>
-        {subtitle}
-        <Heading id={id} level="h2">
-          {title}
-        </Heading>
-      </div>
-      <div
-        className={getClassName('bpk-docs-guidelines-page__navigation--icon')}
-      >
-        <RtlSupportedChevron />
-      </div>
-      </button>
+      {content && (
+        <BpkContentContainer className={contentClassName}>
+          {content}
+        </BpkContentContainer>
+      )}
     </section>
   );
 };
@@ -105,10 +84,9 @@ const GuidelinesPageBuilder = (props: GuidelinesPageBuilderProps) => {
       <Helmet title={title} />
       {hero && (
         <HeroSection
-          className={hero.className}
+          className={getClassName('bpk-docs-guidelines-page__hero-image')}
           imageUrl={hero.imageUrl}
           heading={hero.heading}
-          subHeading={hero.subHeading}
         />
       )}
       {sections.map(section => {
@@ -117,13 +95,19 @@ const GuidelinesPageBuilder = (props: GuidelinesPageBuilderProps) => {
             <HeroSection
               imageUrl={section.image.imageUrl}
               heading={section.image.heading}
-              subHeading={section.image.subHeading}
+              className={getClassName(
+                'bpk-docs-guidelines-page__section--image',
+              )}
             />
           );
         }
         return <Section {...section} />;
       })}
-      <NavigationFooter id="footer" title={nextPageLink.title} subtitle={nextPageLink.subtitle} nextLink={nextPageLink.nextLink} />
+      <NavigationFooter
+        id="footer"
+        title={nextPageLink.title}
+        link={nextPageLink.link}
+      />
     </BpkContentContainer>
   );
 };
@@ -132,24 +116,23 @@ GuidelinesPageBuilder.propTypes = {
   hero: PropTypes.shape({
     imageUrl: PropTypes.string.isRequired,
     heading: PropTypes.string.isRequired,
-    subHeading: PropTypes.node,
   }).isRequired,
   sections: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       title: PropTypes.string,
-      markdown: PropTypes.string,
+      content: PropTypes.node,
+      alternate: PropTypes.bool,
       image: PropTypes.shape({
         imageUrl: PropTypes.string.isRequired,
         heading: PropTypes.string,
-      })
+      }),
     }),
   ).isRequired,
   nextPageLink: PropTypes.shape({
     title: PropTypes.string.isRequired,
-    subtitle: PropTypes.string,
-    nextLink: PropTypes.string.isRequired
-  }),
+    link: PropTypes.string.isRequired,
+  }).isRequired,
   title: PropTypes.string.isRequired,
 };
 
