@@ -49,9 +49,9 @@ const sections = {
     link: ROUTES.TOKENS,
     icon: DesignTokensIcon,
   },
-  STYLE_GUIDE: {
-    title: 'Style guide',
-    link: ROUTES.STYLE_GUIDE,
+  GUIDELINES: {
+    title: 'Guidelines',
+    link: ROUTES.GUIDELINES,
     icon: StyleGuideIcon,
   },
   COMPONENTS: {

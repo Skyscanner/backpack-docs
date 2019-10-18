@@ -135,4 +135,6 @@ export default {
   '/resources': ROUTES.GETTING_STARTED,
   '/tokens/layout': ROUTES.SPACINGS,
   '/using/contributing': ROUTES.USING_BACKPACK,
+  '/style-guide/copywriting': ROUTES.COPYWRITING,
+  '/style-guide/tone-of-voice': ROUTES.TONE_OF_VOICE,
 };

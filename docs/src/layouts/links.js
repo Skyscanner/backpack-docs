@@ -512,8 +512,8 @@ export default [
     ],
   },
   {
-    id: 'STYLE_GUIDE',
-    category: 'Style guide',
+    id: 'GUIDELINES',
+    category: 'Guidelines',
     sort: true,
     links: [
       { id: 'COPYWRITING', route: routes.COPYWRITING, children: 'Copywriting' },
