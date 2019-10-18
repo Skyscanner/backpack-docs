@@ -16,20 +16,6 @@
  * limitations under the License.
  */
 
-import PropTypes from 'prop-types';
-import React from 'react';
+import layout from './GuidelinesLayout';
 
-import SideNavLayout from '../SideNavLayout';
-import links from '../links';
-
-const StyleGuideLayout = ({ children, ...rest }) => (
-  <SideNavLayout activeSection="STYLE_GUIDE" links={links} {...rest}>
-    {children}
-  </SideNavLayout>
-);
-
-StyleGuideLayout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-export default StyleGuideLayout;
+export default layout;
