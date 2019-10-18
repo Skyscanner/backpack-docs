@@ -24,7 +24,7 @@ import redirects from '../constants/redirect-routes';
 import DefaultLayout from '../layouts/DefaultLayout';
 import UsingLayout from '../layouts/UsingLayout';
 import TokensLayout from '../layouts/TokensLayout';
-import StyleGuideLayout from '../layouts/StyleGuideLayout';
+import GuidelinesLayout from '../layouts/GuidelinesLayout';
 import DocsLayout from '../layouts/DocsLayout';
 import HomePage from '../pages/HomePage';
 import GettingStartedPage from '../pages/GettingStartedPage';
@@ -154,7 +154,7 @@ export const ROUTES_MAPPINGS = [
   },
   {
     path: ROUTES.GUIDELINES,
-    layout: StyleGuideLayout,
+    layout: GuidelinesLayout,
     redirect: ROUTES.COPYWRITING,
     routes: [
       { path: ROUTES.COPYWRITING, component: CopywritingPage },
