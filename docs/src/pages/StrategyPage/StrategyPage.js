@@ -20,11 +20,12 @@ import React from 'react';
 
 import getMarkdownString from '../../helpers/markdown-helper';
 import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
-import GuidelinePagesBuilder from '../../components/GuidelinesBuilder';
+import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
 import StrategyHeroImage from '../../static/strategy/strategy_hero.jpg';
 import VisionHeroImage from '../../static/strategy/vision_hero.jpg';
 import MissionHeroImage from '../../static/strategy/mission_hero.jpg';
 import PersonalityHeroImage from '../../static/strategy/personality_hero.jpg';
+import * as ROUTES from '../../constants/routes';
 
 import intro from './content/intro.md';
 import vision from './content/vision.md';
@@ -85,7 +86,7 @@ const sections = [
 ];
 
 const StrategyPage = () => (
-  <GuidelinePagesBuilder
+  <GuidelinesPageBuilder
     title="Strategy"
     hero={{
       heading: `Strategy`,
@@ -95,7 +96,7 @@ const StrategyPage = () => (
     nextPageLink={{
       title: 'Tone of voice',
       subtitle: 'Next up',
-      link: './tone-of-voice',
+      link: ROUTES.TONE_OF_VOICE,
     }}
   />
 );
