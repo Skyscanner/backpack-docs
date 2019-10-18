@@ -22,14 +22,14 @@ import React from 'react';
 import SideNavLayout from '../SideNavLayout';
 import links from '../links';
 
-const StyleGuideLayout = ({ children, ...rest }) => (
+const GuidelinesLayout = ({ children, ...rest }) => (
   <SideNavLayout activeSection="GUIDELINES" links={links} {...rest}>
     {children}
   </SideNavLayout>
 );
 
-StyleGuideLayout.propTypes = {
+GuidelinesLayout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default StyleGuideLayout;
+export default GuidelinesLayout;
