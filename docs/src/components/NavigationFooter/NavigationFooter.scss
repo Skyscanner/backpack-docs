@@ -26,6 +26,11 @@
   color: $bpk-color-white;
   text-decoration: none;
 
+  @include bpk-breakpoint-mobile {
+    padding: $bpk-spacing-lg;
+    padding-bottom: $bpk-spacing-xs;
+  }
+
   &__subtitle {
     color: $bpk-color-sagano;
   }
