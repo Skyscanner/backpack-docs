@@ -28,6 +28,7 @@ import { cssModules } from 'bpk-react-utils';
 import ChevronDownIcon from 'bpk-component-icon/lg/chevron-down';
 import { withButtonAlignment } from 'bpk-component-icon';
 
+import getMarkdownString from '../../helpers/markdown-helper';
 import HeroSection from '../HeroSection';
 import Heading from '../Heading';
 import AlternatingPageContent from '../AlternatingPageContent';
@@ -37,15 +38,6 @@ import STYLES from './InfoPageBuilder.scss';
 
 const getClassName = cssModules(STYLES);
 const AlignedChevronDownIcon = withButtonAlignment(ChevronDownIcon);
-
-const getMarkdownString = readmeString =>
-  readmeString
-    .replace(/^#.*$/m, '') // remove first h1
-    .replace(/^>.*$/m, '') // remove first blockquote
-    .replace(/^#### /gm, '##### ') // replace h4 with h5
-    .replace(/^### /gm, '#### ') // replace h3 with h4
-    .replace(/^## /gm, '### ') // replace h2 with h3
-    .replace(/^# /gm, '## '); // replace h1 with h2
 
 type SectionType = {
   id: string,

@@ -30,6 +30,7 @@ import Paragraph from '../Paragraph';
 import PresentationBlock from '../PresentationBlock';
 import { createFromType } from '../ApidocLink';
 import UsageTable from '../UsageTable';
+import getMarkdownString from '../../helpers/markdown-helper';
 
 import TokenSwitcher, { connect } from './TokenSwitcher';
 import TokenTable from './TokenTable';
@@ -48,15 +49,6 @@ const toNodes = children => {
 
   return isString(children) ? [<Paragraph>{children}</Paragraph>] : children;
 };
-
-const getMarkdownString = readmeString =>
-  readmeString
-    .replace(/^#.*$/m, '') // remove first h1
-    .replace(/^>.*$/m, '') // remove first blockquote
-    .replace(/^#### /gm, '##### ') // replace h4 with h5
-    .replace(/^### /gm, '#### ') // replace h3 with h4
-    .replace(/^## /gm, '### ') // replace h2 with h3
-    .replace(/^# /gm, '## '); // replace h1 with h2
 
 const toSassdocLink = createFromType('sass');
 const toIosDocLink = createFromType('ios');
