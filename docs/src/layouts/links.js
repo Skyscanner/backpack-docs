@@ -522,6 +522,7 @@ export default [
         route: routes.TONE_OF_VOICE,
         children: 'Tone of voice',
       },
+      { id: 'STRATEGY', route: routes.STRATEGY, children: 'Strategy' },
     ],
   },
 ];

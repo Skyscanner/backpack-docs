@@ -28,18 +28,20 @@ import STYLES from './HeroSection.scss';
 const getClassName = cssModules(STYLES);
 
 type Props = {
+  className: string,
   imageUrl: string,
   heading: string,
-  subHeading: string,
+  subHeading: ?string,
 };
 
 const HeroSection = (props: Props) => {
-  const { imageUrl, heading, subHeading } = props;
+  const { className, imageUrl, heading, subHeading } = props;
   const style = {
     backgroundImage: `url(${imageUrl})`,
   };
+  const classNames = [getClassName('bpkdocs-hero-section'), className];
   return (
-    <div className={getClassName('bpkdocs-hero-section')} style={style}>
+    <div className={classNames.join(' ')} style={style}>
       <Heading
         level="h1"
         className={getClassName('bpkdocs-hero-section__heading')}
@@ -51,6 +53,10 @@ const HeroSection = (props: Props) => {
       </section>
     </div>
   );
+};
+
+HeroSection.defaultProps = {
+  subHeading: null,
 };
 
 export default HeroSection;
