@@ -153,7 +153,7 @@ export const ROUTES_MAPPINGS = [
     ],
   },
   {
-    path: ROUTES.STYLE_GUIDE,
+    path: ROUTES.GUIDELINES,
     layout: StyleGuideLayout,
     redirect: ROUTES.COPYWRITING,
     routes: [

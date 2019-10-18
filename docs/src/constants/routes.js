@@ -21,7 +21,7 @@ export const HOME = '/';
 // TOP LEVEL
 export const USING_BACKPACK = '/using';
 export const TOKENS = '/tokens';
-export const STYLE_GUIDE = '/style-guide';
+export const GUIDELINES = '/guidelines';
 
 // using/
 export const GETTING_STARTED = '/using/getting-started';
@@ -29,10 +29,10 @@ export const BACKPACK_REACT_SCRIPTS = '/using/backpack-react-scripts';
 export const BASE_STYLESHEET = '/using/base-stylesheet';
 export const PRINCIPLES = '/using/principles';
 
-// style-guide/
-export const COPYWRITING = '/style-guide/copywriting';
-export const TONE_OF_VOICE = '/style-guide/tone-of-voice';
-export const STRATEGY = '/style-guide/strategy';
+// guidelines
+export const COPYWRITING = '/guidelines/copywriting';
+export const TONE_OF_VOICE = '/guidelines/tone-of-voice';
+export const STRATEGY = '/guidelines/strategy';
 
 // components/bonds/
 export const COLORS = '/tokens/colors';

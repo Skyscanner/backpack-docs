@@ -69,9 +69,9 @@ const CARD_CONTENTS = [
     fullWidth: true,
   },
   {
-    key: 'style-guide',
-    title: 'Style guide',
-    href: ROUTES.STYLE_GUIDE,
+    key: 'guidelines',
+    title: 'Guidelines',
+    href: ROUTES.GUIDELINES,
     image: StyleGuideImage,
     icon: StyleGuideIcon,
     iconWidth: '7.5rem',
