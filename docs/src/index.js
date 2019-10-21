@@ -31,6 +31,8 @@ import {
 } from 'react-router-dom';
 import 'es6-promise/auto';
 
+import './index.scss';
+
 import Routes, { ROUTES_MAPPINGS } from './routes';
 import template from './template';
 import { extractAssets } from './webpackStats';

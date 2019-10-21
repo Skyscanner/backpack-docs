@@ -20,6 +20,7 @@
 
 import React from 'react';
 import { cssModules } from 'bpk-react-utils';
+import BpkText from 'bpk-component-text';
 
 import Heading from '../Heading';
 
@@ -29,16 +30,18 @@ const getClassName = cssModules(STYLES);
 
 type Props = {
   className: string,
-  imageUrl: string,
+  imageUrl?: string,
   heading: string,
   subHeading: ?string,
 };
 
 const HeroSection = (props: Props) => {
   const { className, imageUrl, heading, subHeading } = props;
-  const style = {
+
+  const style = imageUrl && {
     backgroundImage: `url(${imageUrl})`,
   };
+
   const classNames = [getClassName('bpkdocs-hero-section'), className];
   return (
     <div className={classNames.join(' ')} style={style}>
@@ -46,7 +49,9 @@ const HeroSection = (props: Props) => {
         level="h1"
         className={getClassName('bpkdocs-hero-section__heading')}
       >
-        {heading}
+        <BpkText textStyle="xxl" bold>
+          {heading}
+        </BpkText>
       </Heading>
       <section className={getClassName('bpkdocs-hero-section__subheading')}>
         {subHeading}
@@ -57,6 +62,7 @@ const HeroSection = (props: Props) => {
 
 HeroSection.defaultProps = {
   subHeading: null,
+  imageUrl: null,
 };
 
 export default HeroSection;
