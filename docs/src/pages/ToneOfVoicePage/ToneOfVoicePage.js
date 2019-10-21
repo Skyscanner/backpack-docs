@@ -19,22 +19,72 @@
 import React from 'react';
 import BpkButton from 'bpk-component-button';
 import BpkSmallDownloadIcon from 'bpk-component-icon/sm/download';
+import BpkCloseIcon from 'bpk-component-icon/sm/close-circle';
 import { withButtonAlignment } from 'bpk-component-icon';
+import { cssModules } from 'bpk-react-utils';
 
-import InfoPageBuilder from '../../components/InfoPageBuilder';
+import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
+import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
 import Paragraph from '../../components/Paragraph';
-import CopywritingHeroImage from '../../static/copywriting_hero.jpg';
+
+import intro from './content/intro.md';
+import travellerFirstDo from './content/traveller-first-do.md';
+import travellerFirstDont from './content/traveller-first-dont.md';
+import STYLES from './toneofvoice-page.scss';
+
+const getClassName = cssModules(STYLES);
 
 // eslint-disable-next-line import/no-webpack-loader-syntax
 const toneOfVoiceGuidelines = require('!!file-loader?name=[name].[hash].pdf!./../../static/tone-of-voice-guidelines-october-2018.pdf');
 
 const AlignedBpkSmallDownloadIcon = withButtonAlignment(BpkSmallDownloadIcon);
 
+const getPageClassName = (...extra) =>
+  extra
+    .map(className => getClassName(`bpkdocs-toneofvoice-page${className}`))
+    .join(' ');
+
 const sections = [
+  {
+    id: 'intro',
+    content: <BpkMarkdownRenderer source={intro} />,
+  },
+  {
+    id: 'traveller-first',
+    title: 'Traveller first',
+    content: (
+      <div className={getPageClassName('__traveler-first')}>
+        <span
+          className={getPageClassName(
+            '__traveler-first-card',
+            '__traveler-first-card--do',
+          )}
+        >
+          <BpkMarkdownRenderer source={travellerFirstDo} />
+        </span>
+        <span
+          className={getPageClassName(
+            '__traveler-first-card',
+            '__traveler-first-card--dont',
+          )}
+        >
+          <BpkCloseIcon />
+          <BpkMarkdownRenderer source={travellerFirstDont} />
+        </span>
+      </div>
+    ),
+    backgroundStyle: 'light',
+  },
+  {
+    id: 'core-principles',
+    title: 'Core principles',
+    content: <BpkMarkdownRenderer source={intro} />,
+    backgroundStyle: 'dark',
+  },
   {
     id: 'download',
     title: 'Download the guidelines',
-    expanded: true,
+    backgroundStyle: 'light',
     content: (
       <Paragraph>
         <BpkButton href={`/${toneOfVoiceGuidelines}`}>
@@ -46,13 +96,17 @@ const sections = [
 ];
 
 const CopywritingPage = () => (
-  <InfoPageBuilder
+  <GuidelinesPageBuilder
     title="Tone of voice"
     hero={{
       heading: `Tone of voice`,
-      imageUrl: `/${CopywritingHeroImage}`,
+      className: getClassName('bpkdocs-toneofvoice-page__hero'),
     }}
     sections={sections}
+    nextPageLink={{
+      title: 'Logo',
+      link: './',
+    }}
   />
 );
 

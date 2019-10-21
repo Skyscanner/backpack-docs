@@ -15,14 +15,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+@import '~bpk-mixins/index';
 
-const getMarkdownString = readmeString =>
-  readmeString
-    .replace(/^#.*$/m, '') // remove first h1
-    .replace(/^>.*$/m, '') // remove first blockquote
-    .replace(/^#### /m, '##### ') // replace h4 with h5
-    .replace(/^### /m, '#### ') // replace h3 with h4
-    .replace(/^## /m, '### ') // replace h2 with h3
-    .replace(/^# /m, '## '); // replace h1 with h2
-
-export default getMarkdownString;
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+/* stylelint-disable selector-max-type */
+body {
+  font-family: 'Skyscanner Relative', $bpk-font-family-base;
+}
