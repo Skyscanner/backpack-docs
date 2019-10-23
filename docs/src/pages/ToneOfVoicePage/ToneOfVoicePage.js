@@ -25,6 +25,8 @@ import { cssModules } from 'bpk-react-utils';
 import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
 import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
 import HeroImage from '../../static/tone-of-voice-hero.svg';
+import ExampleDoImage from '../../static/tone-of-voice-example__do.png';
+import ExampleDontImage from '../../static/tone-of-voice-example__dont.png';
 
 import ContentGrid, { ContentGridCard } from './ContentGrid';
 import intro from './content/intro.md';
@@ -43,7 +45,10 @@ const getPageClassName = (...extra) =>
     .map(className => getClassName(`bpkdocs-toneofvoice-page${className}`))
     .join(' ');
 
-const exampleIconStyle = { width: '2.625rem', height: '2.625rem' };
+const exampleIconStyle = {
+  width: '2.625rem',
+  height: '2.625rem',
+};
 
 const sections = [
   {
@@ -108,7 +113,7 @@ const sections = [
             altText="Example image - things to do"
             width={408}
             height={500}
-            src="https://cataas.com/cat/says/do?width=408&height=500"
+            src={`/${ExampleDoImage}`}
           />
         </ContentGridCard>
         <ContentGridCard
@@ -123,7 +128,7 @@ const sections = [
             altText="Example image - things to do"
             width={408}
             height={500}
-            src="https://cataas.com/cat/says/dont?width=408&height=500"
+            src={`/${ExampleDontImage}`}
           />
         </ContentGridCard>
       </ContentGrid>
