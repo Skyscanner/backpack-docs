@@ -18,9 +18,16 @@
 
 @import '~bpk-mixins/index';
 
-.bpkdocs-colors-page {
-  &__swatch-container {
-    margin-right: -$bpk-spacing-sm;
-    margin-left: -$bpk-spacing-sm;
+.bpk-docs-colors-page {
+  display: flex;
+  margin-left: -$bpk-spacing-sm;
+  flex-wrap: wrap;
+
+  &__hero {
+    background-color: $bpk-color-monteverde;
+  }
+
+  &__image {
+    width: 100%;
   }
 }

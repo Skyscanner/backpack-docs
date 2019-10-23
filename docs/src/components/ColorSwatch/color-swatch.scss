@@ -19,15 +19,20 @@
 @import '~bpk-mixins/index';
 
 .bpkdocs-color-swatch {
-  display: inline-block;
-  min-width: $bpk-spacing-lg * 8;
-  margin: 0 $bpk-spacing-sm $bpk-spacing-base;
+  display: flex;
+  width: $bpk-spacing-base * 11;
+  height: $bpk-spacing-base * 11;
+  margin-bottom: $bpk-spacing-sm;
+  margin-left: $bpk-spacing-sm;
   padding: $bpk-spacing-base $bpk-spacing-sm;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   color: $bpk-color-sky-gray-tint-01;
 
   @include bpk-border-radius-sm;
 
   &--border {
-    @include bpk-border-sm($bpk-color-sky-gray-tint-04);
+    @include bpk-border-sm($bpk-color-sky-gray-tint-05);
   }
 }
