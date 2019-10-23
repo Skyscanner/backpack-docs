@@ -14,30 +14,11 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
-*/
-@import '~bpk-mixins';
+ */
+@import '~bpk-mixins/index';
 
-.bpk-docs-navigation-footer {
-  display: flex;
-  z-index: 50;
-  padding: $bpk-spacing-lg * 2;
-  padding-bottom: $bpk-spacing-xs;
-  justify-content: space-between;
-  background-color: $bpk-color-monteverde;
-  color: $bpk-color-white;
-  text-decoration: none;
-
-  @include bpk-breakpoint-mobile {
-    padding: $bpk-spacing-lg;
-    padding-bottom: $bpk-spacing-xs;
-  }
-
-  &__subtitle {
-    color: $bpk-color-sagano;
-  }
-
-  &__icon {
-    padding-top: $bpk-spacing-xs * 4;
-    fill: $bpk-color-sagano;
-  }
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+/* stylelint-disable selector-max-type */
+body {
+  font-family: 'Skyscanner Relative', $bpk-font-family-base;
 }

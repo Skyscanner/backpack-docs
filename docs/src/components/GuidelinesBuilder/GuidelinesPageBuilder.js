@@ -23,6 +23,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import BpkContentContainer from 'bpk-component-content-container';
 import { cssModules } from 'bpk-react-utils';
+import BpkText from 'bpk-component-text';
 
 import HeroSection from '../HeroSection';
 import Heading from '../Heading';
@@ -36,7 +37,10 @@ type SectionProps = {
   id: string,
   title: string,
   content: Node,
-  alternate: boolean,
+  className?: string,
+  backgroundStyle?: 'white' | 'grey' | 'dark',
+  contentStyle?: 'normal' | 'light',
+  contentClassName?: string,
 };
 
 type GuidelinesPageBuilderProps = {
@@ -47,14 +51,28 @@ type GuidelinesPageBuilderProps = {
 };
 
 const Section = (props: SectionProps) => {
-  const { id, title, content, alternate } = props;
+  const {
+    id,
+    title,
+    content,
+    backgroundStyle,
+    contentStyle,
+    contentClassName: contentUserClassName,
+    className,
+  } = props;
   const sectionClassName = [
     getClassName('bpk-docs-guidelines-page__section'),
-    alternate && getClassName('bpk-docs-guidelines-page__section--alternate'),
+    getClassName(
+      `bpk-docs-guidelines-page__section--background-${backgroundStyle}`,
+    ),
+    className,
   ];
   const contentClassName = [
     getClassName('bpk-docs-guidelines-page__content'),
-    title && getClassName('bpk-docs-guidelines-page__content--title'),
+    contentStyle &&
+      getClassName(`bpk-docs-guidelines-page__content--style-${contentStyle}`),
+    title && getClassName('bpk-docs-guidelines-page__content--with-title'),
+    contentUserClassName,
   ];
 
   return (
@@ -65,11 +83,13 @@ const Section = (props: SectionProps) => {
           level="h2"
           className={getClassName('bpk-docs-guidelines-page__heading')}
         >
-          {title}
+          <BpkText textStyle="xxl" bold>
+            {title}
+          </BpkText>
         </Heading>
       )}
       {content && (
-        <BpkContentContainer className={contentClassName}>
+        <BpkContentContainer className={contentClassName.join(' ')}>
           {content}
         </BpkContentContainer>
       )}
@@ -77,16 +97,25 @@ const Section = (props: SectionProps) => {
   );
 };
 
+Section.defaultProps = {
+  backgroundStyle: 'white',
+  contentStyle: 'normal',
+  className: '',
+  contentClassName: '',
+};
+
 const GuidelinesPageBuilder = (props: GuidelinesPageBuilderProps) => {
   const { title, hero, sections, nextPageLink } = props;
   return (
-    <BpkContentContainer>
+    <BpkContentContainer className={getClassName('bpk-docs-guidelines-page')}>
       <Helmet title={title} />
       {hero && (
         <HeroSection
-          className={hero.className}
-          imageUrl={hero.imageUrl}
-          heading={hero.heading}
+          {...hero}
+          className={[
+            getClassName('bpk-docs-guidelines-page__hero'),
+            hero.className || '',
+          ].join(' ')}
         />
       )}
       {sections.map(section => {
@@ -122,7 +151,8 @@ GuidelinesPageBuilder.propTypes = {
       id: PropTypes.string.isRequired,
       title: PropTypes.string,
       content: PropTypes.node,
-      alternate: PropTypes.bool,
+      contentStyle: PropTypes.string,
+      backgroundStyle: PropTypes.string,
       image: PropTypes.shape({
         imageUrl: PropTypes.string.isRequired,
         heading: PropTypes.string,

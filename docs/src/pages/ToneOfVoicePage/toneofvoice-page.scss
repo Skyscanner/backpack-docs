@@ -14,30 +14,48 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
-*/
-@import '~bpk-mixins';
+ */
 
-.bpk-docs-navigation-footer {
-  display: flex;
-  z-index: 50;
-  padding: $bpk-spacing-lg * 2;
-  padding-bottom: $bpk-spacing-xs;
-  justify-content: space-between;
-  background-color: $bpk-color-monteverde;
-  color: $bpk-color-white;
-  text-decoration: none;
+@import '~bpk-mixins/index';
 
-  @include bpk-breakpoint-mobile {
-    padding: $bpk-spacing-lg;
-    padding-bottom: $bpk-spacing-xs;
+.bpkdocs-toneofvoice-page {
+  &__hero {
+    background: $bpk-color-panjin;
+    background-repeat: no-repeat;
+    background-position: right;
   }
 
-  &__subtitle {
-    color: $bpk-color-sagano;
+  &__traveller-first {
+    &--dont {
+      color: $bpk-color-panjin;
+    }
   }
 
   &__icon {
-    padding-top: $bpk-spacing-xs * 4;
-    fill: $bpk-color-sagano;
+    width: $bpk-spacing-xxl;
+    height: $bpk-spacing-xxl;
+
+    &--do {
+      fill: $bpk-color-monteverde;
+    }
+
+    &--dont {
+      fill: $bpk-color-panjin;
+    }
+  }
+
+  &__example-section {
+    padding-bottom: 0;
+  }
+
+  &__example-content-container {
+    margin-bottom: $bpk-spacing-base * -1;
+  }
+
+  &__example-card {
+    > :first-child {
+      display: block;
+      margin: 0 auto $bpk-spacing-xxl auto;
+    }
   }
 }

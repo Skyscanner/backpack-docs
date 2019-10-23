@@ -1,0 +1,3 @@
+Our tone of voice is the unique way in which we speak to travellers, partners and ourselves. It's not just what we say that shapes how people feel about us, it's also how we say it.
+
+Like all voices, it adapts to different situations, content types and audiences, enabling us to communicate with pertinent tone across all applications. To ensure that our tone of voice is on brand, we always keep the traveller in mind, combining our personality's four characteristics

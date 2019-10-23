@@ -47,10 +47,12 @@ const sections = [
   {
     id: 'our-vision-content',
     title: 'For everyone to explore our world effortlessly and ethically.',
+    contentStyle: 'light',
     content: <BpkMarkdownRenderer source={getMarkdownString(vision)} />,
   },
   {
     id: 'our-mission',
+    contentStyle: 'light',
     image: {
       heading: `Our mission`,
       imageUrl: `/${MissionHeroImage}`,
@@ -70,6 +72,7 @@ const sections = [
   },
   {
     id: 'our-values-content',
+    contentStyle: 'light',
     content: <BpkMarkdownRenderer source={getMarkdownString(values)} />,
   },
   {
@@ -81,6 +84,7 @@ const sections = [
   },
   {
     id: 'our-personality-content',
+    contentStyle: 'light',
     content: <BpkMarkdownRenderer source={getMarkdownString(personality)} />,
   },
 ];
