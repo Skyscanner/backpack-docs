@@ -23,7 +23,6 @@ import BpkImage from 'bpk-component-image';
 
 import getMarkdownString from '../../helpers/markdown-helper';
 import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
-import ColorSwatch from '../../components/ColorSwatch';
 import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
 import ColorsHero from '../../static/colours/colour_hero.svg';
 import ColorPairings from '../../static/colours/colour_pairings.png';
@@ -32,127 +31,9 @@ import * as ROUTES from '../../constants/routes';
 
 import STYLES from './colors-page.scss';
 import intro from './content/intro.md';
+import colours from './colors';
 
 const getClassName = cssModules(STYLES);
-
-// const containerClassName = getClassName(
-//   'bpk-docs-colors-page__swatch-container',
-// );
-
-const colours = [
-  <div className={getClassName('bpk-docs-colors-page')}>
-    <ColorSwatch
-      name="Sky Blue"
-      color={colors.colorSkyBlue}
-      textColor={colors.colorWhite}
-      colorValues={{
-        RGB: '007, 112, 227',
-        HEX: '#0770E3',
-        CMYK: '085, 052, 000, 000',
-        PMS: '2387',
-      }}
-    />
-    <ColorSwatch
-      name="Sky Blue Shade 03"
-      color={colors.colorSkyBlueShade03}
-      textColor={colors.colorWhite}
-      colorValues={{
-        RGB: '2, 18, 44',
-        HEX: '#02122C',
-        CMYK: '100, 072, 000, 035',
-        PMS: '2757',
-      }}
-    />
-    <ColorSwatch
-      name="Sky Blue Shade 02"
-      color={colors.colorSkyBlueShade02}
-      textColor={colors.colorWhite}
-      colorValues={{
-        RGB: '007, 112, 227',
-        HEX: '#0770E3',
-        CMYK: '085, 052, 000, 000',
-        PMS: '2387',
-      }}
-    />
-    <ColorSwatch
-      name="Sky Blue Shade 01"
-      color={colors.colorSkyBlueShade01}
-      textColor={colors.colorWhite}
-      colorValues={{
-        RGB: '007, 112, 227',
-        HEX: '#0770E3',
-        CMYK: '085, 052, 000, 000',
-        PMS: '2387',
-      }}
-    />
-    <ColorSwatch
-      name="Sky Blue Tint 03"
-      color={colors.colorSkyBlueTint03}
-      textColor={colors.colorSkyGray}
-      colorValues={{
-        RGB: '007, 112, 227',
-        HEX: '#0770E3',
-        CMYK: '085, 052, 000, 000',
-        PMS: '2387',
-      }}
-    />
-    <ColorSwatch
-      name="Sky Blue Tint 02"
-      color={colors.colorSkyBlueTint02}
-      textColor={colors.colorSkyGray}
-      colorValues={{
-        RGB: '007, 112, 227',
-        HEX: '#0770E3',
-        CMYK: '085, 052, 000, 000',
-        PMS: '2387',
-      }}
-    />
-    <ColorSwatch
-      name="Sky Blue Tint 01"
-      color={colors.colorSkyBlueTint01}
-      textColor={colors.colorSkyGray}
-      colorValues={{
-        RGB: '007, 112, 227',
-        HEX: '#0770E3',
-        CMYK: '085, 052, 000, 000',
-        PMS: '2387',
-      }}
-    />
-    <ColorSwatch
-      name="Monteverde"
-      color={colors.colorMonteverde}
-      textColor={colors.colorWhite}
-      colorValues={{
-        RGB: '2, 18, 44',
-        HEX: '#02122C',
-        CMYK: '100, 072, 000, 035',
-        PMS: '2757',
-      }}
-    />
-    <ColorSwatch
-      name="Glencoe"
-      color={colors.colorGlencoe}
-      textColor={colors.colorWhite}
-      colorValues={{
-        RGB: '2, 18, 44',
-        HEX: '#02122C',
-        CMYK: '100, 072, 000, 035',
-        PMS: '2757',
-      }}
-    />
-    <ColorSwatch
-      name="Sagano"
-      color={colors.colorSagano}
-      textColor={colors.colorSkyGray}
-      colorValues={{
-        RGB: '2, 18, 44',
-        HEX: '#02122C',
-        CMYK: '100, 072, 000, 035',
-        PMS: '2757',
-      }}
-    />
-  </div>,
-];
 
 const sections = [
   {
@@ -170,6 +51,7 @@ const sections = [
     title: 'Pairings chart',
     content: (
       <BpkImage
+        class={getClassName('bpk-docs-colors-page__image')}
         altText="color pairings"
         width={840}
         height={484}
@@ -182,6 +64,7 @@ const sections = [
     title: 'Examples',
     content: (
       <BpkImage
+        class={getClassName('bpk-docs-colors-page__image')}
         altText="color pairings"
         width={840}
         height={566}

@@ -20,7 +20,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { cssModules } from 'bpk-react-utils';
 import BpkText from 'bpk-component-text';
-import convert from 'color-convert';
 
 import STYLES from './color-swatch.scss';
 
@@ -38,8 +37,6 @@ const ColorSwatch = props => {
     props.className,
   );
 
-  const RGB = convert.rgb.cmyk(props.color);
-
   return (
     <div style={style} className={className}>
       <div>
@@ -48,8 +45,8 @@ const ColorSwatch = props => {
         </BpkText>
       </div>
       <div>
-        <BpkText tagName="h6">RGB {RGB}</BpkText>
-        <BpkText tagName="h6">HEX {props.color}</BpkText>
+        <BpkText tagName="h6">RGB {props.colorValues.RGB}</BpkText>
+        <BpkText tagName="h6">HEX {props.colorValues.HEX}</BpkText>
         <BpkText tagName="h6">CMYK {props.colorValues.CMYK}</BpkText>
         <BpkText tagName="h6">PMS {props.colorValues.PMS}</BpkText>
       </div>
