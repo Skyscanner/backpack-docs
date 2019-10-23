@@ -20,9 +20,9 @@ const getMarkdownString = readmeString =>
   readmeString
     .replace(/^#.*$/m, '') // remove first h1
     .replace(/^>.*$/m, '') // remove first blockquote
-    .replace(/^#### /m, '##### ') // replace h4 with h5
-    .replace(/^### /m, '#### ') // replace h3 with h4
-    .replace(/^## /m, '### ') // replace h2 with h3
-    .replace(/^# /m, '## '); // replace h1 with h2
+    .replace(/^#### /gm, '##### ') // replace h4 with h5
+    .replace(/^### /gm, '#### ') // replace h3 with h4
+    .replace(/^## /gm, '### ') // replace h2 with h3
+    .replace(/^# /gm, '## '); // replace h1 with h2
 
 export default getMarkdownString;
