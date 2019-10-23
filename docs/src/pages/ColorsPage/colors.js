@@ -119,7 +119,7 @@ const colours = [
     <ColorSwatch
       name="Glencoe"
       color={colors.colorGlencoe}
-      textColor={colors.colorWhite}
+      textColor={colors.colorSkyGray}
       colorValues={{
         RGB: '115, 206, 198',
         HEX: '#73cec6',
@@ -152,7 +152,7 @@ const colours = [
     <ColorSwatch
       name="Erfoud"
       color={colors.colorErfoud}
-      textColor={colors.colorWhite}
+      textColor={colors.colorSkyGray}
       colorValues={{
         RGB: '255, 181, 77',
         HEX: '#ffb54d',
@@ -185,7 +185,7 @@ const colours = [
     <ColorSwatch
       name="Petra"
       color={colors.colorPetra}
-      textColor={colors.colorWhite}
+      textColor={colors.colorSkyGray}
       colorValues={{
         RGB: '255, 171, 149',
         HEX: '#ffab95',
@@ -218,7 +218,7 @@ const colours = [
     <ColorSwatch
       name="Valensole"
       color={colors.colorValensole}
-      textColor={colors.colorWhite}
+      textColor={colors.colorSkyGray}
       colorValues={{
         RGB: '165, 155, 200',
         HEX: '#a59bc8',
@@ -236,6 +236,7 @@ const colours = [
         CMYK: '011, 014, 003, 000',
         PMS: '7443',
       }}
+      border
     />
     <ColorSwatch
       name="Panjin"
@@ -251,7 +252,7 @@ const colours = [
     <ColorSwatch
       name="Hillier"
       color={colors.colorHillier}
-      textColor={colors.colorWhite}
+      textColor={colors.colorSkyGray}
       colorValues={{
         RGB: '225, 139, 150',
         HEX: '#e18b96',
@@ -346,6 +347,7 @@ const colours = [
         CMYK: '012, 011, 007, 000',
         PMS: '5315',
       }}
+      border
     />
     <ColorSwatch
       name="Sky Grey Tint 07"
@@ -357,6 +359,7 @@ const colours = [
         CMYK: '007, 004, 002, 000',
         PMS: '663',
       }}
+      border
     />
     <ColorSwatch
       name="Sky White"

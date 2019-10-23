@@ -134,6 +134,7 @@ export default {
   '/components/web/typography': ROUTES.TEXT,
   '/resources': ROUTES.GETTING_STARTED,
   '/tokens/layout': ROUTES.SPACINGS,
+  '/tokens/colors': ROUTES.COLORS,
   '/using/contributing': ROUTES.USING_BACKPACK,
   '/style-guide/copywriting': ROUTES.COPYWRITING,
   '/style-guide/tone-of-voice': ROUTES.TONE_OF_VOICE,

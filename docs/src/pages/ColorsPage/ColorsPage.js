@@ -17,7 +17,6 @@
  */
 
 import React from 'react';
-import { colors } from 'bpk-tokens/tokens/base.es6';
 import { cssModules } from 'bpk-react-utils';
 import BpkImage from 'bpk-component-image';
 
@@ -43,8 +42,8 @@ const sections = [
   {
     id: 'palette',
     title: 'Palette',
+    backgroundStyle: 'light',
     content: colours,
-    alternate: true,
   },
   {
     id: 'pairings',
@@ -62,6 +61,7 @@ const sections = [
   {
     id: 'examples',
     title: 'Examples',
+    backgroundStyle: 'light',
     content: (
       <BpkImage
         class={getClassName('bpk-docs-colors-page__image')}
@@ -71,7 +71,6 @@ const sections = [
         src={`/${ColorExamples}`}
       />
     ),
-    alternate: true,
   },
 ];
 

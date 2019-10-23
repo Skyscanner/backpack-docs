@@ -20,20 +20,19 @@
 
 .bpkdocs-color-swatch {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  min-width: $bpk-spacing-lg * 8;
-  width: 270px;
-  height: $bpk-spacing-xl * 8;
-  margin-right: $bpk-spacing-sm;
+  width: $bpk-spacing-base * 11;
+  height: $bpk-spacing-base * 11;
   margin-bottom: $bpk-spacing-sm;
+  margin-left: $bpk-spacing-sm;
   padding: $bpk-spacing-base $bpk-spacing-sm;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   color: $bpk-color-sky-gray-tint-01;
 
   @include bpk-border-radius-sm;
 
   &--border {
-    @include bpk-border-sm($bpk-color-sky-gray-tint-04);
+    @include bpk-border-sm($bpk-color-sky-gray-tint-05);
   }
 }

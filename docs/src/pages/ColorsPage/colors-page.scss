@@ -20,6 +20,7 @@
 
 .bpk-docs-colors-page {
   display: flex;
+  margin-left: -$bpk-spacing-sm;
   flex-wrap: wrap;
 
   &__hero {
@@ -27,6 +28,6 @@
   }
 
   &__image {
-    margin-top: 4rem;
+    width: 100%;
   }
 }
