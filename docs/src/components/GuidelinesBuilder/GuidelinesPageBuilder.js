@@ -37,8 +37,10 @@ type SectionProps = {
   id: string,
   title: string,
   content: Node,
+  className?: string,
   backgroundStyle?: 'white' | 'grey' | 'dark',
   contentStyle?: 'normal' | 'light',
+  contentClassName?: string,
 };
 
 type GuidelinesPageBuilderProps = {
@@ -49,18 +51,28 @@ type GuidelinesPageBuilderProps = {
 };
 
 const Section = (props: SectionProps) => {
-  const { id, title, content, backgroundStyle, contentStyle } = props;
+  const {
+    id,
+    title,
+    content,
+    backgroundStyle,
+    contentStyle,
+    contentClassName: contentUserClassName,
+    className,
+  } = props;
   const sectionClassName = [
     getClassName('bpk-docs-guidelines-page__section'),
     getClassName(
       `bpk-docs-guidelines-page__section--background-${backgroundStyle}`,
     ),
+    className,
   ];
   const contentClassName = [
     getClassName('bpk-docs-guidelines-page__content'),
     contentStyle &&
       getClassName(`bpk-docs-guidelines-page__content--style-${contentStyle}`),
     title && getClassName('bpk-docs-guidelines-page__content--with-title'),
+    contentUserClassName,
   ];
 
   return (
@@ -88,6 +100,8 @@ const Section = (props: SectionProps) => {
 Section.defaultProps = {
   backgroundStyle: 'white',
   contentStyle: 'normal',
+  className: '',
+  contentClassName: '',
 };
 
 const GuidelinesPageBuilder = (props: GuidelinesPageBuilderProps) => {

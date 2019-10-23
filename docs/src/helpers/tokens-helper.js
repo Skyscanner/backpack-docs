@@ -111,11 +111,12 @@ export const getPlatformTokens = (
   androidTokens,
   predicate,
 ) => {
+  const safePredicate = token => token && predicate(token);
   const keys = _.union([
-    ...webTokens.propKeys.filter(key => predicate(webTokens.props[key])),
-    ...iosTokens.propKeys.filter(key => predicate(iosTokens.props[key])),
+    ...webTokens.propKeys.filter(key => safePredicate(webTokens.props[key])),
+    ...iosTokens.propKeys.filter(key => safePredicate(iosTokens.props[key])),
     ...androidTokens.propKeys.filter(key =>
-      predicate(androidTokens.props[key]),
+      safePredicate(androidTokens.props[key]),
     ),
   ]);
 
