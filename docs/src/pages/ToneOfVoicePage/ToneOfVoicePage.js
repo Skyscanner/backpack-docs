@@ -17,42 +17,139 @@
  */
 
 import React from 'react';
-import BpkButton from 'bpk-component-button';
-import BpkSmallDownloadIcon from 'bpk-component-icon/sm/download';
-import { withButtonAlignment } from 'bpk-component-icon';
+import BpkImage from 'bpk-component-image';
+import BpkCloseCircleIcon from 'bpk-component-icon/sm/close-circle';
+import BpkTickCircleIcon from 'bpk-component-icon/sm/tick-circle';
+import { cssModules } from 'bpk-react-utils';
 
-import InfoPageBuilder from '../../components/InfoPageBuilder';
-import Paragraph from '../../components/Paragraph';
-import CopywritingHeroImage from '../../static/copywriting_hero.jpg';
+import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
+import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
+import HeroImage from '../../static/tone-of-voice-hero.svg';
+import ExampleDoImage from '../../static/tone-of-voice-example__do.png';
+import ExampleDontImage from '../../static/tone-of-voice-example__dont.png';
 
-// eslint-disable-next-line import/no-webpack-loader-syntax
-const toneOfVoiceGuidelines = require('!!file-loader?name=[name].[hash].pdf!./../../static/tone-of-voice-guidelines-october-2018.pdf');
+import ContentGrid, { ContentGridCard } from './ContentGrid';
+import intro from './content/intro.md';
+import travellerFirstDo from './content/traveller-first-do.md';
+import travellerFirstDont from './content/traveller-first-dont.md';
+import principleOne from './content/core-principles-one.md';
+import principleTwo from './content/core-principles-two.md';
+import principleThree from './content/core-principles-three.md';
+import principleFour from './content/core-principles-four.md';
+import STYLES from './toneofvoice-page.scss';
 
-const AlignedBpkSmallDownloadIcon = withButtonAlignment(BpkSmallDownloadIcon);
+const getClassName = cssModules(STYLES);
+
+const getPageClassName = (...extra) =>
+  extra
+    .map(className => getClassName(`bpkdocs-toneofvoice-page${className}`))
+    .join(' ');
+
+const exampleIconStyle = {
+  width: '2.625rem',
+  height: '2.625rem',
+};
 
 const sections = [
   {
-    id: 'download',
-    title: 'Download the guidelines',
-    expanded: true,
+    id: 'intro',
+    content: <BpkMarkdownRenderer source={intro} />,
+  },
+  {
+    id: 'traveller-first',
+    title: 'Traveller first',
     content: (
-      <Paragraph>
-        <BpkButton href={`/${toneOfVoiceGuidelines}`}>
-          Download <AlignedBpkSmallDownloadIcon />
-        </BpkButton>
-      </Paragraph>
+      <ContentGrid>
+        <ContentGridCard cardStyle="bold-title">
+          <BpkMarkdownRenderer source={travellerFirstDo} />
+        </ContentGridCard>
+        <ContentGridCard
+          className={getPageClassName('__traveller-first--dont')}
+        >
+          <BpkCloseCircleIcon className={getPageClassName('__icon--dont')} />
+          <BpkMarkdownRenderer source={travellerFirstDont} />
+        </ContentGridCard>
+      </ContentGrid>
     ),
+    backgroundStyle: 'light',
+  },
+  {
+    id: 'core-principles',
+    title: 'Core principles',
+    content: (
+      <ContentGrid>
+        <ContentGridCard cardStyle="primary-title">
+          <BpkMarkdownRenderer source={principleOne} />
+        </ContentGridCard>
+        <ContentGridCard cardStyle="primary-title">
+          <BpkMarkdownRenderer source={principleTwo} />
+        </ContentGridCard>
+        <ContentGridCard cardStyle="primary-title">
+          <BpkMarkdownRenderer source={principleThree} />
+        </ContentGridCard>
+        <ContentGridCard cardStyle="primary-title">
+          <BpkMarkdownRenderer source={principleFour} />
+        </ContentGridCard>
+      </ContentGrid>
+    ),
+    backgroundStyle: 'dark',
+  },
+  {
+    id: 'examples',
+    title: 'Examples',
+    className: getPageClassName('__example-section'),
+    contentClassName: getPageClassName('__example-content-container'),
+    content: (
+      <ContentGrid>
+        <ContentGridCard
+          padding={false}
+          className={getPageClassName('__example-card')}
+        >
+          <BpkTickCircleIcon
+            style={exampleIconStyle}
+            className={getPageClassName('__icon--do')}
+          />
+          <BpkImage
+            altText="Example image - things to do"
+            width={408}
+            height={500}
+            src={`/${ExampleDoImage}`}
+          />
+        </ContentGridCard>
+        <ContentGridCard
+          padding={false}
+          className={getPageClassName('__example-card')}
+        >
+          <BpkCloseCircleIcon
+            style={exampleIconStyle}
+            className={getPageClassName('__icon--dont')}
+          />
+          <BpkImage
+            altText="Example image - things to do"
+            width={408}
+            height={500}
+            src={`/${ExampleDontImage}`}
+          />
+        </ContentGridCard>
+      </ContentGrid>
+    ),
+    backgroundStyle: 'white',
   },
 ];
 
 const CopywritingPage = () => (
-  <InfoPageBuilder
+  <GuidelinesPageBuilder
     title="Tone of voice"
     hero={{
       heading: `Tone of voice`,
-      imageUrl: `/${CopywritingHeroImage}`,
+      className: getClassName('bpkdocs-toneofvoice-page__hero'),
+      imageUrl: `/${HeroImage}`,
     }}
     sections={sections}
+    nextPageLink={{
+      title: 'Logo',
+      link: './',
+    }}
   />
 );
 
