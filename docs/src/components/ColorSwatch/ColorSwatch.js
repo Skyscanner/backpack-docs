@@ -19,6 +19,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { cssModules } from 'bpk-react-utils';
+import BpkText from 'bpk-component-text';
 
 import STYLES from './color-swatch.scss';
 
@@ -38,7 +39,17 @@ const ColorSwatch = props => {
 
   return (
     <div style={style} className={className}>
-      <strong>{props.name}</strong>
+      <div>
+        <BpkText tagName="h3" textStyle="xl" bold>
+          {props.name}
+        </BpkText>
+      </div>
+      <div>
+        <BpkText tagName="h6">RGB {props.colorValues.RGB}</BpkText>
+        <BpkText tagName="h6">HEX {props.colorValues.HEX}</BpkText>
+        <BpkText tagName="h6">CMYK {props.colorValues.CMYK}</BpkText>
+        <BpkText tagName="h6">PMS {props.colorValues.PMS}</BpkText>
+      </div>
     </div>
   );
 };
@@ -49,6 +60,12 @@ ColorSwatch.propTypes = {
   color: PropTypes.string,
   textColor: PropTypes.string,
   border: PropTypes.bool,
+  colorValues: PropTypes.shape({
+    RGB: PropTypes.string,
+    HEX: PropTypes.string,
+    CMYK: PropTypes.string,
+    PMS: PropTypes.string,
+  }).isRequired,
 };
 
 ColorSwatch.defaultProps = {
