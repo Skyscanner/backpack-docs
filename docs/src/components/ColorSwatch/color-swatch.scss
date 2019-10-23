@@ -19,9 +19,15 @@
 @import '~bpk-mixins/index';
 
 .bpkdocs-color-swatch {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
   min-width: $bpk-spacing-lg * 8;
-  margin: 0 $bpk-spacing-sm $bpk-spacing-base;
+  width: 270px;
+  height: $bpk-spacing-xl * 8;
+  margin-right: $bpk-spacing-sm;
+  margin-bottom: $bpk-spacing-sm;
   padding: $bpk-spacing-base $bpk-spacing-sm;
   color: $bpk-color-sky-gray-tint-01;
 

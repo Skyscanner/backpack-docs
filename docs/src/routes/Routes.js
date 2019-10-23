@@ -144,7 +144,6 @@ export const ROUTES_MAPPINGS = [
     routes: [
       { path: ROUTES.ANIMATION, component: AnimationPage },
       { path: ROUTES.BORDERS, component: BordersPage },
-      { path: ROUTES.COLORS, component: ColorsPage },
       { path: ROUTES.SPACINGS, component: SpacingsPage },
       { path: ROUTES.RADII, component: RadiiPage },
       { path: ROUTES.SHADOWS, component: ShadowsPage },
@@ -157,6 +156,7 @@ export const ROUTES_MAPPINGS = [
     layout: GuidelinesLayout,
     redirect: ROUTES.COPYWRITING,
     routes: [
+      { path: ROUTES.COLORS, component: ColorsPage },
       { path: ROUTES.COPYWRITING, component: CopywritingPage },
       { path: ROUTES.TONE_OF_VOICE, component: ToneOfVoicePage },
       { path: ROUTES.STRATEGY, component: StrategyPage },

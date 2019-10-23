@@ -84,7 +84,7 @@ const GuidelinesPageBuilder = (props: GuidelinesPageBuilderProps) => {
       <Helmet title={title} />
       {hero && (
         <HeroSection
-          className={getClassName('bpk-docs-guidelines-page__hero-image')}
+          className={hero.className}
           imageUrl={hero.imageUrl}
           heading={hero.heading}
         />

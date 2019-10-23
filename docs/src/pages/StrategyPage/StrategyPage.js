@@ -95,7 +95,6 @@ const StrategyPage = () => (
     sections={sections}
     nextPageLink={{
       title: 'Tone of voice',
-      subtitle: 'Next up',
       link: ROUTES.TONE_OF_VOICE,
     }}
   />

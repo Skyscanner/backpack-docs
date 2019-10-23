@@ -19,196 +19,193 @@
 import React from 'react';
 import { colors } from 'bpk-tokens/tokens/base.es6';
 import { cssModules } from 'bpk-react-utils';
+import BpkImage from 'bpk-component-image';
 
-import Heading from '../../components/Heading';
+import getMarkdownString from '../../helpers/markdown-helper';
+import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
 import ColorSwatch from '../../components/ColorSwatch';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
+import ColorsHero from '../../static/colours/colour_hero.svg';
+import ColorPairings from '../../static/colours/colour_pairings.png';
+import ColorExamples from '../../static/colours/colour_examples.png';
+import * as ROUTES from '../../constants/routes';
 
 import STYLES from './colors-page.scss';
+import intro from './content/intro.md';
 
 const getClassName = cssModules(STYLES);
-const containerClassName = getClassName(
-  'bpkdocs-colors-page__swatch-container',
-);
 
-const components = [
+// const containerClassName = getClassName(
+//   'bpk-docs-colors-page__swatch-container',
+// );
+
+const colours = [
+  <div className={getClassName('bpk-docs-colors-page')}>
+    <ColorSwatch
+      name="Sky Blue"
+      color={colors.colorSkyBlue}
+      textColor={colors.colorWhite}
+      colorValues={{
+        RGB: '007, 112, 227',
+        HEX: '#0770E3',
+        CMYK: '085, 052, 000, 000',
+        PMS: '2387',
+      }}
+    />
+    <ColorSwatch
+      name="Sky Blue Shade 03"
+      color={colors.colorSkyBlueShade03}
+      textColor={colors.colorWhite}
+      colorValues={{
+        RGB: '2, 18, 44',
+        HEX: '#02122C',
+        CMYK: '100, 072, 000, 035',
+        PMS: '2757',
+      }}
+    />
+    <ColorSwatch
+      name="Sky Blue Shade 02"
+      color={colors.colorSkyBlueShade02}
+      textColor={colors.colorWhite}
+      colorValues={{
+        RGB: '007, 112, 227',
+        HEX: '#0770E3',
+        CMYK: '085, 052, 000, 000',
+        PMS: '2387',
+      }}
+    />
+    <ColorSwatch
+      name="Sky Blue Shade 01"
+      color={colors.colorSkyBlueShade01}
+      textColor={colors.colorWhite}
+      colorValues={{
+        RGB: '007, 112, 227',
+        HEX: '#0770E3',
+        CMYK: '085, 052, 000, 000',
+        PMS: '2387',
+      }}
+    />
+    <ColorSwatch
+      name="Sky Blue Tint 03"
+      color={colors.colorSkyBlueTint03}
+      textColor={colors.colorSkyGray}
+      colorValues={{
+        RGB: '007, 112, 227',
+        HEX: '#0770E3',
+        CMYK: '085, 052, 000, 000',
+        PMS: '2387',
+      }}
+    />
+    <ColorSwatch
+      name="Sky Blue Tint 02"
+      color={colors.colorSkyBlueTint02}
+      textColor={colors.colorSkyGray}
+      colorValues={{
+        RGB: '007, 112, 227',
+        HEX: '#0770E3',
+        CMYK: '085, 052, 000, 000',
+        PMS: '2387',
+      }}
+    />
+    <ColorSwatch
+      name="Sky Blue Tint 01"
+      color={colors.colorSkyBlueTint01}
+      textColor={colors.colorSkyGray}
+      colorValues={{
+        RGB: '007, 112, 227',
+        HEX: '#0770E3',
+        CMYK: '085, 052, 000, 000',
+        PMS: '2387',
+      }}
+    />
+    <ColorSwatch
+      name="Monteverde"
+      color={colors.colorMonteverde}
+      textColor={colors.colorWhite}
+      colorValues={{
+        RGB: '2, 18, 44',
+        HEX: '#02122C',
+        CMYK: '100, 072, 000, 035',
+        PMS: '2757',
+      }}
+    />
+    <ColorSwatch
+      name="Glencoe"
+      color={colors.colorGlencoe}
+      textColor={colors.colorWhite}
+      colorValues={{
+        RGB: '2, 18, 44',
+        HEX: '#02122C',
+        CMYK: '100, 072, 000, 035',
+        PMS: '2757',
+      }}
+    />
+    <ColorSwatch
+      name="Sagano"
+      color={colors.colorSagano}
+      textColor={colors.colorSkyGray}
+      colorValues={{
+        RGB: '2, 18, 44',
+        HEX: '#02122C',
+        CMYK: '100, 072, 000, 035',
+        PMS: '2757',
+      }}
+    />
+  </div>,
+];
+
+const sections = [
   {
-    id: 'colours',
-    title: 'Colours',
-    blurb: [],
-    examples: [
-      <div className={containerClassName}>
-        <Heading level="h3">Blue</Heading>
-        <ColorSwatch
-          name="color-sky-blue"
-          color={colors.colorSkyBlue}
-          textColor={colors.colorWhite}
-        />
-        <ColorSwatch
-          name="color-sky-blue-shade-03"
-          color={colors.colorSkyBlueShade03}
-          textColor={colors.colorWhite}
-        />
-        <ColorSwatch
-          name="color-sky-blue-shade-02"
-          color={colors.colorSkyBlueShade02}
-          textColor={colors.colorWhite}
-        />
-        <ColorSwatch
-          name="color-sky-blue-shade-01"
-          color={colors.colorSkyBlueShade01}
-          textColor={colors.colorWhite}
-        />
-
-        <ColorSwatch
-          name="color-sky-blue-tint-01"
-          color={colors.colorSkyBlueTint01}
-          textColor={colors.colorWhite}
-        />
-        <ColorSwatch
-          name="color-sky-blue-tint-02"
-          color={colors.colorSkyBlueTint02}
-          textColor={colors.colorSkyBlue}
-        />
-        <ColorSwatch
-          name="color-sky-blue-tint-03"
-          color={colors.colorSkyBlueTint03}
-          textColor={colors.colorSkyBlue}
-        />
-        <Heading level="h3">Green</Heading>
-        <ColorSwatch
-          name="color-monteverde"
-          color={colors.colorMonteverde}
-          textColor={colors.colorWhite}
-        />
-        <ColorSwatch
-          name="color-glencoe"
-          color={colors.colorGlencoe}
-          textColor={colors.colorWhite}
-        />
-        <ColorSwatch
-          name="color-sagano"
-          color={colors.colorSagano}
-          textColor={colors.colorMonteverde}
-        />
-        <Heading level="h3">Yellow</Heading>
-        <ColorSwatch
-          name="color-kolkata"
-          color={colors.colorKolkata}
-          textColor={colors.colorWhite}
-        />
-        <ColorSwatch
-          name="color-erfoud"
-          color={colors.colorErfoud}
-          textColor={colors.colorWhite}
-        />
-        <ColorSwatch
-          name="color-bagan"
-          color={colors.colorBagan}
-          textColor={colors.colorKolkata}
-        />
-        <Heading level="h3">Orange</Heading>
-        <ColorSwatch
-          name="color-bunol"
-          color={colors.colorBunol}
-          textColor={colors.colorWhite}
-        />
-        <ColorSwatch
-          name="color-petra"
-          color={colors.colorPetra}
-          textColor={colors.colorWhite}
-        />
-        <ColorSwatch
-          name="color-nara"
-          color={colors.colorNara}
-          textColor={colors.colorBunol}
-        />
-        <Heading level="h3">Purple</Heading>
-        <ColorSwatch
-          name="color-abisko"
-          color={colors.colorAbisko}
-          textColor={colors.colorWhite}
-        />
-        <ColorSwatch
-          name="color-valensole"
-          color={colors.colorValensole}
-          textColor={colors.colorWhite}
-        />
-        <ColorSwatch
-          name="color-tochigi"
-          color={colors.colorTochigi}
-          textColor={colors.colorAbisko}
-        />
-        <Heading level="h3">Red</Heading>
-        <ColorSwatch
-          name="color-panjin"
-          color={colors.colorPanjin}
-          textColor={colors.colorWhite}
-        />
-        <ColorSwatch
-          name="color-hillier"
-          color={colors.colorHillier}
-          textColor={colors.colorWhite}
-        />
-        <ColorSwatch
-          name="color-harbour"
-          color={colors.colorHarbour}
-          textColor={colors.colorPanjin}
-        />
-        <Heading level="h3">White</Heading>
-        <ColorSwatch name="color-white" color={colors.colorWhite} border />
-      </div>,
-    ],
+    id: 'intro',
+    content: <BpkMarkdownRenderer source={getMarkdownString(intro)} />,
   },
   {
-    id: 'grays',
-    title: 'Grays',
-    blurb: [],
-    examples: [
-      <div className={containerClassName}>
-        <ColorSwatch
-          name="color-sky-gray"
-          color={colors.colorSkyGray}
-          textColor={colors.colorWhite}
-        />
-        <ColorSwatch
-          name="color-sky-gray-tint-01"
-          color={colors.colorSkyGrayTint01}
-          textColor={colors.colorWhite}
-        />
-        <ColorSwatch
-          name="color-sky-gray-tint-02"
-          color={colors.colorSkyGrayTint02}
-          textColor={colors.colorWhite}
-        />
-        <ColorSwatch
-          name="color-sky-gray-tint-03"
-          color={colors.colorSkyGrayTint03}
-          textColor={colors.colorWhite}
-        />
-        <ColorSwatch
-          name="color-sky-gray-tint-04"
-          color={colors.colorSkyGrayTint04}
-        />
-        <ColorSwatch
-          name="color-sky-gray-tint-05"
-          color={colors.colorSkyGrayTint05}
-        />
-        <ColorSwatch
-          name="color-sky-gray-tint-06"
-          color={colors.colorSkyGrayTint06}
-        />
-        <ColorSwatch
-          name="color-sky-gray-tint-07"
-          color={colors.colorSkyGrayTint07}
-        />
-      </div>,
-    ],
+    id: 'palette',
+    title: 'Palette',
+    content: colours,
+    alternate: true,
+  },
+  {
+    id: 'pairings',
+    title: 'Pairings chart',
+    content: (
+      <BpkImage
+        altText="color pairings"
+        width={840}
+        height={484}
+        src={`/${ColorPairings}`}
+      />
+    ),
+  },
+  {
+    id: 'examples',
+    title: 'Examples',
+    content: (
+      <BpkImage
+        altText="color pairings"
+        width={840}
+        height={566}
+        src={`/${ColorExamples}`}
+      />
+    ),
+    alternate: true,
   },
 ];
 
 const ColorsPage = () => (
-  <DocsPageBuilder title="Colour" components={components} />
+  <GuidelinesPageBuilder
+    title="Colour"
+    hero={{
+      heading: `Colour`,
+      imageUrl: `/${ColorsHero}`,
+      className: getClassName('bpk-docs-colors-page__hero'),
+    }}
+    sections={sections}
+    nextPageLink={{
+      title: 'Typography',
+      link: ROUTES.TYPESETTING,
+    }}
+  />
 );
 
 export default ColorsPage;

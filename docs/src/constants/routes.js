@@ -30,12 +30,12 @@ export const BASE_STYLESHEET = '/using/base-stylesheet';
 export const PRINCIPLES = '/using/principles';
 
 // guidelines
+export const COLORS = '/guidelines/colors';
 export const COPYWRITING = '/guidelines/copywriting';
 export const TONE_OF_VOICE = '/guidelines/tone-of-voice';
 export const STRATEGY = '/guidelines/strategy';
 
 // components/bonds/
-export const COLORS = '/tokens/colors';
 export const TYPESETTING = '/tokens/typesetting';
 export const RADII = '/tokens/radii';
 export const SHADOWS = '/tokens/shadows';

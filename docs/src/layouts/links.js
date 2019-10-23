@@ -471,7 +471,6 @@ export default [
       url: `/${DesignTokensImage}`,
     },
     links: [
-      { id: 'COLORS', route: routes.COLORS, children: 'Colour' },
       { id: 'TYPESETTING', route: routes.TYPESETTING, children: 'Typesetting' },
       { id: 'LAYOUT', route: routes.SPACINGS, children: 'Spacing' },
       { id: 'RADII', route: routes.RADII, children: 'Radius' },
@@ -523,6 +522,7 @@ export default [
         children: 'Tone of voice',
       },
       { id: 'STRATEGY', route: routes.STRATEGY, children: 'Strategy' },
+      { id: 'COLORS', route: routes.COLORS, children: 'Colour' },
     ],
   },
 ];
