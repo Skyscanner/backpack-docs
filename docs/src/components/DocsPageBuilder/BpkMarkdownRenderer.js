@@ -101,7 +101,7 @@ const BpkMarkdownRenderer = (props: Props) => {
 
   renderers.heading = headingProps => {
     const { level, children, ...headingRest } = headingProps;
-    console.log('LEVEL', level);
+
     return (
       <BpkText
         textStyle={TEXT_STYLES[level]}

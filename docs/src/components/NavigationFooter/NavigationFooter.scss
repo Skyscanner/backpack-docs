@@ -19,6 +19,7 @@
 
 .bpk-docs-navigation-footer {
   display: flex;
+  z-index: 50;
   padding: $bpk-spacing-lg * 2;
   padding-bottom: $bpk-spacing-xs;
   justify-content: space-between;

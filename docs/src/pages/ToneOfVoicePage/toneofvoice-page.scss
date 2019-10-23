@@ -21,46 +21,41 @@
 .bpkdocs-toneofvoice-page {
   &__hero {
     background: $bpk-color-panjin;
+    background-repeat: no-repeat;
+    background-position: right;
   }
 
-  &__traveler-first {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  &__traveller-first {
+    &--dont {
+      color: $bpk-color-panjin;
+    }
   }
 
-  &__traveler-first-card {
-    max-width: $bpk-spacing-xxl * 9;
-    margin-bottom: $bpk-spacing-base;
-    padding: $bpk-spacing-lg;
-    background-color: $bpk-color-white;
+  &__icon {
+    width: $bpk-spacing-xxl;
+    height: $bpk-spacing-xxl;
 
-    @include bpk-breakpoint-mobile {
-      min-width: 100%;
-    }
-
-    &:first-child {
-      margin-right: $bpk-spacing-base;
-    }
-
-    > h3:first-child {
-      font-weight: bold;
-    }
-
-    > p {
-      margin: 0;
-    }
-
-    > p:nth-child(even) {
-      margin-top: $bpk-spacing-lg;
+    &--do {
+      fill: $bpk-color-monteverde;
     }
 
     &--dont {
-      color: $bpk-color-panjin;
+      fill: $bpk-color-panjin;
+    }
+  }
 
-      > svg {
-        fill: $bpk-color-panjin;
-      }
+  &__example-section {
+    padding-bottom: 0;
+  }
+
+  &__example-content-container {
+    margin-bottom: $bpk-spacing-base * -1;
+  }
+
+  &__example-card {
+    > :first-child {
+      display: block;
+      margin: 0 auto $bpk-spacing-xxl auto;
     }
   }
 }
