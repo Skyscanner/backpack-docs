@@ -20,13 +20,20 @@
 .bpk-docs-guidelines-page {
   &__section {
     padding: $bpk-spacing-lg * 2;
-    background-color: $bpk-color-white;
 
     @include bpk-breakpoint-mobile {
       padding: $bpk-spacing-lg;
     }
 
-    &--alternate {
+    &--background-white {
+      background-color: $bpk-color-white;
+    }
+
+    &--background-light {
+      background-color: $bpk-color-sky-gray-tint-07;
+    }
+
+    &--background-dark {
       background-color: $bpk-color-sky-gray-tint-06;
     }
 
@@ -37,9 +44,14 @@
   }
 
   &__heading {
-    margin-bottom: 0;
+    margin: 0;
     color: $bpk-color-sky-gray;
     text-align: left;
+  }
+
+  &__hero,
+  &__section--image {
+    padding-bottom: $bpk-spacing-sm * 2;
   }
 
   &__image {
@@ -48,10 +60,18 @@
   }
 
   &__content {
-    color: $bpk-color-sky-gray-tint-02;
+    max-width: $bpk-spacing-xxl * 30;
 
-    &--title {
+    &--with-title {
       margin-top: $bpk-spacing-lg;
+
+      > p:first-child {
+        margin-top: $bpk-spacing-lg;
+      }
+    }
+
+    &--style-light {
+      color: $bpk-color-sky-gray-tint-02;
     }
   }
 }
