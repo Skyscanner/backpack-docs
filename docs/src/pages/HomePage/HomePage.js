@@ -24,17 +24,17 @@ import { cssModules } from 'bpk-react-utils';
 
 import * as ROUTES from '../../constants/routes';
 import HomePageCard from '../../components/HomePageCard';
-import ComponentsImage from '../../static/components.jpg';
+import ComponentsImage from '../../static/components_hero.jpg';
 import DesignTokensImage from '../../static/design_tokens.jpg';
 import GitHubImage from '../../static/github.jpg';
 import UsingBackpackImage from '../../static/using_bpk.jpg';
-import StyleGuideImage from '../../static/style_guide.jpg';
+import GuidelinesImage from '../../static/guidelines.png';
 import ComponentsIcon from '../../static/components_icon.svg';
 import DesignTokensIcon from '../../static/design_tokens_icon.svg';
 import GitHubIcon from '../../static/github_icon.svg';
 import UsingBackpackIcon from '../../static/using_bpk_icon.svg';
-import StyleGuideIcon from '../../static/style_guide_icon.svg';
-import HeroImage from '../../static/hero.jpg';
+import GuidelinesIcon from '../../static/guidelines_icon.svg';
+import HeroImage from '../../static/hero.png';
 import LondonHeroImage from '../../static/london_hero.jpg';
 import HongKongHeroImage from '../../static/hongKong_hero.jpg';
 import DohaHeroImage from '../../static/doha_hero.jpg';
@@ -54,11 +54,20 @@ const CARD_CONTENTS = [
     icon: UsingBackpackIcon,
   },
   {
+    key: 'guidelines',
+    title: 'Guidelines',
+    href: ROUTES.GUIDELINES,
+    image: GuidelinesImage,
+    icon: GuidelinesIcon,
+    iconWidth: '7.5rem',
+  },
+  {
     key: 'components',
     title: 'Components',
     href: ROUTES.COMPONENTS,
     image: ComponentsImage,
     icon: ComponentsIcon,
+    fullWidth: true,
   },
   {
     key: 'design-tokens',
@@ -66,15 +75,6 @@ const CARD_CONTENTS = [
     href: ROUTES.TOKENS,
     image: DesignTokensImage,
     icon: DesignTokensIcon,
-    fullWidth: true,
-  },
-  {
-    key: 'guidelines',
-    title: 'Guidelines',
-    href: ROUTES.GUIDELINES,
-    image: StyleGuideImage,
-    icon: StyleGuideIcon,
-    iconWidth: '7.5rem',
   },
   {
     key: 'github',
@@ -91,13 +91,13 @@ const CARD_CONTENTS = [
 const HERO_IMAGE_THEMES = {
   London: {
     image: LondonHeroImage,
-    credit: null,
-    creditHref: 'https://unsplash.com/photos/q99oeAG46BY',
+    credit: 'Tomas Anton Escobar: London Tube',
+    creditHref: 'https://unsplash.com/photos/PHyF2mCMei0',
   },
   HongKong: {
     image: HongKongHeroImage,
-    credit: null,
-    creditHref: 'https://unsplash.com/photos/q99oeAG46BY',
+    credit: 'Ryan Tang: Mong Kok, Hong Kong',
+    creditHref: 'https://unsplash.com/photos/ANJHXftvvJ8',
   },
   Doha: {
     image: DohaHeroImage,
@@ -106,8 +106,8 @@ const HERO_IMAGE_THEMES = {
   },
   default: {
     image: HeroImage,
-    credit: 'Vincent Guth: Hot Air Balloon',
-    creditHref: 'https://unsplash.com/photos/q99oeAG46BY',
+    credit: null,
+    creditHref: null,
   },
 };
 const HomePage = (props, context) => {
