@@ -59,7 +59,6 @@ const CARD_CONTENTS = [
     href: ROUTES.GUIDELINES,
     image: GuidelinesImage,
     icon: GuidelinesIcon,
-    iconWidth: '7.5rem',
   },
   {
     key: 'components',
