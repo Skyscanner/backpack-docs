@@ -26,15 +26,22 @@ import STYLES from './color-swatch.scss';
 const getClassName = cssModules(STYLES);
 
 const ColorSwatch = props => {
+  const {
+    color,
+    textColor,
+    colorValues,
+    border,
+    className: userClassName,
+  } = props;
   const style = {
-    backgroundColor: props.color,
-    color: props.textColor,
+    backgroundColor: color,
+    color: textColor,
   };
 
   const className = getClassName(
     'bpkdocs-color-swatch',
-    props.border && 'bpkdocs-color-swatch--border',
-    props.className,
+    border && 'bpkdocs-color-swatch--border',
+    userClassName,
   );
 
   return (
@@ -44,12 +51,14 @@ const ColorSwatch = props => {
           {props.name}
         </BpkText>
       </div>
-      <div>
-        <BpkText tagName="h6">RGB {props.colorValues.RGB}</BpkText>
-        <BpkText tagName="h6">HEX {props.colorValues.HEX}</BpkText>
-        <BpkText tagName="h6">CMYK {props.colorValues.CMYK}</BpkText>
-        <BpkText tagName="h6">PMS {props.colorValues.PMS}</BpkText>
-      </div>
+      {colorValues && (
+        <div>
+          <BpkText tagName="h6">RGB {colorValues.RGB}</BpkText>
+          <BpkText tagName="h6">HEX {colorValues.HEX}</BpkText>
+          <BpkText tagName="h6">CMYK {colorValues.CMYK}</BpkText>
+          <BpkText tagName="h6">PMS {colorValues.PMS}</BpkText>
+        </div>
+      )}
     </div>
   );
 };
@@ -65,7 +74,7 @@ ColorSwatch.propTypes = {
     HEX: PropTypes.string,
     CMYK: PropTypes.string,
     PMS: PropTypes.string,
-  }).isRequired,
+  }),
 };
 
 ColorSwatch.defaultProps = {
@@ -73,6 +82,7 @@ ColorSwatch.defaultProps = {
   textColor: null,
   className: null,
   border: false,
+  colorValues: null,
 };
 
 export default ColorSwatch;
