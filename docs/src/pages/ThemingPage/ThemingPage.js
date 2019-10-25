@@ -91,7 +91,7 @@ const webComponents = [
         <div className={getClassName('bpkdocs-theming-page__swatch-container')}>
           <ColorSwatch
             name="primary-color"
-            whiteColor
+            textColor="#FFF"
             className={getClassName('bpkdocs-theming-page__swatch--primary')}
           />
         </div>
