@@ -27,6 +27,14 @@ import screenshotWithDivider from '../../../../backpack-ios/screenshots/Card/wit
 import screenshotWithDividerWithoutPadding from '../../../../backpack-ios/screenshots/Card/with-divider-without-padding.png';
 import screenshotWithDividerCornerStyleLarge from '../../../../backpack-ios/screenshots/Card/with-divider-and-corner-style-large.png';
 import screenshotWithDividerArrangedVertically from '../../../../backpack-ios/screenshots/Card/with-divider-arranged-vertically.png';
+import screenshotDefaultDm from '../../../../backpack-ios/screenshots/Card/default_dm.png';
+import screenshotSelectedDm from '../../../../backpack-ios/screenshots/Card/selected_dm.png';
+import screenshotCornerStyleLargeDm from '../../../../backpack-ios/screenshots/Card/corner-style-large_dm.png';
+import screenshotWithoutPaddingDm from '../../../../backpack-ios/screenshots/Card/without-padding_dm.png';
+import screenshotWithDividerDm from '../../../../backpack-ios/screenshots/Card/with-divider_dm.png';
+import screenshotWithDividerWithoutPaddingDm from '../../../../backpack-ios/screenshots/Card/with-divider-without-padding_dm.png';
+import screenshotWithDividerCornerStyleLargeDm from '../../../../backpack-ios/screenshots/Card/with-divider-and-corner-style-large_dm.png';
+import screenshotWithDividerArrangedVerticallyDm from '../../../../backpack-ios/screenshots/Card/with-divider-arranged-vertically_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -38,6 +46,13 @@ const components = [
         width: 750,
         height: 1334,
         src: `/${screenshotDefault}`,
+        altText: 'iOS default card.',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotDefaultDm}`,
         altText: 'iOS default card.',
         subText: '(iPhone 8 simulator)',
       },
@@ -54,6 +69,13 @@ const components = [
         altText: 'iOS selected card.',
         subText: '(iPhone 8 simulator)',
       },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotSelectedDm}`,
+        altText: 'iOS selected card.',
+        subText: '(iPhone 8 simulator)',
+      },
     ],
   },
   {
@@ -64,6 +86,13 @@ const components = [
         width: 750,
         height: 1334,
         src: `/${screenshotCornerStyleLarge}`,
+        altText: 'iOS card with large corner style.',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotCornerStyleLargeDm}`,
         altText: 'iOS card with large corner style.',
         subText: '(iPhone 8 simulator)',
       },
@@ -80,6 +109,13 @@ const components = [
         altText: 'iOS card without padding.',
         subText: '(iPhone 8 simulator)',
       },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotWithoutPaddingDm}`,
+        altText: 'iOS card without padding.',
+        subText: '(iPhone 8 simulator)',
+      },
     ],
   },
   {
@@ -90,6 +126,13 @@ const components = [
         width: 750,
         height: 1334,
         src: `/${screenshotWithDivider}`,
+        altText: 'iOS card with divider.',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotWithDividerDm}`,
         altText: 'iOS card with divider.',
         subText: '(iPhone 8 simulator)',
       },
@@ -106,6 +149,13 @@ const components = [
         altText: 'iOS card with divider arranged vertically.',
         subText: '(iPhone 8 simulator)',
       },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotWithDividerArrangedVerticallyDm}`,
+        altText: 'iOS card with divider arranged vertically.',
+        subText: '(iPhone 8 simulator)',
+      },
     ],
   },
   {
@@ -119,6 +169,13 @@ const components = [
         altText: 'iOS card with divider and without padding.',
         subText: '(iPhone 8 simulator)',
       },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotWithDividerWithoutPaddingDm}`,
+        altText: 'iOS card with divider and without padding.',
+        subText: '(iPhone 8 simulator)',
+      },
     ],
   },
   {
@@ -129,6 +186,13 @@ const components = [
         width: 750,
         height: 1334,
         src: `/${screenshotWithDividerCornerStyleLarge}`,
+        altText: 'iOS card with divider and large corner style.',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotWithDividerCornerStyleLargeDm}`,
         altText: 'iOS card with divider and large corner style.',
         subText: '(iPhone 8 simulator)',
       },
