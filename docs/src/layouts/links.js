@@ -314,7 +314,7 @@ const ComponentsLinks = [
         id: 'NAVIGATION_BAR',
         route: routes.NAVIGATION_BAR,
         children: 'Navigation bar',
-        tags: ['web', 'native'],
+        tags: ['web', 'native', 'ios'],
       },
       {
         id: 'NAVIGATION_STACK',

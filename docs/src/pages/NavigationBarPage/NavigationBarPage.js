@@ -24,6 +24,7 @@ import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 import WebNavigation from '../WebNavigationBarPage';
 import NativeNavigation from '../NativeNavigationBarPage';
+import IOSNavigationBarPage from '../IOSNavigationBarPage';
 
 const BadgePage = () => (
   <DocsPageWrapper
@@ -36,6 +37,7 @@ const BadgePage = () => (
     ]}
     webSubpage={<WebNavigation wrapped />}
     nativeSubpage={<NativeNavigation wrapped />}
+    iosSubpage={<IOSNavigationBarPage wrapped />}
   />
 );
 
