@@ -58,9 +58,7 @@ const fixDependencyErrors = packageFiles => {
     });
     // eslint-disable-next-line max-len
     console.log(
-      `${error.dependency} dependency upgraded from ${
-        error.dependencyVersion
-      } to ${error.correctDependencyVersion}`,
+      `${error.dependency} dependency upgraded from ${error.dependencyVersion} to ${error.correctDependencyVersion}`,
     );
   });
 
@@ -157,9 +155,7 @@ if (errors.length === 0) {
   errors.forEach(error => {
     // eslint-disable-next-line max-len
     console.log(
-      `${error.packageName} depends on ${error.dependency} ${
-        error.dependencyVersion
-      }, it should be ${error.correctDependencyVersion}`,
+      `${error.packageName} depends on ${error.dependency} ${error.dependencyVersion}, it should be ${error.correctDependencyVersion}`,
     );
   });
   console.log('');

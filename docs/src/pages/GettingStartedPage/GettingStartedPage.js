@@ -31,8 +31,8 @@ import Code from '../../components/Code';
 import CodeBlock from '../../components/CodeBlock';
 
 /* eslint-disable import/no-webpack-loader-syntax */
+/* eslint-disable import/no-unresolved */
 const iconTemplate = require('!!file-loader?name=[name].[hash].sketch!./../../static/icon-template.sketch');
-
 const responsiveGrid = require('!!file-loader?name=[name].[hash].sketch!./../../static/responsive-grids.sketch');
 
 const nodeSassUrl = 'https://github.com/sass/node-sass';

@@ -35,7 +35,8 @@ import Code from '../../components/Code';
 
 const AlignedBpkSmallDownloadIcon = withButtonAlignment(BpkSmallDownloadIcon);
 
-// eslint-disable-next-line import/no-webpack-loader-syntax
+/* eslint-disable import/no-webpack-loader-syntax */
+/* eslint-disable import/no-unresolved */
 const iconsSvgs = require('!!file-loader?name=[name].[hash].zip!zip-it-loader!./../../../../backpack/packages/bpk-svgs/src/icons/icons');
 
 const friendlyNameMap = {

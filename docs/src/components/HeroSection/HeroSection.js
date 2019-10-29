@@ -29,7 +29,7 @@ import STYLES from './HeroSection.scss';
 const getClassName = cssModules(STYLES);
 
 type Props = {
-  className: string,
+  className?: string,
   imageUrl?: string,
   heading: string,
   subHeading: ?string,
@@ -63,6 +63,7 @@ const HeroSection = (props: Props) => {
 HeroSection.defaultProps = {
   subHeading: null,
   imageUrl: null,
+  className: null,
 };
 
 export default HeroSection;

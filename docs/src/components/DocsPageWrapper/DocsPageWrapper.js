@@ -113,7 +113,7 @@ const DocsPageWrapper = props => {
     history,
     location,
   } = props;
-  const path = match.url;
+  const { path } = match;
 
   const platforms = {
     android: androidSubpage,
@@ -190,6 +190,7 @@ DocsPageWrapper.propTypes = {
   }).isRequired,
   history: PropTypes.shape({
     push: PropTypes.func.isRequired,
+    replace: PropTypes.func.isRequired,
   }).isRequired,
   location: PropTypes.shape({
     search: PropTypes.string.isRequired,
