@@ -21,6 +21,8 @@ import React from 'react';
 import readme from '../../../../backpack-ios/Backpack/TappableLinkLabel/README.md';
 import screenshotMultiple from '../../../../backpack-ios/screenshots/TappableLinkLabel/multiple.png';
 import screenshotAlternate from '../../../../backpack-ios/screenshots/TappableLinkLabel/alternate-style.png';
+import screenshotMultipleDm from '../../../../backpack-ios/screenshots/TappableLinkLabel/multiple_dm.png';
+import screenshotAlternateDm from '../../../../backpack-ios/screenshots/TappableLinkLabel/alternate-style_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -35,6 +37,13 @@ const components = [
         altText: 'iOS Tappable Link Label',
         subText: '(iPhone 8 simulator)',
       },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotMultipleDm}`,
+        altText: 'iOS Tappable Link Label',
+        subText: '(iPhone 8 simulator)',
+      },
     ],
   },
   {
@@ -45,6 +54,13 @@ const components = [
         width: 750,
         height: 1334,
         src: `/${screenshotAlternate}`,
+        altText: 'iOS Tappable Link Label with Alternate style',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotAlternateDm}`,
         altText: 'iOS Tappable Link Label with Alternate style',
         subText: '(iPhone 8 simulator)',
       },

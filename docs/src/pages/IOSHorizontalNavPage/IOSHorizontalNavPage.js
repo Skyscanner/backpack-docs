@@ -23,6 +23,10 @@ import screenshotDefault from '../../../../backpack-ios/screenshots/HorizontalNa
 import screenshotSmall from '../../../../backpack-ios/screenshots/HorizontalNavigation/small.png';
 import screenshotWithIcons from '../../../../backpack-ios/screenshots/HorizontalNavigation/with-icons.png';
 import screenshotNoUnderline from '../../../../backpack-ios/screenshots/HorizontalNavigation/without-underline.png';
+import screenshotDefaultDm from '../../../../backpack-ios/screenshots/HorizontalNavigation/default_dm.png';
+import screenshotSmallDm from '../../../../backpack-ios/screenshots/HorizontalNavigation/small_dm.png';
+import screenshotWithIconsDm from '../../../../backpack-ios/screenshots/HorizontalNavigation/with-icons_dm.png';
+import screenshotNoUnderlineDm from '../../../../backpack-ios/screenshots/HorizontalNavigation/without-underline_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -35,6 +39,14 @@ const components = [
         width: 1080,
         height: 1920,
         src: `/${screenshotDefault}`,
+        altText: 'iOS HorizontalNav Component',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        title: 'iOS',
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotDefaultDm}`,
         altText: 'iOS HorizontalNav Component',
         subText: '(iPhone 8 simulator)',
       },
@@ -52,6 +64,14 @@ const components = [
         altText: 'iOS HorizontalNav Component',
         subText: '(iPhone 8 simulator)',
       },
+      {
+        title: 'iOS',
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotSmallDm}`,
+        altText: 'iOS HorizontalNav Component',
+        subText: '(iPhone 8 simulator)',
+      },
     ],
   },
   {
@@ -66,6 +86,14 @@ const components = [
         altText: 'iOS HorizontalNav Component',
         subText: '(iPhone 8 simulator)',
       },
+      {
+        title: 'iOS',
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotWithIconsDm}`,
+        altText: 'iOS HorizontalNav Component',
+        subText: '(iPhone 8 simulator)',
+      },
     ],
   },
   {
@@ -77,6 +105,14 @@ const components = [
         width: 1080,
         height: 1920,
         src: `/${screenshotNoUnderline}`,
+        altText: 'iOS HorizontalNav Component',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        title: 'iOS',
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotNoUnderlineDm}`,
         altText: 'iOS HorizontalNav Component',
         subText: '(iPhone 8 simulator)',
       },
