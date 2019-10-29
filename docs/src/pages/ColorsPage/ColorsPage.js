@@ -25,13 +25,13 @@ import { createFromType } from '../../components/ApidocLink';
 import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
 import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
 import ColorsHero from '../../static/colours/colour_hero.svg';
-import ColorPairings from '../../static/colours/colour_pairings.png';
 import ColorExamples from '../../static/colours/colour_examples.png';
 import * as ROUTES from '../../constants/routes';
 
 import STYLES from './colors-page.scss';
 import intro from './content/intro.md';
 import colours from './colors';
+import ColorChart from './ColorChart';
 
 const getClassName = cssModules(STYLES);
 const toSassdocLink = createFromType('sass');
@@ -50,15 +50,7 @@ const sections = [
   {
     id: 'pairings',
     title: 'Pairings chart',
-    content: (
-      <BpkImage
-        className={getClassName('bpk-docs-colors-page__image')}
-        altText="color pairings"
-        width={840}
-        height={484}
-        src={`/${ColorPairings}`}
-      />
-    ),
+    content: <ColorChart />,
   },
   {
     id: 'examples',

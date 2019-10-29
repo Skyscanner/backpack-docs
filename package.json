@@ -242,5 +242,8 @@
       "wrapper-webpack-plugin",
       "zip-it-loader"
     ]
+  },
+  "dependencies": {
+    "get-contrast-ratio": "^0.2.1"
   }
 }
