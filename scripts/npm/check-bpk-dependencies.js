@@ -113,6 +113,9 @@ const getLatestProductionVersion = version => {
   if (version.includes('-beta')) {
     return version.split('-beta')[0];
   }
+  if (version.includes('-css')) {
+    return version.split('-beta')[0];
+  } 
   return version;
 };
 
@@ -131,7 +134,7 @@ console.log('Checking Backpack cross dependencies...');
 console.log('');
 
 let packageFiles = execSync(
-  'find packages -name package.json | grep -v node_modules',
+  'find . -name package.json | grep -v node_modules | grep -v backpack',
 )
   .toString()
   .split('\n');
