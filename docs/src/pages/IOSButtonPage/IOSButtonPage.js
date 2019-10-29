@@ -25,6 +25,12 @@ import screenshotDestructive from '../../../../backpack-ios/screenshots/Button/d
 import screenshotFeatured from '../../../../backpack-ios/screenshots/Button/featured.png';
 import screenshotLink from '../../../../backpack-ios/screenshots/Button/link.png';
 import screenshotOutline from '../../../../backpack-ios/screenshots/Button/outline.png';
+import screenshotPrimaryDm from '../../../../backpack-ios/screenshots/Button/primary_dm.png';
+import screenshotSecondaryDm from '../../../../backpack-ios/screenshots/Button/secondary_dm.png';
+import screenshotDestructiveDm from '../../../../backpack-ios/screenshots/Button/destructive_dm.png';
+import screenshotFeaturedDm from '../../../../backpack-ios/screenshots/Button/featured_dm.png';
+import screenshotLinkDm from '../../../../backpack-ios/screenshots/Button/link_dm.png';
+import screenshotOutlineDm from '../../../../backpack-ios/screenshots/Button/outline_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -39,6 +45,13 @@ const components = [
         altText: 'iOS primary button.',
         subText: '(iPhone 8 simulator)',
       },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotPrimaryDm}`,
+        altText: 'iOS primary button.',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
     ],
   },
   {
@@ -51,6 +64,13 @@ const components = [
         src: `/${screenshotSecondary}`,
         altText: 'iOS secondary button.',
         subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotSecondaryDm}`,
+        altText: 'iOS secondary button.',
+        subText: '(iPhone 8 simulator - dark mode)',
       },
     ],
   },
@@ -65,6 +85,13 @@ const components = [
         altText: 'iOS destructive button.',
         subText: '(iPhone 8 simulator)',
       },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotDestructiveDm}`,
+        altText: 'iOS destructive button.',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
     ],
   },
   {
@@ -77,6 +104,13 @@ const components = [
         src: `/${screenshotFeatured}`,
         altText: 'iOS featured button.',
         subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotFeaturedDm}`,
+        altText: 'iOS featured button.',
+        subText: '(iPhone 8 simulator - dark mode)',
       },
     ],
   },
@@ -91,6 +125,13 @@ const components = [
         altText: 'iOS outline button.',
         subText: '(iPhone 8 simulator)',
       },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotOutlineDm}`,
+        altText: 'iOS outline button.',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
     ],
   },
   {
@@ -103,6 +144,13 @@ const components = [
         src: `/${screenshotLink}`,
         altText: 'iOS link button.',
         subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotLinkDm}`,
+        altText: 'iOS link button.',
+        subText: '(iPhone 8 simulator - dark mode)',
       },
     ],
   },

@@ -21,6 +21,8 @@ import React from 'react';
 import readme from '../../../../backpack-ios/Backpack/Dialog/README.md';
 import screenshotAlert from '../../../../backpack-ios/screenshots/Dialog/with-cta.png';
 import screenshotBottomSheet from '../../../../backpack-ios/screenshots/Dialog/delete-confirmation.png';
+import screenshotAlertDm from '../../../../backpack-ios/screenshots/Dialog/with-cta_dm.png';
+import screenshotBottomSheetDm from '../../../../backpack-ios/screenshots/Dialog/delete-confirmation_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -38,6 +40,14 @@ const components = [
         altText: 'Alert dialog with a call to action.',
         subText: '(iPhone 8 simulator)',
       },
+      {
+        title: 'Used as a call to action.',
+        width: 750,
+        height: 1334,
+        src: `/${screenshotAlertDm}`,
+        altText: 'Alert dialog with a call to action.',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
     ],
   },
   {
@@ -53,6 +63,14 @@ const components = [
         src: `/${screenshotBottomSheet}`,
         altText: 'Bottom sheet dialog used for confirmation.',
         subText: '(iPhone 8 simulator)',
+      },
+      {
+        title: 'Used for confirmation.',
+        width: 750,
+        height: 1334,
+        src: `/${screenshotBottomSheetDm}`,
+        altText: 'Bottom sheet dialog used for confirmation.',
+        subText: '(iPhone 8 simulator - dark mode)',
       },
     ],
   },

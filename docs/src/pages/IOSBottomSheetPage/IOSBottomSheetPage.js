@@ -20,6 +20,7 @@ import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/BottomSheet/README.md';
 import screenshotAll from '../../../../backpack-ios/screenshots/BottomSheet/with-bottom-section.png';
+import screenshotAllDm from '../../../../backpack-ios/screenshots/BottomSheet/with-bottom-section_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -33,6 +34,13 @@ const components = [
         src: `/${screenshotAll}`,
         altText: 'The various configurations of badges.',
         subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotAllDm}`,
+        altText: 'The various configurations of badges.',
+        subText: '(iPhone 8 simulator - dark mode)',
       },
     ],
   },
