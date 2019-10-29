@@ -20,6 +20,7 @@ import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/TextField/README.md';
 import screenshotDefault from '../../../../backpack-ios/screenshots/TextField/default.png';
+import screenshotDefaultDm from '../../../../backpack-ios/screenshots/TextField/default_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -33,6 +34,13 @@ const components = [
         src: `/${screenshotDefault}`,
         altText: 'iOS default text input',
         subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotDefaultDm}`,
+        altText: 'iOS default text input',
+        subText: '(iPhone 8 simulator - dark mode)',
       },
     ],
   },

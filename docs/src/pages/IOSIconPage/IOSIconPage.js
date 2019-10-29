@@ -20,6 +20,7 @@ import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/Icon/README.md';
 import screenshotAll from '../../../../backpack-ios/screenshots/Icon/all.png';
+import screenshotAllDm from '../../../../backpack-ios/screenshots/Icon/all_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -33,6 +34,13 @@ const components = [
         src: `/${screenshotAll}`,
         altText: 'Icons for iOS.',
         subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotAllDm}`,
+        altText: 'Icons for iOS.',
+        subText: '(iPhone 8 simulator - dark mode)',
       },
     ],
   },
