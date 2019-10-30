@@ -9,7 +9,6 @@ install:
   # pulls submodules first, so that `backpack-build` process is carried out on the latest version
   - npm run submodules:pull
   - npm ci
-  - npm run build-backpack
 
 script:
   - set -e
