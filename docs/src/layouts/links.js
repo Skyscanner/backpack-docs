@@ -515,14 +515,15 @@ export default [
     category: 'Guidelines',
     sort: true,
     links: [
+      { id: 'COLORS', route: routes.COLORS, children: 'Colour' },
       { id: 'COPYWRITING', route: routes.COPYWRITING, children: 'Copywriting' },
+      { id: 'PHOTOGRAPHY', route: routes.PHOTOGRAPHY, children: 'Photography' },
+      { id: 'STRATEGY', route: routes.STRATEGY, children: 'Strategy' },
       {
         id: 'TONE_OF_VOICE',
         route: routes.TONE_OF_VOICE,
         children: 'Tone of voice',
       },
-      { id: 'STRATEGY', route: routes.STRATEGY, children: 'Strategy' },
-      { id: 'COLORS', route: routes.COLORS, children: 'Colour' },
     ],
   },
 ];

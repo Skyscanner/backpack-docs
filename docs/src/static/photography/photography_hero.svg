@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="798px" height="529px" viewBox="0 0 798 529" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Group 14</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="960" height="624"></rect>
+    </defs>
+    <g id="New_Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Guidelines-Photography" transform="translate(-642.000000, -95.000000)">
+            <g id="Group" transform="translate(480.000000, 0.000000)">
+                <g id="Group-14">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <g mask="url(#mask-2)">
+                        <g transform="translate(164.000000, 97.000000)">
+                            <path d="M238,0 L516,261" id="Stroke-1" stroke="#E18B96" stroke-width="4"></path>
+                            <path d="M238,261 L516,0" id="Stroke-2" stroke="#E18B96" stroke-width="4"></path>
+                            <polygon id="Stroke-3" stroke="#E18B96" stroke-width="4" points="238 261 516 261 516 0 238 0"></polygon>
+                            <path d="M135,362 L0,235" id="Stroke-4" stroke="#E18B96" stroke-width="4"></path>
+                            <path d="M135,235 L0,362" id="Stroke-5" stroke="#E18B96" stroke-width="4"></path>
+                            <polygon id="Stroke-6" stroke="#E18B96" stroke-width="4" points="0 362 135 362 135 235 0 235"></polygon>
+                            <g id="Group-13" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(477.000000, 168.000000)">
+                                <path d="M420,0.200342563 L0,361.786155" id="Stroke-7" stroke="#E18B96" stroke-width="4"></path>
+                                <path d="M0,0.200342563 L420,361.786155" id="Stroke-9" stroke="#E18B96" stroke-width="4"></path>
+                                <polyline id="Stroke-11" stroke="#E18B96" stroke-width="4" points="0 361.786155 0 0.200342563 420 0.200342563"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
