@@ -20,11 +20,11 @@
 
 .bpkdocs-default-layout {
   &__container {
-    background-color: $bpk-color-sky-gray-tint-06;
+    background-color: $bpk-color-sky-gray-tint-07;
   }
 
   &__footer-container {
-    @include bpk-border-top-sm($bpk-color-sky-gray-tint-06);
+    @include bpk-border-top-sm($bpk-color-sky-gray-tint-07);
   }
 
   &__footer-row {
