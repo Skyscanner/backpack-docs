@@ -513,17 +513,17 @@ export default [
   {
     id: 'GUIDELINES',
     category: 'Guidelines',
-    sort: true,
+    sort: false,
     links: [
-      { id: 'COLORS', route: routes.COLORS, children: 'Colour' },
-      { id: 'COPYWRITING', route: routes.COPYWRITING, children: 'Copywriting' },
-      { id: 'PHOTOGRAPHY', route: routes.PHOTOGRAPHY, children: 'Photography' },
       { id: 'STRATEGY', route: routes.STRATEGY, children: 'Strategy' },
       {
         id: 'TONE_OF_VOICE',
         route: routes.TONE_OF_VOICE,
         children: 'Tone of voice',
       },
+      { id: 'COLORS', route: routes.COLORS, children: 'Colour' },
+      { id: 'PHOTOGRAPHY', route: routes.PHOTOGRAPHY, children: 'Photography' },
+      { id: 'COPYWRITING', route: routes.COPYWRITING, children: 'Copywriting' },
     ],
   },
 ];
