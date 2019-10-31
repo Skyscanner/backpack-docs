@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="550px" height="623px" viewBox="0 0 550 623" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Group 223</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.558044118 0.378064755 77.5641176 0.378064755 77.5641176 3.17781869 0.558044118 3.17781869"></polygon>
+        <polygon id="path-3" points="0.558044118 0.378064755 77.5641176 0.378064755 77.5641176 15.2183167 0.558044118 15.2183167"></polygon>
+        <polygon id="path-5" points="0.558044118 0.378064755 77.5641176 0.378064755 77.5641176 27.2591028 0.558044118 27.2591028"></polygon>
+        <polygon id="path-7" points="0.558044118 0.378064755 77.5641176 0.378064755 77.5641176 39.2996007 0.558044118 39.2996007"></polygon>
+        <polygon id="path-9" points="0.558044118 0.378064755 77.5641176 0.378064755 77.5641176 51.3400987 0.558044118 51.3400987"></polygon>
+        <polygon id="path-11" points="0.558044118 0.378064755 77.5641176 0.378064755 77.5641176 63.3808848 0.558044118 63.3808848"></polygon>
+        <polygon id="path-13" points="0.558044118 0.378064755 77.5641176 0.378064755 77.5641176 75.4213828 0.558044118 75.4213828"></polygon>
+        <polygon id="path-15" points="0.558044118 0.378064755 77.5641176 0.378064755 77.5641176 87.4621113 0.558044118 87.4621113"></polygon>
+        <polygon id="path-17" points="0.558044118 0.166094912 77.5641176 0.166094912 77.5641176 89.1288812 0.558044118 89.1288812"></polygon>
+        <polygon id="path-19" points="0.558044118 0.104198335 77.5641176 0.104198335 77.5641176 89.0669846 0.558044118 89.0669846"></polygon>
+        <polygon id="path-21" points="0.558044118 0.0420135985 77.5641176 0.0420135985 77.5641176 89.0047999 0.558044118 89.0047999"></polygon>
+        <polygon id="path-23" points="0.558044118 0.556435245 77.5641176 0.556435245 77.5641176 89.5192216 0.558044118 89.5192216"></polygon>
+        <polygon id="path-25" points="0.558044118 0.494250509 77.5641176 0.494250509 77.5641176 89.4570368 0.558044118 89.4570368"></polygon>
+        <polygon id="path-27" points="0.558044118 0.4322963 77.5641176 0.4322963 77.5641176 89.3950826 0.558044118 89.3950826"></polygon>
+        <polygon id="path-29" points="0.558044118 0.370111563 77.5641176 0.370111563 77.5641176 89.3328979 0.558044118 89.3328979"></polygon>
+        <polygon id="path-31" points="0.558044118 0.308214986 77.5641176 0.308214986 77.5641176 89.2710013 0.558044118 89.2710013"></polygon>
+        <polygon id="path-33" points="0.558044118 0.24603025 77.5641176 0.24603025 77.5641176 89.2088166 0.558044118 89.2088166"></polygon>
+        <polygon id="path-35" points="0.558044118 0.184133673 77.5641176 0.184133673 77.5641176 89.14692 0.558044118 89.14692"></polygon>
+        <polygon id="path-37" points="0.558044118 0.121948936 77.5641176 0.121948936 77.5641176 89.0847352 0.558044118 89.0847352"></polygon>
+        <polygon id="path-39" points="0.558044118 0.0597641998 77.5641176 0.0597641998 77.5641176 89.0225505 0.558044118 89.0225505"></polygon>
+        <polygon id="path-41" points="0.558044118 0.574128215 77.5641176 0.574128215 77.5641176 89.5369145 0.558044118 89.5369145"></polygon>
+        <polygon id="path-43" points="0.558044118 0.511943478 77.5641176 0.511943478 77.5641176 89.4747298 0.558044118 89.4747298"></polygon>
+        <polygon id="path-45" points="0.558044118 0.450046901 77.5641176 0.450046901 77.5641176 89.4128332 0.558044118 89.4128332"></polygon>
+        <polygon id="path-47" points="0.558044118 0.387862165 77.5641176 0.387862165 77.5641176 89.3506485 0.558044118 89.3506485"></polygon>
+        <polygon id="path-49" points="0.558044118 0.325965587 77.5641176 0.325965587 77.5641176 89.2887519 0.558044118 89.2887519"></polygon>
+        <polygon id="path-51" points="0.558044118 0.263780851 77.5641176 0.263780851 77.5641176 89.2265672 0.558044118 89.2265672"></polygon>
+        <polygon id="path-53" points="0.558044118 0.201538483 77.5641176 0.201538483 77.5641176 89.1643248 0.558044118 89.1643248"></polygon>
+        <polygon id="path-55" points="0.558044118 0.139641906 77.5641176 0.139641906 77.5641176 89.1024282 0.558044118 89.1024282"></polygon>
+        <polygon id="path-57" points="0.558044118 0.0777453284 77.5641176 0.0777453284 77.5641176 89.0405316 0.558044118 89.0405316"></polygon>
+        <polygon id="path-59" points="0.558044118 0.0158487512 77.5641176 0.0158487512 77.5641176 88.9780587 0.558044118 88.9780587"></polygon>
+        <polygon id="path-61" points="0.558044118 0.52969408 77.5641176 0.52969408 77.5641176 89.4924804 0.558044118 89.4924804"></polygon>
+        <polygon id="path-63" points="0.558044118 0.467797502 77.5641176 0.467797502 77.5641176 89.4305838 0.558044118 89.4305838"></polygon>
+        <polygon id="path-65" points="0.558044118 0.405843293 77.5641176 0.405843293 77.5641176 89.3686296 0.558044118 89.3686296"></polygon>
+        <polygon id="path-67" points="0.558044118 0.343946716 77.5641176 0.343946716 77.5641176 89.3061567 0.558044118 89.3061567"></polygon>
+        <polygon id="path-69" points="0.558044118 0.281473821 77.5641176 0.281473821 77.5641176 89.2442601 0.558044118 89.2442601"></polygon>
+        <polygon id="path-71" points="0.558044118 0.219577243 77.5641176 0.219577243 77.5641176 89.1823636 0.558044118 89.1823636"></polygon>
+        <polygon id="path-73" points="0.558044118 0.157680666 77.5641176 0.157680666 77.5641176 89.1198907 0.558044118 89.1198907"></polygon>
+        <polygon id="path-75" points="0.558044118 0.0957840888 77.5641176 0.0957840888 77.5641176 89.0579941 0.558044118 89.0579941"></polygon>
+        <polygon id="path-77" points="0.558044118 0.0333111933 77.5641176 0.0333111933 77.5641176 88.9960975 0.558044118 88.9960975"></polygon>
+        <polygon id="path-79" points="0.558044118 0.547675208 77.5641176 0.547675208 77.5641176 89.5104615 0.558044118 89.5104615"></polygon>
+        <polygon id="path-81" points="0.558044118 0.485778631 77.5641176 0.485778631 77.5641176 89.4479886 0.558044118 89.4479886"></polygon>
+        <polygon id="path-83" points="0.558044118 0.423305735 77.5641176 0.423305735 77.5641176 89.386092 0.558044118 89.386092"></polygon>
+        <polygon id="path-85" points="0.558044118 0.361409158 77.5641176 0.361409158 77.5641176 89.3241955 0.558044118 89.3241955"></polygon>
+        <polygon id="path-87" points="0.558044118 0.299512581 77.5641176 0.299512581 77.5641176 89.2622989 0.558044118 89.2622989"></polygon>
+        <polygon id="path-89" points="0.558044118 0.237616004 77.5641176 0.237616004 77.5641176 89.199826 0.558044118 89.199826"></polygon>
+        <polygon id="path-91" points="0.558044118 0.175085476 77.5641176 0.175085476 77.5641176 89.1378718 0.558044118 89.1378718"></polygon>
+        <polygon id="path-93" points="0.558044118 0.113188899 77.5641176 0.113188899 77.5641176 89.0759752 0.558044118 89.0759752"></polygon>
+        <polygon id="path-95" points="0.558044118 0.0512923219 77.5641176 0.0512923219 77.5641176 89.0140786 0.558044118 89.0140786"></polygon>
+        <polygon id="path-97" points="0.558044118 0.565713969 77.5641176 0.565713969 77.5641176 89.527924 0.558044118 89.527924"></polygon>
+        <polygon id="path-99" points="0.558044118 0.503241073 77.5641176 0.503241073 77.5641176 89.4660274 0.558044118 89.4660274"></polygon>
+        <polygon id="path-101" points="0.558044118 0.441344496 77.5641176 0.441344496 77.5641176 89.4041308 0.558044118 89.4041308"></polygon>
+        <polygon id="path-103" points="0.558044118 0.379447919 77.5641176 0.379447919 77.5641176 89.3416579 0.558044118 89.3416579"></polygon>
+        <polygon id="path-105" points="0.558044118 0.316917391 77.5641176 0.316917391 77.5641176 82.7915708 0.558044118 82.7915708"></polygon>
+        <polygon id="path-107" points="0.558044118 0.255020814 77.5641176 0.255020814 77.5641176 70.6888881 0.558044118 70.6888881"></polygon>
+        <polygon id="path-109" points="0.558044118 0.193124237 77.5641176 0.193124237 77.5641176 58.5862054 0.558044118 58.5862054"></polygon>
+        <polygon id="path-111" points="0.558044118 0.13122766 77.5641176 0.13122766 77.5641176 46.4835227 0.558044118 46.4835227"></polygon>
+        <polygon id="path-113" points="0.558044118 0.0687547641 77.5641176 0.0687547641 77.5641176 34.38084 0.558044118 34.38084"></polygon>
+        <polygon id="path-115" points="0.558044118 0.00685818686 77.5641176 0.00685818686 77.5641176 22.2781573 0.558044118 22.2781573"></polygon>
+        <polygon id="path-117" points="0.558044118 0.521222202 77.5641176 0.521222202 77.5641176 10.7517928 0.558044118 10.7517928"></polygon>
+        <polygon id="path-119" points="0.137807579 0.522324921 73.2589474 0.522324921 73.2589474 535.655833 0.137807579 535.655833"></polygon>
+    </defs>
+    <g id="New_Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Guidelines-Typography" transform="translate(-890.000000, -1.000000)">
+            <g id="Group-2" transform="translate(480.000000, 0.000000)">
+                <g id="Group-223" transform="translate(412.000000, 1.000000)">
+                    <g id="Group-5">
+                        <g id="Group-211" transform="translate(397.000000, 0.000000)">
+                            <g id="Group-36">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Clip-35"></g>
+                                <path d="M-31.7978471,3.17781869 L121.544418,-85.7849676" id="Stroke-34" stroke="#A59BC8" stroke-width="4" mask="url(#mask-2)"></path>
+                            </g>
+                            <g id="Group-39">
+                                <mask id="mask-4" fill="white">
+                                    <use xlink:href="#path-3"></use>
+                                </mask>
+                                <g id="Clip-38"></g>
+                                <path d="M-31.7978471,15.2183167 L121.544418,-73.7444697" id="Stroke-37" stroke="#A59BC8" stroke-width="4" mask="url(#mask-4)"></path>
+                            </g>
+                            <g id="Group-42">
+                                <mask id="mask-6" fill="white">
+                                    <use xlink:href="#path-5"></use>
+                                </mask>
+                                <g id="Clip-41"></g>
+                                <path d="M-31.7978471,27.2591028 L121.544418,-61.7036835" id="Stroke-40" stroke="#A59BC8" stroke-width="4" mask="url(#mask-6)"></path>
+                            </g>
+                            <g id="Group-45">
+                                <mask id="mask-8" fill="white">
+                                    <use xlink:href="#path-7"></use>
+                                </mask>
+                                <g id="Clip-44"></g>
+                                <path d="M-31.7978471,39.2996007 L121.544418,-49.6631856" id="Stroke-43" stroke="#A59BC8" stroke-width="4" mask="url(#mask-8)"></path>
+                            </g>
+                            <g id="Group-48">
+                                <mask id="mask-10" fill="white">
+                                    <use xlink:href="#path-9"></use>
+                                </mask>
+                                <g id="Clip-47"></g>
+                                <path d="M-31.7978471,51.3400987 L121.544418,-37.6226876" id="Stroke-46" stroke="#A59BC8" stroke-width="4" mask="url(#mask-10)"></path>
+                            </g>
+                            <g id="Group-51">
+                                <mask id="mask-12" fill="white">
+                                    <use xlink:href="#path-11"></use>
+                                </mask>
+                                <g id="Clip-50"></g>
+                                <path d="M-31.7978471,63.3808848 L121.544418,-25.5819015" id="Stroke-49" stroke="#A59BC8" stroke-width="4" mask="url(#mask-12)"></path>
+                            </g>
+                            <g id="Group-54">
+                                <mask id="mask-14" fill="white">
+                                    <use xlink:href="#path-13"></use>
+                                </mask>
+                                <g id="Clip-53"></g>
+                                <path d="M-31.7978471,75.4213828 L121.544418,-13.5414035" id="Stroke-52" stroke="#A59BC8" stroke-width="4" mask="url(#mask-14)"></path>
+                            </g>
+                            <g id="Group-57">
+                                <mask id="mask-16" fill="white">
+                                    <use xlink:href="#path-15"></use>
+                                </mask>
+                                <g id="Clip-56"></g>
+                                <path d="M-31.7978471,87.4621113 L121.544418,-1.50067502" id="Stroke-55" stroke="#A59BC8" stroke-width="4" mask="url(#mask-16)"></path>
+                            </g>
+                            <g id="Group-60" transform="translate(0.000000, 10.373728)">
+                                <mask id="mask-18" fill="white">
+                                    <use xlink:href="#path-17"></use>
+                                </mask>
+                                <g id="Clip-59"></g>
+                                <path d="M-31.7978471,89.1288812 L121.544418,0.166094912" id="Stroke-58" stroke="#A59BC8" stroke-width="4" mask="url(#mask-18)"></path>
+                            </g>
+                            <g id="Group-63" transform="translate(0.000000, 22.476411)">
+                                <mask id="mask-20" fill="white">
+                                    <use xlink:href="#path-19"></use>
+                                </mask>
+                                <g id="Clip-62"></g>
+                                <path d="M-31.7978471,89.0669846 L121.544418,0.104198335" id="Stroke-61" stroke="#A59BC8" stroke-width="4" mask="url(#mask-20)"></path>
+                            </g>
+                            <g id="Group-66" transform="translate(0.000000, 34.579093)">
+                                <mask id="mask-22" fill="white">
+                                    <use xlink:href="#path-21"></use>
+                                </mask>
+                                <g id="Clip-65"></g>
+                                <path d="M-31.7978471,89.0047999 L121.544418,0.0420135985" id="Stroke-64" stroke="#A59BC8" stroke-width="4" mask="url(#mask-22)"></path>
+                            </g>
+                            <g id="Group-69" transform="translate(0.000000, 46.105458)">
+                                <mask id="mask-24" fill="white">
+                                    <use xlink:href="#path-23"></use>
+                                </mask>
+                                <g id="Clip-68"></g>
+                                <path d="M-31.7978471,89.5192216 L121.544418,0.556435245" id="Stroke-67" stroke="#A59BC8" stroke-width="4" mask="url(#mask-24)"></path>
+                            </g>
+                            <g id="Group-72" transform="translate(0.000000, 58.208141)">
+                                <mask id="mask-26" fill="white">
+                                    <use xlink:href="#path-25"></use>
+                                </mask>
+                                <g id="Clip-71"></g>
+                                <path d="M-31.7978471,89.4570368 L121.544418,0.494250509" id="Stroke-70" stroke="#A59BC8" stroke-width="4" mask="url(#mask-26)"></path>
+                            </g>
+                            <g id="Group-75" transform="translate(0.000000, 70.310823)">
+                                <mask id="mask-28" fill="white">
+                                    <use xlink:href="#path-27"></use>
+                                </mask>
+                                <g id="Clip-74"></g>
+                                <path d="M-31.7978471,89.3950826 L121.544418,0.4322963" id="Stroke-73" stroke="#A59BC8" stroke-width="4" mask="url(#mask-28)"></path>
+                            </g>
+                            <g id="Group-78" transform="translate(0.000000, 82.413506)">
+                                <mask id="mask-30" fill="white">
+                                    <use xlink:href="#path-29"></use>
+                                </mask>
+                                <g id="Clip-77"></g>
+                                <path d="M-31.7978471,89.3328979 L121.544418,0.370111563" id="Stroke-76" stroke="#A59BC8" stroke-width="4" mask="url(#mask-30)"></path>
+                            </g>
+                            <g id="Group-81" transform="translate(0.000000, 94.516189)">
+                                <mask id="mask-32" fill="white">
+                                    <use xlink:href="#path-31"></use>
+                                </mask>
+                                <g id="Clip-80"></g>
+                                <path d="M-31.7978471,89.2710013 L121.544418,0.308214986" id="Stroke-79" stroke="#A59BC8" stroke-width="4" mask="url(#mask-32)"></path>
+                            </g>
+                            <g id="Group-84" transform="translate(0.000000, 106.618871)">
+                                <mask id="mask-34" fill="white">
+                                    <use xlink:href="#path-33"></use>
+                                </mask>
+                                <g id="Clip-83"></g>
+                                <path d="M-31.7978471,89.2088166 L121.544418,0.24603025" id="Stroke-82" stroke="#A59BC8" stroke-width="4" mask="url(#mask-34)"></path>
+                            </g>
+                            <g id="Group-87" transform="translate(0.000000, 118.721554)">
+                                <mask id="mask-36" fill="white">
+                                    <use xlink:href="#path-35"></use>
+                                </mask>
+                                <g id="Clip-86"></g>
+                                <path d="M-31.7978471,89.14692 L121.544418,0.184133673" id="Stroke-85" stroke="#A59BC8" stroke-width="4" mask="url(#mask-36)"></path>
+                            </g>
+                            <g id="Group-90" transform="translate(0.000000, 130.824237)">
+                                <mask id="mask-38" fill="white">
+                                    <use xlink:href="#path-37"></use>
+                                </mask>
+                                <g id="Clip-89"></g>
+                                <path d="M-31.7978471,89.0847352 L121.544418,0.121948936" id="Stroke-88" stroke="#A59BC8" stroke-width="4" mask="url(#mask-38)"></path>
+                            </g>
+                            <g id="Group-93" transform="translate(0.000000, 142.926920)">
+                                <mask id="mask-40" fill="white">
+                                    <use xlink:href="#path-39"></use>
+                                </mask>
+                                <g id="Clip-92"></g>
+                                <path d="M-31.7978471,89.0225505 L121.544418,0.0597641998" id="Stroke-91" stroke="#A59BC8" stroke-width="4" mask="url(#mask-40)"></path>
+                            </g>
+                            <g id="Group-96" transform="translate(0.000000, 154.453284)">
+                                <mask id="mask-42" fill="white">
+                                    <use xlink:href="#path-41"></use>
+                                </mask>
+                                <g id="Clip-95"></g>
+                                <path d="M-31.7978471,89.5369145 L121.544418,0.574128215" id="Stroke-94" stroke="#A59BC8" stroke-width="4" mask="url(#mask-42)"></path>
+                            </g>
+                            <g id="Group-99" transform="translate(0.000000, 166.555967)">
+                                <mask id="mask-44" fill="white">
+                                    <use xlink:href="#path-43"></use>
+                                </mask>
+                                <g id="Clip-98"></g>
+                                <path d="M-31.7978471,89.4747298 L121.544418,0.511943478" id="Stroke-97" stroke="#A59BC8" stroke-width="4" mask="url(#mask-44)"></path>
+                            </g>
+                            <g id="Group-102" transform="translate(0.000000, 178.658649)">
+                                <mask id="mask-46" fill="white">
+                                    <use xlink:href="#path-45"></use>
+                                </mask>
+                                <g id="Clip-101"></g>
+                                <path d="M-31.7978471,89.4128332 L121.544418,0.450046901" id="Stroke-100" stroke="#A59BC8" stroke-width="4" mask="url(#mask-46)"></path>
+                            </g>
+                            <g id="Group-105" transform="translate(0.000000, 190.761332)">
+                                <mask id="mask-48" fill="white">
+                                    <use xlink:href="#path-47"></use>
+                                </mask>
+                                <g id="Clip-104"></g>
+                                <path d="M-31.7978471,89.3506485 L121.544418,0.387862165" id="Stroke-103" stroke="#A59BC8" stroke-width="4" mask="url(#mask-48)"></path>
+                            </g>
+                            <g id="Group-108" transform="translate(0.000000, 202.864015)">
+                                <mask id="mask-50" fill="white">
+                                    <use xlink:href="#path-49"></use>
+                                </mask>
+                                <g id="Clip-107"></g>
+                                <path d="M-31.7978471,89.2887519 L121.544418,0.325965587" id="Stroke-106" stroke="#A59BC8" stroke-width="4" mask="url(#mask-50)"></path>
+                            </g>
+                            <g id="Group-111" transform="translate(0.000000, 214.966698)">
+                                <mask id="mask-52" fill="white">
+                                    <use xlink:href="#path-51"></use>
+                                </mask>
+                                <g id="Clip-110"></g>
+                                <path d="M-31.7978471,89.2265672 L121.544418,0.263780851" id="Stroke-109" stroke="#A59BC8" stroke-width="4" mask="url(#mask-52)"></path>
+                            </g>
+                            <g id="Group-114" transform="translate(0.000000, 227.069380)">
+                                <mask id="mask-54" fill="white">
+                                    <use xlink:href="#path-53"></use>
+                                </mask>
+                                <g id="Clip-113"></g>
+                                <path d="M-31.7978471,89.1643248 L121.544418,0.201538483" id="Stroke-112" stroke="#A59BC8" stroke-width="4" mask="url(#mask-54)"></path>
+                            </g>
+                            <g id="Group-117" transform="translate(0.000000, 239.172063)">
+                                <mask id="mask-56" fill="white">
+                                    <use xlink:href="#path-55"></use>
+                                </mask>
+                                <g id="Clip-116"></g>
+                                <path d="M-31.7978471,89.1024282 L121.544418,0.139641906" id="Stroke-115" stroke="#A59BC8" stroke-width="4" mask="url(#mask-56)"></path>
+                            </g>
+                            <g id="Group-120" transform="translate(0.000000, 251.274746)">
+                                <mask id="mask-58" fill="white">
+                                    <use xlink:href="#path-57"></use>
+                                </mask>
+                                <g id="Clip-119"></g>
+                                <path d="M-31.7978471,89.0405316 L121.544418,0.0777453284" id="Stroke-118" stroke="#A59BC8" stroke-width="4" mask="url(#mask-58)"></path>
+                            </g>
+                            <g id="Group-123" transform="translate(0.000000, 263.377428)">
+                                <mask id="mask-60" fill="white">
+                                    <use xlink:href="#path-59"></use>
+                                </mask>
+                                <g id="Clip-122"></g>
+                                <path d="M-31.7978471,88.9780587 L121.544418,0.0158487512" id="Stroke-121" stroke="#A59BC8" stroke-width="4" mask="url(#mask-60)"></path>
+                            </g>
+                            <g id="Group-126" transform="translate(0.000000, 274.903793)">
+                                <mask id="mask-62" fill="white">
+                                    <use xlink:href="#path-61"></use>
+                                </mask>
+                                <g id="Clip-125"></g>
+                                <path d="M-31.7978471,89.4924804 L121.544418,0.52969408" id="Stroke-124" stroke="#A59BC8" stroke-width="4" mask="url(#mask-62)"></path>
+                            </g>
+                            <g id="Group-129" transform="translate(0.000000, 287.006475)">
+                                <mask id="mask-64" fill="white">
+                                    <use xlink:href="#path-63"></use>
+                                </mask>
+                                <g id="Clip-128"></g>
+                                <path d="M-31.7978471,89.4305838 L121.544418,0.467797502" id="Stroke-127" stroke="#A59BC8" stroke-width="4" mask="url(#mask-64)"></path>
+                            </g>
+                            <g id="Group-132" transform="translate(0.000000, 299.109158)">
+                                <mask id="mask-66" fill="white">
+                                    <use xlink:href="#path-65"></use>
+                                </mask>
+                                <g id="Clip-131"></g>
+                                <path d="M-31.7978471,89.3686296 L121.544418,0.405843293" id="Stroke-130" stroke="#A59BC8" stroke-width="4" mask="url(#mask-66)"></path>
+                            </g>
+                            <g id="Group-135" transform="translate(0.000000, 311.211841)">
+                                <mask id="mask-68" fill="white">
+                                    <use xlink:href="#path-67"></use>
+                                </mask>
+                                <g id="Clip-134"></g>
+                                <path d="M-31.7978471,89.3061567 L121.544418,0.343946716" id="Stroke-133" stroke="#A59BC8" stroke-width="4" mask="url(#mask-68)"></path>
+                            </g>
+                            <g id="Group-138" transform="translate(0.000000, 323.314524)">
+                                <mask id="mask-70" fill="white">
+                                    <use xlink:href="#path-69"></use>
+                                </mask>
+                                <g id="Clip-137"></g>
+                                <path d="M-31.7978471,89.2442601 L121.544418,0.281473821" id="Stroke-136" stroke="#A59BC8" stroke-width="4" mask="url(#mask-70)"></path>
+                            </g>
+                            <g id="Group-141" transform="translate(0.000000, 335.417206)">
+                                <mask id="mask-72" fill="white">
+                                    <use xlink:href="#path-71"></use>
+                                </mask>
+                                <g id="Clip-140"></g>
+                                <path d="M-31.7978471,89.1823636 L121.544418,0.219577243" id="Stroke-139" stroke="#A59BC8" stroke-width="4" mask="url(#mask-72)"></path>
+                            </g>
+                            <g id="Group-144" transform="translate(0.000000, 347.519889)">
+                                <mask id="mask-74" fill="white">
+                                    <use xlink:href="#path-73"></use>
+                                </mask>
+                                <g id="Clip-143"></g>
+                                <path d="M-31.7978471,89.1198907 L121.544418,0.157680666" id="Stroke-142" stroke="#A59BC8" stroke-width="4" mask="url(#mask-74)"></path>
+                            </g>
+                            <g id="Group-147" transform="translate(0.000000, 359.622572)">
+                                <mask id="mask-76" fill="white">
+                                    <use xlink:href="#path-75"></use>
+                                </mask>
+                                <g id="Clip-146"></g>
+                                <path d="M-31.7978471,89.0579941 L121.544418,0.0957840888" id="Stroke-145" stroke="#A59BC8" stroke-width="4" mask="url(#mask-76)"></path>
+                            </g>
+                            <g id="Group-150" transform="translate(0.000000, 371.725254)">
+                                <mask id="mask-78" fill="white">
+                                    <use xlink:href="#path-77"></use>
+                                </mask>
+                                <g id="Clip-149"></g>
+                                <path d="M-31.7978471,88.9960975 L121.544418,0.0333111933" id="Stroke-148" stroke="#A59BC8" stroke-width="4" mask="url(#mask-78)"></path>
+                            </g>
+                            <g id="Group-153" transform="translate(0.000000, 383.251619)">
+                                <mask id="mask-80" fill="white">
+                                    <use xlink:href="#path-79"></use>
+                                </mask>
+                                <g id="Clip-152"></g>
+                                <path d="M-31.7978471,89.5104615 L121.544418,0.547675208" id="Stroke-151" stroke="#A59BC8" stroke-width="4" mask="url(#mask-80)"></path>
+                            </g>
+                            <g id="Group-156" transform="translate(0.000000, 395.354302)">
+                                <mask id="mask-82" fill="white">
+                                    <use xlink:href="#path-81"></use>
+                                </mask>
+                                <g id="Clip-155"></g>
+                                <path d="M-31.7978471,89.4479886 L121.544418,0.485778631" id="Stroke-154" stroke="#A59BC8" stroke-width="4" mask="url(#mask-82)"></path>
+                            </g>
+                            <g id="Group-159" transform="translate(0.000000, 407.456984)">
+                                <mask id="mask-84" fill="white">
+                                    <use xlink:href="#path-83"></use>
+                                </mask>
+                                <g id="Clip-158"></g>
+                                <path d="M-31.7978471,89.386092 L121.544418,0.423305735" id="Stroke-157" stroke="#A59BC8" stroke-width="4" mask="url(#mask-84)"></path>
+                            </g>
+                            <g id="Group-162" transform="translate(0.000000, 419.559667)">
+                                <mask id="mask-86" fill="white">
+                                    <use xlink:href="#path-85"></use>
+                                </mask>
+                                <g id="Clip-161"></g>
+                                <path d="M-31.7978471,89.3241955 L121.544418,0.361409158" id="Stroke-160" stroke="#A59BC8" stroke-width="4" mask="url(#mask-86)"></path>
+                            </g>
+                            <g id="Group-165" transform="translate(0.000000, 431.662350)">
+                                <mask id="mask-88" fill="white">
+                                    <use xlink:href="#path-87"></use>
+                                </mask>
+                                <g id="Clip-164"></g>
+                                <path d="M-31.7978471,89.2622989 L121.544418,0.299512581" id="Stroke-163" stroke="#A59BC8" stroke-width="4" mask="url(#mask-88)"></path>
+                            </g>
+                            <g id="Group-168" transform="translate(0.000000, 443.765032)">
+                                <mask id="mask-90" fill="white">
+                                    <use xlink:href="#path-89"></use>
+                                </mask>
+                                <g id="Clip-167"></g>
+                                <path d="M-31.7978471,89.199826 L121.544418,0.237616004" id="Stroke-166" stroke="#A59BC8" stroke-width="4" mask="url(#mask-90)"></path>
+                            </g>
+                            <g id="Group-171" transform="translate(0.000000, 455.867715)">
+                                <mask id="mask-92" fill="white">
+                                    <use xlink:href="#path-91"></use>
+                                </mask>
+                                <g id="Clip-170"></g>
+                                <path d="M-31.7978471,89.1378718 L121.544418,0.175085476" id="Stroke-169" stroke="#A59BC8" stroke-width="4" mask="url(#mask-92)"></path>
+                            </g>
+                            <g id="Group-174" transform="translate(0.000000, 467.970398)">
+                                <mask id="mask-94" fill="white">
+                                    <use xlink:href="#path-93"></use>
+                                </mask>
+                                <g id="Clip-173"></g>
+                                <path d="M-31.7978471,89.0759752 L121.544418,0.113188899" id="Stroke-172" stroke="#A59BC8" stroke-width="4" mask="url(#mask-94)"></path>
+                            </g>
+                            <g id="Group-177" transform="translate(0.000000, 480.073080)">
+                                <mask id="mask-96" fill="white">
+                                    <use xlink:href="#path-95"></use>
+                                </mask>
+                                <g id="Clip-176"></g>
+                                <path d="M-31.7978471,89.0140786 L121.544418,0.0512923219" id="Stroke-175" stroke="#A59BC8" stroke-width="4" mask="url(#mask-96)"></path>
+                            </g>
+                            <g id="Group-180" transform="translate(0.000000, 491.599445)">
+                                <mask id="mask-98" fill="white">
+                                    <use xlink:href="#path-97"></use>
+                                </mask>
+                                <g id="Clip-179"></g>
+                                <path d="M-31.7978471,89.527924 L121.544418,0.565713969" id="Stroke-178" stroke="#A59BC8" stroke-width="4" mask="url(#mask-98)"></path>
+                            </g>
+                            <g id="Group-183" transform="translate(0.000000, 503.702128)">
+                                <mask id="mask-100" fill="white">
+                                    <use xlink:href="#path-99"></use>
+                                </mask>
+                                <g id="Clip-182"></g>
+                                <path d="M-31.7978471,89.4660274 L121.544418,0.503241073" id="Stroke-181" stroke="#A59BC8" stroke-width="4" mask="url(#mask-100)"></path>
+                            </g>
+                            <g id="Group-186" transform="translate(0.000000, 515.804810)">
+                                <mask id="mask-102" fill="white">
+                                    <use xlink:href="#path-101"></use>
+                                </mask>
+                                <g id="Clip-185"></g>
+                                <path d="M-31.7978471,89.4041308 L121.544418,0.441344496" id="Stroke-184" stroke="#A59BC8" stroke-width="4" mask="url(#mask-102)"></path>
+                            </g>
+                            <g id="Group-189" transform="translate(0.000000, 527.907493)">
+                                <mask id="mask-104" fill="white">
+                                    <use xlink:href="#path-103"></use>
+                                </mask>
+                                <g id="Clip-188"></g>
+                                <path d="M-31.7978471,89.3416579 L121.544418,0.379447919" id="Stroke-187" stroke="#A59BC8" stroke-width="4" mask="url(#mask-104)"></path>
+                            </g>
+                            <g id="Group-192" transform="translate(0.000000, 540.010176)">
+                                <mask id="mask-106" fill="white">
+                                    <use xlink:href="#path-105"></use>
+                                </mask>
+                                <g id="Clip-191"></g>
+                                <path d="M-31.7978471,89.2797037 L121.544418,0.316917391" id="Stroke-190" stroke="#A59BC8" stroke-width="4" mask="url(#mask-106)"></path>
+                            </g>
+                            <g id="Group-195" transform="translate(0.000000, 552.112858)">
+                                <mask id="mask-108" fill="white">
+                                    <use xlink:href="#path-107"></use>
+                                </mask>
+                                <g id="Clip-194"></g>
+                                <path d="M-31.7978471,89.2178071 L121.544418,0.255020814" id="Stroke-193" stroke="#A59BC8" stroke-width="4" mask="url(#mask-108)"></path>
+                            </g>
+                            <g id="Group-198" transform="translate(0.000000, 564.215541)">
+                                <mask id="mask-110" fill="white">
+                                    <use xlink:href="#path-109"></use>
+                                </mask>
+                                <g id="Clip-197"></g>
+                                <path d="M-31.7978471,89.1559105 L121.544418,0.193124237" id="Stroke-196" stroke="#A59BC8" stroke-width="4" mask="url(#mask-110)"></path>
+                            </g>
+                            <g id="Group-201" transform="translate(0.000000, 576.318224)">
+                                <mask id="mask-112" fill="white">
+                                    <use xlink:href="#path-111"></use>
+                                </mask>
+                                <g id="Clip-200"></g>
+                                <path d="M-31.7978471,89.0934377 L121.544418,0.13122766" id="Stroke-199" stroke="#A59BC8" stroke-width="4" mask="url(#mask-112)"></path>
+                            </g>
+                            <g id="Group-204" transform="translate(0.000000, 588.420907)">
+                                <mask id="mask-114" fill="white">
+                                    <use xlink:href="#path-113"></use>
+                                </mask>
+                                <g id="Clip-203"></g>
+                                <path d="M-31.7978471,89.0315411 L121.544418,0.0687547641" id="Stroke-202" stroke="#A59BC8" stroke-width="4" mask="url(#mask-114)"></path>
+                            </g>
+                            <g id="Group-207" transform="translate(0.000000, 600.523589)">
+                                <mask id="mask-116" fill="white">
+                                    <use xlink:href="#path-115"></use>
+                                </mask>
+                                <g id="Clip-206"></g>
+                                <path d="M-31.7978471,88.9696445 L121.544418,0.00685818686" id="Stroke-205" stroke="#A59BC8" stroke-width="4" mask="url(#mask-116)"></path>
+                            </g>
+                            <g id="Group-210" transform="translate(0.000000, 612.049954)">
+                                <mask id="mask-118" fill="white">
+                                    <use xlink:href="#path-117"></use>
+                                </mask>
+                                <g id="Clip-209"></g>
+                                <path d="M-31.7978471,89.4840085 L121.544418,0.521222202" id="Stroke-208" stroke="#A59BC8" stroke-width="4" mask="url(#mask-118)"></path>
+                            </g>
+                        </g>
+                        <g id="Group-222" transform="translate(0.000000, 28.000000)">
+                            <path d="M200.239142,0.378026387 C318.702321,0.378026387 395.156974,76.8256704 397.428578,160.153602 C397.428578,165.504937 395.156974,167.798367 389.805033,167.798367 L308.776022,167.798367 C303.423504,167.798367 301.898911,165.504937 301.1519,160.153602 C293.497205,112.756063 252.23569,89.0572934 198.713972,89.0572934 C149.051328,89.0572934 109.283256,108.169204 109.283256,147.921979 C109.283256,193.026089 168.157492,213.666953 236.17929,232.778864 C327.134599,258.006587 413.484978,296.230409 413.484978,381.087293 C413.484978,489.642948 331.709534,550.801063 207.115677,550.801063 C87.9060644,550.801063 0.746952842,469.76656 -5.76842104e-05,370.384623 C-5.76842104e-05,365.033288 2.302696,362.739859 7.65463705,362.739859 L87.9060644,362.739859 C93.2585823,362.739859 94.783176,365.033288 95.5296097,370.384623 C100.882128,432.307215 145.970414,462.121796 211.721184,462.121796 C276.694372,462.121796 317.177728,433.071691 317.177728,391.025487 C317.177728,352.801665 269.0391,328.338419 195.664784,309.990985 C81.0289528,280.94088 13.0071549,240.423628 13.0071549,152.508838 C13.0071549,54.6558536 103.184881,0.378026387 200.239142,0.378026387" id="Fill-212" fill="#5A489B"></path>
+                            <path d="M200.239142,0.378026387 C318.702321,0.378026387 395.156974,76.8256704 397.428578,160.153602 C397.428578,165.504937 395.156974,167.798367 389.805033,167.798367 L308.776022,167.798367 C303.423504,167.798367 301.898911,165.504937 301.1519,160.153602 C293.497205,112.756063 252.23569,89.0572934 198.713972,89.0572934 C149.051328,89.0572934 109.283256,108.169204 109.283256,147.921979 C109.283256,193.026089 168.157492,213.666953 236.17929,232.778864 C327.134599,258.006587 413.484978,296.230409 413.484978,381.087293 C413.484978,489.642948 331.709534,550.801063 207.115677,550.801063 C87.9060644,550.801063 0.746952842,469.76656 -5.76842104e-05,370.384623 C-5.76842104e-05,365.033288 2.302696,362.739859 7.65463705,362.739859 L87.9060644,362.739859 C93.2585823,362.739859 94.783176,365.033288 95.5296097,370.384623 C100.882128,432.307215 145.970414,462.121796 211.721184,462.121796 C276.694372,462.121796 317.177728,433.071691 317.177728,391.025487 C317.177728,352.801665 269.0391,328.338419 195.664784,309.990985 C81.0289528,280.94088 13.0071549,240.423628 13.0071549,152.508838 C13.0071549,54.6558536 103.184881,0.378026387 200.239142,0.378026387 Z" id="Stroke-214" stroke="#A59BC8" stroke-width="3.889"></path>
+                            <g id="Group-218" transform="translate(474.741053, 7.500524)">
+                                <mask id="mask-120" fill="white">
+                                    <use xlink:href="#path-119"></use>
+                                </mask>
+                                <g id="Clip-217"></g>
+                                <path d="M194.278633,291.787848 L345.601045,524.188686 C347.126216,526.481539 347.126216,528.011068 347.126216,529.540021 C347.126216,533.362403 345.601045,535.655833 340.249104,535.655833 L254.645159,535.655833 C249.293218,535.655833 245.49702,534.126303 242.416683,528.775545 L127.781429,352.181487 L91.8718539,385.818451 L91.8718539,528.011068 C91.8718539,533.362403 89.5696771,535.655833 84.2165823,535.655833 L7.79307916,535.655833 C2.44113811,535.655833 0.137807579,533.362403 0.137807579,528.011068 L0.137807579,8.16708932 C0.137807579,2.81575424 2.44113811,0.522324921 7.79307916,0.522324921 L84.2165823,0.522324921 C89.5696771,0.522324921 91.8718539,2.81575424 91.8718539,8.16708932 L91.8718539,278.026696 L219.514321,158.768948 C223.310519,154.946566 226.391433,151.88866 231.743374,151.88866 L324.224431,151.88866 C328.797635,151.88866 330.322229,154.182089 330.322229,157.239995 C330.322229,158.768948 329.576372,161.062377 327.273618,163.355807 L194.278633,291.787848 Z" id="Fill-216" fill="#5A489B" mask="url(#mask-120)"></path>
+                            </g>
+                            <g id="Group-221" transform="translate(474.741053, 7.500524)" stroke="#A59BC8" stroke-width="3.889">
+                                <path d="M194.278633,291.787848 L345.601045,524.188686 C347.126216,526.481539 347.126216,528.011068 347.126216,529.540021 C347.126216,533.362403 345.601045,535.655833 340.249104,535.655833 L254.645159,535.655833 C249.293218,535.655833 245.49702,534.126303 242.416683,528.775545 L127.781429,352.181487 L91.8718539,385.818451 L91.8718539,528.011068 C91.8718539,533.362403 89.5696771,535.655833 84.2165823,535.655833 L7.79307916,535.655833 C2.44113811,535.655833 0.137807579,533.362403 0.137807579,528.011068 L0.137807579,8.16708932 C0.137807579,2.81575424 2.44113811,0.522324921 7.79307916,0.522324921 L84.2165823,0.522324921 C89.5696771,0.522324921 91.8718539,2.81575424 91.8718539,8.16708932 L91.8718539,278.026696 L219.514321,158.768948 C223.310519,154.946566 226.391433,151.88866 231.743374,151.88866 L324.224431,151.88866 C328.797635,151.88866 330.322229,154.182089 330.322229,157.239995 C330.322229,158.768948 329.576372,161.062377 327.273618,163.355807 L194.278633,291.787848 Z" id="Stroke-219"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

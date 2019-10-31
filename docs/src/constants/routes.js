@@ -35,6 +35,7 @@ export const COPYWRITING = '/guidelines/copywriting';
 export const PHOTOGRAPHY = '/guidelines/photography';
 export const TONE_OF_VOICE = '/guidelines/tone-of-voice';
 export const STRATEGY = '/guidelines/strategy';
+export const TYPOGRAPHY = '/guidelines/typography';
 
 // components/bonds/
 export const TYPESETTING = '/tokens/typesetting';
