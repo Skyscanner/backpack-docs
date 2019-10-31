@@ -45,7 +45,7 @@ const sections = [
     backgroundStyle: 'light',
     content: (
       <BpkImage
-        class={getClassName('bpk-docs-photography-page__image')}
+        className={getClassName('bpk-docs-photography-page__image')}
         altText="art direction"
         width={838}
         height={536}
@@ -58,7 +58,7 @@ const sections = [
     title: 'Treatment',
     content: (
       <BpkImage
-        class={getClassName('bpk-docs-photography-page__image')}
+        className={getClassName('bpk-docs-photography-page__image')}
         altText="art direction"
         width={840}
         height={441}
@@ -72,7 +72,7 @@ const sections = [
     backgroundStyle: 'light',
     content: (
       <BpkImage
-        class={getClassName('bpk-docs-photography-page__image')}
+        className={getClassName('bpk-docs-photography-page__image')}
         altText="color pairings"
         width={838}
         height={521}

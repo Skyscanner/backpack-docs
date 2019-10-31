@@ -50,7 +50,7 @@ const sections = [
     title: 'Pairings chart',
     content: (
       <BpkImage
-        class={getClassName('bpk-docs-colors-page__image')}
+        className={getClassName('bpk-docs-colors-page__image')}
         altText="color pairings"
         width={840}
         height={484}
@@ -64,7 +64,7 @@ const sections = [
     backgroundStyle: 'light',
     content: (
       <BpkImage
-        class={getClassName('bpk-docs-colors-page__image')}
+        className={getClassName('bpk-docs-colors-page__image')}
         altText="color pairings"
         width={840}
         height={566}
