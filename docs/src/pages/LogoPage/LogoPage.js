@@ -25,10 +25,9 @@ import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRen
 import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
 import PhotographyHero from '../../static/photography/photography_hero.svg';
 import PhotoArtDirection from '../../static/photography/photography_art_direction.png';
-import PhotoTreatment from '../../static/photography/photography_treatment.png';
-import PhotoExamples from '../../static/photography/photography_examples.png';
+import * as ROUTES from '../../constants/routes';
 
-import STYLES from './photography-page.scss';
+import STYLES from './logo-page.scss';
 import intro from './content/intro.md';
 
 const getClassName = cssModules(STYLES);
@@ -44,7 +43,7 @@ const sections = [
     backgroundStyle: 'light',
     content: (
       <BpkImage
-        className={getClassName('bpk-docs-photography-page__image')}
+        className={getClassName('bpk-docs-logo-page__image')}
         altText="art direction"
         width={838}
         height={536}
@@ -52,45 +51,22 @@ const sections = [
       />
     ),
   },
-  {
-    id: 'Treatment',
-    title: 'Treatment',
-    content: (
-      <BpkImage
-        className={getClassName('bpk-docs-photography-page__image')}
-        altText="art direction"
-        width={840}
-        height={441}
-        src={`/${PhotoTreatment}`}
-      />
-    ),
-  },
-  {
-    id: 'examples',
-    title: 'Examples',
-    backgroundStyle: 'light',
-    content: (
-      <BpkImage
-        className={getClassName('bpk-docs-photography-page__image')}
-        altText="color pairings"
-        width={838}
-        height={521}
-        src={`/${PhotoExamples}`}
-      />
-    ),
-  },
 ];
 
-const PhotographyPage = () => (
+const LogoPage = () => (
   <GuidelinesPageBuilder
-    title="Photography"
+    title="Logo"
     hero={{
-      heading: `Photography`,
+      heading: `Logo`,
       imageUrl: `/${PhotographyHero}`,
-      className: getClassName('bpk-docs-photography-page__hero'),
+      className: getClassName('bpk-docs-logo-page__hero'),
     }}
     sections={sections}
+    nextPageLink={{
+      title: 'Colour',
+      link: ROUTES.COLORS,
+    }}
   />
 );
 
-export default PhotographyPage;
+export default LogoPage;

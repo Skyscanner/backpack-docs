@@ -521,6 +521,7 @@ export default [
         route: routes.TONE_OF_VOICE,
         children: 'Tone of voice',
       },
+      { id: 'LOGO', route: routes.LOGO, children: 'Logo' },
       { id: 'COLORS', route: routes.COLORS, children: 'Colour' },
       { id: 'TYPOGRAPHY', route: routes.TYPOGRAPHY, children: 'Typography' },
       { id: 'PHOTOGRAPHY', route: routes.PHOTOGRAPHY, children: 'Photography' },
