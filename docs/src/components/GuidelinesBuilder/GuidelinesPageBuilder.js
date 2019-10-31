@@ -47,7 +47,7 @@ type GuidelinesPageBuilderProps = {
   hero: any,
   sections: Array<SectionType>,
   title: string,
-  nextPageLink: any,
+  nextPageLink: ?any,
 };
 
 const Section = (props: SectionProps) => {
@@ -132,11 +132,13 @@ const GuidelinesPageBuilder = (props: GuidelinesPageBuilderProps) => {
         }
         return <Section {...section} />;
       })}
-      <NavigationFooter
-        id="footer"
-        title={nextPageLink.title}
-        link={nextPageLink.link}
-      />
+      {nextPageLink && (
+        <NavigationFooter
+          id="footer"
+          title={nextPageLink.title}
+          link={nextPageLink.link}
+        />
+      )}
     </BpkContentContainer>
   );
 };
@@ -162,8 +164,12 @@ GuidelinesPageBuilder.propTypes = {
   nextPageLink: PropTypes.shape({
     title: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,
-  }).isRequired,
+  }),
   title: PropTypes.string.isRequired,
+};
+
+GuidelinesPageBuilder.defaultProps = {
+  nextPageLink: null,
 };
 
 export default GuidelinesPageBuilder;
