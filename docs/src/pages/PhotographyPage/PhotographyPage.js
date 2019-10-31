@@ -23,14 +23,14 @@ import BpkImage from 'bpk-component-image';
 import getMarkdownString from '../../helpers/markdown-helper';
 import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
 import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
-import ColorsHero from '../../static/colours/colour_hero.svg';
-import ColorPairings from '../../static/colours/colour_pairings.png';
-import ColorExamples from '../../static/colours/colour_examples.png';
+import PhotographyHero from '../../static/photography/photography_hero.svg';
+import PhotoArtDirection from '../../static/photography/photography_art_direction.png';
+import PhotoTreatment from '../../static/photography/photography_treatment.png';
+import PhotoExamples from '../../static/photography/photography_examples.png';
 import * as ROUTES from '../../constants/routes';
 
-import STYLES from './colors-page.scss';
+import STYLES from './photography-page.scss';
 import intro from './content/intro.md';
-import colours from './colors';
 
 const getClassName = cssModules(STYLES);
 
@@ -40,21 +40,29 @@ const sections = [
     content: <BpkMarkdownRenderer source={getMarkdownString(intro)} />,
   },
   {
-    id: 'palette',
-    title: 'Palette',
+    id: 'direction',
+    title: 'Art direction',
     backgroundStyle: 'light',
-    content: colours,
-  },
-  {
-    id: 'pairings',
-    title: 'Pairings chart',
     content: (
       <BpkImage
-        className={getClassName('bpk-docs-colors-page__image')}
-        altText="color pairings"
+        className={getClassName('bpk-docs-photography-page__image')}
+        altText="art direction"
+        width={838}
+        height={536}
+        src={`/${PhotoArtDirection}`}
+      />
+    ),
+  },
+  {
+    id: 'Treatment',
+    title: 'Treatment',
+    content: (
+      <BpkImage
+        className={getClassName('bpk-docs-photography-page__image')}
+        altText="art direction"
         width={840}
-        height={484}
-        src={`/${ColorPairings}`}
+        height={441}
+        src={`/${PhotoTreatment}`}
       />
     ),
   },
@@ -64,30 +72,30 @@ const sections = [
     backgroundStyle: 'light',
     content: (
       <BpkImage
-        className={getClassName('bpk-docs-colors-page__image')}
+        className={getClassName('bpk-docs-photography-page__image')}
         altText="color pairings"
-        width={840}
-        height={566}
-        src={`/${ColorExamples}`}
+        width={838}
+        height={521}
+        src={`/${PhotoExamples}`}
       />
     ),
   },
 ];
 
-const ColorsPage = () => (
+const PhotographyPage = () => (
   <GuidelinesPageBuilder
     title="Colour"
     hero={{
-      heading: `Colour`,
-      imageUrl: `/${ColorsHero}`,
-      className: getClassName('bpk-docs-colors-page__hero'),
+      heading: `Photography`,
+      imageUrl: `/${PhotographyHero}`,
+      className: getClassName('bpk-docs-photography-page__hero'),
     }}
     sections={sections}
     nextPageLink={{
-      title: 'Typography',
-      link: ROUTES.TYPESETTING,
+      title: 'Shadows',
+      link: ROUTES.SHADOWS,
     }}
   />
 );
 
-export default ColorsPage;
+export default PhotographyPage;
