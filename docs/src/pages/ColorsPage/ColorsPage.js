@@ -26,7 +26,6 @@ import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
 import ColorsHero from '../../static/colours/colour_hero.svg';
 import ColorPairings from '../../static/colours/colour_pairings.png';
 import ColorExamples from '../../static/colours/colour_examples.png';
-import * as ROUTES from '../../constants/routes';
 
 import STYLES from './colors-page.scss';
 import intro from './content/intro.md';
@@ -83,10 +82,6 @@ const ColorsPage = () => (
       className: getClassName('bpk-docs-colors-page__hero'),
     }}
     sections={sections}
-    nextPageLink={{
-      title: 'Typography',
-      link: ROUTES.TYPESETTING,
-    }}
   />
 );
 

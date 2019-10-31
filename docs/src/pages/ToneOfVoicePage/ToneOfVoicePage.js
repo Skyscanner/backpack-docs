@@ -146,10 +146,6 @@ const CopywritingPage = () => (
       imageUrl: `/${HeroImage}`,
     }}
     sections={sections}
-    nextPageLink={{
-      title: 'Logo',
-      link: './',
-    }}
   />
 );
 
