@@ -25,7 +25,7 @@
   @include bpk-themeable-property(
     background-color,
     --bpk-docs-sidebar-background,
-    $bpk-color-sky-blue-shade-02
+    $bpk-color-sky-blue-shade-03
   );
 
   @include bpk-breakpoint-tablet {
