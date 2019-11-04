@@ -31,7 +31,7 @@ import STYLES from './typography-page.scss';
 import intro from './content/intro.md';
 import skyscannerRelative from './content/skyscanner-relative.md';
 import typeScale from './content/type-scale.md';
-import HelloRelative from './HelloRelative';
+import FontFace from './FontFace';
 import TypeScale from './TypeScale';
 
 const getClassName = cssModules(STYLES);
@@ -48,7 +48,7 @@ const sections = [
     className: getClassName('bpk-docs-typography-page__section'),
     content: (
       <Fragment>
-        <HelloRelative
+        <FontFace
           className={getClassName('bpk-docs-typography-page__hello-relative')}
         />
         <BpkMarkdownRenderer source={getMarkdownString(skyscannerRelative)} />

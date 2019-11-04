@@ -21,22 +21,22 @@ import PropTypes from 'prop-types';
 import BpkText from 'bpk-component-text';
 import { cssModules } from 'bpk-react-utils';
 
-import STYLES from './hello-relative.scss';
+import STYLES from './font-face.scss';
 
 const getClassName = cssModules(STYLES);
 
-const HelloRelative = props => {
+const FontFace = props => {
   const { className, ...rest } = props;
 
   return (
     <div
       aria-label="Example of the Skyscanner Relative fontface"
-      className={getClassName('bpk-docs-hello-relative', className)}
+      className={getClassName('bpk-docs-font-face', className)}
       {...rest}
     >
       <BpkText
         aria-hidden="true"
-        className={getClassName('bpk-docs-hello-relative__text')}
+        className={getClassName('bpk-docs-font-face__text')}
         textStyle="xxl"
       >
         Book AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
@@ -44,8 +44,8 @@ const HelloRelative = props => {
       <BpkText
         aria-hidden="true"
         className={getClassName(
-          'bpk-docs-hello-relative__text',
-          'bpk-docs-hello-relative__text--medium',
+          'bpk-docs-font-face__text',
+          'bpk-docs-font-face__text--medium',
         )}
         textStyle="xxl"
       >
@@ -53,7 +53,7 @@ const HelloRelative = props => {
       </BpkText>
       <BpkText
         aria-hidden="true"
-        className={getClassName('bpk-docs-hello-relative__text')}
+        className={getClassName('bpk-docs-font-face__text')}
         textStyle="xxl"
         bold
       >
@@ -62,8 +62,8 @@ const HelloRelative = props => {
       <BpkText
         aria-hidden="true"
         className={getClassName(
-          'bpk-docs-hello-relative__text',
-          'bpk-docs-hello-relative__text--black',
+          'bpk-docs-font-face__text',
+          'bpk-docs-font-face__text--black',
         )}
         textStyle="xxl"
       >
@@ -73,12 +73,12 @@ const HelloRelative = props => {
   );
 };
 
-HelloRelative.propTypes = {
+FontFace.propTypes = {
   className: PropTypes.string,
 };
 
-HelloRelative.defaultProps = {
+FontFace.defaultProps = {
   className: null,
 };
 
-export default HelloRelative;
+export default FontFace;
