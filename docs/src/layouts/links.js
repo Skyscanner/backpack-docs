@@ -522,6 +522,7 @@ export default [
         children: 'Tone of voice',
       },
       { id: 'COLORS', route: routes.COLORS, children: 'Colour' },
+      { id: 'TYPOGRAPHY', route: routes.TYPOGRAPHY, children: 'Typography' },
       { id: 'PHOTOGRAPHY', route: routes.PHOTOGRAPHY, children: 'Photography' },
       { id: 'COPYWRITING', route: routes.COPYWRITING, children: 'Copywriting' },
     ],

@@ -32,6 +32,7 @@ import BackpackReactScriptsPage from '../pages/BackpackReactScriptsPage';
 import BaseStylesheetPage from '../pages/BaseStylesheetPage';
 import PrinciplesPage from '../pages/PrinciplesPage';
 import ColorsPage from '../pages/ColorsPage';
+import TypographyPage from '../pages/TypographyPage';
 import TypesettingPage from '../pages/TypesettingPage';
 import RadiiPage from '../pages/RadiiPage';
 import ShadowsPage from '../pages/ShadowsPage';
@@ -160,8 +161,9 @@ export const ROUTES_MAPPINGS = [
       { path: ROUTES.COLORS, component: ColorsPage },
       { path: ROUTES.COPYWRITING, component: CopywritingPage },
       { path: ROUTES.PHOTOGRAPHY, component: PhotographyPage },
-      { path: ROUTES.TONE_OF_VOICE, component: ToneOfVoicePage },
       { path: ROUTES.STRATEGY, component: StrategyPage },
+      { path: ROUTES.TONE_OF_VOICE, component: ToneOfVoicePage },
+      { path: ROUTES.TYPOGRAPHY, component: TypographyPage },
     ],
   },
   {
