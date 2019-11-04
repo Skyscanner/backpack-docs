@@ -24,10 +24,23 @@
   flex-wrap: wrap;
 
   &__hero {
-    background-color: $bpk-color-panjin;
+    background-color: $bpk-color-sky-blue;
   }
 
   &__image {
     width: 100%;
+  }
+
+  &__card {
+    display: flex;
+    width: 408px;
+    height: 230px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__suite {
+    width: 70%;
+    height: 70%;
   }
 }
