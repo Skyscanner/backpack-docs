@@ -20,7 +20,8 @@
 
 $bpk-docs-content-grid-card-max-width: $bpk-spacing-xxl * 9;
 $bpk-docs-content-grid-card-margin: $bpk-spacing-base;
-$bpk-docs-content-grid-max-width: ($bpk-docs-content-grid-card-max-width * 2) + $bpk-docs-content-grid-card-margin;
+$bpk-docs-content-grid-max-width: ($bpk-docs-content-grid-card-max-width * 2) +
+  ($bpk-docs-content-grid-card-margin * 2);
 
 .bpk-docs-content-grid {
   display: flex;
@@ -28,11 +29,8 @@ $bpk-docs-content-grid-max-width: ($bpk-docs-content-grid-card-max-width * 2) + 
   flex-direction: row;
   flex-wrap: wrap;
 
-  &__card:nth-child(odd) {
-    margin-right: $bpk-docs-content-grid-card-margin;
-  }
-
   &__card {
+    margin-right: $bpk-docs-content-grid-card-margin;
     width: $bpk-docs-content-grid-card-max-width;
     max-width: $bpk-docs-content-grid-card-max-width;
     margin-bottom: $bpk-spacing-base;

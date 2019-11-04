@@ -29,18 +29,52 @@
 
   &__image {
     width: 100%;
+
+    &--constrained {
+      max-width: 64rem;
+      margin: 0 auto;
+    }
+
+    &--wordmarque {
+      padding: 10rem 0;
+
+      @include bpk-breakpoint-tablet {
+        padding: 3rem 0;
+      }
+    }
+  }
+
+  &__grid {
+    max-width: calc(100% + #{$bpk-spacing-base} * 2);
+    width: calc(100% + #{$bpk-spacing-base} * 2);
   }
 
   &__card {
     display: flex;
-    width: 408px;
-    height: 230px;
+    max-width: 38.5rem;
+    width: 100%;
+    height: 20rem;
     justify-content: center;
     align-items: center;
   }
 
   &__suite {
     width: 70%;
-    height: 70%;
+
+    &--vertical {
+      width: 55%;
+    }
+
+    &--horizontal {
+      width: 90%;
+    }
+
+    &--symbol {
+      width: 35%;
+    }
+
+    &--wordmarque {
+      width: 70%;
+    }
   }
 }

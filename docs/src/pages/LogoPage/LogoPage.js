@@ -49,9 +49,10 @@ const sections = [
     id: 'symbol',
     title: 'Our symbol',
     backgroundStyle: 'light',
+    className: getClassName('bpk-docs-logo-page__image'),
     content: (
       <BpkImage
-        className={getClassName('bpk-docs-logo-page__image')}
+        className={getClassName('bpk-docs-logo-page__image--constrained')}
         altText="art direction"
         width={758}
         height={437}
@@ -62,9 +63,13 @@ const sections = [
   {
     id: 'wordmarque',
     title: 'Our wordmarque',
+    className: getClassName('bpk-docs-logo-page__image'),
     content: (
       <BpkImage
-        className={getClassName('bpk-docs-logo-page__image')}
+        className={getClassName(
+          'bpk-docs-logo-page__image--constrained',
+          'bpk-docs-logo-page__image--wordmarque',
+        )}
         altText="art direction"
         width={838}
         height={190}
@@ -77,31 +82,43 @@ const sections = [
     title: 'Logo suite',
     backgroundStyle: 'light',
     content: (
-      <ContentGrid>
+      <ContentGrid className={getClassName('bpk-docs-logo-page__grid')}>
         <ContentGridCard className={getClassName('bpk-docs-logo-page__card')}>
           <img
-            className={getClassName('bpk-docs-logo-page__suite')}
+            className={getClassName(
+              'bpk-docs-logo-page__suite',
+              'bpk-docs-logo-page__suite--vertical',
+            )}
             src={`/${LogoVertical}`}
             alt="vertical skyscanner logo with wordmarque"
           />
         </ContentGridCard>
         <ContentGridCard className={getClassName('bpk-docs-logo-page__card')}>
           <img
-            className={getClassName('bpk-docs-logo-page__suite')}
+            className={getClassName(
+              'bpk-docs-logo-page__suite',
+              'bpk-docs-logo-page__suite--horizontal',
+            )}
             src={`/${LogoHorizontal}`}
             alt="horizontal skyscanner logo with wordmarque"
           />
         </ContentGridCard>
         <ContentGridCard className={getClassName('bpk-docs-logo-page__card')}>
           <img
-            className={getClassName('bpk-docs-logo-page__suite')}
+            className={getClassName(
+              'bpk-docs-logo-page__suite',
+              'bpk-docs-logo-page__suite--symbol',
+            )}
             src={`/${LogoSymbolSuite}`}
             alt="our symbol, skyscanner logo without wordmarque"
           />
         </ContentGridCard>
         <ContentGridCard className={getClassName('bpk-docs-logo-page__card')}>
           <img
-            className={getClassName('bpk-docs-logo-page__suite')}
+            className={getClassName(
+              'bpk-docs-logo-page__suite',
+              'bpk-docs-logo-page__suite--wordmarque',
+            )}
             src={`/${LogoWordmarque}`}
             alt="our wordmarque Skyscanner"
           />
