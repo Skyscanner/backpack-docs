@@ -29,10 +29,10 @@ import IntroBlurb from '../../components/IntroBlurb';
 import NativePhoneInput from '../NativePhoneInputPage';
 
 const DIALING_CODE_TO_ID_MAP = {
-  '1': 'us',
-  '2': 'ca',
-  '44': 'uk',
-  '55': 'br',
+  '1_us': 'us',
+  '1_ca': 'ca',
+  '44_uk': 'uk',
+  '55_br': 'br',
 };
 
 const getFlag = dialingCode => {
@@ -57,7 +57,7 @@ class StoryContainer extends Component<Props, State> {
 
   constructor(props: Props) {
     super(props);
-    this.state = { dialingCode: '44', value: '' };
+    this.state = { dialingCode: '44_uk', value: '' };
   }
 
   onChange = evt => {
@@ -80,10 +80,10 @@ class StoryContainer extends Component<Props, State> {
         value={this.state.value}
         dialingCode={this.state.dialingCode}
         dialingCodes={[
-          { code: '1', description: '+1 (US)' },
-          { code: '2', description: '+1 (CA)' },
-          { code: '44', description: '+44' },
-          { code: '55', description: '+55' },
+          { code: '1_us', description: '+1 (US)', numberPrefix: '+1' },
+          { code: '1_ca', description: '+1 (CA)', numberPrefix: '+1' },
+          { code: '44_uk', description: '+44 (UK)', numberPrefix: '+44' },
+          { code: '55_br', description: '+55 (BR)', numberPrefix: '+55' },
         ]}
         dialingCodeProps={{
           id: 'dialing-code',
@@ -92,6 +92,7 @@ class StoryContainer extends Component<Props, State> {
           'aria-label': 'Dialing code',
           image: getFlag(this.state.dialingCode),
         }}
+        {...this.props}
       />
     );
   }
@@ -107,6 +108,11 @@ const components = [
     id: 'large',
     title: 'Large',
     examples: [<StoryContainer large />],
+  },
+  {
+    id: 'maskedInput',
+    title: 'Masked input',
+    examples: [<StoryContainer large dialingCodeMask />],
   },
 ];
 
