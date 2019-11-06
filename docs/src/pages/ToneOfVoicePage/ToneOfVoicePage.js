@@ -27,8 +27,11 @@ import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
 import HeroImage from '../../static/tone-of-voice-hero.svg';
 import ExampleDoImage from '../../static/tone-of-voice-example__do.png';
 import ExampleDontImage from '../../static/tone-of-voice-example__dont.png';
+import * as ROUTES from '../../constants/routes';
+import ContentGrid, {
+  ContentGridCard,
+} from '../../components/ContentGrid/ContentGrid';
 
-import ContentGrid, { ContentGridCard } from './ContentGrid';
 import intro from './content/intro.md';
 import travellerFirstDo from './content/traveller-first-do.md';
 import travellerFirstDont from './content/traveller-first-dont.md';
@@ -146,6 +149,10 @@ const CopywritingPage = () => (
       imageUrl: `/${HeroImage}`,
     }}
     sections={sections}
+    nextPageLink={{
+      title: 'Logo',
+      link: ROUTES.LOGO,
+    }}
   />
 );
 

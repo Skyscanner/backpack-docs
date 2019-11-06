@@ -29,6 +29,7 @@ const getClassName = (() => {
 })();
 
 type Props = {
+  className?: string,
   children: Node,
 };
 
@@ -39,8 +40,10 @@ type CardProps = {
   padding?: boolean,
 };
 
-const ContentGrid = ({ children }: Props) => (
-  <div className={getClassName('bpk-docs-content-grid')}>{children}</div>
+const ContentGrid = ({ className, children }: Props) => (
+  <div className={getClassName('bpk-docs-content-grid', className)}>
+    {children}
+  </div>
 );
 
 const ContentGridCard = ({
@@ -52,17 +55,21 @@ const ContentGridCard = ({
   <span
     className={getClassName(
       'bpk-docs-content-grid__card',
-      className,
       `bpk-docs-content-grid__card--${cardStyle}`,
       !padding && 'bpk-docs-content-grid__card--no-padding',
+      className,
     )}
   >
     {children}
   </span>
 );
 
+ContentGrid.defaultProps = {
+  className: null,
+};
+
 ContentGridCard.defaultProps = {
-  className: '',
+  className: null,
   cardStyle: 'normal',
   padding: true,
 };

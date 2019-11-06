@@ -44,6 +44,7 @@ import CopywritingPage from '../pages/CopywritingPage';
 import ToneOfVoicePage from '../pages/ToneOfVoicePage';
 import StrategyPage from '../pages/StrategyPage';
 import PhotographyPage from '../pages/PhotographyPage';
+import LogoPage from '../pages/LogoPage';
 import AccordionsPage from '../pages/AccordionsPage';
 import AlertPage from '../pages/AlertPage';
 import AlignmentPage from '../pages/AlignmentPage';
@@ -160,6 +161,7 @@ export const ROUTES_MAPPINGS = [
     routes: [
       { path: ROUTES.COLORS, component: ColorsPage },
       { path: ROUTES.COPYWRITING, component: CopywritingPage },
+      { path: ROUTES.LOGO, component: LogoPage },
       { path: ROUTES.PHOTOGRAPHY, component: PhotographyPage },
       { path: ROUTES.STRATEGY, component: StrategyPage },
       { path: ROUTES.TONE_OF_VOICE, component: ToneOfVoicePage },

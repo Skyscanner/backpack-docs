@@ -83,7 +83,7 @@ const sections = [
 
 const PhotographyPage = () => (
   <GuidelinesPageBuilder
-    title="Colour"
+    title="Photography"
     hero={{
       heading: `Photography`,
       imageUrl: `/${PhotographyHero}`,
