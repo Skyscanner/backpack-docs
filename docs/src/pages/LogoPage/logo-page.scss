@@ -45,14 +45,14 @@
   }
 
   &__grid {
-    max-width: calc(100% + #{$bpk-spacing-base} * 2);
     width: calc(100% + #{$bpk-spacing-base} * 2);
+    max-width: calc(100% + #{$bpk-spacing-base} * 2);
   }
 
   &__card {
     display: flex;
-    max-width: 38.5rem;
     width: 100%;
+    max-width: 38.5rem;
     height: 20rem;
     justify-content: center;
     align-items: center;

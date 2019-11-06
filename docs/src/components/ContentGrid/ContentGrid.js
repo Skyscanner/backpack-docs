@@ -29,6 +29,7 @@ const getClassName = (() => {
 })();
 
 type Props = {
+  className?: string,
   children: Node,
 };
 
@@ -63,8 +64,12 @@ const ContentGridCard = ({
   </span>
 );
 
+ContentGrid.defaultProps = {
+  className: null,
+};
+
 ContentGridCard.defaultProps = {
-  className: '',
+  className: null,
   cardStyle: 'normal',
   padding: true,
 };
