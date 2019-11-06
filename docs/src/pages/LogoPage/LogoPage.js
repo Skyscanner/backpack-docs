@@ -23,13 +23,6 @@ import BpkImage from 'bpk-component-image';
 import getMarkdownString from '../../helpers/markdown-helper';
 import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
 import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
-import LogoHero from '../../static/logo/logo_hero.svg';
-import LogoSymbol from '../../static/logo/our_symbol.png';
-import LogoWordmarque from '../../static/logo/our_wordmarque.svg';
-import LogoExamples from '../../static/logo/logo_examples.png';
-import LogoVertical from '../../static/logo/logo_suite_vertical_logo.svg';
-import LogoHorizontal from '../../static/logo/logo_suite_horizontal_logo.svg';
-import LogoSymbolSuite from '../../static/logo/logo_suite_symbol.svg';
 import * as ROUTES from '../../constants/routes';
 import ContentGrid, {
   ContentGridCard,
@@ -56,7 +49,7 @@ const sections = [
         altText="art direction"
         width={758}
         height={437}
-        src={`/${LogoSymbol}`}
+        src="https://js.skyscnr.com/sttc/bpk-content/our_symbol-af2f7219.png"
       />
     ),
   },
@@ -73,7 +66,7 @@ const sections = [
         altText="art direction"
         width={838}
         height={190}
-        src={`/${LogoWordmarque}`}
+        src="https://js.skyscnr.com/sttc/bpk-content/our_wordmarque-c8a774a8.svg"
       />
     ),
   },
@@ -89,7 +82,7 @@ const sections = [
               'bpk-docs-logo-page__suite',
               'bpk-docs-logo-page__suite--vertical',
             )}
-            src={`/${LogoVertical}`}
+            src="https://js.skyscnr.com/sttc/bpk-content/logo_suite_vertical_logo-ee0c930e.svg"
             alt="vertical skyscanner logo with wordmarque"
           />
         </ContentGridCard>
@@ -99,7 +92,7 @@ const sections = [
               'bpk-docs-logo-page__suite',
               'bpk-docs-logo-page__suite--horizontal',
             )}
-            src={`/${LogoHorizontal}`}
+            src="https://js.skyscnr.com/sttc/bpk-content/logo_suite_horizontal_logo-33239ee8.svg"
             alt="horizontal skyscanner logo with wordmarque"
           />
         </ContentGridCard>
@@ -109,7 +102,7 @@ const sections = [
               'bpk-docs-logo-page__suite',
               'bpk-docs-logo-page__suite--symbol',
             )}
-            src={`/${LogoSymbolSuite}`}
+            src="https://js.skyscnr.com/sttc/bpk-content/logo_suite_symbol-8c0abdd8.svg"
             alt="our symbol, skyscanner logo without wordmarque"
           />
         </ContentGridCard>
@@ -119,7 +112,7 @@ const sections = [
               'bpk-docs-logo-page__suite',
               'bpk-docs-logo-page__suite--wordmarque',
             )}
-            src={`/${LogoWordmarque}`}
+            src="https://js.skyscnr.com/sttc/bpk-content/our_wordmarque-c8a774a8.svg"
             alt="our wordmarque Skyscanner"
           />
         </ContentGridCard>
@@ -135,7 +128,7 @@ const sections = [
         altText="logo examples"
         width={839}
         height={838}
-        src={`/${LogoExamples}`}
+        src="https://js.skyscnr.com/sttc/bpk-content/logo_examples-1ebc5905.png"
       />
     ),
   },
@@ -146,7 +139,8 @@ const LogoPage = () => (
     title="Logo"
     hero={{
       heading: `Logo`,
-      imageUrl: `/${LogoHero}`,
+      imageUrl:
+        'https://js.skyscnr.com/sttc/bpk-content/logo_hero-87c0a5cc.svg',
       className: getClassName('bpk-docs-logo-page__hero'),
     }}
     sections={sections}
