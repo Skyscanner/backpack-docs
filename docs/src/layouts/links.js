@@ -525,6 +525,7 @@ export default [
       { id: 'COLORS', route: routes.COLORS, children: 'Colour' },
       { id: 'TYPOGRAPHY', route: routes.TYPOGRAPHY, children: 'Typography' },
       { id: 'PHOTOGRAPHY', route: routes.PHOTOGRAPHY, children: 'Photography' },
+      { id: 'SHADOWS', route: routes.SHADOW, children: 'Shadows' },
       { id: 'COPYWRITING', route: routes.COPYWRITING, children: 'Copywriting' },
     ],
   },
