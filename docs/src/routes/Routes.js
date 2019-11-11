@@ -44,7 +44,7 @@ import CopywritingPage from '../pages/CopywritingPage';
 import ToneOfVoicePage from '../pages/ToneOfVoicePage';
 import StrategyPage from '../pages/StrategyPage';
 import PhotographyPage from '../pages/PhotographyPage';
-import ShadowPage from '../pages/ShadowPage';
+import ShadowsGuidelinesPage from '../pages/ShadowsGuidelinesPage';
 import LogoPage from '../pages/LogoPage';
 import AccordionsPage from '../pages/AccordionsPage';
 import AlertPage from '../pages/AlertPage';
@@ -164,7 +164,7 @@ export const ROUTES_MAPPINGS = [
       { path: ROUTES.COPYWRITING, component: CopywritingPage },
       { path: ROUTES.LOGO, component: LogoPage },
       { path: ROUTES.PHOTOGRAPHY, component: PhotographyPage },
-      { path: ROUTES.SHADOW, component: ShadowPage },
+      { path: ROUTES.SHADOWS_GUIDELINES, component: ShadowsGuidelinesPage },
       { path: ROUTES.STRATEGY, component: StrategyPage },
       { path: ROUTES.TONE_OF_VOICE, component: ToneOfVoicePage },
       { path: ROUTES.TYPOGRAPHY, component: TypographyPage },

@@ -93,7 +93,7 @@ const PhotographyPage = () => (
     sections={sections}
     nextPageLink={{
       title: 'Shadows',
-      link: ROUTES.SHADOW,
+      link: ROUTES.SHADOWS_GUIDELINES,
     }}
   />
 );

@@ -30,17 +30,39 @@
   &--categories {
     display: flex;
     justify-content: space-between;
-    
+
     @include bpk-breakpoint-tablet {
       flex-wrap: wrap;
     }
 
     &__content {
       width: 100%;
-    }
-  }
 
-  &__image {
-    width: 100%;
+      &--secondary {
+        margin-left: $bpk-spacing-xs * 2.5;
+
+        @include bpk-breakpoint-mobile {
+          margin-left: $bpk-spacing-lg / 3;
+        }
+      }
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__text {
+      display: flex;
+      margin-bottom: $bpk-spacing-sm;
+      justify-content: space-between;
+    }
+
+    &__group {
+      margin-left: $bpk-spacing-base / 3;
+
+      @include bpk-breakpoint-tablet {
+        margin-left: $bpk-spacing-none;
+      }
+    }
   }
 }
