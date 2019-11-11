@@ -27,6 +27,7 @@ import PhotographyHero from '../../static/photography/photography_hero.svg';
 import PhotoArtDirection from '../../static/photography/photography_art_direction.png';
 import PhotoTreatment from '../../static/photography/photography_treatment.png';
 import PhotoExamples from '../../static/photography/photography_examples.png';
+import * as ROUTES from '../../constants/routes';
 
 import STYLES from './photography-page.scss';
 import intro from './content/intro.md';
@@ -90,6 +91,10 @@ const PhotographyPage = () => (
       className: getClassName('bpk-docs-photography-page__hero'),
     }}
     sections={sections}
+    nextPageLink={{
+      title: 'Shadows',
+      link: ROUTES.SHADOWS_GUIDELINES,
+    }}
   />
 );
 
