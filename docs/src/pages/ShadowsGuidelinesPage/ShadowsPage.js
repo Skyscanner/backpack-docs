@@ -23,11 +23,9 @@ import BpkImage from 'bpk-component-image';
 import getMarkdownString from '../../helpers/markdown-helper';
 import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
 import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
-import ShadowsHero from '../../static/shadows/shadows_hero.png';
-import ShadowsCatergoryOne from '../../static/shadows/categorie_1.jpg';
-import ShadowsCatergoryTwo from '../../static/shadows/categorie_2.jpg';
-import ShadowsCatergoryThree from '../../static/shadows/categorie_3.jpg';
-import ShadowsCatergoryFour from '../../static/shadows/categorie_4.jpg';
+import ShadowsHero from '../../static/shadows/shadows_hero.jpg';
+import ShadowPairOne from '../../static/shadows/category_1.jpg';
+import ShadowPairTwo from '../../static/shadows/category_2.jpg';
 import ShadowsExamples from '../../static/shadows/shadows_examples.png';
 
 import STYLES from './shadows-page.scss';
@@ -48,66 +46,57 @@ const sections = [
       <div className={getClassName('bpk-docs-shadows-page--categories')}>
         <div>
           <img
-            className={getClassName(
-              'bpk-docs-shadows-page--categories__content',
-            )}
-            src={`/${ShadowsCatergoryOne}`}
-            alt="four images with different shadow styles"
+            className={getClassName('bpk-docs-shadows-page--categories__image')}
+            src={`/${ShadowPairOne}`}
+            alt="shadows for nature and architecture elements"
           />
           <div
-            className={getClassName(
-              'bpk-docs-shadows-page--categories__content',
-            )}
+            className={getClassName('bpk-docs-shadows-page--categories__text')}
           >
-            Nature
+            <div
+              className={getClassName(
+                'bpk-docs-shadows-page--categories__content',
+              )}
+            >
+              Nature
+            </div>
+            <div
+              className={getClassName(
+                'bpk-docs-shadows-page--categories__content',
+                'bpk-docs-shadows-page--categories__content--secondary',
+              )}
+            >
+              Architecture
+            </div>
           </div>
         </div>
-        <div>
+
+        <div
+          className={getClassName('bpk-docs-shadows-page--categories__group')}
+        >
           <img
-            className={getClassName(
-              'bpk-docs-shadows-page--categories__content',
-            )}
-            alt="four images with different shadow styles"
-            src={`/${ShadowsCatergoryTwo}`}
+            className={getClassName('bpk-docs-shadows-page--categories__image')}
+            alt="shadows for abstract elements and when using props"
+            src={`/${ShadowPairTwo}`}
           />
           <div
-            className={getClassName(
-              'bpk-docs-shadows-page--categories__content',
-            )}
+            className={getClassName('bpk-docs-shadows-page--categories__text')}
           >
-            Architecture
-          </div>
-        </div>
-        <div>
-          <img
-            className={getClassName(
-              'bpk-docs-shadows-page--categories__content',
-            )}
-            alt="four images with different shadow styles"
-            src={`/${ShadowsCatergoryThree}`}
-          />
-          <div
-            className={getClassName(
-              'bpk-docs-shadows-page--categories__content',
-            )}
-          >
-            Abstract
-          </div>
-        </div>
-        <div>
-          <img
-            className={getClassName(
-              'bpk-docs-shadows-page--categories__content',
-            )}
-            alt="four images with different shadow styles"
-            src={`/${ShadowsCatergoryFour}`}
-          />
-          <div
-            className={getClassName(
-              'bpk-docs-shadows-page--categories__content',
-            )}
-          >
-            Prop
+            <div
+              className={getClassName(
+                'bpk-docs-shadows-page--categories__content',
+              )}
+            >
+              Abstract
+            </div>
+            <div
+              className={getClassName(
+                'bpk-docs-shadows-page--categories__content',
+                'bpk-docs-shadows-page--categories__content--secondary',
+              )}
+            >
+              Prop
+            </div>
           </div>
         </div>
       </div>
