@@ -26,7 +26,7 @@ import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
 import ShadowsHero from '../../static/shadows/shadows_hero.jpg';
 import ShadowPairOne from '../../static/shadows/category_1.jpg';
 import ShadowPairTwo from '../../static/shadows/category_2.jpg';
-import ShadowsExamples from '../../static/shadows/shadows_examples.png';
+import ShadowsExamples from '../../static/shadows/shadows_examples.jpg';
 
 import STYLES from './shadows-page.scss';
 import intro from './content/intro.md';
