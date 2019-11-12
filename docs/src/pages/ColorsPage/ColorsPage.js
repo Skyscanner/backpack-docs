@@ -21,6 +21,7 @@ import { cssModules } from 'bpk-react-utils';
 import BpkImage from 'bpk-component-image';
 
 import getMarkdownString from '../../helpers/markdown-helper';
+import { createFromType } from '../../components/ApidocLink';
 import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
 import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
 import ColorsHero from '../../static/colours/colour_hero.svg';
@@ -33,6 +34,7 @@ import intro from './content/intro.md';
 import colours from './colors';
 
 const getClassName = cssModules(STYLES);
+const toSassdocLink = createFromType('sass');
 
 const sections = [
   {
@@ -71,6 +73,14 @@ const sections = [
         src={`/${ColorExamples}`}
       />
     ),
+  },
+  {
+    id: 'colours-sassdoc',
+    backgroundStyle: 'dark',
+    content: toSassdocLink({
+      sassdocId: 'colors-variable',
+      category: 'Colors',
+    }),
   },
 ];
 
