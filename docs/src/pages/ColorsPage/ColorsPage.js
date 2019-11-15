@@ -16,14 +16,16 @@
  * limitations under the License.
  */
 
-import React from 'react';
+import React, { Fragment } from 'react';
 import { cssModules } from 'bpk-react-utils';
 import BpkImage from 'bpk-component-image';
+import BpkLink from 'bpk-component-link';
 
 import getMarkdownString from '../../helpers/markdown-helper';
 import { createFromType } from '../../components/ApidocLink';
 import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
 import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
+import BpkParagraph from '../../components/Paragraph';
 import ColorsHero from '../../static/colours/colour_hero.svg';
 import ColorExamples from '../../static/colours/colour_examples.png';
 import * as ROUTES from '../../constants/routes';
@@ -49,8 +51,21 @@ const sections = [
   },
   {
     id: 'pairings',
-    title: 'Pairings chart',
-    content: <ColorChart />,
+    title: 'Colour pairings',
+    content: (
+      <Fragment>
+        <BpkParagraph>
+          For colour pairings to be accessible, they should meet the minimum
+          contrast ratios outlined in the{' '}
+          <BpkLink href="https://www.w3.org/TR/WCAG21/#contrast-minimum">
+            WCAG contrast guidelines
+          </BpkLink>
+          . See the accessible pairings from our colour palette using the
+          filters below.
+        </BpkParagraph>
+        <ColorChart />
+      </Fragment>
+    ),
   },
   {
     id: 'examples',

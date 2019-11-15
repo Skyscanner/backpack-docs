@@ -21,7 +21,8 @@
 import React, { Component, Fragment } from 'react';
 import { cssModules } from 'bpk-react-utils';
 import getContrastRatio from 'get-contrast-ratio';
-import BpkButton from 'bpk-component-button';
+import BpkText from 'bpk-component-text';
+import BpkRadio from 'bpk-component-radio';
 import { colors } from 'bpk-tokens/tokens/base.es6';
 
 import STYLES from './color-chart.scss';
@@ -133,61 +134,52 @@ class ColorChart extends Component<{}, State> {
       return null;
     }
 
-    const buttonClassName = getClassName('bpk-docs-colors-chart__button');
-    const selectedButtonClassName = getClassName(
-      'bpk-docs-colors-chart__button',
-      'bpk-docs-colors-chart__button--selected',
-    );
-
     return (
       <Fragment>
-        <BpkButton
-          link
-          className={
-            desiredContrast === MIN_CONTRAST_TEXT
-              ? selectedButtonClassName
-              : buttonClassName
-          }
+        <BpkRadio
+          checked={desiredContrast === MIN_CONTRAST_TEXT}
+          name="textSizeSmall"
           aria-label="text size small"
-          onClick={() => {
+          onChange={() => {
             this.recalculateDisplay(MIN_CONTRAST_TEXT);
           }}
-        >
-          Aa
-        </BpkButton>
-        <BpkButton
-          link
-          large
-          className={
-            desiredContrast === MIN_CONTRAST_LARGE_TEXT
-              ? selectedButtonClassName
-              : buttonClassName
-          }
-          onClick={() => {
+          label="Small text (smaller than 18pt or 14pt bold) minimum ratio = 4.5:1"
+        />
+        <br />
+        <BpkRadio
+          checked={desiredContrast === MIN_CONTRAST_LARGE_TEXT}
+          name="textSizeLarge"
+          aria-label="text size large"
+          onChange={() => {
             this.recalculateDisplay(MIN_CONTRAST_LARGE_TEXT);
           }}
-          aria-label="text size large"
-        >
-          Aa
-        </BpkButton>
-        <BpkButton
-          link
-          large
-          id="other-button"
-          className={
-            desiredContrast === MIN_CONTRAST_OTHER
-              ? selectedButtonClassName
-              : buttonClassName
+          label={
+            <Fragment>
+              <BpkText>
+                {
+                  'Large text (larger than 18pt or 14pt bold) minimum ratio = 3:1'
+                }
+              </BpkText>
+              <br />
+              <BpkText>
+                {
+                  'Graphic elements (UI components or meaningful graphics) minimum ratio = 3:1'
+                }
+              </BpkText>
+            </Fragment>
           }
-          onClick={() => {
+        />
+        <br />
+        <BpkRadio
+          checked={desiredContrast === MIN_CONTRAST_OTHER}
+          name="decorativeGraphics"
+          aria-label="decorativeGraphics"
+          onChange={() => {
             this.recalculateDisplay(MIN_CONTRAST_OTHER);
           }}
-          aria-label="other"
-        >
-          <span aria-labelledby="other-button" role="img">
-            🤷‍♀️
-          </span>
-        </BpkButton>
+          label="Decoractive graphics (graphics that do not provide any information)"
+        />
+        <br />
         <table
           aria-hidden="true"
           className={getClassName('bpk-docs-colors-chart')}

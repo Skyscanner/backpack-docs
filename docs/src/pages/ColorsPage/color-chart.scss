@@ -22,19 +22,6 @@
   width: 100%;
   max-width: 21 * $bpk-spacing-xxl;
 
-  &__button {
-    margin: 0 $bpk-spacing-md $bpk-spacing-md 0;
-    opacity: .6;
-
-    &:hover {
-      opacity: .8;
-    }
-
-    &--selected {
-      opacity: 1;
-    }
-  }
-
   &__item {
     display: flex;
     width: 100%;
