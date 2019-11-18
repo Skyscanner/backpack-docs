@@ -23,6 +23,8 @@ import screenshotAlert from '../../../../backpack-ios/screenshots/Dialog/with-ct
 import screenshotBottomSheet from '../../../../backpack-ios/screenshots/Dialog/delete-confirmation.png';
 import screenshotAlertDm from '../../../../backpack-ios/screenshots/Dialog/with-cta_dm.png';
 import screenshotBottomSheetDm from '../../../../backpack-ios/screenshots/Dialog/delete-confirmation_dm.png';
+import screenshotWithFlare from '../../../../backpack-ios/screenshots/Dialog/in-app-messaging.png';
+import screenshotWithFlareDm from '../../../../backpack-ios/screenshots/Dialog/in-app-messaging_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -70,6 +72,29 @@ const components = [
         height: 1334,
         src: `/${screenshotBottomSheetDm}`,
         altText: 'Bottom sheet dialog used for confirmation.',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
+    ],
+  },
+  {
+    id: 'flare-view',
+    title: 'Flare view',
+    blurb: 'A dialog can be passed a BPKFlareView to show at the top.',
+    screenshots: [
+      {
+        title: 'With flare view.',
+        width: 750,
+        height: 1334,
+        src: `/${screenshotWithFlare}`,
+        altText: 'Dialog with a BPKFlareView.',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        title: 'With flare view.',
+        width: 750,
+        height: 1334,
+        src: `/${screenshotWithFlareDm}`,
+        altText: 'Dialog with a BPKFlareView.',
         subText: '(iPhone 8 simulator - dark mode)',
       },
     ],
