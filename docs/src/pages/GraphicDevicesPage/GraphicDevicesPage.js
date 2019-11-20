@@ -50,20 +50,24 @@ const sections = [
         <OverviewRow
           imageSetOne={{
             image: GraphicDevicesPairOne,
+            imageSetAlt: 'content bubble and full-bleed content bubble usage',
             titles: ['Content bubble', 'Full-bleed Content Bubble'],
           }}
           imageSetTwo={{
             image: GraphicDevicesPairTwo,
+            imageSetAlt: 'upwards flare and upwards flare bar usage',
             titles: ['Upwards Flare', 'Upwards Flare Bar'],
           }}
         />
         <OverviewRow
           imageSetOne={{
             image: GraphicDevicesPairThree,
+            imageSetAlt: 'content bubble and full-bleed content bubble usage',
             titles: ['Content bubble', 'Full-bleed Content Bubble'],
           }}
           imageSetTwo={{
             image: GraphicDevicesPairFour,
+            imageSetAlt: 'upwards flare and upwards flare bar usage',
             titles: ['Upwards Flare', 'Upwards Flare Bar'],
           }}
         />
@@ -76,7 +80,7 @@ const sections = [
     content: (
       <BpkImage
         className={getClassName('bpk-docs-graphic-devices-page__image')}
-        altText="color pairings"
+        altText="Graphic usage examples in situ"
         width={840}
         height={1040}
         src={`/${GraphicDevicesExamples}`}

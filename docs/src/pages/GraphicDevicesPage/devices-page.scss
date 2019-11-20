@@ -55,7 +55,7 @@
       }
     }
 
-    &__content {
+    &-content {
       width: 100%;
 
       &-secondary {
@@ -67,17 +67,17 @@
       }
     }
 
-    &__image {
+    &-image {
       width: 100%;
     }
 
-    &__text {
+    &-text {
       display: flex;
       margin-bottom: $bpk-spacing-sm;
       justify-content: space-between;
     }
 
-    &__group {
+    &-group {
       margin-left: 1rem;
 
       @include bpk-breakpoint-tablet {

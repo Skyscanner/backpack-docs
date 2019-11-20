@@ -34,27 +34,27 @@ const OverviewRow = props => {
       <div>
         <img
           className={getClassName(
-            'bpk-docs-graphic-devices-page__overview__image',
+            'bpk-docs-graphic-devices-page__overview-image',
           )}
           src={`/${imageSetOne.image}`}
-          alt="shadows for nature and architecture elements"
+          alt={`${imageSetOne.imageSetAlt}`}
         />
         <div
           className={getClassName(
-            'bpk-docs-graphic-devices-page__overview__text',
+            'bpk-docs-graphic-devices-page__overview-text',
           )}
         >
           <div
             className={getClassName(
-              'bpk-docs-graphic-devices-page__overview__content',
+              'bpk-docs-graphic-devices-page__overview-content',
             )}
           >
             {imageSetOne.titles[0]}
           </div>
           <div
             className={getClassName(
-              'bpk-docs-graphic-devices-page__overview__content',
-              'bpk-docs-graphic-devices-page__overview__content-secondary',
+              'bpk-docs-graphic-devices-page__overview-content',
+              'bpk-docs-graphic-devices-page__overview-content-secondary',
             )}
           >
             {imageSetOne.titles[1]}
@@ -64,32 +64,32 @@ const OverviewRow = props => {
 
       <div
         className={getClassName(
-          'bpk-docs-graphic-devices-page__overview__group',
+          'bpk-docs-graphic-devices-page__overview-group',
         )}
       >
         <img
           className={getClassName(
-            'bpk-docs-graphic-devices-page__overview__image',
+            'bpk-docs-graphic-devices-page__overview-image',
           )}
-          alt="shadows for abstract elements and when using props"
+          alt={`${imageSetTwo.imageSetAlt}`}
           src={`/${imageSetTwo.image}`}
         />
         <div
           className={getClassName(
-            'bpk-docs-graphic-devices-page__overview__text',
+            'bpk-docs-graphic-devices-page__overview-text',
           )}
         >
           <div
             className={getClassName(
-              'bpk-docs-graphic-devices-page__overview__content',
+              'bpk-docs-graphic-devices-page__overview-content',
             )}
           >
             {imageSetTwo.titles[0]}
           </div>
           <div
             className={getClassName(
-              'bpk-docs-graphic-devices-page__overview__content',
-              'bpk-docs-graphic-devices-page__overview__content-secondary',
+              'bpk-docs-graphic-devices-page__overview-content',
+              'bpk-docs-graphic-devices-page__overview-content-secondary',
             )}
           >
             {imageSetTwo.titles[1]}
@@ -103,10 +103,12 @@ const OverviewRow = props => {
 OverviewRow.propTypes = {
   imageSetOne: PropTypes.shape({
     image: PropTypes.string.isRequired,
+    imageSetAlt: PropTypes.string.isRequired,
     titles: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
   imageSetTwo: PropTypes.shape({
     image: PropTypes.string.isRequired,
+    imageSetAlt: PropTypes.string.isRequired,
     titles: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
 };
