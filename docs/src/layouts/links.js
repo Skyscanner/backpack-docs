@@ -531,7 +531,6 @@ export default [
         route: routes.GRAPHIC_DEVICES,
         children: 'Graphic Devices',
       },
-      { id: 'COPYWRITING', route: routes.COPYWRITING, children: 'Copywriting' },
       {
         id: 'ILLUSTRATION',
         route: routes.ILLUSTRATION,
