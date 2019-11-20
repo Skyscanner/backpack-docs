@@ -29,7 +29,6 @@ import GraphicDevicesPairTwo from '../../static/graphic-devices/overview_2.png';
 import GraphicDevicesPairThree from '../../static/graphic-devices/overview_3.png';
 import GraphicDevicesPairFour from '../../static/graphic-devices/overview_4.png';
 import GraphicDevicesExamples from '../../static/graphic-devices/examples.png';
-import * as ROUTES from '../../constants/routes';
 
 import OverviewRow from './overviewRow';
 import STYLES from './devices-page.scss';
@@ -95,10 +94,6 @@ const GraphicDevicesPage = () => (
       className: getClassName('bpk-docs-graphic-devices-page__hero'),
     }}
     sections={sections}
-    nextPageLink={{
-      title: 'Illustration',
-      link: ROUTES.ILLUSTRATION,
-    }}
   />
 );
 
