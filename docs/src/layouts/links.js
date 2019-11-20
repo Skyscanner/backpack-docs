@@ -526,6 +526,11 @@ export default [
       { id: 'TYPOGRAPHY', route: routes.TYPOGRAPHY, children: 'Typography' },
       { id: 'PHOTOGRAPHY', route: routes.PHOTOGRAPHY, children: 'Photography' },
       { id: 'SHADOWS', route: routes.SHADOWS_GUIDELINES, children: 'Shadows' },
+      {
+        id: 'GRAPHIC_DEVICES',
+        route: routes.GRAPHIC_DEVICES,
+        children: 'Graphic Devices',
+      },
       { id: 'COPYWRITING', route: routes.COPYWRITING, children: 'Copywriting' },
     ],
   },
