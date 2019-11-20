@@ -32,6 +32,7 @@ export const PRINCIPLES = '/using/principles';
 // guidelines
 export const COLORS = '/guidelines/colors';
 export const COPYWRITING = '/guidelines/copywriting';
+export const GRAPHIC_DEVICES = '/guidelines/graphic-devices';
 export const LOGO = '/guidelines/logo';
 export const PHOTOGRAPHY = '/guidelines/photography';
 export const TONE_OF_VOICE = '/guidelines/tone-of-voice';

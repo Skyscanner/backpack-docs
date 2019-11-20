@@ -41,6 +41,7 @@ import SpacingsPage from '../pages/SpacingsPage';
 import AnimationPage from '../pages/AnimationPage';
 import ZIndexesPage from '../pages/ZIndexesPage';
 import CopywritingPage from '../pages/CopywritingPage';
+import GraphicDevicesPage from '../pages/GraphicDevicesPage';
 import ToneOfVoicePage from '../pages/ToneOfVoicePage';
 import StrategyPage from '../pages/StrategyPage';
 import PhotographyPage from '../pages/PhotographyPage';
@@ -162,6 +163,7 @@ export const ROUTES_MAPPINGS = [
     routes: [
       { path: ROUTES.COLORS, component: ColorsPage },
       { path: ROUTES.COPYWRITING, component: CopywritingPage },
+      { path: ROUTES.GRAPHIC_DEVICES, component: GraphicDevicesPage },
       { path: ROUTES.LOGO, component: LogoPage },
       { path: ROUTES.PHOTOGRAPHY, component: PhotographyPage },
       { path: ROUTES.SHADOWS_GUIDELINES, component: ShadowsGuidelinesPage },
