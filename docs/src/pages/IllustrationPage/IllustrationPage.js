@@ -25,8 +25,6 @@ import getMarkdownString from '../../helpers/markdown-helper';
 import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
 import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
 import IllustrationHero from '../../static/illustration/illustration_hero.svg';
-import IllustrationOverview from '../../static/illustration/illustration_overview.png';
-import IllustrationExamples from '../../static/illustration/illustration_examples.png';
 
 import STYLES from './illustration-page.scss';
 import intro from './content/intro.md';
@@ -47,7 +45,7 @@ const sections = [
         altText="Three examples of illustrations covering a range of situations."
         width={909}
         height={828}
-        src={`/${IllustrationOverview}`}
+        src="https://js.skyscnr.com/sttc/bpk-content/illustration_overview-7d284b4a.png"
       />
     ),
   },
@@ -59,7 +57,7 @@ const sections = [
         altText="Five different examples of illustrations covering a range of situations."
         width={840}
         height={612}
-        src={`/${IllustrationExamples}`}
+        src="https://js.skyscnr.com/sttc/bpk-content/illustration_examples-2753d1c9.png"
       />
     ),
   },
