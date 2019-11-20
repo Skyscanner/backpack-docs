@@ -537,6 +537,7 @@ export default [
         route: routes.ILLUSTRATION,
         children: 'Illustration',
       },
+      { id: 'COPYWRITING', route: routes.COPYWRITING, children: 'Copywriting' },
     ],
   },
 ];

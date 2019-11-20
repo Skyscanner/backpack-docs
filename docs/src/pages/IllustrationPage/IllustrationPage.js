@@ -44,8 +44,8 @@ const sections = [
     content: (
       <BpkImage
         altText="Three examples of illustrations covering a range of situations."
-        width={840}
-        height={930}
+        width={909}
+        height={828}
         src={`/${IllustrationOverview}`}
       />
     ),
@@ -57,7 +57,7 @@ const sections = [
       <BpkImage
         altText="Five different examples of illustrations covering a range of situations."
         width={840}
-        height={930}
+        height={612}
         src={`/${IllustrationExamples}`}
       />
     ),
