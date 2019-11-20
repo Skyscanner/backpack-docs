@@ -42,7 +42,7 @@ const sections = [
     backgroundStyle: 'light',
     content: (
       <BpkImage
-        altText="Three examples of illustrations covering a range of situations."
+        altText="Illustration examples."
         width={909}
         height={828}
         src="https://js.skyscnr.com/sttc/bpk-content/illustration_overview-7d284b4a.png"
