@@ -54,7 +54,7 @@ const sections = [
     title: 'Examples',
     content: (
       <BpkImage
-        altText="Five different examples of illustrations covering a range of situations."
+        altText="Illustration examples."
         width={840}
         height={612}
         src="https://js.skyscnr.com/sttc/bpk-content/illustration_examples-2753d1c9.png"
