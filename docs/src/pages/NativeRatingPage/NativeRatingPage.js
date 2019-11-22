@@ -23,9 +23,9 @@ import readme from '../../../../backpack-react-native/packages/react-native-bpk-
 import androidScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-rating/screenshots/android/default.png';
 import androidScreenshotSizes from '../../../../backpack-react-native/packages/react-native-bpk-component-rating/screenshots/android/sizes.png';
 import androidScreenshotVertical from '../../../../backpack-react-native/packages/react-native-bpk-component-rating/screenshots/android/vertical.png';
-// import iosScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-rating/screenshots/ios/default.png';
-// import iosScreenshotSizes from '../../../../backpack-react-native/packages/react-native-bpk-component-rating/screenshots/ios/sizes.png';
-// import iosScreenshotVertical from '../../../../backpack-react-native/packages/react-native-bpk-component-rating/screenshots/ios/vertical.png';
+import iosScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-rating/screenshots/ios/default.png';
+import iosScreenshotSizes from '../../../../backpack-react-native/packages/react-native-bpk-component-rating/screenshots/ios/sizes.png';
+import iosScreenshotVertical from '../../../../backpack-react-native/packages/react-native-bpk-component-rating/screenshots/ios/vertical.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -35,14 +35,14 @@ const components = [
     blurb:
       "The rating component's colour changes based on the score passed in.",
     screenshots: [
-      // {
-      //   title: 'iOS',
-      //   width: 750,
-      //   height: 1334,
-      //   src: `/${iosScreenshotDefault}`,
-      //   altText: 'iOS rating component.',
-      //   subText: '(iPhone 8 simulator)',
-      // },
+      {
+        title: 'iOS',
+        width: 750,
+        height: 1334,
+        src: `/${iosScreenshotDefault}`,
+        altText: 'iOS rating component.',
+        subText: '(iPhone 8 simulator)',
+      },
       {
         title: 'Android',
         width: 1080,
@@ -59,14 +59,14 @@ const components = [
     blurb:
       'The rating component is available in a range of sizes to meet your every need.',
     screenshots: [
-      // {
-      //   title: 'iOS',
-      //   width: 750,
-      //   height: 1334,
-      //   src: `/${iosScreenshotSizes}`,
-      //   altText: 'iOS rating component in different sizes',
-      //   subText: '(iPhone 8 simulator)',
-      // },
+      {
+        title: 'iOS',
+        width: 750,
+        height: 1334,
+        src: `/${iosScreenshotSizes}`,
+        altText: 'iOS rating component in different sizes',
+        subText: '(iPhone 8 simulator)',
+      },
       {
         title: 'Android',
         width: 1080,
@@ -82,14 +82,14 @@ const components = [
     title: 'Vertical',
     blurb: 'You can even make it use a vertical layout.',
     screenshots: [
-      // {
-      //   title: 'iOS',
-      //   width: 750,
-      //   height: 1334,
-      //   src: `/${iosScreenshotVertical}`,
-      //   altText: 'iOS rating component in different sizes.',
-      //   subText: '(iPhone 8 simulator)',
-      // },
+      {
+        title: 'iOS',
+        width: 750,
+        height: 1334,
+        src: `/${iosScreenshotVertical}`,
+        altText: 'iOS rating component in different sizes.',
+        subText: '(iPhone 8 simulator)',
+      },
       {
         title: 'Android',
         width: 1080,
