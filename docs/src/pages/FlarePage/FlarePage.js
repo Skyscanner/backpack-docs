@@ -22,8 +22,9 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import WebFlare from '../WebFlarePage';
+import AndroidFlare from '../AndroidFlarePage';
 import IOSFlare from '../IOSFlarePage';
+import WebFlare from '../WebFlarePage';
 
 const Page = () => (
   <DocsPageWrapper
@@ -34,8 +35,9 @@ const Page = () => (
         content.
       </IntroBlurb>,
     ]}
-    webSubpage={<WebFlare wrapped />}
+    androidSubpage={<AndroidFlare wrapped />}
     iosSubpage={<IOSFlare wrapped />}
+    webSubpage={<WebFlare wrapped />}
   />
 );
 
