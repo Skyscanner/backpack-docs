@@ -16,27 +16,6 @@
  * limitations under the License.
  */
 
-@import '~bpk-mixins';
+import page from './NativeRatingPage';
 
-.bpkdocs-page-head {
-  &__content {
-    padding: $bpk-spacing-xs * 10;
-    background-color: $bpk-color-white;
-
-    @include bpk-breakpoint-mobile {
-      padding: $bpk-spacing-lg;
-    }
-
-    &--wrapped {
-      background-color: $bpk-color-sky-gray-tint-07;
-    }
-  }
-
-  &__in-section {
-    margin-bottom: $bpk-spacing-md;
-  }
-
-  &__beta-warning {
-    margin-bottom: $bpk-spacing-lg;
-  }
-}
+export default page;
