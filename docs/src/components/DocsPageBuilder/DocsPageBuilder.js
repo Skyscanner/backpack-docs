@@ -271,6 +271,7 @@ const DocsPageBuilder = props => {
             )}
             title={props.wrapped ? null : props.title}
             blurb={props.blurb}
+            showBetaWarning={props.showBetaWarning}
             menu={menu.map(({ id, title }) => ({
               href: `#${id}`,
               title,
@@ -343,6 +344,7 @@ DocsPageBuilder.propTypes = {
   ),
   iosDocId: PropTypes.string,
   sassdocId: PropTypes.string,
+  showBetaWarning: PropTypes.bool,
   androidDocId: PropTypes.string,
   usageTable: PropTypes.shape({
     data: PropTypes.shape({
@@ -361,6 +363,7 @@ DocsPageBuilder.defaultProps = {
   customSections: null,
   iosDocId: null,
   sassdocId: null,
+  showBetaWarning: false,
   androidDocId: null,
   usageTable: null,
   wrapped: false,

@@ -19,6 +19,7 @@
 
 import React, { type Node } from 'react';
 import { cssModules } from 'bpk-react-utils';
+import BpkBannerAlert, { ALERT_TYPES } from 'bpk-component-banner-alert';
 import BpkLink from 'bpk-component-link';
 import BpkText from 'bpk-component-text';
 import { BpkList, BpkListItem } from 'bpk-component-list';
@@ -47,6 +48,7 @@ type MenuItem = {
 };
 
 type Props = {
+  showBetaWarning: boolean,
   title: string,
   blurb: string | Node,
   wrapped: boolean,
@@ -65,6 +67,13 @@ const PageHead = (props: Props) => {
       <div className={contentClassNames}>
         {props.title && <Heading level="h1">{props.title}</Heading>}
         {props.blurb && toNodes(props.blurb)}
+        {props.showBetaWarning && (
+          <BpkBannerAlert
+            message="This component is in beta and may change in the future."
+            type={ALERT_TYPES.WARN}
+            className={getClassName('bpkdocs-page-head__beta-warning')}
+          />
+        )}
         {showMenu && (
           <div>
             <BpkText
