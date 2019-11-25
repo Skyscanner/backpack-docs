@@ -23,6 +23,10 @@ import screenshotDefault from '../../../../backpack-ios/screenshots/Label/defaul
 import screenshotEmphasized from '../../../../backpack-ios/screenshots/Label/emphasized.png';
 import screenshotHeavy from '../../../../backpack-ios/screenshots/Label/heavy.png';
 import screenshotMultipleFontStyles from '../../../../backpack-ios/screenshots/Label/multiple-font-styles.png';
+import screenshotDefaultDm from '../../../../backpack-ios/screenshots/Label/default_dm.png';
+import screenshotEmphasizedDm from '../../../../backpack-ios/screenshots/Label/emphasized_dm.png';
+import screenshotHeavyDm from '../../../../backpack-ios/screenshots/Label/heavy_dm.png';
+import screenshotMultipleFontStylesDm from '../../../../backpack-ios/screenshots/Label/multiple-font-styles_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -37,6 +41,13 @@ const components = [
         altText: 'iOS default text',
         subText: '(iPhone 8 simulator)',
       },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotDefaultDm}`,
+        altText: 'iOS default text',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
     ],
   },
   {
@@ -49,6 +60,13 @@ const components = [
         src: `/${screenshotEmphasized}`,
         altText: 'iOS emphasized text',
         subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotEmphasizedDm}`,
+        altText: 'iOS emphasized text',
+        subText: '(iPhone 8 simulator - dark mode)',
       },
     ],
   },
@@ -63,6 +81,13 @@ const components = [
         altText: 'iOS heavy text',
         subText: '(iPhone 8 simulator)',
       },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotHeavyDm}`,
+        altText: 'iOS heavy text',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
     ],
   },
   {
@@ -75,6 +100,13 @@ const components = [
         src: `/${screenshotMultipleFontStyles}`,
         altText: 'iOS text with multiple font styles',
         subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotMultipleFontStylesDm}`,
+        altText: 'iOS text with multiple font styles',
+        subText: '(iPhone 8 simulator - dark mode)',
       },
     ],
   },

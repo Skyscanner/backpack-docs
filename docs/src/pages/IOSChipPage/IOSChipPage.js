@@ -22,6 +22,9 @@ import readme from '../../../../backpack-ios/Backpack/Chip/README.md';
 import screenshotDefault from '../../../../backpack-ios/screenshots/Chip/default.png';
 import screenshotWithoutShadow from '../../../../backpack-ios/screenshots/Chip/without-shadow.png';
 import screenshotWithBackgroundColor from '../../../../backpack-ios/screenshots/Chip/background-color.png';
+import screenshotDefaultDm from '../../../../backpack-ios/screenshots/Chip/default_dm.png';
+import screenshotWithoutShadowDm from '../../../../backpack-ios/screenshots/Chip/without-shadow_dm.png';
+import screenshotWithBackgroundColorDm from '../../../../backpack-ios/screenshots/Chip/background-color_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -36,6 +39,13 @@ const components = [
         altText: 'Chips for iOS.',
         subText: '(iPhone 8 simulator)',
       },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotDefaultDm}`,
+        altText: 'Chips for iOS.',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
     ],
   },
   {
@@ -49,6 +59,13 @@ const components = [
         altText: 'Chips for iOS.',
         subText: '(iPhone 8 simulator)',
       },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotWithoutShadowDm}`,
+        altText: 'Chips for iOS.',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
     ],
   },
   {
@@ -61,6 +78,13 @@ const components = [
         src: `/${screenshotWithBackgroundColor}`,
         altText: 'Chips for iOS.',
         subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotWithBackgroundColorDm}`,
+        altText: 'Chips for iOS.',
+        subText: '(iPhone 8 simulator - dark mode)',
       },
     ],
   },

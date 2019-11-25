@@ -22,6 +22,11 @@ import readme from '../../../../backpack-ios/Backpack/Calendar/README.md';
 import screenshotSingle from '../../../../backpack-ios/screenshots/Calendar/single.png';
 import screenshotRange from '../../../../backpack-ios/screenshots/Calendar/range.png';
 import screenshotMultiple from '../../../../backpack-ios/screenshots/Calendar/multiple.png';
+import screenshotPill from '../../../../backpack-ios/screenshots/Calendar/pill.png';
+import screenshotSingleDm from '../../../../backpack-ios/screenshots/Calendar/single_dm.png';
+import screenshotRangeDm from '../../../../backpack-ios/screenshots/Calendar/range_dm.png';
+import screenshotMultipleDm from '../../../../backpack-ios/screenshots/Calendar/multiple_dm.png';
+import screenshotPillDm from '../../../../backpack-ios/screenshots/Calendar/pill_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -36,6 +41,13 @@ const components = [
         altText: 'Calendar for iOS with a single date selected.',
         subText: '(iPhone 8 simulator)',
       },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotSingleDm}`,
+        altText: 'Calendar for iOS with a single date selected.',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
     ],
   },
   {
@@ -49,6 +61,13 @@ const components = [
         altText: 'Calendar for iOS with a date range selected.',
         subText: '(iPhone 8 simulator)',
       },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotRangeDm}`,
+        altText: 'Calendar for iOS with a date range selected.',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
     ],
   },
   {
@@ -61,6 +80,33 @@ const components = [
         src: `/${screenshotMultiple}`,
         altText: 'Calendar for iOS with multiple dates selected.',
         subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotMultipleDm}`,
+        altText: 'Calendar for iOS with multiple dates selected.',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
+    ],
+  },
+  {
+    id: 'pill',
+    title: 'Showing year pill',
+    screenshots: [
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotPill}`,
+        altText: 'Calendar for iOS with year pill shown.',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotPillDm}`,
+        altText: 'Calendar for iOS with year pill shown.',
+        subText: '(iPhone 8 simulator - dark mode)',
       },
     ],
   },
