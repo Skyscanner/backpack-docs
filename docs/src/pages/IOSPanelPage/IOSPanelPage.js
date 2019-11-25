@@ -22,6 +22,9 @@ import readme from '../../../../backpack-ios/Backpack/Panel/README.md';
 import screenshotDefault from '../../../../backpack-ios/screenshots/Panel/default.png';
 import screenshotWithoutPadding from '../../../../backpack-ios/screenshots/Panel/without-padding.png';
 import screenshotElevated from '../../../../backpack-ios/screenshots/Panel/elevated.png';
+import screenshotDefaultDm from '../../../../backpack-ios/screenshots/Panel/default_dm.png';
+import screenshotWithoutPaddingDm from '../../../../backpack-ios/screenshots/Panel/without-padding_dm.png';
+import screenshotElevatedDm from '../../../../backpack-ios/screenshots/Panel/elevated_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -36,6 +39,13 @@ const components = [
         altText: 'Panel for iOS.',
         subText: '(iPhone 8 simulator)',
       },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotDefaultDm}`,
+        altText: 'Panel for iOS.',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
     ],
   },
   {
@@ -49,6 +59,13 @@ const components = [
         altText: 'Panel for iOS.',
         subText: '(iPhone 8 simulator)',
       },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotWithoutPaddingDm}`,
+        altText: 'Panel for iOS.',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
     ],
   },
   {
@@ -61,6 +78,13 @@ const components = [
         src: `/${screenshotElevated}`,
         altText: 'Panel for iOS.',
         subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotElevatedDm}`,
+        altText: 'Panel for iOS.',
+        subText: '(iPhone 8 simulator - dark mode)',
       },
     ],
   },

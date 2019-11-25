@@ -21,8 +21,10 @@ import React from 'react';
 import readme from '../../../../backpack-ios/Backpack/NavigationBar/README.md';
 import screenshotLarge from '../../../../backpack-ios/screenshots/NavigationBar/full-height.png';
 import screenshotCollapsed from '../../../../backpack-ios/screenshots/NavigationBar/collapsed.png';
+import screenshotLargeWithButtons from '../../../../backpack-ios/screenshots/NavigationBar/full-height-with-buttons.png';
 import screenshotLargeDm from '../../../../backpack-ios/screenshots/NavigationBar/full-height_dm.png';
 import screenshotCollapsedDm from '../../../../backpack-ios/screenshots/NavigationBar/collapsed_dm.png';
+import screenshotLargeWithButtonsDm from '../../../../backpack-ios/screenshots/NavigationBar/full-height-with-buttons_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -62,6 +64,26 @@ const components = [
         height: 1334,
         src: `/${screenshotCollapsedDm}`,
         altText: 'The navigation bar in its collapsed state.',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
+    ],
+  },
+  {
+    id: 'withButtons',
+    title: 'With buttons',
+    screenshots: [
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotLargeWithButtons}`,
+        altText: 'The navigation bar with buttons.',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotLargeWithButtonsDm}`,
+        altText: 'The navigation bar with buttons.',
         subText: '(iPhone 8 simulator - dark mode)',
       },
     ],
