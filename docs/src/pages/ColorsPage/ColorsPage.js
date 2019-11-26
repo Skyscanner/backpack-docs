@@ -16,22 +16,24 @@
  * limitations under the License.
  */
 
-import React from 'react';
+import React, { Fragment } from 'react';
 import { cssModules } from 'bpk-react-utils';
 import BpkImage from 'bpk-component-image';
+import BpkLink from 'bpk-component-link';
 
 import getMarkdownString from '../../helpers/markdown-helper';
 import { createFromType } from '../../components/ApidocLink';
 import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
 import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
+import BpkParagraph from '../../components/Paragraph';
 import ColorsHero from '../../static/colours/colour_hero.svg';
-import ColorPairings from '../../static/colours/colour_pairings.png';
 import ColorExamples from '../../static/colours/colour_examples.png';
 import * as ROUTES from '../../constants/routes';
 
 import STYLES from './colors-page.scss';
 import intro from './content/intro.md';
 import colours from './colors';
+import ColorChart from './ColorChart';
 
 const getClassName = cssModules(STYLES);
 const toSassdocLink = createFromType('sass');
@@ -49,15 +51,20 @@ const sections = [
   },
   {
     id: 'pairings',
-    title: 'Pairings chart',
+    title: 'Colour pairings',
     content: (
-      <BpkImage
-        className={getClassName('bpk-docs-colors-page__image')}
-        altText="color pairings"
-        width={840}
-        height={484}
-        src={`/${ColorPairings}`}
-      />
+      <Fragment>
+        <BpkParagraph>
+          For colour pairings to be accessible, they should meet the minimum
+          contrast ratios outlined in the{' '}
+          <BpkLink href="https://www.w3.org/TR/WCAG21/#contrast-minimum">
+            WCAG contrast guidelines
+          </BpkLink>
+          . See the accessible pairings from our colour palette using the
+          filters below.
+        </BpkParagraph>
+        <ColorChart />
+      </Fragment>
     ),
   },
   {
