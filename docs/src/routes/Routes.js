@@ -49,6 +49,7 @@ import ShadowsGuidelinesPage from '../pages/ShadowsGuidelinesPage';
 import IllustrationPage from '../pages/IllustrationPage';
 import IconographyPage from '../pages/IconographyPage';
 import LogoPage from '../pages/LogoPage';
+import InUsePage from '../pages/InUsePage';
 import AccordionsPage from '../pages/AccordionsPage';
 import AlertPage from '../pages/AlertPage';
 import AlignmentPage from '../pages/AlignmentPage';
@@ -168,6 +169,7 @@ export const ROUTES_MAPPINGS = [
       { path: ROUTES.GRAPHIC_DEVICES, component: GraphicDevicesPage },
       { path: ROUTES.ICONOGRAPHY, component: IconographyPage },
       { path: ROUTES.ILLUSTRATION, component: IllustrationPage },
+      { path: ROUTES.IN_USE, component: InUsePage },
       { path: ROUTES.LOGO, component: LogoPage },
       { path: ROUTES.PHOTOGRAPHY, component: PhotographyPage },
       { path: ROUTES.SHADOWS_GUIDELINES, component: ShadowsGuidelinesPage },
