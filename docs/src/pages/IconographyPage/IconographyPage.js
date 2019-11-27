@@ -20,6 +20,7 @@ import React from 'react';
 import { cssModules } from 'bpk-react-utils';
 import BpkImage from 'bpk-component-image';
 
+import * as ROUTES from '../../constants/routes';
 import getMarkdownString from '../../helpers/markdown-helper';
 import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
 import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
@@ -98,6 +99,10 @@ const IconographyPage = () => (
       className: getClassName('bpk-docs-iconography-page__hero'),
     }}
     sections={sections}
+    nextPageLink={{
+      title: 'In use',
+      link: ROUTES.IN_USE,
+    }}
   />
 );
 
