@@ -536,6 +536,7 @@ export default [
         route: routes.ILLUSTRATION,
         children: 'Illustration',
       },
+      { id: 'ICONOGRAPHY', route: routes.ICONOGRAPHY, children: 'Iconography' },
       { id: 'COPYWRITING', route: routes.COPYWRITING, children: 'Copywriting' },
     ],
   },

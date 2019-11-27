@@ -20,11 +20,13 @@ import React from 'react';
 import { cssModules } from 'bpk-react-utils';
 import BpkImage from 'bpk-component-image';
 
-// import * as ROUTES from '../../constants/routes';
 import getMarkdownString from '../../helpers/markdown-helper';
 import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
 import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
-import IconographyHero from '../../static/illustration/illustration_hero.svg';
+import IconographyHero from '../../static/iconography/iconography_hero.png';
+import IconographyOverview from '../../static/iconography/overview.png';
+import IconographySet from '../../static/iconography/icon_set.png';
+import IconExamples from '../../static/iconography/examples.png';
 
 import STYLES from './iconography-page.scss';
 import intro from './content/intro.md';
@@ -41,7 +43,20 @@ const sections = [
     title: 'Overview',
     backgroundStyle: 'light',
     content: (
-      <BpkImage altText="six icon examples." width={840} height={534} src="/" />
+      <div>
+        <BpkImage
+          altText="six icon examples."
+          width={840}
+          height={534}
+          src={`/${IconographyOverview}`}
+        />
+        <BpkImage
+          altText="example iconography set."
+          width={903}
+          height={735}
+          src={`/${IconographySet}`}
+        />
+      </div>
     ),
   },
   {
@@ -49,10 +64,10 @@ const sections = [
     title: 'Examples',
     content: (
       <BpkImage
-        altText="Illustration examples."
-        width={840}
-        height={612}
-        src="/"
+        altText="icons used in product."
+        width={420}
+        height={500}
+        src={`/${IconExamples}`}
       />
     ),
   },
@@ -67,10 +82,6 @@ const IconographyPage = () => (
       className: getClassName('bpk-docs-iconography-page__hero'),
     }}
     sections={sections}
-    // nextPageLink={{
-    //   title: 'Iconography',
-    //   link: ROUTES.ICONOGRAPHY,
-    // }}
   />
 );
 
