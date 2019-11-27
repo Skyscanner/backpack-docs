@@ -20,7 +20,7 @@ import React from 'react';
 import { cssModules } from 'bpk-react-utils';
 import BpkImage from 'bpk-component-image';
 
-// import * as ROUTES from '../../constants/routes';
+import * as ROUTES from '../../constants/routes';
 import getMarkdownString from '../../helpers/markdown-helper';
 import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
 import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
@@ -72,10 +72,10 @@ const IllustrationPage = () => (
       className: getClassName('bpk-docs-illustration-page__hero'),
     }}
     sections={sections}
-    // nextPageLink={{
-    //   title: 'Iconography',
-    //   link: ROUTES.ICONOGRAPHY,
-    // }}
+    nextPageLink={{
+      title: 'Iconography',
+      link: ROUTES.ICONOGRAPHY,
+    }}
   />
 );
 

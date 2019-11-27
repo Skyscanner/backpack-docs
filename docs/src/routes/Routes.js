@@ -47,6 +47,7 @@ import StrategyPage from '../pages/StrategyPage';
 import PhotographyPage from '../pages/PhotographyPage';
 import ShadowsGuidelinesPage from '../pages/ShadowsGuidelinesPage';
 import IllustrationPage from '../pages/IllustrationPage';
+import IconographyPage from '../pages/IconographyPage';
 import LogoPage from '../pages/LogoPage';
 import AccordionsPage from '../pages/AccordionsPage';
 import AlertPage from '../pages/AlertPage';
@@ -165,6 +166,7 @@ export const ROUTES_MAPPINGS = [
       { path: ROUTES.COLORS, component: ColorsPage },
       { path: ROUTES.COPYWRITING, component: CopywritingPage },
       { path: ROUTES.GRAPHIC_DEVICES, component: GraphicDevicesPage },
+      { path: ROUTES.ICONOGRAPHY, component: IconographyPage },
       { path: ROUTES.ILLUSTRATION, component: IllustrationPage },
       { path: ROUTES.LOGO, component: LogoPage },
       { path: ROUTES.PHOTOGRAPHY, component: PhotographyPage },
