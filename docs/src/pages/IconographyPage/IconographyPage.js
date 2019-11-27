@@ -23,15 +23,22 @@ import BpkImage from 'bpk-component-image';
 import getMarkdownString from '../../helpers/markdown-helper';
 import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
 import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
+import ContentGrid, {
+  ContentGridCard,
+} from '../../components/ContentGrid/ContentGrid';
 import IconographyHero from '../../static/iconography/iconography_hero.png';
 import IconographyOverview from '../../static/iconography/overview.png';
 import IconographySet from '../../static/iconography/icon_set.png';
-import IconExamples from '../../static/iconography/examples.png';
+import IconExamples from '../../static/iconography/examples.jpg';
 
 import STYLES from './iconography-page.scss';
 import intro from './content/intro.md';
 
 const getClassName = cssModules(STYLES);
+const getPageClassName = (...extra) =>
+  extra
+    .map(className => getClassName(`bpk-docs-iconography-page${className}`))
+    .join(' ');
 
 const sections = [
   {
@@ -62,13 +69,22 @@ const sections = [
   {
     id: 'examples',
     title: 'Examples',
+    className: getPageClassName('__example-section'),
+    contentClassName: getPageClassName('__example-content-container'),
     content: (
-      <BpkImage
-        altText="icons used in product."
-        width={420}
-        height={500}
-        src={`/${IconExamples}`}
-      />
+      <ContentGrid>
+        <ContentGridCard
+          padding={false}
+          className={getPageClassName('__example-card')}
+        >
+          <BpkImage
+            altText="icons used in product."
+            width={420}
+            height={500}
+            src={`/${IconExamples}`}
+          />
+        </ContentGridCard>
+      </ContentGrid>
     ),
   },
 ];

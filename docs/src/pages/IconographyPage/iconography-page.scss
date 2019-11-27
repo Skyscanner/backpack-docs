@@ -26,4 +26,19 @@
   &__hero {
     background-color: $bpk-color-abisko;
   }
+
+  &__example-section {
+    padding-bottom: 0;
+  }
+
+  &__example-content-container {
+    margin-bottom: $bpk-spacing-base * -1;
+  }
+
+  &__example-card {
+    > :first-child {
+      display: block;
+      margin: 0 auto $bpk-spacing-xxl auto;
+    }
+  }
 }
