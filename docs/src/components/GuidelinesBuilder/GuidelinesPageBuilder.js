@@ -25,7 +25,7 @@ import BpkContentContainer from 'bpk-component-content-container';
 import { cssModules } from 'bpk-react-utils';
 import BpkText from 'bpk-component-text';
 
-import HeroSection from '../HeroSection';
+import HeroSection, { type HeroSectionProps } from '../HeroSection';
 import Heading from '../Heading';
 import NavigationFooter from '../NavigationFooter';
 
@@ -38,21 +38,23 @@ type SectionProps = {
   title: string,
   content: Node,
   className?: string,
-  backgroundStyle?: 'white' | 'grey' | 'dark',
+  backgroundStyle: 'white' | 'grey' | 'dark',
   contentStyle?: 'normal' | 'light',
   contentClassName?: string,
+  image: ?HeroSectionProps,
 };
 
 type GuidelinesPageBuilderProps = {
-  hero: any,
-  sections: Array<SectionType>,
+  hero: ?HeroSectionProps,
+  sections: Array<SectionProps>,
   title: string,
-  nextPageLink: ?any,
+  nextPageLink: ?{ title: string, link: string },
 };
 
 const Section = (props: SectionProps) => {
   const {
     id,
+    image,
     title,
     content,
     backgroundStyle,
@@ -74,6 +76,16 @@ const Section = (props: SectionProps) => {
     title && getClassName('bpk-docs-guidelines-page__content--with-title'),
     contentUserClassName,
   ];
+
+  if (image) {
+    return (
+      <HeroSection
+        imageUrl={image.imageUrl}
+        heading={image.heading}
+        className={getClassName('bpk-docs-guidelines-page__section--image')}
+      />
+    );
+  }
 
   return (
     <section className={sectionClassName.join(' ')}>
@@ -102,6 +114,7 @@ Section.defaultProps = {
   contentStyle: 'normal',
   className: '',
   contentClassName: '',
+  image: null,
 };
 
 const GuidelinesPageBuilder = (props: GuidelinesPageBuilderProps) => {
@@ -118,20 +131,9 @@ const GuidelinesPageBuilder = (props: GuidelinesPageBuilderProps) => {
           ].join(' ')}
         />
       )}
-      {sections.map(section => {
-        if (section.image) {
-          return (
-            <HeroSection
-              imageUrl={section.image.imageUrl}
-              heading={section.image.heading}
-              className={getClassName(
-                'bpk-docs-guidelines-page__section--image',
-              )}
-            />
-          );
-        }
-        return <Section {...section} />;
-      })}
+      {sections.map(section => (
+        <Section {...section} />
+      ))}
       {nextPageLink && (
         <NavigationFooter
           id="footer"

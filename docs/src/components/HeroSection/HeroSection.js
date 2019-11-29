@@ -28,7 +28,7 @@ import STYLES from './HeroSection.scss';
 
 const getClassName = cssModules(STYLES);
 
-type Props = {
+export type Props = {
   className: string,
   imageUrl?: string,
   heading: string,

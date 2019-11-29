@@ -18,6 +18,7 @@
 
 /* @flow strict */
 
-import HeroSection from './HeroSection';
+import HeroSection, { type Props as HeroSectionProps } from './HeroSection';
 
 export default HeroSection;
+export type { HeroSectionProps };

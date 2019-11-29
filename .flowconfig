@@ -3,6 +3,9 @@
 .*/backpack-react-native/.*
 .*/backpack-android/.*
 .*/backpack-ios/.*
+.*/backpack/.*
+.*/backpack/scripts/.*
+.*/backpack/packages/.*/stories.js
 .*/node_modules/jsonlint/.*
 .*/node_modules/config-chain/test/broken.json
 
