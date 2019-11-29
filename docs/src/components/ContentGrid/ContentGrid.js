@@ -18,7 +18,7 @@
 
 /* @flow strict */
 
-import React from 'react';
+import React, { type Node } from 'react';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './content-grid.scss';
@@ -36,7 +36,7 @@ type Props = {
 type CardProps = {
   children: Node,
   className?: string,
-  cardStyle?: 'normal' | 'bold-title' | 'primary-title',
+  cardStyle: 'normal' | 'bold-title' | 'primary-title',
   padding?: boolean,
 };
 
