@@ -1,1 +1,1 @@
-This section contains an overview of best-practise applications. Here we've brought together all of the elements outlined to create a range of applications that span from product screens to out-of-home advertising.
+This section contains an overview of best-practice applications. Here we've brought together all of the elements outlined to create a range of applications that span from product screens to out-of-home advertising.
