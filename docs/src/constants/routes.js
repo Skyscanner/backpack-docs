@@ -35,6 +35,7 @@ export const COPYWRITING = '/guidelines/copywriting';
 export const GRAPHIC_DEVICES = '/guidelines/graphic-devices';
 export const ICONOGRAPHY = '/guidelines/iconography';
 export const ILLUSTRATION = '/guidelines/illustration';
+export const IN_USE = '/guidelines/in-use';
 export const LOGO = '/guidelines/logo';
 export const PHOTOGRAPHY = '/guidelines/photography';
 export const TONE_OF_VOICE = '/guidelines/tone-of-voice';
