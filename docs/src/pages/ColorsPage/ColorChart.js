@@ -177,7 +177,7 @@ class ColorChart extends Component<{}, State> {
           onChange={() => {
             this.recalculateDisplay(MIN_CONTRAST_OTHER);
           }}
-          label="Decoractive graphics (graphics that do not provide any information)"
+          label="Decorative graphics (graphics that do not provide any information)"
         />
         <br />
         <table
