@@ -56,7 +56,9 @@ const ColorSwatch = props => {
           <BpkText tagName="h6">RGB {colorValues.RGB}</BpkText>
           <BpkText tagName="h6">HEX {colorValues.HEX}</BpkText>
           <BpkText tagName="h6">CMYK {colorValues.CMYK}</BpkText>
-          <BpkText tagName="h6">PMS {colorValues.PMS}</BpkText>
+          {colorValues.PMS && (
+            <BpkText tagName="h6">PMS {colorValues.PMS}</BpkText>
+          )}
         </div>
       )}
     </div>
