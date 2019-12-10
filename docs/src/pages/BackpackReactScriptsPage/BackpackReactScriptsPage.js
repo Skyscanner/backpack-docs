@@ -35,8 +35,14 @@ const components = [
     id: 'tldr',
     title: 'TL;DR',
     blurb: [
+      <Paragraph>
+        <strong>
+          The currently supported version of CRA by backpack-react-scripts is up
+          to v2.1.2. Versions above this will not work.
+        </strong>
+      </Paragraph>,
       <CodeBlock>
-        {`npx create-react-app my-app --scripts-version=backpack-react-scripts
+        {`npx create-react-app@2.1.2 my-app --scripts-version=backpack-react-scripts
 cd my-app
 npm start`}
       </CodeBlock>,
@@ -105,7 +111,8 @@ npm start`}
         codebases with a standardised way of building production web apps with
         Backpack + React at Skyscanner. When you create an app using{' '}
         <Code>
-          npx create-react-app my-app --scripts-version=backpack-react-scripts
+          npx create-react-app@2.1.2 my-app
+          --scripts-version=backpack-react-scripts
         </Code>
         , you&apos;ll notice that your project&apos;s <Code>package.json</Code>{' '}
         has a dependency on <Code>backpack-react-scripts</Code>. When we release
