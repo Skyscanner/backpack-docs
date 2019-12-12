@@ -29,24 +29,6 @@ export default ({ head = {}, html = '', assets = {} }) => `<!doctype html>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
   ${head.title.toString()}
-  <style type="text/css">
-      @font-face {
-        font-family: 'Skyscanner Relative';
-        src: url('https://js.skyscnr.com/sttc/bpk-fonts/SkyscannerRelative-14743f15.woff2');
-      }
-
-      @font-face {
-        font-family: 'Skyscanner Relative';
-        font-style: italic;
-        src: url('https://js.skyscnr.com/sttc/bpk-fonts/SkyscannerRelative-Italic-14743f15.woff2');
-      }
-
-      @font-face {
-        font-family: 'Skyscanner Relative';
-        font-weight: bold;
-        src: url('https://js.skyscnr.com/sttc/bpk-fonts/SkyscannerRelative-Bold-14743f15.woff2');
-      }
-  </style>
   <link rel="stylesheet" href="/${assets.docs.css}">
   <link rel="apple-touch-icon" sizes="180x180" href="/${appleTouchIcon}">
 </head>
