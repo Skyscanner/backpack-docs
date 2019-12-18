@@ -80,7 +80,6 @@ const ComponentsLinks = [
         route: routes.CHECKBOX,
         children: 'Checkbox',
         tags: ['android', 'web'],
-        keywords: ['switch', 'toggle'],
       },
       {
         id: 'SNACKBAR',
@@ -98,7 +97,6 @@ const ComponentsLinks = [
         id: 'BLOCKQUOTE',
         route: routes.BLOCKQUOTE,
         children: 'Blockquote',
-        tags: ['web'],
       },
       { id: 'CODE', route: routes.CODE, children: 'Code', tags: ['web'] },
       {
