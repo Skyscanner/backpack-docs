@@ -135,6 +135,9 @@ class NavList extends Component<NavListPropTypes, NavListState> {
             selected={this.state.selectedFilter}
           />
         )}
+        {/* <PageSearch
+          wrapperClassName={getClassName('bpkdocs-side-nav-list__search')}
+        /> */}
         <ul className={getClassName('bpkdocs-side-nav-list__list')}>
           {links.map(link => (
             <NavListCategory
