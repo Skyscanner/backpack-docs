@@ -66,6 +66,10 @@ class PageSearch extends Component<Props, State> {
     this.state = { value: '', suggestions: [] };
   }
 
+  componentDidMount() {
+    document.addEventListener('keydown', this.handleKeyDown);
+  }
+
   onChange = (event: SyntheticKeyboardEvent<HTMLInputElement>) => {
     this.setState({ value: event.currentTarget.value });
   };
@@ -89,8 +93,19 @@ class PageSearch extends Component<Props, State> {
 
   getSuggestionValue = ({ children }) => children;
 
+  inputRef: ?HTMLInputElement = null;
+
   handleClear = () => {
     this.setState({ value: '' });
+  };
+
+  handleKeyDown = (e: KeyboardEvent) => {
+    if (e.ctrlKey && e.metaKey && e.key.toLowerCase() === 's') {
+      if (this.inputRef) {
+        this.inputRef.focus();
+        window.scrollTo(0, 0);
+      }
+    }
   };
 
   renderSuggestion = suggestion => (
@@ -110,6 +125,9 @@ class PageSearch extends Component<Props, State> {
       onChange: this.onChange,
       placeholder: 'Have a search first',
       className: inputClassName,
+      inputRef: ref => {
+        this.inputRef = ref;
+      },
     };
     return (
       <div className={wrapperClassName}>
