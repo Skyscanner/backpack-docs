@@ -23,6 +23,7 @@ import { cssModules } from 'bpk-react-utils';
 import ArrowIcon from 'bpk-component-icon/sm/arrow-right';
 import { withRtlSupport } from 'bpk-component-icon';
 
+// import PageSearch from '../../components/PageSearch';
 import { setPlatformInLocalStorage } from '../../helpers/platform-helper';
 
 import NavListFilter, { type Option as FilterOption } from './NavListFilter';
