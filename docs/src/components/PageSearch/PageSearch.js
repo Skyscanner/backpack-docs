@@ -70,6 +70,10 @@ class PageSearch extends Component<Props, State> {
     document.addEventListener('keydown', this.handleKeyDown);
   }
 
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this.handleKeyDown);
+  }
+
   onChange = (event: SyntheticKeyboardEvent<HTMLInputElement>) => {
     this.setState({ value: event.currentTarget.value });
   };

@@ -36,6 +36,11 @@
     @include bpk-margin-leading($bpk-first-column-size);
   }
 
+  &__search {
+    width: calc(100% - $bpk-first-column-size);
+    margin-left: $bpk-first-column-size;
+  }
+
   &--dimmed {
     position: relative;
   }
