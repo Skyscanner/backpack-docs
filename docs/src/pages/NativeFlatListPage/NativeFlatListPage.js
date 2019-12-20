@@ -23,6 +23,8 @@ import iosScreenshotDefault from '../../../../backpack-react-native/packages/rea
 import androidScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-flat-list/screenshots/android/default.png';
 import iosScreenshotWithImages from '../../../../backpack-react-native/packages/react-native-bpk-component-flat-list/screenshots/ios/with-images.png';
 import androidScreenshotWithImages from '../../../../backpack-react-native/packages/react-native-bpk-component-flat-list/screenshots/android/with-images.png';
+import iosScreenshotWithSearch from '../../../../backpack-react-native/packages/react-native-bpk-component-flat-list/screenshots/ios/with-search.png';
+import androidScreenshotWithSearch from '../../../../backpack-react-native/packages/react-native-bpk-component-flat-list/screenshots/android/with-search.png';
 import IntroBlurb from '../../components/IntroBlurb';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
@@ -69,6 +71,29 @@ const components = [
         height: 1920,
         src: `/${androidScreenshotWithImages}`,
         altText: 'Android Flat List Component With Images',
+        subText: '(Google Pixel emulator)',
+      },
+    ],
+  },
+  {
+    id: 'with-search',
+    title: 'With search',
+    blurb: 'You can add a search field above the list.',
+    screenshots: [
+      {
+        title: 'iOS',
+        width: 750,
+        height: 1334,
+        src: `/${iosScreenshotWithSearch}`,
+        altText: 'iOS Flat List Component With Search',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        title: 'Android',
+        width: 1080,
+        height: 1920,
+        src: `/${androidScreenshotWithSearch}`,
+        altText: 'Android Flat List Component With Search',
         subText: '(Google Pixel emulator)',
       },
     ],
