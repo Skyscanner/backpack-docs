@@ -28,6 +28,7 @@ export const GETTING_STARTED = '/using/getting-started';
 export const BACKPACK_REACT_SCRIPTS = '/using/backpack-react-scripts';
 export const BASE_STYLESHEET = '/using/base-stylesheet';
 export const PRINCIPLES = '/using/principles';
+export const STATUS = '/using/status';
 
 // guidelines
 export const COLORS = '/guidelines/colors';
