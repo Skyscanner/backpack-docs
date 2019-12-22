@@ -510,6 +510,11 @@ export default [
         route: routes.BASE_STYLESHEET,
         children: 'Base stylesheet',
       },
+      {
+        id: 'STATUS',
+        route: routes.STATUS,
+        children: 'Backpack Status',
+      },
     ],
   },
   {
