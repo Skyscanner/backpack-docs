@@ -125,7 +125,7 @@ class PageSearch extends Component<Props, State> {
     const inputProps = {
       id: 'search-pages',
       name: 'search-pages',
-      value,
+      value: value || '',
       onChange: this.onChange,
       placeholder: 'Have a search first',
       className: inputClassName,
