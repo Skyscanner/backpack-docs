@@ -137,6 +137,7 @@ class NavList extends Component<NavListPropTypes, NavListState> {
           />
         )}
         <PageSearch
+          onClick={onClick}
           wrapperClassName={getClassName('bpkdocs-side-nav-list__search')}
         />
         <ul className={getClassName('bpkdocs-side-nav-list__list')}>
