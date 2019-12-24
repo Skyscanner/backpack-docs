@@ -54,8 +54,9 @@ const convertTagsToPlatformsString = (
 };
 
 type Props = {
-  wrapperClassName: ?string,
   inputClassName: ?string,
+  onClick: ?() => mixed,
+  wrapperClassName: ?string,
   history: RouterHistory,
 };
 type State = { value: string, suggestions: [] };
@@ -86,6 +87,9 @@ class PageSearch extends Component<Props, State> {
   };
 
   onSuggestionSelected = (event, { suggestion }) => {
+    if (this.props.onClick) {
+      this.props.onClick();
+    }
     this.props.history.push(suggestion.route);
   };
 
