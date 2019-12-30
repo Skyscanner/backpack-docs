@@ -28,6 +28,10 @@ import webStatus from './content/webStatus.md';
 import nativeStatus from './content/nativeStatus.md';
 import iosStatus from './content/iosStatus.md';
 import androidStatus from './content/androidStatus.md';
+import eslintConfigSkyscannerStatus from './content/eslintConfigSkyscannerStatus.md';
+import backpackNodeSassStatus from './content/backpackNodeSassStatus.md';
+import backpackReactScriptsStatus from './content/backpackReactScriptsStatus.md';
+import eslintPluginBackpackStatus from './content/eslintPluginBackpackStatus.md';
 
 const components = [
   {
@@ -60,6 +64,46 @@ const components = [
     blurb: [
       <Paragraph>The current status of Android:</Paragraph>,
       <BpkMarkdownRenderer source={getMarkdownString(androidStatus)} />,
+    ],
+  },
+  {
+    id: 'backpack-react-scripts',
+    title: 'Backpack React Scripts',
+    blurb: [
+      <Paragraph>The current status of BRS:</Paragraph>,
+      <BpkMarkdownRenderer
+        source={getMarkdownString(backpackReactScriptsStatus)}
+      />,
+    ],
+  },
+  {
+    id: 'backpack-node-sass',
+    title: 'Backpack Node Sass',
+    blurb: [
+      <Paragraph>The current status of Backpack Node Sass:</Paragraph>,
+      <BpkMarkdownRenderer
+        source={getMarkdownString(backpackNodeSassStatus)}
+      />,
+    ],
+  },
+  {
+    id: 'eslint-config-skyscanner',
+    title: 'ESLint config Skyscanner',
+    blurb: [
+      <Paragraph>The current status of ESLint config Skyscanner:</Paragraph>,
+      <BpkMarkdownRenderer
+        source={getMarkdownString(eslintConfigSkyscannerStatus)}
+      />,
+    ],
+  },
+  {
+    id: 'eslint-plugin-backpack',
+    title: 'ESLint plugin Backpack',
+    blurb: [
+      <Paragraph>The current status of ESLint plugin Backpack:</Paragraph>,
+      <BpkMarkdownRenderer
+        source={getMarkdownString(eslintPluginBackpackStatus)}
+      />,
     ],
   },
 ];
