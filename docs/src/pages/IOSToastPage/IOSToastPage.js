@@ -19,8 +19,8 @@
 import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/Toast/README.md';
-import screenshotDefault from '../../../../backpack-ios/screenshots/Toast/default.png';
-import screenshotDefaultDm from '../../../../backpack-ios/screenshots/Toast/default_dm.png';
+import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-toast___default_lm.png';
+import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-toast___default_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

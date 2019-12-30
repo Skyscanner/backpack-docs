@@ -19,10 +19,10 @@
 import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/TappableLinkLabel/README.md';
-import screenshotMultiple from '../../../../backpack-ios/screenshots/TappableLinkLabel/multiple.png';
-import screenshotAlternate from '../../../../backpack-ios/screenshots/TappableLinkLabel/alternate-style.png';
-import screenshotMultipleDm from '../../../../backpack-ios/screenshots/TappableLinkLabel/multiple_dm.png';
-import screenshotAlternateDm from '../../../../backpack-ios/screenshots/TappableLinkLabel/alternate-style_dm.png';
+import screenshotMultiple from '../../../../backpack-ios/screenshots/iPhone 8-tappable-link-label___multiple_lm.png';
+import screenshotAlternate from '../../../../backpack-ios/screenshots/iPhone 8-tappable-link-label___alternate-style_lm.png';
+import screenshotMultipleDm from '../../../../backpack-ios/screenshots/iPhone 8-tappable-link-label___multiple_dm.png';
+import screenshotAlternateDm from '../../../../backpack-ios/screenshots/iPhone 8-tappable-link-label___alternate-style_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

@@ -19,12 +19,12 @@
 import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/Rating/README.md';
-import screenshotDefault from '../../../../backpack-ios/screenshots/Rating/default.png';
-import screenshotSubtitle from '../../../../backpack-ios/screenshots/Rating/subtitles.png';
-import screenshotSizes from '../../../../backpack-ios/screenshots/Rating/sizes.png';
-import screenshotDefaultDm from '../../../../backpack-ios/screenshots/Rating/default_dm.png';
-import screenshotSubtitleDm from '../../../../backpack-ios/screenshots/Rating/subtitles_dm.png';
-import screenshotSizesDm from '../../../../backpack-ios/screenshots/Rating/sizes_dm.png';
+import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-rating___default_lm.png';
+import screenshotSubtitle from '../../../../backpack-ios/screenshots/iPhone 8-rating___subtitles_lm.png';
+import screenshotSizes from '../../../../backpack-ios/screenshots/iPhone 8-rating___sizes_lm.png';
+import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-rating___default_dm.png';
+import screenshotSubtitleDm from '../../../../backpack-ios/screenshots/iPhone 8-rating___subtitles_dm.png';
+import screenshotSizesDm from '../../../../backpack-ios/screenshots/iPhone 8-rating___sizes_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

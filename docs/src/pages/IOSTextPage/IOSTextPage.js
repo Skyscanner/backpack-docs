@@ -19,14 +19,14 @@
 import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/Label/README.md';
-import screenshotDefault from '../../../../backpack-ios/screenshots/Label/default.png';
-import screenshotEmphasized from '../../../../backpack-ios/screenshots/Label/emphasized.png';
-import screenshotHeavy from '../../../../backpack-ios/screenshots/Label/heavy.png';
-import screenshotMultipleFontStyles from '../../../../backpack-ios/screenshots/Label/multiple-font-styles.png';
-import screenshotDefaultDm from '../../../../backpack-ios/screenshots/Label/default_dm.png';
-import screenshotEmphasizedDm from '../../../../backpack-ios/screenshots/Label/emphasized_dm.png';
-import screenshotHeavyDm from '../../../../backpack-ios/screenshots/Label/heavy_dm.png';
-import screenshotMultipleFontStylesDm from '../../../../backpack-ios/screenshots/Label/multiple-font-styles_dm.png';
+import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-label___default_lm.png';
+import screenshotEmphasized from '../../../../backpack-ios/screenshots/iPhone 8-label___emphasized_lm.png';
+import screenshotHeavy from '../../../../backpack-ios/screenshots/iPhone 8-label___heavy_lm.png';
+import screenshotMultipleFontStyles from '../../../../backpack-ios/screenshots/iPhone 8-label___multiple-font-styles_lm.png';
+import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-label___default_dm.png';
+import screenshotEmphasizedDm from '../../../../backpack-ios/screenshots/iPhone 8-label___emphasized_dm.png';
+import screenshotHeavyDm from '../../../../backpack-ios/screenshots/iPhone 8-label___heavy_dm.png';
+import screenshotMultipleFontStylesDm from '../../../../backpack-ios/screenshots/iPhone 8-label___multiple-font-styles_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
