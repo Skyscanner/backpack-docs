@@ -28,10 +28,10 @@ import webStatus from './content/webStatus.md';
 import nativeStatus from './content/nativeStatus.md';
 import iosStatus from './content/iosStatus.md';
 import androidStatus from './content/androidStatus.md';
-import ecsStatus from './content/ecsStatus.md';
-import bnsStatus from './content/bnsStatus.md';
-import brsStatus from './content/brsStatus.md';
-import epbStatus from './content/epbStatus.md';
+import eslintConfigSkyscannerStatus from './content/eslintConfigSkyscannerStatus.md';
+import backpackNodeSassStatus from './content/backpackNodeSassStatus.md';
+import backpackReactScriptsStatus from './content/backpackReactScriptsStatus.md';
+import eslintPluginBackpackStatus from './content/eslintPluginBackpackStatus.md';
 
 const components = [
   {
@@ -71,7 +71,9 @@ const components = [
     title: 'Backpack React Scripts',
     blurb: [
       <Paragraph>The current status of BRS:</Paragraph>,
-      <BpkMarkdownRenderer source={getMarkdownString(brsStatus)} />,
+      <BpkMarkdownRenderer
+        source={getMarkdownString(backpackReactScriptsStatus)}
+      />,
     ],
   },
   {
@@ -79,7 +81,9 @@ const components = [
     title: 'Backpack Node Sass',
     blurb: [
       <Paragraph>The current status of Backpack Node Sass:</Paragraph>,
-      <BpkMarkdownRenderer source={getMarkdownString(bnsStatus)} />,
+      <BpkMarkdownRenderer
+        source={getMarkdownString(backpackNodeSassStatus)}
+      />,
     ],
   },
   {
@@ -87,7 +91,9 @@ const components = [
     title: 'ESLint config Skyscanner',
     blurb: [
       <Paragraph>The current status of ESLint config Skyscanner:</Paragraph>,
-      <BpkMarkdownRenderer source={getMarkdownString(ecsStatus)} />,
+      <BpkMarkdownRenderer
+        source={getMarkdownString(eslintConfigSkyscannerStatus)}
+      />,
     ],
   },
   {
@@ -95,7 +101,9 @@ const components = [
     title: 'ESLint plugin Backpack',
     blurb: [
       <Paragraph>The current status of ESLint plugin Backpack:</Paragraph>,
-      <BpkMarkdownRenderer source={getMarkdownString(epbStatus)} />,
+      <BpkMarkdownRenderer
+        source={getMarkdownString(eslintPluginBackpackStatus)}
+      />,
     ],
   },
 ];
