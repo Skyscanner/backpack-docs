@@ -17,5 +17,7 @@
  */
 
 import component from './ColorSwatch';
+import DynamicColorSwatch from './DynamicColorSwatch';
 
 export default component;
+export { DynamicColorSwatch };

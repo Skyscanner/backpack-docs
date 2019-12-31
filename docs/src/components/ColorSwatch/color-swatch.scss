@@ -21,6 +21,7 @@
 .bpkdocs-color-swatch {
   display: flex;
   width: $bpk-spacing-base * 11;
+  max-width: 100%;
   height: $bpk-spacing-base * 11;
   margin-bottom: $bpk-spacing-sm;
   margin-left: $bpk-spacing-sm;
