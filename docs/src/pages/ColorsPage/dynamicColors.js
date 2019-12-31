@@ -35,7 +35,6 @@ const dynamicColors = [
       darkColorName="Sky Blue Tint 01"
       darkColor={colors.colorSkyBlueTint01}
       textColor={colors.colorWhite}
-      border
     />
     <DynamicColorSwatch
       name="Background Color"
@@ -53,7 +52,6 @@ const dynamicColors = [
       darkColorName="Black Tint 01"
       darkColor="#1D1B20"
       textColor={colors.colorSkyGray}
-      border
     />
     <DynamicColorSwatch
       name="Background Tertiary Color"
@@ -71,7 +69,6 @@ const dynamicColors = [
       darkColorName="Sky Gray Tint 01"
       darkColor={colors.colorSkyGrayTint01}
       textColor={colors.colorSkyGray}
-      border
     />
     <DynamicColorSwatch
       name="Text Primary Color"
@@ -89,7 +86,6 @@ const dynamicColors = [
       darkColorName="Sky Gray Tint 01"
       darkColor={colors.colorSkyGrayTint01}
       textColor={colors.colorSkyGray}
-      border
     />
     <DynamicColorSwatch
       name="Text Tertiary Color"
@@ -98,7 +94,6 @@ const dynamicColors = [
       darkColorName="Sky Gray Tint 03"
       darkColor={colors.colorSkyGrayTint03}
       textColor={colors.colorSkyGray}
-      border
     />
     <DynamicColorSwatch
       name="Text Quaternary Color"
@@ -107,7 +102,6 @@ const dynamicColors = [
       darkColorName="Sky Gray Tint 05"
       darkColor={colors.colorSkyGrayTint05}
       textColor={colors.colorSkyGray}
-      border
     />
   </div>,
 ];
