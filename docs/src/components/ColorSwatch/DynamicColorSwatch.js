@@ -25,19 +25,22 @@ import STYLES from './color-swatch.scss';
 
 const getClassName = cssModules(STYLES);
 
-const ColorSwatch = props => {
+const DynamicColorSwatch = props => {
   const {
     name,
-    color,
+    lightColorName,
+    darkColorName,
+    lightColor,
+    darkColor,
     textColor,
-    colorValues,
     border,
     className: userClassName,
     ...rest
   } = props;
   const style = {
-    backgroundColor: color,
+    backgroundColor: lightColor,
     color: textColor,
+    background: `linear-gradient(0.375turn, ${lightColor} 80%, ${darkColor} 50%)`,
   };
 
   const className = getClassName(
@@ -53,40 +56,33 @@ const ColorSwatch = props => {
           {name}
         </BpkText>
       </div>
-      {colorValues && (
-        <div>
-          <BpkText tagName="h6">RGB {colorValues.RGB}</BpkText>
-          <BpkText tagName="h6">HEX {colorValues.HEX}</BpkText>
-          <BpkText tagName="h6">CMYK {colorValues.CMYK}</BpkText>
-          {colorValues.PMS && (
-            <BpkText tagName="h6">PMS {colorValues.PMS}</BpkText>
-          )}
-        </div>
-      )}
+      <div>
+        <BpkText tagName="h6">light: {lightColorName}</BpkText>
+        <BpkText tagName="h6">dark: {darkColorName}</BpkText>
+      </div>
     </div>
   );
 };
 
-ColorSwatch.propTypes = {
+DynamicColorSwatch.propTypes = {
   name: PropTypes.string.isRequired,
   className: PropTypes.string,
-  color: PropTypes.string,
+  lightColorName: PropTypes.string,
+  darkColorName: PropTypes.string,
+  lightColor: PropTypes.string,
+  darkColor: PropTypes.string,
   textColor: PropTypes.string,
   border: PropTypes.bool,
-  colorValues: PropTypes.shape({
-    RGB: PropTypes.string,
-    HEX: PropTypes.string,
-    CMYK: PropTypes.string,
-    PMS: PropTypes.string,
-  }),
 };
 
-ColorSwatch.defaultProps = {
-  color: null,
+DynamicColorSwatch.defaultProps = {
+  lightColorName: null,
+  darkColorName: null,
+  lightColor: null,
+  darkColor: null,
   textColor: null,
   className: null,
   border: false,
-  colorValues: null,
 };
 
-export default ColorSwatch;
+export default DynamicColorSwatch;
