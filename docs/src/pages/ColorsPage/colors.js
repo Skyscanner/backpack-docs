@@ -236,7 +236,6 @@ const colours = [
         CMYK: '011, 014, 003, 000',
         PMS: '7443',
       }}
-      border
     />
     <ColorSwatch
       name="Panjin"
@@ -347,7 +346,6 @@ const colours = [
         CMYK: '012, 011, 007, 000',
         PMS: '5315',
       }}
-      border
     />
     <ColorSwatch
       name="Sky Grey Tint 07"
