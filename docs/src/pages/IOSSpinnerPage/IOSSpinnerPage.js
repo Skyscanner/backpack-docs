@@ -19,8 +19,8 @@
 import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/Spinner/README.md';
-import screenshotAll from '../../../../backpack-ios/screenshots/Spinner/all.png';
-import screenshotAllDm from '../../../../backpack-ios/screenshots/Spinner/all_dm.png';
+import screenshotAll from '../../../../backpack-ios/screenshots/iPhone 8-spinner___all_lm.png';
+import screenshotAllDm from '../../../../backpack-ios/screenshots/iPhone 8-spinner___all_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
