@@ -211,19 +211,11 @@ config.plugins.push(
   new webpack.DefinePlugin({
     'process.env': {
       BPK_BUILT_AT,
+      GOOGLE_MAPS_API_KEY: JSON.stringify(GOOGLE_MAPS_API_KEY),
+      NODE_ENV: JSON.stringify(NODE_ENV),
     },
   }),
 );
-
-if (GOOGLE_MAPS_API_KEY) {
-  config.plugins.push(
-    new webpack.DefinePlugin({
-      'process.env': {
-        GOOGLE_MAPS_API_KEY: JSON.stringify(GOOGLE_MAPS_API_KEY),
-      },
-    }),
-  );
-}
 
 if (isProduction) {
   config.plugins.push(
