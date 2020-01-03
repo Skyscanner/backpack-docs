@@ -38,7 +38,7 @@
   }
 
   &__search {
-    width: calc(100% - $bpk-first-column-size);
+    width: calc(100% - #{$bpk-first-column-size});
     margin-left: $bpk-first-column-size;
   }
 
@@ -108,6 +108,9 @@
     top: calc(50% - (#{$bpk-icon-size-sm} / 2));
     // HACK: Move sligthly further to the left to account for icon bounding box so
     // that the actual icon lines up with other content.
+
+    // This rules has known issues with SCSS, see https://github.com/stylelint/stylelint/issues/4336
+    // stylelint-disable-next-line function-calc-no-invalid
     left: calc(-#{$bpk-first-column-size} - #{$bpk-one-pixel-rem * 5});
     display: none;
 
@@ -120,6 +123,9 @@
     @include bpk-rtl {
       // HACK: Move sligthly further to the right to account for icon bounding box so
       // that the actual icon lines up with other content.
+
+      // This rules has known issues with SCSS, see https://github.com/stylelint/stylelint/issues/4336
+      // stylelint-disable-next-line function-calc-no-invalid
       right: calc(-#{$bpk-first-column-size} - #{$bpk-one-pixel-rem * 5});
       left: 0;
     }

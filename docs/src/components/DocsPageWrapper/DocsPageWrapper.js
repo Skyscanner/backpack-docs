@@ -187,9 +187,11 @@ DocsPageWrapper.propTypes = {
   title: PropTypes.string.isRequired,
   match: PropTypes.shape({
     path: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
   }).isRequired,
   history: PropTypes.shape({
     push: PropTypes.func.isRequired,
+    replace: PropTypes.func.isRequired,
   }).isRequired,
   location: PropTypes.shape({
     search: PropTypes.string.isRequired,
