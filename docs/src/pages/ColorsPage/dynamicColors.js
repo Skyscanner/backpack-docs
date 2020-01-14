@@ -81,18 +81,18 @@ const dynamicColors = [
     />
     <DynamicColorSwatch
       name="Text Secondary Color"
-      lightColorName="Sky Gray Tint 05"
-      lightColor={colors.colorSkyGrayTint05}
-      darkColorName="Sky Gray Tint 01"
-      darkColor={colors.colorSkyGrayTint01}
-      textColor={colors.colorSkyGray}
-    />
-    <DynamicColorSwatch
-      name="Text Tertiary Color"
       lightColorName="Sky Gray Tint 02"
       lightColor={colors.colorSkyGrayTint02}
       darkColorName="Sky Gray Tint 03"
       darkColor={colors.colorSkyGrayTint03}
+      textColor={colors.colorWhite}
+    />
+    <DynamicColorSwatch
+      name="Text Tertiary Color"
+      lightColorName="Sky Gray Tint 03"
+      lightColor={colors.colorSkyGrayTint03}
+      darkColorName="Sky Gray Tint 04"
+      darkColor={colors.colorSkyGrayTint04}
       textColor={colors.colorSkyGray}
     />
     <DynamicColorSwatch
