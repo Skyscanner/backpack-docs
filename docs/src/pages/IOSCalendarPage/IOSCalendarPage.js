@@ -23,10 +23,12 @@ import screenshotSingle from '../../../../backpack-ios/screenshots/iPhone 8-cale
 import screenshotRange from '../../../../backpack-ios/screenshots/iPhone 8-calendar___range_lm.png';
 import screenshotMultiple from '../../../../backpack-ios/screenshots/iPhone 8-calendar___multiple_lm.png';
 import screenshotPill from '../../../../backpack-ios/screenshots/iPhone 8-calendar___pill_lm.png';
+import screenshotCustomColours from '../../../../backpack-ios/screenshots/iPhone 8-calendar___custom-style_lm.png';
 import screenshotSingleDm from '../../../../backpack-ios/screenshots/iPhone 8-calendar___single_dm.png';
 import screenshotRangeDm from '../../../../backpack-ios/screenshots/iPhone 8-calendar___range_dm.png';
 import screenshotMultipleDm from '../../../../backpack-ios/screenshots/iPhone 8-calendar___multiple_dm.png';
 import screenshotPillDm from '../../../../backpack-ios/screenshots/iPhone 8-calendar___pill_dm.png';
+import screenshotCustomColoursDm from '../../../../backpack-ios/screenshots/iPhone 8-calendar___custom-style_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -86,6 +88,26 @@ const components = [
         height: 1334,
         src: `/${screenshotMultipleDm}`,
         altText: 'Calendar for iOS with multiple dates selected.',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
+    ],
+  },
+  {
+    id: 'custom-colors',
+    title: 'Custom colours',
+    screenshots: [
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotCustomColours}`,
+        altText: 'Calendar for iOS with custom colours.',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotCustomColoursDm}`,
+        altText: 'Calendar for iOS with custom colours.',
         subText: '(iPhone 8 simulator - dark mode)',
       },
     ],
