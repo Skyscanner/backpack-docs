@@ -26,7 +26,7 @@ const withPageViewEvent = Component => renderProps => {
   const platform = search
     .substring(1)
     .split('&')
-    .find(a => a.indexOf('platform=') === 0);
+    .filter(a => a.indexOf('platform=') === 0)[0];
 
   // Component pages trigger the router twice, first without the platform in the URL
   // and then again with the platform, this makes sure we only trigger one pageview
