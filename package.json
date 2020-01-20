@@ -73,7 +73,7 @@
     "babel-loader": "^8.0.6",
     "bpk-animate-height": "2.0.25-css.0",
     "bpk-component-accordion": "2.1.25-css.0",
-    "bpk-component-autosuggest": "4.0.27-css.0",
+    "bpk-component-autosuggest": "4.0.28",
     "bpk-component-badge": "2.0.25-css.0",
     "bpk-component-banner-alert": "3.0.26-css.0",
     "bpk-component-barchart": "3.0.25-css.0",
