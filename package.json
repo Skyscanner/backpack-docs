@@ -71,7 +71,7 @@
     "autoprefixer": "^9.7.3",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
-    "bpk-animate-height": "2.0.25-css.0",
+    "bpk-animate-height": "2.0.26",
     "bpk-component-accordion": "2.1.25-css.0",
     "bpk-component-autosuggest": "4.0.27-css.0",
     "bpk-component-badge": "2.0.25-css.0",
