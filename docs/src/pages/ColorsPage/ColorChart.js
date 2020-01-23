@@ -91,7 +91,7 @@ class ColorChart extends Component<{}, State> {
     });
     chartColors.forEach(c1 => {
       colHeadings.push({
-        c1: 'white',
+        c1,
         c2: c1,
         show: true,
       });
