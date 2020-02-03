@@ -99,6 +99,15 @@ export const getTokens = (tokens, keys = null) =>
       if (token.name.indexOf('_XXL') !== -1) {
         return 7;
       }
+      if (token.name.indexOf('_XXXL') !== -1) {
+        return 8;
+      }
+      if (token.name.indexOf('_XXXXL') !== -1) {
+        return 9;
+      }
+      if (token.name.indexOf('_XXXXXL') !== -1) {
+        return 10;
+      }
 
       return parseInt(token.value, 10) || token.value;
     })
