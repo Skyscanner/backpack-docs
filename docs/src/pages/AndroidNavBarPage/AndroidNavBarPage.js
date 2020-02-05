@@ -20,8 +20,11 @@ import React from 'react';
 
 import readme from '../../../../backpack-android/docs/NavBar/README.md';
 import screenshotCollapsed from '../../../../backpack-android/docs/NavBar/screenshots/collapsed.png';
+import screenshotCollapsedDm from '../../../../backpack-android/docs/NavBar/screenshots/collapsed_dm.png';
 import screenshotExpanded from '../../../../backpack-android/docs/NavBar/screenshots/expanded.png';
+import screenshotExpandedDm from '../../../../backpack-android/docs/NavBar/screenshots/expanded_dm.png';
 import screenshotNavigation from '../../../../backpack-android/docs/NavBar/screenshots/navigation.png';
+import screenshotNavigationDm from '../../../../backpack-android/docs/NavBar/screenshots/navigation_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -36,6 +39,13 @@ const components = [
         altText: 'Navigation bar component when expanded',
         subText: '(Google Pixel emulator)',
       },
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotExpandedDm}`,
+        altText: 'Navigation bar component when expanded',
+        subText: '(Google Pixel emulator - dark mode)',
+      },
     ],
   },
   {
@@ -49,6 +59,13 @@ const components = [
         altText: 'Navigation bar component when collapsed',
         subText: '(Google Pixel emulator)',
       },
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotCollapsedDm}`,
+        altText: 'Navigation bar component when collapsed',
+        subText: '(Google Pixel emulator - dark mode)',
+      },
     ],
   },
   {
@@ -61,6 +78,13 @@ const components = [
         src: `/${screenshotNavigation}`,
         altText: 'Navigation bar component with navigation elements',
         subText: '(Google Pixel emulator)',
+      },
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotNavigationDm}`,
+        altText: 'Navigation bar component with navigation elements',
+        subText: '(Google Pixel emulator - dark mode)',
       },
     ],
   },

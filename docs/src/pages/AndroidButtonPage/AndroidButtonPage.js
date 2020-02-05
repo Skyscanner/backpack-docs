@@ -20,10 +20,15 @@ import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Button/README.md';
 import screenshotPrimary from '../../../../backpack-android/docs/Button/screenshots/primary.png';
+import screenshotPrimaryDm from '../../../../backpack-android/docs/Button/screenshots/primary_dm.png';
 import screenshotSecondary from '../../../../backpack-android/docs/Button/screenshots/secondary.png';
+import screenshotSecondaryDm from '../../../../backpack-android/docs/Button/screenshots/secondary_dm.png';
 import screenshotDestructive from '../../../../backpack-android/docs/Button/screenshots/destructive.png';
+import screenshotDestructiveDm from '../../../../backpack-android/docs/Button/screenshots/destructive_dm.png';
 import screenshotOutline from '../../../../backpack-android/docs/Button/screenshots/outline.png';
+import screenshotOutlineDm from '../../../../backpack-android/docs/Button/screenshots/outline_dm.png';
 import screenshotFeatured from '../../../../backpack-android/docs/Button/screenshots/featured.png';
+import screenshotFeaturedDm from '../../../../backpack-android/docs/Button/screenshots/featured_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -38,6 +43,13 @@ const components = [
         altText: 'Android primary button',
         subText: '(Google Pixel emulator)',
       },
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotPrimaryDm}`,
+        altText: 'Android primary button',
+        subText: '(Google Pixel emulator - dark mode)',
+      },
     ],
   },
   {
@@ -50,6 +62,13 @@ const components = [
         src: `/${screenshotSecondary}`,
         altText: 'Android secondary button',
         subText: '(Google Pixel emulator)',
+      },
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotSecondaryDm}`,
+        altText: 'Android secondary button',
+        subText: '(Google Pixel emulator - dark mode)',
       },
     ],
   },
@@ -64,6 +83,13 @@ const components = [
         altText: 'Android destructive button',
         subText: '(Google Pixel emulator)',
       },
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotDestructiveDm}`,
+        altText: 'Android destructive button',
+        subText: '(Google Pixel emulator - dark mode)',
+      },
     ],
   },
   {
@@ -77,6 +103,13 @@ const components = [
         altText: 'Android featured button',
         subText: '(Google Pixel emulator)',
       },
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotFeaturedDm}`,
+        altText: 'Android featured button',
+        subText: '(Google Pixel emulator - dark mode)',
+      },
     ],
   },
   {
@@ -89,6 +122,13 @@ const components = [
         src: `/${screenshotOutline}`,
         altText: 'Android outline button',
         subText: '(Google Pixel emulator)',
+      },
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotOutlineDm}`,
+        altText: 'Android outline button',
+        subText: '(Google Pixel emulator - dark mode)',
       },
     ],
   },

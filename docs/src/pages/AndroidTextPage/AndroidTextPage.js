@@ -20,8 +20,11 @@ import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Text/README.md';
 import screenshotDefault from '../../../../backpack-android/docs/Text/screenshots/default.png';
+import screenshotDefaultDm from '../../../../backpack-android/docs/Text/screenshots/default_dm.png';
 import screenshotEmphasized from '../../../../backpack-android/docs/Text/screenshots/emphasized.png';
+import screenshotEmphasizedDm from '../../../../backpack-android/docs/Text/screenshots/emphasized_dm.png';
 import screenshotHeavy from '../../../../backpack-android/docs/Text/screenshots/heavy.png';
+import screenshotHeavyDm from '../../../../backpack-android/docs/Text/screenshots/heavy_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -36,6 +39,13 @@ const components = [
         altText: 'Default text component',
         subText: '(Google Pixel emulator)',
       },
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotDefaultDm}`,
+        altText: 'Default text component',
+        subText: '(Google Pixel emulator - dark mode)',
+      },
     ],
   },
   {
@@ -49,6 +59,13 @@ const components = [
         altText: 'Emphasized text component',
         subText: '(Google Pixel emulator)',
       },
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotEmphasizedDm}`,
+        altText: 'Emphasized text component',
+        subText: '(Google Pixel emulator - dark mode)',
+      },
     ],
   },
   {
@@ -61,6 +78,13 @@ const components = [
         src: `/${screenshotHeavy}`,
         altText: 'Heavy text component',
         subText: '(Google Pixel emulator)',
+      },
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotHeavyDm}`,
+        altText: 'Heavy text component',
+        subText: '(Google Pixel emulator - dark mode)',
       },
     ],
   },

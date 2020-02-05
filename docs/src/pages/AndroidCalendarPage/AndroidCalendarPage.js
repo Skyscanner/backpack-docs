@@ -20,6 +20,7 @@ import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Calendar/README.md';
 import screenshotAll from '../../../../backpack-android/docs/Calendar/screenshots/range.png';
+import screenshotAllDm from '../../../../backpack-android/docs/Calendar/screenshots/range_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -33,6 +34,13 @@ const components = [
         src: `/${screenshotAll}`,
         altText: 'Calendar with a range of dates',
         subText: '(Google Pixel emulator)',
+      },
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotAllDm}`,
+        altText: 'Calendar with a range of dates',
+        subText: '(Google Pixel emulator - dark mode)',
       },
     ],
   },
