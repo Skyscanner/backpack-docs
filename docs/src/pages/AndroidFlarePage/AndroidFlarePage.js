@@ -20,9 +20,13 @@ import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Flare/README.md';
 import screenshotDefault from '../../../../backpack-android/docs/Flare/screenshots/default.png';
+import screenshotDefaultDm from '../../../../backpack-android/docs/Flare/screenshots/default_dm.png';
 import screenshotRounded from '../../../../backpack-android/docs/Flare/screenshots/rounded.png';
+import screenshotRoundedDm from '../../../../backpack-android/docs/Flare/screenshots/rounded_dm.png';
 import screenshotPointerOffset from '../../../../backpack-android/docs/Flare/screenshots/pointer-offset.png';
+import screenshotPointerOffsetDm from '../../../../backpack-android/docs/Flare/screenshots/pointer-offset_dm.png';
 import screenshotInsetPadding from '../../../../backpack-android/docs/Flare/screenshots/inset-padding.png';
+import screenshotInsetPaddingDm from '../../../../backpack-android/docs/Flare/screenshots/inset-padding_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -37,6 +41,13 @@ const components = [
         altText: 'Flare component',
         subText: '(Google Pixel emulator)',
       },
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotDefaultDm}`,
+        altText: 'Flare component',
+        subText: '(Google Pixel emulator - dark mode)',
+      },
     ],
   },
   {
@@ -49,6 +60,13 @@ const components = [
         src: `/${screenshotRounded}`,
         altText: 'Flare component with rounded corners',
         subText: '(Google Pixel emulator)',
+      },
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotRoundedDm}`,
+        altText: 'Flare component with rounded corners',
+        subText: '(Google Pixel emulator - dark mode)',
       },
     ],
   },
@@ -63,6 +81,13 @@ const components = [
         altText: 'Flare component with offset pointer',
         subText: '(Google Pixel emulator)',
       },
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotPointerOffsetDm}`,
+        altText: 'Flare component with offset pointer',
+        subText: '(Google Pixel emulator - dark mode)',
+      },
     ],
   },
   {
@@ -75,6 +100,13 @@ const components = [
         src: `/${screenshotInsetPadding}`,
         altText: 'Flare component with padding',
         subText: '(Google Pixel emulator)',
+      },
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotInsetPaddingDm}`,
+        altText: 'Flare component with padding',
+        subText: '(Google Pixel emulator - dark mode)',
       },
     ],
   },

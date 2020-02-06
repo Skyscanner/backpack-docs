@@ -21,6 +21,7 @@ import BpkLink from 'bpk-component-link';
 
 import readme from '../../../../backpack-android/docs/InteractiveStarRating/README.md';
 import screenshotDefault from '../../../../backpack-android/docs/InteractiveStarRating/screenshots/default.png';
+import screenshotDefaultDm from '../../../../backpack-android/docs/InteractiveStarRating/screenshots/default_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 import Paragraph from '../../components/Paragraph';
 import * as ROUTES from '../../constants/routes';
@@ -44,6 +45,14 @@ const components = [
         src: `/${screenshotDefault}`,
         altText: 'Android Interactive Star Rating Component',
         subText: '(Google Pixel emulator)',
+      },
+      {
+        title: 'Android',
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotDefaultDm}`,
+        altText: 'Android Interactive Star Rating Component',
+        subText: '(Google Pixel emulator - dark mode)',
       },
     ],
   },

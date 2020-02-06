@@ -20,6 +20,7 @@ import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Toast/README.md';
 import screenshotDefault from '../../../../backpack-android/docs/Toast/screenshots/default.png';
+import screenshotDefaultDm from '../../../../backpack-android/docs/Toast/screenshots/default_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -34,6 +35,14 @@ const components = [
         src: `/${screenshotDefault}`,
         altText: 'Android Toast Component',
         subText: '(Google Pixel emulator)',
+      },
+      {
+        title: 'Android',
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotDefaultDm}`,
+        altText: 'Android Toast Component',
+        subText: '(Google Pixel emulator - dark mode)',
       },
     ],
   },

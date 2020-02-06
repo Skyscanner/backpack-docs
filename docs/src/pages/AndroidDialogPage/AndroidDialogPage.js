@@ -20,7 +20,9 @@ import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Dialog/README.md';
 import screenshotAlert from '../../../../backpack-android/docs/Dialog/screenshots/with-cta.png';
+import screenshotAlertDm from '../../../../backpack-android/docs/Dialog/screenshots/with-cta_dm.png';
 import screenshotBottomSheet from '../../../../backpack-android/docs/Dialog/screenshots/delete-confirmation.png';
+import screenshotBottomSheetDm from '../../../../backpack-android/docs/Dialog/screenshots/delete-confirmation_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -38,6 +40,14 @@ const components = [
         altText: 'Alert dialog with a call to action.',
         subText: '(Google Pixel emulator)',
       },
+      {
+        title: 'Used as a call to action.',
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotAlertDm}`,
+        altText: 'Alert dialog with a call to action.',
+        subText: '(Google Pixel emulator - dark mode)',
+      },
     ],
   },
   {
@@ -53,6 +63,14 @@ const components = [
         src: `/${screenshotBottomSheet}`,
         altText: 'Bottom sheet dialog used for confirmation.',
         subText: '(Google Pixel emulator)',
+      },
+      {
+        title: 'Used for confirmation.',
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotBottomSheetDm}`,
+        altText: 'Bottom sheet dialog used for confirmation.',
+        subText: '(Google Pixel emulator - dark mode)',
       },
     ],
   },

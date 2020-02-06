@@ -20,8 +20,11 @@ import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Rating/README.md';
 import screenshotDefault from '../../../../backpack-android/docs/Rating/screenshots/default.png';
+import screenshotDefaultDm from '../../../../backpack-android/docs/Rating/screenshots/default_dm.png';
 import screenshotSizes from '../../../../backpack-android/docs/Rating/screenshots/sizes.png';
+import screenshotSizesDm from '../../../../backpack-android/docs/Rating/screenshots/sizes_dm.png';
 import screenshotVertical from '../../../../backpack-android/docs/Rating/screenshots/vertical.png';
+import screenshotVerticalDm from '../../../../backpack-android/docs/Rating/screenshots/vertical_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -37,6 +40,14 @@ const components = [
         altText: 'Android Rating Component',
         subText: '(Google Pixel emulator)',
       },
+      {
+        title: 'Android',
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotDefaultDm}`,
+        altText: 'Android Rating Component',
+        subText: '(Google Pixel emulator - dark mode)',
+      },
     ],
   },
   {
@@ -51,6 +62,14 @@ const components = [
         altText: 'Different sizes of the Rating component',
         subText: '(Google Pixel emulator)',
       },
+      {
+        title: 'Sizes',
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotSizesDm}`,
+        altText: 'Different sizes of the Rating component',
+        subText: '(Google Pixel emulator - dark mode)',
+      },
     ],
   },
   {
@@ -64,6 +83,14 @@ const components = [
         src: `/${screenshotVertical}`,
         altText: 'Vertical orientation of the Rating component',
         subText: '(Google Pixel emulator)',
+      },
+      {
+        title: 'Vertical',
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotVerticalDm}`,
+        altText: 'Vertical orientation of the Rating component',
+        subText: '(Google Pixel emulator - dark mode)',
       },
     ],
   },
