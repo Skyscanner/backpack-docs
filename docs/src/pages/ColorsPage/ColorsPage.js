@@ -32,7 +32,7 @@ import * as ROUTES from '../../constants/routes';
 
 import STYLES from './colors-page.scss';
 import intro from './content/intro.md';
-import colours from './colors';
+import colors from './colors';
 import dynamicColors from './dynamicColors';
 import ColorChart from './ColorChart';
 
@@ -48,7 +48,7 @@ const sections = [
     id: 'palette',
     title: 'Palette',
     backgroundStyle: 'light',
-    content: colours,
+    content: colors,
   },
   {
     id: 'dynamic-palette',
