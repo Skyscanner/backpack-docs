@@ -68,7 +68,7 @@ const NavListFilter = (props: Props) => (
       className={getClassName('bpkdocs-nav-list-filter__option')}
       value={OPTIONS.native}
       name="filter"
-      label="Native"
+      label="React Native"
       checked={props.selected === OPTIONS.native}
       onChange={e =>
         e.currentTarget.value === OPTIONS.native &&

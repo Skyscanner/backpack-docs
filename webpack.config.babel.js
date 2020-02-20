@@ -1,7 +1,7 @@
 /*
  * Backpack - Skyscanner's Design System
  *
- * Copyright 2016-2019 Skyscanner Ltd
+ * Copyright 2016-2020 Skyscanner Ltd
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,12 +20,12 @@ import fs from 'fs';
 import path from 'path';
 
 import webpack from 'webpack';
-import WrapperPlugin from 'wrapper-webpack-plugin';
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import StaticSiteGeneratorPlugin from 'static-site-generator-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
+import TerserPlugin from 'terser-webpack-plugin';
 
-import { blockComment as licenseHeader } from './backpack/packages/bpk-tokens/formatters/license-header';
 import postCssPlugins from './scripts/webpack/postCssPlugins';
 import sassFunctions from './node_modules/bpk-mixins/sass-functions';
 import * as ROUTES from './docs/src/constants/routes';
@@ -49,10 +49,12 @@ const staticSiteGeneratorConfig = {
 };
 
 const sassOptions = {
-  data: BPK_TOKENS
+  prependData: BPK_TOKENS
     ? fs.readFileSync(`packages/bpk-tokens/tokens/${BPK_TOKENS}.scss`)
     : '',
-  functions: sassFunctions,
+  sassOptions: {
+    functions: sassFunctions,
+  },
 };
 
 const config = {
@@ -60,10 +62,13 @@ const config = {
     docs: './docs/src/index.js',
   },
 
+  mode: isProduction ? 'production' : 'development',
+
   output: {
     filename: `[name]${isProduction ? '_[chunkhash]' : ''}.js`,
     path: path.resolve(__dirname, 'dist'),
     libraryTarget: 'umd',
+    globalObject: 'this',
   },
 
   module: {
@@ -75,71 +80,83 @@ const config = {
       },
       {
         test: /base\.scss$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            'css-loader',
-            {
-              loader: 'postcss-loader',
-              options: {
-                plugins: postCssPlugins,
-              },
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              hmr: !isProduction,
             },
-            {
-              loader: 'sass-loader',
-              options: sassOptions,
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: postCssPlugins,
             },
-          ],
-        }),
+          },
+          {
+            loader: 'sass-loader',
+            options: sassOptions,
+          },
+        ],
       },
       {
         test: /\.scss$/,
         exclude: /base\.scss$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                importLoaders: 1,
-                minimize: true,
-                modules: useCssModules,
-                localIdentName: '[local]-[hash:base64:5]',
-              },
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              hmr: !isProduction,
             },
-            {
-              loader: 'postcss-loader',
-              options: {
-                plugins: postCssPlugins,
-              },
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+              modules: useCssModules
+                ? {
+                    localIdentName: '[local]-[hash:base64:5]',
+                  }
+                : null,
             },
-            {
-              loader: 'sass-loader',
-              options: sassOptions,
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: postCssPlugins,
             },
-          ],
-        }),
+          },
+          {
+            loader: 'sass-loader',
+            options: sassOptions,
+          },
+        ],
       },
       {
         test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                importLoaders: 1,
-                minimize: true,
-              },
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              hmr: !isProduction,
             },
-            {
-              loader: 'postcss-loader',
-              options: {
-                plugins: postCssPlugins,
-              },
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
             },
-          ],
-        }),
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: postCssPlugins,
+            },
+          },
+        ],
       },
       {
         test: /\.(jpg|png|svg|mp4)$/,
@@ -173,16 +190,14 @@ const config = {
   },
 
   plugins: [
-    new WrapperPlugin({
-      test: /\.css$/,
-      header: licenseHeader,
-    }),
-    new ExtractTextPlugin({
+    new MiniCssExtractPlugin({
       filename: `[name]${isProduction ? '_[contenthash]' : ''}.css`,
-      allChunks: true,
     }),
   ],
-
+  optimization: {
+    minimize: true,
+    minimizer: [new OptimizeCSSAssetsPlugin(), new TerserPlugin()],
+  },
   devServer: {
     host: '0.0.0.0',
     disableHostCheck: true,
@@ -217,19 +232,7 @@ if (isProduction) {
       paths: staticSiteGeneratorConfig.paths,
       locals: staticSiteGeneratorConfig,
     }),
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: JSON.stringify('production'),
-      },
-    }),
     new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        unused: true,
-        dead_code: true,
-        warnings: false,
-      },
-    }),
     new CopyWebpackPlugin([{ from: 'docs/src/README.md', to: 'README.md' }]),
   );
 }

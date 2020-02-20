@@ -30,10 +30,10 @@ import IntroBlurb from '../../components/IntroBlurb';
 import Code from '../../components/Code';
 import CodeBlock from '../../components/CodeBlock';
 
-/* eslint-disable import/no-webpack-loader-syntax */
-const iconTemplate = require('!!file-loader?name=[name].[hash].sketch!./../../static/icon-template.sketch');
-
-const responsiveGrid = require('!!file-loader?name=[name].[hash].sketch!./../../static/responsive-grids.sketch');
+// eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
+import iconTemplate from '!!file-loader?name=[name].[hash].sketch!./../../static/icon-template.sketch';
+// eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
+import responsiveGrid from '!!file-loader?name=[name].[hash].sketch!./../../static/responsive-grids.sketch';
 
 const nodeSassUrl = 'https://github.com/sass/node-sass';
 const sassLoaderUrl = 'https://github.com/jtangelder/sass-loader';

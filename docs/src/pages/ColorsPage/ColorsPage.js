@@ -32,7 +32,8 @@ import * as ROUTES from '../../constants/routes';
 
 import STYLES from './colors-page.scss';
 import intro from './content/intro.md';
-import colours from './colors';
+import colors from './colors';
+import dynamicColors from './dynamicColors';
 import ColorChart from './ColorChart';
 
 const getClassName = cssModules(STYLES);
@@ -47,11 +48,17 @@ const sections = [
     id: 'palette',
     title: 'Palette',
     backgroundStyle: 'light',
-    content: colours,
+    content: colors,
+  },
+  {
+    id: 'dynamic-palette',
+    title: 'Dynamic colours',
+    content: dynamicColors,
   },
   {
     id: 'pairings',
     title: 'Colour pairings',
+    backgroundStyle: 'light',
     content: (
       <Fragment>
         <BpkParagraph>
@@ -70,7 +77,6 @@ const sections = [
   {
     id: 'examples',
     title: 'Examples',
-    backgroundStyle: 'light',
     content: (
       <BpkImage
         className={getClassName('bpk-docs-colors-page__image')}

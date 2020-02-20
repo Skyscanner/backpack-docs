@@ -80,6 +80,7 @@ const ComponentsLinks = [
         route: routes.CHECKBOX,
         children: 'Checkbox',
         tags: ['android', 'web'],
+        keywords: ['switch', 'toggle'],
       },
       {
         id: 'SNACKBAR',
@@ -97,6 +98,7 @@ const ComponentsLinks = [
         id: 'BLOCKQUOTE',
         route: routes.BLOCKQUOTE,
         children: 'Blockquote',
+        tags: ['web'],
       },
       { id: 'CODE', route: routes.CODE, children: 'Code', tags: ['web'] },
       {
@@ -507,6 +509,11 @@ export default [
         id: 'BASE_STYLESHEET',
         route: routes.BASE_STYLESHEET,
         children: 'Base stylesheet',
+      },
+      {
+        id: 'STATUS',
+        route: routes.STATUS,
+        children: 'Backpack Status',
       },
     ],
   },

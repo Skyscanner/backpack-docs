@@ -19,7 +19,8 @@
 import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/Toast/README.md';
-import screenshotDefault from '../../../../backpack-ios/screenshots/Toast/default.png';
+import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-toast___default_lm.png';
+import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-toast___default_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -33,6 +34,13 @@ const components = [
         src: `/${screenshotDefault}`,
         altText: 'iOS default toast.',
         subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotDefaultDm}`,
+        altText: 'iOS default toast.',
+        subText: '(iPhone 8 simulator - dark mode)',
       },
     ],
   },

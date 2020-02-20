@@ -20,6 +20,7 @@ import React from 'react';
 
 import readme from '../../../../backpack-android/docs/StarRating/README.md';
 import screenshotDefault from '../../../../backpack-android/docs/StarRating/screenshots/default.png';
+import screenshotDefaultDm from '../../../../backpack-android/docs/StarRating/screenshots/default_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -36,6 +37,14 @@ const components = [
         src: `/${screenshotDefault}`,
         altText: 'Android Star Rating Component',
         subText: '(Google Pixel emulator)',
+      },
+      {
+        title: 'Android',
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotDefaultDm}`,
+        altText: 'Android Star Rating Component',
+        subText: '(Google Pixel emulator - dark mode)',
       },
     ],
   },

@@ -187,19 +187,13 @@ const DocsPageBuilder = props => {
     props.components.map(component =>
       ComponentExample(component, platformSwitching => {
         hasTokens = true;
-        return connect(
-          tokenSwitcher,
-          platformSwitching,
-        );
+        return connect(tokenSwitcher, platformSwitching);
       }),
     ),
   );
 
   const tokenTable = props.tokenMap
-    ? connect(
-        tokenSwitcher,
-        <TokenTable tokens={props.tokenMap} />,
-      )
+    ? connect(tokenSwitcher, <TokenTable tokens={props.tokenMap} />)
     : null;
 
   const sections = [

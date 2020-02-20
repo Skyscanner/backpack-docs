@@ -35,40 +35,42 @@ const {
   const parsedChangelogs = await Promise.all(changelogs.map(readChangelog));
 
   const data = zip(changelogs, parsedChangelogs);
-  const upcomingChanges = (await Promise.all(
-    data.map(async ([changelogPath, parsedChangelog]) => {
-      const {
-        upcoming: { changes },
-      } = parsedChangelog;
-      if (!changes) {
-        return null;
-      }
+  const upcomingChanges = (
+    await Promise.all(
+      data.map(async ([changelogPath, parsedChangelog]) => {
+        const {
+          upcoming: { changes },
+        } = parsedChangelog;
+        if (!changes) {
+          return null;
+        }
 
-      const packageJsonPath = determinePackageJsonPath(changelogPath);
-      const packageJson = await readPackageJson(packageJsonPath);
-      const currentVersion = packageJson.version;
+        const packageJsonPath = determinePackageJsonPath(changelogPath);
+        const packageJson = await readPackageJson(packageJsonPath);
+        const currentVersion = packageJson.version;
 
-      let semverChange = null;
-      if (changes.patch && changes.patch.length > 0) {
-        semverChange = 'patch';
-      }
+        let semverChange = null;
+        if (changes.patch && changes.patch.length > 0) {
+          semverChange = 'patch';
+        }
 
-      if (changes.minor && changes.minor.length > 0) {
-        semverChange = 'minor';
-      }
+        if (changes.minor && changes.minor.length > 0) {
+          semverChange = 'minor';
+        }
 
-      if (changes.major && changes.major.length > 0) {
-        semverChange = 'major';
-      }
+        if (changes.major && changes.major.length > 0) {
+          semverChange = 'major';
+        }
 
-      return {
-        name: packageJson.name,
-        nextVersion: semver.inc(currentVersion, semverChange),
-        changes,
-        currentVersion,
-      };
-    }),
-  )).filter(x => x);
+        return {
+          name: packageJson.name,
+          nextVersion: semver.inc(currentVersion, semverChange),
+          changes,
+          currentVersion,
+        };
+      }),
+    )
+  ).filter(x => x);
 
   console.log(`${chalk.blue.bold('Upcoming changes:')}
 ${upcomingChanges.map(

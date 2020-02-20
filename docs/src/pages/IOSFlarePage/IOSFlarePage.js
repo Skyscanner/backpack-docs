@@ -19,10 +19,10 @@
 import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/FlareView/README.md';
-import screenshotDefault from '../../../../backpack-ios/screenshots/FlareView/default.png';
-import screenshotWithBackgroundColor from '../../../../backpack-ios/screenshots/FlareView/background-image.png';
-import screenshotDefaultDm from '../../../../backpack-ios/screenshots/FlareView/default_dm.png';
-import screenshotWithBackgroundColorDm from '../../../../backpack-ios/screenshots/FlareView/background-image_dm.png';
+import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-flare-view___default_lm.png';
+import screenshotWithBackgroundColor from '../../../../backpack-ios/screenshots/iPhone 8-flare-view___background-image_lm.png';
+import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-flare-view___default_dm.png';
+import screenshotWithBackgroundColorDm from '../../../../backpack-ios/screenshots/iPhone 8-flare-view___background-image_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

@@ -20,7 +20,6 @@
 
 .bpkdocs-sidebar {
   padding: $bpk-spacing-base;
-  color: $bpk-color-white;
 
   @include bpk-themeable-property(
     background-color,

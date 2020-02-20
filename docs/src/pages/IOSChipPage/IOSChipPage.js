@@ -19,12 +19,12 @@
 import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/Chip/README.md';
-import screenshotDefault from '../../../../backpack-ios/screenshots/Chip/default.png';
-import screenshotWithoutShadow from '../../../../backpack-ios/screenshots/Chip/without-shadow.png';
-import screenshotWithBackgroundColor from '../../../../backpack-ios/screenshots/Chip/background-color.png';
-import screenshotDefaultDm from '../../../../backpack-ios/screenshots/Chip/default_dm.png';
-import screenshotWithoutShadowDm from '../../../../backpack-ios/screenshots/Chip/without-shadow_dm.png';
-import screenshotWithBackgroundColorDm from '../../../../backpack-ios/screenshots/Chip/background-color_dm.png';
+import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-chip___default_lm.png';
+import screenshotWithoutShadow from '../../../../backpack-ios/screenshots/iPhone 8-chip___without-shadow_lm.png';
+import screenshotWithBackgroundColor from '../../../../backpack-ios/screenshots/iPhone 8-chip___background-color_lm.png';
+import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-chip___default_dm.png';
+import screenshotWithoutShadowDm from '../../../../backpack-ios/screenshots/iPhone 8-chip___without-shadow_dm.png';
+import screenshotWithBackgroundColorDm from '../../../../backpack-ios/screenshots/iPhone 8-chip___background-color_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

@@ -24,8 +24,11 @@ import BackpackLogoChristmas from '../static/backpack-logo-christmas.svg';
 import BackpackLogoChristmasGrey from '../static/backpack-logo-christmas-sky-grey.svg';
 
 export const getBackpackLogo = (overImage = false) => {
-  const isPride = new Date().getMonth() === 5;
-  const isChristmas = new Date().getMonth() === 11;
+  const dateToday = new Date();
+  const isPride = dateToday.getMonth() === 5;
+  const isChristmas =
+    dateToday.getMonth() === 11 ||
+    (dateToday.getMonth() === 0 && dateToday.getDate() < 7);
 
   // These logos are used for the main homepage hero
   if (overImage) {

@@ -27,11 +27,13 @@ const getClassName = cssModules(STYLES);
 
 const ColorSwatch = props => {
   const {
+    name,
     color,
     textColor,
     colorValues,
     border,
     className: userClassName,
+    ...rest
   } = props;
   const style = {
     backgroundColor: color,
@@ -45,10 +47,10 @@ const ColorSwatch = props => {
   );
 
   return (
-    <div style={style} className={className}>
+    <div style={style} className={className} {...rest}>
       <div>
         <BpkText tagName="h3" textStyle="xl" bold>
-          {props.name}
+          {name}
         </BpkText>
       </div>
       {colorValues && (

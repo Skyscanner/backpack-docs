@@ -39,6 +39,7 @@ import LondonHeroImage from '../../static/london_hero.jpg';
 import HongKongHeroImage from '../../static/hongKong_hero.jpg';
 import DohaHeroImage from '../../static/doha_hero.jpg';
 import { getBackpackLogo } from '../../helpers/logo-helper';
+import PageSearch from '../../components/PageSearch';
 
 import UpdatedAt from './UpdatedAt';
 import STYLES from './home-page.scss';
@@ -169,6 +170,14 @@ const HomePage = (props, context) => {
             and guidelines for creating Skyscanner products.
           </BpkText>
         </div>
+      </div>
+      <div className={getClassName('bpkdocs-home-page__search-container')}>
+        <PageSearch
+          inputClassName={getClassName('bpkdocs-home-page__search-input')}
+          wrapperClassName={getClassName(
+            'bpkdocs-home-page__search-results-wrapper',
+          )}
+        />
       </div>
       <div className={getClassName('bpkdocs-home-page__cards-container')}>
         {CARD_CONTENTS.map(({ href, fullWidth, ...rest }) => (

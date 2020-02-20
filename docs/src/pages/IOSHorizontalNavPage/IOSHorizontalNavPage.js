@@ -19,14 +19,14 @@
 import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/HorizontalNavigation/README.md';
-import screenshotDefault from '../../../../backpack-ios/screenshots/HorizontalNavigation/default.png';
-import screenshotSmall from '../../../../backpack-ios/screenshots/HorizontalNavigation/small.png';
-import screenshotWithIcons from '../../../../backpack-ios/screenshots/HorizontalNavigation/with-icons.png';
-import screenshotNoUnderline from '../../../../backpack-ios/screenshots/HorizontalNavigation/without-underline.png';
-import screenshotDefaultDm from '../../../../backpack-ios/screenshots/HorizontalNavigation/default_dm.png';
-import screenshotSmallDm from '../../../../backpack-ios/screenshots/HorizontalNavigation/small_dm.png';
-import screenshotWithIconsDm from '../../../../backpack-ios/screenshots/HorizontalNavigation/with-icons_dm.png';
-import screenshotNoUnderlineDm from '../../../../backpack-ios/screenshots/HorizontalNavigation/without-underline_dm.png';
+import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___default_lm.png';
+import screenshotSmall from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___small_lm.png';
+import screenshotWithIcons from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___with-icons_lm.png';
+import screenshotNoUnderline from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___without-underline_lm.png';
+import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___default_dm.png';
+import screenshotSmallDm from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___small_dm.png';
+import screenshotWithIconsDm from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___with-icons_dm.png';
+import screenshotNoUnderlineDm from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___without-underline_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

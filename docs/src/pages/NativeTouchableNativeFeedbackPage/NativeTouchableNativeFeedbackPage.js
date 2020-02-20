@@ -50,7 +50,7 @@ const components = [
 
 const blurb = [
   <IntroBlurb>
-    React Native{"'"}s{' '}
+    React Native&apos;s{' '}
     <BpkLink href={RNTouchableNativeFeedback} blank>
       Touchable Native Feedback{' '}
     </BpkLink>{' '}

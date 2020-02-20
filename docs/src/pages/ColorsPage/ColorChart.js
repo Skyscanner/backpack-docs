@@ -91,7 +91,7 @@ class ColorChart extends Component<{}, State> {
     });
     chartColors.forEach(c1 => {
       colHeadings.push({
-        c1: 'white',
+        c1,
         c2: c1,
         show: true,
       });
@@ -156,15 +156,12 @@ class ColorChart extends Component<{}, State> {
           label={
             <Fragment>
               <BpkText>
-                {
-                  'Large text (larger than 18pt or 14pt bold) minimum ratio = 3:1'
-                }
+                Large text (larger than 18pt or 14pt bold) minimum ratio = 3:1
               </BpkText>
               <br />
               <BpkText>
-                {
-                  'Graphic elements (UI components or meaningful graphics) minimum ratio = 3:1'
-                }
+                Graphic elements (UI components or meaningful graphics) minimum
+                ratio = 3:1
               </BpkText>
             </Fragment>
           }

@@ -19,8 +19,8 @@
 import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/StarRating/README.md';
-import screenshotAll from '../../../../backpack-ios/screenshots/StarRating/docs.png';
-import screenshotAllDm from '../../../../backpack-ios/screenshots/StarRating/docs_dm.png';
+import screenshotAll from '../../../../backpack-ios/screenshots/iPhone 8-star-rating___docs_lm.png';
+import screenshotAllDm from '../../../../backpack-ios/screenshots/iPhone 8-star-rating___docs_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

@@ -69,7 +69,6 @@ export default {
   '/components/native/navigation-bar': ROUTES.NAVIGATION_BAR,
   '/components/native/navigation-stack': ROUTES.NAVIGATION_STACK,
   '/components/native/nudger': ROUTES.NUDGER,
-  '/components/native/pagination-dots': ROUTES.PAGINATION_DOT,
   '/components/native/panels': ROUTES.PANEL,
   '/components/native/phone-input': ROUTES.PHONE_INPUT,
   '/components/native/picker': ROUTES.PICKER,

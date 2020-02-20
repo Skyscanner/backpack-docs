@@ -236,7 +236,6 @@ const colours = [
         CMYK: '011, 014, 003, 000',
         PMS: '7443',
       }}
-      border
     />
     <ColorSwatch
       name="Panjin"
@@ -272,7 +271,7 @@ const colours = [
       }}
     />
     <ColorSwatch
-      name="Sky Grey"
+      name="Sky Gray"
       color={colors.colorSkyGray}
       textColor={colors.colorWhite}
       colorValues={{
@@ -283,7 +282,7 @@ const colours = [
       }}
     />
     <ColorSwatch
-      name="Sky Grey Tint 01"
+      name="Sky Gray Tint 01"
       color={colors.colorSkyGrayTint01}
       textColor={colors.colorWhite}
       colorValues={{
@@ -294,7 +293,7 @@ const colours = [
       }}
     />
     <ColorSwatch
-      name="Sky Grey Tint 02"
+      name="Sky Gray Tint 02"
       color={colors.colorSkyGrayTint02}
       textColor={colors.colorWhite}
       colorValues={{
@@ -305,7 +304,7 @@ const colours = [
       }}
     />
     <ColorSwatch
-      name="Sky Grey Tint 03"
+      name="Sky Gray Tint 03"
       color={colors.colorSkyGrayTint03}
       textColor={colors.colorSkyGray}
       colorValues={{
@@ -316,7 +315,7 @@ const colours = [
       }}
     />
     <ColorSwatch
-      name="Sky Grey Tint 04"
+      name="Sky Gray Tint 04"
       color={colors.colorSkyGrayTint04}
       textColor={colors.colorSkyGray}
       colorValues={{
@@ -327,7 +326,7 @@ const colours = [
       }}
     />
     <ColorSwatch
-      name="Sky Grey Tint 05"
+      name="Sky Gray Tint 05"
       color={colors.colorSkyGrayTint05}
       textColor={colors.colorSkyGray}
       colorValues={{
@@ -338,7 +337,7 @@ const colours = [
       }}
     />
     <ColorSwatch
-      name="Sky Grey Tint 06"
+      name="Sky Gray Tint 06"
       color={colors.colorSkyGrayTint06}
       textColor={colors.colorSkyGray}
       colorValues={{
@@ -347,10 +346,9 @@ const colours = [
         CMYK: '012, 011, 007, 000',
         PMS: '5315',
       }}
-      border
     />
     <ColorSwatch
-      name="Sky Grey Tint 07"
+      name="Sky Gray Tint 07"
       color={colors.colorSkyGrayTint07}
       textColor={colors.colorSkyGray}
       colorValues={{

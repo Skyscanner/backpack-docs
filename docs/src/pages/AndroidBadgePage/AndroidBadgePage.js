@@ -20,6 +20,7 @@ import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Badge/README.md';
 import screenshotAll from '../../../../backpack-android/docs/Badge/screenshots/all.png';
+import screenshotAllDm from '../../../../backpack-android/docs/Badge/screenshots/all_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -33,6 +34,13 @@ const components = [
         src: `/${screenshotAll}`,
         altText: 'Android badges',
         subText: '(Google Pixel emulator)',
+      },
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotAllDm}`,
+        altText: 'Android badges',
+        subText: '(Google Pixel emulator - dark mode)',
       },
     ],
   },

@@ -20,6 +20,7 @@ import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Switch/README.md';
 import screenshotDefault from '../../../../backpack-android/docs/Switch/screenshots/default.png';
+import screenshotDefaultDm from '../../../../backpack-android/docs/Switch/screenshots/default_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -33,6 +34,13 @@ const components = [
         src: `/${screenshotDefault}`,
         altText: 'Switch component',
         subText: '(Google Pixel emulator)',
+      },
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotDefaultDm}`,
+        altText: 'Switch component',
+        subText: '(Google Pixel emulator - dark mode)',
       },
     ],
   },
