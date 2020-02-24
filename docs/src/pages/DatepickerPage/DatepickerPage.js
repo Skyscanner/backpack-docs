@@ -31,7 +31,7 @@ import IntroBlurb from '../../components/IntroBlurb';
 
 const formatDate = date => format(date, 'dd/MM/yyyy');
 const formatMonth = date => format(date, 'MMMM yyyy');
-const formatDateFull = date => format(date, 'dddd, Do MMMM yyyy');
+const formatDateFull = date => format(date, 'do MMMM yyyy');
 
 class DatepickerContainer extends Component {
   constructor() {
