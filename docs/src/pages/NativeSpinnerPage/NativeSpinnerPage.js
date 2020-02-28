@@ -30,7 +30,7 @@ const components = [
     id: 'default',
     title: 'Default',
     blurb:
-      'By default, spinners come in a large size and are available in three types: primary, dark and light.', // eslint-disable-line max-len
+      'By default, spinners come in a large size and are available in three types: primary, dark and light.',
     screenshots: [
       {
         title: 'iOS',

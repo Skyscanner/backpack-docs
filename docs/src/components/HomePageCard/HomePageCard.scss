@@ -20,17 +20,20 @@
 // Desktop
 $bpk-card-height-desktop: $bpk-spacing-xs * 66;
 $bpk-image-height-desktop: $bpk-spacing-xs * 49;
-$bpk-caption-container-height-desktop: $bpk-card-height-desktop - $bpk-image-height-desktop;
+$bpk-caption-container-height-desktop: $bpk-card-height-desktop -
+  $bpk-image-height-desktop;
 
 // Tablet
 $bpk-card-height-tablet: $bpk-spacing-xs * 45;
 $bpk-image-height-tablet: $bpk-spacing-xs * 33;
-$bpk-caption-container-height-tablet: $bpk-card-height-tablet - $bpk-image-height-tablet;
+$bpk-caption-container-height-tablet: $bpk-card-height-tablet -
+  $bpk-image-height-tablet;
 
 // Mobile
 $bpk-card-height-mobile: $bpk-spacing-xs * 37;
 $bpk-image-height-mobile: $bpk-spacing-xs * 27;
-$bpk-caption-container-height-mobile: $bpk-card-height-mobile - $bpk-image-height-mobile;
+$bpk-caption-container-height-mobile: $bpk-card-height-mobile -
+  $bpk-image-height-mobile;
 
 .bpkdocs-home-page-card {
   width: 100%;
@@ -91,7 +94,10 @@ $bpk-caption-container-height-mobile: $bpk-card-height-mobile - $bpk-image-heigh
 
   &__caption {
     position: absolute;
-    bottom: calc((#{$bpk-caption-container-height-tablet} / 2) - (#{$bpk-text-base-line-height} / 2));
+    bottom: calc(
+      (#{$bpk-caption-container-height-tablet} / 2) -
+        (#{$bpk-text-base-line-height} / 2)
+    );
     left: $bpk-spacing-base;
     color: $bpk-color-sky-gray-tint-01;
 
@@ -99,14 +105,20 @@ $bpk-caption-container-height-mobile: $bpk-card-height-mobile - $bpk-image-heigh
     @include bpk-text-base;
 
     @include bpk-breakpoint-above-tablet {
-      bottom: calc((#{$bpk-caption-container-height-desktop} / 2) - (#{$bpk-text-lg-line-height} / 2));
+      bottom: calc(
+        (#{$bpk-caption-container-height-desktop} / 2) -
+          (#{$bpk-text-lg-line-height} / 2)
+      );
       left: $bpk-spacing-base;
 
       @include bpk-text-lg;
     }
 
     @include bpk-breakpoint-mobile {
-      bottom: calc((#{$bpk-caption-container-height-mobile} / 2) - (#{$bpk-text-base-line-height} / 2));
+      bottom: calc(
+        (#{$bpk-caption-container-height-mobile} / 2) -
+          (#{$bpk-text-base-line-height} / 2)
+      );
       left: $bpk-spacing-base;
     }
   }

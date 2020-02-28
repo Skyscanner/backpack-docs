@@ -17,7 +17,6 @@
  */
 
 /* @flow strict */
-/* eslint-disable react/no-multi-comp */
 
 import PropTypes from 'prop-types';
 import BpkText from 'bpk-component-text';

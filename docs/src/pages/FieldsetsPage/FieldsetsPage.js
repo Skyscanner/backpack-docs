@@ -176,7 +176,6 @@ class AutosuggestExample extends Component {
   }
 }
 
-// eslint-disable-next-line react/no-multi-comp
 class FieldsetContainer extends Component {
   constructor() {
     super();

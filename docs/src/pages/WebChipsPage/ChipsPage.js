@@ -42,7 +42,7 @@ class DefaultChipContainer extends Component<{}, State> {
 
     this.state = {
       chipNames: ['Example Chip 1', 'Example Chip 2'],
-      nextChipId: 3, // eslint-disable-line react/no-unused-state
+      nextChipId: 3,
     };
   }
 

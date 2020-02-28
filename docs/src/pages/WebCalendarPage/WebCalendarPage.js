@@ -44,7 +44,6 @@ import STYLES from './calendar-page.scss';
 
 const getClassName = cssModules(STYLES);
 
-/* eslint-disable react/no-multi-comp */
 class CalendarNavContainer extends Component {
   constructor() {
     super();
@@ -96,7 +95,6 @@ class CalendarContainer extends Component {
     );
   }
 }
-/* eslint-enable react/no-multi-comp */
 
 const components = [
   {

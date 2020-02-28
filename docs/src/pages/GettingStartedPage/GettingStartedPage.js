@@ -30,9 +30,9 @@ import IntroBlurb from '../../components/IntroBlurb';
 import Code from '../../components/Code';
 import CodeBlock from '../../components/CodeBlock';
 
-// eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
+// eslint-disable-next-line import/no-webpack-loader-syntax, import/extensions
 import iconTemplate from '!!file-loader?name=[name].[hash].sketch!./../../static/icon-template.sketch';
-// eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
+// eslint-disable-next-line import/no-webpack-loader-syntax, import/extensions
 import responsiveGrid from '!!file-loader?name=[name].[hash].sketch!./../../static/responsive-grids.sketch';
 
 const nodeSassUrl = 'https://github.com/sass/node-sass';

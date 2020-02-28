@@ -27,19 +27,22 @@ $bpk-center-content-width-desktop: $bpk-outer-container-width-desktop;
 // Desktop
 $bpk-card-height-desktop: $bpk-spacing-xs * 66;
 $bpk-image-height-desktop: $bpk-spacing-xs * 49;
-$bpk-caption-container-height-desktop: $bpk-card-height-desktop - $bpk-image-height-desktop;
+$bpk-caption-container-height-desktop: $bpk-card-height-desktop -
+  $bpk-image-height-desktop;
 $bpk-card-spacing-desktop: $bpk-spacing-xxl;
 
 // Tablet
 $bpk-card-height-tablet: $bpk-spacing-xs * 45;
 $bpk-image-height-tablet: $bpk-spacing-xs * 33;
-$bpk-caption-container-height-tablet: $bpk-card-height-tablet - $bpk-image-height-tablet;
+$bpk-caption-container-height-tablet: $bpk-card-height-tablet -
+  $bpk-image-height-tablet;
 $bpk-card-spacing-tablet: $bpk-spacing-lg;
 
 // Mobile
 $bpk-card-height-mobile: $bpk-spacing-xs * 37;
 $bpk-image-height-mobile: $bpk-spacing-xs * 27;
-$bpk-caption-container-height-mobile: $bpk-card-height-mobile - $bpk-image-height-mobile;
+$bpk-caption-container-height-mobile: $bpk-card-height-mobile -
+  $bpk-image-height-mobile;
 $bpk-card-spacing-mobile: $bpk-spacing-md;
 
 @mixin bpk-home-page-center-content {

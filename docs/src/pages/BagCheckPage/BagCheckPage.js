@@ -25,10 +25,9 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './bag-check-page.scss';
 
-/* eslint-disable */
 // $FlowFixMe
+/* eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved */
 const bookmarklet = require('!!raw-loader!uglify-loader!babel-loader!../../bag-check-bookmarklet');
-/* eslint-enable */
 
 const getClassName = cssModules(STYLES);
 

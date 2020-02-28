@@ -17,7 +17,7 @@
  */
 
 // Importing like this is required to test the behaviour with NODE_ENV;
-const getSubject = () => require('./google-analytics-helper'); // eslint-disable-line
+const getSubject = () => require('./google-analytics-helper'); // eslint-disable-line global-require
 
 describe('google-analytics-helper', () => {
   const OLD_ENV = process.env;
