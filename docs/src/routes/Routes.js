@@ -33,6 +33,7 @@ import BaseStylesheetPage from '../pages/BaseStylesheetPage';
 import PrinciplesPage from '../pages/PrinciplesPage';
 import StatusPage from '../pages/StatusPage';
 import ColorsPage from '../pages/ColorsPage';
+import AccessibilityPage from '../pages/AccessibilityPage';
 import TypographyPage from '../pages/TypographyPage';
 import TypesettingPage from '../pages/TypesettingPage';
 import RadiiPage from '../pages/RadiiPage';
@@ -166,6 +167,15 @@ export const ROUTES_MAPPINGS = [
     layout: GuidelinesLayout,
     redirect: ROUTES.STRATEGY,
     routes: [
+      {
+        path: ROUTES.ACCESSIBILITY,
+        layout: ({ children }) => children,
+        redirect: ROUTES.ACCESSIBILITY_OVERVIEW,
+        routes: [
+          { path: ROUTES.ACCESSIBILITY_OVERVIEW, component: AccessibilityPage },
+          { path: ROUTES.ACCESSIBILITY_DESIGN, component: AccessibilityPage },
+        ],
+      },
       { path: ROUTES.COLORS, component: ColorsPage },
       { path: ROUTES.COPYWRITING, component: CopywritingPage },
       { path: ROUTES.GRAPHIC_DEVICES, component: GraphicDevicesPage },
