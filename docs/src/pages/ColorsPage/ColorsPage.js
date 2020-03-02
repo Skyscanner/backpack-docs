@@ -52,8 +52,17 @@ const sections = [
   },
   {
     id: 'dynamic-palette',
-    title: 'Dynamic colours',
-    content: dynamicColors,
+    title: 'Dark Mode dynamic colours',
+    content: (
+      <Fragment>
+        <BpkParagraph>
+          Dynamic colours are colour values which automatically adapt for light
+          and dark modes. If you use these colours, the dark-mode variation will
+          automatically be applied when a device&apos;s dark mode is enabled.
+        </BpkParagraph>
+        {dynamicColors}
+      </Fragment>
+    ),
   },
   {
     id: 'pairings',
