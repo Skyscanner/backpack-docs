@@ -67,6 +67,7 @@ export default (props: Props) => {
         {aboveTablet =>
           !aboveTablet && (
             <BpkCloseButton
+              aria-expanded="false"
               label="Open menu"
               onClick={onHamburgerClick}
               customIcon={MenuIcon}
