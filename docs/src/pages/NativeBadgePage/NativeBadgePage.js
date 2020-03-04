@@ -18,17 +18,17 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/packages/react-native-bpk-component-badge/README.md';
-import iosScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-badge/screenshots/ios/default.png';
-import iosScreenshotDockedStart from '../../../../backpack-react-native/packages/react-native-bpk-component-badge/screenshots/ios/docked-start.png';
-import iosScreenshotDockedEnd from '../../../../backpack-react-native/packages/react-native-bpk-component-badge/screenshots/ios/docked-end.png';
-import iosScreenshotWithIcon from '../../../../backpack-react-native/packages/react-native-bpk-component-badge/screenshots/ios/with-icon.png';
-import iosScreenshotWithMultipleIcons from '../../../../backpack-react-native/packages/react-native-bpk-component-badge/screenshots/ios/with-multiple-icons.png';
-import androidScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-badge/screenshots/android/default.png';
-import androidScreenshotDockedStart from '../../../../backpack-react-native/packages/react-native-bpk-component-badge/screenshots/android/docked-start.png';
-import androidScreenshotDockedEnd from '../../../../backpack-react-native/packages/react-native-bpk-component-badge/screenshots/android/docked-end.png';
-import androidScreenshotWithIcon from '../../../../backpack-react-native/packages/react-native-bpk-component-badge/screenshots/android/with-icon.png';
-import androidScreenshotWithMultipleIcons from '../../../../backpack-react-native/packages/react-native-bpk-component-badge/screenshots/android/with-multiple-icons.png';
+import readme from '../../../../backpack-react-native/src/js/bpk-component-badge/README.md';
+import iosScreenshotDefault from '../../../../backpack-react-native/src/js/bpk-component-badge/screenshots/ios/default.png';
+import iosScreenshotDockedStart from '../../../../backpack-react-native/src/js/bpk-component-badge/screenshots/ios/docked-start.png';
+import iosScreenshotDockedEnd from '../../../../backpack-react-native/src/js/bpk-component-badge/screenshots/ios/docked-end.png';
+import iosScreenshotWithIcon from '../../../../backpack-react-native/src/js/bpk-component-badge/screenshots/ios/with-icon.png';
+import iosScreenshotWithMultipleIcons from '../../../../backpack-react-native/src/js/bpk-component-badge/screenshots/ios/with-multiple-icons.png';
+import androidScreenshotDefault from '../../../../backpack-react-native/src/js/bpk-component-badge/screenshots/android/default.png';
+import androidScreenshotDockedStart from '../../../../backpack-react-native/src/js/bpk-component-badge/screenshots/android/docked-start.png';
+import androidScreenshotDockedEnd from '../../../../backpack-react-native/src/js/bpk-component-badge/screenshots/android/docked-end.png';
+import androidScreenshotWithIcon from '../../../../backpack-react-native/src/js/bpk-component-badge/screenshots/android/with-icon.png';
+import androidScreenshotWithMultipleIcons from '../../../../backpack-react-native/src/js/bpk-component-badge/screenshots/android/with-multiple-icons.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

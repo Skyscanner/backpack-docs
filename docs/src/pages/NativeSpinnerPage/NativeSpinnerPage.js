@@ -18,11 +18,11 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/packages/react-native-bpk-component-spinner/README.md';
-import iosScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-spinner/screenshots/ios/default.png';
-import iosScreenshotSmall from '../../../../backpack-react-native/packages/react-native-bpk-component-spinner/screenshots/ios/small.png';
-import androidScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-spinner/screenshots/android/default.png';
-import androidScreenshotSmall from '../../../../backpack-react-native/packages/react-native-bpk-component-spinner/screenshots/android/small.png';
+import readme from '../../../../backpack-react-native/src/js/bpk-component-spinner/README.md';
+import iosScreenshotDefault from '../../../../backpack-react-native/src/js/bpk-component-spinner/screenshots/ios/default.png';
+import iosScreenshotSmall from '../../../../backpack-react-native/src/js/bpk-component-spinner/screenshots/ios/small.png';
+import androidScreenshotDefault from '../../../../backpack-react-native/src/js/bpk-component-spinner/screenshots/android/default.png';
+import androidScreenshotSmall from '../../../../backpack-react-native/src/js/bpk-component-spinner/screenshots/android/small.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

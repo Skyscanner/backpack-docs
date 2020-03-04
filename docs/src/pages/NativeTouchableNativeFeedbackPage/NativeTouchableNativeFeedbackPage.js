@@ -21,8 +21,8 @@ import BpkLink from 'bpk-component-link';
 import BpkText from 'bpk-component-text';
 import BpkBlockquote from 'bpk-component-blockquote';
 
-import readme from '../../../../backpack-react-native/packages/react-native-bpk-component-touchable-native-feedback/README.md';
-import androidScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-touchable-native-feedback/screenshots/default.png';
+import readme from '../../../../backpack-react-native/src/js/bpk-component-touchable-native-feedback/README.md';
+import androidScreenshotDefault from '../../../../backpack-react-native/src/js/bpk-component-touchable-native-feedback/screenshots/default.png';
 import IntroBlurb from '../../components/IntroBlurb';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 import DocsPageWrapper from '../../components/DocsPageWrapper';

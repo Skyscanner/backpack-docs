@@ -18,19 +18,19 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/packages/react-native-bpk-component-card/README.md';
-import iosScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-card/screenshots/ios/default.png';
-import androidScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-card/screenshots/android/default.png';
-import iosScreenshotFocused from '../../../../backpack-react-native/packages/react-native-bpk-component-card/screenshots/ios/focused.png';
-import androidScreenshotFocused from '../../../../backpack-react-native/packages/react-native-bpk-component-card/screenshots/android/focused.png';
-import iosScreenshotCornerStyleLarge from '../../../../backpack-react-native/packages/react-native-bpk-component-card/screenshots/ios/large-corner-style.png';
-import androidScreenshotCornerStyleLarge from '../../../../backpack-react-native/packages/react-native-bpk-component-card/screenshots/android/large-corner-style.png';
-import iosScreenshotWithoutPadding from '../../../../backpack-react-native/packages/react-native-bpk-component-card/screenshots/ios/without-padding.png';
-import androidScreenshotWithoutPadding from '../../../../backpack-react-native/packages/react-native-bpk-component-card/screenshots/android/without-padding.png';
-import iosScreenshotWithDivider from '../../../../backpack-react-native/packages/react-native-bpk-component-card/screenshots/ios/with-divider.png';
-import androidScreenshotWithDivider from '../../../../backpack-react-native/packages/react-native-bpk-component-card/screenshots/android/with-divider.png';
-import iosScreenshotWithDividerArrangedVertically from '../../../../backpack-react-native/packages/react-native-bpk-component-card/screenshots/ios/with-divider-arranged-vertically.png';
-import androidScreenshotWithDividerArrangedVertically from '../../../../backpack-react-native/packages/react-native-bpk-component-card/screenshots/android/with-divider-arranged-vertically.png';
+import readme from '../../../../backpack-react-native/src/js/bpk-component-card/README.md';
+import iosScreenshotDefault from '../../../../backpack-react-native/src/js/bpk-component-card/screenshots/ios/default.png';
+import androidScreenshotDefault from '../../../../backpack-react-native/src/js/bpk-component-card/screenshots/android/default.png';
+import iosScreenshotFocused from '../../../../backpack-react-native/src/js/bpk-component-card/screenshots/ios/focused.png';
+import androidScreenshotFocused from '../../../../backpack-react-native/src/js/bpk-component-card/screenshots/android/focused.png';
+import iosScreenshotCornerStyleLarge from '../../../../backpack-react-native/src/js/bpk-component-card/screenshots/ios/large-corner-style.png';
+import androidScreenshotCornerStyleLarge from '../../../../backpack-react-native/src/js/bpk-component-card/screenshots/android/large-corner-style.png';
+import iosScreenshotWithoutPadding from '../../../../backpack-react-native/src/js/bpk-component-card/screenshots/ios/without-padding.png';
+import androidScreenshotWithoutPadding from '../../../../backpack-react-native/src/js/bpk-component-card/screenshots/android/without-padding.png';
+import iosScreenshotWithDivider from '../../../../backpack-react-native/src/js/bpk-component-card/screenshots/ios/with-divider.png';
+import androidScreenshotWithDivider from '../../../../backpack-react-native/src/js/bpk-component-card/screenshots/android/with-divider.png';
+import iosScreenshotWithDividerArrangedVertically from '../../../../backpack-react-native/src/js/bpk-component-card/screenshots/ios/with-divider-arranged-vertically.png';
+import androidScreenshotWithDividerArrangedVertically from '../../../../backpack-react-native/src/js/bpk-component-card/screenshots/android/with-divider-arranged-vertically.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
