@@ -57,7 +57,11 @@ const BpkDoDont = (props: Props) => {
 
   return (
     <div className={classNames.join(' ')} {...rest}>
-      <BpkText tagName="h3" textStyle="lg" className={textClassNames.join(' ')}>
+      <BpkText
+        tagName="h4"
+        textStyle="base"
+        className={textClassNames.join(' ')}
+      >
         {titleText}
       </BpkText>
       <div className={boxClassNames.join(' ')}>{children}</div>
