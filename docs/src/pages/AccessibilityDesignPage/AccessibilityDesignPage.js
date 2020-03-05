@@ -17,11 +17,15 @@
  */
 
 import React, { Fragment } from 'react';
+import { cssModules } from 'bpk-react-utils';
 
 import InfoPageBuilder from '../../components/InfoPageBuilder';
 
 import DesignColorContrast from './DesignColorContrast';
 import DesignColorAlone from './DesignColorAlone';
+import STYLES from './accessibility-design-page.scss';
+
+const getClassName = cssModules(STYLES);
 
 const sections = [
   {
@@ -29,8 +33,16 @@ const sections = [
     title: 'Colour',
     content: (
       <Fragment>
-        <DesignColorContrast />
-        <DesignColorAlone />
+        <DesignColorContrast
+          className={getClassName(
+            'bpk-docs-accessibility-design-page__section',
+          )}
+        />
+        <DesignColorAlone
+          className={getClassName(
+            'bpk-docs-accessibility-design-page__section',
+          )}
+        />
       </Fragment>
     ),
   },

@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-import React, { Fragment } from 'react';
+import React from 'react';
 import BpkImage, {
   withLazyLoading,
   withLoadingBehavior,
@@ -42,8 +42,8 @@ const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),
 );
 
-const DesignColorAlone = () => (
-  <Fragment>
+const DesignColorAlone = ({ ...rest }) => (
+  <div {...rest}>
     <BpkMarkdownRenderer source={getMarkdownString(colorAlone1)} />
     <div
       className={getClassName(
@@ -99,7 +99,7 @@ const DesignColorAlone = () => (
       </BpkDoDont>
     </div>
     <BpkMarkdownRenderer source={getMarkdownString(colorAlone2)} />
-  </Fragment>
+  </div>
 );
 
 export default DesignColorAlone;

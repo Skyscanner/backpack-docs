@@ -19,6 +19,10 @@
 @import '~bpk-mixins/index';
 
 .bpk-docs-accessibility-design-page {
+  &__section {
+    margin-top: $bpk-spacing-xl;
+  }
+
   &__do-dont-wrapper {
     display: flex;
     flex-direction: row;

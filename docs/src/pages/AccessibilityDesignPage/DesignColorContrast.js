@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-import React, { Fragment } from 'react';
+import React from 'react';
 import BpkButton from 'bpk-component-button';
 import { cssModules } from 'bpk-react-utils';
 
@@ -32,8 +32,8 @@ import colorContrast2 from './content/colorContrast2.md';
 
 const getClassName = cssModules(STYLES);
 
-const DesignColorContrast = () => (
-  <Fragment>
+const DesignColorContrast = ({ ...rest }) => (
+  <div {...rest}>
     <BpkMarkdownRenderer source={getMarkdownString(colorContrast1)} />
     <div
       className={getClassName(
@@ -75,7 +75,7 @@ const DesignColorContrast = () => (
       </BpkDoDont>
     </div>
     <BpkMarkdownRenderer source={getMarkdownString(colorContrast2)} />
-  </Fragment>
+  </div>
 );
 
 export default DesignColorContrast;
