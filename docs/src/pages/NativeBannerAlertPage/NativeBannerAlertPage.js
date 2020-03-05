@@ -18,13 +18,13 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/src/js/bpk-component-banner-alert/README.md';
-import iosScreenshotDefault from '../../../../backpack-react-native/src/js/bpk-component-banner-alert/screenshots/ios/default.png';
-import iosScreenshotDismissable from '../../../../backpack-react-native/src/js/bpk-component-banner-alert/screenshots/ios/dismissable.png';
-import iosScreenshotExpandable from '../../../../backpack-react-native/src/js/bpk-component-banner-alert/screenshots/ios/expandable.png';
-import androidScreenshotDefault from '../../../../backpack-react-native/src/js/bpk-component-banner-alert/screenshots/android/default.png';
-import androidScreenshotDismissable from '../../../../backpack-react-native/src/js/bpk-component-banner-alert/screenshots/android/dismissable.png';
-import androidScreenshotExpandable from '../../../../backpack-react-native/src/js/bpk-component-banner-alert/screenshots/android/expandable.png';
+import readme from '../../../../backpack-react-native/lib/bpk-component-banner-alert/README.md';
+import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-banner-alert/screenshots/ios/default.png';
+import iosScreenshotDismissable from '../../../../backpack-react-native/lib/bpk-component-banner-alert/screenshots/ios/dismissable.png';
+import iosScreenshotExpandable from '../../../../backpack-react-native/lib/bpk-component-banner-alert/screenshots/ios/expandable.png';
+import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-banner-alert/screenshots/android/default.png';
+import androidScreenshotDismissable from '../../../../backpack-react-native/lib/bpk-component-banner-alert/screenshots/android/dismissable.png';
+import androidScreenshotExpandable from '../../../../backpack-react-native/lib/bpk-component-banner-alert/screenshots/android/expandable.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

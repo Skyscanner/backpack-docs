@@ -18,9 +18,9 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/src/js/bpk-component-button-link/README.md';
-import iosScreenshot from '../../../../backpack-react-native/src/js/bpk-component-button-link/screenshots/ios/default.png';
-import androidScreenshot from '../../../../backpack-react-native/src/js/bpk-component-button-link/screenshots/android/default.png';
+import readme from '../../../../backpack-react-native/lib/bpk-component-button-link/README.md';
+import iosScreenshot from '../../../../backpack-react-native/lib/bpk-component-button-link/screenshots/ios/default.png';
+import androidScreenshot from '../../../../backpack-react-native/lib/bpk-component-button-link/screenshots/android/default.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
