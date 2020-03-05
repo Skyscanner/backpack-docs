@@ -18,11 +18,11 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/src/js/bpk-component-text-input/README.md';
-import iosScreenshot from '../../../../backpack-react-native/src/js/bpk-component-text-input/screenshots/ios/text-inputs.png';
-import iosScreenshotWithAccessoryView from '../../../../backpack-react-native/src/js/bpk-component-text-input/screenshots/ios/text-inputs-with-accessory-view.png';
-import androidScreenshot from '../../../../backpack-react-native/src/js/bpk-component-text-input/screenshots/android/text-inputs.png';
-import androidScreenshotWithAccessoryView from '../../../../backpack-react-native/src/js/bpk-component-text-input/screenshots/android/text-inputs-with-accessory-view.png';
+import readme from '../../../../backpack-react-native/lib/bpk-component-text-input/README.md';
+import iosScreenshot from '../../../../backpack-react-native/lib/bpk-component-text-input/screenshots/ios/text-inputs.png';
+import iosScreenshotWithAccessoryView from '../../../../backpack-react-native/lib/bpk-component-text-input/screenshots/ios/text-inputs-with-accessory-view.png';
+import androidScreenshot from '../../../../backpack-react-native/lib/bpk-component-text-input/screenshots/android/text-inputs.png';
+import androidScreenshotWithAccessoryView from '../../../../backpack-react-native/lib/bpk-component-text-input/screenshots/android/text-inputs-with-accessory-view.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

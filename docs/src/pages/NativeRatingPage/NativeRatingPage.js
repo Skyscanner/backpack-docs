@@ -19,13 +19,13 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/src/js/bpk-component-rating/README.md';
-import androidScreenshotDefault from '../../../../backpack-react-native/src/js/bpk-component-rating/screenshots/android/default.png';
-import androidScreenshotSizes from '../../../../backpack-react-native/src/js/bpk-component-rating/screenshots/android/sizes.png';
-import androidScreenshotVertical from '../../../../backpack-react-native/src/js/bpk-component-rating/screenshots/android/vertical.png';
-import iosScreenshotDefault from '../../../../backpack-react-native/src/js/bpk-component-rating/screenshots/ios/default.png';
-import iosScreenshotSizes from '../../../../backpack-react-native/src/js/bpk-component-rating/screenshots/ios/sizes.png';
-import iosScreenshotVertical from '../../../../backpack-react-native/src/js/bpk-component-rating/screenshots/ios/vertical.png';
+import readme from '../../../../backpack-react-native/lib/bpk-component-rating/README.md';
+import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-rating/screenshots/android/default.png';
+import androidScreenshotSizes from '../../../../backpack-react-native/lib/bpk-component-rating/screenshots/android/sizes.png';
+import androidScreenshotVertical from '../../../../backpack-react-native/lib/bpk-component-rating/screenshots/android/vertical.png';
+import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-rating/screenshots/ios/default.png';
+import iosScreenshotSizes from '../../../../backpack-react-native/lib/bpk-component-rating/screenshots/ios/sizes.png';
+import iosScreenshotVertical from '../../../../backpack-react-native/lib/bpk-component-rating/screenshots/ios/vertical.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

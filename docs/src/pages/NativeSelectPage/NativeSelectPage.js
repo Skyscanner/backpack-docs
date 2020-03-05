@@ -19,9 +19,9 @@
 import React from 'react';
 
 import IntroBlurb from '../../components/IntroBlurb';
-import readme from '../../../../backpack-react-native/src/js/bpk-component-select/README.md';
-import iosScreenshotDefault from '../../../../backpack-react-native/src/js/bpk-component-select/screenshots/ios/default.png';
-import androidScreenshotDefault from '../../../../backpack-react-native/src/js/bpk-component-select/screenshots/android/default.png';
+import readme from '../../../../backpack-react-native/lib/bpk-component-select/README.md';
+import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-select/screenshots/ios/default.png';
+import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-select/screenshots/android/default.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

@@ -18,9 +18,9 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/src/js/bpk-component-picker/README.md';
-import iosScreenshotDefault from '../../../../backpack-react-native/src/js/bpk-component-picker/screenshots/ios/default.png';
-import androidScreenshotDefault from '../../../../backpack-react-native/src/js/bpk-component-picker/screenshots/android/default.png';
+import readme from '../../../../backpack-react-native/lib/bpk-component-picker/README.md';
+import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-picker/screenshots/ios/default.png';
+import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-picker/screenshots/android/default.png';
 import IntroBlurb from '../../components/IntroBlurb';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 import DocsPageWrapper from '../../components/DocsPageWrapper';

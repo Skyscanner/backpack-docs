@@ -18,13 +18,13 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/src/js/bpk-component-dialog/README.md';
-import iosScreenshotSimple from '../../../../backpack-react-native/src/js/bpk-component-dialog/screenshots/ios/simple.png';
-import iosScreenshotOption from '../../../../backpack-react-native/src/js/bpk-component-dialog/screenshots/ios/option.png';
-import iosScreenshotBottom from '../../../../backpack-react-native/src/js/bpk-component-dialog/screenshots/ios/bottom.png';
-import androidScreenshotSimple from '../../../../backpack-react-native/src/js/bpk-component-dialog/screenshots/android/simple.png';
-import androidScreenshotOption from '../../../../backpack-react-native/src/js/bpk-component-dialog/screenshots/android/option.png';
-import androidScreenshotBottom from '../../../../backpack-react-native/src/js/bpk-component-dialog/screenshots/android/bottom.png';
+import readme from '../../../../backpack-react-native/lib/bpk-component-dialog/README.md';
+import iosScreenshotSimple from '../../../../backpack-react-native/lib/bpk-component-dialog/screenshots/ios/simple.png';
+import iosScreenshotOption from '../../../../backpack-react-native/lib/bpk-component-dialog/screenshots/ios/option.png';
+import iosScreenshotBottom from '../../../../backpack-react-native/lib/bpk-component-dialog/screenshots/ios/bottom.png';
+import androidScreenshotSimple from '../../../../backpack-react-native/lib/bpk-component-dialog/screenshots/android/simple.png';
+import androidScreenshotOption from '../../../../backpack-react-native/lib/bpk-component-dialog/screenshots/android/option.png';
+import androidScreenshotBottom from '../../../../backpack-react-native/lib/bpk-component-dialog/screenshots/android/bottom.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

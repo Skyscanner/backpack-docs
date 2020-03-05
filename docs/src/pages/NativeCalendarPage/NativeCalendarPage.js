@@ -18,12 +18,12 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/src/js/bpk-component-calendar/README.md';
-import iosScreenshotSingle from '../../../../backpack-react-native/src/js/bpk-component-calendar/screenshots/ios/single.png';
-import iosScreenshotMultiple from '../../../../backpack-react-native/src/js/bpk-component-calendar/screenshots/ios/multiple.png';
-import iosScreenshotRange from '../../../../backpack-react-native/src/js/bpk-component-calendar/screenshots/ios/range.png';
-import androidScreenshotRange from '../../../../backpack-react-native/src/js/bpk-component-calendar/screenshots/android/range.png';
-import androidScreenshotSingle from '../../../../backpack-react-native/src/js/bpk-component-calendar/screenshots/android/single.png';
+import readme from '../../../../backpack-react-native/lib/bpk-component-calendar/README.md';
+import iosScreenshotSingle from '../../../../backpack-react-native/lib/bpk-component-calendar/screenshots/ios/single.png';
+import iosScreenshotMultiple from '../../../../backpack-react-native/lib/bpk-component-calendar/screenshots/ios/multiple.png';
+import iosScreenshotRange from '../../../../backpack-react-native/lib/bpk-component-calendar/screenshots/ios/range.png';
+import androidScreenshotRange from '../../../../backpack-react-native/lib/bpk-component-calendar/screenshots/android/range.png';
+import androidScreenshotSingle from '../../../../backpack-react-native/lib/bpk-component-calendar/screenshots/android/single.png';
 import androidEmpty from '../../static/android_empty.svg';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
