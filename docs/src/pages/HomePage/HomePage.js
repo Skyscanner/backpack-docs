@@ -26,6 +26,7 @@ import * as ROUTES from '../../constants/routes';
 import HomePageCard from '../../components/HomePageCard';
 import ComponentsImage from '../../static/components_hero.jpg';
 import DesignTokensImage from '../../static/design_tokens.jpg';
+import RequestImage from '../../static/request.jpg';
 import GitHubImage from '../../static/github.jpg';
 import UsingBackpackImage from '../../static/using_bpk.jpg';
 import GuidelinesImage from '../../static/guidelines.png';
@@ -48,11 +49,11 @@ const getClassName = cssModules(STYLES);
 
 const CARD_CONTENTS = [
   {
-    key: 'using-backpack',
-    title: 'Using Backpack',
-    href: ROUTES.GETTING_STARTED,
-    image: UsingBackpackImage,
-    icon: UsingBackpackIcon,
+    key: 'components',
+    title: 'Components',
+    href: ROUTES.COMPONENTS,
+    image: ComponentsImage,
+    icon: ComponentsIcon,
   },
   {
     key: 'guidelines',
@@ -62,19 +63,26 @@ const CARD_CONTENTS = [
     icon: GuidelinesIcon,
   },
   {
-    key: 'components',
-    title: 'Components',
-    href: ROUTES.COMPONENTS,
-    image: ComponentsImage,
-    icon: ComponentsIcon,
-    fullWidth: true,
-  },
-  {
     key: 'design-tokens',
     title: 'Design tokens',
     href: ROUTES.TOKENS,
     image: DesignTokensImage,
     icon: DesignTokensIcon,
+  },
+  {
+    key: 'using-backpack',
+    title: 'Using Backpack',
+    href: ROUTES.GETTING_STARTED,
+    image: UsingBackpackImage,
+    icon: UsingBackpackIcon,
+  },
+  {
+    key: 'requests',
+    title: 'Make a request',
+    href: 'http://bit.ly/backpack-request',
+    blank: true,
+    image: RequestImage,
+    icon: null,
   },
   {
     key: 'github',

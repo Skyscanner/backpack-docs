@@ -40,8 +40,8 @@ import STYLES from './BpkMarkdownRenderer.scss';
 
 const getClassName = cssModules(STYLES);
 
-const TAG_NAMES = ['h1', 'h1', 'h2', 'h3'];
-const TEXT_STYLES = ['xxl', 'xxl', 'xl', 'lg'];
+const TAG_NAMES = ['h1', 'h1', 'h2', 'h3', 'h4'];
+const TEXT_STYLES = ['xxl', 'xxl', 'xl', 'lg', 'base'];
 
 export type Props = {
   darkBackground: boolean,

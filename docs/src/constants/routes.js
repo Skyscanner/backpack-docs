@@ -31,6 +31,9 @@ export const PRINCIPLES = '/using/principles';
 export const STATUS = '/using/status';
 
 // guidelines
+export const ACCESSIBILITY = '/guidelines/accessibility';
+export const ACCESSIBILITY_OVERVIEW = '/guidelines/accessibility/overview';
+export const ACCESSIBILITY_DESIGN = '/guidelines/accessibility/design';
 export const COLORS = '/guidelines/colors';
 export const COPYWRITING = '/guidelines/copywriting';
 export const GRAPHIC_DEVICES = '/guidelines/graphic-devices';

@@ -75,12 +75,14 @@ const HomePageCard = (props: Props) => {
             style={{ backgroundImage: `url(${image})` }}
             alt={title}
           />
-          <img
-            src={icon}
-            alt={title}
-            className={iconClassNames}
-            style={{ width: iconWidth }}
-          />
+          {icon && (
+            <img
+              src={icon}
+              alt={title}
+              className={iconClassNames}
+              style={{ width: iconWidth }}
+            />
+          )}
         </div>
         <BpkText
           tagName="h2"
@@ -98,7 +100,7 @@ HomePageCard.propTypes = {
   title: PropTypes.string.isRequired,
   href: PropTypes.string,
   image: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.string,
   blank: PropTypes.bool,
   centerIcon: PropTypes.bool,
   iconWidth: PropTypes.string,
@@ -107,6 +109,7 @@ HomePageCard.propTypes = {
 
 HomePageCard.defaultProps = {
   centerIcon: false,
+  icon: null,
   blank: false,
   href: null,
   iconWidth: null,

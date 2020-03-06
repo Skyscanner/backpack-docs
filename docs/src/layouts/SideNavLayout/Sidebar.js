@@ -61,6 +61,7 @@ export default (props: Props) => {
           {isTablet =>
             isTablet && (
               <BpkCloseButton
+                aria-expanded="true"
                 label="Close menu"
                 onClick={onMobileModalClose}
                 className={getClassName('bpkdocs-sidebar__close-button')}

@@ -18,15 +18,15 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/packages/react-native-bpk-component-chip/README.md';
-import iosScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-chip/screenshots/ios/default.png';
-import iosScreenshotDismissible from '../../../../backpack-react-native/packages/react-native-bpk-component-chip/screenshots/ios/dismissible.png';
-import iosScreenshotOutline from '../../../../backpack-react-native/packages/react-native-bpk-component-chip/screenshots/ios/outline.png';
-import iosScreenshotOutlineDismissible from '../../../../backpack-react-native/packages/react-native-bpk-component-chip/screenshots/ios/outlineDismissible.png';
-import androidScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-chip/screenshots/android/default.png';
-import androidScreenshotDismissible from '../../../../backpack-react-native/packages/react-native-bpk-component-chip/screenshots/android/dismissible.png';
-import androidScreenshotOutline from '../../../../backpack-react-native/packages/react-native-bpk-component-chip/screenshots/android/outline.png';
-import androidScreenshotOutlineDismissible from '../../../../backpack-react-native/packages/react-native-bpk-component-chip/screenshots/android/outlineDismissible.png';
+import readme from '../../../../backpack-react-native/lib/bpk-component-chip/README.md';
+import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/ios/default.png';
+import iosScreenshotDismissible from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/ios/dismissible.png';
+import iosScreenshotOutline from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/ios/outline.png';
+import iosScreenshotOutlineDismissible from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/ios/outlineDismissible.png';
+import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/android/default.png';
+import androidScreenshotDismissible from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/android/dismissible.png';
+import androidScreenshotOutline from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/android/outline.png';
+import androidScreenshotOutlineDismissible from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/android/outlineDismissible.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

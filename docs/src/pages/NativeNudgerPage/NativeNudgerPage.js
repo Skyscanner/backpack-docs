@@ -18,9 +18,9 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/packages/react-native-bpk-component-nudger/README.md';
-import iosScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-nudger/screenshots/ios/default.png';
-import androidScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-nudger/screenshots/android/default.png';
+import readme from '../../../../backpack-react-native/lib/bpk-component-nudger/README.md';
+import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-nudger/screenshots/ios/default.png';
+import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-nudger/screenshots/android/default.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [

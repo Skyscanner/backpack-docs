@@ -18,13 +18,13 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/packages/react-native-bpk-component-section-list/README.md';
-import iosScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-section-list/screenshots/ios/default.png';
-import androidScreenshotDefault from '../../../../backpack-react-native/packages/react-native-bpk-component-section-list/screenshots/android/default.png';
-import iosScreenshotWithImages from '../../../../backpack-react-native/packages/react-native-bpk-component-section-list/screenshots/ios/with-images.png';
-import androidScreenshotWithImages from '../../../../backpack-react-native/packages/react-native-bpk-component-section-list/screenshots/android/with-images.png';
-import iosScreenshotWithSearch from '../../../../backpack-react-native/packages/react-native-bpk-component-section-list/screenshots/ios/with-search.png';
-import androidScreenshotWithSearch from '../../../../backpack-react-native/packages/react-native-bpk-component-section-list/screenshots/android/with-search.png';
+import readme from '../../../../backpack-react-native/lib/bpk-component-section-list/README.md';
+import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-section-list/screenshots/ios/default.png';
+import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-section-list/screenshots/android/default.png';
+import iosScreenshotWithImages from '../../../../backpack-react-native/lib/bpk-component-section-list/screenshots/ios/with-images.png';
+import androidScreenshotWithImages from '../../../../backpack-react-native/lib/bpk-component-section-list/screenshots/android/with-images.png';
+import iosScreenshotWithSearch from '../../../../backpack-react-native/lib/bpk-component-section-list/screenshots/ios/with-search.png';
+import androidScreenshotWithSearch from '../../../../backpack-react-native/lib/bpk-component-section-list/screenshots/android/with-search.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
