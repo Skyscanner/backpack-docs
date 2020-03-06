@@ -26,6 +26,7 @@ import * as ROUTES from '../../constants/routes';
 import HomePageCard from '../../components/HomePageCard';
 import ComponentsImage from '../../static/components_hero.jpg';
 import DesignTokensImage from '../../static/design_tokens.jpg';
+import RequestImage from '../../static/request.jpg';
 import GitHubImage from '../../static/github.jpg';
 import UsingBackpackImage from '../../static/using_bpk.jpg';
 import GuidelinesImage from '../../static/guidelines.png';
@@ -67,7 +68,6 @@ const CARD_CONTENTS = [
     href: ROUTES.COMPONENTS,
     image: ComponentsImage,
     icon: ComponentsIcon,
-    fullWidth: true,
   },
   {
     key: 'design-tokens',
@@ -75,6 +75,14 @@ const CARD_CONTENTS = [
     href: ROUTES.TOKENS,
     image: DesignTokensImage,
     icon: DesignTokensIcon,
+  },
+  {
+    key: 'requests',
+    title: 'Request',
+    href: 'http://bit.ly/backpack-request',
+    blank: true,
+    image: RequestImage,
+    icon: null,
   },
   {
     key: 'github',
