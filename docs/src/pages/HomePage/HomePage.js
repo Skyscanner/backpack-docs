@@ -49,11 +49,11 @@ const getClassName = cssModules(STYLES);
 
 const CARD_CONTENTS = [
   {
-    key: 'using-backpack',
-    title: 'Using Backpack',
-    href: ROUTES.GETTING_STARTED,
-    image: UsingBackpackImage,
-    icon: UsingBackpackIcon,
+    key: 'components',
+    title: 'Components',
+    href: ROUTES.COMPONENTS,
+    image: ComponentsImage,
+    icon: ComponentsIcon,
   },
   {
     key: 'guidelines',
@@ -63,13 +63,6 @@ const CARD_CONTENTS = [
     icon: GuidelinesIcon,
   },
   {
-    key: 'components',
-    title: 'Components',
-    href: ROUTES.COMPONENTS,
-    image: ComponentsImage,
-    icon: ComponentsIcon,
-  },
-  {
     key: 'design-tokens',
     title: 'Design tokens',
     href: ROUTES.TOKENS,
@@ -77,8 +70,15 @@ const CARD_CONTENTS = [
     icon: DesignTokensIcon,
   },
   {
+    key: 'using-backpack',
+    title: 'Using Backpack',
+    href: ROUTES.GETTING_STARTED,
+    image: UsingBackpackImage,
+    icon: UsingBackpackIcon,
+  },
+  {
     key: 'requests',
-    title: 'Request',
+    title: 'Make a request',
     href: 'http://bit.ly/backpack-request',
     blank: true,
     image: RequestImage,
