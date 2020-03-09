@@ -130,6 +130,7 @@ export const CAROUSEL = '/components/carousel';
 export const INFINITE_SCROLL = '/components/infinite-scroll';
 export const BREADCRUMB = '/components/breadcrumb';
 export const FLARE = '/components/flare';
+export const BOTTOM_NAV = '/components/bottom-nav';
 
 export const ALIGNMENT = '/components/alignment';
 export const THEMING = '/components/theming';
