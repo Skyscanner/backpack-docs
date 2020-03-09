@@ -53,6 +53,7 @@ const AndroidBottomNavPage = ({ ...rest }) => (
     title="Bottom Nav"
     components={components}
     readme={readme}
+    androidDocId="net.skyscanner.backpack.bottomnav"
     {...rest}
   />
 );
