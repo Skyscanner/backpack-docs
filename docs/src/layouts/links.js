@@ -39,6 +39,12 @@ const ComponentsLinks = [
         tags: ['ios'],
       },
       {
+        id: 'BOTTOM_NAV',
+        route: routes.BOTTOM_NAV,
+        children: 'Bottom Nav',
+        tags: ['android'],
+      },
+      {
         id: 'TEXT',
         route: routes.TEXT,
         children: 'Text',

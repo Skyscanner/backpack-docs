@@ -60,6 +60,7 @@ import BadgePage from '../pages/BadgePage';
 import BannerAlertPage from '../pages/BannerAlertPage';
 import BarchartsPage from '../pages/BarchartsPage';
 import BottomSheetPage from '../pages/BottomSheetPage';
+import BottomNavPage from '../pages/BottomNavPage';
 import BlockquotesPage from '../pages/BlockquotesPage';
 import BreakpointsPage from '../pages/BreakpointsPage';
 import BreadcrumbPage from '../pages/BreadcrumbPage';
@@ -211,6 +212,10 @@ export const ROUTES_MAPPINGS = [
       {
         path: ROUTES.BOTTOM_SHEET,
         component: BottomSheetPage,
+      },
+      {
+        path: ROUTES.BOTTOM_NAV,
+        component: BottomNavPage,
       },
       {
         path: ROUTES.BLOCKQUOTE,
