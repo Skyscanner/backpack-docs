@@ -558,4 +558,9 @@ export default [
       { id: 'COPYWRITING', route: routes.COPYWRITING, children: 'Copywriting' },
     ],
   },
+  {
+    id: 'MISC',
+    category: 'Miscellaneous',
+    links: [{ id: 'SASSDOC', route: '/sassdoc', children: 'SassDoc' }],
+  },
 ];

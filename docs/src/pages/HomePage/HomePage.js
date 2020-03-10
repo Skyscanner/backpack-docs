@@ -27,6 +27,7 @@ import HomePageCard from '../../components/HomePageCard';
 import ComponentsImage from '../../static/components_hero.jpg';
 import DesignTokensImage from '../../static/design_tokens.jpg';
 import RequestImage from '../../static/request.jpg';
+import SassDocImage from '../../static/sassdoc.jpg';
 import GitHubImage from '../../static/github.jpg';
 import UsingBackpackImage from '../../static/using_bpk.jpg';
 import GuidelinesImage from '../../static/guidelines.png';
@@ -68,6 +69,7 @@ const CARD_CONTENTS = [
     href: ROUTES.TOKENS,
     image: DesignTokensImage,
     icon: DesignTokensIcon,
+    fullWidth: true,
   },
   {
     key: 'using-backpack',
@@ -75,6 +77,14 @@ const CARD_CONTENTS = [
     href: ROUTES.GETTING_STARTED,
     image: UsingBackpackImage,
     icon: UsingBackpackIcon,
+  },
+  {
+    key: 'sassdoc',
+    title: 'SassDoc',
+    href: '/sassdoc',
+    blank: true,
+    image: SassDocImage,
+    icon: null,
   },
   {
     key: 'requests',
