@@ -90,7 +90,11 @@ class PageSearch extends Component<Props, State> {
     if (this.props.onClick) {
       this.props.onClick();
     }
-    this.props.history.push(suggestion.route);
+    if (suggestion.blank) {
+      window.open(suggestion.route);
+    } else {
+      this.props.history.push(suggestion.route);
+    }
   };
 
   onSuggestionsClearRequested = () => {
