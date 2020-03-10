@@ -23,6 +23,7 @@ import BpkText from 'bpk-component-text';
 import { cssModules } from 'bpk-react-utils';
 
 import * as ROUTES from '../../constants/routes';
+import * as EXTERNAL_ROUTES from '../../constants/external-routes';
 import HomePageCard from '../../components/HomePageCard';
 import ComponentsImage from '../../static/components_hero.jpg';
 import DesignTokensImage from '../../static/design_tokens.jpg';
@@ -89,7 +90,7 @@ const CARD_CONTENTS = [
   {
     key: 'requests',
     title: 'Make a request',
-    href: 'http://bit.ly/backpack-request',
+    href: EXTERNAL_ROUTES.REQUEST,
     blank: true,
     image: RequestImage,
     icon: null,
@@ -97,7 +98,7 @@ const CARD_CONTENTS = [
   {
     key: 'github',
     title: 'GitHub',
-    href: 'https://github.com/skyscanner/backpack',
+    href: EXTERNAL_ROUTES.GITHUB,
     blank: true,
     image: GitHubImage,
     icon: GitHubIcon,

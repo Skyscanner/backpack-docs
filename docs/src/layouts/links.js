@@ -19,6 +19,7 @@
 /* @flow strict */
 
 import * as routes from '../constants/routes';
+import * as externalRoutes from '../constants/external-routes';
 import ComponentsImage from '../static/components_hero.jpg';
 import UsingBackpackImage from '../static/using_backpack_hero.jpg';
 import DesignTokensImage from '../static/design_hero.jpg';
@@ -561,6 +562,20 @@ export default [
   {
     id: 'MISC',
     category: 'Miscellaneous',
-    links: [{ id: 'SASSDOC', route: '/sassdoc', children: 'SassDoc' }],
+    links: [
+      { id: 'SASSDOC', route: '/sassdoc', children: 'SassDoc' },
+      {
+        id: 'GITHUB',
+        route: externalRoutes.GITHUB,
+        children: 'GitHub',
+        blank: true,
+      },
+      {
+        id: 'REQUESTS',
+        route: externalRoutes.REQUEST,
+        children: 'Request',
+        blank: true,
+      },
+    ],
   },
 ];
