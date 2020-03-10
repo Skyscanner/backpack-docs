@@ -226,26 +226,6 @@
       }
     }
   },
-  "greenkeeper": {
-    "ignore": [
-      "babel-loader",
-      "copy-webpack-plugin",
-      "css-loader",
-      "danger",
-      "file-loader",
-      "json-loader",
-      "postcss-loader",
-      "raw-loader",
-      "react",
-      "react-dom",
-      "react-test-renderer",
-      "sass-loader",
-      "style-loader",
-      "webpack",
-      "webpack-dev-server",
-      "zip-it-loader"
-    ]
-  },
   "browserslist": [
     ">1%",
     "last 4 versions",
