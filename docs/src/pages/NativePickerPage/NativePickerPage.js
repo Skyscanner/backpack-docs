@@ -29,8 +29,6 @@ const components = [
   {
     id: 'default',
     title: 'Default',
-    blurb:
-      'Picker trigger elements which display the currently selected value and can be tapped to present the actual picker.',
     screenshots: [
       {
         title: 'iOS',
@@ -54,8 +52,8 @@ const components = [
 
 const blurb = [
   <IntroBlurb>
-    Pickers let the user pick a single option from a limited list of possible
-    options in a modal context.
+    Pickers are used for selecting an option from a short list in a modal
+    context.
   </IntroBlurb>,
 ];
 
@@ -65,6 +63,12 @@ const NativePickerSubPage = ({ ...rest }) => (
     components={components}
     readme={readme}
     showMenu
+    usageTable={{
+      dos: ['Use for short lists of options.'],
+      donts: [
+        'Use for lots of options where the user may need to scroll a lot, for example a list of countries. In this situation, consider using a FlatList.',
+      ],
+    }}
     {...rest}
   />
 );
