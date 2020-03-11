@@ -144,10 +144,12 @@ const DocsPageWrapper = props => {
     return !!platforms[platformPreference];
   };
 
-  let initiallySelectedPlatform = 'design';
+  let initiallySelectedPlatform = null;
   const platformFromLocalStorage = getPlatformFromLocalStorage();
   if (canUsePlatformPreference(platformFromLocalStorage)) {
     initiallySelectedPlatform = platformFromLocalStorage;
+  } else if (designSubpage) {
+    initiallySelectedPlatform = 'design';
   } else if (androidSubpage) {
     initiallySelectedPlatform = 'android';
   } else if (iosSubpage) {
