@@ -563,7 +563,7 @@ export default [
     id: 'MISC',
     category: 'Miscellaneous',
     links: [
-      { id: 'SASSDOC', route: '/sassdoc', children: 'SassDoc' },
+      { id: 'SASSDOC', route: '/sassdoc', children: 'SassDoc', blank: true },
       {
         id: 'GITHUB',
         route: externalRoutes.GITHUB,
