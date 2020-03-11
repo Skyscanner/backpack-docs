@@ -141,7 +141,6 @@ type DismissDemoState = {
   dirty: boolean,
   bannerAlerts: Array<BannerAlertConfig>,
 };
-// eslint-disable-next-line react/no-multi-comp
 class BpkBannerAlertDismissDemo extends Component<any, DismissDemoState> {
   reset: Function;
 
@@ -241,7 +240,6 @@ type FadeDemoProps = {
 type FadeDemoState = {
   bannerAlertCount: number,
 };
-// eslint-disable-next-line react/no-multi-comp
 class BpkBannerAlertFadeDemo extends Component<FadeDemoProps, FadeDemoState> {
   addBannerAlert: Function;
 

@@ -133,7 +133,7 @@ TokenSwitcher.defaultProps = {
 export default TokenSwitcher;
 
 export const connect = (tokenSwitcher, table) => {
-  /* eslint-disable react/no-multi-comp, react/no-this-in-sfc */
+  /* eslint-disable react/no-this-in-sfc */
   class SwitchAwareTable extends Component {
     constructor(props) {
       super(props);

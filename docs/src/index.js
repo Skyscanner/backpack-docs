@@ -39,7 +39,7 @@ const ScrollToTop = withRouter(
   class extends React.Component {
     static propTypes = {
       children: PropTypes.node.isRequired,
-      location: PropTypes.object.isRequired, // eslint-disable-line
+      location: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
     };
 
     componentDidUpdate(prevProps) {

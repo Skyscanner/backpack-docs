@@ -28,7 +28,7 @@ const components = [
     id: 'default',
     title: 'Default',
     blurb:
-      'By default, star ratings are shown in a static form. These can be set at half star intervals. ', // eslint-disable-line max-len
+      'By default, star ratings are shown in a static form. These can be set at half star intervals. ',
     screenshots: [
       {
         title: 'Android',

@@ -20,7 +20,8 @@
 
 $bpk-docs-content-grid-card-max-width: $bpk-spacing-xxl * 9;
 $bpk-docs-content-grid-card-margin: $bpk-spacing-base;
-$bpk-docs-content-grid-max-width: ($bpk-docs-content-grid-card-max-width * 2) + ($bpk-docs-content-grid-card-margin * 2);
+$bpk-docs-content-grid-max-width: ($bpk-docs-content-grid-card-max-width * 2) +
+  ($bpk-docs-content-grid-card-margin * 2);
 
 .bpk-docs-content-grid {
   display: flex;

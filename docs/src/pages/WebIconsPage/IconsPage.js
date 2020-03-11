@@ -34,7 +34,7 @@ import IntroBlurb from '../../components/IntroBlurb';
 import Code from '../../components/Code';
 
 // This file can actually be resolved eslint is just confused
-// eslint-disable-next-line import/no-webpack-loader-syntax, import/extensions, import/no-unresolved
+// eslint-disable-next-line import/no-webpack-loader-syntax, import/extensions
 import iconsSvgs from '!!file-loader?name=[name].[hash].zip!zip-it-loader!./../../../../backpack/packages/bpk-svgs/src/icons/icons';
 
 const AlignedBpkSmallDownloadIcon = withButtonAlignment(BpkSmallDownloadIcon);
