@@ -118,7 +118,7 @@ const ComponentsLinks = [
         id: 'ICON',
         route: routes.ICON,
         children: 'Icon',
-        tags: ['web', 'native', 'android', 'ios'],
+        tags: ['design', 'web', 'native', 'android', 'ios'],
       },
       {
         id: 'SPINNER',
