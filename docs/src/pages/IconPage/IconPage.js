@@ -22,6 +22,7 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
+import IconsDesignPage from '../IconsDesignPage';
 import Android from '../AndroidIconPage';
 import IOS from '../IOSIconPage';
 import Web from '../WebIconsPage';
@@ -35,6 +36,7 @@ const Page = () => (
         A suite of icons for representing concepts, features and actions.
       </IntroBlurb>,
     ]}
+    designSubpage={<IconsDesignPage wrapped />}
     androidSubpage={<Android wrapped />}
     iosSubpage={<IOS wrapped />}
     webSubpage={<Web wrapped />}

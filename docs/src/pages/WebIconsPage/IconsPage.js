@@ -16,76 +16,33 @@
  * limitations under the License.
  */
 
-import _ from 'lodash';
 import React from 'react';
 import BpkLink from 'bpk-component-link';
-import BpkButton from 'bpk-component-button';
-import { withButtonAlignment } from 'bpk-component-icon';
-import BpkSmallDownloadIcon from 'bpk-component-icon/sm/download';
-import icons from 'bpk-component-icon/all';
 import iconReadme from 'bpk-component-icon/README.md';
 
 import * as ROUTES from '../../constants/routes';
-import IconSearchApp from '../../components/IconSearchApp';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
-import Heading from '../../components/Heading';
 import Paragraph from '../../components/Paragraph';
-import IntroBlurb from '../../components/IntroBlurb';
 import Code from '../../components/Code';
 
-// This file can actually be resolved eslint is just confused
-// eslint-disable-next-line import/no-webpack-loader-syntax, import/extensions
-import iconsSvgs from '!!file-loader?name=[name].[hash].zip!zip-it-loader!./../../../../backpack/packages/bpk-svgs/src/icons/icons';
-
-const AlignedBpkSmallDownloadIcon = withButtonAlignment(BpkSmallDownloadIcon);
-
-const friendlyNameMap = {
-  sm: 'Small',
-  lg: 'Large',
-};
-
-const getFriendlyName = id => friendlyNameMap[id] || id;
-
-const iconsFinal = _(icons)
-  .flatMap((category, categoryId) =>
-    Object.keys(category).map(name => ({
-      name,
-      categoryId,
-      categoryName: getFriendlyName(categoryId),
-      component: category[name],
-    })),
-  )
-  .value();
-
-const blurb = [
-  <IntroBlurb>
-    Icons are provided in two sizes: small (18px) and large (24px). Both are
-    pixel-snapped for clarity at the intended usage sizes.
-  </IntroBlurb>,
-  <Paragraph>
-    <BpkButton href={`/${iconsSvgs}`}>
-      Download SVG files <AlignedBpkSmallDownloadIcon />
-    </BpkButton>
-  </Paragraph>,
-  <Paragraph>
-    The <BpkLink href="#readme">readme</BpkLink> for the component is available
-    below the search tool.
-  </Paragraph>,
-  <Heading level="h2">Find the right icon</Heading>,
-  <IconSearchApp icons={iconsFinal} />,
-  <Heading level="h2">Aligning icons within components</Heading>,
-  <Paragraph>
-    The <BpkLink href={ROUTES.ALIGNMENT}>Alignment</BpkLink> page gives examples
-    of icon alignment using HOCs provided in the <Code>bpk-component-icon</Code>{' '}
-    package.
-  </Paragraph>,
+const components = [
+  {
+    id: 'Alignment',
+    title: 'Aligning icons within components',
+    blurb: [
+      <Paragraph>
+        The <BpkLink href={ROUTES.ALIGNMENT}>Alignment</BpkLink> page gives
+        examples of icon alignment using HOCs provided in the{' '}
+        <Code>bpk-component-icon</Code> package.
+      </Paragraph>,
+    ],
+  },
 ];
 
 const IconsPage = ({ ...rest }) => (
   <DocsPageBuilder
     title="Icons"
-    blurb={blurb}
-    components={[]}
+    components={components}
     readme={iconReadme}
     sassdocId="svgs-mixin-bpk-icon"
     {...rest}
