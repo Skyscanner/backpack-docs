@@ -41,7 +41,7 @@ const sections = [
   {
     id: 'our-vision',
     image: {
-      heading: `Our vision`,
+      heading: 'Our vision',
       imageUrl: `/${VisionHeroImage}`,
     },
   },
@@ -55,7 +55,7 @@ const sections = [
     id: 'our-mission',
     contentStyle: 'light',
     image: {
-      heading: `Our mission`,
+      heading: 'Our mission',
       imageUrl: `/${MissionHeroImage}`,
     },
   },
@@ -67,7 +67,7 @@ const sections = [
   {
     id: 'our-values',
     image: {
-      heading: `Our values`,
+      heading: 'Our values',
       imageUrl: `/${ValuesHeroImage}`,
     },
   },
@@ -79,7 +79,7 @@ const sections = [
   {
     id: 'our-personality',
     image: {
-      heading: `Our personality`,
+      heading: 'Our personality',
       imageUrl: `/${PersonalityHeroImage}`,
     },
   },
@@ -94,7 +94,7 @@ const StrategyPage = () => (
   <GuidelinesPageBuilder
     title="Strategy"
     hero={{
-      heading: `Strategy`,
+      heading: 'Strategy',
       imageUrl: `/${StrategyHeroImage}`,
     }}
     sections={sections}

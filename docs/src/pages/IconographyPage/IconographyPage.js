@@ -94,7 +94,7 @@ const IconographyPage = () => (
   <GuidelinesPageBuilder
     title="Iconography"
     hero={{
-      heading: `Iconography`,
+      heading: 'Iconography',
       imageUrl: `/${IconographyHero}`,
       className: getClassName('bpk-docs-iconography-page__hero'),
     }}

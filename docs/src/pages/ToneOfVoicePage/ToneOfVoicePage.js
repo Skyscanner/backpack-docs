@@ -144,7 +144,7 @@ const CopywritingPage = () => (
   <GuidelinesPageBuilder
     title="Tone of voice"
     hero={{
-      heading: `Tone of voice`,
+      heading: 'Tone of voice',
       className: getClassName('bpkdocs-toneofvoice-page__hero'),
       imageUrl: `/${HeroImage}`,
     }}

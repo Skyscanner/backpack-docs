@@ -86,7 +86,7 @@ const PhotographyPage = () => (
   <GuidelinesPageBuilder
     title="Photography"
     hero={{
-      heading: `Photography`,
+      heading: 'Photography',
       imageUrl: `/${PhotographyHero}`,
       className: getClassName('bpk-docs-photography-page__hero'),
     }}

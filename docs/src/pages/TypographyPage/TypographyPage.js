@@ -91,7 +91,7 @@ const TypographyPage = () => (
   <GuidelinesPageBuilder
     title="Typography"
     hero={{
-      heading: `Typography`,
+      heading: 'Typography',
       imageUrl: `/${TypographyHero}`,
       className: getClassName('bpk-docs-typography-page__hero'),
     }}

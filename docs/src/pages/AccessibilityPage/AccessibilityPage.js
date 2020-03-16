@@ -161,7 +161,7 @@ class AccessibilityPage extends Component {
       <GuidelinesPageBuilder
         title="Accessibility"
         hero={{
-          heading: `Accessibility`,
+          heading: 'Accessibility',
           imageUrl: `/${AccessibilityHero}`,
           className: getClassName('bpk-docs-accessibility-page__hero'),
         }}

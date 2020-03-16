@@ -57,7 +57,12 @@ const ComponentsLinks = [
         children: 'Link',
         tags: ['web', 'native', 'android'],
       },
-      { id: 'LIST', route: routes.LIST, children: 'List', tags: ['web'] },
+      {
+        id: 'LIST',
+        route: routes.LIST,
+        children: 'List',
+        tags: ['web'],
+      },
       {
         id: 'DESCRIPTION_LIST',
         route: routes.DESCRIPTION_LIST,
@@ -107,7 +112,12 @@ const ComponentsLinks = [
         children: 'Blockquote',
         tags: ['web'],
       },
-      { id: 'CODE', route: routes.CODE, children: 'Code', tags: ['web'] },
+      {
+        id: 'CODE',
+        route: routes.CODE,
+        children: 'Code',
+        tags: ['web'],
+      },
       {
         id: 'BUTTON',
         route: routes.BUTTON,
@@ -563,7 +573,12 @@ export default [
     id: 'MISC',
     category: 'Miscellaneous',
     links: [
-      { id: 'SASSDOC', route: '/sassdoc', children: 'SassDoc', blank: true },
+      {
+        id: 'SASSDOC',
+        route: '/sassdoc',
+        children: 'SassDoc',
+        blank: true,
+      },
       {
         id: 'GITHUB',
         route: externalRoutes.GITHUB,

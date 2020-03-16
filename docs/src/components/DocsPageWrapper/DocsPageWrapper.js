@@ -30,6 +30,7 @@ import {
   getPlatformFromLocalStorage,
 } from '../../helpers/platform-helper';
 import Heading from '../Heading';
+import DesignPlaceholderPage from '../../pages/DesignPlaceholderPage';
 
 import Blurb from './Blurb';
 import STYLES from './DocsPageWrapper.scss';
@@ -148,16 +149,16 @@ const DocsPageWrapper = props => {
   const platformFromLocalStorage = getPlatformFromLocalStorage();
   if (canUsePlatformPreference(platformFromLocalStorage)) {
     initiallySelectedPlatform = platformFromLocalStorage;
-  } else if (designSubpage) {
-    initiallySelectedPlatform = 'design';
+  } else if (webSubpage) {
+    initiallySelectedPlatform = 'web';
   } else if (androidSubpage) {
     initiallySelectedPlatform = 'android';
   } else if (iosSubpage) {
     initiallySelectedPlatform = 'ios';
   } else if (nativeSubpage) {
     initiallySelectedPlatform = 'native';
-  } else if (webSubpage) {
-    initiallySelectedPlatform = 'web';
+  } else if (designSubpage) {
+    initiallySelectedPlatform = 'design';
   }
 
   const platformQueryParamMatches = platformQueryParamRegex.exec(
@@ -227,7 +228,7 @@ DocsPageWrapper.propTypes = {
 
 DocsPageWrapper.defaultProps = {
   blurb: null,
-  designSubpage: null,
+  designSubpage: <DesignPlaceholderPage wrapped />,
   webSubpage: null,
   nativeSubpage: null,
   androidSubpage: null,
