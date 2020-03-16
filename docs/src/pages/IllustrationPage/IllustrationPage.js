@@ -67,7 +67,7 @@ const IllustrationPage = () => (
   <GuidelinesPageBuilder
     title="Illustration"
     hero={{
-      heading: `Illustration`,
+      heading: 'Illustration',
       imageUrl: `/${IllustrationHero}`,
       className: getClassName('bpk-docs-illustration-page__hero'),
     }}

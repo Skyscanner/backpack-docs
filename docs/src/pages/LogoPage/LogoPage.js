@@ -138,7 +138,7 @@ const LogoPage = () => (
   <GuidelinesPageBuilder
     title="Logo"
     hero={{
-      heading: `Logo`,
+      heading: 'Logo',
       imageUrl:
         'https://js.skyscnr.com/sttc/bpk-content/logo_hero-87c0a5cc.svg',
       className: getClassName('bpk-docs-logo-page__hero'),

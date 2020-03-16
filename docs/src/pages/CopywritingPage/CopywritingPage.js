@@ -91,7 +91,7 @@ const CopywritingPage = () => (
   <InfoPageBuilder
     title="Copywriting"
     hero={{
-      heading: `Writing for Skyscanner?\nThis basically makes you a hero.`,
+      heading: 'Writing for Skyscanner?\nThis basically makes you a hero.',
       subHeading: (
         <ParagraphNoMargin>
           No cape needed. (Please &mdash; no underwear over tights, either.)

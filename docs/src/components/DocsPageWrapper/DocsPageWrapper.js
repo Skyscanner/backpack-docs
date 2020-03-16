@@ -30,6 +30,7 @@ import {
   getPlatformFromLocalStorage,
 } from '../../helpers/platform-helper';
 import Heading from '../Heading';
+import DesignPlaceholderPage from '../../pages/DesignPlaceholderPage';
 
 import Blurb from './Blurb';
 import STYLES from './DocsPageWrapper.scss';
@@ -46,7 +47,6 @@ const PlatformNav = ({
   onWebClick,
   onAndroidClick,
   onIOSClick,
-  disableDesignTab,
   disableNativeTab,
   disableWebTab,
   disableAndroidTab,
@@ -58,7 +58,6 @@ const PlatformNav = ({
   >
     <BpkHorizontalNavItem
       name="design"
-      disabled={disableDesignTab}
       selected={platform === 'design'}
       onClick={onDesignClick}
     >
@@ -107,7 +106,6 @@ PlatformNav.propTypes = {
   onIOSClick: PropTypes.func.isRequired,
   onNativeClick: PropTypes.func.isRequired,
   onWebClick: PropTypes.func.isRequired,
-  disableDesignTab: PropTypes.bool.isRequired,
   disableAndroidTab: PropTypes.bool.isRequired,
   disableIOSTab: PropTypes.bool.isRequired,
   disableNativeTab: PropTypes.bool.isRequired,
@@ -130,7 +128,7 @@ const DocsPageWrapper = props => {
   const path = match.url;
 
   const platforms = {
-    design: designSubpage,
+    design: designSubpage || <DesignPlaceholderPage wrapped />,
     android: androidSubpage,
     ios: iosSubpage,
     native: nativeSubpage,
@@ -192,7 +190,6 @@ const DocsPageWrapper = props => {
           onIOSClick={() => onPlatformClick('ios')}
           onNativeClick={() => onPlatformClick('native')}
           onWebClick={() => onPlatformClick('web')}
-          disableDesignTab={!designSubpage}
           disableAndroidTab={!androidSubpage}
           disableIOSTab={!iosSubpage}
           disableNativeTab={!nativeSubpage}

@@ -92,16 +92,16 @@ const createComponent = async (err, { name }) => {
     return;
   }
 
-  const boilerplateComponentPath = `packages/bpk-component-boilerplate`;
+  const boilerplateComponentPath = 'packages/bpk-component-boilerplate';
   const newComponentPath = `packages/bpk-component-${name}`;
-  const storybookConfigFile = `.storybook/config.js`;
+  const storybookConfigFile = '.storybook/config.js';
   const storybookImport = `require('./../${newComponentPath}/stories');`;
 
   const pascalCaseName = _.pascalCase(name);
 
   const boilerPlateFilePaths = await globby([
     `${boilerplateComponentPath}/**`,
-    `!**/node_modules/**`,
+    '!**/node_modules/**',
   ]);
 
   const processBoilerPlateFiles = boilerPlateFilePath => {
@@ -167,8 +167,8 @@ const createComponent = async (err, { name }) => {
 
     console.log(colors.green(`${newComponentPath} has been created! 👍\n`));
 
-    console.log(`Run tests with ${colors.cyan(`npm test`)}`);
-    console.log(`Run Storybook with ${colors.cyan(`npm start`)}`);
+    console.log(`Run tests with ${colors.cyan('npm test')}`);
+    console.log(`Run Storybook with ${colors.cyan('npm start')}`);
   };
 
   fs.exists(newComponentPath, componentCreationProcess);

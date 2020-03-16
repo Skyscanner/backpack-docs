@@ -94,7 +94,7 @@ const GraphicDevicesPage = () => (
   <GuidelinesPageBuilder
     title="Graphic Devices"
     hero={{
-      heading: `Graphic devices`,
+      heading: 'Graphic devices',
       imageUrl: `/${GraphicDevicesHero}`,
       className: getClassName('bpk-docs-graphic-devices-page__hero'),
     }}

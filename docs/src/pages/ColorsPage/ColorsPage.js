@@ -110,7 +110,7 @@ const ColorsPage = () => (
   <GuidelinesPageBuilder
     title="Colour"
     hero={{
-      heading: `Colour`,
+      heading: 'Colour',
       imageUrl: `/${ColorsHero}`,
       className: getClassName('bpk-docs-colors-page__hero'),
     }}

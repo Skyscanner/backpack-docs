@@ -78,7 +78,7 @@ const InUsePage = () => (
   <GuidelinesPageBuilder
     title="In use"
     hero={{
-      heading: `In use`,
+      heading: 'In use',
       imageUrl: `/${InUseHero}`,
       className: getClassName('bpk-docs-inuse-page__hero'),
     }}

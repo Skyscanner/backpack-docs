@@ -29,7 +29,7 @@ const fetchLatest = basePath => {
   const script = document.createElement('script');
   script.src = `${basePath}/latest.js`;
   script.type = 'text/javascript';
-  script.onerror = e => error(`Failed to download BagCheck`, e);
+  script.onerror = e => error('Failed to download BagCheck', e);
 
   document.getElementsByTagName('body')[0].appendChild(script);
 };
