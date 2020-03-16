@@ -23,7 +23,9 @@ import IntroBlurb from '../../components/IntroBlurb';
 import Paragraph from '../../components/Paragraph';
 
 const blurb = [
-  <IntroBlurb>Design guidelines needed!</IntroBlurb>,
+  <IntroBlurb>
+    Design guidelines don&apos;t yet exist for this component, but you can help.
+  </IntroBlurb>,
   <Paragraph>
     Get in touch and let&apos;s work together to define the patterns, usage
     advice and more about how to use this component.
