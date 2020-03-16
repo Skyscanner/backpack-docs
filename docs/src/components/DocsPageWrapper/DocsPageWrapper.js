@@ -47,7 +47,6 @@ const PlatformNav = ({
   onWebClick,
   onAndroidClick,
   onIOSClick,
-  disableDesignTab,
   disableNativeTab,
   disableWebTab,
   disableAndroidTab,
@@ -59,7 +58,6 @@ const PlatformNav = ({
   >
     <BpkHorizontalNavItem
       name="design"
-      disabled={disableDesignTab}
       selected={platform === 'design'}
       onClick={onDesignClick}
     >
@@ -108,7 +106,6 @@ PlatformNav.propTypes = {
   onIOSClick: PropTypes.func.isRequired,
   onNativeClick: PropTypes.func.isRequired,
   onWebClick: PropTypes.func.isRequired,
-  disableDesignTab: PropTypes.bool.isRequired,
   disableAndroidTab: PropTypes.bool.isRequired,
   disableIOSTab: PropTypes.bool.isRequired,
   disableNativeTab: PropTypes.bool.isRequired,
@@ -131,7 +128,7 @@ const DocsPageWrapper = props => {
   const path = match.url;
 
   const platforms = {
-    design: designSubpage,
+    design: designSubpage || <DesignPlaceholderPage wrapped />,
     android: androidSubpage,
     ios: iosSubpage,
     native: nativeSubpage,
@@ -149,16 +146,16 @@ const DocsPageWrapper = props => {
   const platformFromLocalStorage = getPlatformFromLocalStorage();
   if (canUsePlatformPreference(platformFromLocalStorage)) {
     initiallySelectedPlatform = platformFromLocalStorage;
-  } else if (webSubpage) {
-    initiallySelectedPlatform = 'web';
+  } else if (designSubpage) {
+    initiallySelectedPlatform = 'design';
   } else if (androidSubpage) {
     initiallySelectedPlatform = 'android';
   } else if (iosSubpage) {
     initiallySelectedPlatform = 'ios';
   } else if (nativeSubpage) {
     initiallySelectedPlatform = 'native';
-  } else if (designSubpage) {
-    initiallySelectedPlatform = 'design';
+  } else if (webSubpage) {
+    initiallySelectedPlatform = 'web';
   }
 
   const platformQueryParamMatches = platformQueryParamRegex.exec(
@@ -193,7 +190,6 @@ const DocsPageWrapper = props => {
           onIOSClick={() => onPlatformClick('ios')}
           onNativeClick={() => onPlatformClick('native')}
           onWebClick={() => onPlatformClick('web')}
-          disableDesignTab={!designSubpage}
           disableAndroidTab={!androidSubpage}
           disableIOSTab={!iosSubpage}
           disableNativeTab={!nativeSubpage}
@@ -228,7 +224,7 @@ DocsPageWrapper.propTypes = {
 
 DocsPageWrapper.defaultProps = {
   blurb: null,
-  designSubpage: <DesignPlaceholderPage wrapped />,
+  designSubpage: null,
   webSubpage: null,
   nativeSubpage: null,
   androidSubpage: null,
