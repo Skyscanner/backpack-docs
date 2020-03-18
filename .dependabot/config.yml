@@ -1,0 +1,12 @@
+version: 1
+update_configs:
+  - package_manager: "javascript"
+    directory: "/"
+    update_schedule: "daily"
+    ignored_updates:
+      # As dependabot doesn't currently support custom npm tags we exlude all bpk updates
+      # so that they don't bump non css versions
+      - match:
+          dependency_name: "bpk*"
+    default_labels:
+      - "dependabot"
