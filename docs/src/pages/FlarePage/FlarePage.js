@@ -25,6 +25,7 @@ import IntroBlurb from '../../components/IntroBlurb';
 import AndroidFlare from '../AndroidFlarePage';
 import IOSFlare from '../IOSFlarePage';
 import WebFlare from '../WebFlarePage';
+import NativeFlare from '../NativeFlarePage';
 
 const Page = () => (
   <DocsPageWrapper
@@ -38,6 +39,7 @@ const Page = () => (
     androidSubpage={<AndroidFlare wrapped />}
     iosSubpage={<IOSFlare wrapped />}
     webSubpage={<WebFlare wrapped />}
+    nativeSubpage={<NativeFlare wrapped />}
   />
 );
 
