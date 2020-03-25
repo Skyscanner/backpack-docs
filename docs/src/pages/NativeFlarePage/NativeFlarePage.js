@@ -22,7 +22,8 @@ import React from 'react';
 import readme from '../../../../backpack-react-native/lib/bpk-component-flare/README.md';
 import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-flare/screenshots/android/default.png';
 import androidScreenshotImage from '../../../../backpack-react-native/lib/bpk-component-flare/screenshots/android/image.png';
-import iosEmpty from '../../static/ios_empty.svg';
+import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-flare/screenshots/ios/default.png';
+import iosScreenshotImage from '../../../../backpack-react-native/lib/bpk-component-flare/screenshots/ios/image.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -34,7 +35,7 @@ const components = [
         title: 'iOS',
         width: 750,
         height: 1334,
-        src: `/${iosEmpty}`,
+        src: `/${iosScreenshotDefault}`,
         altText: 'iOS Flare (Default)',
         subText: '(iPhone 8 simulator)',
       },
@@ -56,7 +57,7 @@ const components = [
         title: 'iOS',
         width: 750,
         height: 1334,
-        src: `/${iosEmpty}`,
+        src: `/${iosScreenshotImage}`,
         altText: 'iOS Flare (Background image)',
         subText: '(iPhone 8 simulator)',
       },
