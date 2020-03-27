@@ -31,7 +31,7 @@ const ProgressPage = () => (
     title="Progress"
     blurb={[
       <IntroBlurb>
-        Progress bars are a great way of providing feedback when a tasking is
+        Progress bars are a great way of providing feedback when a task is
         running. Unlike spinners, they give the user a clear idea of how long
         the given task will take.
       </IntroBlurb>,
