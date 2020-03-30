@@ -28,7 +28,7 @@ const ga = (...args) => {
 
 /**
  * Start tracking the user. Usefull when analytics
- * should be started only after user concent.
+ * should be started only after user consent.
  *
  * @returns {void}
  */

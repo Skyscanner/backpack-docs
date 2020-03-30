@@ -59,6 +59,6 @@ exports[`AnalyticsContainer renders correctly 1`] = `
 </section>
 `;
 
-exports[`AnalyticsContainer when concent has been denied renders correctly 1`] = `null`;
+exports[`AnalyticsContainer when consent has been denied renders correctly 1`] = `null`;
 
-exports[`AnalyticsContainer when concent has been granted renders correctly 1`] = `null`;
+exports[`AnalyticsContainer when consent has been granted renders correctly 1`] = `null`;
