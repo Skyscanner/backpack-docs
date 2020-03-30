@@ -85,7 +85,7 @@ describe('AnalyticsContainer', () => {
     expect(container.querySelector("[data-testid='cookie-banner']")).toBe(null);
   });
 
-  describe('when concent has been denied', () => {
+  describe('when consent has been denied', () => {
     beforeEach(() => {
       localStorage.getItem.mockReturnValue('false');
     });
@@ -102,7 +102,7 @@ describe('AnalyticsContainer', () => {
     });
   });
 
-  describe('when concent has been granted', () => {
+  describe('when consent has been granted', () => {
     beforeEach(() => {
       localStorage.getItem.mockReturnValue('true');
     });
