@@ -63,13 +63,13 @@ const sections = [
         <OverviewRow
           imageSetOne={{
             image: GraphicDevicesPairThree,
-            imageSetAlt: 'content bubble and full-bleed content bubble usage',
-            titles: ['Content bubble', 'Full-bleed Content Bubble'],
+            imageSetAlt: 'indication flare and speech bubble usage',
+            titles: ['Indication Flare', 'Speech Bubble'],
           }}
           imageSetTwo={{
             image: GraphicDevicesPairFour,
-            imageSetAlt: 'upwards flare and upwards flare bar usage',
-            titles: ['Upwards Flare', 'Upwards Flare Bar'],
+            imageSetAlt: 'beam crops and radial beams usage',
+            titles: ['Beam Crops', 'Radial Beams'],
           }}
         />
       </div>
