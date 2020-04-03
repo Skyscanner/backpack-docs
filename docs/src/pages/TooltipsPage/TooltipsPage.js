@@ -17,7 +17,7 @@
  */
 
 import React from 'react';
-import BpkTooltip from 'bpk-component-tooltip';
+import BpkTooltip, { TOOLTIP_TYPES } from 'bpk-component-tooltip';
 import tooltipReadme from 'bpk-component-tooltip/README.md';
 import { spacingSm, colorMonteverde } from 'bpk-tokens/tokens/base.es6';
 import { cssModules } from 'bpk-react-utils';
@@ -55,6 +55,27 @@ const components = [
         }
       >
         London Heathrow
+      </BpkTooltip>,
+    ],
+  },
+  {
+    id: 'dark',
+    title: 'Dark',
+    blurb: [<Paragraph>Tooltips can have a dark look too.</Paragraph>],
+    examples: [
+      <BpkTooltip
+        id="my-tooltip"
+        type={TOOLTIP_TYPES.dark}
+        target={
+          <Heading
+            level="h3"
+            className={getClassName('bpkdocs-tooltips-page__heading')}
+          >
+            DAR
+          </Heading>
+        }
+      >
+        Dae es Salaam
       </BpkTooltip>,
     ],
   },
@@ -147,11 +168,13 @@ const TooltipsSubPage = ({ ...rest }) => (
       dos: [
         'Use to provide additional information about an element on the page, shown on hover.',
         'Use text only where possible.',
+        'For consistency, stick to using one type of tooltip (light or dark) throughout a product area or interface.',
       ],
       donts: [
         "Don't use on touch devices (try using a popover instead).",
         "Don't use for long or complex content or when content includes interaction (try using a popover or modal).",
         "Don't use on interactive elements that can receive focus such as links, buttons and inputs.",
+        "Don't mix and match light and dark tooltips within the same product or interface.",
       ],
     }}
     {...rest}
