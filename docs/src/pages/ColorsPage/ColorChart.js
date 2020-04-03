@@ -156,7 +156,8 @@ class ColorChart extends Component<{}, State> {
           label={
             <Fragment>
               <BpkText>
-                Large text (larger than 18pt or 14pt bold) minimum ratio = 3:1
+                Large text (equal to or larger than 18pt or 14pt bold) minimum
+                ratio = 3:1
               </BpkText>
               <br />
               <BpkText>
