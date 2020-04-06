@@ -23,11 +23,13 @@ import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-comp
 import iosScreenshotDockedStart from '../../../../backpack-react-native/lib/bpk-component-badge/screenshots/ios/docked-start.png';
 import iosScreenshotDockedEnd from '../../../../backpack-react-native/lib/bpk-component-badge/screenshots/ios/docked-end.png';
 import iosScreenshotWithIcon from '../../../../backpack-react-native/lib/bpk-component-badge/screenshots/ios/with-icon.png';
+import iosScreenshotWithTrailingIcon from '../../../../backpack-react-native/lib/bpk-component-badge/screenshots/ios/with-trailing-icon.png';
 import iosScreenshotWithMultipleIcons from '../../../../backpack-react-native/lib/bpk-component-badge/screenshots/ios/with-multiple-icons.png';
 import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-badge/screenshots/android/default.png';
 import androidScreenshotDockedStart from '../../../../backpack-react-native/lib/bpk-component-badge/screenshots/android/docked-start.png';
 import androidScreenshotDockedEnd from '../../../../backpack-react-native/lib/bpk-component-badge/screenshots/android/docked-end.png';
 import androidScreenshotWithIcon from '../../../../backpack-react-native/lib/bpk-component-badge/screenshots/android/with-icon.png';
+import androidScreenshotWithTrailingIcon from '../../../../backpack-react-native/lib/bpk-component-badge/screenshots/android/with-trailing-icon.png';
 import androidScreenshotWithMultipleIcons from '../../../../backpack-react-native/lib/bpk-component-badge/screenshots/android/with-multiple-icons.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
@@ -72,6 +74,28 @@ const components = [
         height: 1920,
         src: `/${androidScreenshotWithIcon}`,
         altText: 'Android Badge Component with a single icon',
+        subText: '(Google Pixel emulator)',
+      },
+    ],
+  },
+  {
+    id: 'with-trailing-icon',
+    title: 'With a trailing icon',
+    screenshots: [
+      {
+        title: 'iOS',
+        width: 750,
+        height: 1334,
+        src: `/${iosScreenshotWithTrailingIcon}`,
+        altText: 'iOS Badge Component with a trailing icon',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        title: 'Android',
+        width: 1080,
+        height: 1920,
+        src: `/${androidScreenshotWithTrailingIcon}`,
+        altText: 'Android Badge Component with a trailing icon',
         subText: '(Google Pixel emulator)',
       },
     ],
