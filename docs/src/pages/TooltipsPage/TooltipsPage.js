@@ -75,7 +75,7 @@ const components = [
           </Heading>
         }
       >
-        Dae es Salaam
+        Dar es Salaam
       </BpkTooltip>,
     ],
   },
