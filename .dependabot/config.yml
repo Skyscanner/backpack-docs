@@ -4,9 +4,9 @@ update_configs:
     directory: "/"
     update_schedule: "daily"
     ignored_updates:
-      # As dependabot doesn't currently support custom npm tags we exlude all bpk updates
-      # so that they don't bump non css versions
-      - match:
-          dependency_name: "bpk*"
+      # Once we are using css packages, and as long as dependabot doesn't support custom npm tags,
+      # we'll exclude all bpk updates so that they don't bump non css versions.
+      # - match:
+      #     dependency_name: "bpk*"
     default_labels:
       - "dependabot"
