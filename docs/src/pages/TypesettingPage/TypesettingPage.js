@@ -54,11 +54,12 @@ const components = [
       ios: (
         <section>
           <Paragraph>
-            When designing for iOS, use <strong>SF Pro Text</strong>.
+            When designing for iOS, use <strong>Skyscanner Relative iOS</strong>
+            .
           </Paragraph>
           <BpkList>
-            <BpkListItem>Regular</BpkListItem>
-            <BpkListItem>Semi-bold (for emphasised text)</BpkListItem>
+            <BpkListItem>Book</BpkListItem>
+            <BpkListItem>Emphasized (for emphasised text)</BpkListItem>
             <BpkListItem>
               Heavy (for <BpkCode>font-size-xxl</BpkCode> only)
             </BpkListItem>
@@ -68,18 +69,22 @@ const components = [
       android: (
         <section>
           <Paragraph>
-            When designing for Android, use <strong>Roboto</strong>.
+            When designing for Android, use{' '}
+            <strong>Skyscanner Relative Android</strong>.
           </Paragraph>
           <BpkList>
-            <BpkListItem>Regular</BpkListItem>
-            <BpkListItem>Medium (for emphasised text)</BpkListItem>
+            <BpkListItem>Book</BpkListItem>
+            <BpkListItem>Emphasized (for emphasised text)</BpkListItem>
+            <BpkListItem>
+              Heavy (for <BpkCode>font-size-xxl</BpkCode> only)
+            </BpkListItem>
           </BpkList>
         </section>
       ),
       web: (
         <section>
           <Paragraph>
-            When designing for web, use <strong>SF UI Text</strong>.
+            When designing for web, use <strong>Skyscanner Relative</strong>.
           </Paragraph>
           <BpkList>
             <BpkListItem>Regular</BpkListItem>
