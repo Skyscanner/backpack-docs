@@ -33,6 +33,7 @@ import * as ROUTES from '../../constants/routes';
 import STYLES from './colors-page.scss';
 import intro from './content/intro.md';
 import colors from './colors';
+import darkModeColors from './darkModeColors';
 import dynamicColors from './dynamicColors';
 import ColorChart from './ColorChart';
 
@@ -51,8 +52,22 @@ const sections = [
     content: colors,
   },
   {
+    id: 'dark-mode-palette',
+    title: 'Dark Mode palette',
+    content: (
+      <Fragment>
+        <BpkParagraph>
+          The Dark Mode palette extends our regular palette. The colours in this
+          palette should <strong>never ever</strong> be used in light mode.
+        </BpkParagraph>
+        {darkModeColors}
+      </Fragment>
+    ),
+  },
+  {
     id: 'dynamic-palette',
     title: 'Dark Mode dynamic colours',
+    backgroundStyle: 'light',
     content: (
       <Fragment>
         <BpkParagraph>
@@ -67,7 +82,6 @@ const sections = [
   {
     id: 'pairings',
     title: 'Colour pairings',
-    backgroundStyle: 'light',
     content: (
       <Fragment>
         <BpkParagraph>
@@ -86,6 +100,7 @@ const sections = [
   {
     id: 'examples',
     title: 'Examples',
+    backgroundStyle: 'light',
     content: (
       <BpkImage
         className={getClassName('bpk-docs-colors-page__image')}
