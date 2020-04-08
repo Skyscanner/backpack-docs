@@ -27,6 +27,8 @@ import screenshotPointerOffset from '../../../../backpack-android/docs/Flare/scr
 import screenshotPointerOffsetDm from '../../../../backpack-android/docs/Flare/screenshots/pointer-offset_dm.png';
 import screenshotInsetPadding from '../../../../backpack-android/docs/Flare/screenshots/inset-padding.png';
 import screenshotInsetPaddingDm from '../../../../backpack-android/docs/Flare/screenshots/inset-padding_dm.png';
+import screenshotPointingUp from '../../../../backpack-android/docs/Flare/screenshots/pointing-up.png';
+import screenshotPointingUpDm from '../../../../backpack-android/docs/Flare/screenshots/pointing-up_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -106,6 +108,26 @@ const components = [
         height: 1920,
         src: `/${screenshotInsetPaddingDm}`,
         altText: 'Flare component with padding',
+        subText: '(Google Pixel emulator - dark mode)',
+      },
+    ],
+  },
+  {
+    id: 'pointing-up',
+    title: 'Pointing up',
+    screenshots: [
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotPointingUp}`,
+        altText: 'Flare component with flare poiting upwards',
+        subText: '(Google Pixel emulator)',
+      },
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotPointingUpDm}`,
+        altText: 'Flare component with flare poiting upwards',
         subText: '(Google Pixel emulator - dark mode)',
       },
     ],
