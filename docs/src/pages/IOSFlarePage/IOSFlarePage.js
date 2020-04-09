@@ -21,6 +21,8 @@ import React from 'react';
 import readme from '../../../../backpack-ios/Backpack/FlareView/README.md';
 import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-flare-view___default_lm.png';
 import screenshotWithBackgroundColor from '../../../../backpack-ios/screenshots/iPhone 8-flare-view___background-image_lm.png';
+import screenshotFlareAtTop from '../../../../backpack-ios/screenshots/iPhone 8-flare-view___flare-at-top_lm.png';
+import screenshotFlareAtTopDm from '../../../../backpack-ios/screenshots/iPhone 8-flare-view___flare-at-top_dm.png';
 import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-flare-view___default_dm.png';
 import screenshotWithBackgroundColorDm from '../../../../backpack-ios/screenshots/iPhone 8-flare-view___background-image_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
@@ -34,14 +36,34 @@ const components = [
         width: 750,
         height: 1334,
         src: `/${screenshotDefault}`,
-        altText: 'Chips for iOS.',
+        altText: 'Flare view for iOS.',
         subText: '(iPhone 8 simulator)',
       },
       {
         width: 750,
         height: 1334,
         src: `/${screenshotDefaultDm}`,
-        altText: 'Chips for iOS.',
+        altText: 'Flare view for iOS.',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
+    ],
+  },
+  {
+    id: 'flareAtTop',
+    title: 'Flare at top',
+    screenshots: [
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotFlareAtTop}`,
+        altText: 'Flare view for iOS.',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotFlareAtTopDm}`,
+        altText: 'Flare view for iOS.',
         subText: '(iPhone 8 simulator - dark mode)',
       },
     ],
@@ -54,14 +76,14 @@ const components = [
         width: 750,
         height: 1334,
         src: `/${screenshotWithBackgroundColor}`,
-        altText: 'Chips for iOS.',
+        altText: 'Flare view for iOS.',
         subText: '(iPhone 8 simulator)',
       },
       {
         width: 750,
         height: 1334,
         src: `/${screenshotWithBackgroundColorDm}`,
-        altText: 'Chips for iOS.',
+        altText: 'Flare view for iOS.',
         subText: '(iPhone 8 simulator - dark mode)',
       },
     ],
