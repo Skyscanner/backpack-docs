@@ -19,7 +19,7 @@
 /* @flow strict */
 
 import React, { Component } from 'react';
-import BpkChip from 'bpk-component-chip';
+import BpkChip, { CHIP_TYPES } from 'bpk-component-chip';
 import BpkButton from 'bpk-component-button';
 import { cssModules } from 'bpk-react-utils';
 import chipReadme from 'bpk-component-chip/README.md';
@@ -36,7 +36,15 @@ type State = {
   nextChipId: number,
 };
 
-class DefaultChipContainer extends Component<{}, State> {
+type Props = {
+  type: $Keys<typeof CHIP_TYPES>,
+};
+
+class ChipContainer extends Component<Props, State> {
+  static defaultProps = {
+    type: CHIP_TYPES.neutral,
+  };
+
   constructor() {
     super();
 
@@ -65,6 +73,7 @@ class DefaultChipContainer extends Component<{}, State> {
   };
 
   render() {
+    const { type } = this.props;
     return (
       <div>
         <BpkButton onClick={this.addRemovableChip}>
@@ -77,6 +86,7 @@ class DefaultChipContainer extends Component<{}, State> {
               onClose={() => this.removeChip(chipName)}
               className={getClassName('bpk-docs-chips-page__chip')}
               key={index} // eslint-disable-line react/no-array-index-key
+              type={type}
             >
               {chipName}
             </BpkChip>
@@ -98,7 +108,42 @@ const components = [
         view.
       </Paragraph>,
     ],
-    examples: [<DefaultChipContainer />],
+    examples: [<ChipContainer />],
+  },
+  {
+    id: 'primary',
+    title: 'Primary Chip',
+    examples: [<ChipContainer type={CHIP_TYPES.primary} />],
+  },
+  {
+    id: 'non-dismissible',
+    title: 'Non Dismissible',
+    blurb: [
+      <Paragraph>
+        The non-dismissible chip is available in two variants
+      </Paragraph>,
+    ],
+    examples: [
+      <div className={getClassName('bpk-docs-chips-page__chip-container')}>
+        <BpkChip
+          className={getClassName('bpk-docs-chips-page__chip')}
+          onClose={() => null}
+          closeLabel="Close"
+          dismissible={false}
+        >
+          This is a non-dismissible chip!
+        </BpkChip>
+        <BpkChip
+          className={getClassName('bpk-docs-chips-page__chip')}
+          onClose={() => null}
+          closeLabel="Close"
+          dismissible={false}
+          type={CHIP_TYPES.primary}
+        >
+          This is a non-dismissible primary chip!
+        </BpkChip>
+      </div>,
+    ],
   },
 ];
 
