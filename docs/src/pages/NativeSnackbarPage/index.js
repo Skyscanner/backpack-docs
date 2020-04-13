@@ -16,27 +16,6 @@
  * limitations under the License.
  */
 
-/* @flow strict */
+import page from './NativeSnackbarPage';
 
-import React from 'react';
-
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import IntroBlurb from '../../components/IntroBlurb';
-import Android from '../AndroidSnackbarPage';
-import Native from '../NativeSnackbarPage';
-
-const Page = () => (
-  <DocsPageWrapper
-    title="Snackbar"
-    blurb={[
-      <IntroBlurb>
-        A Snackbar provides brief messages about app processes at the bottom of
-        screen.
-      </IntroBlurb>,
-    ]}
-    androidSubpage={<Android wrapped />}
-    nativeSubpage={<Native wrapped />}
-  />
-);
-
-export default Page;
+export default page;
