@@ -22,8 +22,10 @@ import React from 'react';
 import readme from '../../../../backpack-react-native/lib/bpk-component-flare/README.md';
 import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-flare/screenshots/android/default.png';
 import androidScreenshotImage from '../../../../backpack-react-native/lib/bpk-component-flare/screenshots/android/image.png';
+import androidScreenshotPointerUp from '../../../../backpack-react-native/lib/bpk-component-flare/screenshots/android/pointer-up.png';
 import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-flare/screenshots/ios/default.png';
 import iosScreenshotImage from '../../../../backpack-react-native/lib/bpk-component-flare/screenshots/ios/image.png';
+import iosScreenshotPointerUp from '../../../../backpack-react-native/lib/bpk-component-flare/screenshots/ios/pointer-up.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -67,6 +69,28 @@ const components = [
         height: 1920,
         src: `/${androidScreenshotImage}`,
         altText: 'Android Flare (Background image)',
+        subText: '(Google Pixel emulator)',
+      },
+    ],
+  },
+  {
+    id: 'pointer-up',
+    title: 'Pointing up',
+    screenshots: [
+      {
+        title: 'iOS',
+        width: 750,
+        height: 1334,
+        src: `/${iosScreenshotPointerUp}`,
+        altText: 'iOS Flare (Pointer facing up)',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        title: 'Android',
+        width: 1080,
+        height: 1920,
+        src: `/${androidScreenshotPointerUp}`,
+        altText: 'Android Flare (Pointer facing up)',
         subText: '(Google Pixel emulator)',
       },
     ],
