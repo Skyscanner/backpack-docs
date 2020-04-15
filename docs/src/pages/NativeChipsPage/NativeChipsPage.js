@@ -20,9 +20,11 @@ import React from 'react';
 
 import readme from '../../../../backpack-react-native/lib/bpk-component-chip/README.md';
 import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/ios/default.png';
+import iosScreenshotDefaultWithIcon from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/ios/defaultWithIcon.png';
 import iosScreenshotDismissible from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/ios/dismissible.png';
 import iosScreenshotOutline from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/ios/outline.png';
 import iosScreenshotOutlineDismissible from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/ios/outlineDismissible.png';
+import androidScreenshotDefaultWithIcon from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/android/defaultWithIcon.png';
 import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/android/default.png';
 import androidScreenshotDismissible from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/android/dismissible.png';
 import androidScreenshotOutline from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/android/outline.png';
@@ -49,6 +51,29 @@ const components = [
         height: 1920,
         src: `/${androidScreenshotDefault}`,
         altText: 'Android Default Chip Component',
+        subText: '(Google Pixel emulator)',
+      },
+    ],
+  },
+  {
+    id: 'with-icons',
+    title: 'With icons',
+    blurb: 'Chips can have leading icons.',
+    screenshots: [
+      {
+        title: 'iOS',
+        width: 750,
+        height: 1334,
+        src: `/${iosScreenshotDefaultWithIcon}`,
+        altText: 'iOS Default Chip Component With Leading Icon',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        title: 'Android',
+        width: 1080,
+        height: 1920,
+        src: `/${androidScreenshotDefaultWithIcon}`,
+        altText: 'Android Default Chip Component With Leading Icon',
         subText: '(Google Pixel emulator)',
       },
     ],
