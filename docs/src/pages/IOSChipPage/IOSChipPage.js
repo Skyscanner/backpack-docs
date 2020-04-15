@@ -20,9 +20,11 @@ import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/Chip/README.md';
 import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-chip___default_lm.png';
+import screenshotWithIcons from '../../../../backpack-ios/screenshots/iPhone 8-chip___with-icons_lm.png';
 import screenshotWithoutShadow from '../../../../backpack-ios/screenshots/iPhone 8-chip___without-shadow_lm.png';
 import screenshotWithBackgroundColor from '../../../../backpack-ios/screenshots/iPhone 8-chip___background-color_lm.png';
 import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-chip___default_dm.png';
+import screenshotWithIconsDm from '../../../../backpack-ios/screenshots/iPhone 8-chip___with-icons_dm.png';
 import screenshotWithoutShadowDm from '../../../../backpack-ios/screenshots/iPhone 8-chip___without-shadow_dm.png';
 import screenshotWithBackgroundColorDm from '../../../../backpack-ios/screenshots/iPhone 8-chip___background-color_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
@@ -43,6 +45,26 @@ const components = [
         width: 750,
         height: 1334,
         src: `/${screenshotDefaultDm}`,
+        altText: 'Chips for iOS.',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
+    ],
+  },
+  {
+    id: 'withIcons',
+    title: 'With icons',
+    screenshots: [
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotWithIcons}`,
+        altText: 'Chips for iOS.',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotWithIconsDm}`,
         altText: 'Chips for iOS.',
         subText: '(iPhone 8 simulator - dark mode)',
       },
