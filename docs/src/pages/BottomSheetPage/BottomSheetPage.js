@@ -27,7 +27,12 @@ import IOSBottomSheet from '../IOSBottomSheetPage';
 const BottomSheetPage = () => (
   <DocsPageWrapper
     title="Bottom sheet"
-    blurb={[<IntroBlurb>Bottom sheets... </IntroBlurb>]}
+    blurb={[
+      <IntroBlurb>
+        Bottom sheets are views rendered on top of screen content, containing
+        supplementary content that are anchored to the bottom of the screen.
+      </IntroBlurb>,
+    ]}
     iosSubpage={<IOSBottomSheet wrapped />}
   />
 );
