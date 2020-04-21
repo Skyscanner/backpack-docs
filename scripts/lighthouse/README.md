@@ -8,13 +8,13 @@ We currently use Lighthouse 5, and can see details on the weighted averages it u
 
 Be aware Lighthouse results will be better on your local machine versus other sources as your laptop is more powerful. 
 
-To run locally first start up the docs site locally
+To run locally first start up the docs site locally in production mode.
 
 ```js
-npm start
+npm run docs:dist && cd dist && npx http-server
 ```
 
-then once the docs site is up and running, run the lighthouse command to analyse the docs site
+then once the docs site is up and running, run the lighthouse command to analyse the docs site.
 
 ```js
 npm run lighthouse

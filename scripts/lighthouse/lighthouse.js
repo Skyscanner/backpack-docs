@@ -21,54 +21,55 @@
 const lighthouse = require('lighthouse');
 const chromeLauncher = require('chrome-launcher');
 const table = require('markdown-table');
+const colors = require('colors');
+const async = require('async');
 
-const ROUTES_MAPPINGS = require('./pages');
 const checkLighthouseScore = require('./lh-check-scores');
 const config = require('./lh-config');
+
+import * as ROUTES from '../../docs/src/constants/routes';
+
 
 const toMarkdown = (results = {}) =>
   table([['Metric', 'Value']].concat(Object.entries(results)));
 
 const generateOutput = (scores, url) => {
-  console.log('URL', url);
 
+  console.log(colors.yellow.underline(`Url - ${url}`));
   if (scores.successes) {
-    console.log('\n===== LIGHTHOUSE PASS! =====\n');
+    console.log(colors.green('\n===== LIGHTHOUSE PASS! =====\n'));
     console.log(toMarkdown(scores.successes));
-    console.log('\n============================\n');
+    console.log(colors.green('\n============================\n'));
   } else {
-    console.log('\n===== LIGHTHOUSE FAILED! =====\n');
+    console.log(colors.red('\n===== LIGHTHOUSE FAILED! =====\n'));
     console.log(toMarkdown(scores.errors));
-    console.log('\n============================\n');
+    console.log(colors.red('\n============================\n'));
   }
 };
 
-function launchChromeAndRunLighthouse(url, opts, conf) {
+function launchChromeAndRunLighthouse(url) {
   return chromeLauncher
-    .launch({ chromeFlags: opts.chromeFlags })
+    .launch()
     .then(chrome => {
-      opts.port = chrome.port;
-      return lighthouse(url, opts, conf).then(async results => {
+      return lighthouse(url, { port: chrome.port }, config).then(async results => {
         // use results.lhr for the JS-consumable output
         // https://github.com/GoogleChrome/lighthouse/blob/master/types/lhr.d.ts
         // use results.report for the HTML/JSON/CSV output as a string
         // use results.artifacts for the trace/screenshots/other specific case you need (rarer)
         return chrome.kill().then(() => results.lhr);
+      }).catch(err => {
+        throw err;
       });
+    }).catch(err => {
+      throw err;
     });
 }
 
-const opts = {
-  onlyCategories: ['performance'],
-  chromeFlags: ['--show-paint-rects'],
-};
 
 async function launch() {
-  for (const key of Object.keys(ROUTES_MAPPINGS)) {
+  for (const key of Object.keys(ROUTES)) {
     await launchChromeAndRunLighthouse(
-      `http://0.0.0.0:8080${ROUTES_MAPPINGS[key]}`,
-      opts,
-      config,
+      `http://0.0.0.0:8080${ROUTES[key]}`,
     ).then(results => {
       // For now we fix the threshold, should be done dynamically per page in the future
       const thresholds = {
@@ -76,8 +77,10 @@ async function launch() {
       };
       generateOutput(
         checkLighthouseScore(results.audits, thresholds),
-        ROUTES_MAPPINGS[key],
+        ROUTES[key],
       );
+    }).catch(error => {
+      console.error(`The following error occurred: ${error}`)
     });
   }
 }

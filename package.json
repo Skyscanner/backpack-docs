@@ -41,7 +41,7 @@
     "spellcheck": "mdspell -r --en-gb --ignore-acronyms --ignore-numbers --no-suggestions '*.md' '**/*.md' '!**/node_modules/**/*.md' '!backpack/**/*.md' '!backpack-react-native/**/*.md' '!backpack-ios/**/*.md'  '!backpack-android/**/*.md'",
     "spellcheck:interactive": "mdspell --en-gb --ignore-acronyms --no-suggestions --ignore-numbers '*.md' '**/*.md' '!**/node_modules/**/*.md' '!backpack/**/*.md' '!backpack-react-native/**/*.md' '!backpack-ios/**/*.md'  '!backpack-android/**/*.md'",
     "update-bpk-dependencies": "npx npm-check-updates -n '/^bpk\\-(.*)$/' -u",
-    "lighthouse": "node scripts/lighthouse/lighthouse.js"
+    "lighthouse": "babel-node scripts/lighthouse/lighthouse.js"
   },
   "husky": {
     "hooks": {
@@ -63,6 +63,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
     "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
