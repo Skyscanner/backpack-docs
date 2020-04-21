@@ -29,6 +29,7 @@ describe('Routes', () => {
       const iconsJsFileContents = fs.readFileSync(
         'backpack/packages/bpk-svgs/src/icons/icons.js',
       );
+
       expect(iconsJsFileContents.toString()).toEqual('');
     });
   });

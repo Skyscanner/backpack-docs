@@ -34,18 +34,25 @@ describe('search', () => {
   describe('getMatchingPages', () => {
     it('should match "checkbox"', () => {
       const matches = getMatchingPages('checkbox', haystack);
+
       expect(matches).toEqual([haystack[0]]);
     });
+
     it('should match "check"', () => {
       const matches = getMatchingPages('check', haystack);
+
       expect(matches).toEqual([haystack[0]]);
     });
+
     it('should match "switch"', () => {
       const matches = getMatchingPages('switch', haystack);
+
       expect(matches).toEqual([haystack[0]]);
     });
+
     it('should return no matches for "calendar"', () => {
       const matches = getMatchingPages('calendar', haystack);
+
       expect(matches).toEqual([]);
     });
   });
