@@ -21,6 +21,8 @@ import React from 'react';
 import readme from '../../../../backpack-android/docs/Chip/README.md';
 import screenshotAll from '../../../../backpack-android/docs/Chip/screenshots/all.png';
 import screenshotAllDm from '../../../../backpack-android/docs/Chip/screenshots/all_dm.png';
+import screenshotIcon from '../../../../backpack-android/docs/Chip/screenshots/with-icon.png';
+import screenshotIconDm from '../../../../backpack-android/docs/Chip/screenshots/with-icon_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -39,6 +41,26 @@ const components = [
         width: 1080,
         height: 1920,
         src: `/${screenshotAllDm}`,
+        altText: 'Chip component',
+        subText: '(Google Pixel emulator - dark mode)',
+      },
+    ],
+  },
+  {
+    id: 'with-icon',
+    title: 'With icon',
+    screenshots: [
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotIcon}`,
+        altText: 'Chip component',
+        subText: '(Google Pixel emulator)',
+      },
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotIconDm}`,
         altText: 'Chip component',
         subText: '(Google Pixel emulator - dark mode)',
       },
