@@ -15,33 +15,73 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* @flow */
 
 import _ from 'lodash';
 // We don't set the root font size in the backpack base stylesheet, which means that the root font size falls back to
 // the browser default - typically 16px;
 const ROOT_FONT_SIZE = 16;
 
-export const formatTokenName = name => _.kebabCase(name);
+type Platform = 'ios' | 'android' | 'web';
 
-export const toPx = value => {
+type Token = {
+  name: string,
+  type: string,
+  category: string,
+  value: string,
+  originalValue: string,
+  darkValue?: string,
+  originalDarkValue?: string,
+  deprecated?: boolean,
+};
+
+type TokenList = { [string]: Token };
+
+type RawTokens = {
+  propKeys: Array<string>,
+  props: TokenList,
+};
+
+export const formatTokenName = (name: string): string => _.kebabCase(name);
+
+export const toPx = (value: string | number): ?string => {
   const parsed = parseFloat(value) * ROOT_FONT_SIZE;
   return parsed ? `${parsed}px` : null;
 };
 
 const TOKEN_FORMAT_MAP = {
   web: {
-    size: value => {
+    size: (value: string): ?string => {
       if (/rem$/.test(value)) {
-        return `${value} (${toPx(value)})`;
+        const pixelValue = toPx(value);
+
+        if (!pixelValue) {
+          return null;
+        }
+
+        return `${value} (${pixelValue})`;
       }
       return value;
     },
-    'font-size': value => {
+    'font-size': (value: string): ?string => {
       if (/rem$/.test(value)) {
-        return `${value} (${toPx(value)})`;
+        const pixelValue = toPx(value);
+
+        if (!pixelValue) {
+          return null;
+        }
+
+        return `${value} (${pixelValue})`;
       }
+
       if (/%$/.test(value)) {
-        return `${value} (${toPx(parseFloat(value) / 100)})`;
+        const pixelValue = toPx(parseFloat(value) / 100);
+
+        if (!pixelValue) {
+          return null;
+        }
+
+        return `${value} (${pixelValue})`;
       }
       return value;
     },
@@ -56,7 +96,7 @@ const TOKEN_FORMAT_MAP = {
   },
 };
 
-export const getTokenValue = (token, platform) => {
+export const getTokenValue = (token: Token, platform: Platform): string => {
   const { value, type } = token || {};
   const formats = TOKEN_FORMAT_MAP[platform] || {};
 
@@ -67,7 +107,7 @@ export const getTokenValue = (token, platform) => {
   return value || '-';
 };
 
-export const getTokens = (tokens, keys = null) =>
+export const getTokens = (tokens: TokenList, keys: ?Array<string> = null) =>
   _.chain(keys || Object.keys(tokens))
     .reduce((acc, key) => {
       if (!tokens[key] || tokens[key].deprecated) return acc;
@@ -114,24 +154,45 @@ export const getTokens = (tokens, keys = null) =>
     .keyBy('name')
     .value();
 
+type Predicate = (?Token) => boolean;
+
+const extractTokenKeys = (
+  rawTokens: ?RawTokens,
+  predicate: Predicate,
+): Array<string> => {
+  if (!rawTokens) {
+    return [];
+  }
+
+  return rawTokens.propKeys.filter(key => predicate(rawTokens.props[key]));
+};
+
 export const getPlatformTokens = (
-  webTokens,
-  iosTokens,
-  androidTokens,
-  predicate,
-) => {
-  const safePredicate = token => token && predicate(token);
+  webTokens: RawTokens,
+  iosTokens: ?RawTokens,
+  androidTokens: ?RawTokens,
+  predicate: (?Token) => boolean,
+): { web: TokenList, ios?: TokenList, android?: TokenList } => {
+  const safePredicate = (token: ?Token): boolean =>
+    Boolean(token) && predicate(token);
+
   const keys = _.union([
     ...webTokens.propKeys.filter(key => safePredicate(webTokens.props[key])),
-    ...iosTokens.propKeys.filter(key => safePredicate(iosTokens.props[key])),
-    ...androidTokens.propKeys.filter(key =>
-      safePredicate(androidTokens.props[key]),
-    ),
+    ...extractTokenKeys(iosTokens, safePredicate),
+    ...extractTokenKeys(androidTokens, safePredicate),
   ]);
 
-  return {
+  const result: { web: TokenList, ios?: TokenList, android?: TokenList } = {
     web: getTokens(webTokens.props, keys),
-    ios: getTokens(iosTokens.props, keys),
-    android: getTokens(androidTokens.props, keys),
   };
+
+  if (iosTokens) {
+    result.ios = getTokens(iosTokens.props, keys);
+  }
+
+  if (androidTokens) {
+    result.android = getTokens(androidTokens.props, keys);
+  }
+
+  return result;
 };

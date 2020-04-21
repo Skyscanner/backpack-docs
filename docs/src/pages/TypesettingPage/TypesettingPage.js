@@ -108,13 +108,15 @@ const components = [
   {
     id: 'line-heights',
     title: 'Line height',
-    tokenMap: getPlatformTokens(
-      TOKENS,
-      IOS_TOKENS,
-      ANDROID_TOKENS,
-      ({ name, category }) =>
-        category === 'typesettings' && name.indexOf('LINE_HEIGHT') === 0,
-    ),
+    tokenMap: {
+      web: getPlatformTokens(
+        TOKENS,
+        null,
+        null,
+        ({ name, category }) =>
+          category === 'typesettings' && name.indexOf('LINE_HEIGHT') === 0,
+      ).web,
+    },
   },
 ];
 
