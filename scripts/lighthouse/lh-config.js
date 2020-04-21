@@ -16,21 +16,12 @@
  * limitations under the License.
  */
 
-import fs from 'fs';
-
-// In order to serve a zip-file containing all icon SVGs, the `zip-it-loader` loader
-// must be provided with an empty file within the Icons directory.
-
-// If Icons.js is not empty, then it will be served instead of the SVGs
-
-describe('Routes', () => {
-  describe('Icons.js', () => {
-    it('Icons.js file should be empty', () => {
-      const iconsJsFileContents = fs.readFileSync(
-        'backpack/packages/bpk-svgs/src/icons/icons.js',
-      );
-
-      expect(iconsJsFileContents.toString()).toEqual('');
-    });
-  });
-});
+module.exports = {
+  extends: 'lighthouse:default',
+  settings: {
+    emulatedFormFactor: 'desktop',
+    onlyCategories: ['performance'],
+    // Skip the h2 audit so it doesn't lie to us. See https://github.com/GoogleChrome/lighthouse/issues/6539
+    skipAudits: ['uses-http2'],
+  },
+};

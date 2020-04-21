@@ -16,21 +16,11 @@
  * limitations under the License.
  */
 
-import fs from 'fs';
-
-// In order to serve a zip-file containing all icon SVGs, the `zip-it-loader` loader
-// must be provided with an empty file within the Icons directory.
-
-// If Icons.js is not empty, then it will be served instead of the SVGs
-
-describe('Routes', () => {
-  describe('Icons.js', () => {
-    it('Icons.js file should be empty', () => {
-      const iconsJsFileContents = fs.readFileSync(
-        'backpack/packages/bpk-svgs/src/icons/icons.js',
-      );
-
-      expect(iconsJsFileContents.toString()).toEqual('');
-    });
-  });
-});
+// Weightings based on https://docs.google.com/spreadsheets/d/1up5rxd4EMCoMaxH8cppcK1x76n6HLx0e7jxb0e0FXvc/edit#gid=0
+module.exports = {
+  'first-contentful-paint': 0.2,
+  'first-meaningful-paint': 0.067,
+  'speed-index': 0.267,
+  interactive: 0.333,
+  'first-cpu-idle': 0.133,
+};

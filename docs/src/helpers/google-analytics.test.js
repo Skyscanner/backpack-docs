@@ -43,6 +43,7 @@ describe('google-analytics-helper', () => {
     const subject = getSubject();
     subject.startGoogleAnalytics();
     subject.sendPageView('foo');
+
     expect(window.ga.mock.calls.length).toBe(0);
   });
 
@@ -60,6 +61,7 @@ describe('google-analytics-helper', () => {
     it('uses `ga` function defined globally', () => {
       window.ga = jest.fn();
       getSubject().startGoogleAnalytics();
+
       expect(window.ga).toHaveBeenCalled();
     });
 
@@ -68,14 +70,17 @@ describe('google-analytics-helper', () => {
         window.ga = jest.fn();
         const subject = getSubject();
         subject.startGoogleAnalytics();
+
         expect(window.ga.mock.calls.length).toBe(2);
 
         const firstCall = window.ga.mock.calls[0];
+
         expect(firstCall[0]).toBe('create');
         expect(firstCall[1]).toBe(subject.GA_ID);
         expect(firstCall[2]).toBe('auto');
 
         const secondCall = window.ga.mock.calls[1];
+
         expect(secondCall[0]).toBe('send');
         expect(secondCall[1]).toBe('pageview');
       });
@@ -91,11 +96,13 @@ describe('google-analytics-helper', () => {
         expect(window.ga.mock.calls.length).toBe(2);
 
         const firstCall = window.ga.mock.calls[0];
+
         expect(firstCall[0]).toBe('set');
         expect(firstCall[1]).toBe('page');
         expect(firstCall[2]).toBe(page);
 
         const secondCall = window.ga.mock.calls[1];
+
         expect(secondCall[0]).toBe('send');
         expect(secondCall[1]).toBe('pageview');
       });
@@ -103,6 +110,7 @@ describe('google-analytics-helper', () => {
       it('handles empty arguments correctly', () => {
         window.ga = jest.fn();
         const subject = getSubject();
+
         expect(() => subject.sendPageView()).toThrow(
           /page should not be null or empty/,
         );

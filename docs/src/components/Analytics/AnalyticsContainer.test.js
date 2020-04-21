@@ -45,6 +45,7 @@ describe('AnalyticsContainer', () => {
 
   it('renders correctly', () => {
     const tree = renderer.create(<AnalyticsContanier />).toJSON();
+
     expect(tree).toMatchSnapshot();
   });
 
@@ -92,12 +93,14 @@ describe('AnalyticsContainer', () => {
 
     it('renders correctly', () => {
       const tree = renderer.create(<AnalyticsContanier />).toJSON();
+
       expect(tree).toMatchSnapshot();
       expect(localStorage.getItem).toHaveBeenCalledWith(storageKey);
     });
 
     it('does not trigger startGoogleAnalytics', () => {
       renderer.create(<AnalyticsContanier />);
+
       expect(ga.startGoogleAnalytics).not.toHaveBeenCalled();
     });
   });
@@ -109,12 +112,14 @@ describe('AnalyticsContainer', () => {
 
     it('renders correctly', () => {
       const tree = renderer.create(<AnalyticsContanier />).toJSON();
+
       expect(tree).toMatchSnapshot();
       expect(localStorage.getItem).toHaveBeenCalledWith(storageKey);
     });
 
     it('triggers startGoogleAnalytics', () => {
       renderer.create(<AnalyticsContanier />);
+
       expect(ga.startGoogleAnalytics).toHaveBeenCalled();
     });
   });
