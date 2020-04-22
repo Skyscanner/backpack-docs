@@ -20,10 +20,12 @@ import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/Rating/README.md';
 import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-rating___default_lm.png';
-import screenshotSubtitle from '../../../../backpack-ios/screenshots/iPhone 8-rating___subtitles_lm.png';
-import screenshotSizes from '../../../../backpack-ios/screenshots/iPhone 8-rating___sizes_lm.png';
 import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-rating___default_dm.png';
+import screenshotSubtitle from '../../../../backpack-ios/screenshots/iPhone 8-rating___subtitles_lm.png';
 import screenshotSubtitleDm from '../../../../backpack-ios/screenshots/iPhone 8-rating___subtitles_dm.png';
+import screenshotVertical from '../../../../backpack-ios/screenshots/iPhone 8-rating___vertical_lm.png';
+import screenshotVerticalDm from '../../../../backpack-ios/screenshots/iPhone 8-rating___vertical_dm.png';
+import screenshotSizes from '../../../../backpack-ios/screenshots/iPhone 8-rating___sizes_lm.png';
 import screenshotSizesDm from '../../../../backpack-ios/screenshots/iPhone 8-rating___sizes_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
@@ -63,6 +65,26 @@ const components = [
         width: 750,
         height: 1334,
         src: `/${screenshotSubtitleDm}`,
+        altText: 'iOS default rating.',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
+    ],
+  },
+  {
+    id: 'vertical',
+    title: 'Vertical layout',
+    screenshots: [
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotVertical}`,
+        altText: 'iOS default rating.',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotVerticalDm}`,
         altText: 'iOS default rating.',
         subText: '(iPhone 8 simulator - dark mode)',
       },
