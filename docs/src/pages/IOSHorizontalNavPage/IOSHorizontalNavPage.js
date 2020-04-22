@@ -20,13 +20,17 @@ import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/HorizontalNavigation/README.md';
 import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___default_lm.png';
-import screenshotSmall from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___small_lm.png';
-import screenshotWithIcons from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___with-icons_lm.png';
-import screenshotNoUnderline from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___without-underline_lm.png';
 import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___default_dm.png';
+import screenshotSmall from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___small_lm.png';
 import screenshotSmallDm from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___small_dm.png';
+import screenshotWithIcons from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___with-icons_lm.png';
 import screenshotWithIconsDm from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___with-icons_dm.png';
+import screenshotNoUnderline from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___without-underline_lm.png';
 import screenshotNoUnderlineDm from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___without-underline_dm.png';
+import screenshotBadge from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___badge_lm.png';
+import screenshotBadgeDm from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___badge_dm.png';
+import screenshotNotification from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___notification_lm.png';
+import screenshotNotificationDm from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___notification_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -113,6 +117,50 @@ const components = [
         width: 1080,
         height: 1920,
         src: `/${screenshotNoUnderlineDm}`,
+        altText: 'iOS HorizontalNav Component',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
+    ],
+  },
+  {
+    id: 'badge',
+    title: 'With badge',
+    screenshots: [
+      {
+        title: 'iOS',
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotBadge}`,
+        altText: 'iOS HorizontalNav Component',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        title: 'iOS',
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotBadgeDm}`,
+        altText: 'iOS HorizontalNav Component',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
+    ],
+  },
+  {
+    id: 'notification',
+    title: 'With notification dot',
+    screenshots: [
+      {
+        title: 'iOS',
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotNotification}`,
+        altText: 'iOS HorizontalNav Component',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        title: 'iOS',
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotNotificationDm}`,
         altText: 'iOS HorizontalNav Component',
         subText: '(iPhone 8 simulator - dark mode)',
       },
