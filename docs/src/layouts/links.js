@@ -98,7 +98,7 @@ const ComponentsLinks = [
         id: 'SNACKBAR',
         route: routes.SNACKBAR,
         children: 'Snackbar',
-        tags: ['android'],
+        tags: ['android', 'native'],
       },
       {
         id: 'STAR_RATING_INTERACTIVE',
