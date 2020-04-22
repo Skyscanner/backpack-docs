@@ -21,6 +21,8 @@ import React from 'react';
 import readme from '../../../../backpack-ios/Backpack/FlareView/README.md';
 import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-flare-view___default_lm.png';
 import screenshotWithBackgroundColor from '../../../../backpack-ios/screenshots/iPhone 8-flare-view___background-image_lm.png';
+import screenshotFlareRounded from '../../../../backpack-ios/screenshots/iPhone 8-flare-view___rounded_lm.png';
+import screenshotFlareRoundedDm from '../../../../backpack-ios/screenshots/iPhone 8-flare-view___rounded_dm.png';
 import screenshotFlareAtTop from '../../../../backpack-ios/screenshots/iPhone 8-flare-view___flare-at-top_lm.png';
 import screenshotFlareAtTopDm from '../../../../backpack-ios/screenshots/iPhone 8-flare-view___flare-at-top_dm.png';
 import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-flare-view___default_dm.png';
@@ -43,6 +45,26 @@ const components = [
         width: 750,
         height: 1334,
         src: `/${screenshotDefaultDm}`,
+        altText: 'Flare view for iOS.',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
+    ],
+  },
+  {
+    id: 'rounded',
+    title: 'Rounded',
+    screenshots: [
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotFlareRounded}`,
+        altText: 'Flare view for iOS.',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotFlareRoundedDm}`,
         altText: 'Flare view for iOS.',
         subText: '(iPhone 8 simulator - dark mode)',
       },
