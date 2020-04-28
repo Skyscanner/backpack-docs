@@ -21,6 +21,8 @@ import React from 'react';
 import readme from '../../../../backpack-android/docs/Calendar/README.md';
 import screenshotAll from '../../../../backpack-android/docs/Calendar/screenshots/range.png';
 import screenshotAllDm from '../../../../backpack-android/docs/Calendar/screenshots/range_dm.png';
+import screenshotColored from '../../../../backpack-android/docs/Calendar/screenshots/colored.png';
+import screenshotColoredDm from '../../../../backpack-android/docs/Calendar/screenshots/colored_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -39,7 +41,27 @@ const components = [
         width: 1080,
         height: 1920,
         src: `/${screenshotAllDm}`,
-        altText: 'Calendar with a range of dates',
+        altText: 'Calendar with a range of dates in dark mode',
+        subText: '(Google Pixel emulator - dark mode)',
+      },
+    ],
+  },
+  {
+    id: 'coloured',
+    title: 'Custom colours',
+    screenshots: [
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotColored}`,
+        altText: 'Calendar with custom colours',
+        subText: '(Google Pixel emulator)',
+      },
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotColoredDm}`,
+        altText: 'Calendar with custom colours in dark mode',
         subText: '(Google Pixel emulator - dark mode)',
       },
     ],
