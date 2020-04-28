@@ -22,8 +22,10 @@ import readme from '../../../../backpack-react-native/lib/bpk-component-calendar
 import iosScreenshotSingle from '../../../../backpack-react-native/lib/bpk-component-calendar/screenshots/ios/single.png';
 import iosScreenshotMultiple from '../../../../backpack-react-native/lib/bpk-component-calendar/screenshots/ios/multiple.png';
 import iosScreenshotRange from '../../../../backpack-react-native/lib/bpk-component-calendar/screenshots/ios/range.png';
+import iosScreenshotColored from '../../../../backpack-react-native/lib/bpk-component-calendar/screenshots/ios/colored.png';
 import androidScreenshotRange from '../../../../backpack-react-native/lib/bpk-component-calendar/screenshots/android/range.png';
 import androidScreenshotSingle from '../../../../backpack-react-native/lib/bpk-component-calendar/screenshots/android/single.png';
+import androidScreenshotColored from '../../../../backpack-react-native/lib/bpk-component-calendar/screenshots/android/colored.png';
 import androidEmpty from '../../static/android_empty.svg';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
@@ -90,6 +92,28 @@ const components = [
         height: 1920,
         src: `/${androidScreenshotRange}`,
         altText: 'Android Calendar Component',
+        subText: '(Google Pixel emulator)',
+      },
+    ],
+  },
+  {
+    id: 'coloured',
+    title: 'Custom colours',
+    screenshots: [
+      {
+        title: 'iOS',
+        width: 750,
+        height: 1334,
+        src: `/${iosScreenshotColored}`,
+        altText: 'iOS Coloured Calendar Component',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        title: 'Android',
+        width: 1080,
+        height: 1920,
+        src: `/${androidScreenshotColored}`,
+        altText: 'Android Coloured Calendar Component',
         subText: '(Google Pixel emulator)',
       },
     ],
