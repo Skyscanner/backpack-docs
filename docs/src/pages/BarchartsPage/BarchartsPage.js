@@ -30,7 +30,8 @@ import DocsPageWrapper from '../../components/DocsPageWrapper';
 import Paragraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
 import Code from '../../components/Code';
-import Android from '../AndroidBarChartPage';
+import AndroidBarChartPage from '../AndroidBarChartPage';
+import IOSBarChartPage from '../IOSBarChartPage';
 
 const EnhancedBarchart = updateOnDirectionChange(BpkBarchart);
 const InteractiveBarchart = withSelectedState(EnhancedBarchart);
@@ -154,7 +155,8 @@ const BarchartsPage = () => (
     title="Bar chart"
     blurb={blurb}
     webSubpage={<BarchartsSubPage wrapped />}
-    androidSubpage={<Android wrapped />}
+    androidSubpage={<AndroidBarChartPage wrapped />}
+    iosSubpage={<IOSBarChartPage wrapped />}
   />
 );
 
