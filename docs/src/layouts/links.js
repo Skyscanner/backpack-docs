@@ -303,7 +303,7 @@ const ComponentsLinks = [
         id: 'BAR_CHART',
         route: routes.BARCHART,
         children: 'Bar chart',
-        tags: ['web', 'android'],
+        tags: ['web', 'android', 'ios'],
       },
       {
         id: 'SLIDER',
