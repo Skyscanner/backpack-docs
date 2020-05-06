@@ -41,7 +41,9 @@
     "spellcheck": "mdspell -r --en-gb --ignore-acronyms --ignore-numbers --no-suggestions '*.md' '**/*.md' '!**/node_modules/**/*.md' '!backpack/**/*.md' '!backpack-react-native/**/*.md' '!backpack-ios/**/*.md'  '!backpack-android/**/*.md'",
     "spellcheck:interactive": "mdspell --en-gb --ignore-acronyms --no-suggestions --ignore-numbers '*.md' '**/*.md' '!**/node_modules/**/*.md' '!backpack/**/*.md' '!backpack-react-native/**/*.md' '!backpack-ios/**/*.md'  '!backpack-android/**/*.md'",
     "update-bpk-dependencies": "npx npm-check-updates -n '/^bpk\\-(.*)$/' -u",
-    "lighthouse": "babel-node scripts/lighthouse/lighthouse.js"
+    "lighthouse": "babel-node scripts/lighthouse/lighthouse.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "husky": {
     "hooks": {
@@ -191,7 +193,7 @@
     "semver": "^7.1.1",
     "static-site-generator-webpack-plugin": "^3.4.2",
     "style-loader": "^1.1.2",
-    "stylelint": "^12.0.1",
+    "stylelint": "^13.0.0",
     "stylelint-config-skyscanner": "^2.0.0-beta.6",
     "terser-webpack-plugin": "^2.3.1",
     "tinycolor2": "^1.4.1",
@@ -237,6 +239,8 @@
     "not ie < 9"
   ],
   "dependencies": {
-    "get-contrast-ratio": "^0.2.1"
-  }
+    "get-contrast-ratio": "^0.2.1",
+    "snyk": "^1.319.0"
+  },
+  "snyk": true
 }
