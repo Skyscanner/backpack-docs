@@ -159,6 +159,11 @@ class BpkBannerAlertDismissDemo extends Component<any, DismissDemoState> {
       },
       {
         show: true,
+        message: 'Primary alert with dismiss option.',
+        type: ALERT_TYPES.PRIMARY,
+      },
+      {
+        show: true,
         message: 'Successful alert with dismiss option.',
         type: ALERT_TYPES.SUCCESS,
       },
@@ -301,6 +306,7 @@ const components = [
     ],
     examples: [
       <BannerAlert message="Neutral alert." type={ALERT_TYPES.NEUTRAL} />,
+      <BannerAlert message="Primary alert." type={ALERT_TYPES.PRIMARY} />,
       <BannerAlert message="Successful alert." type={ALERT_TYPES.SUCCESS} />,
       <BannerAlert message={richMessage} type={ALERT_TYPES.SUCCESS} />,
       <BannerAlert message="Warn alert." type={ALERT_TYPES.WARN} />,
@@ -317,6 +323,11 @@ const components = [
       <BannerAlert
         message="Neutral alert."
         type={ALERT_TYPES.NEUTRAL}
+        icon={CurrencyIcon}
+      />,
+      <BannerAlert
+        message="Primary alert."
+        type={ALERT_TYPES.PRIMARY}
         icon={CurrencyIcon}
       />,
       <BannerAlert
@@ -354,6 +365,12 @@ const components = [
       <BannerAlertExpandable
         message="Neutral alert with more information."
         type={ALERT_TYPES.NEUTRAL}
+      >
+        {longMessage}
+      </BannerAlertExpandable>,
+      <BannerAlertExpandable
+        message="Primary alert with more information."
+        type={ALERT_TYPES.PRIMARY}
       >
         {longMessage}
       </BannerAlertExpandable>,
