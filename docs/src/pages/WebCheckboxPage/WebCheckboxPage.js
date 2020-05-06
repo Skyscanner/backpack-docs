@@ -25,11 +25,12 @@ import InputContainer from '../FormsPage/InputContainer';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 import IntroBlurb from '../../components/IntroBlurb';
 import Paragraph from '../../components/Paragraph';
-import STYLES from '../FormsPage/forms-page.scss';
+
+import STYLES from './checkbox-page.scss';
 
 const getClassName = cssModules(STYLES);
 
-const formClassName = getClassName('bpkdocs-forms-page__form');
+const formClassName = getClassName('bpkdocs-checkbox-page__form');
 
 const components = [
   {
@@ -59,29 +60,38 @@ const components = [
     title: 'Indeterminate',
     blurb: [
       <Paragraph>
-        The indeterminate flag is only a visual clue, it does not affect the
-        checked state of the checkbox. This is used when there is checkbox group
-        and the parent displays this state when not all children checkboxes are
-        selected.
+        The indeterminate prop is only a visual clue, it does not affect the
+        checked state of the checkbox. This is used when there is a checkbox
+        group and the parent displays this state when not all child checkboxes
+        are selected.
       </Paragraph>,
     ],
     examples: [
       <form className={formClassName}>
         <InputContainer
           FormComponent={BpkCheckbox}
-          name="checkbox"
-          label="Apples"
+          name="indeterminate_checkbox"
+          label="Fruits"
           indeterminate
         />
       </form>,
-      <form className={formClassName}>
-        <InputContainer
-          FormComponent={BpkCheckbox}
-          name="unchecked_checkbox"
-          label="Bananas"
-          checked={false}
-        />
-      </form>,
+      <div className={getClassName('bpkdocs-checkbox-page--indeterminate')}>
+        <form className={formClassName}>
+          <InputContainer
+            FormComponent={BpkCheckbox}
+            name="checked_checkbox"
+            label="Apples"
+            checked
+          />
+        </form>
+        <form className={formClassName}>
+          <InputContainer
+            FormComponent={BpkCheckbox}
+            name="unchecked_checkbox"
+            label="Bananas"
+          />
+        </form>
+      </div>,
     ],
   },
   {
