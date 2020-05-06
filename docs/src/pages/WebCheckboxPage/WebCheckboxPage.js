@@ -24,6 +24,7 @@ import readme from 'bpk-component-checkbox/README.md';
 import InputContainer from '../FormsPage/InputContainer';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 import IntroBlurb from '../../components/IntroBlurb';
+import Paragraph from '../../components/Paragraph';
 import STYLES from '../FormsPage/forms-page.scss';
 
 const getClassName = cssModules(STYLES);
@@ -41,6 +42,36 @@ const components = [
           name="checkbox"
           label="Apples"
           checked
+        />
+      </form>,
+      <form className={formClassName}>
+        <InputContainer
+          FormComponent={BpkCheckbox}
+          name="unchecked_checkbox"
+          label="Bananas"
+          checked={false}
+        />
+      </form>,
+    ],
+  },
+  {
+    id: 'indeterminate',
+    title: 'Indeterminate',
+    blurb: [
+      <Paragraph>
+        The indeterminate flag is only a visual clue, it does not affect the
+        checked state of the checkbox. This is used when there is checkbox group
+        and the parent displays this state when not all children checkboxes are
+        selected.
+      </Paragraph>,
+    ],
+    examples: [
+      <form className={formClassName}>
+        <InputContainer
+          FormComponent={BpkCheckbox}
+          name="checkbox"
+          label="Apples"
+          indeterminate
         />
       </form>,
       <form className={formClassName}>
