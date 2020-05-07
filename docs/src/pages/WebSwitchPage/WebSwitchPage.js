@@ -1,0 +1,67 @@
+/*
+ * Backpack - Skyscanner's Design System
+ *
+ * Copyright 2016-2019 Skyscanner Ltd
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import React from 'react';
+import BpkSwitch from 'bpk-component-switch';
+import readme from 'bpk-component-switch/README.md';
+
+import Paragraph from '../../components/Paragraph';
+import DocsPageBuilder from '../../components/DocsPageBuilder';
+
+const components = [
+  {
+    id: 'default',
+    title: 'Default',
+    blurb: [
+      <Paragraph>
+        The switch component for web is exclusively for use on mobile viewports.
+        It must never be used on desktop screen sizes.
+      </Paragraph>,
+      <Paragraph>
+        It uses a regular HTML checkbox behind the scenes to maintain semantic
+        markup and good accessibility.
+      </Paragraph>,
+    ],
+    examples: [
+      <div>
+        <BpkSwitch label="Show flexible fares" />
+      </div>,
+    ],
+  },
+];
+
+const WebSwitchPage = ({ ...rest }) => (
+  <DocsPageBuilder
+    title="Switch"
+    components={components}
+    readme={readme}
+    usageTable={{
+      dos: [
+        'Use on mobile viewports exclusively',
+        'Use for actions that cause immediate changes, for example applying a filter that takes effect when pressed.',
+      ],
+      donts: [
+        "Don't use on desktop viewports",
+        "Don't use for actions that have no immediate effect, like in a form. In that situation, use a checkbox.",
+      ],
+    }}
+    {...rest}
+  />
+);
+
+export default WebSwitchPage;
