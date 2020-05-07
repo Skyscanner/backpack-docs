@@ -425,7 +425,8 @@ const ComponentsLinks = [
         id: 'NATIVE_SWITCH',
         route: routes.SWITCH,
         children: 'Switch',
-        tags: ['native', 'android', 'ios'],
+        tags: ['native', 'android', 'ios', 'web'],
+        keywords: ['switch', 'toggle', 'checkbox'],
       },
       {
         id: 'NATIVE_CAROUSEL',

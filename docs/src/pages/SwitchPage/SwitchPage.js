@@ -23,6 +23,7 @@ import DocsPageWrapper from '../../components/DocsPageWrapper';
 import AndroidSwitchPage from '../AndroidSwitchPage';
 import IOSSwitchPage from '../IOSSwitchPage';
 import NativeSwitchPage from '../NativeSwitchPage';
+import WebSwitchPage from '../WebSwitchPage';
 
 const blurb = [
   <IntroBlurb>
@@ -38,6 +39,7 @@ const SwitchPage = () => (
     androidSubpage={<AndroidSwitchPage wrapped />}
     iosSubpage={<IOSSwitchPage wrapped />}
     nativeSubpage={<NativeSwitchPage wrapped />}
+    webSubpage={<WebSwitchPage wrapped />}
   />
 );
 
