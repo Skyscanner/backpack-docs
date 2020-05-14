@@ -22,13 +22,21 @@ import BpkSectionList, {
   BpkSectionListItem,
 } from 'bpk-component-section-list';
 import sectionListReadme from 'bpk-component-section-list/README.md';
+import { BpkCode } from 'bpk-component-code';
 
 import DocsPageBuilder from '../../components/DocsPageBuilder';
+import Paragraph from '../../components/Paragraph';
 
 const components = [
   {
     id: 'default',
     title: 'Default',
+    blurb: [
+      <Paragraph>
+        When the <BpkCode>href</BpkCode> prop is provided, section list items
+        get a chevron icon to indicate they lead somewhere.
+      </Paragraph>,
+    ],
     examples: [
       <BpkSectionList>
         <BpkSectionListSection headerText="Cities">
