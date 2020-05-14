@@ -108,7 +108,6 @@ const NativeRatingPage = ({ ...rest }: { [string]: any }) => (
     components={components}
     readme={readme}
     showMenu
-    showBetaWarning
     {...rest}
   />
 );
