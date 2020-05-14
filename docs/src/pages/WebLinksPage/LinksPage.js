@@ -19,9 +19,14 @@
 import React from 'react';
 import BpkLink, { BpkButtonLink } from 'bpk-component-link';
 import linkReadme from 'bpk-component-link/README.md';
+import { cssModules } from 'bpk-react-utils';
 
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 import Paragraph from '../../components/Paragraph';
+
+import STYLES from './LinksPage.scss';
+
+const getClassName = cssModules(STYLES);
 
 const components = [
   {
@@ -31,6 +36,24 @@ const components = [
       <Paragraph>
         Links can be both <BpkLink href="#">anchor tags</BpkLink> as well as{' '}
         <BpkButtonLink onClick={() => null}>button tags</BpkButtonLink>.
+      </Paragraph>,
+    ],
+  },
+  {
+    id: 'alternate',
+    title: 'Alternate',
+    dark: true,
+    examples: [
+      <Paragraph className={getClassName('bpk-docs-links-examples__paragraph')}>
+        Links can be both{' '}
+        <BpkLink href="#" alternate>
+          anchor tags
+        </BpkLink>{' '}
+        as well as{' '}
+        <BpkButtonLink onClick={() => null} alternate>
+          button tags
+        </BpkButtonLink>
+        .
       </Paragraph>,
     ],
   },
