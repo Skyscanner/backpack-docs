@@ -24,7 +24,10 @@ import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-
 import androidScreenshotTitleIcon from '../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/android/title-and-icon.png';
 import androidScreenshotAction from '../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/android/action.png';
 import androidScreenshotIconAction from '../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/android/icon-action.png';
-import iosScreenshotEmpty from '../../static/ios_empty.svg';
+import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/ios/default.png';
+import iosScreenshotTitleIcon from '../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/ios/title-and-icon.png';
+import iosScreenshotAction from '../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/ios/action.png';
+import iosScreenshotIconAction from '../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/ios/icon-action.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -36,7 +39,7 @@ const components = [
         title: 'iOS',
         width: 750,
         height: 1334,
-        src: `/${iosScreenshotEmpty}`,
+        src: `/${iosScreenshotDefault}`,
         altText: 'iOS snackbar component.',
         subText: '(iPhone 8 simulator)',
       },
@@ -58,7 +61,7 @@ const components = [
         title: 'iOS',
         width: 750,
         height: 1334,
-        src: `/${iosScreenshotEmpty}`,
+        src: `/${iosScreenshotTitleIcon}`,
         altText: 'iOS snackbar with title and icon.',
         subText: '(iPhone 8 simulator)',
       },
@@ -80,7 +83,7 @@ const components = [
         title: 'iOS',
         width: 750,
         height: 1334,
-        src: `/${iosScreenshotEmpty}`,
+        src: `/${iosScreenshotAction}`,
         altText: 'iOS snackbar with text action.',
         subText: '(iPhone 8 simulator)',
       },
@@ -102,7 +105,7 @@ const components = [
         title: 'iOS',
         width: 750,
         height: 1334,
-        src: `/${iosScreenshotEmpty}`,
+        src: `/${iosScreenshotIconAction}`,
         altText: 'iOS snackbar with icon only action.',
         subText: '(iPhone 8 simulator)',
       },
