@@ -26,21 +26,45 @@ import {
   BpkTableCell,
 } from 'bpk-component-table';
 import tablesReadme from 'bpk-component-table/README.md';
+import { BpkDataTable, BpkDataTableColumn } from 'bpk-component-datatable';
+import dataTablesReadme from 'bpk-component-datatable/README.md';
 
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 
-const blurb = [
-  <IntroBlurb>
-    A simple table component for displaying data in a tabular form.
-  </IntroBlurb>,
-];
+const DataTableExample = () => {
+  const rows = [
+    { name: 'Hermione', house: 'Gryffindor' },
+    { name: 'Luna', house: 'Ravenclaw' },
+    { name: 'Cedric', house: 'Hufflepuff' },
+    { name: 'Draco', house: 'Slytherin' },
+  ];
+
+  // eslint-disable-next-line no-alert
+  const onRowClick = row => alert(`${row.name} is in ${row.house}.`);
+  return (
+    <BpkDataTable rows={rows} height={300} onRowClick={onRowClick}>
+      <BpkDataTableColumn label="Name" dataKey="name" width={100} />
+      <BpkDataTableColumn
+        label="House"
+        dataKey="house"
+        width={100}
+        flexGrow={1}
+      />
+    </BpkDataTable>
+  );
+};
 
 const components = [
   {
     id: 'default',
-    title: 'Default',
+    title: 'Standard table',
+    blurb: (
+      <IntroBlurb>
+        A simple table component for displaying data in a tabular form.
+      </IntroBlurb>
+    ),
     examples: [
       <BpkTable>
         <BpkTableHead>
@@ -67,22 +91,30 @@ const components = [
         </BpkTableBody>
       </BpkTable>,
     ],
+    readme: tablesReadme,
+  },
+  {
+    id: 'datatable',
+    title: 'Data Table',
+    blurb: (
+      <IntroBlurb>
+        For more advanced use cases, data tables take an array of data and
+        automatically generate a table. Data tables support dynamically sorting
+        rows.
+      </IntroBlurb>
+    ),
+    examples: [<DataTableExample />],
+    readme: dataTablesReadme,
   },
 ];
 
 const TablesSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Table"
-    readme={tablesReadme}
-    components={components}
-    {...rest}
-  />
+  <DocsPageBuilder title="Table" components={components} {...rest} />
 );
 
 const TablesPage = () => (
   <DocsPageWrapper
     title="Table"
-    blurb={blurb}
     components={components}
     webSubpage={<TablesSubPage wrapped />}
   />
