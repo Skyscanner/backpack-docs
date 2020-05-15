@@ -26,21 +26,60 @@ import {
   BpkTableCell,
 } from 'bpk-component-table';
 import tablesReadme from 'bpk-component-table/README.md';
+import { BpkDataTable, BpkDataTableColumn } from 'bpk-component-datatable';
+import dataTablesReadme from 'bpk-component-datatable/README.md';
 
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 
-const blurb = [
-  <IntroBlurb>
-    A simple table component for displaying data in a tabular form.
-  </IntroBlurb>,
-];
+const DataTableExample = () => {
+  const rows = [
+    {
+      name: 'Abikso',
+      description:
+        'A village in northern Sweden, home to the Climate Impacts Research Centre.',
+    },
+    {
+      name: 'Erfoud',
+      description:
+        "A Moroccan oasis town that's been used as a location for many films.",
+    },
+    {
+      name: 'Panjin',
+      description:
+        'A Chinese city famed for its vividly-coloured red seabeach.',
+    },
+    {
+      name: 'Nara',
+      description: 'A city in Japan famous for its deer population.',
+    },
+  ];
+
+  // eslint-disable-next-line no-alert
+  const onRowClick = row => alert(`${row.name}: ${row.description}`);
+  return (
+    <BpkDataTable rows={rows} height={300} onRowClick={onRowClick}>
+      <BpkDataTableColumn label="Name" dataKey="name" width={100} />
+      <BpkDataTableColumn
+        label="Description"
+        dataKey="description"
+        width={100}
+        flexGrow={1}
+      />
+    </BpkDataTable>
+  );
+};
 
 const components = [
   {
     id: 'default',
-    title: 'Default',
+    title: 'Standard table',
+    blurb: (
+      <IntroBlurb>
+        A simple table component for displaying data in a tabular form.
+      </IntroBlurb>
+    ),
     examples: [
       <BpkTable>
         <BpkTableHead>
@@ -67,22 +106,30 @@ const components = [
         </BpkTableBody>
       </BpkTable>,
     ],
+    readme: tablesReadme,
+  },
+  {
+    id: 'datatable',
+    title: 'Data Table',
+    blurb: (
+      <IntroBlurb>
+        For more advanced use cases, data tables take an array of data and
+        automatically generate a table. Data tables support dynamically sorting
+        rows.
+      </IntroBlurb>
+    ),
+    examples: [<DataTableExample />],
+    readme: dataTablesReadme,
   },
 ];
 
 const TablesSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Table"
-    readme={tablesReadme}
-    components={components}
-    {...rest}
-  />
+  <DocsPageBuilder title="Table" components={components} {...rest} />
 );
 
 const TablesPage = () => (
   <DocsPageWrapper
     title="Table"
-    blurb={blurb}
     components={components}
     webSubpage={<TablesSubPage wrapped />}
   />
