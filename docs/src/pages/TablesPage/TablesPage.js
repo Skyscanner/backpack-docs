@@ -35,20 +35,35 @@ import IntroBlurb from '../../components/IntroBlurb';
 
 const DataTableExample = () => {
   const rows = [
-    { name: 'Hermione', house: 'Gryffindor' },
-    { name: 'Luna', house: 'Ravenclaw' },
-    { name: 'Cedric', house: 'Hufflepuff' },
-    { name: 'Draco', house: 'Slytherin' },
+    {
+      name: 'Abikso',
+      description:
+        'A village in northern Sweden, home to the Climate Impacts Research Centre.',
+    },
+    {
+      name: 'Erfoud',
+      description:
+        "A Moroccan oasis town that's been used as a location for many films.",
+    },
+    {
+      name: 'Panjin',
+      description:
+        'A Chinese city famed for its vividly-coloured red seabeach.',
+    },
+    {
+      name: 'Nara',
+      description: 'A city in Japan famous for its deer population.',
+    },
   ];
 
   // eslint-disable-next-line no-alert
-  const onRowClick = row => alert(`${row.name} is in ${row.house}.`);
+  const onRowClick = row => alert(`${row.name}: ${row.description}`);
   return (
     <BpkDataTable rows={rows} height={300} onRowClick={onRowClick}>
       <BpkDataTableColumn label="Name" dataKey="name" width={100} />
       <BpkDataTableColumn
-        label="House"
-        dataKey="house"
+        label="Description"
+        dataKey="description"
         width={100}
         flexGrow={1}
       />
