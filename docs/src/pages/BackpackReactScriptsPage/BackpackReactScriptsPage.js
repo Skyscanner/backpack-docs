@@ -42,7 +42,7 @@ const components = [
         </strong>
       </Paragraph>,
       <CodeBlock>
-        {`npx create-react-app@2.1.2 my-app --scripts-version=backpack-react-scripts
+        {`npx create-react-app@2.1.2 my-app --scripts-version=backpack-react-scripts@7.0.5
 cd my-app
 npm start`}
       </CodeBlock>,
@@ -112,7 +112,7 @@ npm start`}
         Backpack + React at Skyscanner. When you create an app using{' '}
         <Code>
           npx create-react-app@2.1.2 my-app
-          --scripts-version=backpack-react-scripts
+          --scripts-version=backpack-react-scripts@7.0.5
         </Code>
         , you&apos;ll notice that your project&apos;s <Code>package.json</Code>{' '}
         has a dependency on <Code>backpack-react-scripts</Code>. When we release
