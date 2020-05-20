@@ -154,7 +154,7 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.4.3",
     "es6-promise": "^4.2.8",
-    "eslint-config-skyscanner": "^5.0.0",
+    "eslint-config-skyscanner": "^6.0.0",
     "eslint-plugin-flowtype": "^4.5.3",
     "eslint_d": "^8.0.1",
     "file-loader": "^5.0.2",
