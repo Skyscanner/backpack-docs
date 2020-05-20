@@ -2,11 +2,7 @@ version: 1
 update_configs:
   - package_manager: "javascript"
     directory: "/"
-    update_schedule: "daily"
-    ignored_updates:
-      # Once we are using css packages, and as long as dependabot doesn't support custom npm tags,
-      # we'll exclude all bpk updates so that they don't bump non css versions.
-      # - match:
-      #     dependency_name: "bpk*"
+    update_schedule: "weekly"
+    version_requirement_updates: "increase_versions"
     default_labels:
       - "dependabot"
