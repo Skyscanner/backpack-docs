@@ -19,9 +19,13 @@
 import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/TextField/README.md';
+import textViewReadme from '../../../../backpack-ios/Backpack/TextView/README.md';
 import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-text-field___default_lm.png';
 import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-text-field___default_dm.png';
+import screenshotTextView from '../../../../backpack-ios/screenshots/iPhone 8-text-view___default_lm.png';
+import screenshotTextViewDm from '../../../../backpack-ios/screenshots/iPhone 8-text-view___default_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
+import IntroBlurb from '../../components/IntroBlurb';
 
 const components = [
   {
@@ -46,11 +50,41 @@ const components = [
   },
 ];
 
+const customSections = [
+  {
+    id: 'text-view',
+    title: 'Text Views',
+    content: [
+      <IntroBlurb>
+        Text views are used to capture large amounts of textual information.
+      </IntroBlurb>,
+    ],
+    screenshots: [
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotTextView}`,
+        altText: 'iOS default text view',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotTextViewDm}`,
+        altText: 'iOS default text view',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
+    ],
+    readme: textViewReadme,
+  },
+];
+
 const IOSTextInputPage = ({ ...rest }) => (
   <DocsPageBuilder
     title="Text Input"
     components={components}
     readme={readme}
+    customSections={customSections}
     iosDocId="BPKTextInput"
     showMenu
     {...rest}

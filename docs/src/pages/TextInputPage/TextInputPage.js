@@ -17,7 +17,6 @@
  */
 
 import React from 'react';
-import BpkRouterLink from 'bpk-component-router-link';
 
 import IntroBlurb from '../../components/IntroBlurb';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
@@ -25,17 +24,12 @@ import IOS from '../IOSTextInputPage';
 import Web from '../WebTextInputPage';
 import Native from '../NativeTextInputPage';
 import Android from '../AndroidTextFieldPage';
-import Paragraph from '../../components/Paragraph';
-import { TEXT_VIEW } from '../../constants/routes';
 
 const blurb = [
   <IntroBlurb>
     Text inputs are used to capture textual information as well as numbers and
     passwords.
   </IntroBlurb>,
-  <Paragraph>
-    Related: <BpkRouterLink to={TEXT_VIEW}>Text views</BpkRouterLink>
-  </Paragraph>,
 ];
 
 const TextInputPage = () => (

@@ -24,7 +24,6 @@ import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 import Web from '../WebLinksPage';
 import IOS from '../IOSTappableLinkLabelPage';
-import Native from '../NativeButtonLinkPage';
 
 const Page = () => (
   <DocsPageWrapper
@@ -36,7 +35,6 @@ const Page = () => (
     ]}
     webSubpage={<Web wrapped />}
     iosSubpage={<IOS wrapped />}
-    nativeSubpage={<Native wrapped />}
   />
 );
 

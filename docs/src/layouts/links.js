@@ -373,12 +373,6 @@ const ComponentsLinks = [
         children: 'Text input',
         tags: ['native', 'ios', 'android', 'web'],
       },
-      {
-        id: 'NATIVE_TEXT_VIEW',
-        route: routes.TEXT_VIEW,
-        children: 'Text view',
-        tags: ['ios'],
-      },
       // TODO: Uncomment later.
       // {
       //   id: 'NATIVE_PAGINATION_DOT',

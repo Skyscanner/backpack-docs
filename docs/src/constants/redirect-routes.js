@@ -80,7 +80,7 @@ export default {
   '/components/native/switches': ROUTES.SWITCH,
   '/components/native/text': ROUTES.TEXT,
   '/components/native/text-input': ROUTES.TEXT_INPUT,
-  '/components/native/text-view': ROUTES.TEXT_VIEW,
+  '/components/native/text-view': ROUTES.TEXT_INPUT,
   '/components/native/tappable-link-label': ROUTES.LINK,
   '/components/native/touchable-native-feedback':
     ROUTES.TOUCHABLE_NATIVE_FEEDBACK,
@@ -88,6 +88,7 @@ export default {
   '/components/star-rating-interactive': ROUTES.STAR_RATING,
   '/components/tappable-link-label': ROUTES.LINK,
   '/components/text-span': ROUTES.TEXT,
+  '/components/text-view': ROUTES.TEXT_INPUT,
   '/components/utilities': ROUTES.COMPONENTS,
   '/components/utilities/alignment': ROUTES.ALIGNMENT,
   '/components/utilities/theming': ROUTES.THEMING,

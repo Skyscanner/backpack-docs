@@ -113,7 +113,6 @@ import StarRatingPage from '../pages/StarRatingPage';
 import SwitchPage from '../pages/SwitchPage';
 import TablesPage from '../pages/TablesPage';
 import TextInputPage from '../pages/TextInputPage';
-import TextViewPage from '../pages/TextViewPage';
 import TextPage from '../pages/TextPage';
 import ThemingPage from '../pages/ThemingPage';
 import TicketsPage from '../pages/TicketsPage';
@@ -330,10 +329,6 @@ export const ROUTES_MAPPINGS = [
       {
         path: ROUTES.TEXT_INPUT,
         component: TextInputPage,
-      },
-      {
-        path: ROUTES.TEXT_VIEW,
-        component: TextViewPage,
       },
       { path: ROUTES.THEMING, component: ThemingPage },
       { path: ROUTES.TICKET, component: TicketsPage },
