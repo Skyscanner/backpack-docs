@@ -19,6 +19,7 @@
 import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Button/README.md';
+import linkReadme from '../../../../backpack-android/docs/ButtonLink/README.md';
 import screenshotPrimary from '../../../../backpack-android/docs/Button/screenshots/primary.png';
 import screenshotPrimaryDm from '../../../../backpack-android/docs/Button/screenshots/primary_dm.png';
 import screenshotSecondary from '../../../../backpack-android/docs/Button/screenshots/secondary.png';
@@ -29,6 +30,8 @@ import screenshotOutline from '../../../../backpack-android/docs/Button/screensh
 import screenshotOutlineDm from '../../../../backpack-android/docs/Button/screenshots/outline_dm.png';
 import screenshotFeatured from '../../../../backpack-android/docs/Button/screenshots/featured.png';
 import screenshotFeaturedDm from '../../../../backpack-android/docs/Button/screenshots/featured_dm.png';
+import screenshotLink from '../../../../backpack-android/docs/ButtonLink/screenshots/default.png';
+import screenshotLinkDm from '../../../../backpack-android/docs/ButtonLink/screenshots/default_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -134,11 +137,38 @@ const components = [
   },
 ];
 
+const customSections = [
+  {
+    id: 'link',
+    title: 'Link',
+    screenshots: [
+      {
+        title: 'Android',
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotLink}`,
+        altText: 'Android Button link Component',
+        subText: '(Google Pixel emulator)',
+      },
+      {
+        title: 'Android',
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotLinkDm}`,
+        altText: 'Android Button link Component',
+        subText: '(Google Pixel emulator - dark mode)',
+      },
+    ],
+    readme: linkReadme,
+  },
+];
+
 const AndroidButtonPage = ({ ...rest }) => (
   <DocsPageBuilder
     title="Button"
     components={components}
     readme={readme}
+    customSections={customSections}
     androidDocId="net.skyscanner.backpack.button"
     showMenu
     {...rest}

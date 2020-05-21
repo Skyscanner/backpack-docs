@@ -56,7 +56,7 @@ const ComponentsLinks = [
         id: 'LINK',
         route: routes.LINK,
         children: 'Link',
-        tags: ['web', 'native', 'android'],
+        tags: ['web', 'ios'],
       },
       {
         id: 'LIST',
@@ -83,12 +83,6 @@ const ComponentsLinks = [
         tags: ['android', 'ios'],
       },
       {
-        id: 'TEXT_SPANS',
-        route: routes.TEXT_SPANS,
-        children: 'Text Spans',
-        tags: ['android'],
-      },
-      {
         id: 'CHECKBOX',
         route: routes.CHECKBOX,
         children: 'Checkbox',
@@ -100,12 +94,6 @@ const ComponentsLinks = [
         route: routes.SNACKBAR,
         children: 'Snackbar',
         tags: ['android', 'native'],
-      },
-      {
-        id: 'STAR_RATING_INTERACTIVE',
-        route: routes.STAR_RATING_INTERACTIVE,
-        children: 'Star rating: interactive',
-        tags: ['android', 'ios', 'web'],
       },
       {
         id: 'BLOCKQUOTE',
@@ -385,18 +373,6 @@ const ComponentsLinks = [
         route: routes.TEXT_INPUT,
         children: 'Text input',
         tags: ['native', 'ios', 'android', 'web'],
-      },
-      {
-        id: 'NATIVE_TEXT_VIEW',
-        route: routes.TEXT_VIEW,
-        children: 'Text view',
-        tags: ['ios', 'web'],
-      },
-      {
-        id: 'TAPPABLE_LINK_LABEL',
-        route: routes.TAPPABLE_LINK_LABEL,
-        children: 'Tappable link label',
-        tags: ['ios'],
       },
       // TODO: Uncomment later.
       // {

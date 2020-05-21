@@ -68,8 +68,8 @@ const components = [
     title: 'Textareas',
     blurb: [
       <BpkParagraph>
-        <BpkLink href={ROUTES.TEXT_VIEW}>
-          Text areas have been moved to their own page.
+        <BpkLink href={ROUTES.TEXT_INPUT}>
+          Text areas are now part of the text input page.
         </BpkLink>
       </BpkParagraph>,
     ],

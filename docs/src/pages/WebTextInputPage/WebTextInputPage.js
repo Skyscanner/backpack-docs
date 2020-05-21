@@ -21,11 +21,14 @@ import BpkLabel from 'bpk-component-label';
 import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
 import BpkSelect from 'bpk-component-select';
 import BpkBannerAlert, { ALERT_TYPES } from 'bpk-component-banner-alert';
+import BpkTextarea from 'bpk-component-textarea';
 import { cssModules } from 'bpk-react-utils';
 import readme from 'bpk-component-input/README.md';
+import textareaReadme from 'bpk-component-textarea/README.md';
 
 import InputContainer from '../FormsPage/InputContainer';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
+import BpkParagraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
 import STYLES from '../FormsPage/forms-page.scss';
 
@@ -486,6 +489,79 @@ const components = [
   },
 ];
 
+const loremIpsum = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.';
+
+const loremIpsumLong = `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate repellat assumenda
+necessitatibus reiciendis, porro temporibus expedita excepturi! Nostrum pariatur odit porro, dolorem dignissimos
+laudantium quis, tempore iste non, nam magnam.`;
+
+const customSections = [
+  {
+    id: 'text-area',
+    title: 'Multiline text input',
+    content: [
+      <BpkParagraph>
+        Textareas allow long text to wrap across multiple lines.
+      </BpkParagraph>,
+    ],
+    examples: [
+      <form className={formClassName}>
+        <BpkLabel htmlFor="textarea">Textarea</BpkLabel>
+        <InputContainer
+          FormComponent={BpkTextarea}
+          id="textarea"
+          name="textarea"
+          value={loremIpsumLong}
+          placeholder={loremIpsumLong}
+          onChange={() => null}
+        />
+      </form>,
+      <form className={formClassName}>
+        <BpkLabel htmlFor="textarea_placeholder">
+          Textarea (placeholder)
+        </BpkLabel>
+        <InputContainer
+          FormComponent={BpkTextarea}
+          id="textarea_placeholder"
+          name="textarea_placeholder"
+          value=""
+          placeholder={loremIpsum}
+          onChange={() => null}
+        />
+      </form>,
+      <form className={formClassName}>
+        <BpkLabel disabled htmlFor="textarea_disabled">
+          Disabled textarea
+        </BpkLabel>
+        <InputContainer
+          FormComponent={BpkTextarea}
+          id="textarea_disabled"
+          name="textarea_disabled"
+          value=""
+          placeholder={loremIpsum}
+          onChange={() => null}
+          disabled
+        />
+      </form>,
+      <form className={formClassName}>
+        <BpkLabel valid={false} htmlFor="textarea_invalid">
+          Invalid Textarea
+        </BpkLabel>
+        <InputContainer
+          FormComponent={BpkTextarea}
+          id="textarea_invalid"
+          name="textarea_invalid"
+          value="@ 123 {\ hi"
+          placeholder="@ 123 {\ hi"
+          onChange={() => null}
+          valid={false}
+        />
+      </form>,
+    ],
+    readme: textareaReadme,
+  },
+];
+
 const blurb = [
   <IntroBlurb>
     Backpack selects override the default styles in most modern browsers. In
@@ -500,6 +576,7 @@ const WebTextInputPage = ({ ...rest }) => (
     blurb={blurb}
     components={components}
     readme={readme}
+    customSections={customSections}
     showMenu={false}
     {...rest}
   />

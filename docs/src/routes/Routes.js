@@ -113,8 +113,6 @@ import StarRatingPage from '../pages/StarRatingPage';
 import SwitchPage from '../pages/SwitchPage';
 import TablesPage from '../pages/TablesPage';
 import TextInputPage from '../pages/TextInputPage';
-import TextViewPage from '../pages/TextViewPage';
-import TappableLinkLabelPage from '../pages/TappableLinkLabelPage';
 import TextPage from '../pages/TextPage';
 import ThemingPage from '../pages/ThemingPage';
 import TicketsPage from '../pages/TicketsPage';
@@ -122,9 +120,7 @@ import TooltipsPage from '../pages/TooltipsPage';
 import BagCheckPage from '../pages/BagCheckPage';
 import ToastPage from '../pages/ToastPage';
 import SnackbarPage from '../pages/SnackbarPage';
-import TextSpansPage from '../pages/TextSpansPage';
 import CheckboxPage from '../pages/CheckboxPage';
-import StarRatingInteractivePage from '../pages/StarRatingInteractrivePage';
 import { GridColumnDemoPage, GridOffsetDemoPage } from '../pages/GridDemoPages';
 
 import withPageViewEvent from './withPageViewEvent';
@@ -258,14 +254,6 @@ export const ROUTES_MAPPINGS = [
         component: CheckboxPage,
       },
       {
-        path: ROUTES.STAR_RATING_INTERACTIVE,
-        component: StarRatingInteractivePage,
-      },
-      {
-        path: ROUTES.TEXT_SPANS,
-        component: TextSpansPage,
-      },
-      {
         path: ROUTES.RATING,
         component: RatingPage,
       },
@@ -341,14 +329,6 @@ export const ROUTES_MAPPINGS = [
       {
         path: ROUTES.TEXT_INPUT,
         component: TextInputPage,
-      },
-      {
-        path: ROUTES.TAPPABLE_LINK_LABEL,
-        component: TappableLinkLabelPage,
-      },
-      {
-        path: ROUTES.TEXT_VIEW,
-        component: TextViewPage,
       },
       { path: ROUTES.THEMING, component: ThemingPage },
       { path: ROUTES.TICKET, component: TicketsPage },

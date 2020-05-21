@@ -147,11 +147,14 @@ const CustomSection = section => [
   <Heading id={section.id} level="h2">
     {section.title}
   </Heading>,
-  Children.toArray(section.content.map(toNodes)),
+  section.content ? Children.toArray(section.content.map(toNodes)) : null,
   section.examples ? (
     <PresentationBlock whiteBackground>
       {Children.toArray(section.examples)}
     </PresentationBlock>
+  ) : null,
+  section.screenshots ? (
+    <ComponentScreenshots screenshots={section.screenshots} />
   ) : null,
   section.readme
     ? Children.toArray([

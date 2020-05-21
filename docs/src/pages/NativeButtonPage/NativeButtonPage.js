@@ -19,14 +19,17 @@
 import React from 'react';
 
 import readme from '../../../../backpack-react-native/lib/bpk-component-button/README.md';
+import linkReadme from '../../../../backpack-react-native/lib/bpk-component-button-link/README.md';
 import iosScreenshotPrimary from '../../../../backpack-react-native/lib/bpk-component-button/screenshots/ios/primary.png';
 import iosScreenshotSecondary from '../../../../backpack-react-native/lib/bpk-component-button/screenshots/ios/secondary.png';
 import iosScreenshotDestructive from '../../../../backpack-react-native/lib/bpk-component-button/screenshots/ios/destructive.png';
 import iosScreenshotFeatured from '../../../../backpack-react-native/lib/bpk-component-button/screenshots/ios/featured.png';
+import iosScreenshotLink from '../../../../backpack-react-native/lib/bpk-component-button-link/screenshots/ios/default.png';
 import androidScreenshotPrimary from '../../../../backpack-react-native/lib/bpk-component-button/screenshots/android/primary.png';
 import androidScreenshotSecondary from '../../../../backpack-react-native/lib/bpk-component-button/screenshots/android/secondary.png';
 import androidScreenshotDestructive from '../../../../backpack-react-native/lib/bpk-component-button/screenshots/android/destructive.png';
 import androidScreenshotFeatured from '../../../../backpack-react-native/lib/bpk-component-button/screenshots/android/featured.png';
+import androidScreenshotLink from '../../../../backpack-react-native/lib/bpk-component-button-link/screenshots/android/default.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
@@ -120,11 +123,38 @@ const components = [
   },
 ];
 
+const customSections = [
+  {
+    id: 'link',
+    title: 'Link',
+    screenshots: [
+      {
+        title: 'iOS',
+        width: 750,
+        height: 1334,
+        src: `/${iosScreenshotLink}`,
+        altText: 'iOS Link Button Component',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        title: 'Android',
+        width: 1080,
+        height: 1920,
+        src: `/${androidScreenshotLink}`,
+        altText: 'Android Link Button Component',
+        subText: '(Google Pixel emulator)',
+      },
+    ],
+    readme: linkReadme,
+  },
+];
+
 const NativeTextPage = ({ ...rest }) => (
   <DocsPageBuilder
     title="Buttons"
     components={components}
     readme={readme}
+    customSections={customSections}
     showMenu
     {...rest}
   />

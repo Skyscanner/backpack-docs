@@ -19,13 +19,17 @@
 import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Text/README.md';
+import textSpanReadme from '../../../../backpack-android/docs/TextSpans/README.md';
 import screenshotDefault from '../../../../backpack-android/docs/Text/screenshots/default.png';
 import screenshotDefaultDm from '../../../../backpack-android/docs/Text/screenshots/default_dm.png';
 import screenshotEmphasized from '../../../../backpack-android/docs/Text/screenshots/emphasized.png';
 import screenshotEmphasizedDm from '../../../../backpack-android/docs/Text/screenshots/emphasized_dm.png';
 import screenshotHeavy from '../../../../backpack-android/docs/Text/screenshots/heavy.png';
 import screenshotHeavyDm from '../../../../backpack-android/docs/Text/screenshots/heavy_dm.png';
+import screenshotTextSpan from '../../../../backpack-android/docs/TextSpans/screenshots/default.png';
+import screenshotTextSpanDm from '../../../../backpack-android/docs/TextSpans/screenshots/default_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
+import IntroBlurb from '../../components/IntroBlurb';
 
 const components = [
   {
@@ -90,10 +94,42 @@ const components = [
   },
 ];
 
+const customSections = [
+  {
+    id: 'text-span',
+    title: 'Text Span',
+    content: [
+      <IntroBlurb>
+        Text Spans is a set of styles to apply to characters sequence.
+      </IntroBlurb>,
+    ],
+    screenshots: [
+      {
+        title: 'Android',
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotTextSpan}`,
+        altText: 'Android Text Spans Component',
+        subText: '(Google Pixel emulator)',
+      },
+      {
+        title: 'Android',
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotTextSpanDm}`,
+        altText: 'Android Text Spans Component',
+        subText: '(Google Pixel emulator - dark mode)',
+      },
+    ],
+    readme: textSpanReadme,
+  },
+];
+
 const AndroidTextPage = ({ ...rest }) => (
   <DocsPageBuilder
     title="Text"
     components={components}
+    customSections={customSections}
     readme={readme}
     androidDocId="net.skyscanner.backpack.text"
     showMenu

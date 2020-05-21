@@ -18,15 +18,19 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-android/docs/StarRating/README.md';
-import screenshotDefault from '../../../../backpack-android/docs/StarRating/screenshots/default.png';
-import screenshotDefaultDm from '../../../../backpack-android/docs/StarRating/screenshots/default_dm.png';
+import starRatingReadme from '../../../../backpack-android/docs/StarRating/README.md';
+import starRatingInteractiveReadme from '../../../../backpack-android/docs/InteractiveStarRating/README.md';
+import screenshotStarRating from '../../../../backpack-android/docs/StarRating/screenshots/default.png';
+import screenshotStarRatingDm from '../../../../backpack-android/docs/StarRating/screenshots/default_dm.png';
+import screenshotInteractive from '../../../../backpack-android/docs/InteractiveStarRating/screenshots/default.png';
+import screenshotInteractiveDm from '../../../../backpack-android/docs/InteractiveStarRating/screenshots/default_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
+import Paragraph from '../../components/Paragraph';
 
 const components = [
   {
     id: 'default',
-    title: 'Default',
+    title: 'Star Rating',
     blurb:
       'By default, star ratings are shown in a static form. These can be set at half star intervals. ',
     screenshots: [
@@ -34,7 +38,7 @@ const components = [
         title: 'Android',
         width: 1080,
         height: 1920,
-        src: `/${screenshotDefault}`,
+        src: `/${screenshotStarRating}`,
         altText: 'Android Star Rating Component',
         subText: '(Google Pixel emulator)',
       },
@@ -42,21 +46,46 @@ const components = [
         title: 'Android',
         width: 1080,
         height: 1920,
-        src: `/${screenshotDefaultDm}`,
+        src: `/${screenshotStarRatingDm}`,
         altText: 'Android Star Rating Component',
         subText: '(Google Pixel emulator - dark mode)',
       },
     ],
+    readme: starRatingReadme,
+  },
+  {
+    id: 'interactive',
+    title: 'Interactive Star Rating',
+    blurb: [
+      <Paragraph>
+        This version allows users to leave feedback on a given feature or area
+        by setting a rating. These can be set at half star intervals.
+      </Paragraph>,
+    ],
+    screenshots: [
+      {
+        title: 'Android',
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotInteractive}`,
+        altText: 'Android Interactive Star Rating Component',
+        subText: '(Google Pixel emulator)',
+      },
+      {
+        title: 'Android',
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotInteractiveDm}`,
+        altText: 'Android Interactive Star Rating Component',
+        subText: '(Google Pixel emulator - dark mode)',
+      },
+    ],
+    readme: starRatingInteractiveReadme,
   },
 ];
 
 const AndroidStarRatingPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Star rating"
-    components={components}
-    readme={readme}
-    {...rest}
-  />
+  <DocsPageBuilder title="Star rating" components={components} {...rest} />
 );
 
 export default AndroidStarRatingPage;
