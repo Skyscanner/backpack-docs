@@ -38,6 +38,7 @@ const ComponentsLinks = [
         route: routes.BOTTOM_NAV,
         children: 'Bottom Nav',
         tags: ['android'],
+        keywords: ['navigation bar'],
       },
       {
         id: 'BOTTOM_SHEET',
@@ -333,7 +334,7 @@ const ComponentsLinks = [
         id: 'NAVIGATION_BAR',
         route: routes.NAVIGATION_BAR,
         children: 'Navigation bar',
-        tags: ['web', 'native', 'ios'],
+        tags: ['web', 'android', 'native', 'ios'],
       },
       {
         id: 'NAVIGATION_STACK',
