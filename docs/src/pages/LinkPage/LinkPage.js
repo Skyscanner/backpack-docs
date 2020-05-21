@@ -23,8 +23,8 @@ import React from 'react';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 import Web from '../WebLinksPage';
+import IOS from '../IOSTappableLinkLabelPage';
 import Native from '../NativeButtonLinkPage';
-import Android from '../AndroidLinkPage';
 
 const Page = () => (
   <DocsPageWrapper
@@ -35,8 +35,8 @@ const Page = () => (
       </IntroBlurb>,
     ]}
     webSubpage={<Web wrapped />}
+    iosSubpage={<IOS wrapped />}
     nativeSubpage={<Native wrapped />}
-    androidSubpage={<Android wrapped />}
   />
 );
 
