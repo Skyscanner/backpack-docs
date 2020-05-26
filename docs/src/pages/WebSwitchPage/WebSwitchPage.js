@@ -46,7 +46,12 @@ const components = [
   {
     id: 'event',
     title: 'Event',
-    blurb: [],
+    blurb: [
+      <Paragraph>
+        Reserved for event-based messaging that has neither a positive or
+        negative connotation. Avoid using this in other contexts.
+      </Paragraph>,
+    ],
     examples: [
       <div>
         <BpkSwitch label="Show flexible fares" type={SWITCH_TYPES.event} />

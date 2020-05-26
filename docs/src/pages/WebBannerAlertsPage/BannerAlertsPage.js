@@ -177,11 +177,6 @@ class BpkBannerAlertDismissDemo extends Component<any, DismissDemoState> {
         message: 'Error alert with dismiss option.',
         type: ALERT_TYPES.ERROR,
       },
-      {
-        show: true,
-        message: 'Event alert with dismiss option.',
-        type: ALERT_TYPES.EVENT,
-      },
     ];
 
     this.state = {
@@ -316,7 +311,6 @@ const components = [
       <BannerAlert message={richMessage} type={ALERT_TYPES.SUCCESS} />,
       <BannerAlert message="Warn alert." type={ALERT_TYPES.WARN} />,
       <BannerAlert message="Error alert." type={ALERT_TYPES.ERROR} />,
-      <BannerAlert message="Event alert." type={ALERT_TYPES.EVENT} />,
     ],
   },
   {
@@ -354,11 +348,6 @@ const components = [
       <BannerAlert
         message="Error alert."
         type={ALERT_TYPES.ERROR}
-        icon={CurrencyIcon}
-      />,
-      <BannerAlert
-        message="Event alert."
-        type={ALERT_TYPES.EVENT}
         icon={CurrencyIcon}
       />,
     ],
@@ -400,12 +389,6 @@ const components = [
       <BannerAlertExpandable
         message="Error alert with more information."
         type={ALERT_TYPES.ERROR}
-      >
-        {longMessage}
-      </BannerAlertExpandable>,
-      <BannerAlertExpandable
-        message="Event alert with more information."
-        type={ALERT_TYPES.EVENT}
       >
         {longMessage}
       </BannerAlertExpandable>,
@@ -465,6 +448,30 @@ const components = [
         It also adds the option to automatically dismiss a banner after a
         certain period of time has elapsed.
       </Paragraph>,
+    ],
+  },
+  {
+    id: 'event',
+    title: 'Event Alert',
+    blurb: [
+      <Paragraph>
+        Reserved for event-based messaging that has neither a positive or
+        negative connotation. Avoid using this in other contexts.
+      </Paragraph>,
+    ],
+    examples: [
+      <BannerAlert message="Event alert." type={ALERT_TYPES.EVENT} />,
+      <BannerAlert
+        message="Event alert with custom icon."
+        type={ALERT_TYPES.EVENT}
+        icon={CurrencyIcon}
+      />,
+      <BannerAlertExpandable
+        message="Event alert with more information."
+        type={ALERT_TYPES.EVENT}
+      >
+        {longMessage}
+      </BannerAlertExpandable>,
     ],
   },
 ];
