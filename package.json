@@ -143,7 +143,7 @@
     "bpk-svgs": "8.4.1",
     "bpk-theming": "2.0.34",
     "bpk-tokens": "32.0.5",
-    "chalk": "^3.0.0",
+    "chalk": "^4.0.0",
     "colors": "^1.4.0",
     "copy-webpack-plugin": "^5.1.1",
     "core-js": "^3.6.1",
