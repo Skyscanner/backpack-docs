@@ -177,6 +177,11 @@ class BpkBannerAlertDismissDemo extends Component<any, DismissDemoState> {
         message: 'Error alert with dismiss option.',
         type: ALERT_TYPES.ERROR,
       },
+      {
+        show: true,
+        message: 'Event alert with dismiss option.',
+        type: ALERT_TYPES.EVENT,
+      },
     ];
 
     this.state = {
@@ -300,8 +305,8 @@ const components = [
     title: 'Default',
     blurb: [
       <Paragraph>
-        Banner alerts come in four styles to indicate success, warning or error,
-        or some neutral information.
+        Banner alerts come in various styles to indicate success, warning or
+        error, or some neutral information.
       </Paragraph>,
     ],
     examples: [
@@ -311,6 +316,7 @@ const components = [
       <BannerAlert message={richMessage} type={ALERT_TYPES.SUCCESS} />,
       <BannerAlert message="Warn alert." type={ALERT_TYPES.WARN} />,
       <BannerAlert message="Error alert." type={ALERT_TYPES.ERROR} />,
+      <BannerAlert message="Event alert." type={ALERT_TYPES.EVENT} />,
     ],
   },
   {
@@ -348,6 +354,11 @@ const components = [
       <BannerAlert
         message="Error alert."
         type={ALERT_TYPES.ERROR}
+        icon={CurrencyIcon}
+      />,
+      <BannerAlert
+        message="Event alert."
+        type={ALERT_TYPES.EVENT}
         icon={CurrencyIcon}
       />,
     ],
@@ -389,6 +400,12 @@ const components = [
       <BannerAlertExpandable
         message="Error alert with more information."
         type={ALERT_TYPES.ERROR}
+      >
+        {longMessage}
+      </BannerAlertExpandable>,
+      <BannerAlertExpandable
+        message="Event alert with more information."
+        type={ALERT_TYPES.EVENT}
       >
         {longMessage}
       </BannerAlertExpandable>,
