@@ -17,7 +17,7 @@
  */
 
 import React from 'react';
-import BpkSwitch from 'bpk-component-switch';
+import BpkSwitch, { SWITCH_TYPES } from 'bpk-component-switch';
 import readme from 'bpk-component-switch/README.md';
 
 import Paragraph from '../../components/Paragraph';
@@ -40,6 +40,21 @@ const components = [
     examples: [
       <div>
         <BpkSwitch label="Show flexible fares" />
+      </div>,
+    ],
+  },
+  {
+    id: 'event',
+    title: 'Event',
+    blurb: [
+      <Paragraph>
+        Reserved for event-based messaging that has neither a positive or
+        negative connotation. Avoid using this in other contexts.
+      </Paragraph>,
+    ],
+    examples: [
+      <div>
+        <BpkSwitch label="Show flexible fares" type={SWITCH_TYPES.event} />
       </div>,
     ],
   },

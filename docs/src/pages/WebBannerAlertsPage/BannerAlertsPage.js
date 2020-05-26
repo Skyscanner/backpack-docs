@@ -300,8 +300,8 @@ const components = [
     title: 'Default',
     blurb: [
       <Paragraph>
-        Banner alerts come in four styles to indicate success, warning or error,
-        or some neutral information.
+        Banner alerts come in various styles to indicate success, warning or
+        error, or some neutral information.
       </Paragraph>,
     ],
     examples: [
@@ -448,6 +448,30 @@ const components = [
         It also adds the option to automatically dismiss a banner after a
         certain period of time has elapsed.
       </Paragraph>,
+    ],
+  },
+  {
+    id: 'event',
+    title: 'Event Alert',
+    blurb: [
+      <Paragraph>
+        Reserved for event-based messaging that has neither a positive or
+        negative connotation. Avoid using this in other contexts.
+      </Paragraph>,
+    ],
+    examples: [
+      <BannerAlert message="Event alert." type={ALERT_TYPES.EVENT} />,
+      <BannerAlert
+        message="Event alert with custom icon."
+        type={ALERT_TYPES.EVENT}
+        icon={CurrencyIcon}
+      />,
+      <BannerAlertExpandable
+        message="Event alert with more information."
+        type={ALERT_TYPES.EVENT}
+      >
+        {longMessage}
+      </BannerAlertExpandable>,
     ],
   },
 ];

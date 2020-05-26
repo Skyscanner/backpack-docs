@@ -54,6 +54,7 @@ import { themeAttributes as ratingThemeAttributes } from 'bpk-component-rating';
 import { themeAttributes as selectThemeAttributes } from 'bpk-component-select';
 import { themeAttributes as sliderThemeAttributes } from 'bpk-component-slider';
 import { themeAttributes as spinnerThemeAttributes } from 'bpk-component-spinner';
+import { themeAttributes as switchThemeAttributues } from 'bpk-component-switch';
 import { themeAttributes as starRatingThemeAttributes } from 'bpk-component-star-rating';
 import { themeAttributes as textareaThemeAttributes } from 'bpk-component-textarea';
 import { themeAttributes as navigationBarThemeAttributes } from 'bpk-component-navigation-bar';
@@ -99,6 +100,7 @@ export default [
   ...sliderThemeAttributes,
   ...spinnerThemeAttributes,
   ...starRatingThemeAttributes,
+  ...switchThemeAttributues,
   ...textareaThemeAttributes,
   ...navigationBarThemeAttributes,
   ...primaryMarkerThemeAttributes,
