@@ -16,28 +16,6 @@
  * limitations under the License.
  */
 
-/* @flow strict */
+import page from './NativeLinkPage';
 
-import React from 'react';
-
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import IntroBlurb from '../../components/IntroBlurb';
-import Web from '../WebLinksPage';
-import IOS from '../IOSTappableLinkLabelPage';
-import Native from '../NativeLinkPage';
-
-const Page = () => (
-  <DocsPageWrapper
-    title="Link"
-    blurb={[
-      <IntroBlurb>
-        This component enables links to other resources, pages or views.
-      </IntroBlurb>,
-    ]}
-    webSubpage={<Web wrapped />}
-    iosSubpage={<IOS wrapped />}
-    nativeSubpage={<Native wrapped />}
-  />
-);
-
-export default Page;
+export default page;

@@ -56,7 +56,7 @@ const ComponentsLinks = [
         id: 'LINK',
         route: routes.LINK,
         children: 'Link',
-        tags: ['web', 'ios'],
+        tags: ['web', 'ios', 'native'],
       },
       {
         id: 'LIST',
