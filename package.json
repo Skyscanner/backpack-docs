@@ -152,7 +152,7 @@
     "date-fns": "^2.8.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
-    "enzyme-to-json": "^3.4.3",
+    "enzyme-to-json": "^3.5.0",
     "es6-promise": "^4.2.8",
     "eslint-config-skyscanner": "^6.0.0",
     "eslint-plugin-flowtype": "^4.5.3",
