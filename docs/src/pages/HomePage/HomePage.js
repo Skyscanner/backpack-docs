@@ -155,9 +155,11 @@ const HomePage = (props, context) => {
         <div className={getClassName('bpkdocs-home-page__hero-logo-container')}>
           <div style={{ flex: 1 }}>
             <img
+              role="heading"
+              aria-level="1"
               src={backpackLogo}
               className={getClassName('bpkdocs-home-page__hero-logo')}
-              alt="Backpack Logo"
+              alt="Backpack"
             />
             {process.env.BPK_BUILT_AT && (
               <UpdatedAt
@@ -180,10 +182,10 @@ const HomePage = (props, context) => {
         <div className={getClassName('bpkdocs-home-page__hero-inner')}>
           <BpkText
             textStyle="xl"
-            tagName="h1"
+            tagName="p"
             className={getClassName('bpkdocs-home-page__hero-blurb')}
           >
-            &mdash;
+            <span aria-hidden="true">&mdash;</span>
             <br />
             Backpack is a collection of design resources, reusable components
             and guidelines for creating Skyscanner products.
