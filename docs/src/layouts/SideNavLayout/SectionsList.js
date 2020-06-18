@@ -164,7 +164,7 @@ const SectionsList = (props: Props) => {
       <div className={getClassName('bpkdocs-sections-list__heading')}>
         {icon && (
           <img
-            alt={sections[activeSection].title}
+            alt=""
             src={`/${icon}`}
             className={getClassName('bpkdocs-sections-list__heading-icon')}
           />

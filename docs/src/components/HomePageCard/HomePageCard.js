@@ -78,7 +78,7 @@ const HomePageCard = (props: Props) => {
           {icon && (
             <img
               src={icon}
-              alt={title}
+              alt=""
               className={iconClassNames}
               style={{ width: iconWidth }}
             />

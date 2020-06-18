@@ -71,9 +71,11 @@ export default (props: Props) => {
         </BpkBreakpoint>
         <Link to="/" className={getClassName('bpkdocs-sidebar__logo-link')}>
           <img
+            role="heading"
+            aria-level="1"
             src={`/${backpackLogo}`}
             className={getClassName('bpkdocs-sidebar__logo')}
-            alt="Backpack Logo"
+            alt="Backpack"
           />
         </Link>
       </div>
