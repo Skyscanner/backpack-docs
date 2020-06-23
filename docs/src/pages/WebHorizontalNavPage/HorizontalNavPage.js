@@ -95,6 +95,12 @@ const components = [
     blurb: 'Navigation items can be configured to have space around them.',
     examples: [<HorizontalNavContainer spaceAround />],
   },
+  {
+    id: 'no-underline',
+    title: 'Hide underline',
+    blurb: 'The border that covers the bottom of the component can be hidden.',
+    examples: [<HorizontalNavContainer showUnderline={false} />],
+  },
 ];
 
 const HorizontalNavPage = ({ ...rest }) => (
