@@ -146,7 +146,7 @@
     "bpk-tokens": "32.0.5",
     "chalk": "^4.1.0",
     "colors": "^1.4.0",
-    "copy-webpack-plugin": "^5.1.1",
+    "copy-webpack-plugin": "^6.0.2",
     "core-js": "^3.6.1",
     "css-loader": "^3.5.3",
     "danger": "^9.2.9",
