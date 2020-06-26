@@ -225,7 +225,9 @@ if (isProduction) {
       locals: staticSiteGeneratorConfig,
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
-    new CopyWebpackPlugin([{ from: 'docs/src/README.md', to: 'README.md' }]),
+    new CopyWebpackPlugin({
+      patterns: [{ from: 'docs/src/README.md', to: 'README.md' }],
+    }),
   );
 }
 
