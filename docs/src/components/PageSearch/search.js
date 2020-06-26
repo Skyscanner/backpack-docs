@@ -20,6 +20,20 @@
 
 import Fuse from 'fuse.js';
 
+/*
+Results are in the form:
+
+[{
+  item: haystack
+  refIndex: number
+}]
+
+This function transforms them into a simpler array in the form:
+
+[haystack]
+*/
+const transformResults = results => results.map(result => result.item);
+
 const getMatchingPages = (
   needle: string,
   haystack: [
@@ -36,7 +50,7 @@ const getMatchingPages = (
     keys: ['id', 'children', 'keywords'],
   };
   const fuse = new Fuse(haystack, fuseOptions);
-  return fuse.search(needle);
+  return transformResults(fuse.search(needle));
 };
 
 export { getMatchingPages }; // eslint-disable-line import/prefer-default-export
