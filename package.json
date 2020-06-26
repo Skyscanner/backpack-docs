@@ -159,7 +159,7 @@
     "eslint-plugin-flowtype": "^4.5.3",
     "eslint_d": "^8.0.1",
     "file-loader": "^6.0.0",
-    "flow-bin": "^0.121.0",
+    "flow-bin": "^0.127.0",
     "flow-typed": "^3.0.0",
     "fuse.js": "^3.4.6",
     "globby": "^11.0.0",
