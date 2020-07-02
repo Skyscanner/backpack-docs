@@ -1,0 +1,22 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.16.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - stylelint > @stylelint/postcss-css-in-js > @babel/core > lodash:
+        patched: '2020-07-02T10:21:59.286Z'
+    - stylelint > @stylelint/postcss-css-in-js > @babel/core > @babel/helper-module-transforms > lodash:
+        patched: '2020-07-02T10:21:59.286Z'
+    - '@skyscanner/backpack-react-scripts > babel-preset-react-app > @babel/preset-env > @babel/plugin-transform-block-scoping > lodash':
+        patched: '2020-07-02T10:21:59.286Z'
+    - stylelint > @stylelint/postcss-css-in-js > @babel/core > @babel/generator > @babel/types > lodash:
+        patched: '2020-07-02T10:21:59.286Z'
+    - '@skyscanner/backpack-react-scripts > babel-preset-react-app > @babel/preset-env > @babel/plugin-transform-classes > @babel/helper-define-map > lodash':
+        patched: '2020-07-02T10:21:59.286Z'
+    - stylelint > @stylelint/postcss-css-in-js > @babel/core > @babel/helper-module-transforms > @babel/helper-replace-supers > @babel/traverse > lodash:
+        patched: '2020-07-02T10:21:59.286Z'
+    - '@skyscanner/backpack-react-scripts > @svgr/webpack > @babel/preset-env > @babel/preset-modules > @babel/plugin-proposal-unicode-property-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2020-07-02T10:21:59.286Z'
+    - '@skyscanner/backpack-react-scripts > @svgr/webpack > @babel/preset-env > @babel/plugin-proposal-async-generator-functions > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > @babel/generator > lodash':
+        patched: '2020-07-02T10:21:59.286Z'
