@@ -41,7 +41,9 @@
     "spellcheck": "mdspell -r --en-gb --ignore-acronyms --ignore-numbers --no-suggestions '*.md' '**/*.md' '!**/node_modules/**/*.md' '!backpack/**/*.md' '!backpack-react-native/**/*.md' '!backpack-ios/**/*.md'  '!backpack-android/**/*.md'",
     "spellcheck:interactive": "mdspell --en-gb --ignore-acronyms --no-suggestions --ignore-numbers '*.md' '**/*.md' '!**/node_modules/**/*.md' '!backpack/**/*.md' '!backpack-react-native/**/*.md' '!backpack-ios/**/*.md'  '!backpack-android/**/*.md'",
     "update-bpk-dependencies": "npx npm-check-updates -n '/^bpk\\-(.*)$/' -u",
-    "lighthouse": "babel-node scripts/lighthouse/lighthouse.js"
+    "lighthouse": "babel-node scripts/lighthouse/lighthouse.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "husky": {
     "hooks": {
@@ -240,6 +242,8 @@
     "not ie < 9"
   ],
   "dependencies": {
-    "get-contrast-ratio": "^0.2.1"
-  }
+    "get-contrast-ratio": "^0.2.1",
+    "snyk": "^1.359.0"
+  },
+  "snyk": true
 }
