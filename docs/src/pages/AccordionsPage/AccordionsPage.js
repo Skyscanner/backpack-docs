@@ -18,6 +18,9 @@
 
 import React from 'react';
 import BpkCheckbox from 'bpk-component-checkbox';
+import { withAlignment } from 'bpk-component-icon';
+import StopsIcon from 'bpk-component-icon/sm/stops';
+import AirlinesIcon from 'bpk-component-icon/sm/airline--multiple';
 import accordionsReadme from 'bpk-component-accordion/README.md';
 import {
   BpkAccordion,
@@ -25,7 +28,12 @@ import {
   withSingleItemAccordionState,
   withAccordionItemState,
 } from 'bpk-component-accordion';
-import { spacingSm } from 'bpk-tokens/tokens/base.es6';
+import {
+  colorPanjin,
+  iconSizeSm,
+  lineHeightBase,
+  spacingSm,
+} from 'bpk-tokens/tokens/base.es6';
 
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
@@ -34,6 +42,13 @@ import IntroBlurb from '../../components/IntroBlurb';
 
 const SingleItemAccordion = withSingleItemAccordionState(BpkAccordion);
 const StatefulAccordionItem = withAccordionItemState(BpkAccordionItem);
+
+const AlignedStopsIcon = withAlignment(StopsIcon, lineHeightBase, iconSizeSm);
+const AlignedAirlinesIcon = withAlignment(
+  AirlinesIcon,
+  lineHeightBase,
+  iconSizeSm,
+);
 
 const CheckboxWrapper = props => (
   <div style={{ padding: `${spacingSm} 0` }} {...props} />
@@ -193,6 +208,37 @@ const components = [
           <AirportsContent />
         </StatefulAccordionItem>
       </BpkAccordion>,
+    ],
+  },
+  {
+    id: 'with-icons',
+    title: 'With icon support',
+    blurb: [
+      <Paragraph>
+        Accordions can support displaying icons in the title.
+      </Paragraph>,
+    ],
+    examples: [
+      <SingleItemAccordion>
+        <BpkAccordionItem
+          id="stops"
+          title="Stops"
+          icon={<AlignedStopsIcon fill={colorPanjin} />}
+          initiallyExpanded
+        >
+          <StopsContent />
+        </BpkAccordionItem>
+        <BpkAccordionItem
+          id="airlines"
+          title="Airlines"
+          icon={<AlignedAirlinesIcon />}
+        >
+          <AirlinesContent />
+        </BpkAccordionItem>
+        <BpkAccordionItem id="airports" title="Airports">
+          <AirportsContent />
+        </BpkAccordionItem>
+      </SingleItemAccordion>,
     ],
   },
 ];
