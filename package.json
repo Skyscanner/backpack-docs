@@ -72,7 +72,7 @@
     "@babel/register": "^7.10.3",
     "@skyscanner/backpack-react-scripts": "^8.0.0",
     "autoprefixer": "^9.8.4",
-    "babel-jest": "^24.9.0",
+    "babel-jest": "^26.1.0",
     "babel-loader": "^8.0.6",
     "bpk-animate-height": "3.0.17",
     "bpk-component-accordion": "2.1.62",
