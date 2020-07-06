@@ -201,7 +201,7 @@
     "uglify-loader": "^3.0.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.10.1",
+    "webpack-dev-server": "^3.11.0",
     "zip-it-loader": "^0.3.0"
   },
   "jest": {
