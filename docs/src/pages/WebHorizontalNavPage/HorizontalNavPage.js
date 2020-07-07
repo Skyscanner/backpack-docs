@@ -21,6 +21,7 @@ import React, { Component } from 'react';
 import readme from 'bpk-component-horizontal-nav/README.md';
 import BpkHorizontalNav, {
   BpkHorizontalNavItem,
+  HORIZONTAL_NAV_TYPES,
 } from 'bpk-component-horizontal-nav';
 
 import DocsPageBuilder from '../../components/DocsPageBuilder';
@@ -100,6 +101,14 @@ const components = [
     title: 'Hide underline',
     blurb: 'The border that covers the bottom of the component can be hidden.',
     examples: [<HorizontalNavContainer showUnderline={false} />],
+  },
+  {
+    id: 'light-appearance',
+    title: 'Light appearance',
+    blurb:
+      'An alternate appearance is available for display over dark backgrounds.',
+    dark: true,
+    examples: [<HorizontalNavContainer type={HORIZONTAL_NAV_TYPES.light} />],
   },
 ];
 
