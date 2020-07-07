@@ -8,4 +8,4 @@ updates:
   open-pull-requests-limit: 10
   labels:
   - dependabot
-  versioning-strategy: increase
+  versioning-strategy: increase-if-necessary
