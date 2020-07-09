@@ -52,6 +52,7 @@ const NavListFilter = (props: Props) => (
         e.currentTarget.value === OPTIONS.all &&
         props.onSelectedFilterChange(OPTIONS.all)
       }
+      white
     />
     <BpkRadio
       className={getClassName('bpkdocs-nav-list-filter__option')}
@@ -63,6 +64,7 @@ const NavListFilter = (props: Props) => (
         e.currentTarget.value === OPTIONS.web &&
         props.onSelectedFilterChange(OPTIONS.web)
       }
+      white
     />
     <BpkRadio
       className={getClassName('bpkdocs-nav-list-filter__option')}
@@ -74,6 +76,7 @@ const NavListFilter = (props: Props) => (
         e.currentTarget.value === OPTIONS.native &&
         props.onSelectedFilterChange(OPTIONS.native)
       }
+      white
     />
     <BpkRadio
       className={getClassName('bpkdocs-nav-list-filter__option')}
@@ -85,6 +88,7 @@ const NavListFilter = (props: Props) => (
         e.currentTarget.value === OPTIONS.android &&
         props.onSelectedFilterChange(OPTIONS.android)
       }
+      white
     />
     <BpkRadio
       className={getClassName('bpkdocs-nav-list-filter__option')}
@@ -96,6 +100,7 @@ const NavListFilter = (props: Props) => (
         e.currentTarget.value === OPTIONS.ios &&
         props.onSelectedFilterChange(OPTIONS.ios)
       }
+      white
     />
   </form>
 );
