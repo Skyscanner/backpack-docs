@@ -141,6 +141,33 @@ const components = [
       </form>,
     ],
   },
+  {
+    id: 'white',
+    title: 'White',
+    blurb:
+      'You can change the label to white for displaying on dark backgrounds.',
+    dark: true,
+    examples: [
+      <form className={formClassName}>
+        <InputContainer
+          FormComponent={BpkCheckbox}
+          name="checkbox"
+          label="Apples"
+          checked
+          white
+        />
+      </form>,
+      <form className={formClassName}>
+        <InputContainer
+          FormComponent={BpkCheckbox}
+          name="unchecked_checkbox"
+          label="Bananas"
+          checked={false}
+          white
+        />
+      </form>,
+    ],
+  },
 ];
 
 const blurb = [

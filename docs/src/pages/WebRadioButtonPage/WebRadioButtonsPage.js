@@ -39,6 +39,14 @@ const components = [
     title: 'Invalid',
     examples: [<RadioContainer value="apples" valid={false} />],
   },
+  {
+    id: 'white',
+    title: 'White',
+    blurb:
+      'You can change the label to white for displaying on dark backgrounds.',
+    dark: true,
+    examples: [<RadioContainer value="apples" white />],
+  },
 ];
 
 const blurb = [
