@@ -16,46 +16,39 @@
  * limitations under the License.
  */
 
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
 import customPropTypes from './propTypes';
 import IconSearchForm from './IconSearchForm';
 import IconSearchResults from './IconSearchResults';
 
-class IconSearchApp extends Component {
-  constructor(props) {
-    super(props);
+const IconSearchApp = props => {
+  const [filterValue, setFilterValue] = useState('');
 
-    this.state = {
-      filterValue: '',
-    };
-  }
-
-  onFilterChange = filterValue => {
-    this.setState({ filterValue });
+  const onFilterChange = newValue => {
+    setFilterValue(newValue);
   };
 
-  getFilteredIcons() {
-    const { icons } = this.props;
-    const { filterValue } = this.state;
+  const getFilteredIcons = () => {
+    const { icons } = props;
 
     return icons.filter(
       icon => icon.name.indexOf(filterValue.toLowerCase()) !== -1,
     );
-  }
+  };
 
-  render() {
-    return (
-      <div>
-        <IconSearchForm
-          filterValue={this.state.filterValue}
-          onFilterChange={this.onFilterChange}
-        />
-        <IconSearchResults icons={this.getFilteredIcons()} />
-      </div>
-    );
-  }
-}
+  const filteredIcons = getFilteredIcons();
+
+  return (
+    <div>
+      <IconSearchForm
+        filterValue={filterValue}
+        onFilterChange={onFilterChange}
+      />
+      <IconSearchResults searchQuery={filterValue} icons={filteredIcons} />
+    </div>
+  );
+};
 
 IconSearchApp.propTypes = {
   icons: customPropTypes.icons.isRequired,

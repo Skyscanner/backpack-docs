@@ -64,6 +64,7 @@ const blurb = [
     Icons are provided in two sizes: small (18px) and large (24px). Both are
     pixel-snapped for clarity at the intended usage sizes.
   </Paragraph>,
+  <Paragraph>Note that some icons are only available at one size.</Paragraph>,
   <IconSearchApp icons={iconsFinal} />,
   <Paragraph>
     <BpkButton href={`/${iconsSvgs}`}>
