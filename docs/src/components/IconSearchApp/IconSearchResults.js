@@ -18,6 +18,7 @@
 
 import _ from 'lodash';
 import React from 'react';
+import PropTypes from 'prop-types';
 import { cssModules } from 'bpk-react-utils';
 
 import Heading from '../Heading';
@@ -29,8 +30,13 @@ import IconSearchResult from './IconSearchResult';
 const getClassName = cssModules(STYLES);
 
 const IconSearchResults = props => {
-  const categories = _.groupBy(props.icons, 'categoryName');
-  const categoryNames = Object.keys(categories);
+  const { icons, searchQuery } = props;
+
+  const categories = _.groupBy(icons, 'categoryName');
+  let heading = searchQuery ? `Icons matching "${searchQuery}"` : 'All icons';
+  if (icons.length === 0) {
+    heading = `There are no icons matching "${searchQuery}"`;
+  }
 
   return (
     <div>
@@ -38,27 +44,31 @@ const IconSearchResults = props => {
         level="h3"
         className={getClassName('bpkdocs-icon-search-results__heading')}
       >
-        Results
+        {heading}
       </Heading>
-      <dl className={getClassName('bpkdocs-icon-search-results__list')}>
-        {categoryNames.length > 0 ? (
-          categoryNames.map(categoryName => (
-            <IconSearchResult
-              key={categoryName}
-              categoryName={categoryName}
-              icons={categories[categoryName]}
-            />
-          ))
-        ) : (
-          <div>There are no icons by that name.</div>
-        )}
-      </dl>
+      {icons.length > 0 && (
+        <dl className={getClassName('bpkdocs-icon-search-results__list')}>
+          <IconSearchResult
+            key="Large"
+            categoryName="Large"
+            icons={categories.Large}
+            searchQuery={searchQuery}
+          />
+          <IconSearchResult
+            key="Small"
+            categoryName="Small"
+            icons={categories.Small}
+            searchQuery={searchQuery}
+          />
+        </dl>
+      )}
     </div>
   );
 };
 
 IconSearchResults.propTypes = {
   icons: customPropTypes.icons.isRequired,
+  searchQuery: PropTypes.string.isRequired,
 };
 
 export default IconSearchResults;
