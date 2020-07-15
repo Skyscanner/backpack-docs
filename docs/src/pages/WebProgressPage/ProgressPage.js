@@ -67,6 +67,14 @@ const ProgressPage = ({ ...rest }) => (
     title="Progress bars"
     components={components}
     readme={progressReadme}
+    usageTable={{
+      dos: [
+        'Use exclusively for tracking user progress through a set of actions, for example a form.',
+      ],
+      donts: [
+        "Don't use in others contexts. This component is described to screen readers as a progress bar, so using it in other contexts harms accessibility.",
+      ],
+    }}
     {...rest}
   />
 );
