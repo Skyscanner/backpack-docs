@@ -19,9 +19,18 @@
 
 .bpkdocs-nav-list-filter {
   &__option {
+    margin-top: $bpk-spacing-xs / 3;
+    margin-bottom: $bpk-spacing-xs / 3;
+
     @include bpk-margin-trailing($bpk-spacing-sm);
 
-    :last-child {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+
       @include bpk-margin-trailing(0);
     }
   }
