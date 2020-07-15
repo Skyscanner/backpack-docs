@@ -38,11 +38,11 @@ const components = [
       <Paragraph>
         <strong>
           The currently supported version of CRA by backpack-react-scripts is up
-          to v2.1.2. Versions above this will not work.
+          to v3.4.1. Versions above this will not work.
         </strong>
       </Paragraph>,
       <CodeBlock>
-        {`npx create-react-app@2.1.2 my-app --scripts-version=backpack-react-scripts@7.0.5
+        {`npx create-react-app@3.4.1 my-app --scripts-version=@skyscanner/backpack-react-scripts --template @skyscanner/backpack --use-npm
 cd my-app
 npm start`}
       </CodeBlock>,
@@ -109,16 +109,13 @@ npm start`}
       <Paragraph>
         <Code>backpack-react-scripts</Code> is aimed at providing teams and
         codebases with a standardised way of building production web apps with
-        Backpack + React at Skyscanner. When you create an app using{' '}
-        <Code>
-          npx create-react-app@2.1.2 my-app
-          --scripts-version=backpack-react-scripts@7.0.5
-        </Code>
-        , you&apos;ll notice that your project&apos;s <Code>package.json</Code>{' '}
-        has a dependency on <Code>backpack-react-scripts</Code>. When we release
-        new versions going forward (i.e. support for server-side rendering etc),
-        all you need to do is bump the version number and run{' '}
-        <Code>npm install</Code> to reap the rewards.
+        Backpack + React at Skyscanner. When you create an app using the command
+        at the top of this page, you&apos;ll notice that your project&apos;s{' '}
+        <Code>package.json</Code> has a dependency on{' '}
+        <Code>backpack-react-scripts</Code>. When we release new versions going
+        forward (i.e. support for server-side rendering etc), all you need to do
+        is bump the version number and run <Code>npm install</Code> to reap the
+        rewards.
       </Paragraph>,
     ],
     examples: [],
