@@ -9,8 +9,7 @@ exports[`AnalyticsContainer renders correctly 1`] = `
     className="bpkdocs-cookie-banner__inner"
   >
     <h2
-      className="bpk-text bpk-text--xl"
-      weight="heavy"
+      className="bpk-text bpk-text--xl bpk-text--black"
     >
       Your data. Your choice.
     </h2>
