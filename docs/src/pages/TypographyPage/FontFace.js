@@ -18,7 +18,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import BpkText from 'bpk-component-text';
+import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './font-face.scss';
@@ -55,17 +55,15 @@ const FontFace = props => {
         aria-hidden="true"
         className={getClassName('bpk-docs-font-face__text')}
         textStyle="xxl"
-        bold
+        weight={WEIGHT_STYLES.bold}
       >
         Bold AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
       </BpkText>
       <BpkText
         aria-hidden="true"
-        className={getClassName(
-          'bpk-docs-font-face__text',
-          'bpk-docs-font-face__text--black',
-        )}
+        className={getClassName('bpk-docs-font-face__text')}
         textStyle="xxl"
+        weight={WEIGHT_STYLES.black}
       >
         Black AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
       </BpkText>

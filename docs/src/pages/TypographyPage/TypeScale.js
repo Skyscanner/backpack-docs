@@ -18,7 +18,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import BpkText from 'bpk-component-text';
+import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './type-scale.scss';
@@ -35,8 +35,8 @@ const intervals = [
   { style: 'xl', sizes: [24, 31], weights: BOOK_OR_BOLD_OR_BLACK },
   { style: 'xxl', sizes: [30, 39], weights: BOOK_OR_BOLD_OR_BLACK },
   { style: 'xxxl', sizes: [36, 47], weights: BOOK_OR_BOLD_OR_BLACK },
-  { style: null, sizes: [42, 55], weights: BOOK_OR_BOLD_OR_BLACK },
-  { style: null, sizes: [50, 65], weights: BOOK_OR_BOLD_OR_BLACK },
+  { style: 'xxxxl', sizes: [42, 55], weights: BOOK_OR_BOLD_OR_BLACK },
+  { style: 'xxxxxl', sizes: [50, 65], weights: BOOK_OR_BOLD_OR_BLACK },
 ];
 
 const formatSizes = sizes => {
@@ -92,7 +92,7 @@ const TypeScale = props => {
               {formatSizes(interval.sizes)}
             </BpkText>
             <BpkText
-              bold
+              weight={WEIGHT_STYLES.bold}
               textStyle={interval.style}
               style={{
                 fontSize: interval.sizes[0],
@@ -109,10 +109,8 @@ const TypeScale = props => {
                   fontSize: interval.sizes[0],
                   lineHeight: `${interval.sizes[0]}px`,
                 }}
-                className={getClassName(
-                  'bpk-docs-type-scale__text',
-                  'bpk-docs-type-scale__text--black',
-                )}
+                className={getClassName('bpk-docs-type-scale__text')}
+                weight={WEIGHT_STYLES.black}
               >
                 {formatSizes(interval.sizes)}
               </BpkText>

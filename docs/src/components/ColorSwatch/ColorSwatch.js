@@ -19,7 +19,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { cssModules } from 'bpk-react-utils';
-import BpkText from 'bpk-component-text';
+import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
 
 import STYLES from './color-swatch.scss';
 
@@ -49,7 +49,7 @@ const ColorSwatch = props => {
   return (
     <div style={style} className={className} {...rest}>
       <div>
-        <BpkText tagName="h3" textStyle="xl" bold>
+        <BpkText tagName="h3" textStyle="xl" weight={WEIGHT_STYLES.bold}>
           {name}
         </BpkText>
       </div>

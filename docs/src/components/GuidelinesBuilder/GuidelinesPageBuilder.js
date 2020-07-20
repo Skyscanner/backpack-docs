@@ -23,7 +23,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import BpkContentContainer from 'bpk-component-content-container';
 import { cssModules } from 'bpk-react-utils';
-import BpkText from 'bpk-component-text';
+import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
 
 import HeroSection, { type HeroSectionProps } from '../HeroSection';
 import Heading from '../Heading';
@@ -95,7 +95,7 @@ const Section = (props: SectionProps) => {
           level="h2"
           className={getClassName('bpk-docs-guidelines-page__heading')}
         >
-          <BpkText textStyle="xxl" bold>
+          <BpkText textStyle="xxl" weight={WEIGHT_STYLES.bold}>
             {title}
           </BpkText>
         </Heading>

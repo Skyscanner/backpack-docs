@@ -20,7 +20,7 @@
 
 import React from 'react';
 import { cssModules } from 'bpk-react-utils';
-import BpkText from 'bpk-component-text';
+import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
 
 import Heading from '../Heading';
 
@@ -49,7 +49,7 @@ const HeroSection = (props: Props) => {
         level="h1"
         className={getClassName('bpkdocs-hero-section__heading')}
       >
-        <BpkText textStyle="xxl" bold>
+        <BpkText textStyle="xxl" weight={WEIGHT_STYLES.bold}>
           {heading}
         </BpkText>
       </Heading>
