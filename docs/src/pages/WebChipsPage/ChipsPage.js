@@ -77,7 +77,7 @@ class ChipContainer extends Component<Props, State> {
     return (
       <div>
         <BpkButton onClick={this.addRemovableChip}>
-          Add removable chip!
+          Add removable chip
         </BpkButton>
         <div className={getClassName('bpk-docs-chips-page__chip-container')}>
           {this.state.chipNames.map((chipName, index) => (
@@ -116,13 +116,19 @@ const components = [
     examples: [<ChipContainer type={CHIP_TYPES.primary} />],
   },
   {
+    id: 'success',
+    title: 'Success Chip',
+    examples: [<ChipContainer type={CHIP_TYPES.success} />],
+  },
+  {
+    id: 'light',
+    title: 'Light Chip',
+    examples: [<ChipContainer type={CHIP_TYPES.light} />],
+  },
+  {
     id: 'non-dismissible',
-    title: 'Non Dismissible',
-    blurb: [
-      <Paragraph>
-        The non-dismissible chip is available in two variants
-      </Paragraph>,
-    ],
+    title: 'Not Dismissible',
+    blurb: [<Paragraph>Chips can be non-dismissible too.</Paragraph>],
     examples: [
       <div className={getClassName('bpk-docs-chips-page__chip-container')}>
         <BpkChip
@@ -131,7 +137,7 @@ const components = [
           closeLabel="Close"
           dismissible={false}
         >
-          This is a non-dismissible chip!
+          Non-dismissible neutral chip
         </BpkChip>
         <BpkChip
           className={getClassName('bpk-docs-chips-page__chip')}
@@ -140,7 +146,25 @@ const components = [
           dismissible={false}
           type={CHIP_TYPES.primary}
         >
-          This is a non-dismissible primary chip!
+          Non-dismissible primary chip
+        </BpkChip>
+        <BpkChip
+          className={getClassName('bpk-docs-chips-page__chip')}
+          onClose={() => null}
+          closeLabel="Close"
+          dismissible={false}
+          type={CHIP_TYPES.success}
+        >
+          Non-dismissible success chip
+        </BpkChip>
+        <BpkChip
+          className={getClassName('bpk-docs-chips-page__chip')}
+          onClose={() => null}
+          closeLabel="Close"
+          dismissible={false}
+          type={CHIP_TYPES.light}
+        >
+          Non-dismissible light chip
         </BpkChip>
       </div>,
     ],
