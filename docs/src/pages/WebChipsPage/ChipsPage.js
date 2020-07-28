@@ -91,6 +91,15 @@ class ChipContainer extends Component<Props, State> {
               {chipName}
             </BpkChip>
           ))}
+          <BpkChip
+            type={type}
+            closeLabel="Close this chip"
+            onClose={() => {}}
+            disabled
+            className={getClassName('bpk-docs-chips-page__chip')}
+          >
+            Disabled chip
+          </BpkChip>
         </div>
       </div>
     );
