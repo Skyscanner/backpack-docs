@@ -21,6 +21,8 @@ import React from 'react';
 import readme from '../../../../backpack-android/docs/Chip/README.md';
 import screenshotAll from '../../../../backpack-android/docs/Chip/screenshots/all.png';
 import screenshotAllDm from '../../../../backpack-android/docs/Chip/screenshots/all_dm.png';
+import screenshotOutline from '../../../../backpack-android/docs/Chip/screenshots/outline.png';
+import screenshotOutlineDm from '../../../../backpack-android/docs/Chip/screenshots/outline_dm.png';
 import screenshotIcon from '../../../../backpack-android/docs/Chip/screenshots/with-icon.png';
 import screenshotIconDm from '../../../../backpack-android/docs/Chip/screenshots/with-icon_dm.png';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
@@ -42,6 +44,26 @@ const components = [
         height: 1920,
         src: `/${screenshotAllDm}`,
         altText: 'Chip component',
+        subText: '(Google Pixel emulator - dark mode)',
+      },
+    ],
+  },
+  {
+    id: 'outline',
+    title: 'Outline',
+    screenshots: [
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotOutline}`,
+        altText: 'Outline chip component',
+        subText: '(Google Pixel emulator)',
+      },
+      {
+        width: 1080,
+        height: 1920,
+        src: `/${screenshotOutlineDm}`,
+        altText: 'Outline chip component',
         subText: '(Google Pixel emulator - dark mode)',
       },
     ],
