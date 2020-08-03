@@ -19,10 +19,17 @@
 /* @flow strict */
 
 import React, { Component } from 'react';
-import BpkChip, { CHIP_TYPES } from 'bpk-component-chip';
+import BpkSelectableChip, {
+  BpkDismissibleChip,
+  CHIP_TYPES,
+} from 'bpk-component-chip';
 import BpkButton from 'bpk-component-button';
 import { cssModules } from 'bpk-react-utils';
 import chipReadme from 'bpk-component-chip/README.md';
+import FlightIconSm from 'bpk-component-icon/sm/flight';
+import HotelsIconSm from 'bpk-component-icon/sm/hotels';
+import CarsIconSm from 'bpk-component-icon/sm/cars';
+import TickCircleIconSm from 'bpk-component-icon/sm/tick-circle';
 
 import Paragraph from '../../components/Paragraph';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
@@ -31,18 +38,117 @@ import STYLES from './ChipsPage.scss';
 
 const getClassName = cssModules(STYLES);
 
-type State = {
-  chipNames: Array<string>,
-  nextChipId: number,
-};
-
-type Props = {
-  type: $Keys<typeof CHIP_TYPES>,
-};
-
-class ChipContainer extends Component<Props, State> {
+class SelectableChipContainer extends Component<
+  {
+    type: $Keys<typeof CHIP_TYPES>,
+    includeDisabledExample: boolean,
+    includeLeadingIcons: boolean,
+    includeTrailingIcons: boolean,
+  },
+  { flights: boolean, hotels: boolean, carHire: boolean },
+> {
   static defaultProps = {
-    type: CHIP_TYPES.neutral,
+    type: CHIP_TYPES.primary,
+    includeDisabledExample: false,
+    includeLeadingIcons: false,
+    includeTrailingIcons: false,
+  };
+
+  constructor(props) {
+    super(props);
+    this.state = { flights: false, hotels: true, carHire: false };
+  }
+
+  render() {
+    return (
+      <div>
+        <BpkSelectableChip
+          accessibilityLabel="Toggle flights"
+          onClick={() => {
+            this.setState(prevState => {
+              return { flights: !prevState.flights };
+            });
+          }}
+          type={this.props.type}
+          selected={this.state.flights}
+          leadingAccessoryView={
+            this.props.includeLeadingIcons ? <FlightIconSm /> : null
+          }
+          trailingAccessoryView={
+            this.props.includeTrailingIcons ? <TickCircleIconSm /> : null
+          }
+          className={getClassName('bpk-docs-chips-page__chip')}
+        >
+          Flights
+        </BpkSelectableChip>
+        <BpkSelectableChip
+          accessibilityLabel="Toggle hotels"
+          onClick={() => {
+            this.setState(prevState => {
+              return { hotels: !prevState.hotels };
+            });
+          }}
+          type={this.props.type}
+          selected={this.state.hotels}
+          leadingAccessoryView={
+            this.props.includeLeadingIcons ? <HotelsIconSm /> : null
+          }
+          trailingAccessoryView={
+            this.props.includeTrailingIcons ? <TickCircleIconSm /> : null
+          }
+          className={getClassName('bpk-docs-chips-page__chip')}
+        >
+          Hotels
+        </BpkSelectableChip>
+        <BpkSelectableChip
+          accessibilityLabel="Toggle car hire"
+          onClick={() => {
+            this.setState(prevState => {
+              return { carHire: !prevState.carHire };
+            });
+          }}
+          selected={this.state.carHire}
+          type={this.props.type}
+          leadingAccessoryView={
+            this.props.includeLeadingIcons ? <CarsIconSm /> : null
+          }
+          trailingAccessoryView={
+            this.props.includeTrailingIcons ? <TickCircleIconSm /> : null
+          }
+          className={getClassName('bpk-docs-chips-page__chip')}
+        >
+          Car Hire
+        </BpkSelectableChip>
+        {this.props.includeDisabledExample && (
+          <BpkSelectableChip
+            accessibilityLabel="Toggle disabled"
+            onClick={() => {}}
+            type={this.props.type}
+            className={getClassName('bpk-docs-chips-page__chip')}
+            disabled
+          >
+            Disabled
+          </BpkSelectableChip>
+        )}
+      </div>
+    );
+  }
+}
+
+class DismissibleChipContainer extends Component<
+  {
+    type: $Keys<typeof CHIP_TYPES>,
+    includeDisabledExample: boolean,
+    includeLeadingIcons: boolean,
+  },
+  {
+    chipNames: Array<string>,
+  },
+> {
+  static defaultProps = {
+    type: CHIP_TYPES.primary,
+    includeDisabledExample: false,
+    includeLeadingIcons: false,
   };
 
   constructor() {
@@ -50,15 +156,13 @@ class ChipContainer extends Component<Props, State> {
 
     this.state = {
       chipNames: ['Example Chip 1', 'Example Chip 2'],
-      nextChipId: 3,
     };
   }
 
-  addRemovableChip = () => {
-    this.setState(state => ({
-      chipNames: [...state.chipNames, `Example Chip ${state.nextChipId}`],
-      nextChipId: state.nextChipId + 1,
-    }));
+  resetChips = () => {
+    this.setState({
+      chipNames: ['Example Chip 1', 'Example Chip 2'],
+    });
   };
 
   removeChip = chipName => {
@@ -76,30 +180,37 @@ class ChipContainer extends Component<Props, State> {
     const { type } = this.props;
     return (
       <div>
-        <BpkButton onClick={this.addRemovableChip}>
-          Add removable chip
-        </BpkButton>
+        {this.state.chipNames.length === 0 && (
+          <BpkButton secondary onClick={this.resetChips}>
+            Reset
+          </BpkButton>
+        )}
         <div className={getClassName('bpk-docs-chips-page__chip-container')}>
           {this.state.chipNames.map((chipName, index) => (
-            <BpkChip
-              closeLabel={`Close ${chipName}`}
-              onClose={() => this.removeChip(chipName)}
+            <BpkDismissibleChip
+              accessibilityLabel={`Close ${chipName}`}
+              onClick={() => this.removeChip(chipName)}
               className={getClassName('bpk-docs-chips-page__chip')}
               key={index} // eslint-disable-line react/no-array-index-key
               type={type}
+              leadingAccessoryView={
+                this.props.includeLeadingIcons ? <TickCircleIconSm /> : null
+              }
             >
               {chipName}
-            </BpkChip>
+            </BpkDismissibleChip>
           ))}
-          <BpkChip
-            type={type}
-            closeLabel="Close this chip"
-            onClose={() => {}}
-            disabled
-            className={getClassName('bpk-docs-chips-page__chip')}
-          >
-            Disabled chip
-          </BpkChip>
+          {this.props.includeDisabledExample && (
+            <BpkDismissibleChip
+              type={type}
+              accessibilityLabel="Close this chip"
+              onClick={() => {}}
+              disabled
+              className={getClassName('bpk-docs-chips-page__chip')}
+            >
+              Disabled chip
+            </BpkDismissibleChip>
+          )}
         </div>
       </div>
     );
@@ -108,74 +219,59 @@ class ChipContainer extends Component<Props, State> {
 
 const components = [
   {
-    id: 'default',
-    title: 'Default',
+    id: 'selectable',
+    title: 'Selectable',
+    blurb: [<Paragraph>Selectable chips can be toggled on and off.</Paragraph>],
+    examples: [<SelectableChipContainer includeDisabledExample />],
+  },
+  {
+    id: 'dismissible',
+    title: 'Dismissible',
     blurb: [
       <Paragraph>
-        The default configuration displays a text value with a close button.
-        This button can be assigned a custom action to remove itself from the
-        view.
+        Dismissible chips are useful when applying filters. They are designed to
+        disappear when pressed, so they cannot be toggled on and off.
       </Paragraph>,
     ],
-    examples: [<ChipContainer />],
+    examples: [<DismissibleChipContainer includeDisabledExample />],
   },
   {
-    id: 'primary',
-    title: 'Primary Chip',
-    examples: [<ChipContainer type={CHIP_TYPES.primary} />],
-  },
-  {
-    id: 'success',
-    title: 'Success Chip',
-    examples: [<ChipContainer type={CHIP_TYPES.success} />],
-  },
-  {
-    id: 'light',
-    title: 'Light Chip',
-    examples: [<ChipContainer type={CHIP_TYPES.light} />],
-  },
-  {
-    id: 'non-dismissible',
-    title: 'Not Dismissible',
-    blurb: [<Paragraph>Chips can be non-dismissible too.</Paragraph>],
+    id: 'icons',
+    title: 'With icons',
+    blurb: [
+      <Paragraph>Using accessory views, chips can contain icons.</Paragraph>,
+      <Paragraph>
+        Selectable chips can have a leading icon, a trailing icon, or both.
+        Dismissible chips can only have a leading icon, because they already
+        have a trailing close icon.
+      </Paragraph>,
+    ],
     examples: [
-      <div className={getClassName('bpk-docs-chips-page__chip-container')}>
-        <BpkChip
-          className={getClassName('bpk-docs-chips-page__chip')}
-          onClose={() => null}
-          closeLabel="Close"
-          dismissible={false}
-        >
-          Non-dismissible neutral chip
-        </BpkChip>
-        <BpkChip
-          className={getClassName('bpk-docs-chips-page__chip')}
-          onClose={() => null}
-          closeLabel="Close"
-          dismissible={false}
-          type={CHIP_TYPES.primary}
-        >
-          Non-dismissible primary chip
-        </BpkChip>
-        <BpkChip
-          className={getClassName('bpk-docs-chips-page__chip')}
-          onClose={() => null}
-          closeLabel="Close"
-          dismissible={false}
-          type={CHIP_TYPES.success}
-        >
-          Non-dismissible success chip
-        </BpkChip>
-        <BpkChip
-          className={getClassName('bpk-docs-chips-page__chip')}
-          onClose={() => null}
-          closeLabel="Close"
-          dismissible={false}
-          type={CHIP_TYPES.light}
-        >
-          Non-dismissible light chip
-        </BpkChip>
-      </div>,
+      <strong>Selectable</strong>,
+      <SelectableChipContainer includeLeadingIcons />,
+      <SelectableChipContainer includeTrailingIcons />,
+      <SelectableChipContainer includeLeadingIcons includeTrailingIcons />,
+      <strong>Dismissible</strong>,
+      <DismissibleChipContainer />,
+      <DismissibleChipContainer includeLeadingIcons />,
+    ],
+  },
+  {
+    id: 'styles',
+    title: 'Different styles',
+    blurb: [
+      <Paragraph>
+        There are three styles of chips to choose from: <em>primary</em>,{' '}
+        <em>success</em> and <em>light</em>.
+      </Paragraph>,
+    ],
+    examples: [
+      <strong>Primary</strong>,
+      <SelectableChipContainer type={CHIP_TYPES.primary} />,
+      <strong>Success</strong>,
+      <SelectableChipContainer type={CHIP_TYPES.success} />,
+      <strong>Light</strong>,
+      <SelectableChipContainer type={CHIP_TYPES.light} />,
     ],
   },
 ];
