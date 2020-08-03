@@ -162,7 +162,7 @@
     "eslint_d": "^9.1.1",
     "file-loader": "^6.0.0",
     "flow-bin": "^0.127.0",
-    "flow-typed": "^3.0.0",
+    "flow-typed": "^3.2.1",
     "fuse.js": "^6.3.1",
     "globby": "^11.0.1",
     "husky": "^4.2.3",
