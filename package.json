@@ -73,7 +73,7 @@
     "@babel/preset-react": "^7.10.4",
     "@babel/register": "^7.10.4",
     "@skyscanner/backpack-react-scripts": "^8.0.0",
-    "autoprefixer": "^9.8.4",
+    "autoprefixer": "^9.8.6",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "bpk-animate-height": "3.0.28",
