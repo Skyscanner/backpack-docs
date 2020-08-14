@@ -103,17 +103,12 @@ const getSuggestions = value => {
 const getSuggestionValue = suggestion =>
   `${suggestion.name} (${suggestion.code})`;
 
-let instances = 0;
-
 class AutosuggestExample extends Component {
   constructor() {
     super();
 
-    instances += instances;
-
     this.state = {
       value: '',
-      autosuggestId: `autosuggest-example-${instances}`,
       suggestions: [],
     };
   }
@@ -137,7 +132,8 @@ class AutosuggestExample extends Component {
   };
 
   render() {
-    const { autosuggestId, value, suggestions } = this.state;
+    const { autosuggestId } = this.props;
+    const { value, suggestions } = this.state;
 
     const inputProps = {
       id: autosuggestId,
@@ -165,6 +161,7 @@ class AutosuggestExample extends Component {
 
 AutosuggestExample.propTypes = {
   renderSuggestion: PropTypes.func.isRequired,
+  autosuggestId: PropTypes.string.isRequired,
 };
 
 const components = [
@@ -180,6 +177,7 @@ const components = [
     ],
     examples: [
       <AutosuggestExample
+        autosuggestId="autosuggest_default"
         renderSuggestion={suggestion => (
           <BpkAutosuggestSuggestion
             value={getSuggestionValue(suggestion)}
@@ -202,6 +200,7 @@ const components = [
     ],
     examples: [
       <AutosuggestExample
+        autosuggestId="autosuggest_icons"
         renderSuggestion={suggestion => (
           <BpkAutosuggestSuggestion
             value={getSuggestionValue(suggestion)}
@@ -219,6 +218,7 @@ const components = [
       'Additional suggestion information can be displayed as a sub-heading.',
     examples: [
       <AutosuggestExample
+        autosuggestId="autosuggest_subheadings"
         renderSuggestion={suggestion => (
           <BpkAutosuggestSuggestion
             value={getSuggestionValue(suggestion)}
@@ -236,6 +236,7 @@ const components = [
       'If sub-headings are not enough, you can add some tertiary information too.',
     examples: [
       <AutosuggestExample
+        autosuggestId="autosuggest_tertiary"
         renderSuggestion={suggestion => (
           <BpkAutosuggestSuggestion
             value={getSuggestionValue(suggestion)}
@@ -253,6 +254,7 @@ const components = [
     blurb: 'This example shows all of the above combined.',
     examples: [
       <AutosuggestExample
+        autosuggestId="autosuggest_combination"
         renderSuggestion={suggestion => (
           <BpkAutosuggestSuggestion
             value={getSuggestionValue(suggestion)}
