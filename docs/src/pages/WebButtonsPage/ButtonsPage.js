@@ -349,6 +349,14 @@ const ButtonsPage = ({ ...rest }: { [string]: any }) => (
     sassdocId="buttons"
     readme={buttonReadme}
     customSections={customSections}
+    usageTable={{
+      dos: [
+        'Use the large and small sizes as they are provided, so that we deliver consistent, accessible buttons across the product.',
+      ],
+      donts: [
+        "Don't override font properties or the size of the button using custom styles, as you will make the component inconsistent and inaccessible.",
+      ],
+    }}
     {...rest}
   />
 );
