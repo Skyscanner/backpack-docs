@@ -27,6 +27,7 @@ import TokensLayout from '../layouts/TokensLayout';
 import GuidelinesLayout from '../layouts/GuidelinesLayout';
 import DocsLayout from '../layouts/DocsLayout';
 import HomePage from '../pages/HomePage';
+import NotFoundPage from '../pages/NotFoundPage';
 import GettingStartedPage from '../pages/GettingStartedPage';
 import BackpackReactScriptsPage from '../pages/BackpackReactScriptsPage';
 import BaseStylesheetPage from '../pages/BaseStylesheetPage';
@@ -350,6 +351,7 @@ export const ROUTES_MAPPINGS = [
     path: from,
     redirect: redirects[from],
   })),
+  { path: '*', component: NotFoundPage },
 ];
 
 const expandRoutes = routes =>
