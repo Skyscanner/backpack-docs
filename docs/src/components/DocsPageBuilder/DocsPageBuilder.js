@@ -164,17 +164,6 @@ const CustomSection = section => [
 ];
 
 const DocsPageBuilder = props => {
-  let readmeOnDarkBackground = true;
-  if (props.tokenMap) {
-    readmeOnDarkBackground = !readmeOnDarkBackground;
-  }
-  if (props.usageTable) {
-    readmeOnDarkBackground = !readmeOnDarkBackground;
-  }
-  if (props.components.length % 2 === 1) {
-    readmeOnDarkBackground = !readmeOnDarkBackground;
-  }
-
   const tokenSwitcher = (
     <TokenSwitcher
       className={getClassName('bpkdocs-content-page__token-switcher')}
@@ -211,10 +200,7 @@ const DocsPageBuilder = props => {
             Readme
           </Heading>,
           <BpkContentContainer id="md-container" bareHtml alternate>
-            <BpkMarkdownRenderer
-              darkBackground={readmeOnDarkBackground}
-              source={getMarkdownString(props.readme)}
-            />
+            <BpkMarkdownRenderer source={getMarkdownString(props.readme)} />
           </BpkContentContainer>,
         ])
       : null,

@@ -43,12 +43,8 @@ const getClassName = cssModules(STYLES);
 const TAG_NAMES = ['h1', 'h1', 'h2', 'h3', 'h4'];
 const TEXT_STYLES = ['xxl', 'xxl', 'xl', 'lg', 'base'];
 
-export type Props = {
-  darkBackground: boolean,
-};
-
-const BpkMarkdownRenderer = (props: Props) => {
-  const { darkBackground, ...rest } = props;
+const BpkMarkdownRenderer = (props: {}) => {
+  const { ...rest } = props;
 
   const renderers = {};
 
@@ -60,14 +56,10 @@ const BpkMarkdownRenderer = (props: Props) => {
           'bpkdocs-markdown-renderer__mobile-scroll-container',
         )}
         trailingIndicatorClassName={getClassName(
-          `bpkdocs-markdown-renderer__mobile-scroll-indicator--trailing${
-            darkBackground ? '--dark' : '--light'
-          }`,
+          `bpkdocs-markdown-renderer__mobile-scroll-indicator--trailing`,
         )}
         leadingIndicatorClassName={getClassName(
-          `bpkdocs-markdown-renderer__mobile-scroll-indicator--leading${
-            darkBackground ? '--dark' : '--light'
-          }`,
+          `bpkdocs-markdown-renderer__mobile-scroll-indicator--leading`,
         )}
         {...tableRest}
       >
