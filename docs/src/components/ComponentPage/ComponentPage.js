@@ -46,7 +46,7 @@ type Props = {
   additionalContent: ?Array<ContentType>,
 };
 
-const NewDocsPage = (props: Props) => {
+const ComponentPage = (props: Props) => {
   const { additionalContent, examples, readme } = props;
   return (
     <div>
@@ -103,7 +103,7 @@ const NewDocsPage = (props: Props) => {
 
 const contentPropType = PropTypes.oneOfType([PropTypes.string, PropTypes.node]);
 
-NewDocsPage.propTypes = {
+ComponentPage.propTypes = {
   examples: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
@@ -116,8 +116,8 @@ NewDocsPage.propTypes = {
   additionalContent: PropTypes.arrayOf(contentPropType),
 };
 
-NewDocsPage.defaultProps = {
+ComponentPage.defaultProps = {
   additionalContent: null,
 };
 
-export default NewDocsPage;
+export default ComponentPage;
