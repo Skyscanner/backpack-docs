@@ -21,7 +21,7 @@ import React from 'react';
 import readme from '../../../../backpack-android/docs/Badge/README.md';
 import screenshotAll from '../../../../backpack-android/docs/Badge/screenshots/all.png';
 import screenshotAllDm from '../../../../backpack-android/docs/Badge/screenshots/all_dm.png';
-import AndroidPageBuilder from '../../components/DocsPageBuilder';
+import DocsPageBuilder from '../../components/DocsPageBuilder';
 
 const components = [
   {
@@ -47,7 +47,7 @@ const components = [
 ];
 
 const AndroidBadgePage = ({ ...rest }) => (
-  <AndroidPageBuilder
+  <DocsPageBuilder
     title="Badge"
     components={components}
     readme={readme}

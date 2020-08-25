@@ -34,6 +34,7 @@ import getMarkdownString from '../../helpers/markdown-helper';
 
 import TokenSwitcher, { connect } from './TokenSwitcher';
 import TokenTable from './TokenTable';
+import ComponentVideos from './ComponentVideos';
 import ComponentScreenshots from './ComponentScreenshots';
 import STYLES from './DocsPageBuilder.scss';
 import PlatformSwitchingContent from './PlatformSwitchingContent';
@@ -74,6 +75,9 @@ const ComponentExample = (component, registerPlatformSwitchingContent) => {
     <ComponentScreenshots screenshots={component.screenshots} />
   ) : null;
 
+  const videos = (component.videos || []).length ? (
+    <ComponentVideos videos={component.videos} />
+  ) : null;
   const blurb = component.blurb ? toNodes(component.blurb) : null;
 
   const readme = component.readme
@@ -129,6 +133,7 @@ const ComponentExample = (component, registerPlatformSwitchingContent) => {
       {tokenMap}
       {platformSwitchingContent}
       {screenshots}
+      {videos}
       {examples}
       {readme}
       {sassdocLink}
@@ -281,6 +286,14 @@ DocsPageBuilder.propTypes = {
           width: PropTypes.number.isRequired,
           height: PropTypes.number.isRequired,
           altText: PropTypes.string.isRequired,
+          subText: PropTypes.string.isRequired,
+        }),
+      ),
+      videos: PropTypes.arrayOf(
+        PropTypes.shape({
+          title: PropTypes.string.isRequired,
+          src: PropTypes.string.isRequired,
+          width: PropTypes.number.isRequired,
           subText: PropTypes.string.isRequired,
         }),
       ),
