@@ -34,7 +34,7 @@ type Props = {
     examples: Node,
   }>,
   readme: string,
-  sassdocId: string,
+  sassdocId: ?string,
   usageTable: ?{
     dos: Array<string>,
     donts: Array<string>,
