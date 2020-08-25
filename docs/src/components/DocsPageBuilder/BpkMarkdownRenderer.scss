@@ -38,11 +38,23 @@
 
   &__mobile-scroll-indicator {
     &--trailing {
-      @include bpk-scroll-indicator-right($bpk-color-sky-gray-tint-06);
+      &--dark {
+        @include bpk-scroll-indicator-right($bpk-color-sky-gray-tint-06);
+      }
+
+      &--light {
+        @include bpk-scroll-indicator-right($bpk-color-sky-gray-tint-07);
+      }
     }
 
     &--leading {
-      @include bpk-scroll-indicator-left($bpk-color-sky-gray-tint-06);
+      &--dark {
+        @include bpk-scroll-indicator-left($bpk-color-sky-gray-tint-06);
+      }
+
+      &--light {
+        @include bpk-scroll-indicator-left($bpk-color-sky-gray-tint-07);
+      }
     }
   }
 }
