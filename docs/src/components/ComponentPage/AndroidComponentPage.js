@@ -19,12 +19,14 @@
 /* @flow strict */
 
 import React from 'react';
+import BpkLink from 'bpk-component-link';
 
 import ComponentScreenshots from '../DocsPageBuilder/ComponentScreenshots';
 
 import ComponentPage from './ComponentPage';
 
 type Props = {
+  documentationId: string,
   readme: string,
   screenshots: [
     {
@@ -46,8 +48,8 @@ type Props = {
   },
 };
 
-const NativeComponentPage = (props: Props) => {
-  const { screenshots, readme, usageTable } = props;
+const AndroidComponentPage = (props: Props) => {
+  const { documentationId, screenshots, readme, usageTable } = props;
   const screenshotsAsExamples = screenshots.map(screenshot => ({
     id: screenshot.id,
     title: screenshot.title,
@@ -58,8 +60,19 @@ const NativeComponentPage = (props: Props) => {
       usageTable={usageTable}
       examples={screenshotsAsExamples}
       readme={readme}
+      additionalContent={[
+        {
+          id: 'docs',
+          title: 'Class reference',
+          content: (
+            <BpkLink href={`/android/versions/latest/${documentationId}`} blank>
+              View on Backpack&apos;s Android documentation
+            </BpkLink>
+          ),
+        },
+      ]}
     />
   );
 };
 
-export default NativeComponentPage;
+export default AndroidComponentPage;

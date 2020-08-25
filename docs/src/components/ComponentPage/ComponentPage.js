@@ -19,15 +19,15 @@
 /* @flow strict */
 
 import React, { type Node } from 'react';
-import PropTypes from 'prop-types';
 import { cssModules } from 'bpk-react-utils';
 import BpkContentContainer from 'bpk-component-content-container';
 import { BpkList, BpkListItem } from 'bpk-component-list';
 import BpkLink from 'bpk-component-link';
-import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
+import BpkText, { TEXT_STYLES, WEIGHT_STYLES } from 'bpk-component-text';
 
 import BpkMarkdownRenderer from '../DocsPageBuilder/BpkMarkdownRenderer';
 import getMarkdownString from '../../helpers/markdown-helper';
+import UsageTable from '../UsageTable';
 
 import STYLES from './ComponentPage.scss';
 
@@ -43,13 +43,22 @@ type Props = {
     content?: ContentType,
   }>,
   readme: string,
-  additionalContent: ?Array<ContentType>,
+  additionalContent: ?Array<{
+    id: string,
+    title: string,
+    content: ContentType,
+  }>,
+  usageTable: ?{
+    dos: Array<string>,
+    donts: Array<string>,
+  },
 };
 
 const ComponentPage = (props: Props) => {
-  const { additionalContent, examples, readme } = props;
+  const { additionalContent, examples, readme, usageTable } = props;
   return (
     <div>
+      {/* Table of contents */}
       <div className={getClassName('bpkdocs-component-page__section')}>
         <BpkText
           tagName="h2"
@@ -58,7 +67,26 @@ const ComponentPage = (props: Props) => {
             'bpkdocs-component-page__table-of-contents-heading',
           )}
         >
-          In this section
+          Table of contents
+        </BpkText>
+
+        {usageTable && (
+          <BpkList>
+            <BpkListItem>
+              <BpkLink href="#usage">Usage advice</BpkLink>
+            </BpkListItem>
+          </BpkList>
+        )}
+
+        <BpkText
+          tagName="h3"
+          textStyle={TEXT_STYLES.sm}
+          weight={WEIGHT_STYLES.bold}
+          className={getClassName(
+            'bpkdocs-component-page__table-of-contents-heading',
+          )}
+        >
+          Examples
         </BpkText>
         <BpkList>
           {examples.map(example => (
@@ -67,7 +95,46 @@ const ComponentPage = (props: Props) => {
             </BpkListItem>
           ))}
         </BpkList>
+
+        <BpkText
+          tagName="h3"
+          textStyle={TEXT_STYLES.sm}
+          weight={WEIGHT_STYLES.bold}
+          className={getClassName(
+            'bpkdocs-component-page__table-of-contents-heading',
+          )}
+        >
+          Additional content
+        </BpkText>
+        <BpkList>
+          <BpkListItem>
+            <BpkLink href="#readme">Implementation</BpkLink>
+          </BpkListItem>
+          {additionalContent &&
+            additionalContent.map(content => (
+              <BpkListItem key={content.id}>
+                <BpkLink href={`#${content.id}`}>{content.title}</BpkLink>
+              </BpkListItem>
+            ))}
+        </BpkList>
       </div>
+
+      {/* Usage advice */}
+      {usageTable && (
+        <div
+          id="usage"
+          className={getClassName('bpkdocs-component-page__section')}
+        >
+          <h2
+            className={getClassName('bpkdocs-component-page__section-heading')}
+          >
+            Usage advice
+          </h2>
+          <UsageTable data={props.usageTable} />
+        </div>
+      )}
+
+      {/* Examples */}
       {examples.map(example => (
         <div
           key={example.id}
@@ -83,41 +150,37 @@ const ComponentPage = (props: Props) => {
           <div>{example.content}</div>
         </div>
       ))}
+
+      {/* Readme */}
       <div className={getClassName('bpkdocs-component-page__section')}>
-        <h2 className={getClassName('bpkdocs-component-page__section-heading')}>
-          Readme
+        <h2
+          id="readme"
+          className={getClassName('bpkdocs-component-page__section-heading')}
+        >
+          Implementation
         </h2>
         <BpkContentContainer bareHtml alternate>
           <BpkMarkdownRenderer source={getMarkdownString(readme)} />
         </BpkContentContainer>
       </div>
+
+      {/* Additional content */}
       {additionalContent &&
         additionalContent.map(content => (
-          <div className={getClassName('bpkdocs-component-page__section')}>
-            {content}
+          <div
+            id={content.id}
+            className={getClassName('bpkdocs-component-page__section')}
+          >
+            {content.content}
           </div>
         ))}
     </div>
   );
 };
 
-const contentPropType = PropTypes.oneOfType([PropTypes.string, PropTypes.node]);
-
-ComponentPage.propTypes = {
-  examples: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      blurb: contentPropType,
-      content: contentPropType,
-    }),
-  ).isRequired,
-  readme: PropTypes.node.isRequired,
-  additionalContent: PropTypes.arrayOf(contentPropType),
-};
-
 ComponentPage.defaultProps = {
   additionalContent: null,
+  usageTable: null,
 };
 
 export default ComponentPage;
