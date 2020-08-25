@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Badge/README.md';

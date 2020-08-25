@@ -31,14 +31,16 @@ type Props = {
   screenshots: [
     {
       id: string,
-      screenshots: {
-        altText: string,
-        height: number,
-        src: string,
-        subText: string,
-        title: string,
-        width: number,
-      },
+      screenshots: [
+        {
+          altText: string,
+          height: number,
+          src: string,
+          subText: string,
+          title: string,
+          width: number,
+        },
+      ],
       title: string,
     },
   ],

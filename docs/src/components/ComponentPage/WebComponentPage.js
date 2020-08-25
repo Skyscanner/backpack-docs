@@ -63,17 +63,21 @@ const WebComponentPage = (props: Props) => {
       usageTable={usageTable}
       examples={mappedExamples}
       readme={readme}
-      additionalContent={[
-        {
-          id: 'docs',
-          title: 'Sassdoc',
-          content: (
-            <BpkLink href={`/sassdoc/#${sassdocId}`} blank>
-              View Sass variables and mixins on Backpack&apos;s Sassdoc
-            </BpkLink>
-          ),
-        },
-      ]}
+      additionalContent={
+        sassdocId
+          ? [
+              {
+                id: 'docs',
+                title: 'Sassdoc',
+                content: (
+                  <BpkLink href={`/sassdoc/#${sassdocId}`} blank>
+                    View Sass variables and mixins on Backpack&apos;s Sassdoc
+                  </BpkLink>
+                ),
+              },
+            ]
+          : null
+      }
     />
   );
 };
