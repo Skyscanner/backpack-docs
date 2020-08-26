@@ -16,12 +16,14 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Badge/README.md';
 import screenshotAll from '../../../../backpack-android/docs/Badge/screenshots/all.png';
 import screenshotAllDm from '../../../../backpack-android/docs/Badge/screenshots/all_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { AndroidComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -46,14 +48,11 @@ const components = [
   },
 ];
 
-const AndroidBadgePage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Badge"
-    components={components}
+const AndroidBadgePage = () => (
+  <AndroidComponentPage
+    documentationId="net.skyscanner.backpack.badge"
     readme={readme}
-    androidDocId="net.skyscanner.backpack.badge"
-    showMenu
-    {...rest}
+    screenshots={components}
   />
 );
 

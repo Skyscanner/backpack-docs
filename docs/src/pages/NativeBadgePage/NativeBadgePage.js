@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 
 import readme from '../../../../backpack-react-native/lib/bpk-component-badge/README.md';
@@ -31,7 +33,7 @@ import androidScreenshotDockedEnd from '../../../../backpack-react-native/lib/bp
 import androidScreenshotWithIcon from '../../../../backpack-react-native/lib/bpk-component-badge/screenshots/android/with-icon.png';
 import androidScreenshotWithTrailingIcon from '../../../../backpack-react-native/lib/bpk-component-badge/screenshots/android/with-trailing-icon.png';
 import androidScreenshotWithMultipleIcons from '../../../../backpack-react-native/lib/bpk-component-badge/screenshots/android/with-multiple-icons.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -168,14 +170,8 @@ const components = [
   },
 ];
 
-const NativeBadgePage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Badges"
-    components={components}
-    readme={readme}
-    showMenu
-    {...rest}
-  />
+const NativeBadgePage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 export default NativeBadgePage;

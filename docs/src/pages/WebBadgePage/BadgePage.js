@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 import BpkBadge, { BADGE_TYPES } from 'bpk-component-badge';
 import BpkSmallFlightIcon from 'bpk-component-icon/sm/flight';
@@ -24,7 +26,7 @@ import BpkSmallHotelIcon from 'bpk-component-icon/sm/hotels';
 import { cssModules } from 'bpk-react-utils';
 import badgeReadme from 'bpk-component-badge/README.md';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import Paragraph from '../../components/Paragraph';
 
 import STYLES from './badge-page.scss';
@@ -216,13 +218,11 @@ const components = [
   },
 ];
 
-const BadgePage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Badge"
-    components={components}
+const BadgePage = () => (
+  <WebComponentPage
+    examples={components}
     readme={badgeReadme}
     sassdocId="badges"
-    {...rest}
   />
 );
 
