@@ -20,8 +20,11 @@
 
 import React from 'react';
 import BpkLink from 'bpk-component-link';
+import BpkContentContainer from 'bpk-component-content-container';
 
 import ComponentScreenshots from '../DocsPageBuilder/ComponentScreenshots';
+import BpkMarkdownRenderer from '../DocsPageBuilder/BpkMarkdownRenderer';
+import getMarkdownString from '../../helpers/markdown-helper';
 
 import ComponentPage from './ComponentPage';
 
@@ -63,6 +66,15 @@ const IOSComponentPage = (props: Props) => {
       readme={readme}
       usageTable={usageTable}
       additionalContent={[
+        {
+          id: 'readme',
+          title: 'Implementation',
+          content: (
+            <BpkContentContainer bareHtml alternate>
+              <BpkMarkdownRenderer source={getMarkdownString(readme)} />
+            </BpkContentContainer>
+          ),
+        },
         {
           id: 'docs',
           title: 'Class reference',

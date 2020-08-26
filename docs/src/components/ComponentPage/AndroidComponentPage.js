@@ -20,7 +20,10 @@
 
 import React from 'react';
 import BpkLink from 'bpk-component-link';
+import BpkContentContainer from 'bpk-component-content-container';
 
+import BpkMarkdownRenderer from '../DocsPageBuilder/BpkMarkdownRenderer';
+import getMarkdownString from '../../helpers/markdown-helper';
 import ComponentScreenshots from '../DocsPageBuilder/ComponentScreenshots';
 
 import ComponentPage from './ComponentPage';
@@ -63,6 +66,15 @@ const AndroidComponentPage = (props: Props) => {
       examples={screenshotsAsExamples}
       readme={readme}
       additionalContent={[
+        {
+          id: 'readme',
+          title: 'Implementation',
+          content: (
+            <BpkContentContainer bareHtml alternate>
+              <BpkMarkdownRenderer source={getMarkdownString(readme)} />
+            </BpkContentContainer>
+          ),
+        },
         {
           id: 'docs',
           title: 'Class reference',

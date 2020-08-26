@@ -18,15 +18,27 @@
 
 /* @flow strict */
 
+/*
+PHILOSOPHY
+
+In the past we had DocsPageBuilder which gained more and more props as
+Backpack expanded to support more page types (Android, iOS, tokens, etc), leading to
+it being difficult to maintain.
+
+To avoid the mistakes of the past, this component is designed to be very simple
+and composable. We only add a new prop when it can't be done as part of `examples`
+or `additionalContent`. For example `usageTable` needs to be at the top of the page
+with its own table of contents section, so it can't be done in `examples` or `additionalContent`.
+
+When new props *are* necessary, keep them generic and not tied to any specific platform.
+*/
+
 import React, { type Node } from 'react';
 import { cssModules } from 'bpk-react-utils';
-import BpkContentContainer from 'bpk-component-content-container';
 import { BpkList, BpkListItem } from 'bpk-component-list';
 import BpkLink from 'bpk-component-link';
 import BpkText, { TEXT_STYLES, WEIGHT_STYLES } from 'bpk-component-text';
 
-import BpkMarkdownRenderer from '../DocsPageBuilder/BpkMarkdownRenderer';
-import getMarkdownString from '../../helpers/markdown-helper';
 import UsageTable from '../UsageTable';
 
 import STYLES from './ComponentPage.scss';
@@ -42,7 +54,6 @@ type Props = {
     blurb?: ContentType,
     content?: ContentType,
   }>,
-  readme: string,
   additionalContent: ?Array<{
     id: string,
     title: string,
@@ -55,7 +66,7 @@ type Props = {
 };
 
 const ComponentPage = (props: Props) => {
-  const { additionalContent, examples, readme, usageTable } = props;
+  const { additionalContent, examples, usageTable } = props;
   return (
     <div>
       {/* Table of contents */}
@@ -96,27 +107,27 @@ const ComponentPage = (props: Props) => {
           ))}
         </BpkList>
 
-        <BpkText
-          tagName="h3"
-          textStyle={TEXT_STYLES.sm}
-          weight={WEIGHT_STYLES.bold}
-          className={getClassName(
-            'bpkdocs-component-page__table-of-contents-heading',
-          )}
-        >
-          Additional content
-        </BpkText>
-        <BpkList>
-          <BpkListItem>
-            <BpkLink href="#readme">Implementation</BpkLink>
-          </BpkListItem>
-          {additionalContent &&
-            additionalContent.map(content => (
-              <BpkListItem key={content.id}>
-                <BpkLink href={`#${content.id}`}>{content.title}</BpkLink>
-              </BpkListItem>
-            ))}
-        </BpkList>
+        {additionalContent && (
+          <>
+            <BpkText
+              tagName="h3"
+              textStyle={TEXT_STYLES.sm}
+              weight={WEIGHT_STYLES.bold}
+              className={getClassName(
+                'bpkdocs-component-page__table-of-contents-heading',
+              )}
+            >
+              Additional content
+            </BpkText>
+            <BpkList>
+              {additionalContent.map(content => (
+                <BpkListItem key={content.id}>
+                  <BpkLink href={`#${content.id}`}>{content.title}</BpkLink>
+                </BpkListItem>
+              ))}
+            </BpkList>
+          </>
+        )}
       </div>
 
       {/* Usage advice */}
@@ -151,19 +162,6 @@ const ComponentPage = (props: Props) => {
         </div>
       ))}
 
-      {/* Readme */}
-      <div className={getClassName('bpkdocs-component-page__section')}>
-        <h2
-          id="readme"
-          className={getClassName('bpkdocs-component-page__section-heading')}
-        >
-          Implementation
-        </h2>
-        <BpkContentContainer bareHtml alternate>
-          <BpkMarkdownRenderer source={getMarkdownString(readme)} />
-        </BpkContentContainer>
-      </div>
-
       {/* Additional content */}
       {additionalContent &&
         additionalContent.map(content => (
@@ -171,6 +169,13 @@ const ComponentPage = (props: Props) => {
             id={content.id}
             className={getClassName('bpkdocs-component-page__section')}
           >
+            <h2
+              className={getClassName(
+                'bpkdocs-component-page__section-heading',
+              )}
+            >
+              {content.title}
+            </h2>
             {content.content}
           </div>
         ))}

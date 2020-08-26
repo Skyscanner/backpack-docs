@@ -20,8 +20,11 @@
 
 import React, { type Node } from 'react';
 import BpkLink from 'bpk-component-link';
+import BpkContentContainer from 'bpk-component-content-container';
 
 import PresentationBlock from '../PresentationBlock/PresentationBlock';
+import BpkMarkdownRenderer from '../DocsPageBuilder/BpkMarkdownRenderer';
+import getMarkdownString from '../../helpers/markdown-helper';
 
 import ComponentPage from './ComponentPage';
 
@@ -58,26 +61,36 @@ const WebComponentPage = (props: Props) => {
       ),
     };
   });
+
+  const additionalContent = [
+    {
+      id: 'readme',
+      title: 'Implementation',
+      content: (
+        <BpkContentContainer bareHtml alternate>
+          <BpkMarkdownRenderer source={getMarkdownString(readme)} />
+        </BpkContentContainer>
+      ),
+    },
+  ];
+  if (sassdocId) {
+    additionalContent.push({
+      id: 'docs',
+      title: 'Sassdoc',
+      content: (
+        <BpkLink href={`/sassdoc/#${sassdocId}`} blank>
+          View Sass variables and mixins on Backpack&apos;s Sassdoc
+        </BpkLink>
+      ),
+    });
+  }
+
   return (
     <ComponentPage
       usageTable={usageTable}
       examples={mappedExamples}
       readme={readme}
-      additionalContent={
-        sassdocId
-          ? [
-              {
-                id: 'docs',
-                title: 'Sassdoc',
-                content: (
-                  <BpkLink href={`/sassdoc/#${sassdocId}`} blank>
-                    View Sass variables and mixins on Backpack&apos;s Sassdoc
-                  </BpkLink>
-                ),
-              },
-            ]
-          : null
-      }
+      additionalContent={additionalContent}
     />
   );
 };
