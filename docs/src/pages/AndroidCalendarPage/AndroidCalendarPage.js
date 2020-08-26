@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Calendar/README.md';
@@ -23,7 +25,7 @@ import screenshotAll from '../../../../backpack-android/docs/Calendar/screenshot
 import screenshotAllDm from '../../../../backpack-android/docs/Calendar/screenshots/range_dm.png';
 import screenshotColored from '../../../../backpack-android/docs/Calendar/screenshots/colored.png';
 import screenshotColoredDm from '../../../../backpack-android/docs/Calendar/screenshots/colored_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { AndroidComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -68,14 +70,11 @@ const components = [
   },
 ];
 
-const AndroidCalendarPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Calendar"
-    components={components}
+const AndroidCalendarPage = () => (
+  <AndroidComponentPage
+    screenshots={components}
     readme={readme}
-    androidDocId="net.skyscanner.backpack.calendar"
-    showMenu
-    {...rest}
+    documentationId="net.skyscanner.backpack.calendar"
   />
 );
 

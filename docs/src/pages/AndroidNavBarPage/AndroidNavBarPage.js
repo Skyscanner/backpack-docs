@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 
 import readme from '../../../../backpack-android/docs/NavBar/README.md';
@@ -25,7 +27,7 @@ import screenshotExpanded from '../../../../backpack-android/docs/NavBar/screens
 import screenshotExpandedDm from '../../../../backpack-android/docs/NavBar/screenshots/expanded_dm.png';
 import screenshotNavigation from '../../../../backpack-android/docs/NavBar/screenshots/navigation.png';
 import screenshotNavigationDm from '../../../../backpack-android/docs/NavBar/screenshots/navigation_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { AndroidComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -90,14 +92,11 @@ const components = [
   },
 ];
 
-const AndroidNavBarPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Navigation Bar"
-    components={components}
+const AndroidNavBarPage = () => (
+  <AndroidComponentPage
+    screenshots={components}
     readme={readme}
-    androidDocId="net.skyscanner.backpack.navbar"
-    showMenu
-    {...rest}
+    documentationId="net.skyscanner.backpack.navbar"
   />
 );
 

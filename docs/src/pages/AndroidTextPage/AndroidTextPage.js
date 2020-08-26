@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Text/README.md';
@@ -28,7 +30,7 @@ import screenshotHeavy from '../../../../backpack-android/docs/Text/screenshots/
 import screenshotHeavyDm from '../../../../backpack-android/docs/Text/screenshots/heavy_dm.png';
 import screenshotTextSpan from '../../../../backpack-android/docs/TextSpans/screenshots/default.png';
 import screenshotTextSpanDm from '../../../../backpack-android/docs/TextSpans/screenshots/default_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { AndroidComponentPage } from '../../components/ComponentPage';
 import IntroBlurb from '../../components/IntroBlurb';
 
 const components = [
@@ -92,9 +94,6 @@ const components = [
       },
     ],
   },
-];
-
-const customSections = [
   {
     id: 'text-span',
     title: 'Text Span',
@@ -121,19 +120,15 @@ const customSections = [
         subText: '(Google Pixel emulator - dark mode)',
       },
     ],
-    readme: textSpanReadme,
   },
 ];
 
-const AndroidTextPage = ({ ...rest }) => (
-  <DocsPageBuilder
+const AndroidTextPage = () => (
+  <AndroidComponentPage
     title="Text"
-    components={components}
-    customSections={customSections}
-    readme={readme}
-    androidDocId="net.skyscanner.backpack.text"
-    showMenu
-    {...rest}
+    screenshots={components}
+    readme={readme + textSpanReadme}
+    documentationId="net.skyscanner.backpack.text"
   />
 );
 

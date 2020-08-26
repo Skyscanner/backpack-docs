@@ -21,7 +21,7 @@ import React from 'react';
 import readme from '../../../../backpack-android/docs/Icon/README.md';
 import screenshotAll from '../../../../backpack-android/docs/Icon/screenshots/all.png';
 import screenshotAllDm from '../../../../backpack-android/docs/Icon/screenshots/all_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { AndroidComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -46,14 +46,8 @@ const components = [
   },
 ];
 
-const AndroidIconPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Icon"
-    components={components}
-    readme={readme}
-    showMenu
-    {...rest}
-  />
+const AndroidIconPage = () => (
+  <AndroidComponentPage screenshots={components} readme={readme} />
 );
 
 export default AndroidIconPage;

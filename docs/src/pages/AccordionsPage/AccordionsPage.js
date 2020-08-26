@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 import BpkCheckbox from 'bpk-component-checkbox';
 import { withAlignment } from 'bpk-component-icon';
@@ -35,7 +37,7 @@ import {
   spacingSm,
 } from 'bpk-tokens/tokens/base.es6';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import Paragraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
@@ -249,20 +251,15 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const AccordionsSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Accordion"
-    components={components}
-    readme={accordionsReadme}
-    {...rest}
-  />
+const AccordionsSubPage = () => (
+  <WebComponentPage examples={components} readme={accordionsReadme} />
 );
 
 const AccordionsPage = () => (
   <DocsPageWrapper
     title="Accordion"
     blurb={blurb}
-    webSubpage={<AccordionsSubPage wrapped />}
+    webSubpage={<AccordionsSubPage />}
   />
 );
 

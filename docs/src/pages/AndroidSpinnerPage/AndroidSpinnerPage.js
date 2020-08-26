@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Spinner/README.md';
@@ -23,7 +25,7 @@ import screenshotDefault from '../../../../backpack-android/docs/Spinner/screens
 import screenshotDefaultDm from '../../../../backpack-android/docs/Spinner/screenshots/default_dm.png';
 import screenshotSmall from '../../../../backpack-android/docs/Spinner/screenshots/small.png';
 import screenshotSmallDm from '../../../../backpack-android/docs/Spinner/screenshots/small_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { AndroidComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -68,14 +70,11 @@ const components = [
   },
 ];
 
-const AndroidSpinnerPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Spinner"
-    components={components}
+const AndroidSpinnerPage = () => (
+  <AndroidComponentPage
+    screenshots={components}
     readme={readme}
-    androidDocId="net.skyscanner.backpack.spinner"
-    showMenu
-    {...rest}
+    documentationId="net.skyscanner.backpack.spinner"
   />
 );
 

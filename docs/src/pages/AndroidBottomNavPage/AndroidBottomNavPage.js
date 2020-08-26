@@ -16,12 +16,14 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 
 import readme from '../../../../backpack-android/docs/BottomNav/README.md';
 import screenshotDefault from '../../../../backpack-android/docs/BottomNav/screenshots/default.png';
 import screenshotDefaultDm from '../../../../backpack-android/docs/BottomNav/screenshots/default_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { AndroidComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -48,13 +50,11 @@ const components = [
   },
 ];
 
-const AndroidBottomNavPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Bottom Nav"
-    components={components}
+const AndroidBottomNavPage = () => (
+  <AndroidComponentPage
+    screenshots={components}
     readme={readme}
-    androidDocId="net.skyscanner.backpack.bottomnav"
-    {...rest}
+    documentationId="net.skyscanner.backpack.bottomnav"
   />
 );
 

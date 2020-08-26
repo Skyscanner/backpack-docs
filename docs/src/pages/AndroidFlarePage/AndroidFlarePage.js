@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Flare/README.md';
@@ -29,7 +31,7 @@ import screenshotInsetPadding from '../../../../backpack-android/docs/Flare/scre
 import screenshotInsetPaddingDm from '../../../../backpack-android/docs/Flare/screenshots/inset-padding_dm.png';
 import screenshotPointingUp from '../../../../backpack-android/docs/Flare/screenshots/pointing-up.png';
 import screenshotPointingUpDm from '../../../../backpack-android/docs/Flare/screenshots/pointing-up_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { AndroidComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -134,14 +136,11 @@ const components = [
   },
 ];
 
-const AndroidFlarePage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Toggle"
-    components={components}
+const AndroidFlarePage = () => (
+  <AndroidComponentPage
+    screenshots={components}
     readme={readme}
-    androidDocId="net.skyscanner.backpack.flare"
-    showMenu
-    {...rest}
+    documentationId="net.skyscanner.backpack.flare"
   />
 );
 

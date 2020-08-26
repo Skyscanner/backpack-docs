@@ -33,6 +33,7 @@ type Props = {
   readme: string,
   screenshots: [
     {
+      blurb: ?string,
       id: string,
       screenshots: [
         {
@@ -55,10 +56,15 @@ type Props = {
 
 const IOSComponentPage = (props: Props) => {
   const { documentationId, screenshots, readme, usageTable } = props;
-  const screenshotsAsExamples = screenshots.map(screenshot => ({
-    id: screenshot.id,
-    title: screenshot.title,
-    content: <ComponentScreenshots screenshots={screenshot.screenshots} />,
+  const screenshotsAsExamples = screenshots.map(screenshotSet => ({
+    id: screenshotSet.id,
+    title: screenshotSet.title,
+    content: (
+      <>
+        {screenshotSet.blurb && <p>{screenshotSet.blurb}</p>}
+        <ComponentScreenshots screenshots={screenshotSet.screenshots} />
+      </>
+    ),
   }));
   return (
     <ComponentPage

@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Chip/README.md';
@@ -25,7 +27,7 @@ import screenshotOutline from '../../../../backpack-android/docs/Chip/screenshot
 import screenshotOutlineDm from '../../../../backpack-android/docs/Chip/screenshots/outline_dm.png';
 import screenshotIcon from '../../../../backpack-android/docs/Chip/screenshots/with-icon.png';
 import screenshotIconDm from '../../../../backpack-android/docs/Chip/screenshots/with-icon_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { AndroidComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -90,14 +92,11 @@ const components = [
   },
 ];
 
-const AndroidChipPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Chip"
-    components={components}
+const AndroidChipPage = () => (
+  <AndroidComponentPage
+    screenshots={components}
     readme={readme}
-    androidDocId="net.skyscanner.backpack.chip"
-    showMenu
-    {...rest}
+    documentationId="net.skyscanner.backpack.chip"
   />
 );
 

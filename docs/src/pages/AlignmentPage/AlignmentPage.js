@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 import {
   colors,
@@ -37,7 +39,7 @@ import LongArrowRightIcon from 'bpk-component-icon/lg/long-arrow-right';
 import LongArrowRightIconSm from 'bpk-component-icon/sm/long-arrow-right';
 import AwardIcon from 'bpk-component-icon/lg/award';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import Heading from '../../components/Heading';
 import Paragraph from '../../components/Paragraph';
@@ -277,15 +279,13 @@ const blurb = [
   </Paragraph>,
 ];
 
-const AlignmentSubPage = ({ ...rest }) => (
-  <DocsPageBuilder title="Alignment" components={components} {...rest} />
-);
+const AlignmentSubPage = () => <WebComponentPage examples={components} />;
 
 const AlignmentPage = () => (
   <DocsPageWrapper
     title="Alignment"
     blurb={blurb}
-    webSubpage={<AlignmentSubPage wrapped />}
+    webSubpage={<AlignmentSubPage />}
   />
 );
 

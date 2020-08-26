@@ -16,12 +16,14 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 
 import readme from '../../../../backpack-android/docs/FloatingActionButton/README.md';
 import screenshotDefault from '../../../../backpack-android/docs/FloatingActionButton/screenshots/default.png';
 import screenshotDefaultDm from '../../../../backpack-android/docs/FloatingActionButton/screenshots/default_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { AndroidComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -48,13 +50,8 @@ const components = [
   },
 ];
 
-const AndroidFloatingActionButtonPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Floating action buttons"
-    components={components}
-    readme={readme}
-    {...rest}
-  />
+const AndroidFloatingActionButtonPage = () => (
+  <AndroidComponentPage screenshots={components} readme={readme} />
 );
 
 export default AndroidFloatingActionButtonPage;
