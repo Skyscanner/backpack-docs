@@ -28,7 +28,7 @@ import { cssModules } from 'bpk-react-utils';
 import { BpkList, BpkListItem } from 'bpk-component-list';
 import infiniteScrollReadme from 'bpk-component-infinite-scroll/README.md';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import IntroBlurb from '../../components/IntroBlurb';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 
@@ -189,12 +189,7 @@ const blurb = [
 ];
 
 const InfiniteScrollSubpage = () => (
-  <DocsPageBuilder
-    title="Infinite scroll"
-    components={components}
-    readme={infiniteScrollReadme}
-    wrapped
-  />
+  <WebComponentPage examples={components} readme={infiniteScrollReadme} />
 );
 
 const InfiniteScrollPage = () => (

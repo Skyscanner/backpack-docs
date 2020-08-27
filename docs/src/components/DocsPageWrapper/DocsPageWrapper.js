@@ -16,6 +16,7 @@
  * limitations under the License.
  */
 
+import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
@@ -177,6 +178,7 @@ const DocsPageWrapper = props => {
 
   return (
     <BpkContentContainer className={getClassName('bpkdocs-page-wrapper')}>
+      <Helmet title={props.title} />
       <div className={getClassName('bpkdocs-page-wrapper__inner')}>
         <Heading level="h1">{title}</Heading>
         {blurb && <Blurb content={blurb} />}

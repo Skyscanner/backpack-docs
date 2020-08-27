@@ -28,7 +28,7 @@ import BpkAutosuggest, {
 import autosuggestReadme from 'bpk-component-autosuggest/README.md';
 
 import * as ROUTES from '../../constants/routes';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import Paragraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
@@ -276,13 +276,11 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const AutosuggestSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Autosuggest"
-    components={components}
+const AutosuggestSubPage = () => (
+  <WebComponentPage
+    examples={components}
     readme={autosuggestReadme}
     sassdocId="autosuggest"
-    {...rest}
   />
 );
 
@@ -290,7 +288,7 @@ const AutosuggestPage = () => (
   <DocsPageWrapper
     title="Autosuggest"
     blurb={blurb}
-    webSubpage={<AutosuggestSubPage wrapped />}
+    webSubpage={<AutosuggestSubPage />}
   />
 );
 

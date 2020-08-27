@@ -24,7 +24,7 @@ import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-tex
 import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-text-field___default_dm.png';
 import screenshotTextView from '../../../../backpack-ios/screenshots/iPhone 8-text-view___default_lm.png';
 import screenshotTextViewDm from '../../../../backpack-ios/screenshots/iPhone 8-text-view___default_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { IOSComponentPage } from '../../components/ComponentPage';
 import IntroBlurb from '../../components/IntroBlurb';
 
 const components = [
@@ -48,9 +48,6 @@ const components = [
       },
     ],
   },
-];
-
-const customSections = [
   {
     id: 'text-view',
     title: 'Text Views',
@@ -79,15 +76,11 @@ const customSections = [
   },
 ];
 
-const IOSTextInputPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Text Input"
-    components={components}
-    readme={readme}
-    customSections={customSections}
-    iosDocId="BPKTextInput"
-    showMenu
-    {...rest}
+const IOSTextInputPage = () => (
+  <IOSComponentPage
+    screenshots={components}
+    readme={readme + textViewReadme}
+    documentationId="BPKTextInput"
   />
 );
 

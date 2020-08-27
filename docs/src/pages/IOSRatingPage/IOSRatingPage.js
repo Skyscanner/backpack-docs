@@ -27,7 +27,7 @@ import screenshotVertical from '../../../../backpack-ios/screenshots/iPhone 8-ra
 import screenshotVerticalDm from '../../../../backpack-ios/screenshots/iPhone 8-rating___vertical_dm.png';
 import screenshotSizes from '../../../../backpack-ios/screenshots/iPhone 8-rating___sizes_lm.png';
 import screenshotSizesDm from '../../../../backpack-ios/screenshots/iPhone 8-rating___sizes_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { IOSComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -112,14 +112,11 @@ const components = [
   },
 ];
 
-const IOSRatingPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Rating"
-    components={components}
+const IOSRatingPage = () => (
+  <IOSComponentPage
+    screenshots={components}
     readme={readme}
-    iosDocId="BPKRating"
-    showMenu
-    {...rest}
+    documentationId="BPKRating"
   />
 );
 

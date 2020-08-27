@@ -31,7 +31,7 @@ import screenshotDestructiveDm from '../../../../backpack-ios/screenshots/iPhone
 import screenshotFeaturedDm from '../../../../backpack-ios/screenshots/iPhone 8-button___featured_dm.png';
 import screenshotLinkDm from '../../../../backpack-ios/screenshots/iPhone 8-button___link_dm.png';
 import screenshotOutlineDm from '../../../../backpack-ios/screenshots/iPhone 8-button___outline_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { IOSComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -156,14 +156,11 @@ const components = [
   },
 ];
 
-const IOSButtonPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Button"
-    components={components}
+const IOSButtonPage = () => (
+  <IOSComponentPage
+    screenshots={components}
     readme={readme}
-    iosDocId="BPKButton"
-    showMenu
-    {...rest}
+    documentationId="BPKButton"
   />
 );
 

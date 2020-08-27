@@ -31,7 +31,7 @@ import screenshotBadge from '../../../../backpack-ios/screenshots/iPhone 8-horiz
 import screenshotBadgeDm from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___badge_dm.png';
 import screenshotNotification from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___notification_lm.png';
 import screenshotNotificationDm from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___notification_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { IOSComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -168,12 +168,11 @@ const components = [
   },
 ];
 
-const IOSHorizontalNavPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Horizontal navigation"
-    components={components}
+const IOSHorizontalNavPage = () => (
+  <IOSComponentPage
+    screenshots={components}
     readme={readme}
-    {...rest}
+    documentationId="BPKHorizontalNavigation"
   />
 );
 

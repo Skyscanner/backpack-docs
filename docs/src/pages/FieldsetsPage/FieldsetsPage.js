@@ -32,7 +32,7 @@ import BpkAutosuggest, {
 } from 'bpk-component-autosuggest';
 
 import * as ROUTES from '../../constants/routes';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 
@@ -349,20 +349,15 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const FieldsetSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Fieldsets"
-    components={components}
-    readme={readme}
-    {...rest}
-  />
+const FieldsetSubPage = () => (
+  <WebComponentPage examples={components} readme={readme} />
 );
 
 const FieldsetPage = () => (
   <DocsPageWrapper
     title="Fieldset"
     blurb={blurb}
-    webSubpage={<FieldsetSubPage wrapped />}
+    webSubpage={<FieldsetSubPage />}
   />
 );
 

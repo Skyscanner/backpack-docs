@@ -24,7 +24,7 @@ import {
 } from 'bpk-component-description-list';
 import descriptionlistsReadme from 'bpk-component-description-list/README.md';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 
@@ -62,20 +62,15 @@ const components = [
   },
 ];
 
-const DescriptionListsSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Description Lists"
-    readme={descriptionlistsReadme}
-    components={components}
-    {...rest}
-  />
+const DescriptionListsSubPage = () => (
+  <WebComponentPage readme={descriptionlistsReadme} examples={components} />
 );
 
 const DescriptionListsPage = () => (
   <DocsPageWrapper
     title="Description list"
     blurb={blurb}
-    webSubpage={<DescriptionListsSubPage wrapped />}
+    webSubpage={<DescriptionListsSubPage />}
   />
 );
 

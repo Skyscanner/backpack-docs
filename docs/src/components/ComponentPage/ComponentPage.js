@@ -89,23 +89,27 @@ const ComponentPage = (props: Props) => {
           </BpkList>
         )}
 
-        <BpkText
-          tagName="h3"
-          textStyle={TEXT_STYLES.sm}
-          weight={WEIGHT_STYLES.bold}
-          className={getClassName(
-            'bpkdocs-component-page__table-of-contents-heading',
-          )}
-        >
-          Examples
-        </BpkText>
-        <BpkList>
-          {examples.map(example => (
-            <BpkListItem key={example.id}>
-              <BpkLink href={`#${example.id}`}>{example.title}</BpkLink>
-            </BpkListItem>
-          ))}
-        </BpkList>
+        {examples.length > 0 && (
+          <>
+            <BpkText
+              tagName="h3"
+              textStyle={TEXT_STYLES.sm}
+              weight={WEIGHT_STYLES.bold}
+              className={getClassName(
+                'bpkdocs-component-page__table-of-contents-heading',
+              )}
+            >
+              Examples
+            </BpkText>
+            <BpkList>
+              {examples.map(example => (
+                <BpkListItem key={example.id}>
+                  <BpkLink href={`#${example.id}`}>{example.title}</BpkLink>
+                </BpkListItem>
+              ))}
+            </BpkList>
+          </>
+        )}
 
         {additionalContent && (
           <>

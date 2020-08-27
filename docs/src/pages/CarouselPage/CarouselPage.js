@@ -26,7 +26,7 @@ import readme from '../../../../backpack-react-native/lib/bpk-component-carousel
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 import Paragraph from '../../components/Paragraph';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -59,12 +59,7 @@ const components = [
 ];
 
 const CarouselPageNativeSubPage = () => (
-  <DocsPageBuilder
-    title="Carousel"
-    components={components}
-    readme={readme}
-    wrapped
-  />
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 const NativeCarouselPage = () => (

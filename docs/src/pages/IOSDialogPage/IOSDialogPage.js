@@ -25,7 +25,7 @@ import screenshotWithFlare from '../../../../backpack-ios/screenshots/iPhone 8-d
 import screenshotAlertDm from '../../../../backpack-ios/screenshots/iPhone 8-dialog___with-cta_dm.png';
 import screenshotBottomSheetDm from '../../../../backpack-ios/screenshots/iPhone 8-dialog___delete-confirmation_dm.png';
 import screenshotWithFlareDm from '../../../../backpack-ios/screenshots/iPhone 8-dialog___in-app-messaging_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { IOSComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -101,14 +101,11 @@ const components = [
   },
 ];
 
-const IOSDialogPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Dialog"
-    components={components}
+const IOSDialogPage = () => (
+  <IOSComponentPage
+    screenshots={components}
     readme={readme}
-    iosDocId="BPKDialogController"
-    showMenu
-    {...rest}
+    documentationId="BPKDialogController"
   />
 );
 

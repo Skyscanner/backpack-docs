@@ -25,7 +25,7 @@ import barchartReadme from 'bpk-component-barchart/README.md';
 import { updateOnDirectionChange } from 'bpk-component-rtl-toggle';
 import data from 'bpk-component-barchart/data.json';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import Paragraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
@@ -141,21 +141,16 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const BarchartsSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Bar chart"
-    components={components}
-    readme={barchartReadme}
-    {...rest}
-  />
+const BarchartsSubPage = () => (
+  <WebComponentPage examples={components} readme={barchartReadme} />
 );
 
 const BarchartsPage = () => (
   <DocsPageWrapper
     title="Bar chart"
     blurb={blurb}
-    webSubpage={<BarchartsSubPage wrapped />}
-    androidSubpage={<AndroidBarChartPage wrapped />}
+    webSubpage={<BarchartsSubPage />}
+    androidSubpage={<AndroidBarChartPage />}
     iosSubpage={<IOSBarChartPage wrapped />}
   />
 );

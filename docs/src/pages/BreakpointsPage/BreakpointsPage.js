@@ -22,7 +22,7 @@ import BpkBreakpoint, { BREAKPOINTS } from 'bpk-component-breakpoint';
 import { cssModules } from 'bpk-react-utils';
 import breakpointReadme from 'bpk-component-breakpoint/README.md';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 
@@ -93,13 +93,11 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const BreakpointsSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Breakpoint"
-    components={components}
+const BreakpointsSubPage = () => (
+  <WebComponentPage
+    examples={components}
     readme={breakpointReadme}
     sassdocId="breakpoints"
-    {...rest}
   />
 );
 
@@ -107,7 +105,7 @@ const BreakpointsPage = () => (
   <DocsPageWrapper
     title="Breakpoint"
     blurb={blurb}
-    webSubpage={<BreakpointsSubPage wrapped />}
+    webSubpage={<BreakpointsSubPage />}
   />
 );
 

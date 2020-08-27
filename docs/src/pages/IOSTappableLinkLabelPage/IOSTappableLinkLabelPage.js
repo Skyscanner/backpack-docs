@@ -23,7 +23,7 @@ import screenshotMultiple from '../../../../backpack-ios/screenshots/iPhone 8-ta
 import screenshotAlternate from '../../../../backpack-ios/screenshots/iPhone 8-tappable-link-label___alternate-style_lm.png';
 import screenshotMultipleDm from '../../../../backpack-ios/screenshots/iPhone 8-tappable-link-label___multiple_dm.png';
 import screenshotAlternateDm from '../../../../backpack-ios/screenshots/iPhone 8-tappable-link-label___alternate-style_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { IOSComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -68,15 +68,12 @@ const components = [
   },
 ];
 
-const IOSTextViewPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Tappable Link Label"
-    components={components}
+const IOSTappableLinkLabelPage = () => (
+  <IOSComponentPage
+    screenshots={components}
     readme={readme}
-    iosDocId="BPKTappableLinkLabel"
-    showMenu
-    {...rest}
+    documentationId="BPKTappableLinkLabel"
   />
 );
 
-export default IOSTextViewPage;
+export default IOSTappableLinkLabelPage;

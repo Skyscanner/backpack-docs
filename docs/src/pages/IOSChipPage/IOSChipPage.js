@@ -29,7 +29,7 @@ import screenshotWithBackgroundColor from '../../../../backpack-ios/screenshots/
 import screenshotWithBackgroundColorDm from '../../../../backpack-ios/screenshots/iPhone 8-chip___background-color_dm.png';
 import screenshotWithOutline from '../../../../backpack-ios/screenshots/iPhone 8-chip___outline_lm.png';
 import screenshotWithOutlineDm from '../../../../backpack-ios/screenshots/iPhone 8-chip___outline_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { IOSComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -134,14 +134,11 @@ const components = [
   },
 ];
 
-const IOSChipPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Chip"
-    components={components}
+const IOSChipPage = () => (
+  <IOSComponentPage
+    screenshots={components}
     readme={readme}
-    iosDocId="BPKChip"
-    showMenu
-    {...rest}
+    documentationId="BPKChip"
   />
 );
 

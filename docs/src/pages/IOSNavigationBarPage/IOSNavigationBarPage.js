@@ -25,7 +25,7 @@ import screenshotLargeWithButtons from '../../../../backpack-ios/screenshots/iPh
 import screenshotLargeDm from '../../../../backpack-ios/screenshots/iPhone 8-navigation-bar___full-height_dm.png';
 import screenshotCollapsedDm from '../../../../backpack-ios/screenshots/iPhone 8-navigation-bar___collapsed_dm.png';
 import screenshotLargeWithButtonsDm from '../../../../backpack-ios/screenshots/iPhone 8-navigation-bar___full-height-with-buttons_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { IOSComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -90,14 +90,11 @@ const components = [
   },
 ];
 
-const IOSNavigationBarPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Navigation bar"
-    components={components}
+const IOSNavigationBarPage = () => (
+  <IOSComponentPage
+    screenshots={components}
     readme={readme}
-    iosDocId="BPKNavigationBar"
-    showMenu
-    {...rest}
+    documentationId="BPKNavigationBar"
   />
 );
 

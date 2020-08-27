@@ -21,7 +21,7 @@ import React from 'react';
 import readme from '../../../../backpack-ios/Backpack/Switch/README.md';
 import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-switch___default_lm.png';
 import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-switch___default_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { IOSComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -46,14 +46,11 @@ const components = [
   },
 ];
 
-const IOSSwitchPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Switch"
-    components={components}
+const IOSSwitchPage = () => (
+  <IOSComponentPage
+    screenshots={components}
     readme={readme}
-    iosDocId="BPKSwitch"
-    showMenu
-    {...rest}
+    documentationId="BPKSwitch"
   />
 );
 

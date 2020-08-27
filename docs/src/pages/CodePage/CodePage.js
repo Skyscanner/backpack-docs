@@ -20,7 +20,7 @@ import React from 'react';
 import { BpkCode, BpkCodeBlock } from 'bpk-component-code';
 import codeReadme from 'bpk-component-code/README.md';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import Paragraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
@@ -53,21 +53,12 @@ const components = [
   },
 ];
 
-const CodeSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Code"
-    readme={codeReadme}
-    components={components}
-    {...rest}
-  />
+const CodeSubPage = () => (
+  <WebComponentPage readme={codeReadme} examples={components} />
 );
 
 const CodePage = () => (
-  <DocsPageWrapper
-    title="Code"
-    blurb={blurb}
-    webSubpage={<CodeSubPage wrapped />}
-  />
+  <DocsPageWrapper title="Code" blurb={blurb} webSubpage={<CodeSubPage />} />
 );
 
 export default CodePage;
