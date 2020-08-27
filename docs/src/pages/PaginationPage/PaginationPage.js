@@ -21,7 +21,7 @@ import React, { Component } from 'react';
 import BpkPagination from 'bpk-component-pagination';
 import paginationReadme from 'bpk-component-pagination/README.md';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import Paragraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
@@ -108,20 +108,15 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const PaginationSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Pagination"
-    components={components}
-    readme={paginationReadme}
-    {...rest}
-  />
+const PaginationSubPage = () => (
+  <WebComponentPage examples={components} readme={paginationReadme} />
 );
 
 const PaginationPage = () => (
   <DocsPageWrapper
     title="Pagination"
     blurb={blurb}
-    webSubpage={<PaginationSubPage wrapped />}
+    webSubpage={<PaginationSubPage />}
   />
 );
 

@@ -25,8 +25,7 @@ import readme from 'bpk-component-select/README.md';
 
 import * as ROUTES from '../../constants/routes';
 import InputContainer from '../FormsPage/InputContainer';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
-import IntroBlurb from '../../components/IntroBlurb';
+import { WebComponentPage } from '../../components/ComponentPage';
 import BpkParagraph from '../../components/Paragraph';
 import STYLES from '../FormsPage/forms-page.scss';
 
@@ -175,22 +174,11 @@ const components = [
   },
 ];
 
-const blurb = [
-  <IntroBlurb>
-    Backpack selects override the default styles in most modern browsers. In
-    some older browsers they simply fall back to the browser default.
-  </IntroBlurb>,
-];
-
-const WebSelectPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Select"
+const WebSelectPage = () => (
+  <WebComponentPage
     sassdocId="forms-mixin-bpk-select"
-    blurb={blurb}
-    components={components}
+    examples={components}
     readme={readme}
-    showMenu={false}
-    {...rest}
   />
 );
 

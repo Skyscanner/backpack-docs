@@ -19,7 +19,7 @@
 import React from 'react';
 import progressReadme from 'bpk-component-progress/README.md';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import Paragraph from '../../components/Paragraph';
 
 import ProgressContainer from './ProgressContainer';
@@ -62,20 +62,19 @@ const components = [
   },
 ];
 
-const ProgressPage = ({ ...rest }) => (
-  <DocsPageBuilder
+const ProgressPage = () => (
+  <WebComponentPage
     title="Progress bars"
-    components={components}
+    examples={components}
     readme={progressReadme}
     usageTable={{
       dos: [
         'Use exclusively for tracking user progress through a set of actions, for example a form.',
       ],
       donts: [
-        "Don't use in others contexts. This component is described to screen readers as a progress bar, so using it in other contexts harms accessibility.",
+        "Don't use in other contexts. This component is described to screen readers as a progress bar, so using it in other contexts harms accessibility.",
       ],
     }}
-    {...rest}
   />
 );
 

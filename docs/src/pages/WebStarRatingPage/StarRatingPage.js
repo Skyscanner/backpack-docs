@@ -23,7 +23,7 @@ import BpkStarRating, {
 } from 'bpk-component-star-rating';
 import starRatingReadme from 'bpk-component-star-rating/README.md';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import Paragraph from '../../components/Paragraph';
 
 const InteractiveStarRating = withInteractiveStarRatingState(
@@ -71,13 +71,8 @@ const components = [
   },
 ];
 
-const StarRatingPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Star rating"
-    components={components}
-    readme={starRatingReadme}
-    {...rest}
-  />
+const StarRatingPage = () => (
+  <WebComponentPage examples={components} readme={starRatingReadme} />
 );
 
 export default StarRatingPage;

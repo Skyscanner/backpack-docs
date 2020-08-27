@@ -38,7 +38,7 @@ import loadingButtonReadme from 'bpk-component-loading-button/README.md';
 import { cssModules } from 'bpk-react-utils';
 
 import * as ROUTES from '../../constants/routes';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import Paragraph from '../../components/Paragraph';
 import Code from '../../components/Code';
 
@@ -317,9 +317,6 @@ const components = [
     ],
     examples: [],
   },
-];
-
-const customSections = [
   {
     id: 'loading-buttons',
     title: 'Loading buttons',
@@ -338,17 +335,14 @@ const customSections = [
       ' ',
       <LoadingButtonContainer large />,
     ],
-    readme: loadingButtonReadme,
   },
 ];
 
-const ButtonsPage = ({ ...rest }: { [string]: any }) => (
-  <DocsPageBuilder
-    title="Buttons"
-    components={components}
+const ButtonsPage = () => (
+  <WebComponentPage
+    examples={components}
     sassdocId="buttons"
-    readme={buttonReadme}
-    customSections={customSections}
+    readme={buttonReadme + loadingButtonReadme}
     usageTable={{
       dos: [
         'Use the large and small sizes as they are provided, so that we deliver consistent, accessible buttons across the product.',
@@ -357,7 +351,6 @@ const ButtonsPage = ({ ...rest }: { [string]: any }) => (
         "Don't override font properties or the size of the button using custom styles, as you will make the component inconsistent and inaccessible.",
       ],
     }}
-    {...rest}
   />
 );
 

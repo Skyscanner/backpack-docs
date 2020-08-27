@@ -21,7 +21,7 @@ import BpkSwitch, { SWITCH_TYPES } from 'bpk-component-switch';
 import readme from 'bpk-component-switch/README.md';
 
 import Paragraph from '../../components/Paragraph';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -60,10 +60,9 @@ const components = [
   },
 ];
 
-const WebSwitchPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Switch"
-    components={components}
+const WebSwitchPage = () => (
+  <WebComponentPage
+    examples={components}
     readme={readme}
     usageTable={{
       dos: [
@@ -75,7 +74,6 @@ const WebSwitchPage = ({ ...rest }) => (
         "Don't use for actions that have no immediate effect, like in a form. In that situation, use a checkbox.",
       ],
     }}
-    {...rest}
   />
 );
 

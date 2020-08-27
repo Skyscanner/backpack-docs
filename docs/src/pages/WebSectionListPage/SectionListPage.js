@@ -24,7 +24,7 @@ import BpkSectionList, {
 import sectionListReadme from 'bpk-component-section-list/README.md';
 import { BpkCode } from 'bpk-component-code';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import Paragraph from '../../components/Paragraph';
 
 const components = [
@@ -54,13 +54,8 @@ const components = [
   },
 ];
 
-const SectionListPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Section list"
-    readme={sectionListReadme}
-    components={components}
-    {...rest}
-  />
+const SectionListPage = () => (
+  <WebComponentPage readme={sectionListReadme} examples={components} />
 );
 
 export default SectionListPage;

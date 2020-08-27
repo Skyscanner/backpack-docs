@@ -23,7 +23,7 @@ import BpkNudger, { BpkConfigurableNudger } from 'bpk-component-nudger';
 import nudgersReadme from 'bpk-component-nudger/README.md';
 import { cssModules } from 'bpk-react-utils';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import Paragraph from '../../components/Paragraph';
 
 import STYLES from './nudger-page.scss';
@@ -155,13 +155,8 @@ const components = [
   },
 ];
 
-const NudgersPage = ({ ...rest }: { [string]: any }) => (
-  <DocsPageBuilder
-    title="Nudgers"
-    components={components}
-    readme={nudgersReadme}
-    {...rest}
-  />
+const NudgersPage = () => (
+  <WebComponentPage examples={components} readme={nudgersReadme} />
 );
 
 export default NudgersPage;

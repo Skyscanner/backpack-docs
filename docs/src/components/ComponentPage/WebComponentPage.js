@@ -34,7 +34,7 @@ type Props = {
     dark?: boolean,
     title: string,
     blurb: Node,
-    examples: Node,
+    examples: ?Node,
   }>,
   readme: ?string,
   sassdocId: ?string,
@@ -51,14 +51,14 @@ const WebComponentPage = (props: Props) => {
       id: example.id,
       title: example.title,
       blurb: example.blurb,
-      content: (
+      content: example.examples ? (
         <PresentationBlock
           whiteBackground={!example.dark}
           darkBackground={example.dark}
         >
           {example.examples}
         </PresentationBlock>
-      ),
+      ) : null,
     };
   });
 

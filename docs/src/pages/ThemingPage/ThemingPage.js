@@ -28,7 +28,10 @@ import IntroBlurb from '../../components/IntroBlurb';
 import ColorSwatch from '../../components/ColorSwatch';
 import Android from '../AndroidThemingPage';
 import IOS from '../IOSThemingPage';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import {
+  WebComponentPage,
+  NativeComponentPage,
+} from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 
 import STYLES from './theming-page.scss';
@@ -100,27 +103,22 @@ const webComponents = [
   },
 ];
 
-const WebThemingPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    components={webComponents}
-    showMenu={false}
-    readme={webReadme}
-    {...rest}
-  />
+const WebThemingPage = () => (
+  <WebComponentPage examples={webComponents} readme={webReadme} />
 );
 
-const NativeThemingPage = ({ ...rest }) => (
-  <DocsPageBuilder showMenu={false} readme={nativeReadme} {...rest} />
+const NativeThemingPage = () => (
+  <NativeComponentPage readme={nativeReadme} screenshots={[]} />
 );
 
 const ThemingPage = () => (
   <DocsPageWrapper
     title="Theming"
     blurb={blurb}
-    webSubpage={<WebThemingPage wrapped />}
-    nativeSubpage={<NativeThemingPage wrapped />}
-    iosSubpage={<IOS wrapped />}
-    androidSubpage={<Android wrapped />}
+    webSubpage={<WebThemingPage />}
+    nativeSubpage={<NativeThemingPage />}
+    iosSubpage={<IOS />}
+    androidSubpage={<Android />}
   />
 );
 

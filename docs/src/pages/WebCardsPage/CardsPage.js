@@ -20,7 +20,7 @@ import React from 'react';
 import BpkCard from 'bpk-component-card';
 import cardReadme from 'bpk-component-card/README.md';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import Paragraph from '../../components/Paragraph';
 
 const components = [
@@ -56,13 +56,11 @@ const components = [
   },
 ];
 
-const CardsPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Cards"
-    components={components}
+const CardsPage = () => (
+  <WebComponentPage
+    examples={components}
     readme={cardReadme}
     sassdocId="cards"
-    {...rest}
   />
 );
 

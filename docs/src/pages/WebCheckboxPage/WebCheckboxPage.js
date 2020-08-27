@@ -22,8 +22,7 @@ import { cssModules } from 'bpk-react-utils';
 import readme from 'bpk-component-checkbox/README.md';
 
 import InputContainer from '../FormsPage/InputContainer';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
-import IntroBlurb from '../../components/IntroBlurb';
+import { WebComponentPage } from '../../components/ComponentPage';
 import Paragraph from '../../components/Paragraph';
 
 import STYLES from './checkbox-page.scss';
@@ -170,22 +169,11 @@ const components = [
   },
 ];
 
-const blurb = [
-  <IntroBlurb>
-    Backpack selects override the default styles in most modern browsers. In
-    some older browsers they simply fall back to the browser default.
-  </IntroBlurb>,
-];
-
-const WebCheckboxPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Checkbox"
+const WebCheckboxPage = () => (
+  <WebComponentPage
     sassdocId="forms-mixin-bpk-checkbox"
-    blurb={blurb}
-    components={components}
+    examples={components}
     readme={readme}
-    showMenu={false}
-    {...rest}
   />
 );
 

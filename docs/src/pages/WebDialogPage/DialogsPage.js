@@ -22,7 +22,7 @@ import React from 'react';
 import dialogReadme from 'bpk-component-dialog/README.md';
 
 import Paragraph from '../../components/Paragraph';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 
 import {
   DialogContainer,
@@ -60,10 +60,9 @@ const components = [
   },
 ];
 
-const DialogsPage = ({ ...rest }: { [string]: any }) => (
-  <DocsPageBuilder
-    title="Dialogs"
-    components={components}
+const DialogsPage = () => (
+  <WebComponentPage
+    examples={components}
     readme={dialogReadme}
     usageTable={{
       dos: [
@@ -79,7 +78,6 @@ const DialogsPage = ({ ...rest }: { [string]: any }) => (
       ],
     }}
     sassdocId="dialogs"
-    {...rest}
   />
 );
 

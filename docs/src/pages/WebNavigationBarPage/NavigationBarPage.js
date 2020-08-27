@@ -29,7 +29,7 @@ import BpkNavigationBar, {
 import navigationBarReadme from 'bpk-component-navigation-bar/README.md';
 import { cssModules } from 'bpk-react-utils';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import Paragraph from '../../components/Paragraph';
 
 import AirlineLogo from './AirlineLogo';
@@ -148,13 +148,8 @@ const components = [
   },
 ];
 
-const NavigationBarPage = ({ ...rest }: { [string]: any }) => (
-  <DocsPageBuilder
-    title="Navigation bar"
-    components={components}
-    readme={navigationBarReadme}
-    {...rest}
-  />
+const NavigationBarPage = () => (
+  <WebComponentPage examples={components} readme={navigationBarReadme} />
 );
 
 export default NavigationBarPage;

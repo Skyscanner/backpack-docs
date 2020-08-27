@@ -24,7 +24,7 @@ import BpkHorizontalNav, {
   HORIZONTAL_NAV_TYPES,
 } from 'bpk-component-horizontal-nav';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 
 class HorizontalNavContainer extends Component {
   constructor() {
@@ -112,13 +112,8 @@ const components = [
   },
 ];
 
-const HorizontalNavPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Horizontal navigation"
-    components={components}
-    readme={readme}
-    {...rest}
-  />
+const HorizontalNavPage = () => (
+  <WebComponentPage examples={components} readme={readme} />
 );
 
 export default HorizontalNavPage;

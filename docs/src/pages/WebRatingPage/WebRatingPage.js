@@ -21,7 +21,7 @@ import BpkRating, { RATING_SIZES, RATING_TYPES } from 'bpk-component-rating';
 import ratingReadme from 'bpk-component-rating/README.md';
 import { cssModules } from 'bpk-react-utils';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import Paragraph from '../../components/Paragraph';
 
 import STYLES from './Rating.scss';
@@ -221,13 +221,8 @@ const components = [
   },
 ];
 
-const WebImagesPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Ratings"
-    components={components}
-    readme={ratingReadme}
-    {...rest}
-  />
+const WebRatingPage = () => (
+  <WebComponentPage examples={components} readme={ratingReadme} />
 );
 
-export default WebImagesPage;
+export default WebRatingPage;

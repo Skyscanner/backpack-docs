@@ -24,7 +24,7 @@ import BpkRouterLink from 'bpk-component-router-link';
 import popoverReadme from 'bpk-component-popover/README.md';
 
 import * as ROUTES from '../../constants/routes';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import Paragraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
@@ -147,10 +147,9 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const PopoversSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Popovers"
-    components={components}
+const PopoversSubPage = () => (
+  <WebComponentPage
+    examples={components}
     readme={popoverReadme}
     usageTable={{
       dos: [
@@ -167,7 +166,6 @@ const PopoversSubPage = ({ ...rest }) => (
         "Don't use when you want content to be accessed on hover.",
       ],
     }}
-    {...rest}
   />
 );
 
@@ -175,7 +173,7 @@ const PopoversPage = () => (
   <DocsPageWrapper
     title="Popover"
     blurb={blurb}
-    webSubpage={<PopoversSubPage wrapped />}
+    webSubpage={<PopoversSubPage />}
   />
 );
 
