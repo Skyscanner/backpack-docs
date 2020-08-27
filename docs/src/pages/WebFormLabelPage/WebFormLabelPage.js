@@ -17,14 +17,11 @@
  */
 
 import React from 'react';
-import BpkRouterLink from 'bpk-component-router-link';
 import BpkLabel from 'bpk-component-label';
 import { cssModules } from 'bpk-react-utils';
 import readme from 'bpk-component-label/README.md';
 
-import * as ROUTES from '../../constants/routes';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
-import BpkParagraph from '../../components/Paragraph';
+import { WebComponentPage } from '../../components/ComponentPage';
 import STYLES from '../FormsPage/forms-page.scss';
 
 const getClassName = cssModules(STYLES);
@@ -94,24 +91,18 @@ const components = [
   },
 ];
 
-const blurb = [
-  <BpkParagraph>
-    Labels should always be used with form elements to provide context to the
-    user. Relying on placeholders alone is not good practise. Have a look at the{' '}
-    <BpkRouterLink to={ROUTES.FIELDSET}>fieldset</BpkRouterLink> component which
-    composes labels, fields and validation messages accordingly.
-  </BpkParagraph>,
-];
-
-const WebFormLabelPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Form label"
+const WebFormLabelPage = () => (
+  <WebComponentPage
     sassdocId="forms-mixin-bpk-label"
-    blurb={blurb}
-    components={components}
+    examples={components}
     readme={readme}
-    showMenu={false}
-    {...rest}
+    usageTable={{
+      dos: [
+        'Always use labels with form elements to provide context to the user.',
+        'Use the fieldset component which combines labels, fields and validation messages where possible.',
+      ],
+      donts: ['Rely on placeholders alone.'],
+    }}
   />
 );
 

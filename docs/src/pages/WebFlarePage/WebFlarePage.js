@@ -22,7 +22,7 @@ import { BpkContentBubble } from 'bpk-component-flare';
 import flareReadme from 'bpk-component-flare/README.md';
 import { cssModules } from 'bpk-react-utils';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 
 import STYLES from './Flare.scss';
 
@@ -46,13 +46,8 @@ const components = [
   },
 ];
 
-const WebFlarePage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Flare"
-    components={components}
-    readme={flareReadme}
-    {...rest}
-  />
+const WebFlarePage = () => (
+  <WebComponentPage examples={components} readme={flareReadme} />
 );
 
 export default WebFlarePage;

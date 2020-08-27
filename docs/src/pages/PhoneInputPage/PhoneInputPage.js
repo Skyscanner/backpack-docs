@@ -24,7 +24,7 @@ import readme from 'bpk-component-phone-input/README.md';
 import BpkImage from 'bpk-component-image';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import IntroBlurb from '../../components/IntroBlurb';
 import NativePhoneInput from '../NativePhoneInputPage';
 
@@ -117,13 +117,7 @@ const components = [
 ];
 
 const WebSubPage = () => (
-  <DocsPageBuilder
-    title="Phone input"
-    components={components}
-    readme={readme}
-    showMenu={false}
-    wrapped
-  />
+  <WebComponentPage examples={components} readme={readme} />
 );
 
 const BadgePage = () => (

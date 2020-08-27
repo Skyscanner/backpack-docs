@@ -32,7 +32,7 @@ import CarsIconSm from 'bpk-component-icon/sm/cars';
 import TickCircleIconSm from 'bpk-component-icon/sm/tick-circle';
 
 import Paragraph from '../../components/Paragraph';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 
 import STYLES from './ChipsPage.scss';
 
@@ -276,13 +276,8 @@ const components = [
   },
 ];
 
-const ChipsPage = ({ ...rest }: { [string]: any }) => (
-  <DocsPageBuilder
-    title="Chips"
-    components={components}
-    readme={chipReadme}
-    {...rest}
-  />
+const ChipsPage = () => (
+  <WebComponentPage examples={components} readme={chipReadme} />
 );
 
 export default ChipsPage;

@@ -25,7 +25,7 @@ import BpkScrollableCalendar, {
 } from 'bpk-component-scrollable-calendar';
 import scrollableCalendarReadme from 'bpk-component-scrollable-calendar/README.md';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 
 import {
   weekDays,
@@ -127,13 +127,8 @@ const components = [
   },
 ];
 
-const WebScrollableCalendarPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Scrollable Calendar"
-    components={components}
-    readme={scrollableCalendarReadme}
-    {...rest}
-  />
+const WebScrollableCalendarPage = () => (
+  <WebComponentPage examples={components} readme={scrollableCalendarReadme} />
 );
 
 export default WebScrollableCalendarPage;

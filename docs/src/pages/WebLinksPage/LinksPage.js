@@ -21,7 +21,7 @@ import BpkLink, { BpkButtonLink } from 'bpk-component-link';
 import linkReadme from 'bpk-component-link/README.md';
 import { cssModules } from 'bpk-react-utils';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import Paragraph from '../../components/Paragraph';
 
 import STYLES from './LinksPage.scss';
@@ -59,13 +59,8 @@ const components = [
   },
 ];
 
-const LinkPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Links"
-    readme={linkReadme}
-    components={components}
-    {...rest}
-  />
+const LinkPage = () => (
+  <WebComponentPage readme={linkReadme} examples={components} />
 );
 
 export default LinkPage;

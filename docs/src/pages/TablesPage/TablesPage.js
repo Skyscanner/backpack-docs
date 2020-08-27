@@ -29,7 +29,7 @@ import tablesReadme from 'bpk-component-table/README.md';
 import { BpkDataTable, BpkDataTableColumn } from 'bpk-component-datatable';
 import dataTablesReadme from 'bpk-component-datatable/README.md';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 
@@ -106,7 +106,6 @@ const components = [
         </BpkTableBody>
       </BpkTable>,
     ],
-    readme: tablesReadme,
   },
   {
     id: 'datatable',
@@ -119,19 +118,21 @@ const components = [
       </IntroBlurb>
     ),
     examples: [<DataTableExample />],
-    readme: dataTablesReadme,
   },
 ];
 
-const TablesSubPage = ({ ...rest }) => (
-  <DocsPageBuilder title="Table" components={components} {...rest} />
+const TablesSubPage = () => (
+  <WebComponentPage
+    examples={components}
+    readme={tablesReadme + dataTablesReadme}
+  />
 );
 
 const TablesPage = () => (
   <DocsPageWrapper
     title="Table"
     components={components}
-    webSubpage={<TablesSubPage wrapped />}
+    webSubpage={<TablesSubPage />}
   />
 );
 

@@ -33,7 +33,7 @@ import CurrencyIcon from 'bpk-component-icon/sm/currency';
 import BpkButton from 'bpk-component-button';
 import bannerAlertReadme from 'bpk-component-banner-alert/README.md';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import Paragraph from '../../components/Paragraph';
 
 import STYLES from './bpk-banner-alerts-page.scss';
@@ -476,13 +476,11 @@ const components = [
   },
 ];
 
-const BannerAlertsPage = ({ ...rest }: { [string]: any }) => (
-  <DocsPageBuilder
-    title="Banner alerts"
-    components={components}
+const BannerAlertsPage = () => (
+  <WebComponentPage
+    examples={components}
     sassdocId="notifications"
     readme={bannerAlertReadme}
-    {...rest}
   />
 );
 

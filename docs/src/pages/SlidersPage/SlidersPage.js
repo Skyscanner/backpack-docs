@@ -21,7 +21,7 @@ import BpkSlider from 'bpk-component-slider';
 import sliderReadme from 'bpk-component-slider/README.md';
 import { updateOnDirectionChange } from 'bpk-component-rtl-toggle';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import Paragraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
@@ -84,20 +84,15 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const SlidersSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Slider"
-    components={components}
-    readme={sliderReadme}
-    {...rest}
-  />
+const SlidersSubPage = () => (
+  <WebComponentPage examples={components} readme={sliderReadme} />
 );
 
 const SlidersPage = () => (
   <DocsPageWrapper
     title="Slider"
     blurb={blurb}
-    webSubpage={<SlidersSubPage wrapped />}
+    webSubpage={<SlidersSubPage />}
   />
 );
 

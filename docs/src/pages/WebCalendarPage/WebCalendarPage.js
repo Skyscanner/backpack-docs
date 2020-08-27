@@ -37,7 +37,7 @@ import {
   formatMonthArabic,
 } from 'bpk-component-calendar/test-utils';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import Paragraph from '../../components/Paragraph';
 
 import STYLES from './calendar-page.scss';
@@ -190,13 +190,11 @@ const components = [
   },
 ];
 
-const WebCalendarPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Calendar"
-    components={components}
+const WebCalendarPage = () => (
+  <WebComponentPage
+    examples={components}
     readme={calendarReadme}
     sassdocId="calendar"
-    {...rest}
   />
 );
 

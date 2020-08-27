@@ -17,8 +17,6 @@
  */
 
 import React from 'react';
-import BpkLink from 'bpk-component-link';
-import BpkRouterLink from 'bpk-component-router-link';
 import BpkSelect from 'bpk-component-select';
 import BpkCheckbox from 'bpk-component-checkbox';
 import BpkTextarea from 'bpk-component-textarea';
@@ -27,9 +25,7 @@ import BpkFormValidation from 'bpk-component-form-validation';
 import { cssModules } from 'bpk-react-utils';
 import readme from 'bpk-component-form-validation/README.md';
 
-import * as ROUTES from '../../constants/routes';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
-import BpkParagraph from '../../components/Paragraph';
+import { WebComponentPage } from '../../components/ComponentPage';
 import InputContainer from '../FormsPage/InputContainer';
 import STYLES from '../FormsPage/forms-page.scss';
 
@@ -105,28 +101,21 @@ const components = [
   },
 ];
 
-const blurb = [
-  <BpkParagraph>
-    Validation messages should be used to provide the user with specific
-    feedback about an error with a particular form input field. They can be
-    attached to <BpkLink href={ROUTES.TEXT_INPUT}>inputs</BpkLink>,{' '}
-    <BpkLink href={ROUTES.SELECT}>selects</BpkLink> and{' '}
-    <BpkLink href={ROUTES.CHECKBOX}>checkboxes</BpkLink>. They should either be
-    displayed on form submit or on field blur. Have a look at the{' '}
-    <BpkRouterLink to={ROUTES.FIELDSET}>fieldset</BpkRouterLink> component which
-    composes labels, fields and validation messages accordingly.
-  </BpkParagraph>,
-];
-
-const WebFormValidationPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Validation"
+const WebFormValidationPage = () => (
+  <WebComponentPage
     sassdocId="forms-mixin-bpk-label"
-    blurb={blurb}
-    components={components}
+    examples={components}
     readme={readme}
-    showMenu={false}
-    {...rest}
+    usageTable={{
+      dos: [
+        'Use validation messages to provide the user with specific feedback about errors with an input field.',
+        'Display validation messages on form submit or field blur.',
+        'Use the fieldset component which combines labels, fields and validation messages where possible.',
+      ],
+      donts: [
+        'Validate while the user types, as this can be confusing and bad for accessibility.',
+      ],
+    }}
   />
 );
 

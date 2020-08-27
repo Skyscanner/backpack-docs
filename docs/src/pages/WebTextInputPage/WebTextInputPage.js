@@ -27,9 +27,8 @@ import readme from 'bpk-component-input/README.md';
 import textareaReadme from 'bpk-component-textarea/README.md';
 
 import InputContainer from '../FormsPage/InputContainer';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import BpkParagraph from '../../components/Paragraph';
-import IntroBlurb from '../../components/IntroBlurb';
 import STYLES from '../FormsPage/forms-page.scss';
 
 const getClassName = cssModules(STYLES);
@@ -51,6 +50,12 @@ const containerClassName = [
 ]
   .map(getClassName)
   .join(' ');
+
+const loremIpsum = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.';
+
+const loremIpsumLong = `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate repellat assumenda
+necessitatibus reiciendis, porro temporibus expedita excepturi! Nostrum pariatur odit porro, dolorem dignissimos
+laudantium quis, tempore iste non, nam magnam.`;
 
 const components = [
   {
@@ -487,15 +492,6 @@ const components = [
       </form>,
     ],
   },
-];
-
-const loremIpsum = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.';
-
-const loremIpsumLong = `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate repellat assumenda
-necessitatibus reiciendis, porro temporibus expedita excepturi! Nostrum pariatur odit porro, dolorem dignissimos
-laudantium quis, tempore iste non, nam magnam.`;
-
-const customSections = [
   {
     id: 'text-area',
     title: 'Multiline text input',
@@ -558,27 +554,14 @@ const customSections = [
         />
       </form>,
     ],
-    readme: textareaReadme,
   },
 ];
 
-const blurb = [
-  <IntroBlurb>
-    Backpack selects override the default styles in most modern browsers. In
-    some older browsers they simply fall back to the browser default.
-  </IntroBlurb>,
-];
-
-const WebTextInputPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Input"
+const WebTextInputPage = () => (
+  <WebComponentPage
     sassdocId="forms-mixin-bpk-input"
-    blurb={blurb}
-    components={components}
-    readme={readme}
-    customSections={customSections}
-    showMenu={false}
-    {...rest}
+    examples={components}
+    readme={readme + textareaReadme}
   />
 );
 

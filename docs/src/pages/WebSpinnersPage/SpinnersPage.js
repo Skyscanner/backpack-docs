@@ -26,7 +26,7 @@ import {
   SPINNER_TYPES,
 } from 'bpk-component-spinner';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -64,13 +64,11 @@ const components = [
   },
 ];
 
-const SpinnersPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Spinners"
-    components={components}
+const SpinnersPage = () => (
+  <WebComponentPage
+    examples={components}
     readme={spinnerReadme}
     sassdocId="svgs-mixin-bpk-spinner"
-    {...rest}
   />
 );
 

@@ -22,7 +22,7 @@ import tooltipReadme from 'bpk-component-tooltip/README.md';
 import { spacingSm, colorMonteverde } from 'bpk-tokens/tokens/base.es6';
 import { cssModules } from 'bpk-react-utils';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import Heading from '../../components/Heading';
 import Paragraph from '../../components/Paragraph';
@@ -159,10 +159,9 @@ const blurb = [
   </Paragraph>,
 ];
 
-const TooltipsSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Tooltips"
-    components={components}
+const TooltipsSubPage = () => (
+  <WebComponentPage
+    examples={components}
     readme={tooltipReadme}
     usageTable={{
       dos: [
@@ -177,7 +176,6 @@ const TooltipsSubPage = ({ ...rest }) => (
         "Don't mix and match light and dark tooltips within the same product or interface.",
       ],
     }}
-    {...rest}
   />
 );
 
@@ -185,7 +183,7 @@ const TooltipsPage = () => (
   <DocsPageWrapper
     title="Tooltip"
     blurb={blurb}
-    webSubpage={<TooltipsSubPage wrapped />}
+    webSubpage={<TooltipsSubPage />}
   />
 );
 

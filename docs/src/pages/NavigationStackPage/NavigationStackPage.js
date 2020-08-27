@@ -22,7 +22,7 @@ import React from 'react';
 import navigationStackReadme from 'bpk-component-navigation-stack/README.md';
 import { cssModules } from 'bpk-react-utils';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import Paragraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
@@ -73,20 +73,15 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const NavigationStackSubPage = ({ ...rest }: { [string]: any }) => (
-  <DocsPageBuilder
-    title="Navigation stack"
-    components={components}
-    readme={navigationStackReadme}
-    {...rest}
-  />
+const NavigationStackSubPage = () => (
+  <WebComponentPage examples={components} readme={navigationStackReadme} />
 );
 
 const NavigationStackPage = () => (
   <DocsPageWrapper
     title="Navigation stack"
     blurb={blurb}
-    webSubpage={<NavigationStackSubPage wrapped />}
+    webSubpage={<NavigationStackSubPage />}
   />
 );
 

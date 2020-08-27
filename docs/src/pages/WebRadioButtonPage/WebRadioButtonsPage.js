@@ -20,8 +20,7 @@ import React from 'react';
 import readme from 'bpk-component-radio/README.md';
 
 import RadioContainer from '../FormsPage/RadioContainer';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
-import IntroBlurb from '../../components/IntroBlurb';
+import { WebComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -49,22 +48,11 @@ const components = [
   },
 ];
 
-const blurb = [
-  <IntroBlurb>
-    Backpack overrides the browser default styles for radio buttons. In some
-    older browsers they simply fall back to the browser default.
-  </IntroBlurb>,
-];
-
-const WebRadioButtonsPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Radio buttons"
+const WebRadioButtonsPage = () => (
+  <WebComponentPage
     sassdocId="forms-mixin-bpk-radio"
-    blurb={blurb}
-    components={components}
+    examples={components}
     readme={readme}
-    showMenu={false}
-    {...rest}
   />
 );
 

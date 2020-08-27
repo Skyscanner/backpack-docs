@@ -20,7 +20,7 @@ import React from 'react';
 import BpkPanel from 'bpk-component-panel';
 import panelReadme from 'bpk-component-panel/README.md';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import Paragraph from '../../components/Paragraph';
 
 const components = [
@@ -69,13 +69,11 @@ const components = [
   },
 ];
 
-const PanelsPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Panel"
-    components={components}
+const PanelsPage = () => (
+  <WebComponentPage
+    examples={components}
     readme={panelReadme}
     sassdocId="panels"
-    {...rest}
   />
 );
 

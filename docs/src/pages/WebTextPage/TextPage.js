@@ -20,7 +20,7 @@ import React from 'react';
 import BpkText from 'bpk-component-text';
 import textReadme from 'bpk-component-text/README.md';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 
 const TEXT = 'Lorem ipsum';
 
@@ -53,13 +53,8 @@ const components = [
   },
 ];
 
-const TextPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Text"
-    readme={textReadme}
-    components={components}
-    {...rest}
-  />
+const TextPage = () => (
+  <WebComponentPage readme={textReadme} examples={components} />
 );
 
 export default TextPage;
