@@ -22,7 +22,7 @@ import BpkBreadcrumb, { BpkBreadcrumbItem } from 'bpk-component-breadcrumb';
 
 import IntroBlurb from '../../components/IntroBlurb';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 
 const blurb = [
   <IntroBlurb>
@@ -47,20 +47,15 @@ const components = [
   },
 ];
 
-const BreadcrumbSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Breadcrumb"
-    components={components}
-    readme={breadcrumbReadme}
-    {...rest}
-  />
+const BreadcrumbSubPage = () => (
+  <WebComponentPage examples={components} readme={breadcrumbReadme} />
 );
 
 const BreadcrumbPage = () => (
   <DocsPageWrapper
     title="Breadcrumb"
     blurb={blurb}
-    webSubpage={<BreadcrumbSubPage wrapped />}
+    webSubpage={<BreadcrumbSubPage />}
   />
 );
 

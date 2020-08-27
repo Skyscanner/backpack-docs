@@ -35,7 +35,7 @@ import screenshotWithDividerDm from '../../../../backpack-ios/screenshots/iPhone
 import screenshotWithDividerWithoutPaddingDm from '../../../../backpack-ios/screenshots/iPhone 8-card___with-divider-without-padding_dm.png';
 import screenshotWithDividerCornerStyleLargeDm from '../../../../backpack-ios/screenshots/iPhone 8-card___with-divider-and-corner-style-large_dm.png';
 import screenshotWithDividerArrangedVerticallyDm from '../../../../backpack-ios/screenshots/iPhone 8-card___with-divider-arranged-vertically_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { IOSComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -200,14 +200,11 @@ const components = [
   },
 ];
 
-const IOSCardPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Card"
-    components={components}
+const IOSCardPage = () => (
+  <IOSComponentPage
+    screenshots={components}
     readme={readme}
-    iosDocId="BPKCard"
-    showMenu
-    {...rest}
+    documentationId="BPKCard"
   />
 );
 

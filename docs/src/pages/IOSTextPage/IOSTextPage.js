@@ -27,7 +27,7 @@ import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-l
 import screenshotEmphasizedDm from '../../../../backpack-ios/screenshots/iPhone 8-label___emphasized_dm.png';
 import screenshotHeavyDm from '../../../../backpack-ios/screenshots/iPhone 8-label___heavy_dm.png';
 import screenshotMultipleFontStylesDm from '../../../../backpack-ios/screenshots/iPhone 8-label___multiple-font-styles_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { IOSComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -112,14 +112,11 @@ const components = [
   },
 ];
 
-const IOSTextPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Label"
-    components={components}
+const IOSTextPage = () => (
+  <IOSComponentPage
+    screenshots={components}
     readme={readme}
-    iosDocId="BPKLabel"
-    showMenu
-    {...rest}
+    documentationId="BPKLabel"
   />
 );
 

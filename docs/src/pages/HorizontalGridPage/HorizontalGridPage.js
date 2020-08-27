@@ -23,7 +23,7 @@ import BpkText from 'bpk-component-text';
 import gridReadme from 'bpk-component-grid/README.md';
 
 import * as routes from '../../constants/routes';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import BpkParagraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
@@ -86,13 +86,11 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const HorizontalGridSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Horizontal grid"
-    components={components}
+const HorizontalGridSubPage = () => (
+  <WebComponentPage
+    examples={components}
     readme={gridReadme}
     sassdocId="grids"
-    {...rest}
   />
 );
 
@@ -100,7 +98,7 @@ const HorizontalGridPage = () => (
   <DocsPageWrapper
     title="Horizontal grid"
     blurb={blurb}
-    webSubpage={<HorizontalGridSubPage wrapped />}
+    webSubpage={<HorizontalGridSubPage />}
   />
 );
 

@@ -21,7 +21,7 @@ import React from 'react';
 import readme from '../../../../backpack-ios/Backpack/ProgressBar/README.md';
 import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-progress-bar___default_lm.png';
 import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-progress-bar___default_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { IOSComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -46,14 +46,11 @@ const components = [
   },
 ];
 
-const IOSProgressBarPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Progress bar"
-    components={components}
+const IOSProgressBarPage = () => (
+  <IOSComponentPage
+    screenshots={components}
     readme={readme}
-    iosDocId="BPKProgressBar"
-    showMenu
-    {...rest}
+    documentationId="BPKProgressBar"
   />
 );
 

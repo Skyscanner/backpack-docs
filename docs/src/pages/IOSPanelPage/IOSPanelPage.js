@@ -25,7 +25,7 @@ import screenshotElevated from '../../../../backpack-ios/screenshots/iPhone 8-pa
 import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-panel___default_dm.png';
 import screenshotWithoutPaddingDm from '../../../../backpack-ios/screenshots/iPhone 8-panel___without-padding_dm.png';
 import screenshotElevatedDm from '../../../../backpack-ios/screenshots/iPhone 8-panel___elevated_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { IOSComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -90,14 +90,11 @@ const components = [
   },
 ];
 
-const IOSPanelPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Panel"
-    components={components}
+const IOSPanelPage = () => (
+  <IOSComponentPage
+    screenshots={components}
     readme={readme}
-    iosDocId="BPKPanel"
-    showMenu
-    {...rest}
+    documentationId="BPKPanel"
   />
 );
 

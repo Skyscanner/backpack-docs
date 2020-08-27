@@ -21,7 +21,7 @@ import React from 'react';
 import readme from '../../../../backpack-ios/Backpack/Spinner/README.md';
 import screenshotAll from '../../../../backpack-ios/screenshots/iPhone 8-spinner___all_lm.png';
 import screenshotAllDm from '../../../../backpack-ios/screenshots/iPhone 8-spinner___all_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { IOSComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -46,14 +46,11 @@ const components = [
   },
 ];
 
-const IOSSpinnerPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Spinner"
-    components={components}
+const IOSSpinnerPage = () => (
+  <IOSComponentPage
+    screenshots={components}
     readme={readme}
-    iosDocId="BPKSpinner"
-    showMenu
-    {...rest}
+    documentationId="BPKSpinner"
   />
 );
 

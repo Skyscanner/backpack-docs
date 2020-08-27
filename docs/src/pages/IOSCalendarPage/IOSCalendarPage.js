@@ -29,7 +29,7 @@ import screenshotRangeDm from '../../../../backpack-ios/screenshots/iPhone 8-cal
 import screenshotMultipleDm from '../../../../backpack-ios/screenshots/iPhone 8-calendar___multiple_dm.png';
 import screenshotPillDm from '../../../../backpack-ios/screenshots/iPhone 8-calendar___pill_dm.png';
 import screenshotCustomColoursDm from '../../../../backpack-ios/screenshots/iPhone 8-calendar___custom-style_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { IOSComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -134,14 +134,11 @@ const components = [
   },
 ];
 
-const IOSCalendarPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Calendar"
-    components={components}
+const IOSCalendarPage = () => (
+  <IOSComponentPage
+    screenshots={components}
     readme={readme}
-    iosDocId="BPKCalendar"
-    showMenu
-    {...rest}
+    documentationId="BPKCalendar"
   />
 );
 

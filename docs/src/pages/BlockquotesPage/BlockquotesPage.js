@@ -20,7 +20,7 @@ import React from 'react';
 import BpkBlockquote from 'bpk-component-blockquote';
 import blockquotesReadme from 'bpk-component-blockquote/README.md';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 
@@ -45,20 +45,15 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const BlockquotesSubpagePage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Blockquote"
-    components={components}
-    readme={blockquotesReadme}
-    {...rest}
-  />
+const BlockquotesSubpagePage = () => (
+  <WebComponentPage examples={components} readme={blockquotesReadme} />
 );
 
 const BlockquotesPage = () => (
   <DocsPageWrapper
     title="Blockquote"
     blurb={blurb}
-    webSubpage={<BlockquotesSubpagePage wrapped />}
+    webSubpage={<BlockquotesSubpagePage />}
   />
 );
 

@@ -23,7 +23,7 @@ import BpkButton from 'bpk-component-button';
 import { BpkButtonLink } from 'bpk-component-link';
 import drawerReadme from 'bpk-component-drawer/README.md';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import Paragraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
@@ -120,20 +120,15 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const DrawerSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Drawer"
-    components={components}
-    readme={drawerReadme}
-    {...rest}
-  />
+const DrawerSubPage = () => (
+  <WebComponentPage examples={components} readme={drawerReadme} />
 );
 
 const DrawerPage = () => (
   <DocsPageWrapper
     title="Drawer"
     blurb={blurb}
-    webSubpage={<DrawerSubPage wrapped />}
+    webSubpage={<DrawerSubPage />}
   />
 );
 

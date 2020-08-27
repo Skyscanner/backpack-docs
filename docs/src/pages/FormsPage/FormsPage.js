@@ -20,7 +20,7 @@ import React from 'react';
 import BpkLink from 'bpk-component-link';
 
 import * as ROUTES from '../../constants/routes';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import BpkParagraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
@@ -120,21 +120,12 @@ const components = [
   },
 ];
 
-const FormsSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Form elements"
-    components={components}
-    sassdocId="forms"
-    {...rest}
-  />
+const FormsSubPage = () => (
+  <WebComponentPage examples={components} sassdocId="forms" />
 );
 
 const FormsPage = () => (
-  <DocsPageWrapper
-    title="Forms"
-    blurb={blurb}
-    webSubpage={<FormsSubPage wrapped />}
-  />
+  <DocsPageWrapper title="Forms" blurb={blurb} webSubpage={<FormsSubPage />} />
 );
 
 export default FormsPage;

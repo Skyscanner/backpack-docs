@@ -21,7 +21,7 @@ import React from 'react';
 import readme from '../../../../backpack-ios/Backpack/BarChart/README.md';
 import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-bar-chart___default_lm.png';
 import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-bar-chart___default_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { IOSComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -46,14 +46,11 @@ const components = [
   },
 ];
 
-const IOSBarChartPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Bar chart"
-    components={components}
+const IOSBarChartPage = () => (
+  <IOSComponentPage
+    screenshots={components}
     readme={readme}
-    iosDocId="BPKBarChart"
-    showMenu
-    {...rest}
+    documentationId="BPKBarChart"
   />
 );
 

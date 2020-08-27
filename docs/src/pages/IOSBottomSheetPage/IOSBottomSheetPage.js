@@ -21,7 +21,7 @@ import React from 'react';
 import readme from '../../../../backpack-ios/Backpack/BottomSheet/README.md';
 import screenshotAll from '../../../../backpack-ios/screenshots/iPhone 8-bottom-sheet___with-bottom-section_lm.png';
 import screenshotAllDm from '../../../../backpack-ios/screenshots/iPhone 8-bottom-sheet___with-bottom-section_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { IOSComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -46,14 +46,11 @@ const components = [
   },
 ];
 
-const IOSBottomSheetPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Bottom sheet"
-    components={components}
+const IOSBottomSheetPage = () => (
+  <IOSComponentPage
+    screenshots={components}
     readme={readme}
-    iosDocId="BPKBottomSheet"
-    showMenu
-    {...rest}
+    documentationId="BPKBottomSheet"
   />
 );
 

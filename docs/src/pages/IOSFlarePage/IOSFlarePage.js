@@ -27,7 +27,7 @@ import screenshotFlareAtTop from '../../../../backpack-ios/screenshots/iPhone 8-
 import screenshotFlareAtTopDm from '../../../../backpack-ios/screenshots/iPhone 8-flare-view___flare-at-top_dm.png';
 import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-flare-view___default_dm.png';
 import screenshotWithBackgroundColorDm from '../../../../backpack-ios/screenshots/iPhone 8-flare-view___background-image_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { IOSComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -112,14 +112,11 @@ const components = [
   },
 ];
 
-const IOSChipPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Flare"
-    components={components}
+const IOSChipPage = () => (
+  <IOSComponentPage
+    screenshots={components}
     readme={readme}
-    iosDocId="BPKFlare"
-    showMenu
-    {...rest}
+    documentationId="BPKFlare"
   />
 );
 

@@ -24,7 +24,7 @@ import format from 'date-fns/format';
 import { weekDays } from 'bpk-component-calendar/test-utils';
 
 import * as ROUTES from '../../constants/routes';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import Paragraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
@@ -95,20 +95,15 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const DatepickerSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Date picker"
-    components={components}
-    readme={datepickerReadme}
-    {...rest}
-  />
+const DatepickerSubPage = () => (
+  <WebComponentPage examples={components} readme={datepickerReadme} />
 );
 
 const DatepickerPage = () => (
   <DocsPageWrapper
     title="Date picker"
     blurb={blurb}
-    webSubpage={<DatepickerSubPage wrapped />}
+    webSubpage={<DatepickerSubPage />}
   />
 );
 

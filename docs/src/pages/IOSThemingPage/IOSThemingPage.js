@@ -19,19 +19,15 @@
 import React from 'react';
 
 import readme from '../../../../backpack-ios/Backpack/Theme/README.md';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { IOSComponentPage } from '../../components/ComponentPage';
 
-const components = [];
-
-const IOSCardPage = ({ ...rest }) => (
-  <DocsPageBuilder
+const IOSThemingPage = () => (
+  <IOSComponentPage
     title="Theming"
-    components={components}
+    screenshots={[]}
     readme={readme}
-    iosDocId="BPKTheming"
-    showMenu
-    {...rest}
+    documentationId="BPKTheming"
   />
 );
 
-export default IOSCardPage;
+export default IOSThemingPage;
