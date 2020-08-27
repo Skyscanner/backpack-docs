@@ -16,12 +16,14 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Switch/README.md';
 import screenshotDefault from '../../../../backpack-android/docs/Switch/screenshots/default.png';
 import screenshotDefaultDm from '../../../../backpack-android/docs/Switch/screenshots/default_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { AndroidComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -46,14 +48,11 @@ const components = [
   },
 ];
 
-const AndroidSwitchPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Toggle"
-    components={components}
+const AndroidSwitchPage = () => (
+  <AndroidComponentPage
+    screenshots={components}
     readme={readme}
-    androidDocId="net.skyscanner.backpack.toggle"
-    showMenu
-    {...rest}
+    documentationId="net.skyscanner.backpack.toggle"
   />
 );
 

@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Card/README.md';
@@ -35,7 +37,7 @@ import screenshotWithDividerCornerStyleLarge from '../../../../backpack-android/
 import screenshotWithDividerCornerStyleLargeDm from '../../../../backpack-android/docs/Card/screenshots/with-divider-and-corner-style-large_dm.png';
 import screenshotWithDividerWithoutPadding from '../../../../backpack-android/docs/Card/screenshots/with-divider-without-padding.png';
 import screenshotWithDividerWithoutPaddingDm from '../../../../backpack-android/docs/Card/screenshots/with-divider-without-padding_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { AndroidComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -200,14 +202,11 @@ const components = [
   },
 ];
 
-const AndroidCardPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Card"
-    components={components}
+const AndroidCardPage = () => (
+  <AndroidComponentPage
+    screenshots={components}
     readme={readme}
-    androidDocId="net.skyscanner.backpack.card"
-    showMenu
-    {...rest}
+    documentationId="net.skyscanner.backpack.card"
   />
 );
 

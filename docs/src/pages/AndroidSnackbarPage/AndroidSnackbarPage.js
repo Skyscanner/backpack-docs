@@ -16,12 +16,14 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Snackbar/README.md';
 import screenshotDefault from '../../../../backpack-android/docs/Snackbar/screenshots/default.png';
 import screenshotDefaultDm from '../../../../backpack-android/docs/Snackbar/screenshots/default_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { AndroidComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -48,13 +50,11 @@ const components = [
   },
 ];
 
-const AndroidSnackbarPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Snackbar"
-    androidDocId="net.skyscanner.backpack.snackbar"
-    components={components}
+const AndroidSnackbarPage = () => (
+  <AndroidComponentPage
+    documentationId="net.skyscanner.backpack.snackbar"
+    screenshots={components}
     readme={readme}
-    {...rest}
   />
 );
 

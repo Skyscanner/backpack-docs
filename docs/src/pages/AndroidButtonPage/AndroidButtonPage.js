@@ -32,7 +32,7 @@ import screenshotFeatured from '../../../../backpack-android/docs/Button/screens
 import screenshotFeaturedDm from '../../../../backpack-android/docs/Button/screenshots/featured_dm.png';
 import screenshotLink from '../../../../backpack-android/docs/ButtonLink/screenshots/default.png';
 import screenshotLinkDm from '../../../../backpack-android/docs/ButtonLink/screenshots/default_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { AndroidComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -135,9 +135,6 @@ const components = [
       },
     ],
   },
-];
-
-const customSections = [
   {
     id: 'link',
     title: 'Link',
@@ -159,19 +156,14 @@ const customSections = [
         subText: '(Google Pixel emulator - dark mode)',
       },
     ],
-    readme: linkReadme,
   },
 ];
 
-const AndroidButtonPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Button"
-    components={components}
-    readme={readme}
-    customSections={customSections}
+const AndroidButtonPage = () => (
+  <AndroidComponentPage
+    screenshots={components}
+    readme={readme + linkReadme}
     androidDocId="net.skyscanner.backpack.button"
-    showMenu
-    {...rest}
   />
 );
 

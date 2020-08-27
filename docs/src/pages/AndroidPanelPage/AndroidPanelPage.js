@@ -16,12 +16,14 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Panel/README.md';
 import screenshotDefault from '../../../../backpack-android/docs/Panel/screenshots/all.png';
 import screenshotDefaultDm from '../../../../backpack-android/docs/Panel/screenshots/all_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { AndroidComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -46,14 +48,11 @@ const components = [
   },
 ];
 
-const AndroidSpinnerPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Panel"
-    components={components}
+const AndroidSpinnerPage = () => (
+  <AndroidComponentPage
+    screenshots={components}
     readme={readme}
-    androidDocId="net.skyscanner.backpack.panel"
-    showMenu
-    {...rest}
+    documentationId="net.skyscanner.backpack.panel"
   />
 );
 

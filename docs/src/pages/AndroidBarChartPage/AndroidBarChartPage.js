@@ -16,12 +16,14 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 
 import readme from '../../../../backpack-android/docs/BarChart/README.md';
 import screenshotDefault from '../../../../backpack-android/docs/BarChart/screenshots/default.png';
 import screenshotDefaultDm from '../../../../backpack-android/docs/BarChart/screenshots/default_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { AndroidComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -48,13 +50,11 @@ const components = [
   },
 ];
 
-const AndroidBarChartPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="BarChart"
-    androidDocId="net.skyscanner.backpack.barchart"
-    components={components}
+const AndroidBarChartPage = () => (
+  <AndroidComponentPage
+    documentationId="net.skyscanner.backpack.barchart"
+    screenshots={components}
     readme={readme}
-    {...rest}
   />
 );
 

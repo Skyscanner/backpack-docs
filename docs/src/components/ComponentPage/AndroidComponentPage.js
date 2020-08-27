@@ -29,10 +29,11 @@ import ComponentScreenshots from '../DocsPageBuilder/ComponentScreenshots';
 import ComponentPage from './ComponentPage';
 
 type Props = {
-  documentationId: string,
+  documentationId: ?string,
   readme: string,
   screenshots: [
     {
+      blurb: ?string,
       id: string,
       screenshots: [
         {
@@ -55,36 +56,43 @@ type Props = {
 
 const AndroidComponentPage = (props: Props) => {
   const { documentationId, screenshots, readme, usageTable } = props;
-  const screenshotsAsExamples = screenshots.map(screenshot => ({
-    id: screenshot.id,
-    title: screenshot.title,
-    content: <ComponentScreenshots screenshots={screenshot.screenshots} />,
+  const screenshotsAsExamples = screenshots.map(screenshotSet => ({
+    id: screenshotSet.id,
+    title: screenshotSet.title,
+    content: (
+      <>
+        {screenshotSet.blurb && <p>{screenshotSet.blurb}</p>}
+        <ComponentScreenshots screenshots={screenshotSet.screenshots} />
+      </>
+    ),
   }));
+  const additionalContent = [
+    {
+      id: 'readme',
+      title: 'Implementation',
+      content: (
+        <BpkContentContainer bareHtml alternate>
+          <BpkMarkdownRenderer source={getMarkdownString(readme)} />
+        </BpkContentContainer>
+      ),
+    },
+  ];
+  if (documentationId) {
+    additionalContent.push({
+      id: 'docs',
+      title: 'Class reference',
+      content: (
+        <BpkLink href={`/android/versions/latest/${documentationId}`} blank>
+          View on Backpack&apos;s Android documentation
+        </BpkLink>
+      ),
+    });
+  }
   return (
     <ComponentPage
       usageTable={usageTable}
       examples={screenshotsAsExamples}
-      readme={readme}
-      additionalContent={[
-        {
-          id: 'readme',
-          title: 'Implementation',
-          content: (
-            <BpkContentContainer bareHtml alternate>
-              <BpkMarkdownRenderer source={getMarkdownString(readme)} />
-            </BpkContentContainer>
-          ),
-        },
-        {
-          id: 'docs',
-          title: 'Class reference',
-          content: (
-            <BpkLink href={`/android/versions/latest/${documentationId}`} blank>
-              View on Backpack&apos;s Android documentation
-            </BpkLink>
-          ),
-        },
-      ]}
+      additionalContent={additionalContent}
     />
   );
 };

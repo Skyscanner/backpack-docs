@@ -16,12 +16,14 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 
 import readme from '../../../../backpack-android/docs/HorizontalNav/README.md';
 import screenshotDefault from '../../../../backpack-android/docs/HorizontalNav/screenshots/default.png';
 import screenshotDefaultDm from '../../../../backpack-android/docs/HorizontalNav/screenshots/default_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { AndroidComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -48,12 +50,13 @@ const components = [
   },
 ];
 
-const AndroidHorizontalNavPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="HorizontalNav"
-    components={components}
+const AndroidHorizontalNavPage = () => (
+  <AndroidComponentPage
+    screenshots={components}
     readme={readme}
-    {...rest}
+    // This is deliberately misspelled because the package name
+    // was published with a typo. :seenoevil:
+    documentationId="net.skyscanner.backpack.horisontalnav"
   />
 );
 

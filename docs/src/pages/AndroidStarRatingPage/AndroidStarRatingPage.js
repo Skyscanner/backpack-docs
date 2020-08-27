@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 
 import starRatingReadme from '../../../../backpack-android/docs/StarRating/README.md';
@@ -24,7 +26,7 @@ import screenshotStarRating from '../../../../backpack-android/docs/StarRating/s
 import screenshotStarRatingDm from '../../../../backpack-android/docs/StarRating/screenshots/default_dm.png';
 import screenshotInteractive from '../../../../backpack-android/docs/InteractiveStarRating/screenshots/default.png';
 import screenshotInteractiveDm from '../../../../backpack-android/docs/InteractiveStarRating/screenshots/default_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { AndroidComponentPage } from '../../components/ComponentPage';
 import Paragraph from '../../components/Paragraph';
 
 const components = [
@@ -51,7 +53,6 @@ const components = [
         subText: '(Google Pixel emulator - dark mode)',
       },
     ],
-    readme: starRatingReadme,
   },
   {
     id: 'interactive',
@@ -80,12 +81,15 @@ const components = [
         subText: '(Google Pixel emulator - dark mode)',
       },
     ],
-    readme: starRatingInteractiveReadme,
   },
 ];
 
-const AndroidStarRatingPage = ({ ...rest }) => (
-  <DocsPageBuilder title="Star rating" components={components} {...rest} />
+const AndroidStarRatingPage = () => (
+  <AndroidComponentPage
+    screenshots={components}
+    readme={starRatingReadme + starRatingInteractiveReadme}
+    documentationId="net.skyscanner.backpack.starrating"
+  />
 );
 
 export default AndroidStarRatingPage;

@@ -16,22 +16,21 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 
 import readme from '../../../../backpack-android/docs/THEMING.md';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { AndroidComponentPage } from '../../components/ComponentPage';
 
 const components = [];
 
-const AndroidTextPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Theming"
-    components={components}
+const AndroidThemingPage = () => (
+  <AndroidComponentPage
+    screenshots={components}
     readme={readme}
-    androidDocId="net.skyscanner.backpack.theming"
-    showMenu
-    {...rest}
+    documentationId="net.skyscanner.backpack.theming"
   />
 );
 
-export default AndroidTextPage;
+export default AndroidThemingPage;

@@ -36,7 +36,7 @@ type Props = {
     blurb: Node,
     examples: Node,
   }>,
-  readme: string,
+  readme: ?string,
   sassdocId: ?string,
   usageTable: ?{
     dos: Array<string>,
@@ -62,8 +62,9 @@ const WebComponentPage = (props: Props) => {
     };
   });
 
-  const additionalContent = [
-    {
+  const additionalContent = [];
+  if (readme) {
+    additionalContent.push({
       id: 'readme',
       title: 'Implementation',
       content: (
@@ -71,8 +72,8 @@ const WebComponentPage = (props: Props) => {
           <BpkMarkdownRenderer source={getMarkdownString(readme)} />
         </BpkContentContainer>
       ),
-    },
-  ];
+    });
+  }
   if (sassdocId) {
     additionalContent.push({
       id: 'docs',
@@ -90,7 +91,9 @@ const WebComponentPage = (props: Props) => {
       usageTable={usageTable}
       examples={mappedExamples}
       readme={readme}
-      additionalContent={additionalContent}
+      additionalContent={
+        additionalContent.length === 0 ? null : additionalContent
+      }
     />
   );
 };

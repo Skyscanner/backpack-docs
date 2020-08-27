@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Rating/README.md';
@@ -25,7 +27,7 @@ import screenshotSizes from '../../../../backpack-android/docs/Rating/screenshot
 import screenshotSizesDm from '../../../../backpack-android/docs/Rating/screenshots/sizes_dm.png';
 import screenshotVertical from '../../../../backpack-android/docs/Rating/screenshots/vertical.png';
 import screenshotVerticalDm from '../../../../backpack-android/docs/Rating/screenshots/vertical_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { AndroidComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -96,13 +98,11 @@ const components = [
   },
 ];
 
-const AndroidRatingPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Rating"
-    components={components}
+const AndroidRatingPage = () => (
+  <AndroidComponentPage
+    screenshots={components}
     readme={readme}
-    androidDocId="net.skyscanner.backpack.rating"
-    {...rest}
+    documentationId="net.skyscanner.backpack.rating"
   />
 );
 

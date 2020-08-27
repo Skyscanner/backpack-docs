@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 
 import readme from '../../../../backpack-android/docs/Dialog/README.md';
@@ -23,7 +25,7 @@ import screenshotAlert from '../../../../backpack-android/docs/Dialog/screenshot
 import screenshotAlertDm from '../../../../backpack-android/docs/Dialog/screenshots/with-cta_dm.png';
 import screenshotBottomSheet from '../../../../backpack-android/docs/Dialog/screenshots/delete-confirmation.png';
 import screenshotBottomSheetDm from '../../../../backpack-android/docs/Dialog/screenshots/delete-confirmation_dm.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { AndroidComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -76,14 +78,11 @@ const components = [
   },
 ];
 
-const AndroidDialogPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Dialog"
-    components={components}
+const AndroidDialogPage = () => (
+  <AndroidComponentPage
+    screenshots={components}
     readme={readme}
-    androidDocId="net.skyscanner.backpack.dialog"
-    showMenu
-    {...rest}
+    documentationId="net.skyscanner.backpack.dialog"
   />
 );
 

@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 import { BpkCode } from 'bpk-component-code';
 
@@ -27,7 +29,7 @@ import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-
 import androidCancelable from '../../../../backpack-react-native/lib/bpk-component-alert/screenshots/android/cancelable.png';
 import androidThreeButton from '../../../../backpack-react-native/lib/bpk-component-alert/screenshots/android/three-button.png';
 import IntroBlurb from '../../components/IntroBlurb';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import Paragraph from '../../components/Paragraph';
 
@@ -115,12 +117,7 @@ const components = [
 ];
 
 const AlertSubPage = () => (
-  <DocsPageBuilder
-    title="Alert"
-    components={components}
-    readme={readme}
-    wrapped
-  />
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 const AlertPage = () => (
