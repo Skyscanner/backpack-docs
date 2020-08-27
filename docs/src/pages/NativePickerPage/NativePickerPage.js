@@ -22,7 +22,7 @@ import readme from '../../../../backpack-react-native/lib/bpk-component-picker/R
 import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-picker/screenshots/ios/default.png';
 import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-picker/screenshots/android/default.png';
 import IntroBlurb from '../../components/IntroBlurb';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 
 const components = [
@@ -57,19 +57,16 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const NativePickerSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Picker"
-    components={components}
+const NativePickerSubPage = () => (
+  <NativeComponentPage
+    screenshots={components}
     readme={readme}
-    showMenu
     usageTable={{
       dos: ['Use for short lists of options.'],
       donts: [
         'Use for lots of options where the user may need to scroll a lot, for example a list of countries. In this situation, consider using a FlatList.',
       ],
     }}
-    {...rest}
   />
 );
 
@@ -77,7 +74,7 @@ const NativePickerPage = () => (
   <DocsPageWrapper
     title="Picker"
     blurb={blurb}
-    nativeSubpage={<NativePickerSubPage wrapped />}
+    nativeSubpage={<NativePickerSubPage />}
   />
 );
 

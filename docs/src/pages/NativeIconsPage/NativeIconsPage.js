@@ -21,7 +21,7 @@ import React from 'react';
 import readme from '../../../../backpack-react-native/lib/bpk-component-icon/README.md';
 import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-icon/screenshots/ios/icons.png';
 import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-icon/screenshots/android/icons.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -49,13 +49,8 @@ const components = [
   },
 ];
 
-const NativeIconsPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Icons"
-    components={components}
-    readme={readme}
-    {...rest}
-  />
+const NativeIconsPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 export default NativeIconsPage;

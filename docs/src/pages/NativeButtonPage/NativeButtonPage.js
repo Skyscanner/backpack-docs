@@ -30,7 +30,7 @@ import androidScreenshotSecondary from '../../../../backpack-react-native/lib/bp
 import androidScreenshotDestructive from '../../../../backpack-react-native/lib/bpk-component-button/screenshots/android/destructive.png';
 import androidScreenshotFeatured from '../../../../backpack-react-native/lib/bpk-component-button/screenshots/android/featured.png';
 import androidScreenshotLink from '../../../../backpack-react-native/lib/bpk-component-button-link/screenshots/android/default.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -121,9 +121,6 @@ const components = [
       },
     ],
   },
-];
-
-const customSections = [
   {
     id: 'link',
     title: 'Link',
@@ -149,15 +146,8 @@ const customSections = [
   },
 ];
 
-const NativeTextPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Buttons"
-    components={components}
-    readme={readme}
-    customSections={customSections}
-    showMenu
-    {...rest}
-  />
+const NativeButtonPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme + linkReadme} />
 );
 
-export default NativeTextPage;
+export default NativeButtonPage;

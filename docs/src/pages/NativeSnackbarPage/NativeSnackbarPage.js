@@ -28,7 +28,7 @@ import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-comp
 import iosScreenshotTitleIcon from '../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/ios/title-and-icon.png';
 import iosScreenshotAction from '../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/ios/action.png';
 import iosScreenshotIconAction from '../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/ios/icon-action.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -121,14 +121,8 @@ const components = [
   },
 ];
 
-const NativeSnackbarPage = ({ ...rest }: { [string]: any }) => (
-  <DocsPageBuilder
-    title="Snackbar"
-    components={components}
-    readme={readme}
-    showMenu
-    {...rest}
-  />
+const NativeSnackbarPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} showMenu />
 );
 
 export default NativeSnackbarPage;

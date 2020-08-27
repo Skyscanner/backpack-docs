@@ -25,7 +25,7 @@ import iosScreenshotWithImages from '../../../../backpack-react-native/lib/bpk-c
 import androidScreenshotWithImages from '../../../../backpack-react-native/lib/bpk-component-section-list/screenshots/android/with-images.png';
 import iosScreenshotWithSearch from '../../../../backpack-react-native/lib/bpk-component-section-list/screenshots/ios/with-search.png';
 import androidScreenshotWithSearch from '../../../../backpack-react-native/lib/bpk-component-section-list/screenshots/android/with-search.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -98,14 +98,8 @@ const components = [
   },
 ];
 
-const NativeSectionListSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Section list"
-    components={components}
-    readme={readme}
-    showMenu
-    {...rest}
-  />
+const NativeSectionListSubPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 export default NativeSectionListSubPage;

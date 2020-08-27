@@ -23,7 +23,7 @@ import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-comp
 import iosScreenshotSmall from '../../../../backpack-react-native/lib/bpk-component-spinner/screenshots/ios/small.png';
 import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-spinner/screenshots/android/default.png';
 import androidScreenshotSmall from '../../../../backpack-react-native/lib/bpk-component-spinner/screenshots/android/small.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -76,13 +76,8 @@ const components = [
   },
 ];
 
-const NativeSpinnerPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Spinners"
-    components={components}
-    readme={readme}
-    {...rest}
-  />
+const NativeSpinnerPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 export default NativeSpinnerPage;

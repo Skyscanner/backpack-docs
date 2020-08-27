@@ -21,7 +21,7 @@ import React from 'react';
 import readme from '../../../../backpack-react-native/lib/bpk-component-text-link/README.md';
 import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-text-link/screenshots/ios/default.png';
 import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-text-link/screenshots/android/default.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -48,14 +48,8 @@ const components = [
   },
 ];
 
-const NativeNudgerPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Text Link"
-    components={components}
-    readme={readme}
-    showMenu
-    {...rest}
-  />
+const NativeLinkPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
-export default NativeNudgerPage;
+export default NativeLinkPage;

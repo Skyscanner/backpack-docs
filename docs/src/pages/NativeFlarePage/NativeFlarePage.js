@@ -26,7 +26,7 @@ import androidScreenshotPointerUp from '../../../../backpack-react-native/lib/bp
 import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-flare/screenshots/ios/default.png';
 import iosScreenshotImage from '../../../../backpack-react-native/lib/bpk-component-flare/screenshots/ios/image.png';
 import iosScreenshotPointerUp from '../../../../backpack-react-native/lib/bpk-component-flare/screenshots/ios/pointer-up.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -97,14 +97,8 @@ const components = [
   },
 ];
 
-const NativeFlarePage = ({ ...rest }: { [string]: any }) => (
-  <DocsPageBuilder
-    title="Flare"
-    components={components}
-    readme={readme}
-    showMenu
-    {...rest}
-  />
+const NativeFlarePage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 export default NativeFlarePage;

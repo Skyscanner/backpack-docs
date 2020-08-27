@@ -26,7 +26,7 @@ import androidScreenshotWithImages from '../../../../backpack-react-native/lib/b
 import iosScreenshotWithSearch from '../../../../backpack-react-native/lib/bpk-component-flat-list/screenshots/ios/with-search.png';
 import androidScreenshotWithSearch from '../../../../backpack-react-native/lib/bpk-component-flat-list/screenshots/android/with-search.png';
 import IntroBlurb from '../../components/IntroBlurb';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 
 const components = [
@@ -107,21 +107,15 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const NativeFlatListSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Flat list"
-    components={components}
-    readme={readme}
-    showMenu
-    {...rest}
-  />
+const NativeFlatListSubPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 const NativeFlatListPage = () => (
   <DocsPageWrapper
     title="Flat list"
     blurb={blurb}
-    nativeSubpage={<NativeFlatListSubPage wrapped />}
+    nativeSubpage={<NativeFlatListSubPage />}
   />
 );
 
