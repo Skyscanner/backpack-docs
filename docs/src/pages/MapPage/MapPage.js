@@ -36,7 +36,10 @@ import mapReadme from 'bpk-component-map/README.md';
 import iosScreenshot from '../../../../backpack-react-native/lib/bpk-component-map/screenshots/ios/default.png';
 import androidScreenshot from '../../../../backpack-react-native/lib/bpk-component-map/screenshots/android/default.png';
 import nativeMapReadme from '../../../../backpack-react-native/lib/bpk-component-map/README.md';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import {
+  NativeComponentPage,
+  WebComponentPage,
+} from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 
@@ -182,21 +185,14 @@ const blurb = [
   <IntroBlurb>The map component is for embedding maps into pages.</IntroBlurb>,
 ];
 
-const MapSubpage = () => (
-  <DocsPageBuilder
-    title="Map"
-    components={components}
-    readme={mapReadme}
-    wrapped
-  />
+const WebSubpage = () => (
+  <WebComponentPage examples={components} readme={mapReadme} />
 );
 
 const NativeSubpage = () => (
-  <DocsPageBuilder
-    title="Map"
-    components={nativeComponents}
+  <NativeComponentPage
+    screenshots={nativeComponents}
     readme={nativeMapReadme}
-    wrapped
   />
 );
 
@@ -204,7 +200,7 @@ const MapPage = () => (
   <DocsPageWrapper
     title="Map"
     blurb={blurb}
-    webSubpage={<MapSubpage />}
+    webSubpage={<WebSubpage />}
     nativeSubpage={<NativeSubpage />}
   />
 );

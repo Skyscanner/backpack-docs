@@ -23,13 +23,20 @@ import iosScreenshoDialingCodeList from '../../../../backpack-react-native/lib/b
 import iosScreenshotPhoneNumberInput from '../../../../backpack-react-native/lib/bpk-component-phone-input/screenshots/ios/phone-number-input.png';
 import androidScreenshotDialingCodeList from '../../../../backpack-react-native/lib/bpk-component-phone-input/screenshots/android/dialing-code-list.png';
 import androidScreenshotPhoneNumberInput from '../../../../backpack-react-native/lib/bpk-component-phone-input/screenshots/android/phone-number-input.png';
-import Paragraph from '../../components/Paragraph';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
     id: 'dialing-code-list',
     title: 'Dialing code list',
+    blurb: (
+      <p>
+        Consumers are responsible for using these two components together. The
+        accessory view in the text input shall present the dialing code list
+        when tapped and a selection should update the dialing code set in the
+        input component.
+      </p>
+    ),
     screenshots: [
       {
         title: 'iOS',
@@ -73,24 +80,8 @@ const components = [
   },
 ];
 
-const blurb = [
-  <Paragraph>
-    Consumers are responsible for using these two components together. The
-    accessory view in the text input shall present the dialing code list when
-    tapped and a selection should update the dialing code set in the input
-    component.
-  </Paragraph>,
-];
-
 const NativeInputPage = () => (
-  <DocsPageBuilder
-    title="Phone number input"
-    blurb={blurb}
-    components={components}
-    readme={readme}
-    showMenu={false}
-    wrapped
-  />
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 export default NativeInputPage;

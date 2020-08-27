@@ -21,7 +21,7 @@ import React from 'react';
 import readme from '../../../../backpack-react-native/lib/bpk-component-star-rating/README.md';
 import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-star-rating/screenshots/ios/default.png';
 import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-star-rating/screenshots/android/default.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -50,13 +50,8 @@ const components = [
   },
 ];
 
-const NativeStarRatingPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Star Ratings"
-    components={components}
-    readme={readme}
-    {...rest}
-  />
+const NativeStarRatingPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 export default NativeStarRatingPage;

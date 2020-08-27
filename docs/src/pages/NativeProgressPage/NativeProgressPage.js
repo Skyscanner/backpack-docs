@@ -24,7 +24,7 @@ import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-comp
 import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-progress/screenshots/android/default.png';
 import iosScreenshotBar from '../../../../backpack-react-native/lib/bpk-component-progress/screenshots/ios/bar.png';
 import androidScreenshotBar from '../../../../backpack-react-native/lib/bpk-component-progress/screenshots/android/bar.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -77,14 +77,8 @@ const components = [
   },
 ];
 
-const NativeProgressPage = ({ ...rest }: { [string]: any }) => (
-  <DocsPageBuilder
-    title="Progress Bar"
-    components={components}
-    readme={readme}
-    showMenu
-    {...rest}
-  />
+const NativeProgressPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 export default NativeProgressPage;

@@ -23,7 +23,7 @@ import iosScreenshot from '../../../../backpack-react-native/lib/bpk-component-t
 import iosScreenshotWithAccessoryView from '../../../../backpack-react-native/lib/bpk-component-text-input/screenshots/ios/text-inputs-with-accessory-view.png';
 import androidScreenshot from '../../../../backpack-react-native/lib/bpk-component-text-input/screenshots/android/text-inputs.png';
 import androidScreenshotWithAccessoryView from '../../../../backpack-react-native/lib/bpk-component-text-input/screenshots/android/text-inputs-with-accessory-view.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -72,14 +72,8 @@ const components = [
   },
 ];
 
-const NativeInputPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Text input"
-    components={components}
-    readme={readme}
-    showMenu={false}
-    {...rest}
-  />
+const NativeInputPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 export default NativeInputPage;

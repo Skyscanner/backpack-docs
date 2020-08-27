@@ -29,7 +29,7 @@ import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-
 import androidScreenshotDismissible from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/android/dismissible.png';
 import androidScreenshotOutline from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/android/outline.png';
 import androidScreenshotOutlineDismissible from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/android/outlineDismissible.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -149,13 +149,8 @@ const components = [
   },
 ];
 
-const NativeChipsPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Chip"
-    components={components}
-    readme={readme}
-    {...rest}
-  />
+const NativeChipsPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 export default NativeChipsPage;

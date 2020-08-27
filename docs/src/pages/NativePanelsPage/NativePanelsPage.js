@@ -27,7 +27,7 @@ import iosScreenshotWithDivider from '../../../../backpack-react-native/lib/bpk-
 import androidScreenshotWithDivider from '../../../../backpack-react-native/lib/bpk-component-panel/screenshots/android/with-divider.png';
 import iosScreenshotWithDividerArrangedVertically from '../../../../backpack-react-native/lib/bpk-component-panel/screenshots/ios/with-divider-arranged-vertically.png';
 import androidScreenshotWithDividerArrangedVertically from '../../../../backpack-react-native/lib/bpk-component-panel/screenshots/android/with-divider-arranged-vertically.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -128,14 +128,8 @@ const components = [
   },
 ];
 
-const NativePanelsPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Panels"
-    components={components}
-    readme={readme}
-    showMenu
-    {...rest}
-  />
+const NativePanelsPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 export default NativePanelsPage;

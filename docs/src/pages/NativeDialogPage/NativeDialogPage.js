@@ -25,7 +25,7 @@ import iosScreenshotBottom from '../../../../backpack-react-native/lib/bpk-compo
 import androidScreenshotSimple from '../../../../backpack-react-native/lib/bpk-component-dialog/screenshots/android/simple.png';
 import androidScreenshotOption from '../../../../backpack-react-native/lib/bpk-component-dialog/screenshots/android/option.png';
 import androidScreenshotBottom from '../../../../backpack-react-native/lib/bpk-component-dialog/screenshots/android/bottom.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -96,15 +96,8 @@ const components = [
   },
 ];
 
-const NativeDialogPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Dialog"
-    blurb="The Backpack RN dialog bridges our native dialog offerings for Android and iOS for use in RN."
-    components={components}
-    readme={readme}
-    showMenu
-    {...rest}
-  />
+const NativeDialogPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 export default NativeDialogPage;

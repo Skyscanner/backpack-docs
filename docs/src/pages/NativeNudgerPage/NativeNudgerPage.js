@@ -21,7 +21,7 @@ import React from 'react';
 import readme from '../../../../backpack-react-native/lib/bpk-component-nudger/README.md';
 import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-nudger/screenshots/ios/default.png';
 import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-nudger/screenshots/android/default.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -50,14 +50,8 @@ const components = [
   },
 ];
 
-const NativeNudgerPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Nudgers"
-    components={components}
-    readme={readme}
-    showMenu
-    {...rest}
-  />
+const NativeNudgerPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 export default NativeNudgerPage;

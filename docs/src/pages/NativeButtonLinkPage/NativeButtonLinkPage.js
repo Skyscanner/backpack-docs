@@ -21,7 +21,7 @@ import React from 'react';
 import readme from '../../../../backpack-react-native/lib/bpk-component-button-link/README.md';
 import iosScreenshot from '../../../../backpack-react-native/lib/bpk-component-button-link/screenshots/ios/default.png';
 import androidScreenshot from '../../../../backpack-react-native/lib/bpk-component-button-link/screenshots/android/default.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -49,13 +49,8 @@ const components = [
   },
 ];
 
-const NativeTextPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Links"
-    components={components}
-    readme={readme}
-    {...rest}
-  />
+const NativeButtonLinkPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
-export default NativeTextPage;
+export default NativeButtonLinkPage;

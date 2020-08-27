@@ -25,7 +25,7 @@ import iosScreenshotSpaceAround from '../../../../backpack-react-native/lib/bpk-
 import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-horizontal-nav/screenshots/android/default.png';
 import androidScreenshotSmall from '../../../../backpack-react-native/lib/bpk-component-horizontal-nav/screenshots/android/small.png';
 import androidScreenshotSpaceAround from '../../../../backpack-react-native/lib/bpk-component-horizontal-nav/screenshots/android/space-around.png'; // eslint-disable-line max-len
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -100,14 +100,8 @@ const components = [
   },
 ];
 
-const NativeHorizontalNavPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Horizontal Navigation"
-    components={components}
-    readme={readme}
-    showMenu
-    {...rest}
-  />
+const NativeHorizontalNavPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 export default NativeHorizontalNavPage;

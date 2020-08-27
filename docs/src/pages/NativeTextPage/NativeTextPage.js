@@ -25,7 +25,7 @@ import iosScreenshotEmphasized from '../../../../backpack-react-native/lib/bpk-c
 import androidScreenshotEmphasized from '../../../../backpack-react-native/lib/bpk-component-text/screenshots/android/emphasize.png';
 import iosScreenshotHeavy from '../../../../backpack-react-native/lib/bpk-component-text/screenshots/ios/heavy.png';
 import androidScreenshotHeavy from '../../../../backpack-react-native/lib/bpk-component-text/screenshots/android/heavy.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -96,13 +96,8 @@ const components = [
   },
 ];
 
-const NativeTextPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Text"
-    components={components}
-    readme={readme}
-    {...rest}
-  />
+const NativeTextPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 export default NativeTextPage;

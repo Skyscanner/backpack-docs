@@ -24,7 +24,7 @@ import BpkBlockquote from 'bpk-component-blockquote';
 import readme from '../../../../backpack-react-native/lib/bpk-component-touchable-native-feedback/README.md';
 import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-touchable-native-feedback/screenshots/default.png';
 import IntroBlurb from '../../components/IntroBlurb';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 
 const touchableOverlay = '/components/native/touchable-overlay';
@@ -69,21 +69,15 @@ const blurb = [
   </BpkBlockquote>,
 ];
 
-const NativeTouchableNativeFeedbackSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Touchable Native Feedback"
-    components={components}
-    readme={readme}
-    showMenu={false}
-    {...rest}
-  />
+const NativeTouchableNativeFeedbackSubPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 const NativeTouchableNativeFeedbackPage = () => (
   <DocsPageWrapper
     title="Touchable native feedback"
     blurb={blurb}
-    nativeSubpage={<NativeTouchableNativeFeedbackSubPage wrapped />}
+    nativeSubpage={<NativeTouchableNativeFeedbackSubPage />}
   />
 );
 

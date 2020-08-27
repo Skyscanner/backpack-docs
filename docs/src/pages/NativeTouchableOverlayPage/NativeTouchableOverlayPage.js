@@ -25,7 +25,7 @@ import readme from '../../../../backpack-react-native/lib/bpk-component-touchabl
 import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-touchable-overlay/screenshots/default.png';
 import iosScreenshotTouchableHighlight from '../../../../backpack-react-native/lib/bpk-component-touchable-overlay/screenshots/touchable-highlight.png';
 import IntroBlurb from '../../components/IntroBlurb';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 
 const touchableNativeFeedbackUrl =
@@ -75,21 +75,15 @@ const blurb = [
   </BpkBlockquote>,
 ];
 
-const NativeTouchableOverlaySubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Touchable overlay"
-    components={components}
-    readme={readme}
-    showMenu={false}
-    {...rest}
-  />
+const NativeTouchableOverlaySubPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 const NativeTouchableOverlayPage = () => (
   <DocsPageWrapper
     title="Touchable overlay"
     blurb={blurb}
-    nativeSubpage={<NativeTouchableOverlaySubPage wrapped />}
+    nativeSubpage={<NativeTouchableOverlaySubPage />}
   />
 );
 

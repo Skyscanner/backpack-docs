@@ -22,7 +22,7 @@ import React from 'react';
 import mobileScrollContainerReadme from 'bpk-component-mobile-scroll-container/README.md';
 
 import IntroBlurb from '../../components/IntroBlurb';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 
 import BlockExample from './BlockExample';
@@ -42,12 +42,10 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const MobileScrollContainerSubPage = ({ ...rest }: { [string]: any }) => (
-  <DocsPageBuilder
-    title="Mobile scroll container"
-    components={components}
+const MobileScrollContainerSubPage = () => (
+  <WebComponentPage
+    examples={components}
     readme={mobileScrollContainerReadme}
-    {...rest}
   />
 );
 
@@ -55,7 +53,7 @@ const MobileScrollContainerPage = () => (
   <DocsPageWrapper
     title="Mobile scroll container"
     blurb={blurb}
-    webSubpage={<MobileScrollContainerSubPage wrapped />}
+    webSubpage={<MobileScrollContainerSubPage />}
   />
 );
 

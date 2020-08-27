@@ -29,7 +29,7 @@ import androidScreenshotModal from '../../../../backpack-react-native/lib/bpk-co
 import iosScreenshotPrimaryTextButtons from '../../../../backpack-react-native/lib/bpk-component-navigation-bar/screenshots/ios/primary-text-buttons.png';
 import iosScreenshotTitleIcon from '../../../../backpack-react-native/lib/bpk-component-navigation-bar/screenshots/ios/title-icon.png';
 import androidScreenshotTitleIcon from '../../../../backpack-react-native/lib/bpk-component-navigation-bar/screenshots/android/title-icon.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -143,14 +143,8 @@ const components = [
   },
 ];
 
-const NativeNavigationBarPage = (props: Object) => (
-  <DocsPageBuilder
-    title="Navigation bar"
-    components={components}
-    readme={readme}
-    showMenu
-    {...props}
-  />
+const NativeNavigationBarPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 export default NativeNavigationBarPage;

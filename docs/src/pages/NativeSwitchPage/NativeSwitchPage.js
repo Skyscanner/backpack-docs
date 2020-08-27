@@ -21,7 +21,7 @@ import React from 'react';
 import readme from '../../../../backpack-react-native/lib/bpk-component-switch/README.md';
 import iosVideo from '../../../../backpack-react-native/lib/bpk-component-switch/videos/ios/all-types-react-native-bpk-component-switch.mp4';
 import androidVideo from '../../../../backpack-react-native/lib/bpk-component-switch/videos/android/all-types-react-native-bpk-component-switch.mp4';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -44,14 +44,8 @@ const components = [
   },
 ];
 
-const NativeSwitchPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Switch"
-    components={components}
-    readme={readme}
-    showMenu={false}
-    {...rest}
-  />
+const NativeSwitchPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 export default NativeSwitchPage;

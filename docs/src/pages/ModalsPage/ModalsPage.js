@@ -24,7 +24,7 @@ import BpkButton from 'bpk-component-button';
 import { BpkButtonLink } from 'bpk-component-link';
 import modalReadme from 'bpk-component-modal/README.md';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import Paragraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
@@ -184,10 +184,9 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const ModalsSubPage = ({ ...rest }: { [string]: any }) => (
-  <DocsPageBuilder
-    title="Modal"
-    components={components}
+const ModalsSubPage = () => (
+  <WebComponentPage
+    examples={components}
     readme={modalReadme}
     usageTable={{
       dos: [
@@ -207,16 +206,11 @@ const ModalsSubPage = ({ ...rest }: { [string]: any }) => (
       ],
     }}
     sassdocId="modals"
-    {...rest}
   />
 );
 
 const ModalsPage = () => (
-  <DocsPageWrapper
-    title="Modal"
-    blurb={blurb}
-    webSubpage={<ModalsSubPage wrapped />}
-  />
+  <DocsPageWrapper title="Modal" blurb={blurb} webSubpage={<ModalsSubPage />} />
 );
 
 export default ModalsPage;

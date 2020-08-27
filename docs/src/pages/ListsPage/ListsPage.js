@@ -20,7 +20,7 @@ import React from 'react';
 import { BpkList, BpkListItem } from 'bpk-component-list';
 import listReadme from 'bpk-component-list/README.md';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 
@@ -58,21 +58,12 @@ const components = [
   },
 ];
 
-const ListSubPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Lists"
-    readme={listReadme}
-    components={components}
-    {...rest}
-  />
+const ListSubPage = () => (
+  <WebComponentPage readme={listReadme} examples={components} />
 );
 
 const ListPage = () => (
-  <DocsPageWrapper
-    title="List"
-    blurb={blurb}
-    webSubpage={<ListSubPage wrapped />}
-  />
+  <DocsPageWrapper title="List" blurb={blurb} webSubpage={<ListSubPage />} />
 );
 
 export default ListPage;

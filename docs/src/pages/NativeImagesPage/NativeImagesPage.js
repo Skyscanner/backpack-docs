@@ -23,7 +23,7 @@ import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-comp
 import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-image/screenshots/android/default.png';
 import iosScreenshotNoBorderRadius from '../../../../backpack-react-native/lib/bpk-component-image/screenshots/ios/no-border-radius.png';
 import androidScreenshotNoBorderRadius from '../../../../backpack-react-native/lib/bpk-component-image/screenshots/android/no-border-radius.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -51,7 +51,7 @@ const components = [
   },
   {
     id: 'no-border-radius',
-    title: 'Without rounded-corners',
+    title: 'Without rounded corners',
     blurb: '',
     screenshots: [
       {
@@ -74,13 +74,8 @@ const components = [
   },
 ];
 
-const NativeImagesPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Images"
-    components={components}
-    readme={readme}
-    {...rest}
-  />
+const NativeImagesPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 export default NativeImagesPage;

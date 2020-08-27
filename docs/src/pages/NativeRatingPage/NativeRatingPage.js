@@ -26,7 +26,7 @@ import androidScreenshotVertical from '../../../../backpack-react-native/lib/bpk
 import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-rating/screenshots/ios/default.png';
 import iosScreenshotSizes from '../../../../backpack-react-native/lib/bpk-component-rating/screenshots/ios/sizes.png';
 import iosScreenshotVertical from '../../../../backpack-react-native/lib/bpk-component-rating/screenshots/ios/vertical.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -102,14 +102,8 @@ const components = [
   },
 ];
 
-const NativeRatingPage = ({ ...rest }: { [string]: any }) => (
-  <DocsPageBuilder
-    title="Rating"
-    components={components}
-    readme={readme}
-    showMenu
-    {...rest}
-  />
+const NativeRatingPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 export default NativeRatingPage;

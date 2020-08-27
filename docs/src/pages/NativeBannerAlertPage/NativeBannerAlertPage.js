@@ -25,7 +25,7 @@ import iosScreenshotExpandable from '../../../../backpack-react-native/lib/bpk-c
 import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-banner-alert/screenshots/android/default.png';
 import androidScreenshotDismissable from '../../../../backpack-react-native/lib/bpk-component-banner-alert/screenshots/android/dismissable.png';
 import androidScreenshotExpandable from '../../../../backpack-react-native/lib/bpk-component-banner-alert/screenshots/android/expandable.png';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -96,14 +96,8 @@ const components = [
   },
 ];
 
-const NativeBannerAlertPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Banner Alerts"
-    components={components}
-    readme={readme}
-    showMenu
-    {...rest}
-  />
+const NativeBannerAlertPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 export default NativeBannerAlertPage;

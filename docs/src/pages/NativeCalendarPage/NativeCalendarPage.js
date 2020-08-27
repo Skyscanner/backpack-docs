@@ -27,7 +27,7 @@ import androidScreenshotRange from '../../../../backpack-react-native/lib/bpk-co
 import androidScreenshotSingle from '../../../../backpack-react-native/lib/bpk-component-calendar/screenshots/android/single.png';
 import androidScreenshotColored from '../../../../backpack-react-native/lib/bpk-component-calendar/screenshots/android/colored.png';
 import androidEmpty from '../../static/android_empty.svg';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
   {
@@ -120,15 +120,8 @@ const components = [
   },
 ];
 
-const NativeCalendarPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Calendar"
-    blurb="The Backpack RN calendar bridges our native calendar offerings for Android and iOS for use in RN."
-    components={components}
-    readme={readme}
-    showMenu
-    {...rest}
-  />
+const NativeCalendarPage = () => (
+  <NativeComponentPage screenshots={components} readme={readme} />
 );
 
 export default NativeCalendarPage;
