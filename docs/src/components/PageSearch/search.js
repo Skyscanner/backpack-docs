@@ -18,7 +18,9 @@
 
 /* @flow */
 
-import Fuse from 'fuse.js';
+// We use this specific build of fuse instead of the default one so that it works with IE and Edge
+// https://fusejs.io/getting-started/different-builds.html
+import Fuse from 'fuse.js/dist/fuse.common';
 
 /*
 Results are in the form:
