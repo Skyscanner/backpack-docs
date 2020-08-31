@@ -23,6 +23,7 @@ import React from 'react';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 import Android from '../AndroidSnackbarPage';
+import IOS from '../IOSSnackbarPage';
 import Native from '../NativeSnackbarPage';
 
 const Page = () => (
@@ -35,6 +36,7 @@ const Page = () => (
       </IntroBlurb>,
     ]}
     androidSubpage={<Android wrapped />}
+    iosSubpage={<IOS wrapped />}
     nativeSubpage={<Native wrapped />}
   />
 );

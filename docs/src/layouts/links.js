@@ -93,7 +93,7 @@ const ComponentsLinks = [
         id: 'SNACKBAR',
         route: routes.SNACKBAR,
         children: 'Snackbar',
-        tags: ['android', 'native'],
+        tags: ['android', 'ios', 'native'],
       },
       {
         id: 'BLOCKQUOTE',
