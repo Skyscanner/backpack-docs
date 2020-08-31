@@ -131,7 +131,6 @@ export const BOTTOM_NAV = '/components/bottom-nav';
 export const ALIGNMENT = '/components/alignment';
 export const THEMING = '/components/theming';
 export const UTILITIES = '/components/utilities';
-export const FOUR_O_FOUR = '/404';
 
 // MISC
 export const GRID_COLUMN_DEMO = '/grid-column-demo';

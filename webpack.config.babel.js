@@ -45,6 +45,7 @@ const staticSiteGeneratorConfig = {
   paths: [
     ...Object.keys(ROUTES).map(key => ROUTES[key]),
     ...Object.keys(redirects),
+    '/404.html',
   ],
 };
 

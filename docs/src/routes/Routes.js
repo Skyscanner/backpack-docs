@@ -351,9 +351,6 @@ export const ROUTES_MAPPINGS = [
     path: from,
     redirect: redirects[from],
   })),
-  // We need to explicitly declare the 404 route as GH pages expects the static page to exist at that path:
-  { path: ROUTES.FOUR_O_FOUR, component: NotFoundPage },
-  // The wildcard fall back is only for local development
   { path: '*', component: NotFoundPage },
 ];
 
