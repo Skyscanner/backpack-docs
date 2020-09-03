@@ -33,8 +33,10 @@ import LeisureIconSm from 'bpk-component-icon/sm/leisure';
 import { withRtlSupport } from 'bpk-component-icon';
 import mapReadme from 'bpk-component-map/README.md';
 
-import iosScreenshot from '../../../../backpack-react-native/lib/bpk-component-map/screenshots/ios/default.png';
-import androidScreenshot from '../../../../backpack-react-native/lib/bpk-component-map/screenshots/android/default.png';
+import iosDefaultScreenshot from '../../../../backpack-react-native/lib/bpk-component-map/screenshots/ios/default.png';
+import androidDefaultScreenshot from '../../../../backpack-react-native/lib/bpk-component-map/screenshots/android/default.png';
+import iosPriceMarkerScreenshot from '../../../../backpack-react-native/lib/bpk-component-map/screenshots/ios/price-markers.png';
+import androidPriceMarkerScreenshot from '../../../../backpack-react-native/lib/bpk-component-map/screenshots/android/price-markers.png';
 import nativeMapReadme from '../../../../backpack-react-native/lib/bpk-component-map/README.md';
 import {
   NativeComponentPage,
@@ -165,7 +167,7 @@ const nativeComponents = [
         title: 'iOS',
         width: 750,
         height: 1334,
-        src: `/${iosScreenshot}`,
+        src: `/${iosDefaultScreenshot}`,
         altText: 'iOS Map Component',
         subText: '(iPhone 8 simulator)',
       },
@@ -173,8 +175,32 @@ const nativeComponents = [
         title: 'Android',
         width: 1080,
         height: 1920,
-        src: `/${androidScreenshot}`,
+        src: `/${androidDefaultScreenshot}`,
         altText: 'Android Map Component',
+        subText: '(Google Pixel emulator)',
+      },
+    ],
+  },
+  {
+    id: 'price-markers',
+    title: 'Price Markers',
+    blurb:
+      'Use price markers to display a collection of prices on a map. By default, they appear in sky blue. When focused, they grow in size and turn white, and when viewed they turn light blue.',
+    screenshots: [
+      {
+        title: 'iOS',
+        width: 750,
+        height: 1334,
+        src: `/${iosPriceMarkerScreenshot}`,
+        altText: 'iOS Map Price Marker Component',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        title: 'Android',
+        width: 1080,
+        height: 1920,
+        src: `/${androidPriceMarkerScreenshot}`,
+        altText: 'Android Map Price Marker Component',
         subText: '(Google Pixel emulator)',
       },
     ],
