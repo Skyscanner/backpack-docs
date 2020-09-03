@@ -21,7 +21,7 @@ import React, { type Node } from 'react';
 import { cssModules } from 'bpk-react-utils';
 import BpkBannerAlert, { ALERT_TYPES } from 'bpk-component-banner-alert';
 import BpkLink from 'bpk-component-link';
-import BpkText from 'bpk-component-text';
+import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
 import { BpkList, BpkListItem } from 'bpk-component-list';
 import isString from 'lodash/isString';
 
@@ -77,7 +77,7 @@ const PageHead = (props: Props) => {
         {showMenu && (
           <div>
             <BpkText
-              bold
+              weight={WEIGHT_STYLES.bold}
               tagName="h2"
               className={getClassName('bpkdocs-page-head__in-section')}
             >

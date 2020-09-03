@@ -19,7 +19,7 @@
 import React from 'react';
 import BpkBlockquote from 'bpk-component-blockquote';
 import BpkRouterLink from 'bpk-component-router-link';
-import BpkText from 'bpk-component-text';
+import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
 import gridReadme from 'bpk-component-grid/README.md';
 
 import * as routes from '../../constants/routes';
@@ -34,7 +34,7 @@ const components = [
     id: 'default',
     title: 'Default',
     examples: [
-      <BpkText tagName="h3" textStyle="base" bold>
+      <BpkText tagName="h3" textStyle="base" weight={WEIGHT_STYLES.bold}>
         Columns
       </BpkText>,
       <BpkParagraph>
@@ -45,7 +45,7 @@ const components = [
       <BpkParagraph>
         <BpkRouterLink to={routes.GRID_COLUMN_DEMO}>View demo.</BpkRouterLink>
       </BpkParagraph>,
-      <BpkText tagName="h3" textStyle="base" bold>
+      <BpkText tagName="h3" textStyle="base" weight={WEIGHT_STYLES.bold}>
         Offsets
       </BpkText>,
       <BpkParagraph>
@@ -55,7 +55,7 @@ const components = [
       <BpkParagraph>
         <BpkRouterLink to={routes.GRID_OFFSET_DEMO}>View demo.</BpkRouterLink>
       </BpkParagraph>,
-      <BpkText tagName="h3" textStyle="base" bold>
+      <BpkText tagName="h3" textStyle="base" weight={WEIGHT_STYLES.bold}>
         Responsive behaviour
       </BpkText>,
       <BpkParagraph>

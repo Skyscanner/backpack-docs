@@ -18,7 +18,7 @@
 
 import React from 'react';
 import BpkLink from 'bpk-component-link';
-import BpkText from 'bpk-component-text';
+import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
 import BpkBlockquote from 'bpk-component-blockquote';
 
 import readme from '../../../../backpack-react-native/lib/bpk-component-touchable-native-feedback/README.md';
@@ -60,8 +60,8 @@ const blurb = [
     your app from crashing on unsupported devices.
   </IntroBlurb>,
   <BpkBlockquote>
-    <BpkText bold>Note:</BpkText> This component is Android only, for iOS please
-    use the{' '}
+    <BpkText weight={WEIGHT_STYLES.bold}>Note:</BpkText> This component is
+    Android only, for iOS please use the{' '}
     <BpkLink href={touchableOverlay} blank>
       BpkTouchableOverlay{' '}
     </BpkLink>{' '}
