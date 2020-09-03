@@ -27,7 +27,7 @@
     "start": "npm run docs",
     "docs": "npm run submodules:pull && BPK_BUILT_AT=$( date -u +%s ) webpack-dev-server --open",
     "docs:dist": "npm run submodules:pull && npm run clean:dist && NODE_ENV=production BPK_BUILT_AT=$( date -u +%s ) webpack --progress --display=minimal --bail",
-    "test": "npm run lint && echo \"SKIPPING FLOW CHECK DUE TO CI RESOURCE CONSTRAINTS\" && npm run spellcheck && npm run jest",
+    "test": "npm run lint && npm run flow && npm run spellcheck && npm run jest",
     "jest": "jest",
     "jest:coverage": "jest --coverage",
     "jest:watch": "jest --watch",
