@@ -21,11 +21,11 @@ import renderer from 'react-test-renderer';
 import withPageViewEvent from './withPageViewEvent';
 
 jest.mock('../helpers/google-analytics-helper', () => ({
-  ...require.requireActual('../helpers/google-analytics-helper'),
+  ...jest.requireActual('../helpers/google-analytics-helper'),
   sendPageView: jest.fn(),
 }));
 
-const ga = require.requireMock('../helpers/google-analytics-helper');
+const ga = jest.requireMock('../helpers/google-analytics-helper');
 
 const RouteComponent = () => null;
 
