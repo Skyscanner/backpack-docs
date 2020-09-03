@@ -18,24 +18,6 @@
 
 /* @flow strict */
 
-import React from 'react';
+import page from './MapPage';
 
-import Web from '../WebMapPage';
-import Native from '../NativeMapPage';
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import IntroBlurb from '../../components/IntroBlurb';
-
-const blurb = [
-  <IntroBlurb>The map component is for embedding maps into pages.</IntroBlurb>,
-];
-
-const MapPage = () => (
-  <DocsPageWrapper
-    title="Map"
-    blurb={blurb}
-    webSubpage={<Web />}
-    nativeSubpage={<Native />}
-  />
-);
-
-export default MapPage;
+export default page;
