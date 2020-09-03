@@ -38,6 +38,7 @@ const MarginDiv = withDefaultProps(BpkText, {
   className: getClassName('bpk-docs-dialog-examples-margin-div'),
 });
 
+// $FlowFixMe[incompatible-call] - Need to check if the function `withDefaultProps` should be updated to support
 const AlignRight = withDefaultProps('div', {
   className: getClassName('bpk-docs-dialog-examples-align-right'),
 });
@@ -80,6 +81,7 @@ export class DialogContainer extends Component<
     return (
       <div>
         <BpkButton onClick={this.onOpen}>Open Dialog</BpkButton>
+        {/* $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/master/decisions/flowfixme.md'. */}
         <BpkDialog
           closeLabel="Close dialog"
           id="default-dialog"
@@ -135,6 +137,7 @@ export class NonDismissibleDialogContainer extends Component<
     return (
       <div>
         <BpkButton onClick={this.onOpen}>Open Dialog</BpkButton>
+        {/* $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/master/decisions/flowfixme.md'. */}
         <BpkDialog
           id="non-dissmissible-dialog"
           className="my-classname"

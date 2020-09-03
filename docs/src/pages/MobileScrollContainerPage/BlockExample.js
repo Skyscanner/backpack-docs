@@ -32,17 +32,12 @@ type Props = {
 };
 
 const BlockExampleItem = (props: Props) => {
-  const classNames = ['bpkdocs-block-example__item'];
-
-  if (props.alternate) {
-    classNames.push('bpkdocs-block-example__item--alternate');
-  }
-
-  return (
-    <div className={classNames.map(getClassName).join(' ')}>
-      {props.children}
-    </div>
+  const classNames = getClassName(
+    'bpkdocs-block-example__item',
+    props.alternate && 'bpkdocs-block-example__item--alternate',
   );
+
+  return <div className={classNames}>{props.children}</div>;
 };
 
 /* eslint-disable react/no-array-index-key */

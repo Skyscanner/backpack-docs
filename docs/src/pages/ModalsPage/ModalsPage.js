@@ -80,6 +80,7 @@ class ModalContainer extends Component<Props, State> {
     return (
       <div>
         <BpkButton onClick={this.onOpen}>{buttonText}</BpkButton>
+        {/* $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/master/decisions/flowfixme.md'. */}
         <BpkModal
           id="my-modal"
           isOpen={this.state.isOpen}

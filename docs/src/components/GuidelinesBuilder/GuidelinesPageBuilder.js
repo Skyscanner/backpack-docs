@@ -149,7 +149,7 @@ GuidelinesPageBuilder.propTypes = {
   hero: PropTypes.shape({
     imageUrl: PropTypes.string.isRequired,
     heading: PropTypes.string.isRequired,
-    className: PropTypes.string.isRequired,
+    className: PropTypes.string,
   }).isRequired,
   sections: PropTypes.arrayOf(
     PropTypes.shape({

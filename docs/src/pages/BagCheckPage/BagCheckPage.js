@@ -25,9 +25,8 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './bag-check-page.scss';
 
-// $FlowFixMe
-/* eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved */
-const bookmarklet = require('!!raw-loader!uglify-loader!babel-loader!../../bag-check-bookmarklet');
+// $FlowIgnore[cannot-resolve-module] - This is valid due to how the bookmarklet is loaded
+const bookmarklet = require('!!raw-loader!uglify-loader!babel-loader!../../bag-check-bookmarklet'); /* eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved */
 
 const getClassName = cssModules(STYLES);
 

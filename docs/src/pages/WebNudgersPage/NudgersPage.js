@@ -30,7 +30,7 @@ import STYLES from './nudger-page.scss';
 
 const getClassName = cssModules(STYLES);
 class NudgerContainer extends Component<
-  { buttonType: ?string },
+  { buttonType: string },
   { value: number },
 > {
   constructor() {
