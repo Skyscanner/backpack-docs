@@ -52,7 +52,7 @@ type Props = {
   title: string,
   blurb: string | Node,
   wrapped: boolean,
-  menu: ?Array<MenuItem>,
+  menu: Array<MenuItem>,
   className: ?string,
 };
 const PageHead = (props: Props) => {
@@ -96,6 +96,10 @@ const PageHead = (props: Props) => {
       </div>
     </section>
   );
+};
+
+PageHead.defaultProps = {
+  menu: [],
 };
 
 export default PageHead;

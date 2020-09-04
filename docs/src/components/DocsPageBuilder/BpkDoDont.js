@@ -20,7 +20,7 @@
 
 // Uses https://github.com/rexxars/react-markdown
 
-import React from 'react';
+import React, { type Node } from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'bpk-react-utils';
 import BpkText from 'bpk-component-text';
@@ -32,7 +32,9 @@ const getClassName = cssModules(STYLES);
 const DO_DONT_TYPES = ['do', 'dont'];
 
 export type Props = {
+  children: Node,
   type: string,
+  className: ?string,
 };
 
 const BpkDoDont = (props: Props) => {
@@ -56,6 +58,7 @@ const BpkDoDont = (props: Props) => {
   }
 
   return (
+    // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/master/decisions/flowfixme.md'.
     <div className={classNames.join(' ')} {...rest}>
       <BpkText
         tagName="h4"
