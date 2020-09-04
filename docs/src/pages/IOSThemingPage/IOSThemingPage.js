@@ -27,6 +27,7 @@ const IOSThemingPage = () => (
     screenshots={[]}
     readme={readme}
     documentationId="BPKTheming"
+    githubPath="Theme"
   />
 );
 

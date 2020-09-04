@@ -106,6 +106,7 @@ const IOSDialogPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="BPKDialogController"
+    githubPath="Dialog"
   />
 );
 

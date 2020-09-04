@@ -173,6 +173,7 @@ const IOSHorizontalNavPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="BPKHorizontalNavigation"
+    githubPath="HorizontalNavigation"
   />
 );
 

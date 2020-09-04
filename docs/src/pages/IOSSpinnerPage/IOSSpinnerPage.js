@@ -51,6 +51,7 @@ const IOSSpinnerPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="BPKSpinner"
+    githubPath="Spinner"
   />
 );
 

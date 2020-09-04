@@ -51,6 +51,7 @@ const IOSBarChartPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="BPKBarChart"
+    githubPath="BarChart"
   />
 );
 

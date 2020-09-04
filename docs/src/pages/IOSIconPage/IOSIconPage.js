@@ -51,6 +51,7 @@ const IOSIconPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="BPKIcon"
+    githubPath="Icon"
   />
 );
 

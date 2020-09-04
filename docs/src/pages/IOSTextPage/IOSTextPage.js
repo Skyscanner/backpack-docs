@@ -117,6 +117,7 @@ const IOSTextPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="BPKLabel"
+    githubPath="Label"
   />
 );
 

@@ -22,6 +22,11 @@
     margin-bottom: $bpk-spacing-md;
   }
 
+  // Ensures that the images in links align with the text.
+  &__link {
+    display: flex;
+  }
+
   &__section {
     padding: $bpk-spacing-lg * 2;
     background-color: $bpk-color-sky-gray-tint-07;

@@ -27,7 +27,7 @@ import PresentationBlock from '../PresentationBlock/PresentationBlock';
 import BpkMarkdownRenderer from '../DocsPageBuilder/BpkMarkdownRenderer';
 import getMarkdownString from '../../helpers/markdown-helper';
 
-import STYLES from './WebComponentPage.scss';
+import STYLES from './ComponentPage.scss';
 import ComponentPage from './ComponentPage';
 
 const getClassName = cssModules(STYLES);
@@ -97,7 +97,7 @@ const WebComponentPage = (props: Props) => {
       <BpkLink
         href={`https://www.npmjs.com/package/${packageName}`}
         blank
-        className={getClassName('bpkdocs-web-component-page__link')}
+        className={getClassName('bpkdocs-component-page__link')}
       >
         View on npm&nbsp;
         <img
@@ -115,7 +115,7 @@ const WebComponentPage = (props: Props) => {
       <BpkLink
         href={`https://github.com/Skyscanner/backpack/tree/master/packages/${packageName}`}
         blank
-        className={getClassName('bpkdocs-web-component-page__link')}
+        className={getClassName('bpkdocs-component-page__link')}
       >
         View on GitHub
       </BpkLink>
