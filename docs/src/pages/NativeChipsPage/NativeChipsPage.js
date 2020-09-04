@@ -150,7 +150,11 @@ const components = [
 ];
 
 const NativeChipsPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-chip"
+  />
 );
 
 export default NativeChipsPage;

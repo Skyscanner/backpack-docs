@@ -75,7 +75,11 @@ const components = [
 ];
 
 const NativeMapSubpage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-map"
+  />
 );
 
 export default NativeMapSubpage;

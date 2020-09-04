@@ -144,7 +144,11 @@ const components = [
 ];
 
 const NativeNavigationBarPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-navigation-bar"
+  />
 );
 
 export default NativeNavigationBarPage;

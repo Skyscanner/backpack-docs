@@ -147,7 +147,11 @@ const components = [
 ];
 
 const NativeButtonPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme + linkReadme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme + linkReadme}
+    githubPath="bpk-component-button"
+  />
 );
 
 export default NativeButtonPage;

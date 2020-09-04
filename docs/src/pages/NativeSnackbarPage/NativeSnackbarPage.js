@@ -122,7 +122,11 @@ const components = [
 ];
 
 const NativeSnackbarPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} showMenu />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-snackbar"
+  />
 );
 
 export default NativeSnackbarPage;

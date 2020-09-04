@@ -73,7 +73,11 @@ const components = [
 ];
 
 const NativeInputPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-text-input"
+  />
 );
 
 export default NativeInputPage;

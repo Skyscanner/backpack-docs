@@ -97,7 +97,11 @@ const components = [
 ];
 
 const NativeTextPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-text"
+  />
 );
 
 export default NativeTextPage;

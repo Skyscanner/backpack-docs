@@ -70,7 +70,11 @@ const blurb = [
 ];
 
 const NativeTouchableNativeFeedbackSubPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-touchable-native-feedback"
+  />
 );
 
 const NativeTouchableNativeFeedbackPage = () => (

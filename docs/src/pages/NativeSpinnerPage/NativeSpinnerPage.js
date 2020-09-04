@@ -77,7 +77,11 @@ const components = [
 ];
 
 const NativeSpinnerPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-spinner"
+  />
 );
 
 export default NativeSpinnerPage;

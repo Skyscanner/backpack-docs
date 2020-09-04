@@ -97,7 +97,11 @@ const components = [
 ];
 
 const NativeBannerAlertPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-banner-alert"
+  />
 );
 
 export default NativeBannerAlertPage;

@@ -50,7 +50,11 @@ const components = [
 ];
 
 const NativeIconsPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-icon"
+  />
 );
 
 export default NativeIconsPage;

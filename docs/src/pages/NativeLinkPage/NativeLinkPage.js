@@ -49,7 +49,11 @@ const components = [
 ];
 
 const NativeLinkPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-text-link"
+  />
 );
 
 export default NativeLinkPage;

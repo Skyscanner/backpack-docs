@@ -112,7 +112,11 @@ const WebThemingPage = () => (
 );
 
 const NativeThemingPage = () => (
-  <NativeComponentPage readme={nativeReadme} screenshots={[]} />
+  <NativeComponentPage
+    readme={nativeReadme}
+    screenshots={[]}
+    githubPath="bpk-theming"
+  />
 );
 
 const ThemingPage = () => (

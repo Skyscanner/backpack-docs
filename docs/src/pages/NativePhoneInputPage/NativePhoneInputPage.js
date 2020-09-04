@@ -81,7 +81,11 @@ const components = [
 ];
 
 const NativeInputPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-phone-input"
+  />
 );
 
 export default NativeInputPage;

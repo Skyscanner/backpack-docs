@@ -98,7 +98,11 @@ const components = [
 ];
 
 const NativeFlarePage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-flare"
+  />
 );
 
 export default NativeFlarePage;

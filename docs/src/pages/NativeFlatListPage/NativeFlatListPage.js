@@ -108,7 +108,11 @@ const blurb = [
 ];
 
 const NativeFlatListSubPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-flat-list"
+  />
 );
 
 const NativeFlatListPage = () => (

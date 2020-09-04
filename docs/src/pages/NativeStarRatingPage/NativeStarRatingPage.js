@@ -51,7 +51,11 @@ const components = [
 ];
 
 const NativeStarRatingPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-star-rating"
+  />
 );
 
 export default NativeStarRatingPage;
