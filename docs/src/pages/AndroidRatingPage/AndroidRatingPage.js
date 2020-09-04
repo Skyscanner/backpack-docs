@@ -103,6 +103,7 @@ const AndroidRatingPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="net.skyscanner.backpack.rating"
+    githubPath="rating"
   />
 );
 

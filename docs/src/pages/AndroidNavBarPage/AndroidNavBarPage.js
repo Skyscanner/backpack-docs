@@ -97,6 +97,7 @@ const AndroidNavBarPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="net.skyscanner.backpack.navbar"
+    githubPath="navbar"
   />
 );
 

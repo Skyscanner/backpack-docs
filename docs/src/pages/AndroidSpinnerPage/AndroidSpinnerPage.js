@@ -75,6 +75,7 @@ const AndroidSpinnerPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="net.skyscanner.backpack.spinner"
+    githubPath="spinner"
   />
 );
 

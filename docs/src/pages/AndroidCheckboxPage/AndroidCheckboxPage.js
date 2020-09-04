@@ -55,6 +55,7 @@ const AndroidCheckboxPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="net.skyscanner.backpack.checkbox"
+    githubPath="checkbox"
   />
 );
 

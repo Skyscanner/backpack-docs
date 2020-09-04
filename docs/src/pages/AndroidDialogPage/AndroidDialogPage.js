@@ -83,6 +83,7 @@ const AndroidDialogPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="net.skyscanner.backpack.dialog"
+    githubPath="dialog"
   />
 );
 

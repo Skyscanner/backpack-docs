@@ -55,6 +55,7 @@ const AndroidTextFieldPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="net.skyscanner.backpack.text/-bpk-text-field"
+    githubPath="text"
   />
 );
 

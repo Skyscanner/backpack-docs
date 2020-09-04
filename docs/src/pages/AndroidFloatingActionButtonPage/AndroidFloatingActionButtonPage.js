@@ -51,7 +51,12 @@ const components = [
 ];
 
 const AndroidFloatingActionButtonPage = () => (
-  <AndroidComponentPage screenshots={components} readme={readme} />
+  <AndroidComponentPage
+    screenshots={components}
+    readme={readme}
+    documentationId="net.skyscanner.backpack.fab"
+    githubPath="fab"
+  />
 );
 
 export default AndroidFloatingActionButtonPage;

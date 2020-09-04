@@ -55,6 +55,7 @@ const AndroidSnackbarPage = () => (
     documentationId="net.skyscanner.backpack.snackbar"
     screenshots={components}
     readme={readme}
+    githubPath="snackbar"
   />
 );
 

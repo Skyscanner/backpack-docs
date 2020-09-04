@@ -17,7 +17,7 @@
  */
 
 /* @flow strict */
-
+import { cssModules } from 'bpk-react-utils';
 import React from 'react';
 import BpkLink from 'bpk-component-link';
 import BpkContentContainer from 'bpk-component-content-container';
@@ -26,7 +26,10 @@ import BpkMarkdownRenderer from '../DocsPageBuilder/BpkMarkdownRenderer';
 import getMarkdownString from '../../helpers/markdown-helper';
 import ComponentScreenshots from '../DocsPageBuilder/ComponentScreenshots';
 
+import STYLES from './ComponentPage.scss';
 import ComponentPage from './ComponentPage';
+
+const getClassName = cssModules(STYLES);
 
 type Props = {
   documentationId: ?string,
@@ -52,10 +55,17 @@ type Props = {
     dos: Array<string>,
     donts: Array<string>,
   },
+  githubPath: string,
 };
 
 const AndroidComponentPage = (props: Props) => {
-  const { documentationId, screenshots, readme, usageTable } = props;
+  const {
+    documentationId,
+    githubPath,
+    readme,
+    screenshots,
+    usageTable,
+  } = props;
   const screenshotsAsExamples = screenshots.map(screenshotSet => ({
     id: screenshotSet.id,
     title: screenshotSet.title,
@@ -88,6 +98,39 @@ const AndroidComponentPage = (props: Props) => {
       ),
     });
   }
+
+  additionalContent.push({
+    id: 'jitpack',
+    title: 'JitPack repository',
+    content: (
+      <BpkLink
+        href="https://jitpack.io/#skyscanner/backpack-android"
+        blank
+        className={getClassName('bpkdocs-component-page__link')}
+      >
+        View on JitPack&nbsp;
+        <img
+          src="https://jitpack.io/v/skyscanner/backpack-android.svg"
+          alt="View on JitPack"
+        />
+      </BpkLink>
+    ),
+  });
+
+  additionalContent.push({
+    id: 'code',
+    title: 'Source code',
+    content: (
+      <BpkLink
+        href={`https://github.com/Skyscanner/backpack-android/tree/master/Backpack/src/main/java/net/skyscanner/backpack/${githubPath}`}
+        blank
+        className={getClassName('bpkdocs-component-page__link')}
+      >
+        View on GitHub
+      </BpkLink>
+    ),
+  });
+
   return (
     <ComponentPage
       usageTable={usageTable}

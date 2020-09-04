@@ -55,6 +55,7 @@ const AndroidBottomNavPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="net.skyscanner.backpack.bottomnav"
+    githubPath="bottomnav"
   />
 );
 
