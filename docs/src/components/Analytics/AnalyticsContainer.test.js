@@ -23,7 +23,7 @@ import ReactDOM from 'react-dom';
 import AnalyticsContanier from './AnalyticsContainer';
 
 jest.mock('../../helpers/google-analytics-helper', () => ({
-  ...require.requireActual('../../helpers/google-analytics-helper'),
+  ...jest.requireActual('../../helpers/google-analytics-helper'),
   startGoogleAnalytics: jest.fn(),
 }));
 

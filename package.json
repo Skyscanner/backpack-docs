@@ -64,11 +64,11 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.10.4",
+    "@babel/core": "^7.11.4",
     "@babel/node": "^7.10.4",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.10.4",
-    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
     "@babel/preset-flow": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
     "@babel/register": "^7.10.4",
@@ -166,7 +166,7 @@
     "fuse.js": "^6.4.1",
     "globby": "^11.0.1",
     "husky": "^4.2.3",
-    "jest": "^24.9.0",
+    "jest": "^26.4.2",
     "js-yaml": "^3.14.0",
     "json-loader": "^0.5.4",
     "lighthouse": "^6.2.0",
