@@ -207,6 +207,7 @@ const AndroidCardPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="net.skyscanner.backpack.card"
+    githubPath="card"
   />
 );
 

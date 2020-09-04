@@ -53,6 +53,7 @@ const AndroidBadgePage = () => (
     documentationId="net.skyscanner.backpack.badge"
     readme={readme}
     screenshots={components}
+    githubPath="badge"
   />
 );
 

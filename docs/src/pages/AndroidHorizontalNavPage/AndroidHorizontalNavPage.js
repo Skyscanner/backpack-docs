@@ -57,6 +57,7 @@ const AndroidHorizontalNavPage = () => (
     // This is deliberately misspelled because the package name
     // was published with a typo. :seenoevil:
     documentationId="net.skyscanner.backpack.horisontalnav"
+    githubPath="horisontalnav"
   />
 );
 

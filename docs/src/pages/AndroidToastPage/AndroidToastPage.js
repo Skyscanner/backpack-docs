@@ -55,6 +55,7 @@ const AndroidToastPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="net.skyscanner.backpack.toast"
+    githubPath="toast"
   />
 );
 

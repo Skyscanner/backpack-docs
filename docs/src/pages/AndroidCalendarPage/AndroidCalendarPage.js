@@ -75,6 +75,7 @@ const AndroidCalendarPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="net.skyscanner.backpack.calendar"
+    githubPath="calendar"
   />
 );
 

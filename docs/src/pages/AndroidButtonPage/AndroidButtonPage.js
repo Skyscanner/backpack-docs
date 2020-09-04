@@ -164,6 +164,7 @@ const AndroidButtonPage = () => (
     screenshots={components}
     readme={readme + linkReadme}
     androidDocId="net.skyscanner.backpack.button"
+    githubPath="button"
   />
 );
 

@@ -97,6 +97,7 @@ const AndroidChipPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="net.skyscanner.backpack.chip"
+    githubPath="chip"
   />
 );
 

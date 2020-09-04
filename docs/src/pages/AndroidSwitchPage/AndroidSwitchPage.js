@@ -53,6 +53,7 @@ const AndroidSwitchPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="net.skyscanner.backpack.toggle"
+    githubPath="toggle"
   />
 );
 

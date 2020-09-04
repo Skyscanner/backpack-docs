@@ -55,6 +55,7 @@ const AndroidBarChartPage = () => (
     documentationId="net.skyscanner.backpack.barchart"
     screenshots={components}
     readme={readme}
+    githubPath="barchart"
   />
 );
 

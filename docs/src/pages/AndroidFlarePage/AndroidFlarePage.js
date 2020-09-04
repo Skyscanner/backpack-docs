@@ -141,6 +141,7 @@ const AndroidFlarePage = () => (
     screenshots={components}
     readme={readme}
     documentationId="net.skyscanner.backpack.flare"
+    githubPath="flare"
   />
 );
 

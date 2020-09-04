@@ -129,6 +129,7 @@ const AndroidTextPage = () => (
     screenshots={components}
     readme={readme + textSpanReadme}
     documentationId="net.skyscanner.backpack.text"
+    githubPath="text"
   />
 );
 

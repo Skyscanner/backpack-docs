@@ -89,6 +89,7 @@ const AndroidStarRatingPage = () => (
     screenshots={components}
     readme={starRatingReadme + starRatingInteractiveReadme}
     documentationId="net.skyscanner.backpack.starrating"
+    githubPath="starrating"
   />
 );
 
