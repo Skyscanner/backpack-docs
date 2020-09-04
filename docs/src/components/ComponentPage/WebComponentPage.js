@@ -18,6 +18,7 @@
 
 /* @flow strict */
 
+import { cssModules } from 'bpk-react-utils';
 import React, { type Node } from 'react';
 import BpkLink from 'bpk-component-link';
 import BpkContentContainer from 'bpk-component-content-container';
@@ -26,7 +27,10 @@ import PresentationBlock from '../PresentationBlock/PresentationBlock';
 import BpkMarkdownRenderer from '../DocsPageBuilder/BpkMarkdownRenderer';
 import getMarkdownString from '../../helpers/markdown-helper';
 
+import STYLES from './WebComponentPage.scss';
 import ComponentPage from './ComponentPage';
+
+const getClassName = cssModules(STYLES);
 
 type Props = {
   examples: Array<{
@@ -42,10 +46,11 @@ type Props = {
     dos: Array<string>,
     donts: Array<string>,
   },
+  packageName: string,
 };
 
 const WebComponentPage = (props: Props) => {
-  const { examples, readme, sassdocId, usageTable } = props;
+  const { examples, packageName, readme, sassdocId, usageTable } = props;
   const mappedExamples = examples.map(example => {
     return {
       id: example.id,
@@ -85,6 +90,37 @@ const WebComponentPage = (props: Props) => {
       ),
     });
   }
+  additionalContent.push({
+    id: 'npm',
+    title: 'npm package',
+    content: (
+      <BpkLink
+        href={`https://www.npmjs.com/package/${packageName}`}
+        blank
+        className={getClassName('bpkdocs-web-component-page__link')}
+      >
+        View on npm&nbsp;
+        <img
+          src={`https://badge.fury.io/js/${packageName}.svg`}
+          alt={`View ${packageName} on npm`}
+          height={18}
+        />
+      </BpkLink>
+    ),
+  });
+  additionalContent.push({
+    id: 'code',
+    title: 'Source code',
+    content: (
+      <BpkLink
+        href={`https://github.com/Skyscanner/backpack/tree/master/packages/${packageName}`}
+        blank
+        className={getClassName('bpkdocs-web-component-page__link')}
+      >
+        View on GitHub
+      </BpkLink>
+    ),
+  });
 
   return (
     <ComponentPage

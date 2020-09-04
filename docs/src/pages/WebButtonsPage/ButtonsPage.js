@@ -351,6 +351,7 @@ const ButtonsPage = () => (
         "Don't override font properties or the size of the button using custom styles, as you will make the component inconsistent and inaccessible.",
       ],
     }}
+    packageName="bpk-component-button"
   />
 );
 

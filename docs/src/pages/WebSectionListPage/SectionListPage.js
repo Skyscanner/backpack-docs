@@ -55,7 +55,11 @@ const components = [
 ];
 
 const SectionListPage = () => (
-  <WebComponentPage readme={sectionListReadme} examples={components} />
+  <WebComponentPage
+    readme={sectionListReadme}
+    examples={components}
+    packageName="bpk-component-section-list"
+  />
 );
 
 export default SectionListPage;

@@ -222,7 +222,11 @@ const components = [
 ];
 
 const WebRatingPage = () => (
-  <WebComponentPage examples={components} readme={ratingReadme} />
+  <WebComponentPage
+    examples={components}
+    readme={ratingReadme}
+    packageName="bpk-component-rating"
+  />
 );
 
 export default WebRatingPage;

@@ -72,7 +72,11 @@ const components = [
 ];
 
 const StarRatingPage = () => (
-  <WebComponentPage examples={components} readme={starRatingReadme} />
+  <WebComponentPage
+    examples={components}
+    readme={starRatingReadme}
+    packageName="bpk-component-star-rating"
+  />
 );
 
 export default StarRatingPage;

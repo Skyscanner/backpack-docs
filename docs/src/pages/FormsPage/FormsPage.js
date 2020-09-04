@@ -121,7 +121,11 @@ const components = [
 ];
 
 const FormsSubPage = () => (
-  <WebComponentPage examples={components} sassdocId="forms" />
+  <WebComponentPage
+    examples={components}
+    sassdocId="forms"
+    packageName="bpk-component-form-validation"
+  />
 );
 
 const FormsPage = () => (

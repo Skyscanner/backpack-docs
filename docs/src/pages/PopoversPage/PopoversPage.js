@@ -166,6 +166,7 @@ const PopoversSubPage = () => (
         "Don't use when you want content to be accessed on hover.",
       ],
     }}
+    packageName="bpk-component-popover"
   />
 );
 

@@ -176,6 +176,7 @@ const TooltipsSubPage = () => (
         "Don't mix and match light and dark tooltips within the same product or interface.",
       ],
     }}
+    packageName="bpk-component-tooltip"
   />
 );
 

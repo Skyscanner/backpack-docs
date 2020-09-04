@@ -156,7 +156,11 @@ const components = [
 ];
 
 const NudgersPage = () => (
-  <WebComponentPage examples={components} readme={nudgersReadme} />
+  <WebComponentPage
+    examples={components}
+    readme={nudgersReadme}
+    packageName="bpk-component-nudger"
+  />
 );
 
 export default NudgersPage;

@@ -44,6 +44,7 @@ const IconsPage = () => (
     examples={components}
     readme={iconReadme}
     sassdocId="svgs-mixin-bpk-icon"
+    packageName="bpk-component-icon"
   />
 );
 

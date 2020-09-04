@@ -113,7 +113,11 @@ const components = [
 ];
 
 const HorizontalNavPage = () => (
-  <WebComponentPage examples={components} readme={readme} />
+  <WebComponentPage
+    examples={components}
+    readme={readme}
+    packageName="bpk-component-horizontal-nav"
+  />
 );
 
 export default HorizontalNavPage;

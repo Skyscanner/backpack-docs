@@ -54,7 +54,11 @@ const components = [
 ];
 
 const CodeSubPage = () => (
-  <WebComponentPage readme={codeReadme} examples={components} />
+  <WebComponentPage
+    readme={codeReadme}
+    examples={components}
+    packageName="bpk-component-code"
+  />
 );
 
 const CodePage = () => (

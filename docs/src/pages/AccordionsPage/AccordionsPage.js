@@ -252,7 +252,11 @@ const blurb = [
 ];
 
 const AccordionsSubPage = () => (
-  <WebComponentPage examples={components} readme={accordionsReadme} />
+  <WebComponentPage
+    examples={components}
+    readme={accordionsReadme}
+    packageName="bpk-component-accordion"
+  />
 );
 
 const AccordionsPage = () => (

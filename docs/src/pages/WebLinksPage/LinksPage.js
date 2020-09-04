@@ -60,7 +60,11 @@ const components = [
 ];
 
 const LinkPage = () => (
-  <WebComponentPage readme={linkReadme} examples={components} />
+  <WebComponentPage
+    readme={linkReadme}
+    examples={components}
+    packageName="bpk-component-link"
+  />
 );
 
 export default LinkPage;

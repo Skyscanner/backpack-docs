@@ -48,7 +48,11 @@ const components = [
 ];
 
 const BreadcrumbSubPage = () => (
-  <WebComponentPage examples={components} readme={breadcrumbReadme} />
+  <WebComponentPage
+    examples={components}
+    readme={breadcrumbReadme}
+    packageName="bpk-component-breadcrumb"
+  />
 );
 
 const BreadcrumbPage = () => (

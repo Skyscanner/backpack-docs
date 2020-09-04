@@ -46,6 +46,7 @@ const MobileScrollContainerSubPage = () => (
   <WebComponentPage
     examples={components}
     readme={mobileScrollContainerReadme}
+    packageName="bpk-component-mobile-scroll-container"
   />
 );
 

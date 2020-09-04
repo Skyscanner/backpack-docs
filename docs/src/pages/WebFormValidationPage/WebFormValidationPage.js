@@ -116,6 +116,7 @@ const WebFormValidationPage = () => (
         'Validate while the user types, as this can be confusing and bad for accessibility.',
       ],
     }}
+    packageName="bpk-component-form-validation"
   />
 );
 

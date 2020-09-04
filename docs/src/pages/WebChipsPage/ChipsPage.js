@@ -277,7 +277,11 @@ const components = [
 ];
 
 const ChipsPage = () => (
-  <WebComponentPage examples={components} readme={chipReadme} />
+  <WebComponentPage
+    examples={components}
+    readme={chipReadme}
+    packageName="bpk-component-chip"
+  />
 );
 
 export default ChipsPage;

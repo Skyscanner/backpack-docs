@@ -96,7 +96,11 @@ const blurb = [
 ];
 
 const TicketsSubPage = () => (
-  <WebComponentPage examples={components} readme={ticketReadme} />
+  <WebComponentPage
+    examples={components}
+    readme={ticketReadme}
+    packageName="bpk-component-ticket"
+  />
 );
 
 const TicketsPage = () => (

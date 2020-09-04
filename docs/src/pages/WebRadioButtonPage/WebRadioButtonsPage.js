@@ -53,6 +53,7 @@ const WebRadioButtonsPage = () => (
     sassdocId="forms-mixin-bpk-radio"
     examples={components}
     readme={readme}
+    packageName="bpk-component-radio"
   />
 );
 

@@ -350,7 +350,11 @@ const blurb = [
 ];
 
 const FieldsetSubPage = () => (
-  <WebComponentPage examples={components} readme={readme} />
+  <WebComponentPage
+    examples={components}
+    readme={readme}
+    packageName="bpk-component-fieldset"
+  />
 );
 
 const FieldsetPage = () => (

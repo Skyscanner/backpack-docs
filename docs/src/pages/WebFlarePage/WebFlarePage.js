@@ -47,7 +47,11 @@ const components = [
 ];
 
 const WebFlarePage = () => (
-  <WebComponentPage examples={components} readme={flareReadme} />
+  <WebComponentPage
+    examples={components}
+    readme={flareReadme}
+    packageName="bpk-component-flare"
+  />
 );
 
 export default WebFlarePage;

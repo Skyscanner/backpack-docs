@@ -69,6 +69,7 @@ const SpinnersPage = () => (
     examples={components}
     readme={spinnerReadme}
     sassdocId="svgs-mixin-bpk-spinner"
+    packageName="bpk-component-spinner"
   />
 );
 

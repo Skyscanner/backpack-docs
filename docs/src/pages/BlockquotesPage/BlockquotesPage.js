@@ -46,7 +46,11 @@ const blurb = [
 ];
 
 const BlockquotesSubpagePage = () => (
-  <WebComponentPage examples={components} readme={blockquotesReadme} />
+  <WebComponentPage
+    examples={components}
+    readme={blockquotesReadme}
+    packageName="bpk-component-blockquote"
+  />
 );
 
 const BlockquotesPage = () => (

@@ -98,6 +98,7 @@ const BreakpointsSubPage = () => (
     examples={components}
     readme={breakpointReadme}
     sassdocId="breakpoints"
+    packageName="bpk-component-breakpoint"
   />
 );
 

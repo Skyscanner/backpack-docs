@@ -281,6 +281,7 @@ const AutosuggestSubPage = () => (
     examples={components}
     readme={autosuggestReadme}
     sassdocId="autosuggest"
+    packageName="bpk-component-autosuggest"
   />
 );
 
