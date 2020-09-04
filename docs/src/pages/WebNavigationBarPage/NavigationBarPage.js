@@ -149,7 +149,11 @@ const components = [
 ];
 
 const NavigationBarPage = () => (
-  <WebComponentPage examples={components} readme={navigationBarReadme} />
+  <WebComponentPage
+    examples={components}
+    readme={navigationBarReadme}
+    packageName="bpk-component-navigation-bar"
+  />
 );
 
 export default NavigationBarPage;

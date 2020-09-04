@@ -195,6 +195,7 @@ const WebCalendarPage = () => (
     examples={components}
     readme={calendarReadme}
     sassdocId="calendar"
+    packageName="bpk-component-calendar"
   />
 );
 

@@ -121,7 +121,11 @@ const blurb = [
 ];
 
 const DrawerSubPage = () => (
-  <WebComponentPage examples={components} readme={drawerReadme} />
+  <WebComponentPage
+    examples={components}
+    readme={drawerReadme}
+    packageName="bpk-component-drawer"
+  />
 );
 
 const DrawerPage = () => (

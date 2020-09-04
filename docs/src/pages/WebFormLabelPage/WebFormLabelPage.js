@@ -103,6 +103,7 @@ const WebFormLabelPage = () => (
       ],
       donts: ['Rely on placeholders alone.'],
     }}
+    packageName="bpk-component-label"
   />
 );
 

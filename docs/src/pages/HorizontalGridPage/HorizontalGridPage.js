@@ -91,6 +91,7 @@ const HorizontalGridSubPage = () => (
     examples={components}
     readme={gridReadme}
     sassdocId="grids"
+    packageName="bpk-component-grid"
   />
 );
 

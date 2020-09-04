@@ -279,7 +279,9 @@ const blurb = [
   </Paragraph>,
 ];
 
-const AlignmentSubPage = () => <WebComponentPage examples={components} />;
+const AlignmentSubPage = () => (
+  <WebComponentPage examples={components} packageName="bpk-component-icon" />
+);
 
 const AlignmentPage = () => (
   <DocsPageWrapper

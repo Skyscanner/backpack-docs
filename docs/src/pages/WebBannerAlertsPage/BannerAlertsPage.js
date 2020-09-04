@@ -481,6 +481,7 @@ const BannerAlertsPage = () => (
     examples={components}
     sassdocId="notifications"
     readme={bannerAlertReadme}
+    packageName="bpk-component-banner-alert"
   />
 );
 

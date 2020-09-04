@@ -54,7 +54,11 @@ const components = [
 ];
 
 const TextPage = () => (
-  <WebComponentPage readme={textReadme} examples={components} />
+  <WebComponentPage
+    readme={textReadme}
+    examples={components}
+    packageName="bpk-component-text"
+  />
 );
 
 export default TextPage;

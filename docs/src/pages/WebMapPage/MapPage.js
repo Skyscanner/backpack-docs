@@ -258,7 +258,11 @@ const components = [
 ];
 
 const WebSubpage = () => (
-  <WebComponentPage examples={components} readme={mapReadme} />
+  <WebComponentPage
+    examples={components}
+    readme={mapReadme}
+    packageName="bpk-component-map"
+  />
 );
 
 export default WebSubpage;

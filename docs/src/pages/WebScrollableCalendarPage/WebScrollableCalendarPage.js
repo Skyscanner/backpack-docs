@@ -128,7 +128,11 @@ const components = [
 ];
 
 const WebScrollableCalendarPage = () => (
-  <WebComponentPage examples={components} readme={scrollableCalendarReadme} />
+  <WebComponentPage
+    examples={components}
+    readme={scrollableCalendarReadme}
+    packageName="bpk-component-scrollable-calendar"
+  />
 );
 
 export default WebScrollableCalendarPage;

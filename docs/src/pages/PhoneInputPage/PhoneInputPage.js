@@ -118,7 +118,11 @@ const components = [
 ];
 
 const WebSubPage = () => (
-  <WebComponentPage examples={components} readme={readme} />
+  <WebComponentPage
+    examples={components}
+    readme={readme}
+    packageName="bpk-component-phone-input"
+  />
 );
 
 const BadgePage = () => (

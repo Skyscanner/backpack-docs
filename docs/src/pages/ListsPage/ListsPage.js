@@ -59,7 +59,11 @@ const components = [
 ];
 
 const ListSubPage = () => (
-  <WebComponentPage readme={listReadme} examples={components} />
+  <WebComponentPage
+    readme={listReadme}
+    examples={components}
+    packageName="bpk-component-list"
+  />
 );
 
 const ListPage = () => (

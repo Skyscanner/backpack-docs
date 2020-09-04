@@ -104,7 +104,11 @@ const webComponents = [
 ];
 
 const WebThemingPage = () => (
-  <WebComponentPage examples={webComponents} readme={webReadme} />
+  <WebComponentPage
+    examples={webComponents}
+    readme={webReadme}
+    packageName="bpk-theming"
+  />
 );
 
 const NativeThemingPage = () => (

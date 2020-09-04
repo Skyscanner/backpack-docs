@@ -562,6 +562,7 @@ const WebTextInputPage = () => (
     sassdocId="forms-mixin-bpk-input"
     examples={components}
     readme={readme + textareaReadme}
+    packageName="bpk-component-input"
   />
 );
 

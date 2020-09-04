@@ -216,7 +216,11 @@ const components = [
 ];
 
 const WebImagesPage = () => (
-  <WebComponentPage examples={components} readme={imagesReadme} />
+  <WebComponentPage
+    examples={components}
+    readme={imagesReadme}
+    packageName="bpk-component-image"
+  />
 );
 
 export default WebImagesPage;

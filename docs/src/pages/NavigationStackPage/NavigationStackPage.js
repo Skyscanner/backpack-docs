@@ -74,7 +74,11 @@ const blurb = [
 ];
 
 const NavigationStackSubPage = () => (
-  <WebComponentPage examples={components} readme={navigationStackReadme} />
+  <WebComponentPage
+    examples={components}
+    readme={navigationStackReadme}
+    packageName="bpk-component-navigation-stack"
+  />
 );
 
 const NavigationStackPage = () => (

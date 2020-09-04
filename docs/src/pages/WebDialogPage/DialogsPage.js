@@ -78,6 +78,7 @@ const DialogsPage = () => (
       ],
     }}
     sassdocId="dialogs"
+    packageName="bpk-component-dialog"
   />
 );
 

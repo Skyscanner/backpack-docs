@@ -96,7 +96,11 @@ const blurb = [
 ];
 
 const DatepickerSubPage = () => (
-  <WebComponentPage examples={components} readme={datepickerReadme} />
+  <WebComponentPage
+    examples={components}
+    readme={datepickerReadme}
+    packageName="bpk-component-datepicker"
+  />
 );
 
 const DatepickerPage = () => (

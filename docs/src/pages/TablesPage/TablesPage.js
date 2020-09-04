@@ -125,6 +125,7 @@ const TablesSubPage = () => (
   <WebComponentPage
     examples={components}
     readme={tablesReadme + dataTablesReadme}
+    packageName="bpk-component-table"
   />
 );
 

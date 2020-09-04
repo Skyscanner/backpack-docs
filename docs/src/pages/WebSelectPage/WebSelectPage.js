@@ -179,6 +179,7 @@ const WebSelectPage = () => (
     sassdocId="forms-mixin-bpk-select"
     examples={components}
     readme={readme}
+    packageName="bpk-component-select"
   />
 );
 

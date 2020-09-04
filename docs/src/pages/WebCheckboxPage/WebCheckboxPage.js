@@ -174,6 +174,7 @@ const WebCheckboxPage = () => (
     sassdocId="forms-mixin-bpk-checkbox"
     examples={components}
     readme={readme}
+    packageName="bpk-component-checkbox"
   />
 );
 

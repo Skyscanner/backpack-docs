@@ -85,7 +85,11 @@ const blurb = [
 ];
 
 const SlidersSubPage = () => (
-  <WebComponentPage examples={components} readme={sliderReadme} />
+  <WebComponentPage
+    examples={components}
+    readme={sliderReadme}
+    packageName="bpk-component-slider"
+  />
 );
 
 const SlidersPage = () => (

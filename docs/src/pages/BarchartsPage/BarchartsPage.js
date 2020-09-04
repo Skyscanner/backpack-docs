@@ -142,7 +142,11 @@ const blurb = [
 ];
 
 const BarchartsSubPage = () => (
-  <WebComponentPage examples={components} readme={barchartReadme} />
+  <WebComponentPage
+    examples={components}
+    readme={barchartReadme}
+    packageName="bpk-component-barchart"
+  />
 );
 
 const BarchartsPage = () => (

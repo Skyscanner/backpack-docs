@@ -109,7 +109,11 @@ const blurb = [
 ];
 
 const PaginationSubPage = () => (
-  <WebComponentPage examples={components} readme={paginationReadme} />
+  <WebComponentPage
+    examples={components}
+    readme={paginationReadme}
+    packageName="bpk-component-pagination"
+  />
 );
 
 const PaginationPage = () => (

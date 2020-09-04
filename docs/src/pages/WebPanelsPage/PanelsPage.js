@@ -74,6 +74,7 @@ const PanelsPage = () => (
     examples={components}
     readme={panelReadme}
     sassdocId="panels"
+    packageName="bpk-component-panel"
   />
 );
 

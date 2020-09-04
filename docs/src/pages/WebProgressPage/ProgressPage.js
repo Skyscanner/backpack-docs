@@ -75,6 +75,7 @@ const ProgressPage = () => (
         "Don't use in other contexts. This component is described to screen readers as a progress bar, so using it in other contexts harms accessibility.",
       ],
     }}
+    packageName="bpk-component-progress"
   />
 );
 

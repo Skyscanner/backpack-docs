@@ -61,6 +61,7 @@ const CardsPage = () => (
     examples={components}
     readme={cardReadme}
     sassdocId="cards"
+    packageName="bpk-component-card"
   />
 );
 

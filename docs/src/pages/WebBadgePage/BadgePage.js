@@ -223,6 +223,7 @@ const BadgePage = () => (
     examples={components}
     readme={badgeReadme}
     sassdocId="badges"
+    packageName="bpk-component-badge"
   />
 );
 

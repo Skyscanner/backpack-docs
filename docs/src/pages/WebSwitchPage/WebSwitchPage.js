@@ -74,6 +74,7 @@ const WebSwitchPage = () => (
         "Don't use for actions that have no immediate effect, like in a form. In that situation, use a checkbox.",
       ],
     }}
+    packageName="bpk-component-switch"
   />
 );
 

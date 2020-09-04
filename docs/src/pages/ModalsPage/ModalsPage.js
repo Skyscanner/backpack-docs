@@ -207,6 +207,7 @@ const ModalsSubPage = () => (
       ],
     }}
     sassdocId="modals"
+    packageName="bpk-component-modal"
   />
 );
 

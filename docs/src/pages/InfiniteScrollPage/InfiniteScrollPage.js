@@ -189,7 +189,11 @@ const blurb = [
 ];
 
 const InfiniteScrollSubpage = () => (
-  <WebComponentPage examples={components} readme={infiniteScrollReadme} />
+  <WebComponentPage
+    examples={components}
+    readme={infiniteScrollReadme}
+    packageName="bpk-component-infinite-scroll"
+  />
 );
 
 const InfiniteScrollPage = () => (
