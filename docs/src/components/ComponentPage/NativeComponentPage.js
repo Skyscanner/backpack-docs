@@ -26,7 +26,7 @@ import ComponentScreenshots from '../DocsPageBuilder/ComponentScreenshots';
 import BpkMarkdownRenderer from '../DocsPageBuilder/BpkMarkdownRenderer';
 import getMarkdownString from '../../helpers/markdown-helper';
 
-import STYLES from './WebComponentPage.scss';
+import STYLES from './ComponentPage.scss';
 import ComponentPage from './ComponentPage';
 
 const getClassName = cssModules(STYLES);
