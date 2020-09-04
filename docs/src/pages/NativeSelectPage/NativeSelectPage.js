@@ -56,7 +56,11 @@ const components = [
 ];
 
 const NativeSelectPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-select"
+  />
 );
 
 export default NativeSelectPage;

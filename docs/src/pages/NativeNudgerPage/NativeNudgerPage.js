@@ -51,7 +51,11 @@ const components = [
 ];
 
 const NativeNudgerPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-nudger"
+  />
 );
 
 export default NativeNudgerPage;

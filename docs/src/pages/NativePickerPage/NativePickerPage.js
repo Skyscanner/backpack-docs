@@ -67,6 +67,7 @@ const NativePickerSubPage = () => (
         'Use for lots of options where the user may need to scroll a lot, for example a list of countries. In this situation, consider using a FlatList.',
       ],
     }}
+    githubPath="bpk-component-picker"
   />
 );
 

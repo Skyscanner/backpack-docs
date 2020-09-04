@@ -101,7 +101,11 @@ const components = [
 ];
 
 const NativeHorizontalNavPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-horizontal-nav"
+  />
 );
 
 export default NativeHorizontalNavPage;

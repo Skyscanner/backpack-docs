@@ -75,7 +75,11 @@ const components = [
 ];
 
 const NativeImagesPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-image"
+  />
 );
 
 export default NativeImagesPage;

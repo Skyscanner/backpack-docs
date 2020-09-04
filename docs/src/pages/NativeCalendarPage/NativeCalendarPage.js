@@ -121,7 +121,11 @@ const components = [
 ];
 
 const NativeCalendarPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-calendar"
+  />
 );
 
 export default NativeCalendarPage;

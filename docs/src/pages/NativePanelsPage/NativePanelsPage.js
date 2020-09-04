@@ -129,7 +129,11 @@ const components = [
 ];
 
 const NativePanelsPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-panel"
+  />
 );
 
 export default NativePanelsPage;

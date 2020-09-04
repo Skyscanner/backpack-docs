@@ -78,7 +78,11 @@ const components = [
 ];
 
 const NativeProgressPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-progress"
+  />
 );
 
 export default NativeProgressPage;

@@ -59,7 +59,11 @@ const components = [
 ];
 
 const CarouselPageNativeSubPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-carousel"
+  />
 );
 
 const NativeCarouselPage = () => (

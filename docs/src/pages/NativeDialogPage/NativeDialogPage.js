@@ -97,7 +97,11 @@ const components = [
 ];
 
 const NativeDialogPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-dialog"
+  />
 );
 
 export default NativeDialogPage;

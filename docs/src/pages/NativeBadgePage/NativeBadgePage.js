@@ -171,7 +171,11 @@ const components = [
 ];
 
 const NativeBadgePage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-badge"
+  />
 );
 
 export default NativeBadgePage;

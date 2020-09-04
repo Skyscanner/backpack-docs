@@ -45,7 +45,11 @@ const components = [
 ];
 
 const NativeSwitchPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-switch"
+  />
 );
 
 export default NativeSwitchPage;

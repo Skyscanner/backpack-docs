@@ -117,7 +117,11 @@ const components = [
 ];
 
 const AlertSubPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-alert"
+  />
 );
 
 const AlertPage = () => (

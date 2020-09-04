@@ -99,7 +99,11 @@ const components = [
 ];
 
 const NativeSectionListSubPage = () => (
-  <NativeComponentPage screenshots={components} readme={readme} />
+  <NativeComponentPage
+    screenshots={components}
+    readme={readme}
+    githubPath="bpk-component-section-list"
+  />
 );
 
 export default NativeSectionListSubPage;
