@@ -173,7 +173,7 @@ const config = {
         ],
       },
       {
-        test: /favicon\.ico$/,
+        test: /favicon\.ico|social-preview\.png|apple-touch-icon\.png$/,
         use: [
           {
             loader: 'file-loader',
