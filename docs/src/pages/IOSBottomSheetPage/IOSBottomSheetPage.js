@@ -51,6 +51,7 @@ const IOSBottomSheetPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="BPKBottomSheet"
+    githubPath="BottomSheet"
   />
 );
 

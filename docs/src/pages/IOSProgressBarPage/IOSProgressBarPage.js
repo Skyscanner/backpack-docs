@@ -51,6 +51,7 @@ const IOSProgressBarPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="BPKProgressBar"
+    githubPath="ProgressBar"
   />
 );
 

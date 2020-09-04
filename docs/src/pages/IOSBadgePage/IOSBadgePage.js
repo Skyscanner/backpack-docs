@@ -53,6 +53,7 @@ const IOSBadgePage = () => (
     documentationId="BPKBadge"
     screenshots={components}
     readme={readme}
+    githubPath="Badge"
   />
 );
 

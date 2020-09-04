@@ -117,6 +117,7 @@ const IOSChipPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="BPKFlare"
+    githubPath="FlareView"
   />
 );
 

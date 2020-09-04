@@ -73,6 +73,7 @@ const IOSTappableLinkLabelPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="BPKTappableLinkLabel"
+    githubPath="TappableLinkLabel"
   />
 );
 

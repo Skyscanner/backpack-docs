@@ -95,6 +95,7 @@ const IOSSnackbarPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="BPKSnackbar"
+    githubPath="Snackbar"
   />
 );
 

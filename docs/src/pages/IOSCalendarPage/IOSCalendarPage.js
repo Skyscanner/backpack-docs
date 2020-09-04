@@ -139,6 +139,7 @@ const IOSCalendarPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="BPKCalendar"
+    githubPath="Calendar"
   />
 );
 

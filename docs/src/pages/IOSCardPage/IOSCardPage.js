@@ -205,6 +205,7 @@ const IOSCardPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="BPKCard"
+    githubPath="Card"
   />
 );
 

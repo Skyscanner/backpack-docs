@@ -51,6 +51,7 @@ const IOSToastPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="BPKToast"
+    githubPath="Toast"
   />
 );
 

@@ -51,6 +51,7 @@ const IOSStarRatingPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="BPKStarRating"
+    githubPath="StarRating"
   />
 );
 

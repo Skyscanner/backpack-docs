@@ -51,6 +51,7 @@ const IOSSwitchPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="BPKSwitch"
+    githubPath="Switch"
   />
 );
 

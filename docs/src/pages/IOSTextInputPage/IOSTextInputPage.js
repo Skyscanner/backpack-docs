@@ -80,7 +80,8 @@ const IOSTextInputPage = () => (
   <IOSComponentPage
     screenshots={components}
     readme={readme + textViewReadme}
-    documentationId="BPKTextInput"
+    documentationId="BPKTextField"
+    githubPath="TextField"
   />
 );
 

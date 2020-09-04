@@ -139,6 +139,7 @@ const IOSChipPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="BPKChip"
+    githubPath="Chip"
   />
 );
 

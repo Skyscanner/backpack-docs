@@ -95,6 +95,7 @@ const IOSNavigationBarPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="BPKNavigationBar"
+    githubPath="NavigationBar"
   />
 );
 

@@ -95,6 +95,7 @@ const IOSPanelPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="BPKPanel"
+    githubPath="Panel"
   />
 );
 

@@ -161,6 +161,7 @@ const IOSButtonPage = () => (
     screenshots={components}
     readme={readme}
     documentationId="BPKButton"
+    githubPath="Button"
   />
 );
 
