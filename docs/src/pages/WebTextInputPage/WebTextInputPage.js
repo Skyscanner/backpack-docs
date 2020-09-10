@@ -51,8 +51,6 @@ const containerClassName = [
   .map(getClassName)
   .join(' ');
 
-const loremIpsum = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.';
-
 const loremIpsumLong = `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate repellat assumenda
 necessitatibus reiciendis, porro temporibus expedita excepturi! Nostrum pariatur odit porro, dolorem dignissimos
 laudantium quis, tempore iste non, nam magnam.`;
@@ -69,18 +67,19 @@ const components = [
           id="input"
           name="input"
           value="Edinburgh"
-          placeholder="Country, city or airport"
           onChange={() => null}
         />
       </form>,
       <form className={formClassName}>
-        <BpkLabel htmlFor="input_placeholder">Input (placeholder)</BpkLabel>
+        <BpkLabel htmlFor="input_placeholder">
+          Search (with placeholder)
+        </BpkLabel>
         <InputContainer
           FormComponent={BpkInput}
           id="input_placeholder"
           name="input_placeholder"
           value=""
-          placeholder="Country, city or airport"
+          placeholder="Search"
           onChange={() => null}
         />
       </form>,
@@ -99,21 +98,20 @@ const components = [
           id="input_disabled"
           name="input_disabled"
           value="Edinburgh"
-          placeholder="Country, city or airport"
           onChange={() => null}
           disabled
         />
       </form>,
       <form className={formClassName}>
         <BpkLabel disabled htmlFor="input_placeholder_disabled">
-          Input (placeholder)
+          Search (with placeholder)
         </BpkLabel>
         <InputContainer
           FormComponent={BpkInput}
           id="input_placeholder_disabled"
           name="input_placeholder_disabled"
           value=""
-          placeholder="Country, city or airport"
+          placeholder="Search"
           onChange={() => null}
           disabled
         />
@@ -131,7 +129,6 @@ const components = [
           id="input_valid"
           name="input_valid"
           value="Edinburgh"
-          placeholder="Country, city or airport"
           onChange={() => null}
           valid
         />
@@ -145,7 +142,6 @@ const components = [
           id="input_invalid"
           name="input_invalid"
           value="Edinbrvgh"
-          placeholder="Country, city or airport"
           onChange={() => null}
           valid={false}
         />
@@ -163,7 +159,6 @@ const components = [
           id="input_clearable"
           name="input_clearable"
           value="Edinburgh"
-          placeholder="Country, city or airport"
           onChange={() => null}
           clearButtonMode="whileEditing"
           onClear={() => null}
@@ -177,7 +172,6 @@ const components = [
           id="input_clearable_always"
           name="input_clearable_always"
           value="Edinburgh"
-          placeholder="Country, city or airport"
           onChange={() => null}
           clearButtonMode="always"
           onClear={() => null}
@@ -191,50 +185,46 @@ const components = [
     title: 'Input types',
     examples: [
       <form className={formClassName}>
-        <BpkLabel htmlFor="input_email">Email input</BpkLabel>
+        <BpkLabel htmlFor="input_email">Email</BpkLabel>
         <InputContainer
           FormComponent={BpkInput}
           type={INPUT_TYPES.email}
           id="input_email"
           name="input_email"
           value="example@example.com"
-          placeholder="Email address"
           onChange={() => null}
         />
       </form>,
       <form className={formClassName}>
-        <BpkLabel htmlFor="input_number">Number input</BpkLabel>
+        <BpkLabel htmlFor="input_number">Number of passengers</BpkLabel>
         <InputContainer
           FormComponent={BpkInput}
           type={INPUT_TYPES.number}
           id="input_number"
           name="input_number"
           value="0"
-          placeholder="Number of passengers"
           onChange={() => null}
         />
       </form>,
       <form className={formClassName}>
-        <BpkLabel htmlFor="input_password">Password input</BpkLabel>
+        <BpkLabel htmlFor="input_password">Password</BpkLabel>
         <InputContainer
           FormComponent={BpkInput}
           type={INPUT_TYPES.password}
           id="input_password"
           name="input_password"
           value="letmein"
-          placeholder="Password"
           onChange={() => null}
         />
       </form>,
       <form className={formClassName}>
-        <BpkLabel htmlFor="input_telephone">Telephone input</BpkLabel>
+        <BpkLabel htmlFor="input_telephone">Telephone</BpkLabel>
         <InputContainer
           FormComponent={BpkInput}
           type={INPUT_TYPES.tel}
           id="input_telephone"
           name="input_telephone"
           value="+441234567890"
-          placeholder="Phone number"
           onChange={() => null}
         />
       </form>,
@@ -259,10 +249,10 @@ const components = [
             To
           </BpkLabel>
           <BpkLabel htmlFor="input_outbound" className={dateClassName}>
-            Depart
+            Departure date
           </BpkLabel>
           <BpkLabel htmlFor="input_inbound" className={dateClassName}>
-            Return
+            Return date
           </BpkLabel>
         </div>
         <div>
@@ -271,7 +261,6 @@ const components = [
             id="input_origin"
             name="input_origin"
             value="Edinburgh"
-            placeholder="Country, city or airport"
             onChange={() => null}
             className={placeClassName}
             dockedFirst
@@ -282,7 +271,6 @@ const components = [
             id="input_destination"
             name="input_destination"
             value=""
-            placeholder="Country, city or airport"
             onChange={() => null}
             className={placeClassName}
             dockedMiddle
@@ -293,7 +281,6 @@ const components = [
             id="input_outbound"
             name="input_outbound"
             value={new Date().toLocaleDateString()}
-            placeholder="Depature date"
             onChange={() => null}
             className={dateClassName}
             dockedMiddle
@@ -306,7 +293,6 @@ const components = [
             value={new Date(
               new Date().getTime() + 24 * 60 * 60 * 1000,
             ).toLocaleDateString()}
-            placeholder="Return date"
             onChange={() => null}
             className={dateClassName}
             dockedLast
@@ -320,7 +306,7 @@ const components = [
             htmlFor="input_hotels_destination"
             className={destinationClassName}
           >
-            Find hotel deals
+            Destination or hotel name
           </BpkLabel>
           <BpkLabel htmlFor="input_checkin" className={dateClassName}>
             Check-in
@@ -341,7 +327,6 @@ const components = [
             id="input_hotels_destination"
             name="input_hotels_destination"
             value=""
-            placeholder="Destination or hotel name"
             onChange={() => null}
             className={destinationClassName}
             dockedFirst
@@ -352,7 +337,6 @@ const components = [
             id="input_checkin"
             name="input_checkin"
             value={new Date().toLocaleDateString()}
-            placeholder=""
             onChange={() => null}
             className={dateClassName}
             dockedMiddle
@@ -365,7 +349,6 @@ const components = [
             value={new Date(
               new Date().getTime() + 24 * 60 * 60 * 1000,
             ).toLocaleDateString()}
-            placeholder=""
             onChange={() => null}
             className={dateClassName}
             dockedMiddle
@@ -427,7 +410,6 @@ const components = [
             id="input_pickup_location"
             name="input_pickup_location"
             value=""
-            placeholder="City or airport"
             onChange={() => null}
             className={pickupClassName}
             dockedFirst
@@ -438,7 +420,6 @@ const components = [
             id="input_pickup_date"
             name="input_pickup_date"
             value={new Date().toLocaleDateString()}
-            placeholder=""
             onChange={() => null}
             className={dateClassName}
             dockedMiddle
@@ -449,7 +430,6 @@ const components = [
             id="input_pickup_time"
             name="input_pickup_time"
             value="10:00"
-            placeholder=""
             onChange={() => null}
             className={timeClassName}
             dockedMiddle
@@ -467,7 +447,6 @@ const components = [
             value={new Date(
               new Date().getTime() + 24 * 60 * 60 * 1000,
             ).toLocaleDateString()}
-            placeholder=""
             onChange={() => null}
             className={dateClassName}
             dockedMiddle
@@ -508,20 +487,6 @@ const components = [
           id="textarea"
           name="textarea"
           value={loremIpsumLong}
-          placeholder={loremIpsumLong}
-          onChange={() => null}
-        />
-      </form>,
-      <form className={formClassName}>
-        <BpkLabel htmlFor="textarea_placeholder">
-          Textarea (placeholder)
-        </BpkLabel>
-        <InputContainer
-          FormComponent={BpkTextarea}
-          id="textarea_placeholder"
-          name="textarea_placeholder"
-          value=""
-          placeholder={loremIpsum}
           onChange={() => null}
         />
       </form>,
@@ -534,7 +499,6 @@ const components = [
           id="textarea_disabled"
           name="textarea_disabled"
           value=""
-          placeholder={loremIpsum}
           onChange={() => null}
           disabled
         />
@@ -548,7 +512,6 @@ const components = [
           id="textarea_invalid"
           name="textarea_invalid"
           value="@ 123 {\ hi"
-          placeholder="@ 123 {\ hi"
           onChange={() => null}
           valid={false}
         />
@@ -557,8 +520,21 @@ const components = [
   },
 ];
 
+const inputsUsageTable = {
+  dos: [
+    'Ensure every input has an associated label (for standalone search fields, it’s ok for this to be visually hidden).',
+    'Provide hint text (persistent, outside the field) if the traveller requires additional information in order to enter data correctly. For example, “DD/MM/YYYY”.',
+  ],
+  donts: [
+    'Use a placeholder instead of a label.',
+    'Use a placeholder instead of a hint.',
+    'Use a placeholder unless the field is a properly labelled search field.',
+  ],
+};
+
 const WebTextInputPage = () => (
   <WebComponentPage
+    usageTable={inputsUsageTable}
     sassdocId="forms-mixin-bpk-input"
     examples={components}
     readme={readme + textareaReadme}
