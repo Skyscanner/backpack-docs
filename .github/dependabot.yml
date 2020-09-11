@@ -9,3 +9,5 @@ updates:
   labels:
   - dependabot
   versioning-strategy: increase-if-necessary
+  ignore:
+    - dependency-name: "bpk-*"
