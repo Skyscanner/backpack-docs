@@ -23,6 +23,7 @@ import BpkCheckbox from 'bpk-component-checkbox';
 import { withAlignment } from 'bpk-component-icon';
 import StopsIcon from 'bpk-component-icon/sm/stops';
 import AirlinesIcon from 'bpk-component-icon/sm/airline--multiple';
+import AirportsIcon from 'bpk-component-icon/sm/airports';
 import accordionsReadme from 'bpk-component-accordion/README.md';
 import {
   BpkAccordion,
@@ -48,6 +49,11 @@ const StatefulAccordionItem = withAccordionItemState(BpkAccordionItem);
 const AlignedStopsIcon = withAlignment(StopsIcon, lineHeightBase, iconSizeSm);
 const AlignedAirlinesIcon = withAlignment(
   AirlinesIcon,
+  lineHeightBase,
+  iconSizeSm,
+);
+const AlignedAirportsIcon = withAlignment(
+  AirportsIcon,
   lineHeightBase,
   iconSizeSm,
 );
@@ -237,7 +243,11 @@ const components = [
         >
           <AirlinesContent />
         </BpkAccordionItem>
-        <BpkAccordionItem id="airports" title="Airports">
+        <BpkAccordionItem
+          id="airports"
+          title="Airports"
+          icon={<AlignedAirportsIcon />}
+        >
           <AirportsContent />
         </BpkAccordionItem>
       </SingleItemAccordion>,
