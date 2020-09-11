@@ -21,14 +21,13 @@
 import React, { Component, Fragment } from 'react';
 import BpkMap, {
   withGoogleMapsScript,
-  BpkMapMarker,
+  BpkIconMarker,
   BpkPriceMarker,
-  MARKER_TYPES,
   PRICE_MARKER_STATUSES,
   type BpkMapLatLong,
 } from 'bpk-component-map';
 import { cssModules } from 'bpk-react-utils';
-import LandmarkIconLg from 'bpk-component-icon/lg/landmark';
+import LandmarkIconSm from 'bpk-component-icon/sm/landmark';
 import BusIconSm from 'bpk-component-icon/sm/bus';
 import FoodIconSm from 'bpk-component-icon/sm/food';
 import LeisureIconSm from 'bpk-component-icon/sm/leisure';
@@ -39,7 +38,7 @@ import { WebComponentPage } from '../../components/ComponentPage';
 
 import STYLES from './MapPage.scss';
 
-const AlignedLandmarkIconLg = withRtlSupport(LandmarkIconLg);
+const AlignedLandmarkIconSm = withRtlSupport(LandmarkIconSm);
 const AlignedBusIconSm = withRtlSupport(BusIconSm);
 const AlignedFoodIconSm = withRtlSupport(FoodIconSm);
 const AlignedLeisureIconLg = withRtlSupport(LeisureIconSm);
@@ -69,7 +68,7 @@ class StatefulBpkMapMarkers extends Component<{}, { selected: number }> {
   render() {
     return (
       <Fragment>
-        <BpkMapMarker
+        <BpkIconMarker
           selected={this.state.selected === 0}
           icon={<AlignedBusIconSm />}
           position={{
@@ -80,10 +79,9 @@ class StatefulBpkMapMarkers extends Component<{}, { selected: number }> {
             this.selectMarker(0);
           }}
         />
-        <BpkMapMarker
+        <BpkIconMarker
           selected={this.state.selected === 1}
-          large
-          icon={<AlignedLandmarkIconLg />}
+          icon={<AlignedLandmarkIconSm />}
           position={{
             latitude: 35.6625,
             longitude: 139.705051,
@@ -92,9 +90,8 @@ class StatefulBpkMapMarkers extends Component<{}, { selected: number }> {
             this.selectMarker(1);
           }}
         />
-        <BpkMapMarker
+        <BpkIconMarker
           selected={this.state.selected === 2}
-          type={MARKER_TYPES.secondary}
           icon={<AlignedFoodIconSm />}
           position={{
             latitude: 35.6615,
@@ -104,9 +101,9 @@ class StatefulBpkMapMarkers extends Component<{}, { selected: number }> {
             this.selectMarker(2);
           }}
         />
-        <BpkMapMarker
+        <BpkIconMarker
           selected={this.state.selected === 3}
-          type={MARKER_TYPES.plain}
+          disabled
           icon={<AlignedLeisureIconLg />}
           position={{
             latitude: 35.6605,
@@ -230,10 +227,9 @@ const components = [
     ],
   },
   {
-    id: 'map-markers',
-    title: 'Map markers',
-    blurb:
-      'Add custom markers to the map. You can customise the icon and the type to change the colour.',
+    id: 'icon-markers',
+    title: 'Icon markers',
+    blurb: 'Add custom markers to the map to represent points of interest.',
     examples: [
       <div className={getClassName('bpkdocs-map-page__map')}>
         <BpkMapWithScript googleMapURL={MAP_URL} zoom={17} center={COORDINATES}>
