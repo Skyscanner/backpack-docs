@@ -30,6 +30,7 @@ import {
   BpkAccordionItem,
   withSingleItemAccordionState,
   withAccordionItemState,
+  WEIGHT_STYLES,
 } from 'bpk-component-accordion';
 import {
   colorPanjin,
@@ -247,6 +248,40 @@ const components = [
           id="airports"
           title="Airports"
           icon={<AlignedAirportsIcon />}
+        >
+          <AirportsContent />
+        </BpkAccordionItem>
+      </SingleItemAccordion>,
+    ],
+  },
+  {
+    id: 'with-bold-headings',
+    title: 'With bold headings',
+    blurb: [<Paragraph>Accordions can support `bold` titles.</Paragraph>],
+    examples: [
+      <SingleItemAccordion>
+        <BpkAccordionItem
+          id="stops"
+          title="Stops"
+          icon={<AlignedStopsIcon fill={colorPanjin} />}
+          initiallyExpanded
+          weight={WEIGHT_STYLES.bold}
+        >
+          <StopsContent />
+        </BpkAccordionItem>
+        <BpkAccordionItem
+          id="airlines"
+          title="Airlines"
+          icon={<AlignedAirlinesIcon />}
+          weight={WEIGHT_STYLES.bold}
+        >
+          <AirlinesContent />
+        </BpkAccordionItem>
+        <BpkAccordionItem
+          id="airports"
+          title="Airports"
+          icon={<AlignedAirportsIcon />}
+          weight={WEIGHT_STYLES.bold}
         >
           <AirportsContent />
         </BpkAccordionItem>
