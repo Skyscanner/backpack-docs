@@ -20,6 +20,7 @@ import _ from 'lodash';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'bpk-react-utils';
+import { BpkDescriptionList } from 'bpk-component-description-list';
 
 import Heading from '../Heading';
 
@@ -47,7 +48,9 @@ const IconSearchResults = props => {
         {heading}
       </Heading>
       {icons.length > 0 && (
-        <dl className={getClassName('bpkdocs-icon-search-results__list')}>
+        <BpkDescriptionList
+          className={getClassName('bpkdocs-icon-search-results__list')}
+        >
           <IconSearchResult
             key="Large"
             categoryName="Large"
@@ -60,7 +63,7 @@ const IconSearchResults = props => {
             icons={categories.Small}
             searchQuery={searchQuery}
           />
-        </dl>
+        </BpkDescriptionList>
       )}
     </div>
   );

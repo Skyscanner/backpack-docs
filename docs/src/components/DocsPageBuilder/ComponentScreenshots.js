@@ -25,6 +25,11 @@ import BpkImage, {
   withLazyLoading,
   withLoadingBehavior,
 } from 'bpk-component-image';
+import {
+  BpkDescriptionList,
+  BpkDescriptionDetails,
+  BpkDescriptionTerm,
+} from 'bpk-component-description-list';
 
 import STYLES from './ComponentScreenshots.scss';
 
@@ -48,12 +53,14 @@ const ComponentScreenshot = ({ title, subText, ...rest }) => {
       key={title}
       className={getClassName('bpkdocs-component-screenshots__item')}
     >
-      <dt className={getClassName('bpkdocs-component-screenshots__item-title')}>
+      <BpkDescriptionTerm
+        className={getClassName('bpkdocs-component-screenshots__item-title')}
+      >
         <BpkText tagName="h3" textStyle="xs">
           {title}
         </BpkText>
-      </dt>
-      <dd
+      </BpkDescriptionTerm>
+      <BpkDescriptionDetails
         className={getClassName(
           'bpkdocs-component-screenshots__item-image-container',
         )}
@@ -64,7 +71,7 @@ const ComponentScreenshot = ({ title, subText, ...rest }) => {
         <BpkText id={subTextId} textStyle="xs">
           {subText}
         </BpkText>
-      </dd>
+      </BpkDescriptionDetails>
     </div>
   );
 };
@@ -75,9 +82,12 @@ ComponentScreenshot.propTypes = {
 };
 
 const ComponentScreenshots = ({ screenshots, ...rest }) => (
-  <dl className={getClassName('bpkdocs-component-screenshots')} {...rest}>
+  <BpkDescriptionList
+    className={getClassName('bpkdocs-component-screenshots')}
+    {...rest}
+  >
     {screenshots.map(ComponentScreenshot)}
-  </dl>
+  </BpkDescriptionList>
 );
 
 ComponentScreenshots.propTypes = {

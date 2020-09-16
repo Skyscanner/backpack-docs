@@ -16,6 +16,10 @@
  * limitations under the License.
  */
 
+// Disabling this rule in this file because this file is soon to be deprecated
+// so it doesn't make sense to fix it.
+/* eslint-disable react/forbid-prop-types */
+
 import Helmet from 'react-helmet';
 import isString from 'lodash/isString';
 import PropTypes from 'prop-types';

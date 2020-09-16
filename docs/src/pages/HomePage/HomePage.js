@@ -154,6 +154,7 @@ const HomePage = (props, context) => {
       >
         <div className={getClassName('bpkdocs-home-page__hero-logo-container')}>
           <div style={{ flex: 1 }}>
+            {/* eslint-disable backpack/use-components */}
             <img
               role="heading"
               aria-level="1"
@@ -161,6 +162,7 @@ const HomePage = (props, context) => {
               className={getClassName('bpkdocs-home-page__hero-logo')}
               alt="Backpack"
             />
+            {/* eslint-enable backpack/use-components */}
             {process.env.BPK_BUILT_AT && (
               <UpdatedAt
                 date={new Date(process.env.BPK_BUILT_AT * 1000)}

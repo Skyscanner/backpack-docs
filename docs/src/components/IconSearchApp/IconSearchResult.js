@@ -19,6 +19,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'bpk-react-utils';
+import {
+  BpkDescriptionDetails,
+  BpkDescriptionTerm,
+} from 'bpk-component-description-list';
 
 import STYLES from './IconSearchResult.scss';
 import customPropTypes from './propTypes';
@@ -30,11 +34,15 @@ const IconSearchResult = props => {
 
   return (
     <div>
-      <dt className={getClassName('bpkdocs-icon-search-result__title')}>
+      <BpkDescriptionTerm
+        className={getClassName('bpkdocs-icon-search-result__title')}
+      >
         {categoryName}
-      </dt>
+      </BpkDescriptionTerm>
       {icons ? (
-        <dd className={getClassName('bpkdocs-icon-search-result__content')}>
+        <BpkDescriptionDetails
+          className={getClassName('bpkdocs-icon-search-result__content')}
+        >
           <ul className={getClassName('bpkdocs-icon-search-result__list')}>
             {icons.map(icon => (
               <li
@@ -67,7 +75,7 @@ const IconSearchResult = props => {
               </li>
             ))}
           </ul>
-        </dd>
+        </BpkDescriptionDetails>
       ) : (
         <div className={getClassName('bpkdocs-icon-search-result__content')}>
           There are no {categoryName.toLowerCase()} icons matching &quot;

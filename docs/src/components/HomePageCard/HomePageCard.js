@@ -77,12 +77,14 @@ const HomePageCard = (props: Props) => {
             alt={title}
           />
           {icon && (
+            /* eslint-disable backpack/use-components */
             <img
               src={icon}
               alt=""
               className={iconClassNames}
               style={{ width: iconWidth }}
             />
+            /* eslint-enable backpack/use-components */
           )}
         </div>
         <BpkText
