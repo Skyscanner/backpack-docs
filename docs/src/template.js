@@ -30,7 +30,6 @@ export default ({ head = {}, html = '', assets = {} }) => `<!doctype html>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
 
-  <meta property="og:title" content="Backpack">
   <meta property="og:locale" content="en_GB">
   <meta name="description" content="Backpack is Skyscanner's open-source design system.">
   <meta property="og:description" content="Backpack is Skyscanner's open-source design system.">
