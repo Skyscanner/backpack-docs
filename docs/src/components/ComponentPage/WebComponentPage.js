@@ -100,11 +100,13 @@ const WebComponentPage = (props: Props) => {
         className={getClassName('bpkdocs-component-page__link')}
       >
         View on npm&nbsp;
+        {/* eslint-disable backpack/use-components */}
         <img
           src={`https://badge.fury.io/js/${packageName}.svg`}
           alt={`View ${packageName} on npm`}
           height={18}
         />
+        {/* eslint-enable backpack/use-components */}
       </BpkLink>
     ),
   });

@@ -133,7 +133,6 @@ TokenSwitcher.defaultProps = {
 export default TokenSwitcher;
 
 export const connect = (tokenSwitcher, table) => {
-  /* eslint-disable react/no-this-in-sfc */
   class SwitchAwareTable extends Component {
     constructor(props) {
       super(props);
@@ -151,6 +150,8 @@ export const connect = (tokenSwitcher, table) => {
     render() {
       const { platform } = this.state;
 
+      // False positive; tries to replace 'table' with 'BpkTable'.
+      // eslint-disable-next-line backpack/use-components
       return React.cloneElement(table, {
         platform: platform || platforms.web.id,
       });
@@ -158,5 +159,4 @@ export const connect = (tokenSwitcher, table) => {
   }
 
   return <SwitchAwareTable />;
-  /* eslint-enable */
 };

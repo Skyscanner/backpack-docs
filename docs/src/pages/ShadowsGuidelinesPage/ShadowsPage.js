@@ -46,11 +46,13 @@ const sections = [
     content: (
       <div className={getClassName('bpk-docs-shadows-page--categories')}>
         <div>
+          {/* eslint-disable backpack/use-components */}
           <img
             className={getClassName('bpk-docs-shadows-page--categories__image')}
             src={`/${ShadowPairOne}`}
             alt="shadows for nature and architecture elements"
           />
+          {/* eslint-enable backpack/use-components */}
           <div
             className={getClassName('bpk-docs-shadows-page--categories__text')}
           >
@@ -75,11 +77,13 @@ const sections = [
         <div
           className={getClassName('bpk-docs-shadows-page--categories__group')}
         >
+          {/* eslint-disable backpack/use-components */}
           <img
             className={getClassName('bpk-docs-shadows-page--categories__image')}
             alt="shadows for abstract elements and when using props"
             src={`/${ShadowPairTwo}`}
           />
+          {/* eslint-enable backpack/use-components */}
           <div
             className={getClassName('bpk-docs-shadows-page--categories__text')}
           >

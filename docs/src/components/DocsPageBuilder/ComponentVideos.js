@@ -21,6 +21,11 @@ import PropTypes from 'prop-types';
 import BpkText from 'bpk-component-text';
 import BpkPanel from 'bpk-component-panel';
 import { cssModules } from 'bpk-react-utils';
+import {
+  BpkDescriptionList,
+  BpkDescriptionDetails,
+  BpkDescriptionTerm,
+} from 'bpk-component-description-list';
 
 import STYLES from './ComponentVideos.scss';
 
@@ -37,10 +42,12 @@ const ComponentVideo = ({ title, subText, src, ...rest }) => {
 
   return (
     <div key={title} className={getClassName('bpkdocs-component-videos__item')}>
-      <dt className={getClassName('bpkdocs-component-videos__item-title')}>
+      <BpkDescriptionTerm
+        className={getClassName('bpkdocs-component-videos__item-title')}
+      >
         <BpkText tagName="h3">{title}</BpkText>
-      </dt>
-      <dd
+      </BpkDescriptionTerm>
+      <BpkDescriptionDetails
         className={getClassName(
           'bpkdocs-component-videos__item-video-container',
         )}
@@ -60,7 +67,7 @@ const ComponentVideo = ({ title, subText, src, ...rest }) => {
         <BpkText id={subTextId} textStyle="xs">
           {subText}
         </BpkText>
-      </dd>
+      </BpkDescriptionDetails>
     </div>
   );
 };
@@ -72,9 +79,12 @@ ComponentVideo.propTypes = {
 };
 
 const ComponentVideos = ({ videos, ...rest }) => (
-  <dl className={getClassName('bpkdocs-component-videos')} {...rest}>
+  <BpkDescriptionList
+    className={getClassName('bpkdocs-component-videos')}
+    {...rest}
+  >
     {videos.map(ComponentVideo)}
-  </dl>
+  </BpkDescriptionList>
 );
 
 ComponentVideos.propTypes = {

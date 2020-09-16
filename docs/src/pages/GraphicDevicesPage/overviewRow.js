@@ -32,6 +32,7 @@ const OverviewRow = props => {
       className={getClassName('bpk-docs-graphic-devices-page__overview-row')}
     >
       <div>
+        {/* eslint-disable backpack/use-components */}
         <img
           className={getClassName(
             'bpk-docs-graphic-devices-page__overview-image',
@@ -39,6 +40,7 @@ const OverviewRow = props => {
           src={`/${imageSetOne.image}`}
           alt={`${imageSetOne.imageSetAlt}`}
         />
+        {/* eslint-enable backpack/use-components */}
         <div
           className={getClassName(
             'bpk-docs-graphic-devices-page__overview-text',
@@ -67,6 +69,7 @@ const OverviewRow = props => {
           'bpk-docs-graphic-devices-page__overview-group',
         )}
       >
+        {/* eslint-disable backpack/use-components */}
         <img
           className={getClassName(
             'bpk-docs-graphic-devices-page__overview-image',
@@ -74,6 +77,7 @@ const OverviewRow = props => {
           alt={`${imageSetTwo.imageSetAlt}`}
           src={`/${imageSetTwo.image}`}
         />
+        {/* eslint-enable backpack/use-components */}
         <div
           className={getClassName(
             'bpk-docs-graphic-devices-page__overview-text',

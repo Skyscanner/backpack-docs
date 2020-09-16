@@ -114,10 +114,12 @@ const IOSComponentPage = (props: Props) => {
               className={getClassName('bpkdocs-component-page__link')}
             >
               View on CocoaPods&nbsp;
+              {/* eslint-disable backpack/use-components */}
               <img
                 src="https://img.shields.io/cocoapods/v/Backpack.svg?style=flat"
                 alt="View on CocoaPods"
               />
+              {/* eslint-enable backpack/use-components */}
             </BpkLink>
           ),
         },

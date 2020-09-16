@@ -18,9 +18,9 @@
 
 import PropTypes from 'prop-types';
 import React from 'react';
-import BpkLabel from 'bpk-component-label';
 import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
 import { cssModules } from 'bpk-react-utils';
+import BpkFieldset from 'bpk-component-fieldset';
 
 import STYLES from './IconSearchForm.scss';
 
@@ -35,8 +35,11 @@ const IconSearchForm = props => {
       onSubmit={e => e.preventDefault()}
       className={getClassName('bpkdocs-icon-search-form')}
     >
-      <fieldset className={getClassName('bpkdocs-icon-search-form__fieldset')}>
-        <BpkLabel htmlFor={FILTER_INPUT_ID}>Filter</BpkLabel>
+      <BpkFieldset
+        label="Filter"
+        id="icon-search"
+        className={getClassName('bpkdocs-icon-search-form__fieldset')}
+      >
         <BpkInput
           id={FILTER_INPUT_ID}
           type={INPUT_TYPES.TEXT}
@@ -45,7 +48,7 @@ const IconSearchForm = props => {
           onChange={e => onFilterChange(e.target.value)}
           placeholder="Filter by name"
         />
-      </fieldset>
+      </BpkFieldset>
     </form>
   );
 };

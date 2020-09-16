@@ -77,6 +77,7 @@ const sections = [
     content: (
       <ContentGrid className={getClassName('bpk-docs-logo-page__grid')}>
         <ContentGridCard className={getClassName('bpk-docs-logo-page__card')}>
+          {/* eslint-disable backpack/use-components */}
           <img
             className={getClassName(
               'bpk-docs-logo-page__suite',
@@ -85,8 +86,10 @@ const sections = [
             src="https://js.skyscnr.com/sttc/bpk-content/logo_suite_vertical_logo-ee0c930e.svg"
             alt="vertical skyscanner logo with wordmarque"
           />
+          {/* eslint-enable backpack/use-components */}
         </ContentGridCard>
         <ContentGridCard className={getClassName('bpk-docs-logo-page__card')}>
+          {/* eslint-disable backpack/use-components */}
           <img
             className={getClassName(
               'bpk-docs-logo-page__suite',
@@ -95,8 +98,10 @@ const sections = [
             src="https://js.skyscnr.com/sttc/bpk-content/logo_suite_horizontal_logo-33239ee8.svg"
             alt="horizontal skyscanner logo with wordmarque"
           />
+          {/* eslint-enable backpack/use-components */}
         </ContentGridCard>
         <ContentGridCard className={getClassName('bpk-docs-logo-page__card')}>
+          {/* eslint-disable backpack/use-components */}
           <img
             className={getClassName(
               'bpk-docs-logo-page__suite',
@@ -105,8 +110,10 @@ const sections = [
             src="https://js.skyscnr.com/sttc/bpk-content/logo_suite_symbol-8c0abdd8.svg"
             alt="our symbol, skyscanner logo without wordmarque"
           />
+          {/* eslint-enable backpack/use-components */}
         </ContentGridCard>
         <ContentGridCard className={getClassName('bpk-docs-logo-page__card')}>
+          {/* eslint-disable backpack/use-components */}
           <img
             className={getClassName(
               'bpk-docs-logo-page__suite',
@@ -115,6 +122,7 @@ const sections = [
             src="https://js.skyscnr.com/sttc/bpk-content/our_wordmarque-c8a774a8.svg"
             alt="our wordmarque Skyscanner"
           />
+          {/* eslint-enable backpack/use-components */}
         </ContentGridCard>
       </ContentGrid>
     ),

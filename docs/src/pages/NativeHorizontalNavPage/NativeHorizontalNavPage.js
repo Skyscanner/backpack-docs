@@ -24,7 +24,7 @@ import iosScreenshotSmall from '../../../../backpack-react-native/lib/bpk-compon
 import iosScreenshotSpaceAround from '../../../../backpack-react-native/lib/bpk-component-horizontal-nav/screenshots/ios/space-around.png';
 import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-horizontal-nav/screenshots/android/default.png';
 import androidScreenshotSmall from '../../../../backpack-react-native/lib/bpk-component-horizontal-nav/screenshots/android/small.png';
-import androidScreenshotSpaceAround from '../../../../backpack-react-native/lib/bpk-component-horizontal-nav/screenshots/android/space-around.png'; // eslint-disable-line max-len
+import androidScreenshotSpaceAround from '../../../../backpack-react-native/lib/bpk-component-horizontal-nav/screenshots/android/space-around.png';
 import { NativeComponentPage } from '../../components/ComponentPage';
 
 const components = [
