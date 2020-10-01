@@ -38,7 +38,7 @@ type Props = {
     dark?: boolean,
     title: string,
     blurb: Node,
-    examples: ?Node,
+    examples: ?Node | ?Array<Node>,
   }>,
   readme: ?string,
   sassdocId: ?string,
@@ -52,11 +52,15 @@ type Props = {
 const WebComponentPage = (props: Props) => {
   const { examples, packageName, readme, sassdocId, usageTable } = props;
   const mappedExamples = examples.map(example => {
+    let hasExamples = !!example.examples;
+    if (Array.isArray(example.examples) && example.examples.length < 1) {
+      hasExamples = false;
+    }
     return {
       id: example.id,
       title: example.title,
       blurb: example.blurb,
-      content: example.examples ? (
+      content: hasExamples ? (
         <PresentationBlock
           whiteBackground={!example.dark}
           darkBackground={example.dark}
