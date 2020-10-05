@@ -20,14 +20,22 @@
 
 import React from 'react';
 import dialogReadme from 'bpk-component-dialog/README.md';
+import TickIcon from 'bpk-component-icon/lg/tick';
+import TrashIcon from 'bpk-component-icon/lg/trash';
+import { HEADER_ICON_TYPES } from 'bpk-component-dialog';
+import BpkText from 'bpk-component-text/src/BpkText';
+import { cssModules } from 'bpk-react-utils';
 
 import Paragraph from '../../components/Paragraph';
 import { WebComponentPage } from '../../components/ComponentPage';
 
+import STYLES from './DialogsPage.scss';
 import {
   DialogContainer,
   NonDismissibleDialogContainer,
 } from './DialogExamples';
+
+const getClassName = cssModules(STYLES);
 
 const components = [
   {
@@ -57,6 +65,45 @@ const components = [
       </Paragraph>,
     ],
     examples: [<NonDismissibleDialogContainer />],
+  },
+  {
+    id: 'with-icon',
+    title: 'With icon',
+    blurb: [
+      <Paragraph>
+        The icon dialog creates a default dialog with an icon placed at the top.
+        It comes in three styles: primary, warning and destructive.
+      </Paragraph>,
+    ],
+    examples: [
+      <div className={getClassName('bpk-docs-dialog-page--icon-wrapper')}>
+        <BpkText>Primary Icon Dialog</BpkText>
+        <NonDismissibleDialogContainer
+          headerIcon={<TickIcon />}
+          headerIconType={HEADER_ICON_TYPES.primary}
+        >
+          This is a primary icon dialog
+        </NonDismissibleDialogContainer>
+      </div>,
+      <div className={getClassName('bpk-docs-dialog-page--icon-wrapper')}>
+        <BpkText>Warning Icon Dialog</BpkText>
+        <NonDismissibleDialogContainer
+          headerIcon={<TickIcon />}
+          headerIconType={HEADER_ICON_TYPES.warning}
+        >
+          This is a warning icon dialog
+        </NonDismissibleDialogContainer>
+      </div>,
+      <div>
+        <BpkText>Destructive Icon Dialog</BpkText>
+        <NonDismissibleDialogContainer
+          headerIcon={<TrashIcon />}
+          headerIconType={HEADER_ICON_TYPES.destructive}
+        >
+          This is a destructive icon dialog
+        </NonDismissibleDialogContainer>
+      </div>,
+    ],
   },
 ];
 
