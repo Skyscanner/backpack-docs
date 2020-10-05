@@ -72,7 +72,7 @@ const components = [
     blurb: [
       <Paragraph>
         The icon dialog creates a default dialog with an icon placed at the top.
-        It comes in three styles primary, warning and destructive.
+        It comes in three styles: primary, warning and destructive.
       </Paragraph>,
     ],
     examples: [
