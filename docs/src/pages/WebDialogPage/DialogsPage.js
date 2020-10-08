@@ -105,6 +105,17 @@ const components = [
       </div>,
     ],
   },
+  {
+    id: 'with-flare',
+    title: 'With flare',
+    blurb: [
+      <Paragraph>
+        The flare dialog creates a default dialog with a flare view added as the
+        header.
+      </Paragraph>,
+    ],
+    examples: [<NonDismissibleDialogContainer flare />],
+  },
 ];
 
 const DialogsPage = () => (
