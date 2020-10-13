@@ -27,7 +27,7 @@ import Android from '../AndroidOverlayPage';
 const Page = () => (
   <DocsPageWrapper
     title="Overlay"
-    blurb={[<IntroBlurb>An Overlay component tints its content.</IntroBlurb>]}
+    blurb={[<IntroBlurb>An overlay component tints its content.</IntroBlurb>]}
     androidSubpage={<Android wrapped />}
   />
 );
