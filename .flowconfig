@@ -23,4 +23,6 @@ emoji=true
 module.file_ext=.js
 module.file_ext=.json
 
+types_first=false
+
 [strict]
