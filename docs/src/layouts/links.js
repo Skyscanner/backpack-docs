@@ -156,6 +156,12 @@ const ComponentsLinks = [
         tags: ['web'],
       },
       {
+        id: 'OVERLAY',
+        route: routes.OVERLAY,
+        children: 'Overlay',
+        tags: ['android'],
+      },
+      {
         id: 'CARD',
         route: routes.CARD,
         children: 'Card',
