@@ -122,6 +122,7 @@ import BagCheckPage from '../pages/BagCheckPage';
 import ToastPage from '../pages/ToastPage';
 import SnackbarPage from '../pages/SnackbarPage';
 import CheckboxPage from '../pages/CheckboxPage';
+import OverlayPage from '../pages/OverlayPage';
 import { GridColumnDemoPage, GridOffsetDemoPage } from '../pages/GridDemoPages';
 
 import withPageViewEvent from './withPageViewEvent';
@@ -257,6 +258,10 @@ export const ROUTES_MAPPINGS = [
       {
         path: ROUTES.RATING,
         component: RatingPage,
+      },
+      {
+        path: ROUTES.OVERLAY,
+        component: OverlayPage,
       },
       {
         path: ROUTES.SNACKBAR,
