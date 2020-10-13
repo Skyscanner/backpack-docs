@@ -1,7 +1,7 @@
 /*
  * Backpack - Skyscanner's Design System
  *
- * Copyright 2016-2019 Skyscanner Ltd
+ * Copyright 2016-2020 Skyscanner Ltd
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,26 +16,6 @@
  * limitations under the License.
  */
 
-/* @flow strict */
+import page from './WebOverlayPage';
 
-import React from 'react';
-
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import IntroBlurb from '../../components/IntroBlurb';
-import Android from '../AndroidOverlayPage';
-import Web from '../WebOverlayPage';
-
-const Page = () => (
-  <DocsPageWrapper
-    title="Overlay"
-    blurb={[
-      <IntroBlurb>
-        The overlay component applies a dark tint to its content.
-      </IntroBlurb>,
-    ]}
-    androidSubpage={<Android />}
-    webSubpage={<Web />}
-  />
-);
-
-export default Page;
+export default page;
