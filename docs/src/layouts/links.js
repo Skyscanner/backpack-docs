@@ -159,7 +159,8 @@ const ComponentsLinks = [
         id: 'OVERLAY',
         route: routes.OVERLAY,
         children: 'Overlay',
-        tags: ['android'],
+        tags: ['android', 'web'],
+        keywords: ['tint', 'scrim'],
       },
       {
         id: 'CARD',
