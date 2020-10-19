@@ -23,6 +23,7 @@
 
   @include bpk-breakpoint-above-mobile {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__item {
@@ -31,6 +32,7 @@
 
     @include bpk-breakpoint-above-mobile {
       width: calc(50% - #{$bpk-spacing-base});
+      min-width: calc(50% - #{$bpk-spacing-base});
       max-width: $bpk-one-pixel-rem * 540; // 1080 (width of Android screenshot) / 2 (pixel density)
       margin-right: $bpk-spacing-base;
 

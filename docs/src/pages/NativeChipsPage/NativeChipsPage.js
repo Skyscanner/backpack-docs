@@ -21,10 +21,12 @@ import React from 'react';
 import readme from '../../../../backpack-react-native/lib/bpk-component-chip/README.md';
 import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/ios/default.png';
 import iosScreenshotDefaultWithIcon from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/ios/defaultWithIcon.png';
+import iosScreenshotDefaultWithTrailingIcon from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/ios/defaultWithTrailingIcon.png';
 import iosScreenshotDismissible from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/ios/dismissible.png';
 import iosScreenshotOutline from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/ios/outline.png';
 import iosScreenshotOutlineDismissible from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/ios/outlineDismissible.png';
 import androidScreenshotDefaultWithIcon from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/android/defaultWithIcon.png';
+import androidScreenshotDefaultWithTrailingIcon from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/android/defaultWithTrailingIcon.png';
 import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/android/default.png';
 import androidScreenshotDismissible from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/android/dismissible.png';
 import androidScreenshotOutline from '../../../../backpack-react-native/lib/bpk-component-chip/screenshots/android/outline.png';
@@ -58,10 +60,10 @@ const components = [
   {
     id: 'with-icons',
     title: 'With icons',
-    blurb: 'Chips can have leading icons.',
+    blurb: 'Icons can be placed on either side of the text.',
     screenshots: [
       {
-        title: 'iOS',
+        title: 'iOS — Leading icon',
         width: 750,
         height: 1334,
         src: `/${iosScreenshotDefaultWithIcon}`,
@@ -69,11 +71,27 @@ const components = [
         subText: '(iPhone 8 simulator)',
       },
       {
-        title: 'Android',
+        title: 'iOS — Trailing icon',
+        width: 750,
+        height: 1334,
+        src: `/${iosScreenshotDefaultWithTrailingIcon}`,
+        altText: 'iOS Default Chip Component With Trailing Icon',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        title: 'Android — Leading icon',
         width: 1080,
         height: 1920,
         src: `/${androidScreenshotDefaultWithIcon}`,
         altText: 'Android Default Chip Component With Leading Icon',
+        subText: '(Google Pixel emulator)',
+      },
+      {
+        title: 'Android - Trailing icon',
+        width: 1080,
+        height: 1920,
+        src: `/${androidScreenshotDefaultWithTrailingIcon}`,
+        altText: 'Android Default Chip Component With Trailing Icon',
         subText: '(Google Pixel emulator)',
       },
     ],
