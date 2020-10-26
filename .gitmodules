@@ -10,7 +10,3 @@
 	path = backpack-react-native
 	url = https://github.com/Skyscanner/backpack-react-native
 	##ignore = all
-[submodule "backpack"]
-	path = backpack
-	url = https://github.com/Skyscanner/backpack
-	##ignore = all
