@@ -19,6 +19,7 @@
     "clean:node_modules": "rm -rf node_modules",
     "clean": "npm run clean:dist && npm run clean:node_modules",
     "lint:scss": "stylelint 'docs/**/*.scss' --syntax scss",
+    "lint:scss:fix": "stylelint 'docs/**/*.scss' --syntax scss --fix",
     "lint:js": "eslint . --ext .js,.jsx",
     "lint:js:fix": "eslint . --ext .js,.jsx --fix",
     "lint": "npm run lint:js && npm run lint:scss",
