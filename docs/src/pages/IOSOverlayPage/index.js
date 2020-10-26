@@ -16,28 +16,6 @@
  * limitations under the License.
  */
 
-/* @flow strict */
+import page from './IOSOverlayPage';
 
-import React from 'react';
-
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import IntroBlurb from '../../components/IntroBlurb';
-import Android from '../AndroidOverlayPage';
-import IOS from '../IOSOverlayPage';
-import Web from '../WebOverlayPage';
-
-const Page = () => (
-  <DocsPageWrapper
-    title="Overlay"
-    blurb={[
-      <IntroBlurb>
-        The overlay component applies a dark tint to its content.
-      </IntroBlurb>,
-    ]}
-    iosSubpage={<IOS />}
-    androidSubpage={<Android />}
-    webSubpage={<Web />}
-  />
-);
-
-export default Page;
+export default page;
