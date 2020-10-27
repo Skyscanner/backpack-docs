@@ -16,18 +16,25 @@
  * limitations under the License.
  */
 
-import React from 'react';
+@import '~bpk-mixins/index';
 
-import MarkdownPage from '../../components/MarkdownPage';
+.bpkdocs-markdown-page {
+  &__page-head {
+    padding: $bpk-spacing-lg * 2;
+    padding-bottom: $bpk-spacing-lg;
+    background-color: $bpk-color-white;
 
-import Content from './Content.md';
+    @include bpk-breakpoint-mobile {
+      padding: $bpk-spacing-lg;
+      padding-bottom: $bpk-spacing-md;
+    }
+  }
 
-const StatusPage = () => (
-  <MarkdownPage
-    title="Backpack Status"
-    subtitle="Here you will find the current Backpack CI status and release versions."
-    content={Content}
-  />
-);
+  &__content {
+    padding: $bpk-spacing-lg * 2;
 
-export default StatusPage;
+    @include bpk-breakpoint-mobile {
+      padding: $bpk-spacing-lg;
+    }
+  }
+}
