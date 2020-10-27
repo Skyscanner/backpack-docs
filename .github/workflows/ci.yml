@@ -22,6 +22,7 @@ jobs:
       run: nvm use
 
     - name: Pull submodules
+      shell: bash -l {0}
       run: npm run submodules:pull
 
     - name: Install deps
