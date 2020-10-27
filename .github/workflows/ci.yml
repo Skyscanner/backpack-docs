@@ -5,6 +5,8 @@ on:
     branches: [master]
   pull_request:
     branches: [master]
+  repository_dispatch:
+    types: [rebuild]
 
 jobs:
   build:
@@ -21,9 +23,8 @@ jobs:
       shell: bash -l {0}
       run: nvm use
 
-    - name: Pull submodules
-      shell: bash -l {0}
-      run: npm run submodules:pull
+    - name: Check out submodules
+      run: git submodule update --init --recursive
 
     - name: Install deps
       run: npm ci
@@ -39,7 +40,7 @@ jobs:
     - name: Build website
       run: npm run docs:dist
 
-    - name: Test site was built correctly
+    - name: Check site was built correctly
       run: test -e dist/index.html
 
     - name: Deploy website
