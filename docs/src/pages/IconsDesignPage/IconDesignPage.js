@@ -31,7 +31,7 @@ import IntroBlurb from '../../components/IntroBlurb';
 
 // This file can actually be resolved eslint is just confused
 // eslint-disable-next-line import/no-webpack-loader-syntax, import/extensions
-import iconsSvgs from '!!file-loader?name=[name].[hash].zip!zip-it-loader!./../../../../backpack/packages/bpk-svgs/src/icons/icons';
+import iconsSvgs from '!!file-loader?name=[name].[hash].zip!zip-it-loader!./../../../../node_modules/bpk-svgs/src/icons/icons';
 
 const AlignedBpkSmallDownloadIcon = withButtonAlignment(BpkSmallDownloadIcon);
 
