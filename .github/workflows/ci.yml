@@ -1,0 +1,50 @@
+name: Backpack Docs CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: nvm install
+      shell: bash -l {0}
+      run: nvm install
+
+    - name: nvm use
+      shell: bash -l {0}
+      run: nvm use
+
+    - name: Pull submodules
+      run: npm run submodules:pull
+
+    - name: Install deps
+      run: npm ci
+
+    - name: Danger
+      run: npm run danger
+
+    - name: Test
+      run: npm test
+
+    - name: Build website
+      run: npm run docs:dist
+
+    - name: Test site was built correctly
+      run: test -e dist/index.html
+
+    - name: Deploy website
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/master'
+      with:
+        personal_token: ${{ secrets.DEPLOY_TOKEN }}
+        publish_dir: /
+        keep_files: true
+        external_repository: backpack/backpack.github.io
+        publish_branch: master
