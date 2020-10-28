@@ -9,7 +9,6 @@
 
 [GitHub](https://github.com/Skyscanner/backpack)
 
-
 ## Backpack React Native
 
 [![Build Status](https://travis-ci.org/Skyscanner/backpack-react-native.svg?branch=master)](https://travis-ci.org/Skyscanner/backpack-react-native)

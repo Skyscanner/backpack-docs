@@ -23,10 +23,12 @@ import { cssModules } from 'bpk-react-utils';
 import BpkContentContainer from 'bpk-component-content-container';
 import Helmet from 'react-helmet';
 
+import AlternatingPageContent from '../AlternatingPageContent';
 import BpkMarkdownRenderer from '../DocsPageBuilder/BpkMarkdownRenderer';
 import Heading from '../Heading';
 import IntroBlurb from '../IntroBlurb';
 
+import { parseSections } from './MarkdownUtils';
 import STYLES from './MarkdownPage.scss';
 
 const getClassName = cssModules(STYLES);
@@ -37,21 +39,24 @@ type Props = {
   content: string,
 };
 
-const MarkdownPage = (props: Props) => (
-  <>
-    <Helmet title={props.title} />
-    <div className={getClassName('bpkdocs-markdown-page__page-head')}>
-      <Heading level="h1">{props.title}</Heading>
-      {props.subtitle && <IntroBlurb>{props.subtitle}</IntroBlurb>}
-    </div>
-    <BpkContentContainer
-      bareHtml
-      className={getClassName('bpkdocs-markdown-page__content')}
-    >
-      <BpkMarkdownRenderer source={props.content} />
-    </BpkContentContainer>
-  </>
-);
+const MarkdownPage = (props: Props) => {
+  const sections = parseSections(props.content).map(section => (
+    <BpkMarkdownRenderer source={section} />
+  ));
+
+  return (
+    <>
+      <Helmet title={props.title} />
+      <div className={getClassName('bpkdocs-markdown-page__page-head')}>
+        <Heading level="h1">{props.title}</Heading>
+        {props.subtitle && <IntroBlurb>{props.subtitle}</IntroBlurb>}
+      </div>
+      <BpkContentContainer bareHtml>
+        <AlternatingPageContent sections={sections} invert={false} />
+      </BpkContentContainer>
+    </>
+  );
+};
 
 MarkdownPage.defaultProps = {
   subtitle: null,

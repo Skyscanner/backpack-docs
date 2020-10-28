@@ -16,17 +16,21 @@
  * limitations under the License.
  */
 
-@import '~bpk-mixins/index';
+/* @flow strict */
 
-.bpkdocs-markdown-page {
-  &__page-head {
-    padding: $bpk-spacing-lg * 2;
-    padding-bottom: $bpk-spacing-lg;
-    background-color: $bpk-color-white;
+const parseSections = (markdown: string) => {
+  // Match on ## to find sections of the content
+  // We use positive lookahead (?=) so that the match is not excluded from the results
+  const splitSections: Array<string> = markdown.split(/^(?=(##\s))/gms);
 
-    @include bpk-breakpoint-mobile {
-      padding: $bpk-spacing-lg;
-      padding-bottom: $bpk-spacing-md;
-    }
-  }
-}
+  // If a given section is empty or just matches the pattern above,
+  // then we should skip it instead of rendering nothing!
+  const cleanSections: Array<string> = splitSections.filter(
+    section => section !== '' && section !== '## ',
+  );
+
+  return cleanSections;
+};
+
+export default parseSections;
+export { parseSections };
