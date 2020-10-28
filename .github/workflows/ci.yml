@@ -5,8 +5,11 @@ on:
     branches: [master]
   pull_request:
     branches: [master]
-  repository_dispatch:
-    types: [rebuild]
+  workflow_dispatch:
+    inputs:
+      triggered_by:
+        description: 'The repo that triggered this build'
+        required: true
 
 jobs:
   build:
