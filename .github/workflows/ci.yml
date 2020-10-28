@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [master]
   workflow_dispatch:
+    inputs:
+      repo:
+        description: 'Repo that triggered this action'
+        required: true
 
 jobs:
   build:
