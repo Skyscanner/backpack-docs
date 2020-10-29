@@ -25,6 +25,8 @@ import STYLES from './AlternatingPageContent.scss';
 const getClassName = cssModules(STYLES);
 
 type Props = {
+  // We've deprecated this prop. Eventually this entire component can go.
+  // eslint-disable-next-line react/no-unused-prop-types
   invert: boolean,
   sections: Array<?Node>,
 };
@@ -34,17 +36,10 @@ const AlternatingPageContent = (props: Props) => (
     {React.Children.toArray(
       props.sections
         .filter(x => x)
-        .map((section, i) => {
-          const useAlternateStyle = i % 2 === (props.invert ? 1 : 0);
+        .map(section => {
           const classNames = [
             getClassName('bpkdocs-alternating-content__section'),
           ];
-
-          if (useAlternateStyle) {
-            classNames.push(
-              getClassName('bpkdocs-alternating-content__section--alternate'),
-            );
-          }
 
           return <div className={classNames.join(' ')}>{section}</div>;
         }),

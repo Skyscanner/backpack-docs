@@ -82,7 +82,7 @@ const ComponentPage = (props: Props) => {
         </BpkText>
 
         {usageTable && (
-          <BpkList>
+          <BpkList className={getClassName('bpkdocs-component-page__list')}>
             <BpkListItem>
               <BpkLink href="#usage">Usage advice</BpkLink>
             </BpkListItem>
@@ -101,7 +101,7 @@ const ComponentPage = (props: Props) => {
             >
               Examples
             </BpkText>
-            <BpkList>
+            <BpkList className={getClassName('bpkdocs-component-page__list')}>
               {examples.map(example => (
                 <BpkListItem key={example.id}>
                   <BpkLink href={`#${example.id}`}>{example.title}</BpkLink>
@@ -123,7 +123,7 @@ const ComponentPage = (props: Props) => {
             >
               Additional content
             </BpkText>
-            <BpkList>
+            <BpkList className={getClassName('bpkdocs-component-page__list')}>
               {additionalContent.map(content => (
                 <BpkListItem key={content.id}>
                   <BpkLink href={`#${content.id}`}>{content.title}</BpkLink>

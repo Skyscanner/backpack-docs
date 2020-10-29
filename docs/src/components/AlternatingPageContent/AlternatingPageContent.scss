@@ -17,17 +17,27 @@
  */
 @import '~bpk-mixins';
 
+$horizontal-spacing: $bpk-spacing-lg * 2;
+$horizontal-spacing-mobile: $bpk-spacing-lg;
+$vertical-spacing: $bpk-spacing-base * 2;
+$vertical-spacing-mobile: $bpk-spacing-base;
+
 .bpkdocs-alternating-content {
   &__section {
-    padding: $bpk-spacing-lg * 2;
-    background-color: $bpk-color-sky-gray-tint-06;
+    padding: $vertical-spacing $horizontal-spacing 0 $horizontal-spacing;
+    background-color: $bpk-color-sky-gray-tint-07;
 
     @include bpk-breakpoint-mobile {
-      padding: $bpk-spacing-lg;
+      padding: $vertical-spacing-mobile $horizontal-spacing-mobile 0
+        $horizontal-spacing-mobile;
     }
 
-    &--alternate {
-      background-color: $bpk-color-sky-gray-tint-07;
+    &:last-of-type {
+      padding-bottom: $vertical-spacing;
+
+      @include bpk-breakpoint-mobile {
+        padding-bottom: $vertical-spacing-mobile;
+      }
     }
   }
 }
