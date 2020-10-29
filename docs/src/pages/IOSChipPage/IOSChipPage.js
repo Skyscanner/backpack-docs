@@ -23,12 +23,10 @@ import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-chi
 import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-chip___default_dm.png';
 import screenshotWithIcons from '../../../../backpack-ios/screenshots/iPhone 8-chip___with-icons_lm.png';
 import screenshotWithIconsDm from '../../../../backpack-ios/screenshots/iPhone 8-chip___with-icons_dm.png';
-import screenshotWithoutShadow from '../../../../backpack-ios/screenshots/iPhone 8-chip___without-shadow_lm.png';
-import screenshotWithoutShadowDm from '../../../../backpack-ios/screenshots/iPhone 8-chip___without-shadow_dm.png';
-import screenshotWithBackgroundColor from '../../../../backpack-ios/screenshots/iPhone 8-chip___background-color_lm.png';
-import screenshotWithBackgroundColorDm from '../../../../backpack-ios/screenshots/iPhone 8-chip___background-color_dm.png';
-import screenshotWithOutline from '../../../../backpack-ios/screenshots/iPhone 8-chip___outline_lm.png';
-import screenshotWithOutlineDm from '../../../../backpack-ios/screenshots/iPhone 8-chip___outline_dm.png';
+import screenshotFilled from '../../../../backpack-ios/screenshots/iPhone 8-chip___filled_lm.png';
+import screenshotFilledDm from '../../../../backpack-ios/screenshots/iPhone 8-chip___filled_dm.png';
+import screenshotWithBackgroundColor from '../../../../backpack-ios/screenshots/iPhone 8-chip___filled-background-color_lm.png';
+import screenshotWithBackgroundColorDm from '../../../../backpack-ios/screenshots/iPhone 8-chip___filled-background-color_dm.png';
 import { IOSComponentPage } from '../../components/ComponentPage';
 
 const components = [
@@ -73,20 +71,20 @@ const components = [
     ],
   },
   {
-    id: 'withoutShadow',
-    title: 'Without shadow',
+    id: 'filled',
+    title: 'Filled',
     screenshots: [
       {
         width: 750,
         height: 1334,
-        src: `/${screenshotWithoutShadow}`,
+        src: `/${screenshotFilled}`,
         altText: 'Chips for iOS.',
         subText: '(iPhone 8 simulator)',
       },
       {
         width: 750,
         height: 1334,
-        src: `/${screenshotWithoutShadowDm}`,
+        src: `/${screenshotFilledDm}`,
         altText: 'Chips for iOS.',
         subText: '(iPhone 8 simulator - dark mode)',
       },
@@ -107,26 +105,6 @@ const components = [
         width: 750,
         height: 1334,
         src: `/${screenshotWithBackgroundColorDm}`,
-        altText: 'Chips for iOS.',
-        subText: '(iPhone 8 simulator - dark mode)',
-      },
-    ],
-  },
-  {
-    id: 'outline',
-    title: 'Outline',
-    screenshots: [
-      {
-        width: 750,
-        height: 1334,
-        src: `/${screenshotWithOutline}`,
-        altText: 'Chips for iOS.',
-        subText: '(iPhone 8 simulator)',
-      },
-      {
-        width: 750,
-        height: 1334,
-        src: `/${screenshotWithOutlineDm}`,
         altText: 'Chips for iOS.',
         subText: '(iPhone 8 simulator - dark mode)',
       },
