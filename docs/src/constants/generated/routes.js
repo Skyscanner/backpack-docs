@@ -19,7 +19,12 @@
 /* eslint-disable */
 
 import React from 'react';
+import MarkdownPage from '../../components/MarkdownPage';
 
-export const using = {path: "using/test-page", component: () => (<MarkdownPage title="Test page" subtitle="This is a test page" content="
-Hello world this is an automatically generated page.
-" />)};
+
+export const using = [{path: "/using/test-page-one", component: () => (<MarkdownPage title="Test page one" subtitle="This is a test page" content="
+Hello world this is an automatically generated page for TEST PAGE ONE
+" />)}];
+export const guidelines = [{path: "/guidelines/test-page-two", component: () => (<MarkdownPage title="Test page two" subtitle="This is a test page" content="
+Hello world this is an automatically generated page for TEST PAGE TWO
+" />)}];

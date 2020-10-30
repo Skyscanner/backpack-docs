@@ -29,7 +29,7 @@ const PATH_TO_ROUTES_FILE = './docs/src/constants/generated/routes.js';
 /*
 Valid values for the 'category' front matter
 */
-const ALLOWED_CATEGORIES = ['using'];
+const ALLOWED_CATEGORIES = ['using', 'guidelines'];
 
 console.log(
   colors.cyan(`Looking for markdown files in ${PATH_TO_MARKDOWN_FILES}…`),
@@ -86,7 +86,7 @@ const enrichedMarkdownFiles = markdownFiles.map(fileName => {
 
   return {
     category: data.category,
-    path: `${data.category}/${title}`,
+    path: `/${data.category}/${title}`,
     content,
     title: data.title,
     subtitle: data.subtitle,
@@ -109,7 +109,7 @@ enrichedMarkdownFiles.forEach(
 );
 
 const routesString = Object.keys(routes).map(category => {
-  return `export const ${category} = ${routes[category]};`;
+  return `export const ${category} = [${routes[category].join(',')}];`;
 });
 
 const moduleHeader = fs.readFileSync(`./scripts/build-process/moduleHeader.js`);

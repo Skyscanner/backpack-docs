@@ -19,3 +19,5 @@
 /* eslint-disable */
 
 import React from 'react';
+import MarkdownPage from '../../components/MarkdownPage';
+
