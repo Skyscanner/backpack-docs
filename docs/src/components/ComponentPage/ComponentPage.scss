@@ -17,9 +17,20 @@
 */
 @import '~bpk-mixins';
 
+$horizontal-spacing: $bpk-spacing-lg * 2;
+$horizontal-spacing-mobile: $bpk-spacing-lg;
+$vertical-spacing: $bpk-spacing-base * 2;
+$vertical-spacing-mobile: $bpk-spacing-base;
+
 .bpkdocs-component-page {
   &__table-of-contents-heading {
     margin-bottom: $bpk-spacing-md;
+  }
+
+  &__list {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 
   // Ensures that the images in links align with the text.
@@ -28,20 +39,26 @@
   }
 
   &__section {
-    padding: $bpk-spacing-lg * 2;
+    padding: $vertical-spacing $horizontal-spacing 0 $horizontal-spacing;
     background-color: $bpk-color-sky-gray-tint-07;
 
     @include bpk-breakpoint-mobile {
-      padding: $bpk-spacing-lg;
+      padding: $vertical-spacing-mobile $horizontal-spacing-mobile 0
+        $horizontal-spacing-mobile;
     }
 
-    &:nth-of-type(2n) {
-      background-color: $bpk-color-sky-gray-tint-06;
+    &:last-of-type {
+      padding-bottom: $vertical-spacing;
+
+      @include bpk-breakpoint-mobile {
+        padding-bottom: $vertical-spacing-mobile;
+      }
     }
   }
 
   &__section-heading {
-    margin-bottom: $bpk-spacing-xxl;
+    margin-top: 0;
+    margin-bottom: $bpk-spacing-md;
 
     @include bpk-text-xxl;
 

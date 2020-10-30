@@ -106,6 +106,7 @@ const BpkMarkdownRenderer = (props: Props) => {
       <BpkText
         textStyle={TEXT_STYLES[level]}
         tagName={TAG_NAMES[level]}
+        className={getClassName(`bpkdocs-markdown-renderer__heading-${level}`)}
         {...headingRest}
       >
         {children}
