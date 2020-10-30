@@ -38,12 +38,12 @@ import BpkHorizontalNav, {
   }
 
   &--h2 {
-    margin-bottom: 1.125rem;
+    margin-bottom: $bpk-spacing-md;
 
     @include bpk-text-xxl;
 
     @include bpk-breakpoint-mobile {
-      margin-bottom: 1.5rem;
+      margin-bottom: $bpk-spacing-base;
 
       @include bpk-text-lg;
     }
