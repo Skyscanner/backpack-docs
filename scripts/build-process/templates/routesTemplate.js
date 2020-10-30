@@ -19,15 +19,3 @@
 import React from 'react';
 
 import MarkdownPage from '../../components/MarkdownPage';
-
-import Content from './Content.md';
-
-const StatusPage = () => (
-  <MarkdownPage
-    title="Backpack Status"
-    subtitle="Here you will find the current Backpack CI status and release versions."
-    content={Content}
-  />
-);
-
-export default StatusPage;

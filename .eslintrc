@@ -23,6 +23,7 @@
       }
     }
   },
+  "ignorePatterns": ["**/generated/**/*.js", "scripts/build-process/templates/**/*.js"],
   "rules": {
     "prettier/prettier": "error",
     "react/jsx-filename-extension": "off",
