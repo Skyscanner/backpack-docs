@@ -2,8 +2,7 @@
 
 > Backpack is a collection of design resources, reusable components and guidelines for creating Skyscanner's products.
 
-[![Build Status](https://travis-ci.org/Skyscanner/backpack-docs.svg?branch=master)](https://travis-ci.org/Skyscanner/backpack-docs)
-
+[![Build Status](https://github.com/Skyscanner/backpack-docs/workflows/Backpack%20Docs%20CI/badge.svg)](https://github.com/Skyscanner/backpack-docs/actions)
 
 ## Quick links
 
@@ -26,4 +25,5 @@ For information on using Backpack components, please refer to the platform-speci
 To contribute please see [contributing.md](CONTRIBUTING.md).
 
 ## Contact
+
 - backpack@skyscanner.net
