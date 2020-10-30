@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
-import page from './StatusPage';
+/* eslint-disable */
 
-export default page;
+
+
+export default {"using":[{"id":"BACKPACK_STATUS","route":"/using/backpack-status","children":"Backpack Status","keywords":null}]}
