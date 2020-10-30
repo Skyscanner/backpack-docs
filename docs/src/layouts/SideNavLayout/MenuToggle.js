@@ -24,48 +24,28 @@ import MenuIcon from 'bpk-component-icon/lg/menu';
 import BpkCloseButton from 'bpk-component-close-button';
 import BpkBreakpoint, { BREAKPOINTS } from 'bpk-component-breakpoint';
 
-import STYLES from './MainHeroImage.scss';
+import STYLES from './MenuToggle.scss';
 
 const getClassName = cssModules(STYLES);
 
 type Props = {
   onHamburgerClick: (event: SyntheticEvent<>) => mixed,
-  heroImage: ?{
-    url: string,
-    // The horizontal background position in percentage
-    horizontalPosition: ?number,
-  },
 };
 
 export default (props: Props) => {
-  const { onHamburgerClick, heroImage } = props;
-  const heroStyle = {};
+  const { onHamburgerClick } = props;
 
-  if (heroImage) {
-    const { url, horizontalPosition } = heroImage;
-
-    heroStyle.backgroundImage = `url(${url})`;
-
-    if (horizontalPosition) {
-      heroStyle.backgroundPosition = `0% ${horizontalPosition}%`;
-    }
-  }
-
-  const heroClassNames = getClassName(
-    'bpkdocs-main-hero-image',
-    !heroImage && 'bpkdocs-main-hero-image--collapsed',
-  );
+  const menuToggleClassNames = getClassName('bpkdocs-menu-toggle-image');
 
   const hamburgerMenuClassNames = getClassName(
-    'bpkdocs-main-hero-image__hamburger',
-    !heroImage && 'bpkdocs-main-hero-image__hamburger--hero-collapsed',
+    'bpkdocs-menu-toggle-image__hamburger',
   );
 
   return (
-    <div className={heroClassNames} style={heroStyle}>
-      <BpkBreakpoint query={BREAKPOINTS.ABOVE_TABLET}>
-        {aboveTablet =>
-          !aboveTablet && (
+    <BpkBreakpoint query={BREAKPOINTS.ABOVE_TABLET}>
+      {aboveTablet =>
+        !aboveTablet && (
+          <div className={menuToggleClassNames}>
             <BpkCloseButton
               aria-expanded="false"
               label="Open menu"
@@ -73,9 +53,9 @@ export default (props: Props) => {
               customIcon={MenuIcon}
               className={hamburgerMenuClassNames}
             />
-          )
-        }
-      </BpkBreakpoint>
-    </div>
+          </div>
+        )
+      }
+    </BpkBreakpoint>
   );
 };

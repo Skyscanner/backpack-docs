@@ -25,7 +25,7 @@ import BpkBreakpoint, { BREAKPOINTS } from 'bpk-component-breakpoint';
 
 import Sidebar from './Sidebar';
 import STYLES from './SideNavLayout.scss';
-import MainHeroImage from './MainHeroImage';
+import MenuToggle from './MenuToggle';
 import { type Category } from './common-types';
 
 const getClassName = cssModules(STYLES);
@@ -77,9 +77,6 @@ export default class SideNavLayout extends Component<Props, State> {
   render() {
     const { children, links } = this.props;
     const { modalOpen, sectionListExpanded, activeSection } = this.state;
-    const { hero } = links.filter(link => link.id === activeSection)[0] || {
-      hero: null,
-    };
 
     const sidebar = (
       <Sidebar
@@ -127,10 +124,7 @@ export default class SideNavLayout extends Component<Props, State> {
           }
         </BpkBreakpoint>
         <section className={getClassName('bpkdocs-side-nav-layout__main')}>
-          <MainHeroImage
-            onHamburgerClick={this.onHamburgerClick}
-            heroImage={hero}
-          />
+          <MenuToggle onHamburgerClick={this.onHamburgerClick} />
           {children}
         </section>
       </section>

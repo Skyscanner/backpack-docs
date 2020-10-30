@@ -20,18 +20,12 @@
 
 import * as routes from '../constants/routes';
 import * as externalRoutes from '../constants/external-routes';
-import ComponentsImage from '../static/components_hero.jpg';
-import UsingBackpackImage from '../static/using_backpack_hero.jpg';
-import DesignTokensImage from '../static/design_hero.jpg';
 
 const ComponentsLinks = [
   {
     id: 'COMPONENTS',
     category: 'Components',
     sort: true,
-    hero: {
-      url: `/${ComponentsImage}`,
-    },
     links: [
       {
         id: 'BOTTOM_NAV',
@@ -471,9 +465,6 @@ export default [
     id: 'TOKENS',
     category: 'Tokens',
     sort: true,
-    hero: {
-      url: `/${DesignTokensImage}`,
-    },
     links: [
       { id: 'TYPESETTING', route: routes.TYPESETTING, children: 'Typesetting' },
       { id: 'LAYOUT', route: routes.SPACINGS, children: 'Spacing' },
@@ -487,10 +478,6 @@ export default [
   {
     id: 'USING_BACKPACK',
     category: 'Using Backpack',
-    hero: {
-      url: `/${UsingBackpackImage}`,
-      horizontalPosition: 60,
-    },
     links: [
       {
         id: 'GETTING_STARTED',
