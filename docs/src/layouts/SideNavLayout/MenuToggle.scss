@@ -18,36 +18,14 @@
 
 @import '~bpk-mixins/index';
 
-.bpkdocs-main-hero-image {
+.bpkdocs-menu-toggle-image {
   display: flex;
-  height: $bpk-spacing-xs * 21;
   padding: $bpk-spacing-base;
   justify-content: flex-end;
-  background-color: $bpk-color-sky-gray-tint-01;
-  background-size: cover;
-
-  @include bpk-breakpoint-above-tablet {
-    height: $bpk-spacing-xs * 54;
-  }
-
-  &--collapsed {
-    height: 0;
-    padding: 0;
-  }
 
   &__hamburger {
-    &--hero-collapsed {
-      top: $bpk-spacing-base;
-      right: $bpk-spacing-base;
-
-      @include bpk-rtl {
-        right: auto;
-        left: $bpk-spacing-base;
-      }
-    }
-
     > svg {
-      fill: $bpk-color-white;
+      fill: $bpk-color-sky-gray-tint-01;
 
       @include bpk-breakpoint-above-tablet {
         display: none;

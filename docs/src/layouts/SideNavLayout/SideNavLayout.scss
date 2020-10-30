@@ -20,7 +20,12 @@
 
 .bpkdocs-side-nav-layout {
   display: flex;
+  min-height: 35 * $bpk-spacing-xl;
   overflow: hidden;
+
+  @include bpk-breakpoint-tablet {
+    min-height: 20 * $bpk-spacing-xl;
+  }
 
   &__sidebar-destop-wrapper {
     display: flex;
