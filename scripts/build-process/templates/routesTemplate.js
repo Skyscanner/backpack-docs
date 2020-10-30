@@ -16,6 +16,6 @@
  * limitations under the License.
  */
 
-/* eslint-disable */
+import React from 'react';
 
-
+import MarkdownPage from '../../components/MarkdownPage';

@@ -16,8 +16,4 @@
  * limitations under the License.
  */
 
-/* eslint-disable */
-
-
-
 export default {"using":[{"id":"BACKPACK_STATUS","route":"/using/backpack-status","children":"Backpack Status","keywords":null}]}

@@ -111,9 +111,12 @@ enrichedMarkdownFiles.forEach(
       routes[category] = [];
     }
 
+    // Escape backticks to prevent them terminating the string.
+    const escapedContent = content.replace(/`/g, '\\`');
+
     // Needs to be done as a string, because we can't use JSX here.
     routes[category].push(
-      `{path: "${path}", component: () => (<MarkdownPage title="${title}" subtitle="${subtitle}" content="${content}" />)}`,
+      `{path: "${path}", component: () => (<MarkdownPage title="${title}" subtitle="${subtitle}" content={\`${escapedContent}\`} />)}`,
     );
   },
 );
@@ -124,7 +127,7 @@ const routesString = Object.keys(routes).map(category => {
 
 // Write the routes to a file.
 const routesHeader = fs.readFileSync(
-  `./scripts/build-process/routesTemplate.js`,
+  `./scripts/build-process/templates/routesTemplate.js`,
 );
 fs.writeFileSync(
   PATH_TO_ROUTES_FILE,
@@ -149,7 +152,9 @@ enrichedMarkdownFiles.forEach(({ category, path, title, id, keywords }) => {
 });
 
 // Write the links to a file.
-const linksHeader = fs.readFileSync(`./scripts/build-process/linksTemplate.js`);
+const linksHeader = fs.readFileSync(
+  `./scripts/build-process/templates/linksTemplate.js`,
+);
 fs.writeFileSync(
   PATH_TO_LINKS_FILE,
   `${linksHeader}\nexport default ${JSON.stringify(links)}`,

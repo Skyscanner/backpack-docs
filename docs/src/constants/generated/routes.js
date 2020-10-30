@@ -16,13 +16,11 @@
  * limitations under the License.
  */
 
-/* eslint-disable */
-
 import React from 'react';
+
 import MarkdownPage from '../../components/MarkdownPage';
 
-
-export const using = [{path: "/using/backpack-status", component: () => (<MarkdownPage title="Backpack Status" subtitle="Here you will find the current Backpack CI status and release versions." content="
+export const using = [{path: "/using/backpack-status", component: () => (<MarkdownPage title="Backpack Status" subtitle="Here you will find the current Backpack CI status and release versions." content={`
 ## Backpack Web
 
 [![Build Status](https://github.com/Skyscanner/backpack/workflows/CI/badge.svg)](https://github.com/Skyscanner/backpack/actions)
@@ -110,4 +108,4 @@ export const using = [{path: "/using/backpack-status", component: () => (<Markdo
 [Changelog](https://github.com/Skyscanner/eslint-plugin-backpack/blob/master/CHANGELOG.md)
 
 [GitHub](https://github.com/Skyscanner/eslint-plugin-backpack)
-" />)}];
+`} />)}];
