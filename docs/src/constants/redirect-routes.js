@@ -135,7 +135,6 @@ export default {
   '/components/web/tickets': ROUTES.TICKET,
   '/components/web/tooltips': ROUTES.TOOLTIP,
   '/components/web/typography': ROUTES.TEXT,
-  '/resources': ROUTES.GETTING_STARTED,
   '/tokens/layout': ROUTES.SPACINGS,
   '/tokens/colors': ROUTES.COLORS,
   '/using/contributing': ROUTES.USING_BACKPACK,

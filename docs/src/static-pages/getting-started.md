@@ -1,0 +1,43 @@
+---
+title: Getting Started
+subtitle: Depending on the audience, there are a few ways to get started.
+category: using
+---
+
+## React components (for web and React Native)
+
+All components are available to consume as React components, exposed as modules on the npm registry. They encapsulate structure, style, and logic which means that achieving a consistent look and feel across Skyscanner products on web, iOS and Android is as straightforward as: installing a package, importing it in a view and using it in JSX. Please see the Text component for [web](https://backpack.github.io/components/text?platform=web) and [React Native](https://backpack.github.io/components/text?platform=native) as examples.
+
+> The recommended way to get started with Backpack on web is to use Backpack React Scripts.
+>
+> Note: If you are looking to integrate Backpack components into an existing project, be aware that components are published uncompiled which means you'll need to accommodate for this in your Webpack config.
+
+## Backpack CocoaPod
+
+[Backpack for iOS](https://github.com/skyscanner/backpack-ios) is distributed as a CocoaPod. The pod contains several subspecs for different token-level aspects of Backpack such as colour, typography, spacing etc.
+
+## Backpack Gradle package
+
+[Backpack for Android](https://github.com/skyscanner/backpack-android) is distributed as a Gradle package. It contains a module with different Backpack tokens such as colour, typography, spacing etc as a resource file.
+
+## Sass variables and mixins
+
+Backpack's tokens are also available as a library of Sass variables and mixins. Furthermore, most small components such as buttons are also available as mixins. Again, the library is exposed as a module on the npm registry which can be installed like so:
+
+```
+npm install bpk-mixins --save-dev
+```
+
+The following example demonstrates how to import the module and consume the primary button mixin:
+
+```
+@import '~bpk-mixins/index';
+
+.my-button {
+  @include bpk-button;
+}
+```
+
+> Note: `bpk-mixins` only supports [`node-sass`](https://github.com/sass/node-sass) and makes extensive use of [`sass-loader`](https://github.com/jtangelder/sass-loader#imports)'s tilde importing mechanism. If you are not using `sass-loader`, you can use [`node-sass-tilde-importer`](https://github.com/matthewdavidson/node-sass-tilde-importer). The `indentedSyntax` option is unsupported.
+
+To get an idea of all the variables and mixins available, head on over to the [full reference documentation](https://backpack.github.io/sassdoc).

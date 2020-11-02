@@ -1,0 +1,37 @@
+---
+title: Backpack React Scripts
+subtitle: Create React + Backpack web apps with no build configuration.
+category: using
+---
+
+## TL;DR
+
+**The currently supported version of CRA by backpack-react-scripts is up to `v3.4.1`. Versions above this will not work.**
+
+```
+npx create-react-app@3.4.1 my-app --scripts-version=@skyscanner/backpack-react-scripts --template @skyscanner/backpack --use-npm
+cd my-app
+npm start
+```
+
+Then open [http://localhost:3000](http://localhost:3000/) to see your app.
+
+When you’re ready to deploy to production, create a minified bundle with `npm run build`.
+
+## How does this work?
+
+`backpack-react-scripts` is designed to be used in conjunction with Facebook's [Create React App](https://facebook.github.io/create-react-app/docs/getting-started). It is almost identical in terms of its feature set, apart from some custom configuration which adds support for compilation of Backpack components.
+
+The generated project also comes with Backpack integration out the box - the base stylesheet, bpk-mixins as well as a few Backpack components are already integrated to get you up and running as quickly as possible.
+
+For more comprehensive documentation, please refer to [the Create React App docs](https://facebook.github.io/create-react-app/docs/getting-started), as the majority of its content still applies to `backpack-react-scripts`.
+
+## Rationale
+
+Modern front-end development can be quite daunting. Getting started with React, ES2015, Babel, Webpack and friends is so complex that "boilerplate" projects have sprung up all over GitHub. The main problem with these boilerplate projects is that there are literally hundreds of them making it hard to know which one to pick. Additionally, once you have downloaded a boilerplate project, you've just inadvertently inherited a whole bunch of front-end tooling technical debt. If updates are made to the boilerplate project in the future, how are you supposed to upgrade?
+
+`backpack-react-scripts` is aimed at providing teams and codebases with a standardised way of building production web apps with Backpack + React at Skyscanner. When you create an app using the command at the top of this page, you'll notice that your project's `package.json` has a dependency on `backpack-react-scripts`. When we release new versions going forward (i.e. support for server-side rendering etc), all you need to do is bump the version number and run `npm install` to reap the rewards.
+
+## Future updates
+
+Please consult the [changelog](https://github.com/Skyscanner/backpack-react-scripts/blob/fork/packages/react-scripts/CHANGELOG.md) when performing updates to your `backpack-react-scripts` dependency.
