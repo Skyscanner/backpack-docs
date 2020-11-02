@@ -23,7 +23,7 @@ import MarkdownPage from '../../components/MarkdownPage';
 export const using = [{path: "/using/backpack-react-scripts", component: () => (<MarkdownPage title="Backpack React Scripts" subtitle="Create React + Backpack web apps with no build configuration." content={`
 ## TL;DR
 
-**The currently supported version of CRA by backpack-react-scripts is up to v3.4.1. Versions above this will not work.**
+**The currently supported version of CRA by backpack-react-scripts is up to \`v3.4.1\`. Versions above this will not work.**
 
 \`\`\`
 npx create-react-app@3.4.1 my-app --scripts-version=@skyscanner/backpack-react-scripts --template @skyscanner/backpack --use-npm
@@ -45,7 +45,7 @@ For more comprehensive documentation, please refer to [the Create React App docs
 
 ## Rationale
 
-Modern front-end development can be quite daunting. Getting started with React, es2015, Babel, Webpack and friends is so complex that "boilerplate" projects have sprung up all over GitHub. The main problem with these boilerplate projects is that there are literally hundreds of them making it hard to know which one to pick. Additionally, once you have downloaded a boilerplate project, you've just inadvertently inherited a whole bunch of front-end tooling technical debt. If updates are made to the boilerplate project in the future, how are you supposed to upgrade?
+Modern front-end development can be quite daunting. Getting started with React, ES2015, Babel, Webpack and friends is so complex that "boilerplate" projects have sprung up all over GitHub. The main problem with these boilerplate projects is that there are literally hundreds of them making it hard to know which one to pick. Additionally, once you have downloaded a boilerplate project, you've just inadvertently inherited a whole bunch of front-end tooling technical debt. If updates are made to the boilerplate project in the future, how are you supposed to upgrade?
 
 \`backpack-react-scripts\` is aimed at providing teams and codebases with a standardised way of building production web apps with Backpack + React at Skyscanner. When you create an app using the command at the top of this page, you'll notice that your project's \`package.json\` has a dependency on \`backpack-react-scripts\`. When we release new versions going forward (i.e. support for server-side rendering etc), all you need to do is bump the version number and run \`npm install\` to reap the rewards.
 
@@ -55,13 +55,13 @@ Please consult the [changelog](https://github.com/Skyscanner/backpack-react-scri
 `} />)},{path: "/using/base-stylesheet", component: () => (<MarkdownPage title="Base stylesheet" subtitle="All components are built on top of a lightweight base stylesheet. Ensure you include this on the page when consuming any Backpack components." content={`
 ## What's in it?
 
-* For improved cross-browser rendering, we use [Normalize.css](http://necolas.github.io/normalize.css/) to correct small inconsistencies across browsers and devices.
+* For improved cross-browser rendering, we use [\`Normalize.css\`](http://necolas.github.io/normalize.css/) to correct small inconsistencies across browsers and devices.
 * The \`box-sizing\` is globally set on every element, including \`*:before\` and \`*:after\`, to \`border-box\`. This ensures that the declared width of an element is never exceeded due to padding or border.
 * The default \`color\`, \`font-family\`, \`font-size\` & \`line-height\`.
 Utility classes based on the [HTML5 Boilerplate common helpers](https://github.com/h5bp/html5-boilerplate/blob/5.3.0/dist/doc/css.md#common-helpers), including: \`.hidden\`, \`.visuallyhidden\`, \`.visuallyhidden.focusable\`, \`.invisible\` and \`.clearfix\`.
 * That's it!
 
-> Note: There is also a small amount of JavaScript that does "[Modernizr](https://modernizr.com/)-like" feature detection (currently used to prevent hover effects on touch devices in downstream components) - make sure this is included in the head also.
+> Note: There is also a small amount of JavaScript that does "[\`Modernizr\`](https://modernizr.com/)-like" feature detection (currently used to prevent hover effects on touch devices in downstream components) - make sure this is included in the head also.
 
 ## Usage
 
@@ -95,7 +95,7 @@ All components are available to consume as React components, exposed as modules 
 
 > The recommended way to get started with Backpack on web is to use Backpack React Scripts.
 >
-> Note: If you are looking to integrate Backpack components into an existing project, be aware that components are published uncompiled which means you'll need to accommodate for this in your webpack config.
+> Note: If you are looking to integrate Backpack components into an existing project, be aware that components are published uncompiled which means you'll need to accommodate for this in your Webpack config.
 
 ## Backpack CocoaPod
 
@@ -123,9 +123,9 @@ The following example demonstrates how to import the module and consume the prim
 }
 \`\`\`
 
-> Note: \`bpk-mixins\` only supports [node-sass](https://github.com/sass/node-sass) and makes extensive use of [sass-loader](https://github.com/jtangelder/sass-loader#imports)'s tilde importing mechanism. If you are not using sass-loader, you can use [node-sass-tilde-importer](https://github.com/matthewdavidson/node-sass-tilde-importer). The \`indentedSyntax\` option is unsupported.
+> Note: \`bpk-mixins\` only supports [\`node-sass\`](https://github.com/sass/node-sass) and makes extensive use of [\`sass-loader\`](https://github.com/jtangelder/sass-loader#imports)'s tilde importing mechanism. If you are not using \`sass-loader\`, you can use [\`node-sass-tilde-importer\`](https://github.com/matthewdavidson/node-sass-tilde-importer). The \`indentedSyntax\` option is unsupported.
 
-To get an idea of all the variables and mixins available, head on over to the [f]ull reference documentation](https://backpack.github.io/sassdoc).
+To get an idea of all the variables and mixins available, head on over to the [full reference documentation](https://backpack.github.io/sassdoc).
 `} />)},{path: "/using/principles", component: () => (<MarkdownPage title="Principles" subtitle="Backpack components, features and configurations are created with the following principles in mind." content={`
 ## Authentically mobile
 
