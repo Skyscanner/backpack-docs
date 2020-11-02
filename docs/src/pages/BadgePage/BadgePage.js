@@ -22,10 +22,11 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import AndroidBadge from '../AndroidBadgePage';
-import IOSBadge from '../IOSBadgePage';
-import WebBadge from '../WebBadgePage';
-import NativeBadge from '../NativeBadgePage';
+
+import AndroidBadge from './AndroidBadgePage';
+import IOSBadge from './IOSBadgePage';
+import WebBadge from './WebBadgePage';
+import NativeBadge from './NativeBadgePage';
 
 const BadgePage = () => (
   <DocsPageWrapper

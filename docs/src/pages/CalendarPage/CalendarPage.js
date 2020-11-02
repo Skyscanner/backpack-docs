@@ -20,10 +20,11 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import AndroidCalendar from '../AndroidCalendarPage';
-import IOSCalendar from '../IOSCalendarPage';
-import ReactNativeCalendar from '../NativeCalendarPage';
-import WebCalendar from '../WebCalendarPage';
+
+import AndroidCalendar from './AndroidCalendarPage';
+import IOSCalendar from './IOSCalendarPage';
+import ReactNativeCalendar from './NativeCalendarPage';
+import WebCalendar from './WebCalendarPage';
 
 const blurb = [
   <IntroBlurb>

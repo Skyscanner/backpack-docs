@@ -23,10 +23,11 @@ import React from 'react';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import Paragraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
-import AndroidCard from '../AndroidCardPage';
-import IOSCard from '../IOSCardPage';
-import WebCard from '../WebCardsPage';
-import NativeCard from '../NativeCardsPage';
+
+import AndroidCard from './AndroidCardPage';
+import IOSCard from './IOSCardPage';
+import WebCard from './WebCardPage';
+import NativeCard from './NativeCardPage';
 
 const Page = () => (
   <DocsPageWrapper

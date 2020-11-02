@@ -30,8 +30,9 @@ import DocsPageWrapper from '../../components/DocsPageWrapper';
 import Paragraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
 import Code from '../../components/Code';
-import AndroidBarChartPage from '../AndroidBarChartPage';
-import IOSBarChartPage from '../IOSBarChartPage';
+
+import IOSBarChartPage from './IOSBarChartPage';
+import AndroidBarChartPage from './AndroidBarChartPage';
 
 const EnhancedBarchart = updateOnDirectionChange(BpkBarchart);
 const InteractiveBarchart = withSelectedState(EnhancedBarchart);
