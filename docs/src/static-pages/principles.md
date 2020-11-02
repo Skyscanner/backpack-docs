@@ -1,0 +1,33 @@
+---
+title: Principles
+subtitle: Backpack components, features and configurations are created with the following principles in mind.
+category: using
+---
+
+## Authentically mobile
+
+Whether it is for web or app, every component should be considered mobile first and degrade to desktop. Components should take advantage of the platform.
+
+## Holistically considered
+
+All Backpack components should work in multiple areas and situations, not just in the context of one screen.
+
+## Reuse over reinvent
+
+For any new component, we will look to the open source community for inspiration. If they meet our requirements, we will directly use them. For example, the [Autosuggest component](https://backpack.github.io/components/autosuggest) is powered by [React Autosuggest](https://react-autosuggest.js.org/).
+
+## Accessible
+
+Screen readers, keyboard navigation and other assistive technologies are important as we look to support all kinds of travellers. All Skyscanner products should be accessible by everyone no matter their disability or situation. See our guide (coming soon) for best practices.
+
+## RTL supported
+
+All components support RTL (also known as bidirectional languages).
+
+## Themeable
+
+All applicable components should be themeable and be able to use colours from Skyscanner's partners.
+
+## Well documented
+
+Each component should be fully documented, showing each configuration together with explanations where suitable. Additionally the component's readme and available props should be shown. See our guide on [writing style](https://github.com/Skyscanner/backpack/blob/master/decisions/writing-docs.md) for best practices for writing documentation.

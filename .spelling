@@ -711,6 +711,10 @@ onBarHover
 onBarFocus
 getBarLabel
 getBarSelection
+CocoaPod
+Webpack
+subspecs
+ES2015
 
 # Cities
 

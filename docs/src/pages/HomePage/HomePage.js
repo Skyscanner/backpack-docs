@@ -75,7 +75,7 @@ const CARD_CONTENTS = [
   {
     key: 'using-backpack',
     title: 'Using Backpack',
-    href: ROUTES.GETTING_STARTED,
+    href: ROUTES.USING_BACKPACK,
     image: UsingBackpackImage,
     icon: UsingBackpackIcon,
   },

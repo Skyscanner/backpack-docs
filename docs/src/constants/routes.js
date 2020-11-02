@@ -23,12 +23,6 @@ export const USING_BACKPACK = '/using';
 export const TOKENS = '/tokens';
 export const GUIDELINES = '/guidelines';
 
-// using/
-export const GETTING_STARTED = '/using/getting-started';
-export const BACKPACK_REACT_SCRIPTS = '/using/backpack-react-scripts';
-export const BASE_STYLESHEET = '/using/base-stylesheet';
-export const PRINCIPLES = '/using/principles';
-
 // guidelines
 export const ACCESSIBILITY = '/guidelines/accessibility';
 export const ACCESSIBILITY_OVERVIEW = '/guidelines/accessibility/overview';

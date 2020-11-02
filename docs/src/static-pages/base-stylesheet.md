@@ -1,0 +1,41 @@
+---
+title: Base stylesheet
+subtitle: All components are built on top of a lightweight base stylesheet. Ensure you include this on the page when consuming any Backpack components.
+category: using
+---
+
+## What's in it?
+
+* For improved cross-browser rendering, we use [`Normalize.css`](http://necolas.github.io/normalize.css/) to correct small inconsistencies across browsers and devices.
+* The `box-sizing` is globally set on every element, including `*:before` and `*:after`, to `border-box`. This ensures that the declared width of an element is never exceeded due to padding or border.
+* The default `color`, `font-family`, `font-size` & `line-height`.
+Utility classes based on the [HTML5 Boilerplate common helpers](https://github.com/h5bp/html5-boilerplate/blob/5.3.0/dist/doc/css.md#common-helpers), including: `.hidden`, `.visuallyhidden`, `.visuallyhidden.focusable`, `.invisible` and `.clearfix`.
+* That's it!
+
+> Note: There is also a small amount of JavaScript that does "[`Modernizr`](https://modernizr.com/)-like" feature detection (currently used to prevent hover effects on touch devices in downstream components) - make sure this is included in the head also.
+
+## Usage
+
+```
+npm install bpk-stylesheets --save-dev
+```
+
+Include in your HTML like so:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  ...
+  <link rel="stylesheet" href="/node_modules/bpk-stylesheets/base.css">
+  <script src="/node_modules/bpk-stylesheets/base.js"></script>
+</head>
+<body>...</body>
+</html>
+```
+
+Alternatively you could import the uncompiled JavaScript/Sass directly and let Webpack split them out:
+
+```
+import 'bpk-stylesheets';
+```
