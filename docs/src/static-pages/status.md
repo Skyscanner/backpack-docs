@@ -6,7 +6,7 @@ category: using
 
 ## Backpack Web
 
-[![Build Status](https://github.com/Skyscanner/backpack/workflows/CI/badge.svg)](https://github.com/Skyscanner/backpack/actions)
+[![Build Status](https://github.com/Skyscanner/backpack/workflows/Backpack%20CI/badge.svg)](https://github.com/Skyscanner/backpack/actions)
 [![Snyk](https://snyk.io/test/github/skyscanner/backpack/badge.svg)](https://snyk.io/test/github/skyscanner/backpack)
 [![Platform](https://img.shields.io/badge/platform-web-blue.svg)](https://github.com/Skyscanner/backpack)
 [![License](https://img.shields.io/github/license/Skyscanner/backpack.svg)](https://github.com/Skyscanner/backpack/blob/master/LICENSE.txt)
