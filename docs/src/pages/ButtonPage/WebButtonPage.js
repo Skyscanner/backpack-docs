@@ -289,18 +289,20 @@ const components = [
       </Paragraph>,
     ],
     examples: [
-      <BpkButton link>Link</BpkButton>,
+      <BpkButton link padded>
+        Link
+      </BpkButton>,
       ' ',
-      <BpkButton link disabled>
+      <BpkButton link disabled padded>
         Disabled
       </BpkButton>,
       <br />,
       <br />,
-      <BpkButton link large>
+      <BpkButton link large padded>
         Link
       </BpkButton>,
       ' ',
-      <BpkButton link large disabled>
+      <BpkButton link large disabled padded>
         Disabled
       </BpkButton>,
     ],
