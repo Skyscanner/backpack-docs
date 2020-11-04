@@ -11,6 +11,10 @@ on:
         description: 'Repo that triggered this action'
         required: true
 
+defaults:
+  run:
+    shell: bash -l {0}
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,11 +23,9 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: nvm install
-        shell: bash -l {0}
         run: nvm install
 
       - name: nvm use
-        shell: bash -l {0}
         run: nvm use
 
       - name: Check out submodules
@@ -32,7 +34,9 @@ jobs:
           npm run submodules:pull
 
       - name: Install deps
-        run: npm ci
+        run: |
+          nvm use
+          npm ci
 
       - name: Danger
         run: npm run danger
@@ -43,7 +47,9 @@ jobs:
         run: npm test
 
       - name: Build website
-        run: npm run docs:dist
+        run: |
+          nvm use
+          npm run docs:dist
 
       - name: Check site was built correctly
         run: test -e dist/index.html
