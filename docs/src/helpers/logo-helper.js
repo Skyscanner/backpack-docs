@@ -18,12 +18,16 @@
 
 import BackpackLogoWhite from '../static/backpack-logo-white.svg';
 import BackpackLogoGrey from '../static/backpack-logo-sky-grey.svg';
+import BackpackLogoPinkWhite from '../static/backpack-logo-pink-white.svg';
+import BackpackLogoPinkGrey from '../static/backpack-logo-pink-sky-grey.svg';
 import BackpackLogoPride from '../static/backpack-logo-pride.svg';
 import BackpackLogoPrideGrey from '../static/backpack-logo-pride-sky-grey.svg';
 import BackpackLogoChristmas from '../static/backpack-logo-christmas.svg';
 import BackpackLogoChristmasGrey from '../static/backpack-logo-christmas-sky-grey.svg';
 
 export const getBackpackLogo = (overImage = false) => {
+  const companyUpdateLogo = true;
+
   const dateToday = new Date();
   const isPride = dateToday.getMonth() === 5;
   const isChristmas =
@@ -32,6 +36,9 @@ export const getBackpackLogo = (overImage = false) => {
 
   // These logos are used for the main homepage hero
   if (overImage) {
+    if (companyUpdateLogo) {
+      return BackpackLogoPinkGrey;
+    }
     if (isPride) {
       return BackpackLogoPrideGrey;
     }
@@ -41,6 +48,9 @@ export const getBackpackLogo = (overImage = false) => {
     return BackpackLogoGrey;
   }
 
+  if (companyUpdateLogo) {
+    return BackpackLogoPinkWhite;
+  }
   if (isPride) {
     return BackpackLogoPride;
   }
