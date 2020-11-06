@@ -25,9 +25,7 @@ import iosScreenshotWithImages from '../../../../backpack-react-native/lib/bpk-c
 import androidScreenshotWithImages from '../../../../backpack-react-native/lib/bpk-component-flat-list/screenshots/android/with-images.png';
 import iosScreenshotWithSearch from '../../../../backpack-react-native/lib/bpk-component-flat-list/screenshots/ios/with-search.png';
 import androidScreenshotWithSearch from '../../../../backpack-react-native/lib/bpk-component-flat-list/screenshots/android/with-search.png';
-import IntroBlurb from '../../components/IntroBlurb';
 import { NativeComponentPage } from '../../components/ComponentPage';
-import DocsPageWrapper from '../../components/DocsPageWrapper';
 
 const components = [
   {
@@ -100,26 +98,11 @@ const components = [
   },
 ];
 
-const blurb = [
-  <IntroBlurb>
-    The flat list component can be used to display content in the form of a
-    tappable list.
-  </IntroBlurb>,
-];
-
-const NativeFlatListSubPage = () => (
+const NativeFlatListPage = () => (
   <NativeComponentPage
     screenshots={components}
     readme={readme}
     githubPath="bpk-component-flat-list"
-  />
-);
-
-const NativeFlatListPage = () => (
-  <DocsPageWrapper
-    title="Flat list"
-    blurb={blurb}
-    nativeSubpage={<NativeFlatListSubPage />}
   />
 );
 

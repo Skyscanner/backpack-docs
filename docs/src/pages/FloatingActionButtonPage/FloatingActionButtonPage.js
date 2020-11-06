@@ -22,9 +22,10 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import Android from '../AndroidFloatingActionButtonPage';
 
-const Page = () => (
+import AndroidFloatingActionButtonPage from './AndroidFloatingActionButtonPage';
+
+const FloatingActionButtonPage = () => (
   <DocsPageWrapper
     title="Floating action button"
     blurb={[
@@ -33,8 +34,8 @@ const Page = () => (
         application.
       </IntroBlurb>,
     ]}
-    androidSubpage={<Android wrapped />}
+    androidSubpage={<AndroidFloatingActionButtonPage wrapped />}
   />
 );
 
-export default Page;
+export default FloatingActionButtonPage;

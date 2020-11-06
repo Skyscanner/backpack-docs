@@ -16,6 +16,6 @@
  * limitations under the License.
  */
 
-import page from './WebFlarePage';
+import page from './FlatListPage';
 
 export default page;
