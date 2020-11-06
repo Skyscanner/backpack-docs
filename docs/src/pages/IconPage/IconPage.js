@@ -19,6 +19,7 @@
 /* @flow strict */
 
 import React from 'react';
+import BpkLink from 'bpk-component-link';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
@@ -34,6 +35,11 @@ const Page = () => (
     blurb={[
       <IntroBlurb>
         A suite of icons for representing concepts, features and actions.
+        Looking for the iconset? Checkout the{' '}
+        <BpkLink href="https://backpack.github.io/components/icon?platform=design">
+          design tab
+        </BpkLink>{' '}
+        for the list of available icons.
       </IntroBlurb>,
     ]}
     designSubpage={<IconsDesignPage wrapped />}
