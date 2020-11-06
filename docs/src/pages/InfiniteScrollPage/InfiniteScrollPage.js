@@ -17,169 +17,11 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
-import withInfiniteScroll, {
-  DataSource,
-  ArrayDataSource,
-} from 'bpk-component-infinite-scroll';
-import BpkButton from 'bpk-component-button';
-import { BpkSpinner, SPINNER_TYPES } from 'bpk-component-spinner';
-import { cssModules } from 'bpk-react-utils';
-import { BpkList, BpkListItem } from 'bpk-component-list';
-import infiniteScrollReadme from 'bpk-component-infinite-scroll/README.md';
 
-import { WebComponentPage } from '../../components/ComponentPage';
 import IntroBlurb from '../../components/IntroBlurb';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 
-import STYLES from './InfiniteScrollPage.scss';
-
-const getClassName = cssModules(STYLES);
-
-const elementsArray = [
-  'Item 1',
-  'Item 2',
-  'Item 3',
-  'Item 4',
-  'Item 5',
-  'Item 6',
-  'Item 7',
-  'Item 8',
-  'Item 9',
-  'Item 10',
-  'Item 11',
-  'Item 12',
-  'Item 13',
-  'Item 14',
-  'Item 15',
-  'Item 16',
-  'Item 17',
-  'Item 18',
-  'Item 19',
-  'Item 20',
-];
-
-const List = ({ elements }) => (
-  <BpkList className={getClassName('bpk-docs-infinite-scroll-page__list')}>
-    {elements.map(element => (
-      <BpkListItem key={element}>{element}</BpkListItem>
-    ))}
-  </BpkList>
-);
-
-List.propTypes = {
-  elements: PropTypes.arrayOf(PropTypes.any).isRequired,
-};
-
-const FixedHeightPanel = ({ children }) => (
-  <div className={getClassName('bpk-docs-infinite-scroll-page__fixed-panel')}>
-    {children}
-  </div>
-);
-
-FixedHeightPanel.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-const CustomSeeMore = ({ onSeeMoreClick }) => (
-  <div
-    className={getClassName('bpk-docs-infinite-scroll-page__custom-component')}
-  >
-    <BpkButton onClick={onSeeMoreClick}>See More</BpkButton>
-  </div>
-);
-
-CustomSeeMore.propTypes = {
-  onSeeMoreClick: PropTypes.func.isRequired,
-};
-
-const CustomLoading = () => (
-  <div
-    className={getClassName('bpk-docs-infinite-scroll-page__custom-component')}
-  >
-    <BpkSpinner type={SPINNER_TYPES.primary} />
-  </div>
-);
-
-class InfiniteDataSource extends DataSource {
-  constructor() {
-    super();
-    this.elements = [];
-  }
-
-  fetchItems(index, nElements) {
-    return new Promise(resolve => {
-      for (let i = index; i < index + nElements; i += 1) {
-        this.elements.push(`Item ${index + i}`);
-      }
-      resolve(this.elements.slice(index, index + nElements));
-    });
-  }
-}
-
-class DelayedDataSource extends ArrayDataSource {
-  fetchItems(index, nElements) {
-    return new Promise(resolve => {
-      setTimeout(() => resolve(super.fetchItems(index, nElements)), 500);
-    });
-  }
-}
-
-const InfiniteList = withInfiniteScroll(List);
-const defaultFetch = new ArrayDataSource(elementsArray);
-
-const components = [
-  {
-    id: 'default',
-    title: 'Default',
-    blurb: 'Loads five more list items upon reaching the bottom of the list.',
-    examples: [
-      <FixedHeightPanel>
-        <InfiniteList dataSource={new InfiniteDataSource()} />
-      </FixedHeightPanel>,
-    ],
-  },
-  {
-    id: 'one-element-per-scroll',
-    title: 'One element per scroll',
-    blurb: 'Loads one more list item upon reaching the bottom of the list.',
-    examples: [
-      <FixedHeightPanel>
-        <InfiniteList dataSource={defaultFetch} elementsPerScroll={1} />
-      </FixedHeightPanel>,
-    ],
-  },
-  {
-    id: 'partial-load',
-    title: 'Partial load',
-    blurb:
-      'After 15 items have loaded, a button must be pressed to load more items.',
-    examples: [
-      <FixedHeightPanel>
-        <InfiniteList
-          dataSource={defaultFetch}
-          elementsPerScroll={5}
-          seeMoreAfter={2}
-          renderSeeMoreComponent={CustomSeeMore}
-        />
-      </FixedHeightPanel>,
-    ],
-  },
-  {
-    id: 'custom-loading',
-    title: 'Custom loading component',
-    blurb: [],
-    examples: [
-      <FixedHeightPanel>
-        <InfiniteList
-          dataSource={new DelayedDataSource(elementsArray)}
-          elementsPerScroll={5}
-          renderLoadingComponent={CustomLoading}
-        />
-      </FixedHeightPanel>,
-    ],
-  },
-];
+import WebInfiniteScrollPage from './WebInfiniteScrollPage';
 
 const blurb = [
   <IntroBlurb>
@@ -188,19 +30,11 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const InfiniteScrollSubpage = () => (
-  <WebComponentPage
-    examples={components}
-    readme={infiniteScrollReadme}
-    packageName="bpk-component-infinite-scroll"
-  />
-);
-
 const InfiniteScrollPage = () => (
   <DocsPageWrapper
     title="Infinite scroll"
     blurb={blurb}
-    webSubpage={<InfiniteScrollSubpage />}
+    webSubpage={<WebInfiniteScrollPage />}
   />
 );
 

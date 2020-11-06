@@ -22,8 +22,9 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import Web from '../WebImagesPage';
-import Native from '../NativeImagesPage';
+
+import Web from './WebImagesPage';
+import Native from './NativeImagesPage';
 
 const ImagesPage = () => (
   <DocsPageWrapper
