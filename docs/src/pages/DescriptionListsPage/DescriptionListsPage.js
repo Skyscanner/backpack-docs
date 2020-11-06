@@ -17,16 +17,11 @@
  */
 
 import React from 'react';
-import {
-  BpkDescriptionList,
-  BpkDescriptionTerm,
-  BpkDescriptionDetails,
-} from 'bpk-component-description-list';
-import descriptionlistsReadme from 'bpk-component-description-list/README.md';
 
-import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
+
+import WebDescriptionListsPage from './WebDescriptionListsPage';
 
 const blurb = [
   <IntroBlurb>
@@ -34,47 +29,11 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const components = [
-  {
-    id: 'default',
-    title: 'Default',
-    examples: [
-      <BpkDescriptionList>
-        <BpkDescriptionTerm>Airport code</BpkDescriptionTerm>
-        <BpkDescriptionDetails>
-          The three digit code which is unique to a specific airport. eg. LHR
-          for Heathrow or LGW for Gatwick.
-        </BpkDescriptionDetails>
-        <BpkDescriptionTerm>Boarding pass</BpkDescriptionTerm>
-        <BpkDescriptionDetails>
-          A card given to the passenger after check-in which allocates a seat
-          number or indicates a boarding pattern. The stub of the card should be
-          retained after going through the boarding gate to show to the flight
-          crew once reaching the aircraft.
-        </BpkDescriptionDetails>
-        <BpkDescriptionTerm>Charter</BpkDescriptionTerm>
-        <BpkDescriptionDetails>
-          An aircraft which is used by a specific group be it customers of a
-          particular holiday company or an individual party.
-        </BpkDescriptionDetails>
-      </BpkDescriptionList>,
-    ],
-  },
-];
-
-const DescriptionListsSubPage = () => (
-  <WebComponentPage
-    readme={descriptionlistsReadme}
-    examples={components}
-    packageName="bpk-component-description-list"
-  />
-);
-
 const DescriptionListsPage = () => (
   <DocsPageWrapper
     title="Description list"
     blurb={blurb}
-    webSubpage={<DescriptionListsSubPage />}
+    webSubpage={<WebDescriptionListsPage />}
   />
 );
 

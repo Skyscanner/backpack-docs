@@ -22,10 +22,11 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import AndroidDialogs from '../AndroidDialogPage';
-import IOSDialogs from '../IOSDialogPage';
-import WebDialogs from '../WebDialogPage';
-import NativeDialogs from '../NativeDialogPage';
+
+import AndroidDialogs from './AndroidDialogPage';
+import IOSDialogs from './IOSDialogPage';
+import WebDialogs from './WebDialogPage';
+import NativeDialogs from './NativeDialogPage';
 
 const blurb = [
   <IntroBlurb>
@@ -34,7 +35,7 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const DialogsPage = () => (
+const DialogPage = () => (
   <DocsPageWrapper
     title="Dialog"
     blurb={blurb}
@@ -45,4 +46,4 @@ const DialogsPage = () => (
   />
 );
 
-export default DialogsPage;
+export default DialogPage;

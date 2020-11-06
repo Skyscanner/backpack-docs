@@ -16,103 +16,12 @@
  * limitations under the License.
  */
 
-import PropTypes from 'prop-types';
-import React, { Component } from 'react';
-import BpkDrawer from 'bpk-component-drawer';
-import BpkButton from 'bpk-component-button';
-import { BpkButtonLink } from 'bpk-component-link';
-import drawerReadme from 'bpk-component-drawer/README.md';
+import React from 'react';
 
-import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
-import Paragraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
 
-class DrawerContainer extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      isOpen: false,
-      hideTitle: false,
-    };
-  }
-
-  onOpen = () => {
-    this.setState({
-      isOpen: true,
-    });
-  };
-
-  onClose = () => {
-    this.setState({
-      isOpen: false,
-    });
-  };
-
-  toggleTitle = () => {
-    this.setState(state => ({
-      hideTitle: !state.hideTitle,
-    }));
-  };
-
-  render() {
-    const { children, ...rest } = this.props;
-
-    return (
-      <div>
-        <BpkButton onClick={this.onOpen}>Open Drawer</BpkButton>
-        <BpkDrawer
-          id="my-drawer"
-          isOpen={this.state.isOpen}
-          onClose={this.onClose}
-          title="Drawer title"
-          getApplicationElement={() => document.getElementById('pagewrap')}
-          hideTitle={this.state.hideTitle}
-          renderTarget={() => document.getElementById('portal-target')}
-          {...rest}
-        >
-          <div>{children}</div>
-          <BpkButtonLink onClick={this.toggleTitle}>
-            Toggle show title
-          </BpkButtonLink>
-        </BpkDrawer>
-      </div>
-    );
-  }
-}
-
-DrawerContainer.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-const components = [
-  {
-    id: 'default',
-    title: 'Default',
-    blurb: 'The default drawer has a title and a close button',
-    examples: [
-      <DrawerContainer closeLabel="Close drawer">
-        <Paragraph>You can put anything you want in here</Paragraph>
-      </DrawerContainer>,
-    ],
-  },
-  {
-    id: 'text-button',
-    title: 'Text button',
-    blurb: [
-      <Paragraph>
-        Drawers can be configured to display the close button as text - useful
-        for when a close icon doesn&apos;t fit the context.
-      </Paragraph>,
-    ],
-    examples: [
-      <DrawerContainer closeText="Close drawer">
-        <Paragraph>You can put anything you want in here</Paragraph>
-      </DrawerContainer>,
-    ],
-  },
-];
+import WebDrawerPage from './WebDrawerPage';
 
 const blurb = [
   <IntroBlurb>
@@ -120,19 +29,11 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const DrawerSubPage = () => (
-  <WebComponentPage
-    examples={components}
-    readme={drawerReadme}
-    packageName="bpk-component-drawer"
-  />
-);
-
 const DrawerPage = () => (
   <DocsPageWrapper
     title="Drawer"
     blurb={blurb}
-    webSubpage={<DrawerSubPage />}
+    webSubpage={<WebDrawerPage />}
   />
 );
 
