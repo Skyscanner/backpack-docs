@@ -36,7 +36,7 @@ const Page = () => (
       <IntroBlurb>
         A suite of icons for representing concepts, features and actions.
         Looking for the iconset? Checkout the{' '}
-        <BpkLink href="https://backpack.github.io/components/icon?platform=design">
+        <BpkLink href="/components/icon?platform=design">
           design tab
         </BpkLink>{' '}
         for the list of available icons.
