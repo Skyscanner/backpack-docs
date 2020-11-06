@@ -22,7 +22,8 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import Android from '../AndroidBottomNavPage';
+
+import Android from './AndroidBottomNavPage';
 
 const Page = () => (
   <DocsPageWrapper

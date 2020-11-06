@@ -17,12 +17,11 @@
  */
 
 import React from 'react';
-import breadcrumbReadme from 'bpk-component-breadcrumb/README.md';
-import BpkBreadcrumb, { BpkBreadcrumbItem } from 'bpk-component-breadcrumb';
 
 import IntroBlurb from '../../components/IntroBlurb';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
-import { WebComponentPage } from '../../components/ComponentPage';
+
+import WebBreadcrumbPage from './WebBreadcrumbPage';
 
 const blurb = [
   <IntroBlurb>
@@ -31,35 +30,11 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const components = [
-  {
-    id: 'default',
-    title: 'Default',
-    examples: [
-      <BpkBreadcrumb label="Example breadcrumbs">
-        <BpkBreadcrumbItem href="">Home</BpkBreadcrumbItem>
-        <BpkBreadcrumbItem href="">Page 1</BpkBreadcrumbItem>
-        <BpkBreadcrumbItem href="" active>
-          Page 2
-        </BpkBreadcrumbItem>
-      </BpkBreadcrumb>,
-    ],
-  },
-];
-
-const BreadcrumbSubPage = () => (
-  <WebComponentPage
-    examples={components}
-    readme={breadcrumbReadme}
-    packageName="bpk-component-breadcrumb"
-  />
-);
-
 const BreadcrumbPage = () => (
   <DocsPageWrapper
     title="Breadcrumb"
     blurb={blurb}
-    webSubpage={<BreadcrumbSubPage />}
+    webSubpage={<WebBreadcrumbPage />}
   />
 );
 
