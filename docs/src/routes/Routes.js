@@ -87,7 +87,7 @@ import MapPage from '../pages/MapPage';
 import InfiniteScrollPage from '../pages/InfiniteScrollPage';
 import MobileScrollContainerPage from '../pages/MobileScrollContainerPage';
 import ModalsPage from '../pages/ModalsPage';
-import NativeFlatListPage from '../pages/NativeFlatListPage';
+import FlatListPage from '../pages/FlatListPage';
 import NativePickerPage from '../pages/NativePickerPage';
 import SelectPage from '../pages/SelectPage';
 import NativeTouchableNativeFeedbackPage from '../pages/NativeTouchableNativeFeedbackPage';
@@ -225,7 +225,7 @@ export const ROUTES_MAPPINGS = [
       { path: ROUTES.FLARE, component: FlarePage },
       {
         path: ROUTES.FLAT_LIST,
-        component: NativeFlatListPage,
+        component: FlatListPage,
       },
       {
         path: ROUTES.FLOATING_ACTION_BUTTON,

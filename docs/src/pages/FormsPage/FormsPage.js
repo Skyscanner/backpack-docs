@@ -17,119 +17,18 @@
  */
 
 import React from 'react';
-import BpkLink from 'bpk-component-link';
 
-import * as ROUTES from '../../constants/routes';
-import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
-import BpkParagraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
+
+import WebFormsPage from './WebFormsPage';
 
 const blurb = [
   <IntroBlurb>A range of common inputs for capturing user data.</IntroBlurb>,
 ];
 
-const components = [
-  {
-    id: 'inputs',
-    title: 'Inputs',
-    blurb: [
-      <BpkParagraph>
-        <BpkLink href={ROUTES.TEXT_INPUT}>
-          Text inputs have been moved to their own page.
-        </BpkLink>
-      </BpkParagraph>,
-    ],
-  },
-  {
-    id: 'selects',
-    title: 'Selects (aka dropdowns)',
-    blurb: [
-      <BpkParagraph>
-        <BpkLink href={ROUTES.SELECT}>
-          Selects have been moved to their own page.
-        </BpkLink>
-      </BpkParagraph>,
-    ],
-  },
-  {
-    id: 'docked-inputs-and-selects',
-    title: 'Docked inputs & selects',
-    blurb: [
-      <BpkParagraph>
-        <BpkLink href={ROUTES.TEXT_INPUT}>
-          Docked inputs are now part of the text input page.
-        </BpkLink>
-      </BpkParagraph>,
-    ],
-  },
-  {
-    id: 'textareas',
-    title: 'Textareas',
-    blurb: [
-      <BpkParagraph>
-        <BpkLink href={ROUTES.TEXT_INPUT}>
-          Text areas are now part of the text input page.
-        </BpkLink>
-      </BpkParagraph>,
-    ],
-  },
-  {
-    id: 'checkboxes',
-    title: 'Checkboxes',
-    blurb: [
-      <BpkParagraph>
-        <BpkLink href={ROUTES.CHECKBOX}>
-          Checkboxes have been moved to their own page.
-        </BpkLink>
-      </BpkParagraph>,
-    ],
-  },
-  {
-    id: 'radios',
-    title: 'Radio buttons',
-    blurb: [
-      <BpkParagraph>
-        <BpkLink href={ROUTES.RADIO_BUTTON}>
-          Radio buttons have been moved to their own page.
-        </BpkLink>
-      </BpkParagraph>,
-    ],
-  },
-  {
-    id: 'labels',
-    title: 'Labels',
-    blurb: [
-      <BpkParagraph>
-        <BpkLink href={ROUTES.FORM_LABEL}>
-          Form labels have been moved to their own page.
-        </BpkLink>
-      </BpkParagraph>,
-    ],
-  },
-  {
-    id: 'validation',
-    title: 'Validation',
-    blurb: [
-      <BpkParagraph>
-        <BpkLink href={ROUTES.FORM_VALIDATION}>
-          Form validation has been moved to its own page.
-        </BpkLink>
-      </BpkParagraph>,
-    ],
-  },
-];
-
-const FormsSubPage = () => (
-  <WebComponentPage
-    examples={components}
-    sassdocId="forms"
-    packageName="bpk-component-form-validation"
-  />
-);
-
 const FormsPage = () => (
-  <DocsPageWrapper title="Forms" blurb={blurb} webSubpage={<FormsSubPage />} />
+  <DocsPageWrapper title="Forms" blurb={blurb} webSubpage={<WebFormsPage />} />
 );
 
 export default FormsPage;

@@ -19,7 +19,7 @@
 /* @flow strict */
 
 import React from 'react';
-import BpkLink from 'bpk-component-link';
+import BpkRouterLink from 'bpk-component-router-link';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
@@ -36,7 +36,9 @@ const Page = () => (
       <IntroBlurb>
         A suite of icons for representing concepts, features and actions.
         Looking for the icon set? Check out the{' '}
-        <BpkLink href="/components/icon?platform=design">design tab</BpkLink>{' '}
+        <BpkRouterLink to="/components/icon?platform=design">
+          design tab
+        </BpkRouterLink>{' '}
         for the list of available icons.
       </IntroBlurb>,
     ]}

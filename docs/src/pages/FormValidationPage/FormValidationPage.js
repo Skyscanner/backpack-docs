@@ -22,7 +22,8 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import WebValidation from '../WebFormValidationPage';
+
+import WebValidation from './WebFormValidationPage';
 
 const blurb = [
   <IntroBlurb>

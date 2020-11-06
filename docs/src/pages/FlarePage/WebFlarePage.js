@@ -24,7 +24,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import { WebComponentPage } from '../../components/ComponentPage';
 
-import STYLES from './Flare.scss';
+import STYLES from './FlarePage.scss';
 
 const getClassName = cssModules(STYLES);
 

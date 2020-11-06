@@ -16,6 +16,26 @@
  * limitations under the License.
  */
 
-import page from './NativeFlarePage';
+import React from 'react';
 
-export default page;
+import IntroBlurb from '../../components/IntroBlurb';
+import DocsPageWrapper from '../../components/DocsPageWrapper';
+
+import NativeFlatListPage from './NativeFlatListPage';
+
+const blurb = [
+  <IntroBlurb>
+    The flat list component can be used to display content in the form of a
+    tappable list.
+  </IntroBlurb>,
+];
+
+const FlatListPage = () => (
+  <DocsPageWrapper
+    title="Flat list"
+    blurb={blurb}
+    nativeSubpage={<NativeFlatListPage />}
+  />
+);
+
+export default FlatListPage;

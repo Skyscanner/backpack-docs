@@ -22,10 +22,11 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import AndroidFlare from '../AndroidFlarePage';
-import IOSFlare from '../IOSFlarePage';
-import WebFlare from '../WebFlarePage';
-import NativeFlare from '../NativeFlarePage';
+
+import AndroidFlare from './AndroidFlarePage';
+import IOSFlare from './IOSFlarePage';
+import WebFlare from './WebFlarePage';
+import NativeFlare from './NativeFlarePage';
 
 const Page = () => (
   <DocsPageWrapper
