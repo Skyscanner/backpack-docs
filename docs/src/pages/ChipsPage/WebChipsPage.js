@@ -276,7 +276,7 @@ const components = [
   },
 ];
 
-const ChipsPage = () => (
+const WebChipsPage = () => (
   <WebComponentPage
     examples={components}
     readme={chipReadme}
@@ -284,4 +284,4 @@ const ChipsPage = () => (
   />
 );
 
-export default ChipsPage;
+export default WebChipsPage;

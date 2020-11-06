@@ -22,8 +22,9 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import AndroidPage from '../AndroidCheckboxPage';
-import WebPage from '../WebCheckboxPage';
+
+import AndroidPage from './AndroidCheckboxPage';
+import WebPage from './WebCheckboxPage';
 
 const Page = () => (
   <DocsPageWrapper

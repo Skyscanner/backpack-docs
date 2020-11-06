@@ -22,10 +22,11 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import Android from '../AndroidChipPage';
-import IOS from '../IOSChipPage';
-import Web from '../WebChipsPage';
-import Native from '../NativeChipsPage';
+
+import Android from './AndroidChipPage';
+import IOS from './IOSChipPage';
+import Web from './WebChipsPage';
+import Native from './NativeChipsPage';
 
 const blurb = [
   <IntroBlurb>
@@ -34,7 +35,7 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const Page = () => (
+const ChipsPage = () => (
   <DocsPageWrapper
     title="Chip"
     blurb={blurb}
@@ -45,4 +46,4 @@ const Page = () => (
   />
 );
 
-export default Page;
+export default ChipsPage;
