@@ -20,10 +20,11 @@
 
 import React from 'react';
 
-import Web from '../WebMapPage';
-import Native from '../NativeMapPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
+
+import Web from './WebMapPage';
+import Native from './NativeMapPage';
 
 const blurb = [
   <IntroBlurb>The map component is for embedding maps into pages.</IntroBlurb>,

@@ -17,12 +17,11 @@
  */
 
 import React from 'react';
-import { BpkList, BpkListItem } from 'bpk-component-list';
-import listReadme from 'bpk-component-list/README.md';
 
-import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
+
+import WebListsPage from './WebListsPage';
 
 const blurb = [
   <IntroBlurb>
@@ -30,44 +29,8 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const components = [
-  {
-    id: 'default',
-    title: 'Default',
-    examples: [
-      <div>
-        <BpkList>
-          <BpkListItem>Apples</BpkListItem>
-          <BpkListItem>
-            Oranges
-            <BpkList>
-              <BpkListItem>Tangerines</BpkListItem>
-              <BpkListItem>Mandarins</BpkListItem>
-              <BpkListItem>Satsumas</BpkListItem>
-            </BpkList>
-          </BpkListItem>
-          <BpkListItem>Pears</BpkListItem>
-        </BpkList>
-        <BpkList ordered>
-          <BpkListItem>First</BpkListItem>
-          <BpkListItem>Second</BpkListItem>
-          <BpkListItem>Third</BpkListItem>
-        </BpkList>
-      </div>,
-    ],
-  },
-];
-
-const ListSubPage = () => (
-  <WebComponentPage
-    readme={listReadme}
-    examples={components}
-    packageName="bpk-component-list"
-  />
-);
-
 const ListPage = () => (
-  <DocsPageWrapper title="List" blurb={blurb} webSubpage={<ListSubPage />} />
+  <DocsPageWrapper title="List" blurb={blurb} webSubpage={<WebListsPage />} />
 );
 
 export default ListPage;
