@@ -118,7 +118,7 @@ const components = [
   },
 ];
 
-const DialogsPage = () => (
+const WebDialogPage = () => (
   <WebComponentPage
     examples={components}
     readme={dialogReadme}
@@ -140,4 +140,4 @@ const DialogsPage = () => (
   />
 );
 
-export default DialogsPage;
+export default WebDialogPage;

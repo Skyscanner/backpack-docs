@@ -16,75 +16,14 @@
  * limitations under the License.
  */
 
-import React, { Component } from 'react';
-import BpkDatepicker from 'bpk-component-datepicker';
+import React from 'react';
 import BpkRouterLink from 'bpk-component-router-link';
-import datepickerReadme from 'bpk-component-datepicker/README.md';
-import format from 'date-fns/format';
-import { weekDays } from 'bpk-component-calendar/test-utils';
 
 import * as ROUTES from '../../constants/routes';
-import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
-import Paragraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
 
-const formatDate = date => format(date, 'dd/MM/yyyy');
-const formatMonth = date => format(date, 'MMMM yyyy');
-const formatDateFull = date => format(date, 'do MMMM yyyy');
-
-class DatepickerContainer extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      date: null,
-    };
-  }
-
-  render() {
-    return (
-      <BpkDatepicker
-        {...this.props}
-        date={this.state.date}
-        onDateSelect={date => this.setState({ date })}
-      />
-    );
-  }
-}
-
-const components = [
-  {
-    id: 'datepicker',
-    title: 'Default',
-    blurb: [
-      <Paragraph>Default calendar, input and popover configuration.</Paragraph>,
-      <Paragraph>
-        See the{' '}
-        <BpkRouterLink to={ROUTES.CALENDAR}>
-          BpkCalendar documentation
-        </BpkRouterLink>{' '}
-        for more examples.
-      </Paragraph>,
-    ],
-    examples: [
-      <DatepickerContainer
-        id="calendar-1"
-        closeButtonText="Close"
-        formatDate={formatDate}
-        formatDateFull={formatDateFull}
-        formatMonth={formatMonth}
-        daysOfWeek={weekDays}
-        weekStartsOn={1}
-        changeMonthLabel="Change month"
-        title="Select date"
-        getApplicationElement={() => document.getElementById('pagewrap')}
-        renderTarget={() => document.getElementById('portal-target')}
-        inputProps={{ placeholder: 'Select date' }}
-      />,
-    ],
-  },
-];
+import WebDatepickerPage from './WebDatepickerPage';
 
 const blurb = [
   <IntroBlurb>
@@ -95,19 +34,11 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const DatepickerSubPage = () => (
-  <WebComponentPage
-    examples={components}
-    readme={datepickerReadme}
-    packageName="bpk-component-datepicker"
-  />
-);
-
 const DatepickerPage = () => (
   <DocsPageWrapper
     title="Date picker"
     blurb={blurb}
-    webSubpage={<DatepickerSubPage />}
+    webSubpage={<WebDatepickerPage />}
   />
 );
 
