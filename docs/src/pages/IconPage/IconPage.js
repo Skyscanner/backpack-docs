@@ -35,10 +35,8 @@ const Page = () => (
     blurb={[
       <IntroBlurb>
         A suite of icons for representing concepts, features and actions.
-        Looking for the iconset? Checkout the{' '}
-        <BpkLink href="/components/icon?platform=design">
-          design tab
-        </BpkLink>{' '}
+        Looking for the icon set? Check out the{' '}
+        <BpkLink href="/components/icon?platform=design">design tab</BpkLink>{' '}
         for the list of available icons.
       </IntroBlurb>,
     ]}
