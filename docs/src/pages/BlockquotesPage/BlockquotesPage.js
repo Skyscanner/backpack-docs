@@ -17,26 +17,11 @@
  */
 
 import React from 'react';
-import BpkBlockquote from 'bpk-component-blockquote';
-import blockquotesReadme from 'bpk-component-blockquote/README.md';
 
-import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 
-const components = [
-  {
-    id: 'default',
-    title: 'Default',
-    examples: [
-      <BpkBlockquote>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus mus.
-      </BpkBlockquote>,
-    ],
-  },
-];
+import WebBlockquotesPage from './WebBlockquotesPage';
 
 const blurb = [
   <IntroBlurb>
@@ -45,19 +30,11 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const BlockquotesSubpagePage = () => (
-  <WebComponentPage
-    examples={components}
-    readme={blockquotesReadme}
-    packageName="bpk-component-blockquote"
-  />
-);
-
 const BlockquotesPage = () => (
   <DocsPageWrapper
     title="Blockquote"
     blurb={blurb}
-    webSubpage={<BlockquotesSubpagePage />}
+    webSubpage={<WebBlockquotesPage />}
   />
 );
 

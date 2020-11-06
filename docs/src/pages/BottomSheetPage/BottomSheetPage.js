@@ -22,7 +22,8 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import IOSBottomSheet from '../IOSBottomSheetPage';
+
+import IOSBottomSheet from './IOSBottomSheetPage';
 
 const BottomSheetPage = () => (
   <DocsPageWrapper

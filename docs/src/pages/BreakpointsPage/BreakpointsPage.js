@@ -17,73 +17,11 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
-import BpkBreakpoint, { BREAKPOINTS } from 'bpk-component-breakpoint';
-import { cssModules } from 'bpk-react-utils';
-import breakpointReadme from 'bpk-component-breakpoint/README.md';
 
-import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 
-import STYLES from './breakpoints-page.scss';
-
-const getClassName = cssModules(STYLES);
-
-const MediaQueryStatus = props => {
-  const className = getClassName(
-    props.isActive
-      ? 'bpk-breakpoints-demo--active'
-      : 'bpk-breakpoints-demo--inactive',
-  );
-
-  return <div className={className}>{props.children}</div>;
-};
-
-MediaQueryStatus.propTypes = {
-  isActive: PropTypes.bool.isRequired,
-  children: PropTypes.node.isRequired,
-};
-
-const components = [
-  {
-    id: 'default',
-    title: 'Default',
-    examples: [
-      <div className={getClassName('bpk-breakpoints-demo')}>
-        <BpkBreakpoint query={BREAKPOINTS.MOBILE}>
-          {isActive => (
-            <MediaQueryStatus isActive={isActive}>MOBILE</MediaQueryStatus>
-          )}
-        </BpkBreakpoint>
-        <BpkBreakpoint query={BREAKPOINTS.TABLET}>
-          {isActive => (
-            <MediaQueryStatus isActive={isActive}>TABLET</MediaQueryStatus>
-          )}
-        </BpkBreakpoint>
-        <BpkBreakpoint query={BREAKPOINTS.TABLET_ONLY}>
-          {isActive => (
-            <MediaQueryStatus isActive={isActive}>TABLET ONLY</MediaQueryStatus>
-          )}
-        </BpkBreakpoint>
-        <BpkBreakpoint query={BREAKPOINTS.ABOVE_MOBILE}>
-          {isActive => (
-            <MediaQueryStatus isActive={isActive}>
-              ABOVE MOBILE
-            </MediaQueryStatus>
-          )}
-        </BpkBreakpoint>
-        <BpkBreakpoint query={BREAKPOINTS.ABOVE_TABLET}>
-          {isActive => (
-            <MediaQueryStatus isActive={isActive}>
-              ABOVE TABLET
-            </MediaQueryStatus>
-          )}
-        </BpkBreakpoint>
-      </div>,
-    ],
-  },
-];
+import WebBreakpointsPage from './WebBreakpointsPage';
 
 const blurb = [
   <IntroBlurb>
@@ -93,20 +31,11 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const BreakpointsSubPage = () => (
-  <WebComponentPage
-    examples={components}
-    readme={breakpointReadme}
-    sassdocId="breakpoints"
-    packageName="bpk-component-breakpoint"
-  />
-);
-
 const BreakpointsPage = () => (
   <DocsPageWrapper
     title="Breakpoint"
     blurb={blurb}
-    webSubpage={<BreakpointsSubPage />}
+    webSubpage={<WebBreakpointsPage />}
   />
 );
 
