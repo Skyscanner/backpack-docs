@@ -17,13 +17,11 @@
  */
 
 import React from 'react';
-import { BpkCode, BpkCodeBlock } from 'bpk-component-code';
-import codeReadme from 'bpk-component-code/README.md';
 
-import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
-import Paragraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
+
+import WebCodePage from './WebCodePage';
 
 const blurb = [
   <IntroBlurb>
@@ -32,37 +30,8 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const components = [
-  {
-    id: 'default',
-    title: 'Default',
-    examples: [
-      <Paragraph>
-        We recommend using React from npm with a bundler like webpack. You can
-        use the <BpkCode>react</BpkCode> and <BpkCode>react-dom</BpkCode>{' '}
-        packages. After installing it using{' '}
-        <BpkCode>npm install --save react react-dom</BpkCode>, you can use:
-      </Paragraph>,
-      <BpkCodeBlock>
-        {`import React from 'react';
-  import ReactDOM from 'react-dom';
-
-  ReactDOM.render(<App />, ...);`}
-      </BpkCodeBlock>,
-    ],
-  },
-];
-
-const CodeSubPage = () => (
-  <WebComponentPage
-    readme={codeReadme}
-    examples={components}
-    packageName="bpk-component-code"
-  />
-);
-
 const CodePage = () => (
-  <DocsPageWrapper title="Code" blurb={blurb} webSubpage={<CodeSubPage />} />
+  <DocsPageWrapper title="Code" blurb={blurb} webSubpage={<WebCodePage />} />
 );
 
 export default CodePage;

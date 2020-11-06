@@ -20,53 +20,12 @@
 
 import React from 'react';
 
-import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-carousel/screenshots/ios/default.png';
-import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-carousel/screenshots/android/default.png';
-import readme from '../../../../backpack-react-native/lib/bpk-component-carousel/README.md';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import Paragraph from '../../components/Paragraph';
-import { NativeComponentPage } from '../../components/ComponentPage';
 
-const components = [
-  {
-    id: 'default',
-    title: 'Default',
-    blurb: (
-      <Paragraph>
-        Whilst this example shows images, any content can be inserted here.
-      </Paragraph>
-    ),
-    screenshots: [
-      {
-        title: 'iOS',
-        width: 750,
-        height: 1334,
-        src: `/${iosScreenshotDefault}`,
-        altText: 'iOS default carousel component',
-        subText: '(iPhone 8 simulator)',
-      },
-      {
-        title: 'Android',
-        width: 1080,
-        height: 1920,
-        src: `/${androidScreenshotDefault}`,
-        altText: 'Android default carousel component',
-        subText: '(Google Pixel emulator)',
-      },
-    ],
-  },
-];
+import NativeCarouselPage from './NativeCarouselPage';
 
-const CarouselPageNativeSubPage = () => (
-  <NativeComponentPage
-    screenshots={components}
-    readme={readme}
-    githubPath="bpk-component-carousel"
-  />
-);
-
-const NativeCarouselPage = () => (
+const CarouselPage = () => (
   <DocsPageWrapper
     title="Carousel"
     blurb={[
@@ -74,8 +33,8 @@ const NativeCarouselPage = () => (
         The carousel component allows a series of content to cycle horizontally.
       </IntroBlurb>,
     ]}
-    nativeSubpage={<CarouselPageNativeSubPage />}
+    nativeSubpage={<NativeCarouselPage />}
   />
 );
 
-export default NativeCarouselPage;
+export default CarouselPage;
