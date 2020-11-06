@@ -19,110 +19,11 @@
 /* @flow strict */
 
 import React from 'react';
-import { BpkCode } from 'bpk-component-code';
 
-import readme from '../../../../backpack-react-native/lib/bpk-component-alert/README.md';
-import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-alert/screenshots/ios/default.png';
-import iosCancelable from '../../../../backpack-react-native/lib/bpk-component-alert/screenshots/ios/cancelable.png';
-import iosThreeButton from '../../../../backpack-react-native/lib/bpk-component-alert/screenshots/ios/three-button.png';
-import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-alert/screenshots/android/default.png';
-import androidCancelable from '../../../../backpack-react-native/lib/bpk-component-alert/screenshots/android/cancelable.png';
-import androidThreeButton from '../../../../backpack-react-native/lib/bpk-component-alert/screenshots/android/three-button.png';
 import IntroBlurb from '../../components/IntroBlurb';
-import { NativeComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
-import Paragraph from '../../components/Paragraph';
 
-const components = [
-  {
-    id: 'default',
-    title: 'Default',
-    screenshots: [
-      {
-        title: 'iOS',
-        width: 750,
-        height: 1334,
-        src: `/${iosScreenshotDefault}`,
-        altText: 'iOS Default Alert Component',
-        subText: '(iPhone 8 simulator)',
-      },
-      {
-        title: 'Android',
-        width: 1080,
-        height: 1920,
-        src: `/${androidScreenshotDefault}`,
-        altText: 'Android Default Alert Component',
-        subText: '(Google Pixel emulator)',
-      },
-    ],
-  },
-  {
-    id: 'cancelable',
-    title: 'Cancellable',
-    blurb: [
-      <Paragraph>
-        Android alerts can optionally be marked as <BpkCode>cancelable</BpkCode>
-        . Clicking outside the bounds of the alert will dismiss it without a
-        callback.
-      </Paragraph>,
-    ],
-    screenshots: [
-      {
-        title: 'iOS',
-        width: 750,
-        height: 1334,
-        src: `/${iosCancelable}`,
-        altText: 'iOS Cancelable Alert Component',
-        subText: '(iPhone 8 simulator)',
-      },
-      {
-        title: 'Android',
-        width: 1080,
-        height: 1920,
-        src: `/${androidCancelable}`,
-        altText: 'Android Cancelable Alert Component',
-        subText: '(Google Pixel emulator)',
-      },
-    ],
-  },
-  {
-    id: 'three-button',
-    title: 'Three Buttons',
-    blurb: [
-      <Paragraph>
-        iOS alerts can accommodate any number of buttons. Each button can
-        optionally specify a style, which is one of &apos;default&apos;,
-        &apos;cancel&apos; or &apos;destructive&apos;.
-      </Paragraph>,
-    ],
-    screenshots: [
-      {
-        title: 'iOS',
-        width: 750,
-        height: 1334,
-        src: `/${iosThreeButton}`,
-        altText: 'iOS Three button Alert Component',
-        subText: '(iPhone 8 simulator)',
-      },
-      {
-        title: 'Android',
-        width: 1080,
-        height: 1920,
-        src: `/${androidThreeButton}`,
-        altText: 'Android Three button Alert Component',
-        subText: '(Google Pixel emulator)',
-      },
-    ],
-  },
-];
-
-const AlertSubPage = () => (
-  <NativeComponentPage
-    screenshots={components}
-    readme={readme}
-    githubPath="bpk-component-alert"
-  />
-);
+import NativeAlertPage from './NativeAlertPage';
 
 const AlertPage = () => (
   <DocsPageWrapper
@@ -134,7 +35,7 @@ const AlertPage = () => (
         &apos;colorAccent&apos; property of the theme.
       </IntroBlurb>,
     ]}
-    nativeSubpage={<AlertSubPage />}
+    nativeSubpage={<NativeAlertPage />}
   />
 );
 
