@@ -22,7 +22,8 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import Web from '../WebScrollableCalendarPage';
+
+import Web from './WebScrollableCalendarPage';
 
 const ScrollableCalendarPage = () => (
   <DocsPageWrapper
