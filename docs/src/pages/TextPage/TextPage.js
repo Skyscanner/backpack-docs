@@ -23,9 +23,9 @@ import React from 'react';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 import Android from '../AndroidTextPage';
-import IOS from '../IOSTextPage';
 import Web from '../WebTextPage';
 
+import IOS from './IOSTextPage';
 import Native from './NativeTextPage';
 
 const Page = () => (

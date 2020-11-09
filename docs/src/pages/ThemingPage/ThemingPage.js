@@ -27,13 +27,13 @@ import Paragraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
 import ColorSwatch from '../../components/ColorSwatch';
 import Android from '../AndroidThemingPage';
-import IOS from '../IOSThemingPage';
 import {
   WebComponentPage,
   NativeComponentPage,
 } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 
+import IOS from './IOSThemingPage';
 import STYLES from './theming-page.scss';
 
 const getClassName = cssModules(STYLES);
