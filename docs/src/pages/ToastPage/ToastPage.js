@@ -22,8 +22,8 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import AndroidPage from '../AndroidToastPage';
 
+import AndroidPage from './AndroidToastPage';
 import IOSPage from './IOSToastPage';
 
 const Page = () => (

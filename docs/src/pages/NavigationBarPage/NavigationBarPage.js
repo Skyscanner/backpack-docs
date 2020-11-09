@@ -23,8 +23,8 @@ import React from 'react';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 import WebNavigation from '../WebNavigationBarPage';
-import AndroidNavBarPage from '../AndroidNavBarPage';
 
+import AndroidNavBarPage from './AndroidNavBarPage';
 import NativeNavigation from './NativeNavigationBarPage';
 import IOSNavigationBarPage from './IOSNavigationBarPage';
 

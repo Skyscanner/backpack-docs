@@ -20,9 +20,9 @@ import React from 'react';
 
 import IntroBlurb from '../../components/IntroBlurb';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
-import AndroidSwitchPage from '../AndroidSwitchPage';
 import WebSwitchPage from '../WebSwitchPage';
 
+import AndroidSwitchPage from './AndroidSwitchPage';
 import IOSSwitchPage from './IOSSwitchPage';
 import NativeSwitchPage from './NativeSwitchPage';
 
