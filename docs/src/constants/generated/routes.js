@@ -52,7 +52,11 @@ Modern front-end development can be quite daunting. Getting started with React, 
 ## Future updates
 
 Please consult the [changelog](https://github.com/Skyscanner/backpack-react-scripts/blob/fork/packages/react-scripts/CHANGELOG.md) when performing updates to your \`backpack-react-scripts\` dependency.
-`} />)},{path: "/using/base-stylesheet", component: () => (<MarkdownPage title="Base stylesheet" subtitle="All components are built on top of a lightweight base stylesheet. Ensure you include this on the page when consuming any Backpack components." content={`
+
+## Improve this page
+
+[Edit this page on GitHub](https://github.com/skyscanner/backpack-docs/edit/master/docs/src/static-pages/backpack-react-scripts.md)
+    `} />)},{path: "/using/base-stylesheet", component: () => (<MarkdownPage title="Base stylesheet" subtitle="All components are built on top of a lightweight base stylesheet. Ensure you include this on the page when consuming any Backpack components." content={`
 ## What's in it?
 
 * For improved cross-browser rendering, we use [\`Normalize.css\`](http://necolas.github.io/normalize.css/) to correct small inconsistencies across browsers and devices.
@@ -88,7 +92,11 @@ Alternatively you could import the uncompiled JavaScript/Sass directly and let W
 \`\`\`
 import 'bpk-stylesheets';
 \`\`\`
-`} />)},{path: "/using/getting-started", component: () => (<MarkdownPage title="Getting Started" subtitle="Depending on the audience, there are a few ways to get started." content={`
+
+## Improve this page
+
+[Edit this page on GitHub](https://github.com/skyscanner/backpack-docs/edit/master/docs/src/static-pages/base-stylesheet.md)
+    `} />)},{path: "/using/getting-started", component: () => (<MarkdownPage title="Getting Started" subtitle="Depending on the audience, there are a few ways to get started." content={`
 ## React components (for web and React Native)
 
 All components are available to consume as React components, exposed as modules on the npm registry. They encapsulate structure, style, and logic which means that achieving a consistent look and feel across Skyscanner products on web, iOS and Android is as straightforward as: installing a package, importing it in a view and using it in JSX. Please see the Text component for [web](https://backpack.github.io/components/text?platform=web) and [React Native](https://backpack.github.io/components/text?platform=native) as examples.
@@ -126,7 +134,11 @@ The following example demonstrates how to import the module and consume the prim
 > Note: \`bpk-mixins\` only supports [\`node-sass\`](https://github.com/sass/node-sass) and makes extensive use of [\`sass-loader\`](https://github.com/jtangelder/sass-loader#imports)'s tilde importing mechanism. If you are not using \`sass-loader\`, you can use [\`node-sass-tilde-importer\`](https://github.com/matthewdavidson/node-sass-tilde-importer). The \`indentedSyntax\` option is unsupported.
 
 To get an idea of all the variables and mixins available, head on over to the [full reference documentation](https://backpack.github.io/sassdoc).
-`} />)},{path: "/using/principles", component: () => (<MarkdownPage title="Principles" subtitle="Backpack components, features and configurations are created with the following principles in mind." content={`
+
+## Improve this page
+
+[Edit this page on GitHub](https://github.com/skyscanner/backpack-docs/edit/master/docs/src/static-pages/getting-started.md)
+    `} />)},{path: "/using/principles", component: () => (<MarkdownPage title="Principles" subtitle="Backpack components, features and configurations are created with the following principles in mind." content={`
 ## Authentically mobile
 
 Whether it is for web or app, every component should be considered mobile first and degrade to desktop. Components should take advantage of the platform.
@@ -154,7 +166,11 @@ All applicable components should be themeable and be able to use colours from Sk
 ## Well documented
 
 Each component should be fully documented, showing each configuration together with explanations where suitable. Additionally the component's readme and available props should be shown. See our guide on [writing style](https://github.com/Skyscanner/backpack/blob/master/decisions/writing-docs.md) for best practices for writing documentation.
-`} />)},{path: "/using/backpack-status", component: () => (<MarkdownPage title="Backpack Status" subtitle="Here you will find the current Backpack CI status and release versions." content={`
+
+## Improve this page
+
+[Edit this page on GitHub](https://github.com/skyscanner/backpack-docs/edit/master/docs/src/static-pages/principles.md)
+    `} />)},{path: "/using/backpack-status", component: () => (<MarkdownPage title="Backpack Status" subtitle="Here you will find the current Backpack CI status and release versions." content={`
 ## Backpack Web
 
 [![Build Status](https://github.com/Skyscanner/backpack/workflows/Backpack%20CI/badge.svg)](https://github.com/Skyscanner/backpack/actions)
@@ -242,4 +258,8 @@ Each component should be fully documented, showing each configuration together w
 [Changelog](https://github.com/Skyscanner/eslint-plugin-backpack/blob/master/CHANGELOG.md)
 
 [GitHub](https://github.com/Skyscanner/eslint-plugin-backpack)
-`} />)}];
+
+## Improve this page
+
+[Edit this page on GitHub](https://github.com/skyscanner/backpack-docs/edit/master/docs/src/static-pages/status.md)
+    `} />)}];
