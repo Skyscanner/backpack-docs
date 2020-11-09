@@ -22,9 +22,9 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import AndroidRating from '../AndroidRatingPage';
 import WebRating from '../WebRatingPage';
 
+import AndroidRating from './AndroidRatingPage';
 import IOSRating from './IOSRatingPage';
 import NativeRating from './NativeRatingPage';
 

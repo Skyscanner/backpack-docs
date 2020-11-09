@@ -26,13 +26,13 @@ import nativeReadme from '../../../../backpack-react-native/lib/bpk-theming/READ
 import Paragraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
 import ColorSwatch from '../../components/ColorSwatch';
-import Android from '../AndroidThemingPage';
 import {
   WebComponentPage,
   NativeComponentPage,
 } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 
+import Android from './AndroidThemingPage';
 import IOS from './IOSThemingPage';
 import STYLES from './theming-page.scss';
 
