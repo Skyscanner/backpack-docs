@@ -23,11 +23,12 @@ import BpkRouterLink from 'bpk-component-router-link';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import IconsDesignPage from '../IconsDesignPage';
-import Android from '../AndroidIconPage';
-import IOS from '../IOSIconPage';
-import Web from '../WebIconsPage';
-import Native from '../NativeIconsPage';
+
+import IconsDesignPage from './DesignIconPage';
+import Android from './AndroidIconPage';
+import IOS from './IOSIconPage';
+import Web from './WebIconsPage';
+import Native from './NativeIconsPage';
 
 const Page = () => (
   <DocsPageWrapper

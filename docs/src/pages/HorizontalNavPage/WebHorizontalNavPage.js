@@ -112,7 +112,7 @@ const components = [
   },
 ];
 
-const HorizontalNavPage = () => (
+const WebHorizontalNavPage = () => (
   <WebComponentPage
     examples={components}
     readme={readme}
@@ -120,4 +120,4 @@ const HorizontalNavPage = () => (
   />
 );
 
-export default HorizontalNavPage;
+export default WebHorizontalNavPage;

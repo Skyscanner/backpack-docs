@@ -22,10 +22,11 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import Web from '../WebHorizontalNavPage';
-import Native from '../NativeHorizontalNavPage';
-import Android from '../AndroidHorizontalNavPage';
-import IOS from '../IOSHorizontalNavPage';
+
+import Web from './WebHorizontalNavPage';
+import Native from './NativeHorizontalNavPage';
+import Android from './AndroidHorizontalNavPage';
+import IOS from './IOSHorizontalNavPage';
 
 const blurb = [
   <IntroBlurb>
