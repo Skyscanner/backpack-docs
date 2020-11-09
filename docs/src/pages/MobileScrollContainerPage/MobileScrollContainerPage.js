@@ -19,21 +19,11 @@
 /* @flow strict */
 
 import React from 'react';
-import mobileScrollContainerReadme from 'bpk-component-mobile-scroll-container/README.md';
 
 import IntroBlurb from '../../components/IntroBlurb';
-import { WebComponentPage } from '../../components/ComponentPage';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 
-import BlockExample from './BlockExample';
-
-const components = [
-  {
-    id: 'example',
-    title: 'Example',
-    examples: [<BlockExample />],
-  },
-];
+import WebMobileScrollContainerPage from './WebMobileScrollContainerPage';
 
 const blurb = [
   <IntroBlurb>
@@ -42,19 +32,11 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const MobileScrollContainerSubPage = () => (
-  <WebComponentPage
-    examples={components}
-    readme={mobileScrollContainerReadme}
-    packageName="bpk-component-mobile-scroll-container"
-  />
-);
-
 const MobileScrollContainerPage = () => (
   <DocsPageWrapper
     title="Mobile scroll container"
     blurb={blurb}
-    webSubpage={<MobileScrollContainerSubPage />}
+    webSubpage={<WebMobileScrollContainerPage />}
   />
 );
 

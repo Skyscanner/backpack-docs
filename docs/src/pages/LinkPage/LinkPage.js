@@ -22,9 +22,10 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import Web from '../WebLinksPage';
-import IOS from '../IOSTappableLinkLabelPage';
-import Native from '../NativeLinkPage';
+
+import Web from './WebLinksPage';
+import IOS from './IOSLinkPage';
+import Native from './NativeLinkPage';
 
 const Page = () => (
   <DocsPageWrapper

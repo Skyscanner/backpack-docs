@@ -16,10 +16,29 @@
  * limitations under the License.
  */
 
-@import '~bpk-mixins/index';
+/* @flow strict */
 
-.bpkdocs-map-page {
-  &__map {
-    height: $bpk-spacing-xl * 15;
-  }
-}
+import React from 'react';
+import mobileScrollContainerReadme from 'bpk-component-mobile-scroll-container/README.md';
+
+import { WebComponentPage } from '../../components/ComponentPage';
+
+import BlockExample from './BlockExample';
+
+const components = [
+  {
+    id: 'example',
+    title: 'Example',
+    examples: [<BlockExample />],
+  },
+];
+
+const WebMobileScrollContainerPage = () => (
+  <WebComponentPage
+    examples={components}
+    readme={mobileScrollContainerReadme}
+    packageName="bpk-component-mobile-scroll-container"
+  />
+);
+
+export default WebMobileScrollContainerPage;
