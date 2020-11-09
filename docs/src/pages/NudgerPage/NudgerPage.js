@@ -22,8 +22,8 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import Web from '../WebNudgersPage';
 
+import Web from './WebNudgersPage';
 import Native from './NativeNudgerPage';
 
 const Page = () => (

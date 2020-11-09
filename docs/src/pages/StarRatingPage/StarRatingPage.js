@@ -22,8 +22,8 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import Web from '../WebStarRatingPage';
 
+import Web from './WebStarRatingPage';
 import Android from './AndroidStarRatingPage';
 import Native from './NativeStarRatingPage';
 import IOS from './IOSStarRatingPage';

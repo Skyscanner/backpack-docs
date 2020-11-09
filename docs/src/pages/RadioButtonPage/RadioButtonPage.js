@@ -22,7 +22,8 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import WebPage from '../WebRadioButtonPage';
+
+import WebPage from './WebRadioButtonPage';
 
 const Page = () => (
   <DocsPageWrapper

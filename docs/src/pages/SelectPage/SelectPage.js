@@ -22,8 +22,8 @@ import React from 'react';
 
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
-import WebSelects from '../WebSelectPage';
 
+import WebSelects from './WebSelectPage';
 import NativeSelects from './NativeSelectPage';
 
 const blurb = [
