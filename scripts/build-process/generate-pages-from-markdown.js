@@ -23,9 +23,9 @@ const fs = require('fs');
 const colors = require('colors');
 const frontmatter = require('@github-docs/frontmatter');
 
-const PATH_TO_MARKDOWN_FILES = './docs/src/static-pages';
-const PATH_TO_ROUTES_FILE = './docs/src/constants/generated/routes.js';
-const PATH_TO_LINKS_FILE = './docs/src/layouts/generated/links.js';
+const PATH_TO_MARKDOWN_FILES = 'docs/src/static-pages';
+const PATH_TO_ROUTES_FILE = 'docs/src/constants/generated/routes.js';
+const PATH_TO_LINKS_FILE = 'docs/src/layouts/generated/links.js';
 
 /*
 Valid values for the 'category' front matter
@@ -93,6 +93,7 @@ const enrichedMarkdownFiles = markdownFiles.map(fileName => {
   const keywords = data.keywords ? data.keywords.split(',') : null;
 
   return {
+    fileName,
     category: data.category,
     path: `/${data.category}/${urlTitle}`,
     content,
@@ -106,13 +107,20 @@ const enrichedMarkdownFiles = markdownFiles.map(fileName => {
 // Create the routes that'll be used in 'docs/src/routes/generated/routes.js'.
 const routes = {};
 enrichedMarkdownFiles.forEach(
-  ({ category, path, content, title, subtitle }) => {
+  ({ category, fileName, path, content, title, subtitle }) => {
     if (!routes[category]) {
       routes[category] = [];
     }
 
     // Escape backticks to prevent them terminating the string.
-    const escapedContent = content.replace(/`/g, '\\`');
+    let escapedContent = content.replace(/`/g, '\\`');
+
+    // Add a footer to the bottom of the content for editing.
+    escapedContent += `
+## Improve this page
+
+[Edit this page on GitHub](https://github.com/skyscanner/backpack-docs/edit/master/${PATH_TO_MARKDOWN_FILES}/${fileName})
+    `;
 
     // Needs to be done as a string, because we can't use JSX here.
     routes[category].push(
