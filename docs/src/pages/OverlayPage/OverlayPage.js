@@ -23,8 +23,9 @@ import React from 'react';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 import Android from '../AndroidOverlayPage';
-import IOS from '../IOSOverlayPage';
 import Web from '../WebOverlayPage';
+
+import IOS from './IOSOverlayPage';
 
 const Page = () => (
   <DocsPageWrapper

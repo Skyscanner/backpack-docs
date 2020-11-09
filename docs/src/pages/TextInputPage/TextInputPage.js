@@ -20,10 +20,10 @@ import React from 'react';
 
 import IntroBlurb from '../../components/IntroBlurb';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
-import IOS from '../IOSTextInputPage';
 import Web from '../WebTextInputPage';
 import Android from '../AndroidTextFieldPage';
 
+import IOS from './IOSTextInputPage';
 import Native from './NativeTextInputPage';
 
 const blurb = [

@@ -23,8 +23,8 @@ import React from 'react';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 import Android from '../AndroidSnackbarPage';
-import IOS from '../IOSSnackbarPage';
 
+import IOS from './IOSSnackbarPage';
 import Native from './NativeSnackbarPage';
 
 const Page = () => (

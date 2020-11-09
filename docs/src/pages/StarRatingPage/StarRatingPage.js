@@ -24,9 +24,9 @@ import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 import Web from '../WebStarRatingPage';
 import Android from '../AndroidStarRatingPage';
-import IOS from '../IOSStarRatingPage';
 
 import Native from './NativeStarRatingPage';
+import IOS from './IOSStarRatingPage';
 
 const Page = () => (
   <DocsPageWrapper
