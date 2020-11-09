@@ -23,9 +23,10 @@ import React from 'react';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 import WebNavigation from '../WebNavigationBarPage';
-import NativeNavigation from '../NativeNavigationBarPage';
 import IOSNavigationBarPage from '../IOSNavigationBarPage';
 import AndroidNavBarPage from '../AndroidNavBarPage';
+
+import NativeNavigation from './NativeNavigationBarPage';
 
 const BadgePage = () => (
   <DocsPageWrapper

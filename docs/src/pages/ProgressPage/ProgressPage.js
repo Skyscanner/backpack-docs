@@ -23,8 +23,9 @@ import React from 'react';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 import WebProgress from '../WebProgressPage';
-import NativeProgress from '../NativeProgressPage';
 import IOSProgress from '../IOSProgressBarPage';
+
+import NativeProgress from './NativeProgressPage';
 
 const ProgressPage = () => (
   <DocsPageWrapper

@@ -88,10 +88,10 @@ import InfiniteScrollPage from '../pages/InfiniteScrollPage';
 import MobileScrollContainerPage from '../pages/MobileScrollContainerPage';
 import ModalsPage from '../pages/ModalsPage';
 import FlatListPage from '../pages/FlatListPage';
-import NativePickerPage from '../pages/NativePickerPage';
+import PickerPage from '../pages/PickerPage';
 import SelectPage from '../pages/SelectPage';
-import NativeTouchableNativeFeedbackPage from '../pages/NativeTouchableNativeFeedbackPage';
-import NativeTouchableOverlayPage from '../pages/NativeTouchableOverlayPage';
+import TouchableNativeFeedbackPage from '../pages/TouchableNativeFeedbackPage';
+import TouchableOverlayPage from '../pages/TouchableOverlayPage';
 import NavigationBarPage from '../pages/NavigationBarPage';
 import NavigationStackPage from '../pages/NavigationStackPage';
 import NudgerPage from '../pages/NudgerPage';
@@ -291,7 +291,7 @@ export const ROUTES_MAPPINGS = [
         path: ROUTES.PHONE_INPUT,
         component: PhoneInputPage,
       },
-      { path: ROUTES.PICKER, component: NativePickerPage },
+      { path: ROUTES.PICKER, component: PickerPage },
       { path: ROUTES.POPOVER, component: PopoversPage },
       { path: ROUTES.PROGRESS, component: ProgressPage },
       {
@@ -325,11 +325,11 @@ export const ROUTES_MAPPINGS = [
       { path: ROUTES.TOOLTIP, component: TooltipsPage },
       {
         path: ROUTES.TOUCHABLE_NATIVE_FEEDBACK,
-        component: NativeTouchableNativeFeedbackPage,
+        component: TouchableNativeFeedbackPage,
       },
       {
         path: ROUTES.TOUCHABLE_OVERLAY,
-        component: NativeTouchableOverlayPage,
+        component: TouchableOverlayPage,
       },
     ],
   },

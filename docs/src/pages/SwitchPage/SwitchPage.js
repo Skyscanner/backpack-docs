@@ -22,8 +22,9 @@ import IntroBlurb from '../../components/IntroBlurb';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import AndroidSwitchPage from '../AndroidSwitchPage';
 import IOSSwitchPage from '../IOSSwitchPage';
-import NativeSwitchPage from '../NativeSwitchPage';
 import WebSwitchPage from '../WebSwitchPage';
+
+import NativeSwitchPage from './NativeSwitchPage';
 
 const blurb = [
   <IntroBlurb>

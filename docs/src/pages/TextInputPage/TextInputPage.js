@@ -22,8 +22,9 @@ import IntroBlurb from '../../components/IntroBlurb';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IOS from '../IOSTextInputPage';
 import Web from '../WebTextInputPage';
-import Native from '../NativeTextInputPage';
 import Android from '../AndroidTextFieldPage';
+
+import Native from './NativeTextInputPage';
 
 const blurb = [
   <IntroBlurb>

@@ -25,7 +25,8 @@ import IntroBlurb from '../../components/IntroBlurb';
 import Android from '../AndroidTextPage';
 import IOS from '../IOSTextPage';
 import Web from '../WebTextPage';
-import Native from '../NativeTextPage';
+
+import Native from './NativeTextPage';
 
 const Page = () => (
   <DocsPageWrapper
