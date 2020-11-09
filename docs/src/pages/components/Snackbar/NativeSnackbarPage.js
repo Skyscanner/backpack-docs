@@ -19,16 +19,16 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/lib/bpk-component-snackbar/README.md';
-import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/android/default.png';
-import androidScreenshotTitleIcon from '../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/android/title-and-icon.png';
-import androidScreenshotAction from '../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/android/action.png';
-import androidScreenshotIconAction from '../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/android/icon-action.png';
-import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/ios/default.png';
-import iosScreenshotTitleIcon from '../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/ios/title-and-icon.png';
-import iosScreenshotAction from '../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/ios/action.png';
-import iosScreenshotIconAction from '../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/ios/icon-action.png';
-import { NativeComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-react-native/lib/bpk-component-snackbar/README.md';
+import androidScreenshotDefault from '../../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/android/default.png';
+import androidScreenshotTitleIcon from '../../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/android/title-and-icon.png';
+import androidScreenshotAction from '../../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/android/action.png';
+import androidScreenshotIconAction from '../../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/android/icon-action.png';
+import iosScreenshotDefault from '../../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/ios/default.png';
+import iosScreenshotTitleIcon from '../../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/ios/title-and-icon.png';
+import iosScreenshotAction from '../../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/ios/action.png';
+import iosScreenshotIconAction from '../../../../../backpack-react-native/lib/bpk-component-snackbar/screenshots/ios/icon-action.png';
+import { NativeComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

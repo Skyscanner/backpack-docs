@@ -18,14 +18,14 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-ios/Backpack/Dialog/README.md';
-import screenshotAlert from '../../../../backpack-ios/screenshots/iPhone 8-dialog___with-cta_lm.png';
-import screenshotBottomSheet from '../../../../backpack-ios/screenshots/iPhone 8-dialog___delete-confirmation_lm.png';
-import screenshotWithFlare from '../../../../backpack-ios/screenshots/iPhone 8-dialog___in-app-messaging_lm.png';
-import screenshotAlertDm from '../../../../backpack-ios/screenshots/iPhone 8-dialog___with-cta_dm.png';
-import screenshotBottomSheetDm from '../../../../backpack-ios/screenshots/iPhone 8-dialog___delete-confirmation_dm.png';
-import screenshotWithFlareDm from '../../../../backpack-ios/screenshots/iPhone 8-dialog___in-app-messaging_dm.png';
-import { IOSComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-ios/Backpack/Dialog/README.md';
+import screenshotAlert from '../../../../../backpack-ios/screenshots/iPhone 8-dialog___with-cta_lm.png';
+import screenshotBottomSheet from '../../../../../backpack-ios/screenshots/iPhone 8-dialog___delete-confirmation_lm.png';
+import screenshotWithFlare from '../../../../../backpack-ios/screenshots/iPhone 8-dialog___in-app-messaging_lm.png';
+import screenshotAlertDm from '../../../../../backpack-ios/screenshots/iPhone 8-dialog___with-cta_dm.png';
+import screenshotBottomSheetDm from '../../../../../backpack-ios/screenshots/iPhone 8-dialog___delete-confirmation_dm.png';
+import screenshotWithFlareDm from '../../../../../backpack-ios/screenshots/iPhone 8-dialog___in-app-messaging_dm.png';
+import { IOSComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

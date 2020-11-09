@@ -23,11 +23,11 @@ import BpkSelect from 'bpk-component-select';
 import { cssModules } from 'bpk-react-utils';
 import readme from 'bpk-component-select/README.md';
 
-import * as ROUTES from '../../constants/routes';
-import InputContainer from '../FormsPage/InputContainer';
-import { WebComponentPage } from '../../components/ComponentPage';
-import BpkParagraph from '../../components/Paragraph';
-import STYLES from '../FormsPage/forms-page.scss';
+import * as ROUTES from '../../../constants/routes';
+import InputContainer from '../Forms/InputContainer';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import BpkParagraph from '../../../components/Paragraph';
+import STYLES from '../Forms/forms-page.scss';
 
 const getClassName = cssModules(STYLES);
 

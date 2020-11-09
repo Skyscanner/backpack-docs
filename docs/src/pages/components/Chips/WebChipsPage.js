@@ -31,8 +31,8 @@ import HotelsIconSm from 'bpk-component-icon/sm/hotels';
 import CarsIconSm from 'bpk-component-icon/sm/cars';
 import TickCircleIconSm from 'bpk-component-icon/sm/tick-circle';
 
-import Paragraph from '../../components/Paragraph';
-import { WebComponentPage } from '../../components/ComponentPage';
+import Paragraph from '../../../components/Paragraph';
+import { WebComponentPage } from '../../../components/ComponentPage';
 
 import STYLES from './ChipsPage.scss';
 

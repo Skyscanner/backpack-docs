@@ -20,13 +20,13 @@ import React from 'react';
 import { cssModules } from 'bpk-react-utils';
 import BpkImage from 'bpk-component-image';
 
-import getMarkdownString from '../../helpers/markdown-helper';
-import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
-import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
-import * as ROUTES from '../../constants/routes';
+import getMarkdownString from '../../../helpers/markdown-helper';
+import BpkMarkdownRenderer from '../../../components/DocsPageBuilder/BpkMarkdownRenderer';
+import GuidelinesPageBuilder from '../../../components/GuidelinesBuilder';
+import * as ROUTES from '../../../constants/routes';
 import ContentGrid, {
   ContentGridCard,
-} from '../../components/ContentGrid/ContentGrid';
+} from '../../../components/ContentGrid/ContentGrid';
 
 import STYLES from './logo-page.scss';
 import intro from './content/intro.md';

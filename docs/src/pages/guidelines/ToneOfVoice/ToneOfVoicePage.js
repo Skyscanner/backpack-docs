@@ -22,15 +22,15 @@ import BpkCloseCircleIcon from 'bpk-component-icon/sm/close-circle';
 import BpkTickCircleIcon from 'bpk-component-icon/sm/tick-circle';
 import { cssModules } from 'bpk-react-utils';
 
-import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
-import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
-import HeroImage from '../../static/tone-of-voice-hero.svg';
-import ExampleDoImage from '../../static/tone-of-voice-example__do.png';
-import ExampleDontImage from '../../static/tone-of-voice-example__dont.png';
-import * as ROUTES from '../../constants/routes';
+import BpkMarkdownRenderer from '../../../components/DocsPageBuilder/BpkMarkdownRenderer';
+import GuidelinesPageBuilder from '../../../components/GuidelinesBuilder';
+import HeroImage from '../../../static/tone-of-voice-hero.svg';
+import ExampleDoImage from '../../../static/tone-of-voice-example__do.png';
+import ExampleDontImage from '../../../static/tone-of-voice-example__dont.png';
+import * as ROUTES from '../../../constants/routes';
 import ContentGrid, {
   ContentGridCard,
-} from '../../components/ContentGrid/ContentGrid';
+} from '../../../components/ContentGrid/ContentGrid';
 
 import intro from './content/intro.md';
 import travellerFirstDo from './content/traveller-first-do.md';

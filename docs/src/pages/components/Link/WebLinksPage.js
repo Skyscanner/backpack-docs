@@ -21,8 +21,8 @@ import BpkLink, { BpkButtonLink } from 'bpk-component-link';
 import linkReadme from 'bpk-component-link/README.md';
 import { cssModules } from 'bpk-react-utils';
 
-import { WebComponentPage } from '../../components/ComponentPage';
-import Paragraph from '../../components/Paragraph';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import Paragraph from '../../../components/Paragraph';
 
 import STYLES from './LinksPage.scss';
 

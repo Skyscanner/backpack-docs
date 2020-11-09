@@ -19,9 +19,9 @@
 import React from 'react';
 import BpkRouterLink from 'bpk-component-router-link';
 
-import * as ROUTES from '../../constants/routes';
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import IntroBlurb from '../../components/IntroBlurb';
+import * as ROUTES from '../../../constants/routes';
+import DocsPageWrapper from '../../../components/DocsPageWrapper';
+import IntroBlurb from '../../../components/IntroBlurb';
 
 import WebDatepickerPage from './WebDatepickerPage';
 

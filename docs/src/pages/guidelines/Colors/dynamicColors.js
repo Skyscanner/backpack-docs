@@ -20,7 +20,7 @@ import React from 'react';
 import { colors } from 'bpk-tokens/tokens/base.es6';
 import { cssModules } from 'bpk-react-utils';
 
-import { DynamicColorSwatch } from '../../components/ColorSwatch';
+import { DynamicColorSwatch } from '../../../components/ColorSwatch';
 
 import STYLES from './colors-page.scss';
 

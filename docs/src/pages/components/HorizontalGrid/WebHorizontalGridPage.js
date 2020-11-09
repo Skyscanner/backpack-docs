@@ -22,10 +22,10 @@ import BpkRouterLink from 'bpk-component-router-link';
 import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
 import gridReadme from 'bpk-component-grid/README.md';
 
-import * as routes from '../../constants/routes';
-import { WebComponentPage } from '../../components/ComponentPage';
-import BpkParagraph from '../../components/Paragraph';
-import Code from '../../components/Code';
+import * as routes from '../../../constants/routes';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import BpkParagraph from '../../../components/Paragraph';
+import Code from '../../../components/Code';
 
 const components = [
   {

@@ -20,8 +20,8 @@ import React from 'react';
 import { BpkCode, BpkCodeBlock } from 'bpk-component-code';
 import codeReadme from 'bpk-component-code/README.md';
 
-import { WebComponentPage } from '../../components/ComponentPage';
-import Paragraph from '../../components/Paragraph';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import Paragraph from '../../../components/Paragraph';
 
 const components = [
   {

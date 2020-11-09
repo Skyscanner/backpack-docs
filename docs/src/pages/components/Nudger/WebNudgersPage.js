@@ -23,8 +23,8 @@ import BpkNudger, { BpkConfigurableNudger } from 'bpk-component-nudger';
 import nudgersReadme from 'bpk-component-nudger/README.md';
 import { cssModules } from 'bpk-react-utils';
 
-import { WebComponentPage } from '../../components/ComponentPage';
-import Paragraph from '../../components/Paragraph';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import Paragraph from '../../../components/Paragraph';
 
 import STYLES from './nudger-page.scss';
 

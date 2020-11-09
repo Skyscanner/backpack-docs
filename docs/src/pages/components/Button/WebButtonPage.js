@@ -37,10 +37,10 @@ import buttonReadme from 'bpk-component-button/README.md';
 import loadingButtonReadme from 'bpk-component-loading-button/README.md';
 import { cssModules } from 'bpk-react-utils';
 
-import * as ROUTES from '../../constants/routes';
-import { WebComponentPage } from '../../components/ComponentPage';
-import Paragraph from '../../components/Paragraph';
-import Code from '../../components/Code';
+import * as ROUTES from '../../../constants/routes';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import Paragraph from '../../../components/Paragraph';
+import Code from '../../../components/Code';
 
 import STYLES from './buttons-page.scss';
 

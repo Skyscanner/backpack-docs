@@ -18,8 +18,8 @@
 
 import React from 'react';
 
-import IntroBlurb from '../../components/IntroBlurb';
-import DocsPageWrapper from '../../components/DocsPageWrapper';
+import IntroBlurb from '../../../components/IntroBlurb';
+import DocsPageWrapper from '../../../components/DocsPageWrapper';
 
 import WebSwitchPage from './WebSwitchPage';
 import AndroidSwitchPage from './AndroidSwitchPage';

@@ -19,8 +19,8 @@
 import React from 'react';
 import progressReadme from 'bpk-component-progress/README.md';
 
-import { WebComponentPage } from '../../components/ComponentPage';
-import Paragraph from '../../components/Paragraph';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import Paragraph from '../../../components/Paragraph';
 
 import ProgressContainer from './ProgressContainer';
 import SteppedProgressContainer from './SteppedProgressContainer';

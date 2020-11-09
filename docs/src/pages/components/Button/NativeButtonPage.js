@@ -18,19 +18,19 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/lib/bpk-component-button/README.md';
-import linkReadme from '../../../../backpack-react-native/lib/bpk-component-button-link/README.md';
-import iosScreenshotPrimary from '../../../../backpack-react-native/lib/bpk-component-button/screenshots/ios/primary.png';
-import iosScreenshotSecondary from '../../../../backpack-react-native/lib/bpk-component-button/screenshots/ios/secondary.png';
-import iosScreenshotDestructive from '../../../../backpack-react-native/lib/bpk-component-button/screenshots/ios/destructive.png';
-import iosScreenshotFeatured from '../../../../backpack-react-native/lib/bpk-component-button/screenshots/ios/featured.png';
-import iosScreenshotLink from '../../../../backpack-react-native/lib/bpk-component-button-link/screenshots/ios/default.png';
-import androidScreenshotPrimary from '../../../../backpack-react-native/lib/bpk-component-button/screenshots/android/primary.png';
-import androidScreenshotSecondary from '../../../../backpack-react-native/lib/bpk-component-button/screenshots/android/secondary.png';
-import androidScreenshotDestructive from '../../../../backpack-react-native/lib/bpk-component-button/screenshots/android/destructive.png';
-import androidScreenshotFeatured from '../../../../backpack-react-native/lib/bpk-component-button/screenshots/android/featured.png';
-import androidScreenshotLink from '../../../../backpack-react-native/lib/bpk-component-button-link/screenshots/android/default.png';
-import { NativeComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-react-native/lib/bpk-component-button/README.md';
+import linkReadme from '../../../../../backpack-react-native/lib/bpk-component-button-link/README.md';
+import iosScreenshotPrimary from '../../../../../backpack-react-native/lib/bpk-component-button/screenshots/ios/primary.png';
+import iosScreenshotSecondary from '../../../../../backpack-react-native/lib/bpk-component-button/screenshots/ios/secondary.png';
+import iosScreenshotDestructive from '../../../../../backpack-react-native/lib/bpk-component-button/screenshots/ios/destructive.png';
+import iosScreenshotFeatured from '../../../../../backpack-react-native/lib/bpk-component-button/screenshots/ios/featured.png';
+import iosScreenshotLink from '../../../../../backpack-react-native/lib/bpk-component-button-link/screenshots/ios/default.png';
+import androidScreenshotPrimary from '../../../../../backpack-react-native/lib/bpk-component-button/screenshots/android/primary.png';
+import androidScreenshotSecondary from '../../../../../backpack-react-native/lib/bpk-component-button/screenshots/android/secondary.png';
+import androidScreenshotDestructive from '../../../../../backpack-react-native/lib/bpk-component-button/screenshots/android/destructive.png';
+import androidScreenshotFeatured from '../../../../../backpack-react-native/lib/bpk-component-button/screenshots/android/featured.png';
+import androidScreenshotLink from '../../../../../backpack-react-native/lib/bpk-component-button-link/screenshots/android/default.png';
+import { NativeComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

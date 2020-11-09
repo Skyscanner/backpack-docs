@@ -18,14 +18,14 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-ios/Backpack/TextField/README.md';
-import textViewReadme from '../../../../backpack-ios/Backpack/TextView/README.md';
-import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-text-field___default_lm.png';
-import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-text-field___default_dm.png';
-import screenshotTextView from '../../../../backpack-ios/screenshots/iPhone 8-text-view___default_lm.png';
-import screenshotTextViewDm from '../../../../backpack-ios/screenshots/iPhone 8-text-view___default_dm.png';
-import { IOSComponentPage } from '../../components/ComponentPage';
-import IntroBlurb from '../../components/IntroBlurb';
+import readme from '../../../../../backpack-ios/Backpack/TextField/README.md';
+import textViewReadme from '../../../../../backpack-ios/Backpack/TextView/README.md';
+import screenshotDefault from '../../../../../backpack-ios/screenshots/iPhone 8-text-field___default_lm.png';
+import screenshotDefaultDm from '../../../../../backpack-ios/screenshots/iPhone 8-text-field___default_dm.png';
+import screenshotTextView from '../../../../../backpack-ios/screenshots/iPhone 8-text-view___default_lm.png';
+import screenshotTextViewDm from '../../../../../backpack-ios/screenshots/iPhone 8-text-view___default_dm.png';
+import { IOSComponentPage } from '../../../components/ComponentPage';
+import IntroBlurb from '../../../components/IntroBlurb';
 
 const components = [
   {

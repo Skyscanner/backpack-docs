@@ -18,9 +18,9 @@
 
 import React from 'react';
 
-import DocsPageBuilder from '../../components/DocsPageBuilder';
-import IntroBlurb from '../../components/IntroBlurb';
-import Paragraph from '../../components/Paragraph';
+import DocsPageBuilder from '../../../components/DocsPageBuilder';
+import IntroBlurb from '../../../components/IntroBlurb';
+import Paragraph from '../../../components/Paragraph';
 
 const blurb = [
   <IntroBlurb>

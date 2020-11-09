@@ -20,14 +20,14 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-android/docs/Chip/README.md';
-import screenshotAll from '../../../../backpack-android/docs/Chip/screenshots/all.png';
-import screenshotAllDm from '../../../../backpack-android/docs/Chip/screenshots/all_dm.png';
-import screenshotOutline from '../../../../backpack-android/docs/Chip/screenshots/outline.png';
-import screenshotOutlineDm from '../../../../backpack-android/docs/Chip/screenshots/outline_dm.png';
-import screenshotIcon from '../../../../backpack-android/docs/Chip/screenshots/with-icon.png';
-import screenshotIconDm from '../../../../backpack-android/docs/Chip/screenshots/with-icon_dm.png';
-import { AndroidComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-android/docs/Chip/README.md';
+import screenshotAll from '../../../../../backpack-android/docs/Chip/screenshots/all.png';
+import screenshotAllDm from '../../../../../backpack-android/docs/Chip/screenshots/all_dm.png';
+import screenshotOutline from '../../../../../backpack-android/docs/Chip/screenshots/outline.png';
+import screenshotOutlineDm from '../../../../../backpack-android/docs/Chip/screenshots/outline_dm.png';
+import screenshotIcon from '../../../../../backpack-android/docs/Chip/screenshots/with-icon.png';
+import screenshotIconDm from '../../../../../backpack-android/docs/Chip/screenshots/with-icon_dm.png';
+import { AndroidComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

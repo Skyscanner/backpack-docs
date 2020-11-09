@@ -18,14 +18,14 @@
 
 import React from 'react';
 
-import iosDefaultScreenshot from '../../../../backpack-react-native/lib/bpk-component-map/screenshots/ios/default.png';
-import androidDefaultScreenshot from '../../../../backpack-react-native/lib/bpk-component-map/screenshots/android/default.png';
-import iosPriceMarkerScreenshot from '../../../../backpack-react-native/lib/bpk-component-map/screenshots/ios/price-markers.png';
-import androidPriceMarkerScreenshot from '../../../../backpack-react-native/lib/bpk-component-map/screenshots/android/price-markers.png';
-import iosIconMarkerScreenshot from '../../../../backpack-react-native/lib/bpk-component-map/screenshots/ios/map-markers.png';
-import androidIconMarkerScreenshot from '../../../../backpack-react-native/lib/bpk-component-map/screenshots/android/map-markers.png';
-import readme from '../../../../backpack-react-native/lib/bpk-component-map/README.md';
-import { NativeComponentPage } from '../../components/ComponentPage';
+import iosDefaultScreenshot from '../../../../../backpack-react-native/lib/bpk-component-map/screenshots/ios/default.png';
+import androidDefaultScreenshot from '../../../../../backpack-react-native/lib/bpk-component-map/screenshots/android/default.png';
+import iosPriceMarkerScreenshot from '../../../../../backpack-react-native/lib/bpk-component-map/screenshots/ios/price-markers.png';
+import androidPriceMarkerScreenshot from '../../../../../backpack-react-native/lib/bpk-component-map/screenshots/android/price-markers.png';
+import iosIconMarkerScreenshot from '../../../../../backpack-react-native/lib/bpk-component-map/screenshots/ios/map-markers.png';
+import androidIconMarkerScreenshot from '../../../../../backpack-react-native/lib/bpk-component-map/screenshots/android/map-markers.png';
+import readme from '../../../../../backpack-react-native/lib/bpk-component-map/README.md';
+import { NativeComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

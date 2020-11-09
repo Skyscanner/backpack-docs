@@ -18,8 +18,8 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-ios/Backpack/Theme/README.md';
-import { IOSComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-ios/Backpack/Theme/README.md';
+import { IOSComponentPage } from '../../../components/ComponentPage';
 
 const IOSThemingPage = () => (
   <IOSComponentPage

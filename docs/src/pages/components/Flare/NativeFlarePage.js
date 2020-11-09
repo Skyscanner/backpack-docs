@@ -19,14 +19,14 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/lib/bpk-component-flare/README.md';
-import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-flare/screenshots/android/default.png';
-import androidScreenshotImage from '../../../../backpack-react-native/lib/bpk-component-flare/screenshots/android/image.png';
-import androidScreenshotPointerUp from '../../../../backpack-react-native/lib/bpk-component-flare/screenshots/android/pointer-up.png';
-import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-flare/screenshots/ios/default.png';
-import iosScreenshotImage from '../../../../backpack-react-native/lib/bpk-component-flare/screenshots/ios/image.png';
-import iosScreenshotPointerUp from '../../../../backpack-react-native/lib/bpk-component-flare/screenshots/ios/pointer-up.png';
-import { NativeComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-react-native/lib/bpk-component-flare/README.md';
+import androidScreenshotDefault from '../../../../../backpack-react-native/lib/bpk-component-flare/screenshots/android/default.png';
+import androidScreenshotImage from '../../../../../backpack-react-native/lib/bpk-component-flare/screenshots/android/image.png';
+import androidScreenshotPointerUp from '../../../../../backpack-react-native/lib/bpk-component-flare/screenshots/android/pointer-up.png';
+import iosScreenshotDefault from '../../../../../backpack-react-native/lib/bpk-component-flare/screenshots/ios/default.png';
+import iosScreenshotImage from '../../../../../backpack-react-native/lib/bpk-component-flare/screenshots/ios/image.png';
+import iosScreenshotPointerUp from '../../../../../backpack-react-native/lib/bpk-component-flare/screenshots/ios/pointer-up.png';
+import { NativeComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

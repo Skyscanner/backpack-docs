@@ -18,20 +18,20 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-ios/Backpack/Button/README.md';
-import screenshotPrimary from '../../../../backpack-ios/screenshots/iPhone 8-button___primary_lm.png';
-import screenshotSecondary from '../../../../backpack-ios/screenshots/iPhone 8-button___secondary_lm.png';
-import screenshotDestructive from '../../../../backpack-ios/screenshots/iPhone 8-button___destructive_lm.png';
-import screenshotFeatured from '../../../../backpack-ios/screenshots/iPhone 8-button___featured_lm.png';
-import screenshotLink from '../../../../backpack-ios/screenshots/iPhone 8-button___link_lm.png';
-import screenshotOutline from '../../../../backpack-ios/screenshots/iPhone 8-button___outline_lm.png';
-import screenshotPrimaryDm from '../../../../backpack-ios/screenshots/iPhone 8-button___primary_dm.png';
-import screenshotSecondaryDm from '../../../../backpack-ios/screenshots/iPhone 8-button___secondary_dm.png';
-import screenshotDestructiveDm from '../../../../backpack-ios/screenshots/iPhone 8-button___destructive_dm.png';
-import screenshotFeaturedDm from '../../../../backpack-ios/screenshots/iPhone 8-button___featured_dm.png';
-import screenshotLinkDm from '../../../../backpack-ios/screenshots/iPhone 8-button___link_dm.png';
-import screenshotOutlineDm from '../../../../backpack-ios/screenshots/iPhone 8-button___outline_dm.png';
-import { IOSComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-ios/Backpack/Button/README.md';
+import screenshotPrimary from '../../../../../backpack-ios/screenshots/iPhone 8-button___primary_lm.png';
+import screenshotSecondary from '../../../../../backpack-ios/screenshots/iPhone 8-button___secondary_lm.png';
+import screenshotDestructive from '../../../../../backpack-ios/screenshots/iPhone 8-button___destructive_lm.png';
+import screenshotFeatured from '../../../../../backpack-ios/screenshots/iPhone 8-button___featured_lm.png';
+import screenshotLink from '../../../../../backpack-ios/screenshots/iPhone 8-button___link_lm.png';
+import screenshotOutline from '../../../../../backpack-ios/screenshots/iPhone 8-button___outline_lm.png';
+import screenshotPrimaryDm from '../../../../../backpack-ios/screenshots/iPhone 8-button___primary_dm.png';
+import screenshotSecondaryDm from '../../../../../backpack-ios/screenshots/iPhone 8-button___secondary_dm.png';
+import screenshotDestructiveDm from '../../../../../backpack-ios/screenshots/iPhone 8-button___destructive_dm.png';
+import screenshotFeaturedDm from '../../../../../backpack-ios/screenshots/iPhone 8-button___featured_dm.png';
+import screenshotLinkDm from '../../../../../backpack-ios/screenshots/iPhone 8-button___link_dm.png';
+import screenshotOutlineDm from '../../../../../backpack-ios/screenshots/iPhone 8-button___outline_dm.png';
+import { IOSComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

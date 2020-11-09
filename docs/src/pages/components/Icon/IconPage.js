@@ -21,8 +21,8 @@
 import React from 'react';
 import BpkRouterLink from 'bpk-component-router-link';
 
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import IntroBlurb from '../../components/IntroBlurb';
+import DocsPageWrapper from '../../../components/DocsPageWrapper';
+import IntroBlurb from '../../../components/IntroBlurb';
 
 import IconsDesignPage from './DesignIconPage';
 import Android from './AndroidIconPage';

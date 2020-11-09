@@ -20,11 +20,11 @@
 
 import React from 'react';
 
-import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-carousel/screenshots/ios/default.png';
-import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-carousel/screenshots/android/default.png';
-import readme from '../../../../backpack-react-native/lib/bpk-component-carousel/README.md';
-import Paragraph from '../../components/Paragraph';
-import { NativeComponentPage } from '../../components/ComponentPage';
+import iosScreenshotDefault from '../../../../../backpack-react-native/lib/bpk-component-carousel/screenshots/ios/default.png';
+import androidScreenshotDefault from '../../../../../backpack-react-native/lib/bpk-component-carousel/screenshots/android/default.png';
+import readme from '../../../../../backpack-react-native/lib/bpk-component-carousel/README.md';
+import Paragraph from '../../../components/Paragraph';
+import { NativeComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

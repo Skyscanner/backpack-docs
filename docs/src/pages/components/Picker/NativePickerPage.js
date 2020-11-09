@@ -18,12 +18,12 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/lib/bpk-component-picker/README.md';
-import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-picker/screenshots/ios/default.png';
-import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-picker/screenshots/android/default.png';
-import IntroBlurb from '../../components/IntroBlurb';
-import { NativeComponentPage } from '../../components/ComponentPage';
-import DocsPageWrapper from '../../components/DocsPageWrapper';
+import readme from '../../../../../backpack-react-native/lib/bpk-component-picker/README.md';
+import iosScreenshotDefault from '../../../../../backpack-react-native/lib/bpk-component-picker/screenshots/ios/default.png';
+import androidScreenshotDefault from '../../../../../backpack-react-native/lib/bpk-component-picker/screenshots/android/default.png';
+import IntroBlurb from '../../../components/IntroBlurb';
+import { NativeComponentPage } from '../../../components/ComponentPage';
+import DocsPageWrapper from '../../../components/DocsPageWrapper';
 
 const components = [
   {

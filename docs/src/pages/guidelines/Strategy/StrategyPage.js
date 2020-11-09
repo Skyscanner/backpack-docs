@@ -18,15 +18,15 @@
 
 import React from 'react';
 
-import getMarkdownString from '../../helpers/markdown-helper';
-import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
-import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
-import StrategyHeroImage from '../../static/strategy/strategy_header_hero.png';
-import VisionHeroImage from '../../static/strategy/vision_hero.png';
-import MissionHeroImage from '../../static/strategy/mission_hero.png';
-import ValuesHeroImage from '../../static/strategy/values_hero.png';
-import PersonalityHeroImage from '../../static/strategy/personality_hero.png';
-import * as ROUTES from '../../constants/routes';
+import getMarkdownString from '../../../helpers/markdown-helper';
+import BpkMarkdownRenderer from '../../../components/DocsPageBuilder/BpkMarkdownRenderer';
+import GuidelinesPageBuilder from '../../../components/GuidelinesBuilder';
+import StrategyHeroImage from '../../../static/strategy/strategy_header_hero.png';
+import VisionHeroImage from '../../../static/strategy/vision_hero.png';
+import MissionHeroImage from '../../../static/strategy/mission_hero.png';
+import ValuesHeroImage from '../../../static/strategy/values_hero.png';
+import PersonalityHeroImage from '../../../static/strategy/personality_hero.png';
+import * as ROUTES from '../../../constants/routes';
 
 import intro from './content/intro.md';
 import vision from './content/vision.md';

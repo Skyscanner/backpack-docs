@@ -28,7 +28,7 @@ import { cssModules } from 'bpk-react-utils';
 import { BpkList, BpkListItem } from 'bpk-component-list';
 import infiniteScrollReadme from 'bpk-component-infinite-scroll/README.md';
 
-import { WebComponentPage } from '../../components/ComponentPage';
+import { WebComponentPage } from '../../../components/ComponentPage';
 
 import STYLES from './InfiniteScrollPage.scss';
 

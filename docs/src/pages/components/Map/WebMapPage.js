@@ -34,7 +34,7 @@ import LeisureIconSm from 'bpk-component-icon/sm/leisure';
 import { withRtlSupport } from 'bpk-component-icon';
 import mapReadme from 'bpk-component-map/README.md';
 
-import { WebComponentPage } from '../../components/ComponentPage';
+import { WebComponentPage } from '../../../components/ComponentPage';
 
 import STYLES from './MapPage.scss';
 

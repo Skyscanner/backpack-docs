@@ -20,8 +20,8 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-android/docs/THEMING.md';
-import { AndroidComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-android/docs/THEMING.md';
+import { AndroidComponentPage } from '../../../components/ComponentPage';
 
 const components = [];
 

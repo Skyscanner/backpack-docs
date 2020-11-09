@@ -18,10 +18,10 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-ios/Backpack/BottomSheet/README.md';
-import screenshotAll from '../../../../backpack-ios/screenshots/iPhone 8-bottom-sheet___with-bottom-section_lm.png';
-import screenshotAllDm from '../../../../backpack-ios/screenshots/iPhone 8-bottom-sheet___with-bottom-section_dm.png';
-import { IOSComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-ios/Backpack/BottomSheet/README.md';
+import screenshotAll from '../../../../../backpack-ios/screenshots/iPhone 8-bottom-sheet___with-bottom-section_lm.png';
+import screenshotAllDm from '../../../../../backpack-ios/screenshots/iPhone 8-bottom-sheet___with-bottom-section_dm.png';
+import { IOSComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

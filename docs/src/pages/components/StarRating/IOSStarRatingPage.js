@@ -18,10 +18,10 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-ios/Backpack/StarRating/README.md';
-import screenshotAll from '../../../../backpack-ios/screenshots/iPhone 8-star-rating___docs_lm.png';
-import screenshotAllDm from '../../../../backpack-ios/screenshots/iPhone 8-star-rating___docs_dm.png';
-import { IOSComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-ios/Backpack/StarRating/README.md';
+import screenshotAll from '../../../../../backpack-ios/screenshots/iPhone 8-star-rating___docs_lm.png';
+import screenshotAllDm from '../../../../../backpack-ios/screenshots/iPhone 8-star-rating___docs_dm.png';
+import { IOSComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

@@ -21,11 +21,11 @@ import BpkLink from 'bpk-component-link';
 import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
 import BpkBlockquote from 'bpk-component-blockquote';
 
-import readme from '../../../../backpack-react-native/lib/bpk-component-touchable-native-feedback/README.md';
-import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-touchable-native-feedback/screenshots/default.png';
-import IntroBlurb from '../../components/IntroBlurb';
-import { NativeComponentPage } from '../../components/ComponentPage';
-import DocsPageWrapper from '../../components/DocsPageWrapper';
+import readme from '../../../../../backpack-react-native/lib/bpk-component-touchable-native-feedback/README.md';
+import androidScreenshotDefault from '../../../../../backpack-react-native/lib/bpk-component-touchable-native-feedback/screenshots/default.png';
+import IntroBlurb from '../../../components/IntroBlurb';
+import { NativeComponentPage } from '../../../components/ComponentPage';
+import DocsPageWrapper from '../../../components/DocsPageWrapper';
 
 const touchableOverlay = '/components/native/touchable-overlay';
 const RNTouchableNativeFeedback =

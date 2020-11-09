@@ -33,8 +33,8 @@ import CurrencyIcon from 'bpk-component-icon/sm/currency';
 import BpkButton from 'bpk-component-button';
 import bannerAlertReadme from 'bpk-component-banner-alert/README.md';
 
-import { WebComponentPage } from '../../components/ComponentPage';
-import Paragraph from '../../components/Paragraph';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import Paragraph from '../../../components/Paragraph';
 
 import STYLES from './bpk-banner-alerts-page.scss';
 

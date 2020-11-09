@@ -20,16 +20,16 @@ import React from 'react';
 import { cssModules } from 'bpk-react-utils';
 import BpkImage from 'bpk-component-image';
 
-import * as ROUTES from '../../constants/routes';
-import getMarkdownString from '../../helpers/markdown-helper';
-import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
-import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
-import GraphicDevicesHero from '../../static/graphic-devices/graphic_devices_hero.svg';
-import GraphicDevicesPairOne from '../../static/graphic-devices/overview_1.png';
-import GraphicDevicesPairTwo from '../../static/graphic-devices/overview_2.png';
-import GraphicDevicesPairThree from '../../static/graphic-devices/overview_3.png';
-import GraphicDevicesPairFour from '../../static/graphic-devices/overview_4.png';
-import GraphicDevicesExamples from '../../static/graphic-devices/examples.png';
+import * as ROUTES from '../../../constants/routes';
+import getMarkdownString from '../../../helpers/markdown-helper';
+import BpkMarkdownRenderer from '../../../components/DocsPageBuilder/BpkMarkdownRenderer';
+import GuidelinesPageBuilder from '../../../components/GuidelinesBuilder';
+import GraphicDevicesHero from '../../../static/graphic-devices/graphic_devices_hero.svg';
+import GraphicDevicesPairOne from '../../../static/graphic-devices/overview_1.png';
+import GraphicDevicesPairTwo from '../../../static/graphic-devices/overview_2.png';
+import GraphicDevicesPairThree from '../../../static/graphic-devices/overview_3.png';
+import GraphicDevicesPairFour from '../../../static/graphic-devices/overview_4.png';
+import GraphicDevicesExamples from '../../../static/graphic-devices/examples.png';
 
 import OverviewRow from './overviewRow';
 import STYLES from './devices-page.scss';

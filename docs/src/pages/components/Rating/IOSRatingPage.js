@@ -18,16 +18,16 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-ios/Backpack/Rating/README.md';
-import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-rating___default_lm.png';
-import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-rating___default_dm.png';
-import screenshotSubtitle from '../../../../backpack-ios/screenshots/iPhone 8-rating___subtitles_lm.png';
-import screenshotSubtitleDm from '../../../../backpack-ios/screenshots/iPhone 8-rating___subtitles_dm.png';
-import screenshotVertical from '../../../../backpack-ios/screenshots/iPhone 8-rating___vertical_lm.png';
-import screenshotVerticalDm from '../../../../backpack-ios/screenshots/iPhone 8-rating___vertical_dm.png';
-import screenshotSizes from '../../../../backpack-ios/screenshots/iPhone 8-rating___sizes_lm.png';
-import screenshotSizesDm from '../../../../backpack-ios/screenshots/iPhone 8-rating___sizes_dm.png';
-import { IOSComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-ios/Backpack/Rating/README.md';
+import screenshotDefault from '../../../../../backpack-ios/screenshots/iPhone 8-rating___default_lm.png';
+import screenshotDefaultDm from '../../../../../backpack-ios/screenshots/iPhone 8-rating___default_dm.png';
+import screenshotSubtitle from '../../../../../backpack-ios/screenshots/iPhone 8-rating___subtitles_lm.png';
+import screenshotSubtitleDm from '../../../../../backpack-ios/screenshots/iPhone 8-rating___subtitles_dm.png';
+import screenshotVertical from '../../../../../backpack-ios/screenshots/iPhone 8-rating___vertical_lm.png';
+import screenshotVerticalDm from '../../../../../backpack-ios/screenshots/iPhone 8-rating___vertical_dm.png';
+import screenshotSizes from '../../../../../backpack-ios/screenshots/iPhone 8-rating___sizes_lm.png';
+import screenshotSizesDm from '../../../../../backpack-ios/screenshots/iPhone 8-rating___sizes_dm.png';
+import { IOSComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

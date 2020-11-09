@@ -18,14 +18,14 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/lib/bpk-component-text/README.md';
-import iosScreenshot from '../../../../backpack-react-native/lib/bpk-component-text/screenshots/ios/default.png';
-import androidScreenshot from '../../../../backpack-react-native/lib/bpk-component-text/screenshots/android/default.png';
-import iosScreenshotEmphasized from '../../../../backpack-react-native/lib/bpk-component-text/screenshots/ios/emphasize.png';
-import androidScreenshotEmphasized from '../../../../backpack-react-native/lib/bpk-component-text/screenshots/android/emphasize.png';
-import iosScreenshotHeavy from '../../../../backpack-react-native/lib/bpk-component-text/screenshots/ios/heavy.png';
-import androidScreenshotHeavy from '../../../../backpack-react-native/lib/bpk-component-text/screenshots/android/heavy.png';
-import { NativeComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-react-native/lib/bpk-component-text/README.md';
+import iosScreenshot from '../../../../../backpack-react-native/lib/bpk-component-text/screenshots/ios/default.png';
+import androidScreenshot from '../../../../../backpack-react-native/lib/bpk-component-text/screenshots/android/default.png';
+import iosScreenshotEmphasized from '../../../../../backpack-react-native/lib/bpk-component-text/screenshots/ios/emphasize.png';
+import androidScreenshotEmphasized from '../../../../../backpack-react-native/lib/bpk-component-text/screenshots/android/emphasize.png';
+import iosScreenshotHeavy from '../../../../../backpack-react-native/lib/bpk-component-text/screenshots/ios/heavy.png';
+import androidScreenshotHeavy from '../../../../../backpack-react-native/lib/bpk-component-text/screenshots/android/heavy.png';
+import { NativeComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

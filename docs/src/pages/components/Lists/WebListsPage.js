@@ -20,7 +20,7 @@ import React from 'react';
 import { BpkList, BpkListItem } from 'bpk-component-list';
 import listReadme from 'bpk-component-list/README.md';
 
-import { WebComponentPage } from '../../components/ComponentPage';
+import { WebComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

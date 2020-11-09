@@ -18,24 +18,24 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-ios/Backpack/Card/README.md';
-import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-card___default_lm.png';
-import screenshotSelected from '../../../../backpack-ios/screenshots/iPhone 8-card___selected_lm.png';
-import screenshotCornerStyleLarge from '../../../../backpack-ios/screenshots/iPhone 8-card___corner-style-large_lm.png';
-import screenshotWithoutPadding from '../../../../backpack-ios/screenshots/iPhone 8-card___without-padding_lm.png';
-import screenshotWithDivider from '../../../../backpack-ios/screenshots/iPhone 8-card___with-divider_lm.png';
-import screenshotWithDividerWithoutPadding from '../../../../backpack-ios/screenshots/iPhone 8-card___with-divider-without-padding_lm.png';
-import screenshotWithDividerCornerStyleLarge from '../../../../backpack-ios/screenshots/iPhone 8-card___with-divider-and-corner-style-large_lm.png';
-import screenshotWithDividerArrangedVertically from '../../../../backpack-ios/screenshots/iPhone 8-card___with-divider-arranged-vertically_lm.png';
-import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-card___default_dm.png';
-import screenshotSelectedDm from '../../../../backpack-ios/screenshots/iPhone 8-card___selected_dm.png';
-import screenshotCornerStyleLargeDm from '../../../../backpack-ios/screenshots/iPhone 8-card___corner-style-large_dm.png';
-import screenshotWithoutPaddingDm from '../../../../backpack-ios/screenshots/iPhone 8-card___without-padding_dm.png';
-import screenshotWithDividerDm from '../../../../backpack-ios/screenshots/iPhone 8-card___with-divider_dm.png';
-import screenshotWithDividerWithoutPaddingDm from '../../../../backpack-ios/screenshots/iPhone 8-card___with-divider-without-padding_dm.png';
-import screenshotWithDividerCornerStyleLargeDm from '../../../../backpack-ios/screenshots/iPhone 8-card___with-divider-and-corner-style-large_dm.png';
-import screenshotWithDividerArrangedVerticallyDm from '../../../../backpack-ios/screenshots/iPhone 8-card___with-divider-arranged-vertically_dm.png';
-import { IOSComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-ios/Backpack/Card/README.md';
+import screenshotDefault from '../../../../../backpack-ios/screenshots/iPhone 8-card___default_lm.png';
+import screenshotSelected from '../../../../../backpack-ios/screenshots/iPhone 8-card___selected_lm.png';
+import screenshotCornerStyleLarge from '../../../../../backpack-ios/screenshots/iPhone 8-card___corner-style-large_lm.png';
+import screenshotWithoutPadding from '../../../../../backpack-ios/screenshots/iPhone 8-card___without-padding_lm.png';
+import screenshotWithDivider from '../../../../../backpack-ios/screenshots/iPhone 8-card___with-divider_lm.png';
+import screenshotWithDividerWithoutPadding from '../../../../../backpack-ios/screenshots/iPhone 8-card___with-divider-without-padding_lm.png';
+import screenshotWithDividerCornerStyleLarge from '../../../../../backpack-ios/screenshots/iPhone 8-card___with-divider-and-corner-style-large_lm.png';
+import screenshotWithDividerArrangedVertically from '../../../../../backpack-ios/screenshots/iPhone 8-card___with-divider-arranged-vertically_lm.png';
+import screenshotDefaultDm from '../../../../../backpack-ios/screenshots/iPhone 8-card___default_dm.png';
+import screenshotSelectedDm from '../../../../../backpack-ios/screenshots/iPhone 8-card___selected_dm.png';
+import screenshotCornerStyleLargeDm from '../../../../../backpack-ios/screenshots/iPhone 8-card___corner-style-large_dm.png';
+import screenshotWithoutPaddingDm from '../../../../../backpack-ios/screenshots/iPhone 8-card___without-padding_dm.png';
+import screenshotWithDividerDm from '../../../../../backpack-ios/screenshots/iPhone 8-card___with-divider_dm.png';
+import screenshotWithDividerWithoutPaddingDm from '../../../../../backpack-ios/screenshots/iPhone 8-card___with-divider-without-padding_dm.png';
+import screenshotWithDividerCornerStyleLargeDm from '../../../../../backpack-ios/screenshots/iPhone 8-card___with-divider-and-corner-style-large_dm.png';
+import screenshotWithDividerArrangedVerticallyDm from '../../../../../backpack-ios/screenshots/iPhone 8-card___with-divider-arranged-vertically_dm.png';
+import { IOSComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

@@ -18,10 +18,10 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/lib/bpk-component-icon/README.md';
-import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-icon/screenshots/ios/icons.png';
-import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-icon/screenshots/android/icons.png';
-import { NativeComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-react-native/lib/bpk-component-icon/README.md';
+import iosScreenshotDefault from '../../../../../backpack-react-native/lib/bpk-component-icon/screenshots/ios/icons.png';
+import androidScreenshotDefault from '../../../../../backpack-react-native/lib/bpk-component-icon/screenshots/android/icons.png';
+import { NativeComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

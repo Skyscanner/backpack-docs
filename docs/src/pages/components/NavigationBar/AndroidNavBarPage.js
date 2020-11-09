@@ -20,14 +20,14 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-android/docs/NavBar/README.md';
-import screenshotCollapsed from '../../../../backpack-android/docs/NavBar/screenshots/collapsed.png';
-import screenshotCollapsedDm from '../../../../backpack-android/docs/NavBar/screenshots/collapsed_dm.png';
-import screenshotExpanded from '../../../../backpack-android/docs/NavBar/screenshots/expanded.png';
-import screenshotExpandedDm from '../../../../backpack-android/docs/NavBar/screenshots/expanded_dm.png';
-import screenshotNavigation from '../../../../backpack-android/docs/NavBar/screenshots/navigation.png';
-import screenshotNavigationDm from '../../../../backpack-android/docs/NavBar/screenshots/navigation_dm.png';
-import { AndroidComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-android/docs/NavBar/README.md';
+import screenshotCollapsed from '../../../../../backpack-android/docs/NavBar/screenshots/collapsed.png';
+import screenshotCollapsedDm from '../../../../../backpack-android/docs/NavBar/screenshots/collapsed_dm.png';
+import screenshotExpanded from '../../../../../backpack-android/docs/NavBar/screenshots/expanded.png';
+import screenshotExpandedDm from '../../../../../backpack-android/docs/NavBar/screenshots/expanded_dm.png';
+import screenshotNavigation from '../../../../../backpack-android/docs/NavBar/screenshots/navigation.png';
+import screenshotNavigationDm from '../../../../../backpack-android/docs/NavBar/screenshots/navigation_dm.png';
+import { AndroidComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

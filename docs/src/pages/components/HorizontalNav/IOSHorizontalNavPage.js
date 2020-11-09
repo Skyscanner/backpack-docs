@@ -18,20 +18,20 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-ios/Backpack/HorizontalNavigation/README.md';
-import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___default_lm.png';
-import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___default_dm.png';
-import screenshotSmall from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___small_lm.png';
-import screenshotSmallDm from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___small_dm.png';
-import screenshotWithIcons from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___with-icons_lm.png';
-import screenshotWithIconsDm from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___with-icons_dm.png';
-import screenshotNoUnderline from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___without-underline_lm.png';
-import screenshotNoUnderlineDm from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___without-underline_dm.png';
-import screenshotBadge from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___badge_lm.png';
-import screenshotBadgeDm from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___badge_dm.png';
-import screenshotNotification from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___notification_lm.png';
-import screenshotNotificationDm from '../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___notification_dm.png';
-import { IOSComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-ios/Backpack/HorizontalNavigation/README.md';
+import screenshotDefault from '../../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___default_lm.png';
+import screenshotDefaultDm from '../../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___default_dm.png';
+import screenshotSmall from '../../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___small_lm.png';
+import screenshotSmallDm from '../../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___small_dm.png';
+import screenshotWithIcons from '../../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___with-icons_lm.png';
+import screenshotWithIconsDm from '../../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___with-icons_dm.png';
+import screenshotNoUnderline from '../../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___without-underline_lm.png';
+import screenshotNoUnderlineDm from '../../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___without-underline_dm.png';
+import screenshotBadge from '../../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___badge_lm.png';
+import screenshotBadgeDm from '../../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___badge_dm.png';
+import screenshotNotification from '../../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___notification_lm.png';
+import screenshotNotificationDm from '../../../../../backpack-ios/screenshots/iPhone 8-horizontal-navigation___notification_dm.png';
+import { IOSComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

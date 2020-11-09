@@ -24,9 +24,11 @@ import BpkBlockquote from 'bpk-component-blockquote';
 import { BpkList, BpkListItem } from 'bpk-component-list';
 import { BpkCode } from 'bpk-component-code';
 
-import IntroBlurb from '../../components/IntroBlurb';
-import DocsPageBuilder, { Paragraph } from '../../components/DocsPageBuilder';
-import { getPlatformTokens } from '../../helpers/tokens-helper';
+import IntroBlurb from '../../../components/IntroBlurb';
+import DocsPageBuilder, {
+  Paragraph,
+} from '../../../components/DocsPageBuilder';
+import { getPlatformTokens } from '../../../helpers/tokens-helper';
 
 const blurb = [
   <IntroBlurb>

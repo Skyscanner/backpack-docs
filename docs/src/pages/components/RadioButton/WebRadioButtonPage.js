@@ -19,8 +19,8 @@
 import React from 'react';
 import readme from 'bpk-component-radio/README.md';
 
-import RadioContainer from '../FormsPage/RadioContainer';
-import { WebComponentPage } from '../../components/ComponentPage';
+import RadioContainer from '../Forms/RadioContainer';
+import { WebComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

@@ -23,8 +23,8 @@ import BpkStarRating, {
 } from 'bpk-component-star-rating';
 import starRatingReadme from 'bpk-component-star-rating/README.md';
 
-import { WebComponentPage } from '../../components/ComponentPage';
-import Paragraph from '../../components/Paragraph';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import Paragraph from '../../../components/Paragraph';
 
 const InteractiveStarRating = withInteractiveStarRatingState(
   BpkInteractiveStarRating,

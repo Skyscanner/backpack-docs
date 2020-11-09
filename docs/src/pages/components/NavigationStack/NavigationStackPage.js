@@ -22,10 +22,10 @@ import React from 'react';
 import navigationStackReadme from 'bpk-component-navigation-stack/README.md';
 import { cssModules } from 'bpk-react-utils';
 
-import { WebComponentPage } from '../../components/ComponentPage';
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import Paragraph from '../../components/Paragraph';
-import IntroBlurb from '../../components/IntroBlurb';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import DocsPageWrapper from '../../../components/DocsPageWrapper';
+import Paragraph from '../../../components/Paragraph';
+import IntroBlurb from '../../../components/IntroBlurb';
 
 import {
   View,

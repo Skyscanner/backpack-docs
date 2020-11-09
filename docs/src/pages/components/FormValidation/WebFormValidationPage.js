@@ -25,9 +25,9 @@ import BpkFormValidation from 'bpk-component-form-validation';
 import { cssModules } from 'bpk-react-utils';
 import readme from 'bpk-component-form-validation/README.md';
 
-import { WebComponentPage } from '../../components/ComponentPage';
-import InputContainer from '../FormsPage/InputContainer';
-import STYLES from '../FormsPage/forms-page.scss';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import InputContainer from '../Forms/InputContainer';
+import STYLES from '../Forms/forms-page.scss';
 
 const getClassName = cssModules(STYLES);
 

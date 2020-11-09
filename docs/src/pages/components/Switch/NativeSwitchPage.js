@@ -18,10 +18,10 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/lib/bpk-component-switch/README.md';
-import iosVideo from '../../../../backpack-react-native/lib/bpk-component-switch/videos/ios/all-types-react-native-bpk-component-switch.mp4';
-import androidVideo from '../../../../backpack-react-native/lib/bpk-component-switch/videos/android/all-types-react-native-bpk-component-switch.mp4';
-import { NativeComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-react-native/lib/bpk-component-switch/README.md';
+import iosVideo from '../../../../../backpack-react-native/lib/bpk-component-switch/videos/ios/all-types-react-native-bpk-component-switch.mp4';
+import androidVideo from '../../../../../backpack-react-native/lib/bpk-component-switch/videos/android/all-types-react-native-bpk-component-switch.mp4';
+import { NativeComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

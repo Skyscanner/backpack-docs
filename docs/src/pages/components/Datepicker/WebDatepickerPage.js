@@ -23,9 +23,9 @@ import datepickerReadme from 'bpk-component-datepicker/README.md';
 import format from 'date-fns/format';
 import { weekDays } from 'bpk-component-calendar/test-utils';
 
-import * as ROUTES from '../../constants/routes';
-import { WebComponentPage } from '../../components/ComponentPage';
-import Paragraph from '../../components/Paragraph';
+import * as ROUTES from '../../../constants/routes';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import Paragraph from '../../../components/Paragraph';
 
 const formatDate = date => format(date, 'dd/MM/yyyy');
 const formatMonth = date => format(date, 'MMMM yyyy');

@@ -22,15 +22,15 @@ import BpkBlockquote from 'bpk-component-blockquote';
 import webReadme from 'bpk-theming/README.md';
 import { cssModules } from 'bpk-react-utils';
 
-import nativeReadme from '../../../../backpack-react-native/lib/bpk-theming/README.md';
-import Paragraph from '../../components/Paragraph';
-import IntroBlurb from '../../components/IntroBlurb';
-import ColorSwatch from '../../components/ColorSwatch';
+import nativeReadme from '../../../../../backpack-react-native/lib/bpk-theming/README.md';
+import Paragraph from '../../../components/Paragraph';
+import IntroBlurb from '../../../components/IntroBlurb';
+import ColorSwatch from '../../../components/ColorSwatch';
 import {
   WebComponentPage,
   NativeComponentPage,
-} from '../../components/ComponentPage';
-import DocsPageWrapper from '../../components/DocsPageWrapper';
+} from '../../../components/ComponentPage';
+import DocsPageWrapper from '../../../components/DocsPageWrapper';
 
 import Android from './AndroidThemingPage';
 import IOS from './IOSThemingPage';

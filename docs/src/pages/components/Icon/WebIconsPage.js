@@ -20,10 +20,10 @@ import React from 'react';
 import BpkLink from 'bpk-component-link';
 import iconReadme from 'bpk-component-icon/README.md';
 
-import * as ROUTES from '../../constants/routes';
-import { WebComponentPage } from '../../components/ComponentPage';
-import Paragraph from '../../components/Paragraph';
-import Code from '../../components/Code';
+import * as ROUTES from '../../../constants/routes';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import Paragraph from '../../../components/Paragraph';
+import Code from '../../../components/Code';
 
 const components = [
   {

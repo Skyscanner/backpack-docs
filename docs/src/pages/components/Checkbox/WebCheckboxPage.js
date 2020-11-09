@@ -21,9 +21,9 @@ import BpkCheckbox from 'bpk-component-checkbox';
 import { cssModules } from 'bpk-react-utils';
 import readme from 'bpk-component-checkbox/README.md';
 
-import InputContainer from '../FormsPage/InputContainer';
-import { WebComponentPage } from '../../components/ComponentPage';
-import Paragraph from '../../components/Paragraph';
+import InputContainer from '../Forms/InputContainer';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import Paragraph from '../../../components/Paragraph';
 
 import STYLES from './checkbox-page.scss';
 

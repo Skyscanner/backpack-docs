@@ -20,11 +20,11 @@ import React from 'react';
 import BpkButton from 'bpk-component-button';
 import { cssModules } from 'bpk-react-utils';
 
-import getMarkdownString from '../../helpers/markdown-helper';
-import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
-import BpkDoDont from '../../components/DocsPageBuilder/BpkDoDont';
-import Paragraph from '../../components/Paragraph';
-import PresentationBlock from '../../components/PresentationBlock';
+import getMarkdownString from '../../../helpers/markdown-helper';
+import BpkMarkdownRenderer from '../../../components/DocsPageBuilder/BpkMarkdownRenderer';
+import BpkDoDont from '../../../components/DocsPageBuilder/BpkDoDont';
+import Paragraph from '../../../components/Paragraph';
+import PresentationBlock from '../../../components/PresentationBlock';
 
 import STYLES from './accessibility-design-page.scss';
 import colorContrast1 from './content/colorContrast1.md';

@@ -18,14 +18,14 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-ios/Backpack/NavigationBar/README.md';
-import screenshotLarge from '../../../../backpack-ios/screenshots/iPhone 8-navigation-bar___full-height_lm.png';
-import screenshotCollapsed from '../../../../backpack-ios/screenshots/iPhone 8-navigation-bar___collapsed_lm.png';
-import screenshotLargeWithButtons from '../../../../backpack-ios/screenshots/iPhone 8-navigation-bar___full-height-with-buttons_lm.png';
-import screenshotLargeDm from '../../../../backpack-ios/screenshots/iPhone 8-navigation-bar___full-height_dm.png';
-import screenshotCollapsedDm from '../../../../backpack-ios/screenshots/iPhone 8-navigation-bar___collapsed_dm.png';
-import screenshotLargeWithButtonsDm from '../../../../backpack-ios/screenshots/iPhone 8-navigation-bar___full-height-with-buttons_dm.png';
-import { IOSComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-ios/Backpack/NavigationBar/README.md';
+import screenshotLarge from '../../../../../backpack-ios/screenshots/iPhone 8-navigation-bar___full-height_lm.png';
+import screenshotCollapsed from '../../../../../backpack-ios/screenshots/iPhone 8-navigation-bar___collapsed_lm.png';
+import screenshotLargeWithButtons from '../../../../../backpack-ios/screenshots/iPhone 8-navigation-bar___full-height-with-buttons_lm.png';
+import screenshotLargeDm from '../../../../../backpack-ios/screenshots/iPhone 8-navigation-bar___full-height_dm.png';
+import screenshotCollapsedDm from '../../../../../backpack-ios/screenshots/iPhone 8-navigation-bar___collapsed_dm.png';
+import screenshotLargeWithButtonsDm from '../../../../../backpack-ios/screenshots/iPhone 8-navigation-bar___full-height-with-buttons_dm.png';
+import { IOSComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

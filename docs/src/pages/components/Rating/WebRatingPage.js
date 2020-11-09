@@ -21,8 +21,8 @@ import BpkRating, { RATING_SIZES, RATING_TYPES } from 'bpk-component-rating';
 import ratingReadme from 'bpk-component-rating/README.md';
 import { cssModules } from 'bpk-react-utils';
 
-import { WebComponentPage } from '../../components/ComponentPage';
-import Paragraph from '../../components/Paragraph';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import Paragraph from '../../../components/Paragraph';
 
 import STYLES from './Rating.scss';
 

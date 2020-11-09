@@ -37,8 +37,8 @@ import {
   formatMonthArabic,
 } from 'bpk-component-calendar/test-utils';
 
-import { WebComponentPage } from '../../components/ComponentPage';
-import Paragraph from '../../components/Paragraph';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import Paragraph from '../../../components/Paragraph';
 
 import STYLES from './calendar-page.scss';
 

@@ -18,12 +18,12 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-ios/Backpack/TappableLinkLabel/README.md';
-import screenshotMultiple from '../../../../backpack-ios/screenshots/iPhone 8-tappable-link-label___multiple_lm.png';
-import screenshotAlternate from '../../../../backpack-ios/screenshots/iPhone 8-tappable-link-label___alternate-style_lm.png';
-import screenshotMultipleDm from '../../../../backpack-ios/screenshots/iPhone 8-tappable-link-label___multiple_dm.png';
-import screenshotAlternateDm from '../../../../backpack-ios/screenshots/iPhone 8-tappable-link-label___alternate-style_dm.png';
-import { IOSComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-ios/Backpack/TappableLinkLabel/README.md';
+import screenshotMultiple from '../../../../../backpack-ios/screenshots/iPhone 8-tappable-link-label___multiple_lm.png';
+import screenshotAlternate from '../../../../../backpack-ios/screenshots/iPhone 8-tappable-link-label___alternate-style_lm.png';
+import screenshotMultipleDm from '../../../../../backpack-ios/screenshots/iPhone 8-tappable-link-label___multiple_dm.png';
+import screenshotAlternateDm from '../../../../../backpack-ios/screenshots/iPhone 8-tappable-link-label___alternate-style_dm.png';
+import { IOSComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

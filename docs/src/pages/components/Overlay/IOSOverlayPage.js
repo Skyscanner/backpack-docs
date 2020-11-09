@@ -18,14 +18,14 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-ios/Backpack/OverlayView/README.md';
-import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-overlay-view___default_lm.png';
-import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-overlay-view___default_dm.png';
-import screenshotNoOverlay from '../../../../backpack-ios/screenshots/iPhone 8-overlay-view___overlay-type-none_lm.png';
-import screenshotNoOverlayDm from '../../../../backpack-ios/screenshots/iPhone 8-overlay-view___overlay-type-none_dm.png';
-import screenshotContent from '../../../../backpack-ios/screenshots/iPhone 8-overlay-view___foreground-content_lm.png';
-import screenshotContentDm from '../../../../backpack-ios/screenshots/iPhone 8-overlay-view___foreground-content_dm.png';
-import { IOSComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-ios/Backpack/OverlayView/README.md';
+import screenshotDefault from '../../../../../backpack-ios/screenshots/iPhone 8-overlay-view___default_lm.png';
+import screenshotDefaultDm from '../../../../../backpack-ios/screenshots/iPhone 8-overlay-view___default_dm.png';
+import screenshotNoOverlay from '../../../../../backpack-ios/screenshots/iPhone 8-overlay-view___overlay-type-none_lm.png';
+import screenshotNoOverlayDm from '../../../../../backpack-ios/screenshots/iPhone 8-overlay-view___overlay-type-none_dm.png';
+import screenshotContent from '../../../../../backpack-ios/screenshots/iPhone 8-overlay-view___foreground-content_lm.png';
+import screenshotContentDm from '../../../../../backpack-ios/screenshots/iPhone 8-overlay-view___foreground-content_dm.png';
+import { IOSComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

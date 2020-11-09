@@ -20,9 +20,9 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-android/docs/Overlay/README.md';
-import screenshotDefault from '../../../../backpack-android/docs/Overlay/screenshots/all.png';
-import { AndroidComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-android/docs/Overlay/README.md';
+import screenshotDefault from '../../../../../backpack-android/docs/Overlay/screenshots/all.png';
+import { AndroidComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

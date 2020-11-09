@@ -21,15 +21,15 @@
 import React from 'react';
 import { BpkCode } from 'bpk-component-code';
 
-import readme from '../../../../backpack-react-native/lib/bpk-component-alert/README.md';
-import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-alert/screenshots/ios/default.png';
-import iosCancelable from '../../../../backpack-react-native/lib/bpk-component-alert/screenshots/ios/cancelable.png';
-import iosThreeButton from '../../../../backpack-react-native/lib/bpk-component-alert/screenshots/ios/three-button.png';
-import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-alert/screenshots/android/default.png';
-import androidCancelable from '../../../../backpack-react-native/lib/bpk-component-alert/screenshots/android/cancelable.png';
-import androidThreeButton from '../../../../backpack-react-native/lib/bpk-component-alert/screenshots/android/three-button.png';
-import { NativeComponentPage } from '../../components/ComponentPage';
-import Paragraph from '../../components/Paragraph';
+import readme from '../../../../../backpack-react-native/lib/bpk-component-alert/README.md';
+import iosScreenshotDefault from '../../../../../backpack-react-native/lib/bpk-component-alert/screenshots/ios/default.png';
+import iosCancelable from '../../../../../backpack-react-native/lib/bpk-component-alert/screenshots/ios/cancelable.png';
+import iosThreeButton from '../../../../../backpack-react-native/lib/bpk-component-alert/screenshots/ios/three-button.png';
+import androidScreenshotDefault from '../../../../../backpack-react-native/lib/bpk-component-alert/screenshots/android/default.png';
+import androidCancelable from '../../../../../backpack-react-native/lib/bpk-component-alert/screenshots/android/cancelable.png';
+import androidThreeButton from '../../../../../backpack-react-native/lib/bpk-component-alert/screenshots/android/three-button.png';
+import { NativeComponentPage } from '../../../components/ComponentPage';
+import Paragraph from '../../../components/Paragraph';
 
 const components = [
   {

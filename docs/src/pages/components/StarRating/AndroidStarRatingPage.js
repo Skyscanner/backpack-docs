@@ -20,14 +20,14 @@
 
 import React from 'react';
 
-import starRatingReadme from '../../../../backpack-android/docs/StarRating/README.md';
-import starRatingInteractiveReadme from '../../../../backpack-android/docs/InteractiveStarRating/README.md';
-import screenshotStarRating from '../../../../backpack-android/docs/StarRating/screenshots/default.png';
-import screenshotStarRatingDm from '../../../../backpack-android/docs/StarRating/screenshots/default_dm.png';
-import screenshotInteractive from '../../../../backpack-android/docs/InteractiveStarRating/screenshots/default.png';
-import screenshotInteractiveDm from '../../../../backpack-android/docs/InteractiveStarRating/screenshots/default_dm.png';
-import { AndroidComponentPage } from '../../components/ComponentPage';
-import Paragraph from '../../components/Paragraph';
+import starRatingReadme from '../../../../../backpack-android/docs/StarRating/README.md';
+import starRatingInteractiveReadme from '../../../../../backpack-android/docs/InteractiveStarRating/README.md';
+import screenshotStarRating from '../../../../../backpack-android/docs/StarRating/screenshots/default.png';
+import screenshotStarRatingDm from '../../../../../backpack-android/docs/StarRating/screenshots/default_dm.png';
+import screenshotInteractive from '../../../../../backpack-android/docs/InteractiveStarRating/screenshots/default.png';
+import screenshotInteractiveDm from '../../../../../backpack-android/docs/InteractiveStarRating/screenshots/default_dm.png';
+import { AndroidComponentPage } from '../../../components/ComponentPage';
+import Paragraph from '../../../components/Paragraph';
 
 const components = [
   {

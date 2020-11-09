@@ -18,9 +18,9 @@
 
 import React from 'react';
 
-import getMarkdownString from '../../helpers/markdown-helper';
-import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
+import getMarkdownString from '../../../helpers/markdown-helper';
+import BpkMarkdownRenderer from '../../../components/DocsPageBuilder/BpkMarkdownRenderer';
+import DocsPageBuilder from '../../../components/DocsPageBuilder';
 
 import why from './content/why.md';
 

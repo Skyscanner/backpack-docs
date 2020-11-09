@@ -21,11 +21,11 @@ import BpkTicket from 'bpk-component-ticket';
 import BpkRouterLink from 'bpk-component-router-link';
 import ticketReadme from 'bpk-component-ticket/README.md';
 
-import * as ROUTES from '../../constants/routes';
-import { WebComponentPage } from '../../components/ComponentPage';
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import Paragraph from '../../components/Paragraph';
-import IntroBlurb from '../../components/IntroBlurb';
+import * as ROUTES from '../../../constants/routes';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import DocsPageWrapper from '../../../components/DocsPageWrapper';
+import Paragraph from '../../../components/Paragraph';
+import IntroBlurb from '../../../components/IntroBlurb';
 
 const components = [
   {

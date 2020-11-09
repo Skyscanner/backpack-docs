@@ -20,9 +20,9 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import Paragraph from '../../components/Paragraph';
-import IntroBlurb from '../../components/IntroBlurb';
+import DocsPageWrapper from '../../../components/DocsPageWrapper';
+import Paragraph from '../../../components/Paragraph';
+import IntroBlurb from '../../../components/IntroBlurb';
 
 import AndroidCard from './AndroidCardPage';
 import IOSCard from './IOSCardPage';

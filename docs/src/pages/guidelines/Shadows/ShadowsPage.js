@@ -20,14 +20,14 @@ import React from 'react';
 import { cssModules } from 'bpk-react-utils';
 import BpkImage from 'bpk-component-image';
 
-import getMarkdownString from '../../helpers/markdown-helper';
-import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
-import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
-import ShadowsHero from '../../static/shadows/shadows_hero.jpg';
-import ShadowPairOne from '../../static/shadows/category_1.jpg';
-import ShadowPairTwo from '../../static/shadows/category_2.jpg';
-import ShadowsExamples from '../../static/shadows/shadows_examples.jpg';
-import * as ROUTES from '../../constants/routes';
+import getMarkdownString from '../../../helpers/markdown-helper';
+import BpkMarkdownRenderer from '../../../components/DocsPageBuilder/BpkMarkdownRenderer';
+import GuidelinesPageBuilder from '../../../components/GuidelinesBuilder';
+import ShadowsHero from '../../../static/shadows/shadows_hero.jpg';
+import ShadowPairOne from '../../../static/shadows/category_1.jpg';
+import ShadowPairTwo from '../../../static/shadows/category_2.jpg';
+import ShadowsExamples from '../../../static/shadows/shadows_examples.jpg';
+import * as ROUTES from '../../../constants/routes';
 
 import STYLES from './shadows-page.scss';
 import intro from './content/intro.md';

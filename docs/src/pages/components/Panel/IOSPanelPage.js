@@ -18,14 +18,14 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-ios/Backpack/Panel/README.md';
-import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-panel___default_lm.png';
-import screenshotWithoutPadding from '../../../../backpack-ios/screenshots/iPhone 8-panel___without-padding_lm.png';
-import screenshotElevated from '../../../../backpack-ios/screenshots/iPhone 8-panel___elevated_lm.png';
-import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-panel___default_dm.png';
-import screenshotWithoutPaddingDm from '../../../../backpack-ios/screenshots/iPhone 8-panel___without-padding_dm.png';
-import screenshotElevatedDm from '../../../../backpack-ios/screenshots/iPhone 8-panel___elevated_dm.png';
-import { IOSComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-ios/Backpack/Panel/README.md';
+import screenshotDefault from '../../../../../backpack-ios/screenshots/iPhone 8-panel___default_lm.png';
+import screenshotWithoutPadding from '../../../../../backpack-ios/screenshots/iPhone 8-panel___without-padding_lm.png';
+import screenshotElevated from '../../../../../backpack-ios/screenshots/iPhone 8-panel___elevated_lm.png';
+import screenshotDefaultDm from '../../../../../backpack-ios/screenshots/iPhone 8-panel___default_dm.png';
+import screenshotWithoutPaddingDm from '../../../../../backpack-ios/screenshots/iPhone 8-panel___without-padding_dm.png';
+import screenshotElevatedDm from '../../../../../backpack-ios/screenshots/iPhone 8-panel___elevated_dm.png';
+import { IOSComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

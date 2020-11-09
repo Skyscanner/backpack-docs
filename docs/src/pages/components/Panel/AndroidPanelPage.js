@@ -20,10 +20,10 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-android/docs/Panel/README.md';
-import screenshotDefault from '../../../../backpack-android/docs/Panel/screenshots/all.png';
-import screenshotDefaultDm from '../../../../backpack-android/docs/Panel/screenshots/all_dm.png';
-import { AndroidComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-android/docs/Panel/README.md';
+import screenshotDefault from '../../../../../backpack-android/docs/Panel/screenshots/all.png';
+import screenshotDefaultDm from '../../../../../backpack-android/docs/Panel/screenshots/all_dm.png';
+import { AndroidComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

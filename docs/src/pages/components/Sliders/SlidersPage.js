@@ -21,10 +21,10 @@ import BpkSlider from 'bpk-component-slider';
 import sliderReadme from 'bpk-component-slider/README.md';
 import { updateOnDirectionChange } from 'bpk-component-rtl-toggle';
 
-import { WebComponentPage } from '../../components/ComponentPage';
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import Paragraph from '../../components/Paragraph';
-import IntroBlurb from '../../components/IntroBlurb';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import DocsPageWrapper from '../../../components/DocsPageWrapper';
+import Paragraph from '../../../components/Paragraph';
+import IntroBlurb from '../../../components/IntroBlurb';
 
 const EnhancedSlider = updateOnDirectionChange(BpkSlider);
 const components = [

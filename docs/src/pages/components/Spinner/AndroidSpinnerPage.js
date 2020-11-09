@@ -20,12 +20,12 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-android/docs/Spinner/README.md';
-import screenshotDefault from '../../../../backpack-android/docs/Spinner/screenshots/default.png';
-import screenshotDefaultDm from '../../../../backpack-android/docs/Spinner/screenshots/default_dm.png';
-import screenshotSmall from '../../../../backpack-android/docs/Spinner/screenshots/small.png';
-import screenshotSmallDm from '../../../../backpack-android/docs/Spinner/screenshots/small_dm.png';
-import { AndroidComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-android/docs/Spinner/README.md';
+import screenshotDefault from '../../../../../backpack-android/docs/Spinner/screenshots/default.png';
+import screenshotDefaultDm from '../../../../../backpack-android/docs/Spinner/screenshots/default_dm.png';
+import screenshotSmall from '../../../../../backpack-android/docs/Spinner/screenshots/small.png';
+import screenshotSmallDm from '../../../../../backpack-android/docs/Spinner/screenshots/small_dm.png';
+import { AndroidComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

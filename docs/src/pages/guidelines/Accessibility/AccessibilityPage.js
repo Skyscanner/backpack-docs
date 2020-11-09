@@ -23,11 +23,11 @@ import BpkHorizontalNav, {
   BpkHorizontalNavItem,
 } from 'bpk-component-horizontal-nav';
 
-import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
-import AccessibilityHero from '../../static/accessibility/accessibility_hero.svg';
-import AccessibilityOverviewSubpage from '../AccessibilityOverviewPage';
-import AccessibilityDesignPage from '../AccessibilityDesignPage';
-import * as ROUTES from '../../constants/routes';
+import GuidelinesPageBuilder from '../../../components/GuidelinesBuilder';
+import AccessibilityHero from '../../../static/accessibility/accessibility_hero.svg';
+import AccessibilityOverviewSubpage from '../AccessibilityOverview';
+import AccessibilityDesignPage from '../AccessibilityDesign';
+import * as ROUTES from '../../../constants/routes';
 
 import STYLES from './accessibility-page.scss';
 

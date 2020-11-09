@@ -26,8 +26,8 @@ import { HEADER_ICON_TYPES } from 'bpk-component-dialog';
 import BpkText from 'bpk-component-text/src/BpkText';
 import { cssModules } from 'bpk-react-utils';
 
-import Paragraph from '../../components/Paragraph';
-import { WebComponentPage } from '../../components/ComponentPage';
+import Paragraph from '../../../components/Paragraph';
+import { WebComponentPage } from '../../../components/ComponentPage';
 
 import STYLES from './DialogsPage.scss';
 import {

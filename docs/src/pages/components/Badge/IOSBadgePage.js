@@ -20,10 +20,10 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-ios/Backpack/Badge/README.md';
-import screenshotAll from '../../../../backpack-ios/screenshots/iPhone 8-badge___all_lm.png';
-import screenshotAllDm from '../../../../backpack-ios/screenshots/iPhone 8-badge___all_dm.png';
-import { IOSComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-ios/Backpack/Badge/README.md';
+import screenshotAll from '../../../../../backpack-ios/screenshots/iPhone 8-badge___all_lm.png';
+import screenshotAllDm from '../../../../../backpack-ios/screenshots/iPhone 8-badge___all_dm.png';
+import { IOSComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

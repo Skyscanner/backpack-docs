@@ -23,15 +23,15 @@ import { withButtonAlignment } from 'bpk-component-icon';
 import BpkSmallDownloadIcon from 'bpk-component-icon/sm/download';
 import icons from 'bpk-component-icon/all';
 
-import IconSearchApp from '../../components/IconSearchApp';
-import DocsPageBuilder from '../../components/DocsPageBuilder';
-import Heading from '../../components/Heading';
-import Paragraph from '../../components/Paragraph';
-import IntroBlurb from '../../components/IntroBlurb';
+import IconSearchApp from '../../../components/IconSearchApp';
+import DocsPageBuilder from '../../../components/DocsPageBuilder';
+import Heading from '../../../components/Heading';
+import Paragraph from '../../../components/Paragraph';
+import IntroBlurb from '../../../components/IntroBlurb';
 
 // This file can actually be resolved eslint is just confused
 // eslint-disable-next-line import/no-webpack-loader-syntax, import/extensions
-import iconsSvgs from '!!file-loader?name=[name].[hash].zip!zip-it-loader!./../../../../node_modules/bpk-svgs/src/icons/icons';
+import iconsSvgs from '!!file-loader?name=[name].[hash].zip!zip-it-loader!./../../../../../node_modules/bpk-svgs/src/icons/icons';
 
 const AlignedBpkSmallDownloadIcon = withButtonAlignment(BpkSmallDownloadIcon);
 

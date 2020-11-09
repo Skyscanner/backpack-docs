@@ -31,7 +31,7 @@ import {
   getPlatformFromLocalStorage,
 } from '../../helpers/platform-helper';
 import Heading from '../Heading';
-import DesignPlaceholderPage from '../../pages/DesignPlaceholderPage';
+import DesignPlaceholderPage from '../../pages/components/DesignPlaceholder';
 
 import Blurb from './Blurb';
 import STYLES from './DocsPageWrapper.scss';

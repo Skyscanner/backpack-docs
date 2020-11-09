@@ -20,18 +20,18 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-android/docs/Text/README.md';
-import textSpanReadme from '../../../../backpack-android/docs/TextSpans/README.md';
-import screenshotDefault from '../../../../backpack-android/docs/Text/screenshots/default.png';
-import screenshotDefaultDm from '../../../../backpack-android/docs/Text/screenshots/default_dm.png';
-import screenshotEmphasized from '../../../../backpack-android/docs/Text/screenshots/emphasized.png';
-import screenshotEmphasizedDm from '../../../../backpack-android/docs/Text/screenshots/emphasized_dm.png';
-import screenshotHeavy from '../../../../backpack-android/docs/Text/screenshots/heavy.png';
-import screenshotHeavyDm from '../../../../backpack-android/docs/Text/screenshots/heavy_dm.png';
-import screenshotTextSpan from '../../../../backpack-android/docs/TextSpans/screenshots/default.png';
-import screenshotTextSpanDm from '../../../../backpack-android/docs/TextSpans/screenshots/default_dm.png';
-import { AndroidComponentPage } from '../../components/ComponentPage';
-import IntroBlurb from '../../components/IntroBlurb';
+import readme from '../../../../../backpack-android/docs/Text/README.md';
+import textSpanReadme from '../../../../../backpack-android/docs/TextSpans/README.md';
+import screenshotDefault from '../../../../../backpack-android/docs/Text/screenshots/default.png';
+import screenshotDefaultDm from '../../../../../backpack-android/docs/Text/screenshots/default_dm.png';
+import screenshotEmphasized from '../../../../../backpack-android/docs/Text/screenshots/emphasized.png';
+import screenshotEmphasizedDm from '../../../../../backpack-android/docs/Text/screenshots/emphasized_dm.png';
+import screenshotHeavy from '../../../../../backpack-android/docs/Text/screenshots/heavy.png';
+import screenshotHeavyDm from '../../../../../backpack-android/docs/Text/screenshots/heavy_dm.png';
+import screenshotTextSpan from '../../../../../backpack-android/docs/TextSpans/screenshots/default.png';
+import screenshotTextSpanDm from '../../../../../backpack-android/docs/TextSpans/screenshots/default_dm.png';
+import { AndroidComponentPage } from '../../../components/ComponentPage';
+import IntroBlurb from '../../../components/IntroBlurb';
 
 const components = [
   {

@@ -18,12 +18,12 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/lib/bpk-component-image/README.md';
-import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-image/screenshots/ios/default.png';
-import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-image/screenshots/android/default.png';
-import iosScreenshotNoBorderRadius from '../../../../backpack-react-native/lib/bpk-component-image/screenshots/ios/no-border-radius.png';
-import androidScreenshotNoBorderRadius from '../../../../backpack-react-native/lib/bpk-component-image/screenshots/android/no-border-radius.png';
-import { NativeComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-react-native/lib/bpk-component-image/README.md';
+import iosScreenshotDefault from '../../../../../backpack-react-native/lib/bpk-component-image/screenshots/ios/default.png';
+import androidScreenshotDefault from '../../../../../backpack-react-native/lib/bpk-component-image/screenshots/android/default.png';
+import iosScreenshotNoBorderRadius from '../../../../../backpack-react-native/lib/bpk-component-image/screenshots/ios/no-border-radius.png';
+import androidScreenshotNoBorderRadius from '../../../../../backpack-react-native/lib/bpk-component-image/screenshots/android/no-border-radius.png';
+import { NativeComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

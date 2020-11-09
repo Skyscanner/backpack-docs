@@ -20,12 +20,12 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-android/docs/Calendar/README.md';
-import screenshotAll from '../../../../backpack-android/docs/Calendar/screenshots/range.png';
-import screenshotAllDm from '../../../../backpack-android/docs/Calendar/screenshots/range_dm.png';
-import screenshotColored from '../../../../backpack-android/docs/Calendar/screenshots/colored.png';
-import screenshotColoredDm from '../../../../backpack-android/docs/Calendar/screenshots/colored_dm.png';
-import { AndroidComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-android/docs/Calendar/README.md';
+import screenshotAll from '../../../../../backpack-android/docs/Calendar/screenshots/range.png';
+import screenshotAllDm from '../../../../../backpack-android/docs/Calendar/screenshots/range_dm.png';
+import screenshotColored from '../../../../../backpack-android/docs/Calendar/screenshots/colored.png';
+import screenshotColoredDm from '../../../../../backpack-android/docs/Calendar/screenshots/colored_dm.png';
+import { AndroidComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

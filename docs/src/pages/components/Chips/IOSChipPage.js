@@ -18,16 +18,16 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-ios/Backpack/Chip/README.md';
-import screenshotDefault from '../../../../backpack-ios/screenshots/iPhone 8-chip___default_lm.png';
-import screenshotDefaultDm from '../../../../backpack-ios/screenshots/iPhone 8-chip___default_dm.png';
-import screenshotWithIcons from '../../../../backpack-ios/screenshots/iPhone 8-chip___with-icons_lm.png';
-import screenshotWithIconsDm from '../../../../backpack-ios/screenshots/iPhone 8-chip___with-icons_dm.png';
-import screenshotFilled from '../../../../backpack-ios/screenshots/iPhone 8-chip___filled_lm.png';
-import screenshotFilledDm from '../../../../backpack-ios/screenshots/iPhone 8-chip___filled_dm.png';
-import screenshotWithBackgroundColor from '../../../../backpack-ios/screenshots/iPhone 8-chip___filled-background-color_lm.png';
-import screenshotWithBackgroundColorDm from '../../../../backpack-ios/screenshots/iPhone 8-chip___filled-background-color_dm.png';
-import { IOSComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-ios/Backpack/Chip/README.md';
+import screenshotDefault from '../../../../../backpack-ios/screenshots/iPhone 8-chip___default_lm.png';
+import screenshotDefaultDm from '../../../../../backpack-ios/screenshots/iPhone 8-chip___default_dm.png';
+import screenshotWithIcons from '../../../../../backpack-ios/screenshots/iPhone 8-chip___with-icons_lm.png';
+import screenshotWithIconsDm from '../../../../../backpack-ios/screenshots/iPhone 8-chip___with-icons_dm.png';
+import screenshotFilled from '../../../../../backpack-ios/screenshots/iPhone 8-chip___filled_lm.png';
+import screenshotFilledDm from '../../../../../backpack-ios/screenshots/iPhone 8-chip___filled_dm.png';
+import screenshotWithBackgroundColor from '../../../../../backpack-ios/screenshots/iPhone 8-chip___filled-background-color_lm.png';
+import screenshotWithBackgroundColorDm from '../../../../../backpack-ios/screenshots/iPhone 8-chip___filled-background-color_dm.png';
+import { IOSComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

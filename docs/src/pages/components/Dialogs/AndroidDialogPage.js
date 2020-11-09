@@ -20,12 +20,12 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-android/docs/Dialog/README.md';
-import screenshotAlert from '../../../../backpack-android/docs/Dialog/screenshots/with-cta.png';
-import screenshotAlertDm from '../../../../backpack-android/docs/Dialog/screenshots/with-cta_dm.png';
-import screenshotBottomSheet from '../../../../backpack-android/docs/Dialog/screenshots/delete-confirmation.png';
-import screenshotBottomSheetDm from '../../../../backpack-android/docs/Dialog/screenshots/delete-confirmation_dm.png';
-import { AndroidComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-android/docs/Dialog/README.md';
+import screenshotAlert from '../../../../../backpack-android/docs/Dialog/screenshots/with-cta.png';
+import screenshotAlertDm from '../../../../../backpack-android/docs/Dialog/screenshots/with-cta_dm.png';
+import screenshotBottomSheet from '../../../../../backpack-android/docs/Dialog/screenshots/delete-confirmation.png';
+import screenshotBottomSheetDm from '../../../../../backpack-android/docs/Dialog/screenshots/delete-confirmation_dm.png';
+import { AndroidComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

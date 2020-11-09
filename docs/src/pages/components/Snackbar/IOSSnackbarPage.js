@@ -18,14 +18,14 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-ios/Backpack/Snackbar/README.md';
-import screenshotWithText from '../../../../backpack-ios/screenshots/iPhone 8-snack-bar___with-text_lm.png';
-import screenshotWithTextDm from '../../../../backpack-ios/screenshots/iPhone 8-snack-bar___with-text_dm.png';
-import screenshotWithTextAndButton from '../../../../backpack-ios/screenshots/iPhone 8-snack-bar___with-text-and-button_lm.png';
-import screenshotWithTextAndButtonDm from '../../../../backpack-ios/screenshots/iPhone 8-snack-bar___with-text-and-button_dm.png';
-import screenshotWithTextAndIconButton from '../../../../backpack-ios/screenshots/iPhone 8-snack-bar___with-text-and-icon-only-button_lm.png';
-import screenshotWithTextAndIconButtonDm from '../../../../backpack-ios/screenshots/iPhone 8-snack-bar___with-text-and-icon-only-button_dm.png';
-import { IOSComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-ios/Backpack/Snackbar/README.md';
+import screenshotWithText from '../../../../../backpack-ios/screenshots/iPhone 8-snack-bar___with-text_lm.png';
+import screenshotWithTextDm from '../../../../../backpack-ios/screenshots/iPhone 8-snack-bar___with-text_dm.png';
+import screenshotWithTextAndButton from '../../../../../backpack-ios/screenshots/iPhone 8-snack-bar___with-text-and-button_lm.png';
+import screenshotWithTextAndButtonDm from '../../../../../backpack-ios/screenshots/iPhone 8-snack-bar___with-text-and-button_dm.png';
+import screenshotWithTextAndIconButton from '../../../../../backpack-ios/screenshots/iPhone 8-snack-bar___with-text-and-icon-only-button_lm.png';
+import screenshotWithTextAndIconButtonDm from '../../../../../backpack-ios/screenshots/iPhone 8-snack-bar___with-text-and-icon-only-button_dm.png';
+import { IOSComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

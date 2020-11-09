@@ -21,8 +21,8 @@ import BpkLabel from 'bpk-component-label';
 import { cssModules } from 'bpk-react-utils';
 import readme from 'bpk-component-label/README.md';
 
-import { WebComponentPage } from '../../components/ComponentPage';
-import STYLES from '../FormsPage/forms-page.scss';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import STYLES from '../Forms/forms-page.scss';
 
 const getClassName = cssModules(STYLES);
 

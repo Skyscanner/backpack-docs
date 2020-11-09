@@ -20,14 +20,14 @@ import React from 'react';
 import { cssModules } from 'bpk-react-utils';
 import BpkImage from 'bpk-component-image';
 
-import getMarkdownString from '../../helpers/markdown-helper';
-import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
-import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
-import InUseHero from '../../static/in-use/in_use_hero.svg';
-import InUseExampleOne from '../../static/in-use/example_1.jpg';
-import InUseExampleTwo from '../../static/in-use/example_2.jpg';
-import InUseExampleThree from '../../static/in-use/example_3.jpg';
-import InUseExampleFour from '../../static/in-use/example_4.jpg';
+import getMarkdownString from '../../../helpers/markdown-helper';
+import BpkMarkdownRenderer from '../../../components/DocsPageBuilder/BpkMarkdownRenderer';
+import GuidelinesPageBuilder from '../../../components/GuidelinesBuilder';
+import InUseHero from '../../../static/in-use/in_use_hero.svg';
+import InUseExampleOne from '../../../static/in-use/example_1.jpg';
+import InUseExampleTwo from '../../../static/in-use/example_2.jpg';
+import InUseExampleThree from '../../../static/in-use/example_3.jpg';
+import InUseExampleFour from '../../../static/in-use/example_4.jpg';
 
 import STYLES from './inuse-page.scss';
 import intro from './content/intro.md';

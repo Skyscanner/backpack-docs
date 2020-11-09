@@ -19,12 +19,12 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/lib/bpk-component-progress/README.md';
-import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-progress/screenshots/ios/default.png';
-import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-progress/screenshots/android/default.png';
-import iosScreenshotBar from '../../../../backpack-react-native/lib/bpk-component-progress/screenshots/ios/bar.png';
-import androidScreenshotBar from '../../../../backpack-react-native/lib/bpk-component-progress/screenshots/android/bar.png';
-import { NativeComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-react-native/lib/bpk-component-progress/README.md';
+import iosScreenshotDefault from '../../../../../backpack-react-native/lib/bpk-component-progress/screenshots/ios/default.png';
+import androidScreenshotDefault from '../../../../../backpack-react-native/lib/bpk-component-progress/screenshots/android/default.png';
+import iosScreenshotBar from '../../../../../backpack-react-native/lib/bpk-component-progress/screenshots/ios/bar.png';
+import androidScreenshotBar from '../../../../../backpack-react-native/lib/bpk-component-progress/screenshots/android/bar.png';
+import { NativeComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

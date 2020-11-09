@@ -23,12 +23,12 @@ import BpkInput, { withOpenEvents } from 'bpk-component-input';
 import BpkRouterLink from 'bpk-component-router-link';
 import popoverReadme from 'bpk-component-popover/README.md';
 
-import * as ROUTES from '../../constants/routes';
-import { WebComponentPage } from '../../components/ComponentPage';
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import Paragraph from '../../components/Paragraph';
-import IntroBlurb from '../../components/IntroBlurb';
-import Code from '../../components/Code';
+import * as ROUTES from '../../../constants/routes';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import DocsPageWrapper from '../../../components/DocsPageWrapper';
+import Paragraph from '../../../components/Paragraph';
+import IntroBlurb from '../../../components/IntroBlurb';
+import Code from '../../../components/Code';
 
 const loremIpsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar leo in gravida varius.
 Mauris eget euismod mi. Ut vulputate ex nec consequat sollicitudin. Pellentesque pulvinar ac dolor vel hendrerit.

@@ -20,7 +20,7 @@ import React from 'react';
 import BpkBlockquote from 'bpk-component-blockquote';
 import blockquotesReadme from 'bpk-component-blockquote/README.md';
 
-import { WebComponentPage } from '../../components/ComponentPage';
+import { WebComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

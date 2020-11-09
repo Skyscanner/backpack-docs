@@ -20,8 +20,8 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import IntroBlurb from '../../components/IntroBlurb';
+import DocsPageWrapper from '../../../components/DocsPageWrapper';
+import IntroBlurb from '../../../components/IntroBlurb';
 
 import AndroidFlare from './AndroidFlarePage';
 import IOSFlare from './IOSFlarePage';

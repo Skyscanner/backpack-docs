@@ -18,14 +18,14 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/lib/bpk-component-horizontal-nav/README.md';
-import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-horizontal-nav/screenshots/ios/default.png';
-import iosScreenshotSmall from '../../../../backpack-react-native/lib/bpk-component-horizontal-nav/screenshots/ios/small.png';
-import iosScreenshotSpaceAround from '../../../../backpack-react-native/lib/bpk-component-horizontal-nav/screenshots/ios/space-around.png';
-import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-horizontal-nav/screenshots/android/default.png';
-import androidScreenshotSmall from '../../../../backpack-react-native/lib/bpk-component-horizontal-nav/screenshots/android/small.png';
-import androidScreenshotSpaceAround from '../../../../backpack-react-native/lib/bpk-component-horizontal-nav/screenshots/android/space-around.png';
-import { NativeComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-react-native/lib/bpk-component-horizontal-nav/README.md';
+import iosScreenshotDefault from '../../../../../backpack-react-native/lib/bpk-component-horizontal-nav/screenshots/ios/default.png';
+import iosScreenshotSmall from '../../../../../backpack-react-native/lib/bpk-component-horizontal-nav/screenshots/ios/small.png';
+import iosScreenshotSpaceAround from '../../../../../backpack-react-native/lib/bpk-component-horizontal-nav/screenshots/ios/space-around.png';
+import androidScreenshotDefault from '../../../../../backpack-react-native/lib/bpk-component-horizontal-nav/screenshots/android/default.png';
+import androidScreenshotSmall from '../../../../../backpack-react-native/lib/bpk-component-horizontal-nav/screenshots/android/small.png';
+import androidScreenshotSpaceAround from '../../../../../backpack-react-native/lib/bpk-component-horizontal-nav/screenshots/android/space-around.png';
+import { NativeComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

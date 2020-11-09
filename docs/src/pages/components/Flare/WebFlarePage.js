@@ -22,7 +22,7 @@ import { BpkContentBubble } from 'bpk-component-flare';
 import flareReadme from 'bpk-component-flare/README.md';
 import { cssModules } from 'bpk-react-utils';
 
-import { WebComponentPage } from '../../components/ComponentPage';
+import { WebComponentPage } from '../../../components/ComponentPage';
 
 import STYLES from './FlarePage.scss';
 

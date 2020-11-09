@@ -23,9 +23,9 @@ import BpkPhoneInput from 'bpk-component-phone-input';
 import readme from 'bpk-component-phone-input/README.md';
 import BpkImage from 'bpk-component-image';
 
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import { WebComponentPage } from '../../components/ComponentPage';
-import IntroBlurb from '../../components/IntroBlurb';
+import DocsPageWrapper from '../../../components/DocsPageWrapper';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import IntroBlurb from '../../../components/IntroBlurb';
 
 import NativePhoneInput from './NativePhoneInputPage';
 

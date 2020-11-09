@@ -21,14 +21,14 @@ import { cssModules } from 'bpk-react-utils';
 import BpkImage from 'bpk-component-image';
 import BpkLink from 'bpk-component-link';
 
-import getMarkdownString from '../../helpers/markdown-helper';
-import { createFromType } from '../../components/ApidocLink';
-import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
-import GuidelinesPageBuilder from '../../components/GuidelinesBuilder';
-import BpkParagraph from '../../components/Paragraph';
-import ColorsHero from '../../static/colours/colour_hero.svg';
-import ColorExamples from '../../static/colours/colour_examples.png';
-import * as ROUTES from '../../constants/routes';
+import getMarkdownString from '../../../helpers/markdown-helper';
+import { createFromType } from '../../../components/ApidocLink';
+import BpkMarkdownRenderer from '../../../components/DocsPageBuilder/BpkMarkdownRenderer';
+import GuidelinesPageBuilder from '../../../components/GuidelinesBuilder';
+import BpkParagraph from '../../../components/Paragraph';
+import ColorsHero from '../../../static/colours/colour_hero.svg';
+import ColorExamples from '../../../static/colours/colour_examples.png';
+import * as ROUTES from '../../../constants/routes';
 
 import STYLES from './colors-page.scss';
 import intro from './content/intro.md';

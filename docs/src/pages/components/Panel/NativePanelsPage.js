@@ -18,16 +18,16 @@
 
 import React from 'react';
 
-import readme from '../../../../backpack-react-native/lib/bpk-component-panel/README.md';
-import iosScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-panel/screenshots/ios/default.png';
-import androidScreenshotDefault from '../../../../backpack-react-native/lib/bpk-component-panel/screenshots/android/default.png';
-import iosScreenshotWithoutPadding from '../../../../backpack-react-native/lib/bpk-component-panel/screenshots/ios/without-padding.png';
-import androidScreenshotWithoutPadding from '../../../../backpack-react-native/lib/bpk-component-panel/screenshots/android/without-padding.png';
-import iosScreenshotWithDivider from '../../../../backpack-react-native/lib/bpk-component-panel/screenshots/ios/with-divider.png';
-import androidScreenshotWithDivider from '../../../../backpack-react-native/lib/bpk-component-panel/screenshots/android/with-divider.png';
-import iosScreenshotWithDividerArrangedVertically from '../../../../backpack-react-native/lib/bpk-component-panel/screenshots/ios/with-divider-arranged-vertically.png';
-import androidScreenshotWithDividerArrangedVertically from '../../../../backpack-react-native/lib/bpk-component-panel/screenshots/android/with-divider-arranged-vertically.png';
-import { NativeComponentPage } from '../../components/ComponentPage';
+import readme from '../../../../../backpack-react-native/lib/bpk-component-panel/README.md';
+import iosScreenshotDefault from '../../../../../backpack-react-native/lib/bpk-component-panel/screenshots/ios/default.png';
+import androidScreenshotDefault from '../../../../../backpack-react-native/lib/bpk-component-panel/screenshots/android/default.png';
+import iosScreenshotWithoutPadding from '../../../../../backpack-react-native/lib/bpk-component-panel/screenshots/ios/without-padding.png';
+import androidScreenshotWithoutPadding from '../../../../../backpack-react-native/lib/bpk-component-panel/screenshots/android/without-padding.png';
+import iosScreenshotWithDivider from '../../../../../backpack-react-native/lib/bpk-component-panel/screenshots/ios/with-divider.png';
+import androidScreenshotWithDivider from '../../../../../backpack-react-native/lib/bpk-component-panel/screenshots/android/with-divider.png';
+import iosScreenshotWithDividerArrangedVertically from '../../../../../backpack-react-native/lib/bpk-component-panel/screenshots/ios/with-divider-arranged-vertically.png';
+import androidScreenshotWithDividerArrangedVertically from '../../../../../backpack-react-native/lib/bpk-component-panel/screenshots/android/with-divider-arranged-vertically.png';
+import { NativeComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

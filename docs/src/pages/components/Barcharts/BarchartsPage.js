@@ -25,11 +25,11 @@ import barchartReadme from 'bpk-component-barchart/README.md';
 import { updateOnDirectionChange } from 'bpk-component-rtl-toggle';
 import data from 'bpk-component-barchart/data.json';
 
-import { WebComponentPage } from '../../components/ComponentPage';
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import Paragraph from '../../components/Paragraph';
-import IntroBlurb from '../../components/IntroBlurb';
-import Code from '../../components/Code';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import DocsPageWrapper from '../../../components/DocsPageWrapper';
+import Paragraph from '../../../components/Paragraph';
+import IntroBlurb from '../../../components/IntroBlurb';
+import Code from '../../../components/Code';
 
 import IOSBarChartPage from './IOSBarChartPage';
 import AndroidBarChartPage from './AndroidBarChartPage';

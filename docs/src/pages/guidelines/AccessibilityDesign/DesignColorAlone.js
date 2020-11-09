@@ -23,11 +23,11 @@ import BpkImage, {
 } from 'bpk-component-image';
 import { cssModules } from 'bpk-react-utils';
 
-import getMarkdownString from '../../helpers/markdown-helper';
-import BpkMarkdownRenderer from '../../components/DocsPageBuilder/BpkMarkdownRenderer';
-import BpkDoDont from '../../components/DocsPageBuilder/BpkDoDont';
-import Paragraph from '../../components/Paragraph';
-import PresentationBlock from '../../components/PresentationBlock';
+import getMarkdownString from '../../../helpers/markdown-helper';
+import BpkMarkdownRenderer from '../../../components/DocsPageBuilder/BpkMarkdownRenderer';
+import BpkDoDont from '../../../components/DocsPageBuilder/BpkDoDont';
+import Paragraph from '../../../components/Paragraph';
+import PresentationBlock from '../../../components/PresentationBlock';
 
 import STYLES from './accessibility-design-page.scss';
 import colorAlone1 from './content/colorAlone1.md';

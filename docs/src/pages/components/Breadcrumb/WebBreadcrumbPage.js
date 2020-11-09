@@ -20,7 +20,7 @@ import React from 'react';
 import breadcrumbReadme from 'bpk-component-breadcrumb/README.md';
 import BpkBreadcrumb, { BpkBreadcrumbItem } from 'bpk-component-breadcrumb';
 
-import { WebComponentPage } from '../../components/ComponentPage';
+import { WebComponentPage } from '../../../components/ComponentPage';
 
 const components = [
   {

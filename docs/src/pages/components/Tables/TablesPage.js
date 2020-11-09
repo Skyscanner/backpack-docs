@@ -29,9 +29,9 @@ import tablesReadme from 'bpk-component-table/README.md';
 import { BpkDataTable, BpkDataTableColumn } from 'bpk-component-datatable';
 import dataTablesReadme from 'bpk-component-datatable/README.md';
 
-import { WebComponentPage } from '../../components/ComponentPage';
-import DocsPageWrapper from '../../components/DocsPageWrapper';
-import IntroBlurb from '../../components/IntroBlurb';
+import { WebComponentPage } from '../../../components/ComponentPage';
+import DocsPageWrapper from '../../../components/DocsPageWrapper';
+import IntroBlurb from '../../../components/IntroBlurb';
 
 const DataTableExample = () => {
   const rows = [
