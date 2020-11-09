@@ -26,7 +26,8 @@ import BpkImage from 'bpk-component-image';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import { WebComponentPage } from '../../components/ComponentPage';
 import IntroBlurb from '../../components/IntroBlurb';
-import NativePhoneInput from '../NativePhoneInputPage';
+
+import NativePhoneInput from './NativePhoneInputPage';
 
 const DIALING_CODE_TO_ID_MAP = {
   '1_us': 'us',
