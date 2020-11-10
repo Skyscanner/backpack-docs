@@ -160,10 +160,6 @@ const config = {
         ],
       },
       {
-        test: /\.md$/,
-        use: ['markdown-image-loader'],
-      },
-      {
         test: /\.(jpg|png|svg|mp4)$/,
         exclude: /node_modules/,
         use: [
@@ -186,6 +182,10 @@ const config = {
             },
           },
         ],
+      },
+      {
+        test: /\.md$/,
+        use: ['raw-loader'],
       },
     ],
   },
