@@ -160,6 +160,10 @@ const config = {
         ],
       },
       {
+        test: /\.md$/,
+        use: ['markdown-image-loader'],
+      },
+      {
         test: /\.(jpg|png|svg|mp4)$/,
         exclude: /node_modules/,
         use: [
@@ -173,7 +177,7 @@ const config = {
         ],
       },
       {
-        test: /favicon\.ico|social-preview\.png|apple-touch-icon\.png|docs\/src\/static\/markdown-pages\/*\.png$/,
+        test: /favicon\.ico|social-preview\.png|apple-touch-icon\.png$/,
         use: [
           {
             loader: 'file-loader',
@@ -182,10 +186,6 @@ const config = {
             },
           },
         ],
-      },
-      {
-        test: /\.md$/,
-        use: ['raw-loader'],
       },
     ],
   },
