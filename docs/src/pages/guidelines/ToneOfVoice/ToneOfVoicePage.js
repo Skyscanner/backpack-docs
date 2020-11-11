@@ -151,7 +151,7 @@ const CopywritingPage = () => (
     sections={sections}
     nextPageLink={{
       title: 'Logo',
-      link: ROUTES.LOGO,
+      link: ROUTES.GENERATED_GUIDELINES_LOGO,
     }}
   />
 );

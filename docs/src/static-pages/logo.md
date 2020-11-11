@@ -1,0 +1,26 @@
+---
+title: Logo
+subtitle: Our logo is Skyscanner's most important visual element. It is the visual shorthand for our company, and the single graphic that our audiences will attach their emotion to.
+category: guidelines
+---
+
+Like all powerful symbols, our logo works on multiple levels. On the surface, our logo is bold, straightforward and easy to comprehend — allowing it to be enjoyed by audiences everywhere. Below the surface, our logo combines four strong meanings to visually embody our compelling brand strategy.
+
+## Our symbol
+
+![Our symbol](https://js.skyscnr.com/sttc/bpk-content/our_symbol-af2f7219.png)
+
+## Our wordmarque
+
+![Our wordmarque](https://js.skyscnr.com/sttc/bpk-content/our_wordmarque-c8a774a8.svg)
+
+## Logo suite
+
+![Logo suite](https://js.skyscnr.com/sttc/bpk-content/logo_suite_vertical_logo-ee0c930e.svg)
+![Logo suite](https://js.skyscnr.com/sttc/bpk-content/logo_suite_horizontal_logo-33239ee8.svg)
+![Logo suite](https://js.skyscnr.com/sttc/bpk-content/logo_suite_symbol-8c0abdd8.svg)
+![Logo suite](https://js.skyscnr.com/sttc/bpk-content/our_wordmarque-c8a774a8.svg)
+
+## Examples
+
+![Examples](https://js.skyscnr.com/sttc/bpk-content/logo_examples-1ebc5905.png)

@@ -168,7 +168,7 @@ class AccessibilityPage extends Component {
         sections={sections}
         nextPageLink={{
           title: 'Strategy',
-          link: ROUTES.STRATEGY,
+          link: ROUTES.GENERATED_GUIDELINES_STRATEGY,
         }}
       />
     );

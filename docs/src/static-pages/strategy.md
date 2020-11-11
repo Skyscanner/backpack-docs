@@ -1,0 +1,37 @@
+---
+title: Strategy
+subtitle: Our brand strategy is the blueprint that gives our brand purpose and direction. It is the set of rules that we use to inform our decisions — from day-to-day queries to long-term challenges. This section will guide you through its components.
+category: guidelines
+---
+
+## Our vision
+
+### For everyone to explore our world effortlessly and ethically.
+
+1. Building a great product that travellers love, need and want.
+1. Empowering the world’s largest travel audience with radical transparency and simplicity.
+1. Compelling the travel industry to make real, lasting change.
+
+## Our mission
+
+### To lead the global transformation to modern and sustainable travel.
+
+## Our values
+
+**Principled**: Striving to do the right thing for people and the planet. We hold onto our integrity even over conventional wisdom and ‘how it’s done’.
+
+**Collaborative**: Committed to listening, supporting and questioning to solve the challenges of travel for everyone. We know that we can only do the right thing by working together.
+
+**Kind**: Always generous and considerate. We are committed to building long-term relationships even over short-term wins.
+
+**Focused**: Dedicated to helping people make better decisions faster. We choose to do fewer things brilliantly over trying
+
+## Our personality
+
+**Helpful**: There’s no problem too big or too small and we’ll do everything we can to make someone’s trip better. We get to the point and give people the information they need so they can make the best decision possible.
+
+**Joyful**: Because we’re excited about travel, we want to get other people excited about it, too. We’re wired to pick up on our travellers' thoughts and feelings and know when to use our natural charisma and accessible sense of humour to create a lasting bond with our travellers.
+
+**Straightforward**: We are clear and easy to understand, using balanced sentences and everyday words. So forget jargon and kill the business speak. We don’t try to hide anything — we’re all about giving people the information they need to make the best decisions possible.
+
+**Bold**: We act with conviction and sound big, brave and inspiring. We empower and encourage travellers to try new things, opening people up to the possibilities of travel. Crucially, we’re not afraid of voicing our opinion.
