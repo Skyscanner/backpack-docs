@@ -17,8 +17,8 @@ category: using
 
 ## Backpack React Native
 
-[![Travis Build Status](https://travis-ci.org/Skyscanner/backpack-react-native.svg?branch=master)](https://travis-ci.org/Skyscanner/backpack-react-native)
-[![Actions Build Status](https://github.com/Skyscanner/backpack-react-native/workflows/CI/badge.svg)](https://github.com/Skyscanner/backpack-react-native/actions)
+[![Android Build Status](https://github.com/Skyscanner/backpack-react-native/workflows/Android%20CI/badge.svg)](https://github.com/Skyscanner/backpack-react-native/actions)
+[![iOS Build Status](https://github.com/Skyscanner/backpack-react-native/workflows/iOS%20CI/badge.svg)](https://github.com/Skyscanner/backpack-react-native/actions)
 [![Snyk](https://snyk.io/test/github/skyscanner/backpack-react-native/badge.svg)](https://snyk.io/test/github/skyscanner/backpack-react-native)
 [![Platform](https://img.shields.io/badge/platform-native-blue.svg)](https://github.com/Skyscanner/backpack-react-native)
 [![License](https://img.shields.io/github/license/Skyscanner/backpack-react-native.svg)](https://github.com/Skyscanner/backpack-react-native/blob/master/LICENSE.txt)
