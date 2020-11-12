@@ -167,11 +167,8 @@ const config = {
             loader: 'file-loader',
             options: {
               esModule: false,
+              name: '[name]_[hash].[ext]',
             },
-            // query: {
-            //   limit: 10000,
-            //   name: '[name]_[hash].[ext]',
-            // },
           },
         ],
       },
