@@ -32,9 +32,10 @@ import STYLES from './MarkdownPage.scss';
 const getClassName = cssModules(STYLES);
 
 type Props = {
-  title: string,
-  subtitle: ?string,
   content: string,
+  title: string,
+  fileName: ?string,
+  subtitle: ?string,
 };
 
 /*
@@ -54,10 +55,22 @@ const removeFrontMatter = input => {
   return inputArr[2];
 };
 
-const MarkdownPage = (props: Props) => {
-  const { content, title, subtitle } = props;
+const editPageLink = fileName => {
+  if (!fileName) {
+    return '';
+  }
+  return `
 
-  const sanitizedContent = removeFrontMatter(content);
+  ## Improve this page
+
+  [Edit this page on GitHub](https://github.com/skyscanner/backpack-docs/edit/master/docs/src/static-pages/${fileName})
+  `;
+};
+
+const MarkdownPage = (props: Props) => {
+  const { content, fileName, title, subtitle } = props;
+
+  const sanitizedContent = removeFrontMatter(content) + editPageLink(fileName);
 
   return (
     <>
@@ -77,6 +90,7 @@ const MarkdownPage = (props: Props) => {
 };
 
 MarkdownPage.defaultProps = {
+  fileName: null,
   subtitle: null,
 };
 

@@ -16,7 +16,7 @@ If you get stuck at any point, talk to the design system team on Slack in the #b
 
 Backpack uses a service called GitHub to manage content on this website.
 
-To make changes to the website's content you'll need a GitHub account. If you don't already have one you can register for free on [github.com](https://github.com).
+To make changes to the website's content you'll need a GitHub account. If you don't already have one you can register for free on [GitHub's website](https://github.com).
 
 ### Markdown
 
@@ -46,7 +46,7 @@ Here's an example showing how to update the [Principles page](/using/principles)
 
 ![GitHub's user interface displaying a text editor"](/../static/website-contribution-guide/editor-view-before.png)
 
-In this example, the uppercase 'C' on the word 'Component' has been changed to lowercase.
+In this example, the uppercase 'C' on the word 'Component' has been changed to lower case.
 
 ![GitHub's user interface displaying a text editor with a change made to the original content"](/../static/website-contribution-guide/editor-view-after.png)
 

@@ -115,7 +115,17 @@ enrichedMarkdownFiles.forEach(
     // Needs to be done as a string, because we can't use JSX here.
     routes[category].push({
       import: `import ${id} from '../../static-pages/${fileName}';`,
-      path: `{path: "${path}", component: () => (<MarkdownPage title="${title}" subtitle="${subtitle}" content={${id}} />)}`,
+      path: `{
+        path: "${path}",
+        component: () => (
+          <MarkdownPage
+            fileName="${fileName}"
+            title="${title}"
+            subtitle="${subtitle}"
+            content={${id}}
+          />
+        )
+      }`,
     });
   },
 );

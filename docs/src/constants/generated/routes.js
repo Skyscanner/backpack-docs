@@ -27,4 +27,64 @@ import PRINCIPLES from '../../static-pages/principles.md';
 import BACKPACK_STATUS from '../../static-pages/status.md';
 import UPDATING_THIS_WEBSITE from '../../static-pages/website-contribution-guide.md';
 
-export const using = [{path: "/using/backpack-react-scripts", component: () => (<MarkdownPage title="Backpack React Scripts" subtitle="Create React + Backpack web apps with no build configuration." content={BACKPACK_REACT_SCRIPTS} />)},{path: "/using/base-stylesheet", component: () => (<MarkdownPage title="Base stylesheet" subtitle="All components are built on top of a lightweight base stylesheet. Ensure you include this on the page when consuming any Backpack components." content={BASE_STYLESHEET} />)},{path: "/using/getting-started", component: () => (<MarkdownPage title="Getting Started" subtitle="Depending on the audience, there are a few ways to get started." content={GETTING_STARTED} />)},{path: "/using/principles", component: () => (<MarkdownPage title="Principles" subtitle="Backpack components, features and configurations are created with the following principles in mind." content={PRINCIPLES} />)},{path: "/using/backpack-status", component: () => (<MarkdownPage title="Backpack Status" subtitle="Here you will find the current Backpack CI status and release versions." content={BACKPACK_STATUS} />)},{path: "/using/updating-this-website", component: () => (<MarkdownPage title="Updating this website" subtitle="Backpack belongs to everyone at Skyscanner. Changes are welcomed from anybody." content={UPDATING_THIS_WEBSITE} />)}];
+export const using = [{
+        path: "/using/backpack-react-scripts",
+        component: () => (
+          <MarkdownPage
+            fileName="backpack-react-scripts.md"
+            title="Backpack React Scripts"
+            subtitle="Create React + Backpack web apps with no build configuration."
+            content={BACKPACK_REACT_SCRIPTS}
+          />
+        )
+      },{
+        path: "/using/base-stylesheet",
+        component: () => (
+          <MarkdownPage
+            fileName="base-stylesheet.md"
+            title="Base stylesheet"
+            subtitle="All components are built on top of a lightweight base stylesheet. Ensure you include this on the page when consuming any Backpack components."
+            content={BASE_STYLESHEET}
+          />
+        )
+      },{
+        path: "/using/getting-started",
+        component: () => (
+          <MarkdownPage
+            fileName="getting-started.md"
+            title="Getting Started"
+            subtitle="Depending on the audience, there are a few ways to get started."
+            content={GETTING_STARTED}
+          />
+        )
+      },{
+        path: "/using/principles",
+        component: () => (
+          <MarkdownPage
+            fileName="principles.md"
+            title="Principles"
+            subtitle="Backpack components, features and configurations are created with the following principles in mind."
+            content={PRINCIPLES}
+          />
+        )
+      },{
+        path: "/using/backpack-status",
+        component: () => (
+          <MarkdownPage
+            fileName="status.md"
+            title="Backpack Status"
+            subtitle="Here you will find the current Backpack CI status and release versions."
+            content={BACKPACK_STATUS}
+          />
+        )
+      },{
+        path: "/using/updating-this-website",
+        component: () => (
+          <MarkdownPage
+            fileName="website-contribution-guide.md"
+            title="Updating this website"
+            subtitle="Backpack belongs to everyone at Skyscanner. Changes are welcomed from anybody."
+            content={UPDATING_THIS_WEBSITE}
+          />
+        )
+      }];
