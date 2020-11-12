@@ -24,7 +24,8 @@ const colors = require('colors');
 const frontmatter = require('@github-docs/frontmatter');
 
 const PATH_TO_MARKDOWN_FILES = 'docs/src/static-pages';
-const PATH_TO_ROUTES_FILE = 'docs/src/constants/generated/routes.js';
+const PATH_TO_ROUTES_CONSTANTS_FILE = 'docs/src/constants/generated/routes.js';
+const PATH_TO_ROUTES_FILE = 'docs/src/routes/generated/Routes.js';
 const PATH_TO_LINKS_FILE = 'docs/src/layouts/generated/links.js';
 
 /*
@@ -104,39 +105,59 @@ const enrichedMarkdownFiles = markdownFiles.map(fileName => {
   };
 });
 
-// Create the routes that'll be used in 'docs/src/routes/generated/routes.js'.
-const routes = {};
-enrichedMarkdownFiles.forEach(
-  ({ category, fileName, path, title, subtitle, id }) => {
-    if (!routes[category]) {
-      routes[category] = [];
-    }
+const constantName = (category, id) => {
+  return `GENERATED_${category.toUpperCase()}_${id}`;
+};
 
-    // Needs to be done as a string, because we can't use JSX here.
-    routes[category].push({
-      import: `import ${id} from '../../static-pages/${fileName}';`,
-      path: `{
-        path: "${path}",
-        component: () => (
-          <MarkdownPage
-            fileName="${fileName}"
-            title="${title}"
-            subtitle="${subtitle}"
-            content={${id}}
-          />
-        )
-      }`,
-    });
-  },
+const constantStrings = [];
+enrichedMarkdownFiles.forEach(({ category, id, path }) => {
+  constantStrings.push(
+    `export const ${constantName(category, id)} = '${path}';`,
+  );
+});
+
+// Write the routes to a file.
+const routesConstantsHeader = fs.readFileSync(
+  `./scripts/build-process/templates/routesConstantsTemplate.js`,
+);
+fs.writeFileSync(
+  PATH_TO_ROUTES_CONSTANTS_FILE,
+  `${routesConstantsHeader}\n${constantStrings.join('\n')}`,
 );
 
-const importsString = Object.keys(routes).map(category =>
-  routes[category].map(route => route.import).join('\n'),
+console.log(colors.green(`Updated ${PATH_TO_ROUTES_CONSTANTS_FILE}`));
+
+// Create the components that'll be used in 'docs/src/routes/generated/Routes.js'.
+const components = {};
+enrichedMarkdownFiles.forEach(({ category, fileName, title, subtitle, id }) => {
+  if (!components[category]) {
+    components[category] = [];
+  }
+
+  // Needs to be done as a string, because we can't use JSX here.
+  components[category].push({
+    import: `import ${id} from '../../static-pages/${fileName}';`,
+    component: `{
+    path: ROUTES.${constantName(category, id)},
+    component: () => (
+      <MarkdownPage
+        fileName="${fileName}"
+        title="${title}"
+        subtitle="${subtitle}"
+        content={${id}}
+      />
+    )
+  }`,
+  });
+});
+
+const importsString = Object.keys(components).map(category =>
+  components[category].map(route => route.import).join('\n'),
 );
 
-const routesString = Object.keys(routes).map(category => {
-  return `export const ${category} = [${routes[category]
-    .map(route => route.path)
+const routesString = Object.keys(components).map(category => {
+  return `export const ${category} = [${components[category]
+    .map(route => route.component)
     .join(',')}];`;
 });
 
