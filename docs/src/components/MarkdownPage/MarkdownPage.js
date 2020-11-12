@@ -37,21 +37,44 @@ type Props = {
   content: string,
 };
 
-const MarkdownPage = (props: Props) => (
-  <>
-    <Helmet title={props.title} />
-    <div className={getClassName('bpkdocs-markdown-page__page-head')}>
-      <Heading level="h1">{props.title}</Heading>
-      {props.subtitle && <IntroBlurb>{props.subtitle}</IntroBlurb>}
-    </div>
-    <BpkContentContainer
-      bareHtml
-      className={getClassName('bpkdocs-markdown-page__content')}
-    >
-      <BpkMarkdownRenderer source={props.content} />
-    </BpkContentContainer>
-  </>
-);
+/*
+Front Matter is metadata at the top of a Markdown file, that looks like this:
+
+---
+key: value
+---
+
+This function removes it from any strings passed in so that it's not rendered.
+*/
+const removeFrontMatter = input => {
+  const inputArr = input.split('---');
+  if (inputArr.length < 3) {
+    return input;
+  }
+  return inputArr[2];
+};
+
+const MarkdownPage = (props: Props) => {
+  const { content, title, subtitle } = props;
+
+  const sanitizedContent = removeFrontMatter(content);
+
+  return (
+    <>
+      <Helmet title={title} />
+      <div className={getClassName('bpkdocs-markdown-page__page-head')}>
+        <Heading level="h1">{title}</Heading>
+        {props.subtitle && <IntroBlurb>{subtitle}</IntroBlurb>}
+      </div>
+      <BpkContentContainer
+        bareHtml
+        className={getClassName('bpkdocs-markdown-page__content')}
+      >
+        <BpkMarkdownRenderer source={sanitizedContent} />
+      </BpkContentContainer>
+    </>
+  );
+};
 
 MarkdownPage.defaultProps = {
   subtitle: null,

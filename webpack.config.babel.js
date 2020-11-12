@@ -165,10 +165,13 @@ const config = {
         use: [
           {
             loader: 'file-loader',
-            query: {
-              limit: 10000,
-              name: '[name]_[hash].[ext]',
+            options: {
+              esModule: false,
             },
+            // query: {
+            //   limit: 10000,
+            //   name: '[name]_[hash].[ext]',
+            // },
           },
         ],
       },
@@ -185,7 +188,7 @@ const config = {
       },
       {
         test: /\.md$/,
-        use: ['raw-loader'],
+        use: ['markdown-image-loader'],
       },
     ],
   },

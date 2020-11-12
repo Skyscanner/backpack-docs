@@ -38,17 +38,17 @@ Follow the link to edit the page. This will take you to GitHub.
 
 You might see a message on screen asking you to fork the repository. This is nothing to worry about. It just means you're making a copy of the website that you can edit. Press the 'Fork this repository' button to continue.
 
-![GitHub's user interface displaying a button that says "fork this repo"](/website-contribution-guide/fork-this-repo.png)
+![GitHub's user interface displaying a button that says "fork this repo"](/../static/website-contribution-guide/fork-this-repo.png)
 
 Next, you'll see the markdown file in a text editor. Make your changes.
 
 Here's an example showing how to update the [Principles page](/using/principles).
 
-![GitHub's user interface displaying a text editor"](/website-contribution-guide/editor-view-before.png)
+![GitHub's user interface displaying a text editor"](/../static/website-contribution-guide/editor-view-before.png)
 
 In this example, the uppercase 'C' on the word 'Component' has been changed to lowercase.
 
-![GitHub's user interface displaying a text editor with a change made to the original content"](/website-contribution-guide/editor-view-after.png)
+![GitHub's user interface displaying a text editor with a change made to the original content"](/../static/website-contribution-guide/editor-view-after.png)
 
 ### 3. Propose your change
 
@@ -58,7 +58,7 @@ Add a short description explaining the reason for your change in the first field
 
 If you need to provide more information about your change, you can add more detail in the larger field below.
 
-![GitHub's user interface displaying a field for adding a commit message"](/website-contribution-guide/commit-message.png)
+![GitHub's user interface displaying a field for adding a commit message"](/../static/website-contribution-guide/commit-message.png)
 
 ### 4. Confirm your changes
 
@@ -68,7 +68,7 @@ If you spot a mistake, you can go back to the previous page and correct it.
 
 If you are happy with your changes, select 'Create pull request'. You'll have one more chance to review your change on the next page before you submit it to the design system team to review.
 
-![GitHub's user interface displaying the differences before and after a file was changed"](/website-contribution-guide/compare-view.png)
+![GitHub's user interface displaying the differences before and after a file was changed"](/../static/website-contribution-guide/compare-view.png)
 
 ### 5. Create a pull request
 
