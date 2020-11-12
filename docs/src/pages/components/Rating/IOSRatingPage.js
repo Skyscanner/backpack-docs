@@ -27,6 +27,8 @@ import screenshotVertical from '../../../../../backpack-ios/screenshots/iPhone 8
 import screenshotVerticalDm from '../../../../../backpack-ios/screenshots/iPhone 8-rating___vertical_dm.png';
 import screenshotSizes from '../../../../../backpack-ios/screenshots/iPhone 8-rating___sizes_lm.png';
 import screenshotSizesDm from '../../../../../backpack-ios/screenshots/iPhone 8-rating___sizes_dm.png';
+import screenshotPill from '../../../../../backpack-ios/screenshots/iPhone 8-rating___pill_lm.png';
+import screenshotPillDm from '../../../../../backpack-ios/screenshots/iPhone 8-rating___pill_dm.png';
 import { IOSComponentPage } from '../../../components/ComponentPage';
 
 const components = [
@@ -58,14 +60,14 @@ const components = [
         width: 750,
         height: 1334,
         src: `/${screenshotSubtitle}`,
-        altText: 'iOS default rating.',
+        altText: 'iOS rating with subtitle.',
         subText: '(iPhone 8 simulator)',
       },
       {
         width: 750,
         height: 1334,
         src: `/${screenshotSubtitleDm}`,
-        altText: 'iOS default rating.',
+        altText: 'iOS rating with subtitle.',
         subText: '(iPhone 8 simulator - dark mode)',
       },
     ],
@@ -78,14 +80,34 @@ const components = [
         width: 750,
         height: 1334,
         src: `/${screenshotVertical}`,
-        altText: 'iOS default rating.',
+        altText: 'iOS vertical rating.',
         subText: '(iPhone 8 simulator)',
       },
       {
         width: 750,
         height: 1334,
         src: `/${screenshotVerticalDm}`,
-        altText: 'iOS default rating.',
+        altText: 'iOS vertical rating.',
+        subText: '(iPhone 8 simulator - dark mode)',
+      },
+    ],
+  },
+  {
+    id: 'pill',
+    title: 'Pill layout',
+    screenshots: [
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotPill}`,
+        altText: 'iOS pill rating.',
+        subText: '(iPhone 8 simulator)',
+      },
+      {
+        width: 750,
+        height: 1334,
+        src: `/${screenshotPillDm}`,
+        altText: 'iOS pill rating.',
         subText: '(iPhone 8 simulator - dark mode)',
       },
     ],
@@ -98,14 +120,14 @@ const components = [
         width: 750,
         height: 1334,
         src: `/${screenshotSizes}`,
-        altText: 'iOS default rating.',
+        altText: 'iOS rating at different sizes.',
         subText: '(iPhone 8 simulator)',
       },
       {
         width: 750,
         height: 1334,
         src: `/${screenshotSizesDm}`,
-        altText: 'iOS default rating.',
+        altText: 'iOS rating at different sizes.',
         subText: '(iPhone 8 simulator - dark mode)',
       },
     ],
