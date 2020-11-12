@@ -166,7 +166,7 @@ const config = {
           {
             loader: 'file-loader',
             options: {
-              esModule: false,
+              esModule: false, // Loading images in markdown files doesn't work without this line.
               name: '[name]_[hash].[ext]',
             },
           },
@@ -185,7 +185,14 @@ const config = {
       },
       {
         test: /\.md$/,
-        use: ['markdown-image-loader'],
+        use: [
+          {
+            loader: 'gg-markdown-image-loader',
+            options: {
+              pathPrefix: '/',
+            },
+          },
+        ],
       },
     ],
   },
