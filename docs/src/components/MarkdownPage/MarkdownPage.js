@@ -80,7 +80,6 @@ const MarkdownPage = (props: Props) => {
         {props.subtitle && <IntroBlurb>{subtitle}</IntroBlurb>}
       </div>
       <BpkContentContainer
-        bareHtml
         className={getClassName('bpkdocs-markdown-page__content')}
       >
         <BpkMarkdownRenderer source={sanitizedContent} />
