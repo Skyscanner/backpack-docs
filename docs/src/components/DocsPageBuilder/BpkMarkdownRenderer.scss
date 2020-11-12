@@ -80,12 +80,24 @@
     }
 
     &-4 {
+      @include bpk-heading-4;
+      @include heading-style($bpk-spacing-md);
+    }
+
+    &-5 {
+      @include bpk-heading-5;
+      @include heading-style($bpk-spacing-md);
+    }
+
+    &-6 {
+      @include bpk-heading-6;
       @include heading-style($bpk-spacing-md);
     }
   }
 
   &__image {
-    max-width: 100%;
+    width: 100%;
+    max-width: $bpk-spacing-xxl * 20;
     margin: $bpk-spacing-md 0;
 
     @include bpk-border-radius-sm;
