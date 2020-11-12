@@ -112,8 +112,21 @@ const BpkMarkdownRenderer = (props: Props) => {
   renderers.heading = headingProps => {
     const { level, children, ...headingRest } = headingProps;
 
+    const flatten = (text, child) => {
+      return typeof child === 'string'
+        ? text + child
+        : React.Children.toArray(child.props.children).reduce(flatten, text);
+    };
+
+    // https://github.com/remarkjs/react-markdown/issues/69#issuecomment-289860367
+    const id = React.Children.toArray(children)
+      .reduce(flatten, '')
+      .toLowerCase()
+      .replace(/\W/g, '-');
+
     return (
       <BpkText
+        id={id}
         textStyle={TEXT_STYLES[level]}
         tagName={TAG_NAMES[level]}
         className={getClassName(`bpkdocs-markdown-renderer__heading-${level}`)}
