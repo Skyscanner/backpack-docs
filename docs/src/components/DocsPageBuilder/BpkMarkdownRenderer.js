@@ -64,7 +64,7 @@ const BpkMarkdownRenderer = (props: Props) => {
   renderers.tableBody = BpkTableBody;
 
   renderers.tableCell = tableCellProps => {
-    const { isHeader, children, ...tableCellRest } = tableCellProps;
+    const { isHeader, ...tableCellRest } = tableCellProps;
     const CellComponent = isHeader ? BpkTableHeadCell : BpkTableCell;
     return <CellComponent {...tableCellRest} />;
   };
@@ -77,8 +77,8 @@ const BpkMarkdownRenderer = (props: Props) => {
       <img
         alt={alt}
         src={src}
-        {...imageRest}
         className={getClassName('bpkdocs-markdown-renderer__image')}
+        {...imageRest}
       />
     );
   };
