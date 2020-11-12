@@ -18,6 +18,18 @@
 
 @import '~bpk-mixins/index';
 
+@mixin heading-style($spacing) {
+  margin-bottom: $spacing;
+
+  &:not(:first-of-type) {
+    margin-top: $spacing;
+
+    @include bpk-breakpoint-mobile {
+      margin-top: 0;
+    }
+  }
+}
+
 .bpkdocs-markdown-renderer {
   &__table {
     // Using `!important` as we need to override the baremetal HTML styling, which takes precedence.
@@ -58,13 +70,24 @@
     }
   }
 
-  &__heading-2 {
-    &:not(:first-of-type) {
-      padding-top: $bpk-spacing-lg;
-
-      @include bpk-breakpoint-mobile {
-        padding-top: 0;
-      }
+  &__heading {
+    &-2 {
+      @include heading-style($bpk-spacing-lg);
     }
+
+    &-3 {
+      @include heading-style($bpk-spacing-base);
+    }
+
+    &-4 {
+      @include heading-style($bpk-spacing-md);
+    }
+  }
+
+  &__image {
+    max-width: 100%;
+    margin: $bpk-spacing-md 0;
+
+    @include bpk-border-radius-sm;
   }
 }

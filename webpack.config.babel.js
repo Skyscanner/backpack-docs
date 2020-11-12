@@ -165,8 +165,8 @@ const config = {
         use: [
           {
             loader: 'file-loader',
-            query: {
-              limit: 10000,
+            options: {
+              esModule: false, // Loading images in markdown files doesn't work without this line.
               name: '[name]_[hash].[ext]',
             },
           },
@@ -185,7 +185,14 @@ const config = {
       },
       {
         test: /\.md$/,
-        use: ['raw-loader'],
+        use: [
+          {
+            loader: 'gg-markdown-image-loader',
+            options: {
+              pathPrefix: '/',
+            },
+          },
+        ],
       },
     ],
   },

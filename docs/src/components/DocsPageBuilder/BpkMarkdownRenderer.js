@@ -35,6 +35,10 @@ import BpkText from 'bpk-component-text';
 import { BpkCodeBlock } from 'bpk-component-code';
 import BpkMobileScrollContainer from 'bpk-component-mobile-scroll-container';
 import ReactMarkdown from 'react-markdown';
+import BpkLink from 'bpk-component-link';
+import BpkBlockquote from 'bpk-component-blockquote';
+
+import Paragraph from '../Paragraph';
 
 import STYLES from './BpkMarkdownRenderer.scss';
 
@@ -51,6 +55,33 @@ const BpkMarkdownRenderer = (props: Props) => {
   const { darkBackground, ...rest } = props;
 
   const renderers = {};
+
+  renderers.paragraph = Paragraph;
+  renderers.link = BpkLink;
+  renderers.blockquote = BpkBlockquote;
+  renderers.tableRow = BpkTableRow;
+  renderers.tableHead = BpkTableHead;
+  renderers.tableBody = BpkTableBody;
+
+  renderers.tableCell = tableCellProps => {
+    const { isHeader, ...tableCellRest } = tableCellProps;
+    const CellComponent = isHeader ? BpkTableHeadCell : BpkTableCell;
+    return <CellComponent {...tableCellRest} />;
+  };
+
+  renderers.image = imageProps => {
+    const { alt, src, ...imageRest } = imageProps;
+    return (
+      // Can't use BpkImage here because it requires us to know width and height.
+      /* eslint-disable-next-line backpack/use-components */
+      <img
+        alt={alt}
+        src={src}
+        className={getClassName('bpkdocs-markdown-renderer__image')}
+        {...imageRest}
+      />
+    );
+  };
 
   renderers.table = tableProps => {
     const { children, ...tableRest } = tableProps;
@@ -76,27 +107,6 @@ const BpkMarkdownRenderer = (props: Props) => {
         </BpkTable>
       </BpkMobileScrollContainer>
     );
-  };
-
-  renderers.tableRow = tableRowProps => {
-    const { children, ...tableRowRest } = tableRowProps;
-    return <BpkTableRow {...tableRowRest}>{children}</BpkTableRow>;
-  };
-
-  renderers.tableHead = tableHeadProps => {
-    const { children, ...tableHeadRest } = tableHeadProps;
-    return <BpkTableHead {...tableHeadRest}>{children}</BpkTableHead>;
-  };
-
-  renderers.tableBody = tableBodyProps => {
-    const { children, ...tableBodyRest } = tableBodyProps;
-    return <BpkTableBody {...tableBodyRest}>{children}</BpkTableBody>;
-  };
-
-  renderers.tableCell = tableCellProps => {
-    const { isHeader, children, ...tableCellRest } = tableCellProps;
-    const CellComponent = isHeader ? BpkTableHeadCell : BpkTableCell;
-    return <CellComponent {...tableCellRest}>{children}</CellComponent>;
   };
 
   renderers.heading = headingProps => {

@@ -32,28 +32,64 @@ import STYLES from './MarkdownPage.scss';
 const getClassName = cssModules(STYLES);
 
 type Props = {
-  title: string,
-  subtitle: ?string,
   content: string,
+  title: string,
+  fileName: ?string,
+  subtitle: ?string,
 };
 
-const MarkdownPage = (props: Props) => (
-  <>
-    <Helmet title={props.title} />
-    <div className={getClassName('bpkdocs-markdown-page__page-head')}>
-      <Heading level="h1">{props.title}</Heading>
-      {props.subtitle && <IntroBlurb>{props.subtitle}</IntroBlurb>}
-    </div>
-    <BpkContentContainer
-      bareHtml
-      className={getClassName('bpkdocs-markdown-page__content')}
-    >
-      <BpkMarkdownRenderer source={props.content} />
-    </BpkContentContainer>
-  </>
-);
+/*
+Front Matter is metadata at the top of a Markdown file, that looks like this:
+
+---
+key: value
+---
+
+This function removes it from any strings passed in so that it's not rendered.
+*/
+const removeFrontMatter = input => {
+  const inputArr = input.split('---');
+  if (inputArr.length < 3) {
+    return input;
+  }
+  return inputArr[2];
+};
+
+const editPageLink = fileName => {
+  if (!fileName) {
+    return '';
+  }
+  return `
+
+  ## Improve this page
+
+  [Edit this page on GitHub](https://github.com/skyscanner/backpack-docs/edit/master/docs/src/static-pages/${fileName})
+  `;
+};
+
+const MarkdownPage = (props: Props) => {
+  const { content, fileName, title, subtitle } = props;
+
+  const sanitizedContent = removeFrontMatter(content) + editPageLink(fileName);
+
+  return (
+    <>
+      <Helmet title={title} />
+      <div className={getClassName('bpkdocs-markdown-page__page-head')}>
+        <Heading level="h1">{title}</Heading>
+        {props.subtitle && <IntroBlurb>{subtitle}</IntroBlurb>}
+      </div>
+      <BpkContentContainer
+        className={getClassName('bpkdocs-markdown-page__content')}
+      >
+        <BpkMarkdownRenderer source={sanitizedContent} />
+      </BpkContentContainer>
+    </>
+  );
+};
 
 MarkdownPage.defaultProps = {
+  fileName: null,
   subtitle: null,
 };
 
