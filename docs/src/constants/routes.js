@@ -29,8 +29,6 @@ export const ACCESSIBILITY_OVERVIEW = '/guidelines/accessibility/overview';
 export const ACCESSIBILITY_DESIGN = '/guidelines/accessibility/design';
 export const COLORS = '/guidelines/colors';
 export const GRAPHIC_DEVICES = '/guidelines/graphic-devices';
-export const TONE_OF_VOICE = '/guidelines/tone-of-voice';
-export const SHADOWS_GUIDELINES = '/guidelines/shadows';
 export const TYPOGRAPHY = '/guidelines/typography';
 
 // components/bonds/

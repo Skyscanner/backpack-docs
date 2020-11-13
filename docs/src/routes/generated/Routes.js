@@ -33,7 +33,9 @@ import ILLUSTRATION from '../../static-pages/illustration.md';
 import IN_USE from '../../static-pages/in-use.md';
 import LOGO from '../../static-pages/logo.md';
 import PHOTOGRAPHY from '../../static-pages/photography.md';
+import SHADOWS from '../../static-pages/shadows.md';
 import STRATEGY from '../../static-pages/strategy.md';
+import TONE_OF_VOICE from '../../static-pages/tone-of-voice.md';
 
 export const using = [{
     path: ROUTES.GENERATED_USING_BACKPACK_REACT_SCRIPTS,
@@ -157,6 +159,16 @@ export const guidelines = [{
       />
     )
   },{
+    path: ROUTES.GENERATED_GUIDELINES_SHADOWS,
+    component: () => (
+      <MarkdownPage
+        fileName="shadows.md"
+        title="Shadows"
+        subtitle="Shadows are our richest visual identity element, enabling us to express an abstract sense of place"
+        content={SHADOWS}
+      />
+    )
+  },{
     path: ROUTES.GENERATED_GUIDELINES_STRATEGY,
     component: () => (
       <MarkdownPage
@@ -164,6 +176,16 @@ export const guidelines = [{
         title="Strategy"
         subtitle="Our brand strategy is the blueprint that gives our brand purpose and direction. It is the set of rules that we use to inform our decisions — from day-to-day queries to long-term challenges. This section will guide you through its components."
         content={STRATEGY}
+      />
+    )
+  },{
+    path: ROUTES.GENERATED_GUIDELINES_TONE_OF_VOICE,
+    component: () => (
+      <MarkdownPage
+        fileName="tone-of-voice.md"
+        title="Tone of voice"
+        subtitle="Our tone of voice is the unuqie way in which we speak to travellers, partners and ourselves."
+        content={TONE_OF_VOICE}
       />
     )
   }];
