@@ -151,9 +151,9 @@ enrichedMarkdownFiles.forEach(({ category, fileName, title, subtitle, id }) => {
   });
 });
 
-const importsString = Object.keys(components).map(category =>
-  components[category].map(route => route.import).join('\n'),
-);
+const importsString = Object.keys(components)
+  .map(category => components[category].map(route => route.import).join('\n'))
+  .join('\n');
 
 const routesString = Object.keys(components).map(category => {
   return `export const ${category} = [${components[category]
