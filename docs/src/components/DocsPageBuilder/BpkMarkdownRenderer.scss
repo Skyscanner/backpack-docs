@@ -96,8 +96,7 @@
   }
 
   &__image {
-    width: 100%;
-    max-width: $bpk-spacing-xxl * 20;
+    max-width: 100%;
     margin: $bpk-spacing-md 0;
 
     @include bpk-border-radius-sm;
