@@ -15,10 +15,3 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-export const GENERATED_USING_BACKPACK_REACT_SCRIPTS = '/using/backpack-react-scripts';
-export const GENERATED_USING_BASE_STYLESHEET = '/using/base-stylesheet';
-export const GENERATED_USING_GETTING_STARTED = '/using/getting-started';
-export const GENERATED_USING_PRINCIPLES = '/using/principles';
-export const GENERATED_USING_BACKPACK_STATUS = '/using/backpack-status';
-export const GENERATED_USING_UPDATING_THIS_WEBSITE = '/using/updating-this-website';
