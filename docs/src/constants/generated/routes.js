@@ -18,7 +18,14 @@
 
 export const GENERATED_USING_BACKPACK_REACT_SCRIPTS = '/using/backpack-react-scripts';
 export const GENERATED_USING_BASE_STYLESHEET = '/using/base-stylesheet';
+export const GENERATED_GUIDELINES_COPYWRITING = '/guidelines/copywriting';
 export const GENERATED_USING_GETTING_STARTED = '/using/getting-started';
+export const GENERATED_GUIDELINES_ICONOGRAPHY = '/guidelines/iconography';
+export const GENERATED_GUIDELINES_ILLUSTRATION = '/guidelines/illustration';
+export const GENERATED_GUIDELINES_IN_USE = '/guidelines/in-use';
+export const GENERATED_GUIDELINES_LOGO = '/guidelines/logo';
+export const GENERATED_GUIDELINES_PHOTOGRAPHY = '/guidelines/photography';
 export const GENERATED_USING_PRINCIPLES = '/using/principles';
 export const GENERATED_USING_BACKPACK_STATUS = '/using/backpack-status';
+export const GENERATED_GUIDELINES_STRATEGY = '/guidelines/strategy';
 export const GENERATED_USING_UPDATING_THIS_WEBSITE = '/using/updating-this-website';

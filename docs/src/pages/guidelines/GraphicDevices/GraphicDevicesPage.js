@@ -101,7 +101,7 @@ const GraphicDevicesPage = () => (
     sections={sections}
     nextPageLink={{
       title: 'Illustration',
-      link: ROUTES.ILLUSTRATION,
+      link: ROUTES.GENERATED_GUIDELINES_ILLUSTRATION,
     }}
   />
 );

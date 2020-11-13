@@ -1,0 +1,15 @@
+---
+title: Illustration
+subtitle: Illustrations are our most versatile identity element, and we use them to great effect across a wide range of applications — from informative product flows to emotive advertising.
+category: guidelines
+---
+
+Our illustrations have a dual purpose — to inform and inspire — and all of our illustrations balance these functions to create purposeful, memorable and relatable brand expressions.
+
+## Overview
+
+![Overview](https://js.skyscnr.com/sttc/bpk-content/illustration_overview-7d284b4a.png)
+
+## Examples
+
+![Examples](https://js.skyscnr.com/sttc/bpk-content/illustration_examples-2753d1c9.png)

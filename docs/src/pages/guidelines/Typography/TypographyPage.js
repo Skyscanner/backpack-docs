@@ -98,7 +98,7 @@ const TypographyPage = () => (
     sections={sections}
     nextPageLink={{
       title: 'Photography',
-      link: ROUTES.PHOTOGRAPHY,
+      link: ROUTES.GENERATED_GUIDELINES_PHOTOGRAPHY,
     }}
   />
 );

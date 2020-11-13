@@ -27,6 +27,13 @@ import GETTING_STARTED from '../../static-pages/getting-started.md';
 import PRINCIPLES from '../../static-pages/principles.md';
 import BACKPACK_STATUS from '../../static-pages/status.md';
 import UPDATING_THIS_WEBSITE from '../../static-pages/website-contribution-guide.md';
+import COPYWRITING from '../../static-pages/copywriting.md';
+import ICONOGRAPHY from '../../static-pages/iconography.md';
+import ILLUSTRATION from '../../static-pages/illustration.md';
+import IN_USE from '../../static-pages/in-use.md';
+import LOGO from '../../static-pages/logo.md';
+import PHOTOGRAPHY from '../../static-pages/photography.md';
+import STRATEGY from '../../static-pages/strategy.md';
 
 export const using = [{
     path: ROUTES.GENERATED_USING_BACKPACK_REACT_SCRIPTS,
@@ -86,6 +93,77 @@ export const using = [{
         title="Updating this website"
         subtitle="Backpack belongs to everyone at Skyscanner. Changes are welcomed from anybody."
         content={UPDATING_THIS_WEBSITE}
+      />
+    )
+  }];
+export const guidelines = [{
+    path: ROUTES.GENERATED_GUIDELINES_COPYWRITING,
+    component: () => (
+      <MarkdownPage
+        fileName="copywriting.md"
+        title="Copywriting"
+        subtitle="Writing for Skyscanner? This basically makes you a hero."
+        content={COPYWRITING}
+      />
+    )
+  },{
+    path: ROUTES.GENERATED_GUIDELINES_ICONOGRAPHY,
+    component: () => (
+      <MarkdownPage
+        fileName="iconography.md"
+        title="Iconography"
+        subtitle="Icons hold a vital role within our identity, guiding travellers through the complex information on-show in our product."
+        content={ICONOGRAPHY}
+      />
+    )
+  },{
+    path: ROUTES.GENERATED_GUIDELINES_ILLUSTRATION,
+    component: () => (
+      <MarkdownPage
+        fileName="illustration.md"
+        title="Illustration"
+        subtitle="Illustrations are our most versatile identity element, and we use them to great effect across a wide range of applications — from informative product flows to emotive advertising."
+        content={ILLUSTRATION}
+      />
+    )
+  },{
+    path: ROUTES.GENERATED_GUIDELINES_IN_USE,
+    component: () => (
+      <MarkdownPage
+        fileName="in-use.md"
+        title="In use"
+        subtitle="This section contains an overview of best-practice applications. Here we've brought together all of the elements outlined to create a range of applications that span from product screens to out-of-home advertising."
+        content={IN_USE}
+      />
+    )
+  },{
+    path: ROUTES.GENERATED_GUIDELINES_LOGO,
+    component: () => (
+      <MarkdownPage
+        fileName="logo.md"
+        title="Logo"
+        subtitle="Our logo is Skyscanner's most important visual element. It is the visual shorthand for our company, and the single graphic that our audiences will attach their emotion to."
+        content={LOGO}
+      />
+    )
+  },{
+    path: ROUTES.GENERATED_GUIDELINES_PHOTOGRAPHY,
+    component: () => (
+      <MarkdownPage
+        fileName="photography.md"
+        title="Photography"
+        subtitle="Photography captures the spirit of our brand. It allows us to evoke strong emotions, and visually transport our audiences to far-away locations, as well as capturing realistic representations of people and places."
+        content={PHOTOGRAPHY}
+      />
+    )
+  },{
+    path: ROUTES.GENERATED_GUIDELINES_STRATEGY,
+    component: () => (
+      <MarkdownPage
+        fileName="strategy.md"
+        title="Strategy"
+        subtitle="Our brand strategy is the blueprint that gives our brand purpose and direction. It is the set of rules that we use to inform our decisions — from day-to-day queries to long-term challenges. This section will guide you through its components."
+        content={STRATEGY}
       />
     )
   }];
