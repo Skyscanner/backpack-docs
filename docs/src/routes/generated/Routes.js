@@ -184,7 +184,7 @@ export const guidelines = [{
       <MarkdownPage
         fileName="tone-of-voice.md"
         title="Tone of voice"
-        subtitle="Our tone of voice is the unuqie way in which we speak to travellers, partners and ourselves."
+        subtitle="Our tone of voice is the unique way in which we speak to travellers, partners and ourselves."
         content={TONE_OF_VOICE}
       />
     )
