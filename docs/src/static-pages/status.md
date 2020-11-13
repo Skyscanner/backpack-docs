@@ -53,10 +53,10 @@ category: using
 
 ## Backpack React Scripts
 
-[![Travis Build Status](https://travis-ci.org/Skyscanner/backpack-react-scripts.svg?branch=master)](https://travis-ci.org/Skyscanner/backpack-react-scripts)
-[![Actions Build Status](https://github.com/Skyscanner/backpack-react-scripts/workflows/Build/badge.svg)](https://github.com/Skyscanner/backpack-react-scripts/actions)
-[![Actions Lint Status](https://github.com/Skyscanner/backpack-react-scripts/workflows/Lint/badge.svg)](https://github.com/Skyscanner/backpack-react-scripts/actions)
-[![License](https://img.shields.io/github/license/Skyscanner/backpack-react-scripts.svg)](https://github.com/Skyscanner/backpack-react-scripts/blob/master/LICENSE.txt)
+[![Actions Build BRS Status](https://github.com/Skyscanner/backpack-react-scripts/workflows/Build%20BRS/badge.svg)](https://github.com/Skyscanner/backpack-react-scripts/actions?query=workflow%3A%22Build+BRS%22)
+[![Actions Build Status](https://github.com/Skyscanner/backpack-react-scripts/workflows/Build/badge.svg)](https://github.com/Skyscanner/backpack-react-scripts/actions?query=workflow%3ABuild)
+[![Actions Lint Status](https://github.com/Skyscanner/backpack-react-scripts/workflows/Lint/badge.svg)](https://github.com/Skyscanner/backpack-react-scripts/actions?query=workflow%3ALint)
+[![License](https://img.shields.io/github/license/Skyscanner/backpack-react-scripts.svg)](https://github.com/Skyscanner/backpack-react-scripts/blob/fork/LICENSE)
 
 [Changelog](https://github.com/Skyscanner/backpack-react-scripts/blob/fork/packages/react-scripts/CHANGELOG.md)
 
