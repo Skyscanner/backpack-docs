@@ -28,4 +28,13 @@
   &__chip {
     margin: $bpk-spacing-xs;
   }
+
+  &__aria-live-region {
+    margin-top: $bpk-spacing-sm;
+    padding: $bpk-spacing-sm;
+    color: $bpk-color-sky-gray-tint-03;
+
+    @include bpk-border-sm($bpk-color-sky-gray-tint-03);
+    @include bpk-border-radius-sm;
+  }
 }

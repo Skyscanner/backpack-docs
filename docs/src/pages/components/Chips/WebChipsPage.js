@@ -23,6 +23,8 @@ import BpkSelectableChip, {
   BpkDismissibleChip,
   CHIP_TYPES,
 } from 'bpk-component-chip';
+import BpkLink from 'bpk-component-link';
+import { BpkCode } from 'bpk-component-code';
 import BpkButton from 'bpk-component-button';
 import { cssModules } from 'bpk-react-utils';
 import chipReadme from 'bpk-component-chip/README.md';
@@ -143,6 +145,7 @@ class DismissibleChipContainer extends Component<
   },
   {
     chipNames: Array<string>,
+    chipUpdates: Array<string>,
   },
 > {
   static defaultProps = {
@@ -156,13 +159,18 @@ class DismissibleChipContainer extends Component<
 
     this.state = {
       chipNames: ['Example Chip 1', 'Example Chip 2'],
+      chipUpdates: [],
     };
   }
 
   resetChips = () => {
-    this.setState({
+    this.setState(state => ({
       chipNames: ['Example Chip 1', 'Example Chip 2'],
-    });
+      chipUpdates: [
+        ...state.chipUpdates,
+        'Added Example Chip 1 and Example Chip 2',
+      ],
+    }));
   };
 
   removeChip = chipName => {
@@ -172,7 +180,10 @@ class DismissibleChipContainer extends Component<
 
       newChipNames.splice(indexToRemove, 1);
 
-      return { chipNames: newChipNames };
+      return {
+        chipNames: newChipNames,
+        chipUpdates: [...state.chipUpdates, `Removed ${chipName}`],
+      };
     });
   };
 
@@ -212,6 +223,20 @@ class DismissibleChipContainer extends Component<
             </BpkDismissibleChip>
           )}
         </div>
+        <div
+          aria-live="assertive"
+          className={getClassName('bpk-docs-chips-page__aria-live-region')}
+        >
+          <Paragraph>
+            Aria-live region: (this would usually be visually hidden)
+            {this.state.chipUpdates.map(chipUpdate => (
+              <>
+                <br />
+                {chipUpdate}
+              </>
+            ))}
+          </Paragraph>
+        </div>
       </div>
     );
   }
@@ -231,6 +256,17 @@ const components = [
       <Paragraph>
         Dismissible chips are useful when applying filters. They are designed to
         disappear when pressed, so they cannot be toggled on and off.
+        <br />
+        <br />
+        Note that if chips are being added or removed dynamically (like in the
+        example below), you should render an{' '}
+        <BpkLink href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions">
+          <BpkCode>aria-live</BpkCode>
+        </BpkLink>{' '}
+        container describing the updates taking place. By doing this, assistive
+        technologies will know to inform the user when changes are made. By
+        default, only additions to the container will be read out, so you
+        don&#39;t need to worry about removing entries again.
       </Paragraph>,
     ],
     examples: [<DismissibleChipContainer includeDisabledExample />],
