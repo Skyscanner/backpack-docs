@@ -22,6 +22,8 @@ import { durationSm, fontWeightBold } from 'bpk-tokens/tokens/base.es6';
 import PropTypes from 'prop-types';
 import { cssModules, withDefaultProps } from 'bpk-react-utils';
 import BpkAnimateHeight from 'bpk-animate-height';
+import BpkLink from 'bpk-component-link';
+import { BpkCode } from 'bpk-component-code';
 import BpkBannerAlert, {
   ALERT_TYPES,
   BpkBannerAlertDismissable,
@@ -140,6 +142,7 @@ type BannerAlertConfig = {
 type DismissDemoState = {
   dirty: boolean,
   bannerAlerts: Array<BannerAlertConfig>,
+  bannerAlertUpdates: Array<string>,
 };
 class BpkBannerAlertDismissDemo extends Component<any, DismissDemoState> {
   reset: Function;
@@ -181,6 +184,7 @@ class BpkBannerAlertDismissDemo extends Component<any, DismissDemoState> {
 
     this.state = {
       bannerAlerts: JSON.parse(JSON.stringify(this.bannerAlerts)),
+      bannerAlertUpdates: [],
       dirty: false,
     };
   }
@@ -195,16 +199,21 @@ class BpkBannerAlertDismissDemo extends Component<any, DismissDemoState> {
 
       return {
         bannerAlerts: updatedBannerAlerts,
+        bannerAlertUpdates: [
+          ...prevState.bannerAlertUpdates,
+          'Alert dismissed',
+        ],
         dirty: true,
       };
     });
   };
 
   reset = () => {
-    this.setState({
+    this.setState(prevState => ({
       bannerAlerts: JSON.parse(JSON.stringify(this.bannerAlerts)),
+      bannerAlertUpdates: [...prevState.bannerAlertUpdates, 'Alerts added'],
       dirty: false,
-    });
+    }));
   };
 
   render() {
@@ -233,6 +242,20 @@ class BpkBannerAlertDismissDemo extends Component<any, DismissDemoState> {
             Reset
           </BpkButton>
         </BpkAnimateHeight>
+        <div
+          aria-live="assertive"
+          className={getClassName('bpk-banner-alerts-page__aria-live-region')}
+        >
+          <Paragraph>
+            Aria-live region: (this would usually be visually hidden)
+            {this.state.bannerAlertUpdates.map(b => (
+              <>
+                <br />
+                {b}
+              </>
+            ))}
+          </Paragraph>
+        </div>
       </div>
     );
   }
@@ -244,6 +267,7 @@ type FadeDemoProps = {
 };
 type FadeDemoState = {
   bannerAlertCount: number,
+  bannerAlertUpdates: Array<string>,
 };
 class BpkBannerAlertFadeDemo extends Component<FadeDemoProps, FadeDemoState> {
   addBannerAlert: Function;
@@ -262,6 +286,7 @@ class BpkBannerAlertFadeDemo extends Component<FadeDemoProps, FadeDemoState> {
 
     this.state = {
       bannerAlertCount: 0,
+      bannerAlertUpdates: [],
     };
   }
 
@@ -271,6 +296,7 @@ class BpkBannerAlertFadeDemo extends Component<FadeDemoProps, FadeDemoState> {
 
       return {
         bannerAlertCount,
+        bannerAlertUpdates: [...prevState.bannerAlertUpdates, 'Neutral alert'],
       };
     });
   };
@@ -289,6 +315,20 @@ class BpkBannerAlertFadeDemo extends Component<FadeDemoProps, FadeDemoState> {
             dismissButtonLabel="Dismiss"
           />
         ))}
+        <div
+          aria-live="assertive"
+          className={getClassName('bpk-banner-alerts-page__aria-live-region')}
+        >
+          <Paragraph>
+            Aria-live region: (this would usually be visually hidden)
+            {this.state.bannerAlertUpdates.map(b => (
+              <>
+                <br />
+                {b}
+              </>
+            ))}
+          </Paragraph>
+        </div>
       </div>
     );
   }
@@ -401,6 +441,17 @@ const components = [
       <Paragraph>
         Banner alerts can be configured to include a close icon so that the user
         can dismiss them.
+        <br />
+        <br />
+        Note that if banner-alerts are being added or removed dynamically (like
+        in the example below), you should render an{' '}
+        <BpkLink href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions">
+          <BpkCode>aria-live</BpkCode>
+        </BpkLink>{' '}
+        container describing the updates taking place. By doing this, assistive
+        technologies will know to inform the user when changes are made. By
+        default, only additions to the container will be read out, so you
+        don&#39;t need to worry about removing entries again.
       </Paragraph>,
     ],
     examples: [
