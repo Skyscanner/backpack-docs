@@ -6,7 +6,7 @@ category: guidelines
 
 # Accessible mixins for Web
 
-Within Backpack there is a number of SASS mixins available for use to enable content to be more accessible.
+Within Backpack there are a number of SASS mixins available for use to enable content to be more accessible.
 
 [`bpk-hidden`](https://backpack.github.io/sassdoc/#mixin-bpk-hidden)
 
