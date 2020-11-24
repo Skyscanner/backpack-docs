@@ -444,6 +444,13 @@ const ComponentsLinks = [
         children: 'Flare',
         tags: ['web', 'ios', 'native', 'android'],
       },
+      {
+        id: 'ARIA_LIVE',
+        route: routes.ARIA_LIVE,
+        children: 'ARIA Live',
+        tags: ['web'],
+        keywords: ['accessibility'],
+      },
       // Utilities.
       {
         id: 'ALIGNMENT',

@@ -73,6 +73,7 @@ export const IMAGE = '/components/image';
 export const BANNER_ALERT = '/components/banner-alert';
 export const ALERT = '/components/alert';
 export const OVERLAY = '/components/overlay';
+export const ARIA_LIVE = '/components/aria-live';
 
 export const MOBILE_SCROLL_CONTAINER = '/components/mobile-scroll-container';
 export const MODAL = '/components/modal';
