@@ -4,9 +4,9 @@ subtitle: To ensure that we are building the best possible products that work fo
 category: guidelines
 ---
 
-# Accessible mixins for Web
+# Accessible mixins for web
 
-Within Backpack there are a number of SASS mixins available for use to enable content to be more accessible.
+Within Backpack there are a number of Sass mixins available for use to enable content to be more accessible.
 
 [`bpk-hidden`](https://backpack.github.io/sassdoc/#mixin-bpk-hidden)
 
@@ -14,11 +14,11 @@ Used to hide visually and from screen readers.
 
 [`bpk-visually-hidden`](https://backpack.github.io/sassdoc/#mixin-bpk-visually-hidden)
 
-Hide only visually, but have it available for screen readers: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+Hide only visually, but have it available for screen readers. [Learn more &raquo;](http://snook.ca/archives/html_and_css/hiding-content-for-accessibility)
 
 [`bpk-visually-hidden--focusable`](https://backpack.github.io/sassdoc/#mixin-bpk-visually-hidden--focusable)
 
-Modifies the `bpk-visually-hidden` mixin to allow the element to be focusable when navigated to via the keyboard: https://www.drupal.org/node/897638
+Modifies the `bpk-visually-hidden` mixin to allow the element to be focusable when navigated to via the keyboard. [Learn more &raquo;](https://www.drupal.org/node/897638)
 
 [`bpk-invisible`](https://backpack.github.io/sassdoc/#mixin-bpk-invisible)
 
@@ -79,8 +79,8 @@ View Colour Pairings chart
 View Colour Pairings chart
 
 **TEST**
-- Use 'Stark' plugin in Sketch or Figma to check colour contrast (https://www.getstark.co/0
-- Use a standalone colour contrast checker (https://developer.paciellogroup.com/resources/contrastanalyser/)
+- Use ['Stark' plugin](https://www.getstark.co/0) in Sketch or Figma to check colour contrast.
+- Use a [standalone colour contrast checker](https://developer.paciellogroup.com/resources/contrastanalyser/).
 
 ## Labels
 
@@ -363,7 +363,7 @@ All interactive elements should have a clear focused state that's easy to see ag
 - Don't use focus indicators that contrast poorly against the background
 
 **TIPS**
-- Make focus indicators have a colour contrast ratio of at least 3:1 between the background and the element. See colour pairing chart -->
+- Make focus indicators have a colour contrast ratio of at least 3:1 between the background and the element. [See colour pairing chart](/guidelines/colors/#section_pairings)
 - All interactive elements should be clearly outlined by a focus indicator when they are highlighted
 - Apps tend to use built in focus indicators that work well
 
@@ -465,7 +465,7 @@ Use sparingly. Add appropriate ARIA labels and roles on elements that should be 
 
 **WHY**
 
-Providing suitable ARiA annotations makes it easier for screen reader users to understand a widget without having to piece together clues.
+Providing suitable ARIA annotations makes it easier for screen reader users to understand a widget without having to piece together clues.
 
 **WHO**
 - Screen reader users
@@ -473,6 +473,6 @@ Providing suitable ARiA annotations makes it easier for screen reader users to u
 
 **HOW**
 
-If you have a complex component, check whether it fits into a defined pattern from the ARIA Authoring Practises. (https://www.w3.org/TR/wai-aria-practices-1.2/)
+If you have a complex component, check whether it fits into a defined pattern from the [ARIA Authoring Practises](https://www.w3.org/TR/wai-aria-practices-1.2/). 
 
 Examples include Accordions, Breadcrumbs, Sliders, Carousels and Alerts.
