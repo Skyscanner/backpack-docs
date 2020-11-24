@@ -14,11 +14,11 @@ Used to hide visually and from screen readers.
 
 [`bpk-visually-hidden`](https://backpack.github.io/sassdoc/#mixin-bpk-visually-hidden)
 
-Hide only visually, but have it available for screen readers. [Learn more &raquo;](http://snook.ca/archives/html_and_css/hiding-content-for-accessibility)
+Hide only visually, but have it available for screen readers. [Learn more](http://snook.ca/archives/html_and_css/hiding-content-for-accessibility)
 
 [`bpk-visually-hidden--focusable`](https://backpack.github.io/sassdoc/#mixin-bpk-visually-hidden--focusable)
 
-Modifies the `bpk-visually-hidden` mixin to allow the element to be focusable when navigated to via the keyboard. [Learn more &raquo;](https://www.drupal.org/node/897638)
+Modifies the `bpk-visually-hidden` mixin to allow the element to be focusable when navigated to via the keyboard. [Learn more](https://www.drupal.org/node/897638)
 
 [`bpk-invisible`](https://backpack.github.io/sassdoc/#mixin-bpk-invisible)
 
