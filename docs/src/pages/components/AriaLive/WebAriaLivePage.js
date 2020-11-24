@@ -97,6 +97,7 @@ class SelectExample extends React.Component<
           </div>
         </div>
         <BpkAriaLive
+          aria-atomic
           visible
           id={this.id}
           className={getClassName('bpkdocs-aria-live-page__aria-live')}
@@ -105,6 +106,11 @@ class SelectExample extends React.Component<
             ARIA live region with <BpkCode>id=&quot;{this.id}&quot;</BpkCode>.
             This content is relevant to everyone, not just assistive
             technologies, so it is permanently visible.
+          </Paragraph>
+          <Paragraph>
+            It also has <BpkCode>aria-atomic=&quot;true&quot;</BpkCode> to
+            instruct assistive technologies to read out everything when
+            something changes, not just the part that changed.
           </Paragraph>
           <Paragraph>
             <strong>
