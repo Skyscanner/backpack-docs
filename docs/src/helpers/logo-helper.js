@@ -36,26 +36,26 @@ export const getBackpackLogo = (overImage = false) => {
 
   // These logos are used for the main homepage hero
   if (overImage) {
-    if (companyUpdateLogo) {
-      return BackpackLogoPinkGrey;
-    }
     if (isPride) {
       return BackpackLogoPrideGrey;
     }
     if (isChristmas) {
       return BackpackLogoChristmasGrey;
     }
+    if (companyUpdateLogo) {
+      return BackpackLogoPinkGrey;
+    }
     return BackpackLogoGrey;
   }
 
-  if (companyUpdateLogo) {
-    return BackpackLogoPinkWhite;
-  }
   if (isPride) {
     return BackpackLogoPride;
   }
   if (isChristmas) {
     return BackpackLogoChristmas;
+  }
+  if (companyUpdateLogo) {
+    return BackpackLogoPinkWhite;
   }
   return BackpackLogoWhite;
 };
