@@ -30,7 +30,8 @@ const Page = () => (
     title="ARIA Live"
     blurb={[
       <IntroBlurb>
-        ARIA live regions are used to notify assistive technologies of changing content.
+        ARIA live regions are used to notify assistive technologies of changing
+        content.
       </IntroBlurb>,
     ]}
     webSubpage={<Web wrapped />}
