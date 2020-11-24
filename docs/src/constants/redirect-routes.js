@@ -138,6 +138,6 @@ export default {
   '/tokens/layout': ROUTES.SPACINGS,
   '/tokens/colors': ROUTES.COLORS,
   '/using/contributing': ROUTES.USING_BACKPACK,
-  '/style-guide/copywriting': ROUTES.COPYWRITING,
+  '/style-guide/copywriting': ROUTES.GENERATED_GUIDELINES_COPYWRITING,
   '/style-guide/tone-of-voice': ROUTES.TONE_OF_VOICE,
 };
