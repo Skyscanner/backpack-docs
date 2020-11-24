@@ -204,10 +204,10 @@ const components = [
     title: 'About ARIA live regions',
     blurb: [
       <Paragraph>
-        Oftentimes, pages update without the content reloading completely. For
-        example, a list of filters changing or an alert appearing. These changes
-        are usually visually apparent but may not be obvious to users of
-        assistive technologies.
+        It&apos;s common for pages to update without the content reloading
+        completely. For example, a list of filters changing or an alert
+        appearing. These changes are usually visually apparent but may not be
+        obvious to users of assistive technologies.
       </Paragraph>,
       <Paragraph>
         ARIA live regions fill this gap by providing a way to expose dynamic
@@ -246,13 +246,6 @@ const components = [
         Sometimes it&apos;s necessary for an ARIA live region to be visible to
         everyone, not just assistive technologies. The
         <BpkCode>visible</BpkCode> prop is available for these use cases.
-      </Paragraph>,
-      <Paragraph>
-        In this example, as the chips are toggled on and off, text describing
-        the changes appears in the ARIA live region below them. Ordinarily this
-        would be only visible to assistive technologies, but for demonstration
-        purposes the <BpkCode>visible</BpkCode>
-        prop has been supplied to the component to make it visible to all.
       </Paragraph>,
     ],
     examples: [<SelectExample />],
