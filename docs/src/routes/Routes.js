@@ -44,6 +44,7 @@ import ShadowsGuidelinesPage from '../pages/guidelines/Shadows';
 import AccordionsPage from '../pages/components/Accordions';
 import AlertPage from '../pages/components/Alert';
 import AlignmentPage from '../pages/components/Alignment';
+import AriaLivePage from '../pages/components/AriaLive';
 import AutosuggestPage from '../pages/components/Autosuggest';
 import BadgePage from '../pages/components/Badge';
 import BannerAlertPage from '../pages/components/BannerAlert';
@@ -171,6 +172,7 @@ export const ROUTES_MAPPINGS = [
       { path: ROUTES.ACCORDION, component: AccordionsPage },
       { path: ROUTES.ALERT, component: AlertPage },
       { path: ROUTES.ALIGNMENT, component: AlignmentPage },
+      { path: ROUTES.ARIA_LIVE, component: AriaLivePage },
       {
         path: ROUTES.AUTOSUGGEST,
         component: AutosuggestPage,
