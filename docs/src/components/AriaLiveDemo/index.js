@@ -16,34 +16,6 @@
  * limitations under the License.
  */
 
-@import '~bpk-mixins/index';
+import AriaLiveDemo from './AriaLiveDemo';
 
-.bpkdocs-aria-live-page {
-  &__chips-wrapper {
-    margin-bottom: $bpk-spacing-sm;
-  }
-
-  &__select-wrapper {
-    display: flex;
-    margin-bottom: $bpk-spacing-sm;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__select {
-    flex: 0.5;
-  }
-
-  &__switch {
-    flex: 0.3;
-  }
-
-  &__chip {
-    margin-right: $bpk-spacing-sm;
-    margin-bottom: $bpk-spacing-sm;
-  }
-
-  &__aria-live {
-    margin-top: $bpk-spacing-sm;
-  }
-}
+export default AriaLiveDemo;

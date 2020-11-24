@@ -27,12 +27,7 @@
     margin-top: -$bpk-spacing-base;
   }
 
-  &__aria-live-region {
-    margin-top: $bpk-spacing-sm;
-    padding: $bpk-spacing-sm;
-    color: $bpk-color-sky-gray-tint-03;
-
-    @include bpk-border-sm($bpk-color-sky-gray-tint-03);
-    @include bpk-border-radius-sm;
+  &__aria-live-demo {
+    margin-top: $bpk-spacing-base;
   }
 }
