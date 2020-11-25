@@ -30,7 +30,7 @@ Hide visually and from screen readers, but maintain layout.
 
 ### **Why**
 
-Text or UI elements that don't have high enough colour contrast with backgrounds can be very hard to read
+Text or UI elements that don't have high enough colour contrast with backgrounds can be very hard to read.
 
 ### **Who**
 - Low vision
@@ -49,7 +49,7 @@ Use colour pairings with high enough contrast to make text and important UI elem
 
 ### **Tips**
 
-Text is easier to read on solid colour backgrounds than backgrounds that are busy, gradated or an image
+Text is easier to read on solid colour backgrounds than backgrounds that are busy, gradated or an image.
 
 ### **Tests**
 
@@ -86,7 +86,7 @@ Use more than colour alone to convey meaning.
 
 ### **Why**
 
-If travellers have customised their device settings to suit their needs, we need to respect their preferences
+If travellers have customised their device settings to suit their needs, we need to respect their preferences.
 
 ### **Who**
 
@@ -307,7 +307,7 @@ When screen readers come to a properly marked up list, they will notify the user
 
 ### **How**
 
-Mark the list as a real list with correct HTML mark up, rather than creating a fake list (with only visual styling) using elements such as `<br>` or `<p>`.
+Mark the list as a real list with correct HTML markup, rather than creating a fake list (with only visual styling) using elements such as `<br>` or `<p>`.
 
 ### **Tips**
 
@@ -453,7 +453,7 @@ Some people may struggle to see content unless they are able to magnify it.
 
 ### **Why**
 
-Some people use mobiles with screens as small as `320px` wide
+Some people use devices with screens as small as `320px` wide
 
 ### **Who**
 
@@ -488,7 +488,7 @@ Respect the system setting for "reduce motion". Use softer transitions, don't au
 
 **Web**: Use 'Reduce Motion Media Query'
 
-**App**: System AI we can query
+**App**: System API we can query
 
 ### **Tips**
 - If "reduce motion" is enabled, animate elements in with a smooth fade transition or no transition at all instead of using motion
@@ -502,7 +502,7 @@ Respect the system setting for "reduce motion". Use softer transitions, don't au
 
 ## ARIA labels (web)
 
-(On native, the equivalent of an aria-label is an `accessibilityLabel`, and the equivalent of an aria-role is an `accessibilityTrait`)
+(On native, the equivalent of an aria-label is an `accessibilityLabel`, and the equivalent of an aria-role is an `accessibilityTrait`).
 
 ### **Why**
 
