@@ -28,13 +28,14 @@ import { cssModules } from 'bpk-react-utils';
 import ChevronDownIcon from 'bpk-component-icon/lg/chevron-down';
 import { withButtonAlignment } from 'bpk-component-icon';
 
-import getMarkdownString from '../../helpers/markdown-helper';
 import HeroSection from '../HeroSection';
 import Heading from '../Heading';
 import AlternatingPageContent from '../AlternatingPageContent';
 import BpkMarkdownRenderer from '../DocsPageBuilder/BpkMarkdownRenderer';
 
 import STYLES from './InfoPageBuilder.scss';
+
+import getMarkdownString from 'helpers/markdown-helper';
 
 const getClassName = cssModules(STYLES);
 const AlignedChevronDownIcon = withButtonAlignment(ChevronDownIcon);

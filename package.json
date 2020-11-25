@@ -81,6 +81,7 @@
     "autoprefixer": "^9.8.6",
     "babel-jest": "^26.5.2",
     "babel-loader": "^8.0.6",
+    "babel-plugin-module-resolver": "^4.0.0",
     "bpk-animate-height": "3.0.47",
     "bpk-component-accordion": "2.2.10",
     "bpk-component-aria-live": "1.0.2",

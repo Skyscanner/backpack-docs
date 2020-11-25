@@ -18,6 +18,8 @@ module.name_mapper.extension='scss' -> '<PROJECT_ROOT>/scripts/stubs/styleStub.j
 module.name_mapper.extension='md' -> '<PROJECT_ROOT>/scripts/stubs/fileStub.js'
 module.name_mapper.extension='mdx' -> '<PROJECT_ROOT>/scripts/stubs/fileStub.js'
 module.name_mapper.extension='png' -> '<PROJECT_ROOT>/scripts/stubs/fileStub.js'
+module.system.node.resolve_dirname=node_modules
+module.system.node.resolve_dirname=src
 emoji=true
 
 module.file_ext=.js

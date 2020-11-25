@@ -20,10 +20,11 @@
 
 import React from 'react';
 
-import readme from '../../../../../backpack-android/docs/BarChart/README.md';
-import screenshotDefault from '../../../../../backpack-android/docs/BarChart/screenshots/default.png';
-import screenshotDefaultDm from '../../../../../backpack-android/docs/BarChart/screenshots/default_dm.png';
 import { AndroidComponentPage } from '../../../components/ComponentPage';
+
+import readme from 'backpack-android/docs/BarChart/README.md';
+import screenshotDefault from 'backpack-android/docs/BarChart/screenshots/default.png';
+import screenshotDefaultDm from 'backpack-android/docs/BarChart/screenshots/default_dm.png';
 
 const components = [
   {

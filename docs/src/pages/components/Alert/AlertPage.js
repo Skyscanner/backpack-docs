@@ -20,10 +20,10 @@
 
 import React from 'react';
 
-import IntroBlurb from '../../../components/IntroBlurb';
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-
 import NativeAlertPage from './NativeAlertPage';
+
+import IntroBlurb from 'components/IntroBlurb';
+import DocsPageWrapper from 'components/DocsPageWrapper';
 
 const AlertPage = () => (
   <DocsPageWrapper

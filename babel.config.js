@@ -24,6 +24,21 @@ module.exports = function config(api) {
     plugins: [
       '@babel/plugin-proposal-object-rest-spread',
       '@babel/plugin-proposal-class-properties',
+      [
+        'module-resolver',
+        {
+          root: ['./'],
+          alias: {
+            helpers: './docs/src/helpers',
+            components: './docs/src/components',
+            static: './docs/src/static',
+            backpack: './backpack',
+            'backpack-ios': './backpack-ios',
+            'backpack-android': './backpack-android',
+            'backpack-react-native': './backpack-react-native',
+          },
+        },
+      ],
     ],
   };
 };
