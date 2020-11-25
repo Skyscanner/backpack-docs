@@ -24,13 +24,72 @@ Modifies the `bpk-visually-hidden` mixin to allow the element to be focusable wh
 
 Hide visually and from screen readers, but maintain layout.
 
-# Color
+# Colour
+
+## Colour contrast
 
 ### **Why**
 
-If travellers have customised their device settings to suit their needs, we need to respect their preferences. 
+Text or UI elements that don't have high enough colour contrast with backgrounds can be very hard to read
 
 ### **Who**
+- Low vision
+- Colour blindness
+- Other vision impairments
+- Cognitive impairments that affect vision, like dyslexia
+- Extreme conditions, like bright sunlight
+
+### **How**
+
+Use colour pairings with high enough contrast to make text and important UI elements clearly visible against their background.
+
+- Small text (smaller than `18pt` or `14pt` bold) minimum ratio = 4.5:1
+- Large text (equal to or larger than `18pt` or `14pt` bold) minimum ratio = 3:1
+- UI components or meaningful graphics minimum ratio = 3.1
+
+### **Tips**
+
+Text is easier to read on solid colour backgrounds than backgrounds that are busy, gradated or an image
+
+### **Tests**
+
+- Use our [colour pairings chart]((/guidelines/colors/#section_pairings)) for accessible brand palette combinations
+- Use [Stark plugin](https://www.getstark.co/0) in Sketch or Figma to check colour contrast ratios
+- [Other contrast checkers](https://developer.paciellogroup.com/resources/contrastanalyser/) are good too
+- [Colour blindness simulator](https://www.color-blindness.com/coblis-color-blindness-simulator/) – view designs through different colour blind lenses
+- View designs in greyscale (especially when placing text on an image) to check there's enough colour contrast.
+
+## Colour alone
+
+### **Why**
+
+By not relying on colour alone to describe something, everyone should be able to understand the meaning
+
+### **Who**
+
+- Low vision
+- Colour blindness
+- Other vision impairments
+- Cognitive impairments that affect vision, like dyslexia
+- Extreme conditions, like bright sunlight
+
+### **How**
+
+Use more than colour alone to convey meaning.
+
+### **Tips**
+
+- Add text where possible to help explain meaning
+- Provide additional cues like colour keys or icons
+
+## Personalising colour
+
+### **Why**
+
+If travellers have customised their device settings to suit their needs, we need to respect their preferences
+
+### **Who**
+
 - Low vision
 - Colour blindness
 - Other vision impairments
@@ -42,12 +101,13 @@ If travellers have customised their device settings to suit their needs, we need
 Use platform standards and respect system settings, like dark mode and reduce transparency for example.
 
 ### **Tips**
+
 - Design for dark mode option
 - Prefer system settings to custom settings
 
 ### **Tests**
 
-Enable dark mode and reduced transparency, and make sure your products respond in the right way. 
+Enable dark mode and reduced transparency, and make sure your products respond in the right way.
 
 # Text
 
@@ -55,7 +115,7 @@ Enable dark mode and reduced transparency, and make sure your products respond i
 
 ### **Why**
 
-Being able to read the copy on a page is the most important part of interacting with a product.
+Most travellers should be able to read all copy without relying on magnification tools.
 
 ### **Who**
 - Low vision
@@ -66,21 +126,17 @@ Being able to read the copy on a page is the most important part of interacting 
 
 Make default text sizes large enough for the majority of people to see without having to zoom in.
 
-### **Do / Don't**
-
-- Do use text that's `11pt` or larger with high enough colour contrast to the background 
-- Don't use text smaller than `11pt`
 
 ### **Tips**
-- Minimum text size = `11pt`
+- Minimum text size = `14pt`
+- Define font sizes with a relative value for easy resizing
 - When text is smaller than `18pt` or `14pt` bold ('font-size-base' and below), make sure the contrast ratio is at least 4.5:1
-View Colour Pairings chart
 - When text is larger or equal to `18pt` or `14pt` bold ('font-size-lg' and above), make sure the contrast ratio is at least 3:1
-View Colour Pairings chart
 
 ### **Tests**
-- Use ['Stark' plugin](https://www.getstark.co/0) in Sketch or Figma to check colour contrast.
-- Use a [standalone colour contrast checker](https://developer.paciellogroup.com/resources/contrastanalyser/).
+- Use our [colour pairings chart](/guidelines/colors/#section_pairings) for accessible brand palette combinations.
+- Use [Stark plugin](https://www.getstark.co/0) in Sketch or Figma to check colour contrast ratios.
+- [Other contrast checkers](https://developer.paciellogroup.com/resources/contrastanalyser/) are good too.
 
 ## Labels
 
@@ -95,20 +151,15 @@ Field labels help travellers understand what information they need to input.
 
 Make sure form labels are provided and linked to the input they describe.
 
-### **Do / Don't**
-
-- Do place field labels next to the field
-- Don't use placeholder text in place of form fields if it disappears
-
 ### **Tips**
 
-- Web: Use the HTML `for` attribute to link the label and input field
-- Mobile: Provide a suitable label to the input component
+- **Web**: Use the HTML `for` attribute to link the label and input field
+- **App**: Provide a suitable label to the input component
 
 ### **Tests**
 
-- Web: Click on the form label and check that the input is focused – if linked properly, this will happen
-- Mobile: Use a screen reader to check that the field is accurately described when focus is on the label
+- **Web**: Click on the form label and check that the input is focused – if linked properly, this will happen
+- **App/Mobile Web**: Use a screen reader to check that the field is accurately described when focus is on the label
 
 ## Hint text
 
@@ -127,14 +178,9 @@ Hint text can help travellers enter the correct information first time, but maki
 
 Make sure hint text doesn't ever disappear.
 
-### **Do / Don't**
-
-- Do use hint text that's always visible
-- Don't make hint text disappear
-
 ### **Tips**
 - Placeholders within fields should be avoided
-- No hint text should ever disappear
+- No hint text should ever disappear (unless it's on a search field, which is a common enough pattern)
 - Use the HTML `aria-describedby` attribute to connect the input field to the hint element
 
 ### **Tests**
@@ -152,11 +198,7 @@ To help travellers enter their details correctly and proceed, we should help the
 
 ### **How**
 
-Every invalid form field should appear obviously invalid, and be accompanied by a message explaining what's wrong.
-
-### **Do / Don't**
-- Do provide clear error messages next to the field
-- Don't leave the traveller guessing or confused
+Every invalid form field should appear obviously invalid, and be accompanied by a message clearly explaining what's wrong.
 
 ### **Tips**
 - Don't rely on colour alone to show the invalid state
@@ -178,24 +220,21 @@ ALT text describes an image so that people unable to see it can still consume th
 
 ### **Who**
 - Screen reader users
-- Slow connections
+- Low bandwidth
+- Robots (e.g. search engines)
 
 ### **How**
 
-Every non-decorative image should have ALT text describing its content. Purely decorative images should be hidden from screen readers.
-
-### **Do / Don't**
-
-- Do provide ALT text when the image adds to the understanding of the page
-- Don't add ALT text when images are decorative only
-- Do provide clear, concise ALT text to describe images
-- Don't do nothing – either provide ALT text or use ALT text = "" to avoid the file name being read out
+Every non-decorative image (or illustration) should have ALT text describing its content. Purely decorative images should be hidden from screen readers.
 
 ### **Tips**
 - Accurately describe the image in a concise way
-- Keep the description straight forward, and avoid phrases like "an image of..."
+- Avoid phrases like "An image of..."
+- Max number of characters = 125
 - Hide decorative images from screen readers using `ALT text = ""`
 - Hide images that are already described, like a search icon inside a search button
+- Add image descriptions to the screen content (above or below the image) if coded ALT text is not possible
+- **Illustrations:** As illustrations are a strong and unique part of our brand, it's nice to explain when we're using them. We can start a description with "Illustration of....". The word "image" will still be automatically read out at the end of the description – this is fine.
 
 ### **Tests**
 
@@ -215,22 +254,20 @@ Using "landmarks" allows screen reader users to quickly understand the content o
 
 ### **How**
 
-Use platform components to layout screens to help non-visual users understand page structure. If necessary provide additional roles to generic components to tell screen readers about the layout.
+Use platform components to lay out screens to help non-visual users understand page structure through screen readers, providing additional roles to generic components if necessary.
 
-### **Do / Don't**
-
-- Do use platform components to layout screens
+[See possible landmarks here](https://accessibility.oit.ncsu.edu/it-accessibility-at-nc-state/developers/accessibility-handbook/aria-landmarks/)
 
 ### **Tips**
-- Web
+- **Web:**
   - Use landmark components such as navigation, banner, main, sections, footer
   - Sparingly apply landmark roles when the role cannot be inferred from the component type
-- App
+- **App:**
   - Use `Navigation` or `TabBar` components and roles to signify landmarks on the screen
 
 ### **Tests**
 
-Use a screen reader to verify that landmark roles are correctly assigned.
+Use a screen reader and select "landmark" mode from the rotor. Check that all landmark roles are correctly assigned.
 
 ## Headings
 
@@ -243,21 +280,46 @@ Using "headings" allows screen reader users to quickly understand the content of
 
 ### **How**
 
-Use Headings #H1 to #H4 to structure a page to help screen reader users understand section hierarchy. 
+Use Headings #H1 to #H6 to structure a page to help screen reader users understand section hierarchy. 
 
-### **Do / Don't**
-
-- Do use Heading tags on all headings
 
 ### **Tips**
 - Use an appropriate Heading element instead of simply styling a paragraph to look like a heading
 - Heading copy should clearly describe the content underneath it
 - Headings can be hidden if not beneficial to sighted users
+- Don't skip heading levels
 - Note that the screen reader will read 'heading level 1' for example, after reading the actual heading
 
 ### **Tests**
 
 Use a screen reader and select "headings" mode from the rotor. Check that all headings are found.
+
+## Lists
+
+### **Why**
+
+When screen readers come to a properly marked up list, they will notify the user that there is a list and how many items are in it.
+
+### **Who**
+
+- Screen reader users
+- Robots (eg search engines)
+
+### **How**
+
+Mark the list as a real list with correct HTML mark up, rather than creating a fake list (with only visual styling) using elements such as `<br>` or `<p>`.
+
+### **Tips**
+
+There are three main types of lists in HTML:
+
+- **Unordered list (`<ul>`)**: This list is depicted as a bulleted list of items (each labelled with `<li>`).
+- **Ordered list (`<ol>`)**: This list is depicted as a numbered list of items (each labelled with `<li>`).
+- **Definition list (or Description list in HTML5) (`<dl>`)**: This list is depicted as pairs of terms (`<dt>`) and descriptions (`<dd>`).
+
+### **Tests**
+
+Use a screen reader to listen to how a list is read out.
 
 ## Page titles
 
@@ -272,8 +334,6 @@ Web users switching between multiple tabs will find it helpful to see a descript
 
 Provide page titles in a consistent format across the site, for example, `Page name | Section - Site name`
 
-### **Do / Don't**
-- Do use consistently formatted page titles
 
 ### **Tests**
 
@@ -293,8 +353,6 @@ This helps screen readers and audio describers know which language content is wr
 
 Annotate screens with the language they are written in. If a different language is used for some elements, they should be individually annotated.
 
-### **Do / Don't**
-- Do use the `lang` tag
 
 ### **Tests**
 - Check HTML to make sure the `lang` tag is present
@@ -319,11 +377,6 @@ Many travellers interact with websites and apps using a keyboard, switch, or alt
 
 Make sure all interactive elements can be tabbed to in a predictable order, and activated without using a mouse or touching a screen.
 
-### **Do / Don't**
-- Do allow all interactive elements to be reached in a logical order
-- Don't miss out interactive elements or use an unpredictable order
-- Do give users control, no matter how they are interacting 
-- Don't rely on using a mouse or touching a screen 
 
 ### **Tips**
 - Non-functional elements should not be focusable
@@ -345,7 +398,7 @@ Make sure all interactive elements can be tabbed to in a predictable order, and 
 
 ### **Why**
 
-If a traveller is navigating a page using a keyboard or alternative input, a focus indicator shows which element is highlighted.
+If a traveller is navigating a page using a keyboard or alternative input, a focus indicator shows where they are on the page and which element is highlighted
 
 ### **Who**
 - Reduced mobility or dexterity
@@ -358,19 +411,17 @@ If a traveller is navigating a page using a keyboard or alternative input, a foc
 
 All interactive elements should have a clear focused state that's easy to see against all backgrounds.
 
-### **Do / Don't**
-- Do use focus indicators that contrast well against all backgrounds
-- Don't use focus indicators that contrast poorly against the background
-
 ### **Tips**
-- Make focus indicators have a colour contrast ratio of at least 3:1 between the background and the element. [See colour pairing chart](/guidelines/colors/#section_pairings)
+- Browsers have built in focus indicators but they're not always accessible, whereas the built in focus indicators in apps tend to work well
+- Make focus indicators have a colour contrast ratio of at least 3:1 between the background and the element. See our [colour pairings chart](/guidelines/colors/#section_pairings)
 - All interactive elements should be clearly outlined by a focus indicator when they are highlighted
-- Apps tend to use built in focus indicators that work well
 
 ### **Tests**
-- Disable your trackpad and check that focus indicators are always visible when tabbing through the screen
+- Disable your mouse and check that focus indicators are always visible when tabbing through the screen
 
-# Magnification
+# Responsive design
+
+## Magnification
 
 ### **Why**
 
@@ -383,20 +434,38 @@ Some people may struggle to see content unless they are able to magnify it.
 - Users of localised content
 
 ### **How**
-- Web: Allow users to zoom to 400% without losing content or functionality
-- App: Respect system text size preferences without losing content or functionality
+- **Web**: Allow users to zoom to 400% without losing content or functionality
+- **App**: Respect system text size preferences without losing content or functionality
 
-### **Do / Don't**
-- Do use good responsive design
-- Don't use elements that won't zoom well, like sticky footers
 
 ### **Tips**
-- "Sticky" UI can make parts of the screen inaccessible, especially on smaller screens
-- Web: Use responsive layout
-- App: Use `autolayout`
+
+- **Web**: 
+  - Use responsive layout
+- **App**:
+  - Use `autolayout`
+  - "Sticky" UI can make parts of the screen inaccessible, especially on smaller screens
 
 ### **Tests**
 - Magnify content up to 400% and check that all elements are still visible and operational across all devices and all screen sizes
+
+## Small screen size
+
+### **Why**
+
+Some people use mobiles with screens as small as `320px` wide
+
+### **Who**
+
+- Anyone
+
+### **How**
+
+Make sure all content and functionality is still visible at smaller screen sizes, down to `320px`
+
+### **Tests**
+
+Check content on devices of various sizes, down to `320px` wide
 
 # Animation
 
@@ -407,18 +476,19 @@ Some people may struggle to see content unless they are able to magnify it.
 A traveller might enable "reduce motion" to help them use a product without distractions. Others may enable it to prolong their battery life.
 
 ### **Who**
+- Vestibular disorders
 - Autism
 - Dyslexia
 - Cognitive impairment
 - Users with poor battery
 
 ### **How**
+
 Respect the system setting for "reduce motion". Use softer transitions, don't auto-advance content, and pause animations/videos by default.
 
-### **Do / Don't**
-- Do use soft transitions
-- Don't use high motion transitions
-- Do allow users to control motion themselves
+**Web**: Use 'Reduce Motion Media Query'
+
+**App**: System AI we can query
 
 ### **Tips**
 - If "reduce motion" is enabled, animate elements in with a smooth fade transition or no transition at all instead of using motion
@@ -430,11 +500,13 @@ Respect the system setting for "reduce motion". Use softer transitions, don't au
 
 # ARIA labels and patterns
 
-## ARIA labels
+## ARIA labels (web)
+
+(On native, the equivalent of an aria-label is an `accessibilityLabel`, and the equivalent of an aria-role is an `accessibilityTrait`)
 
 ### **Why**
 
-Providing suitable ARIA annotations makes it easier for screen reader users to understand a widget without having to piece together clues.
+When needed, providing suitable ARIA annotations makes it easier for screen reader users to understand a widget without having to piece together clues.
 
 ### **Who**
 - Screen reader users
@@ -444,19 +516,22 @@ Providing suitable ARIA annotations makes it easier for screen reader users to u
 
 Use sparingly. Add appropriate ARIA labels and roles on elements that should be read out by a screen reader. Hide elements that don't add value on their own.
 
-### **Do / Don't**
-- Do label groups of elements together if they should be treated as a single element
-- Don't make a screen reader read related elements separately
-
 ### **Tips**
-- Only use ARIA labels and roles when they make the UI more understandable
-- Often elements don't need any extra labels or roles, so they shouldn't be added
-- Use aria-live on widgets that have a changing state, like a progress bar
-- Prefer `aria-live="polite"` to `aria-live="assertive"` unless the update should interrupt the user immediately
+- Only use ARIA labels and roles when they make the UI more understandable and standard HTML labels aren't enough
+- **Often elements don't need any extra labels or roles, so they shouldn't be added**
+- **Aria-labels should be a last resort when there is no other way to represent the content using suitable elements**
+- Use aria-live (see [`BpkAriaLive`](components/aria-live?platform=web) component) on widgets that have a changing state, like a progress bar
+- Prefer `aria-live="polite"` to `aria-live="assertive"` unless the update should interrupt the user immediately (see [`BpkAriaLive`](components/aria-live?platform=web) component).
 - Use aria-expanded on toggles (eg menu toggles) to indicate whether they are open or closed
 - Use the HTML `for` attribute to link the label and input field
 - Use the HTML `aria-describedby` attribute to connect the input field to the hint element
 - If the role can't be inferred from the component type, add a role to make it clearer, like `button`, `tab` or `menuitem`
+
+**Tips for writing good ARIA copy:**
+
+- Be concise
+- Lead with the most important information
+- Consider that some users may use headings or links to navigate the page (eg. using the rotor in combination with `VoiceOver`). To allow easy navigation of the page, you can use a heading for the most important information, then split the rest of the information beneath the heading, in the same element. That way, the user can quickly skip over headings to find the content they want and then have the rest of the details read out from bellow the heading once they settle on one.
 
 ### **Tests**
 - Listen to the content using a screen reader to make sure it makes sense
@@ -465,7 +540,7 @@ Use sparingly. Add appropriate ARIA labels and roles on elements that should be 
 
 ### **Why**
 
-Providing suitable ARIA annotations makes it easier for screen reader users to understand a widget without having to piece together clues.
+When needed, providing suitable ARIA annotations makes it easier for screen reader users to understand a widget without having to piece together clues.
 
 ### **Who**
 - Screen reader users
