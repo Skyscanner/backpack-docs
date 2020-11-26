@@ -80,6 +80,17 @@ const config = {
         exclude: /node_modules\/(?!bpk-).*/,
       },
       {
+        test: /\.mdx$/,
+        use: [
+          {
+            loader: 'babel-loader',
+          },
+          {
+            loader: '@mdx-js/loader',
+          },
+        ],
+      },
+      {
         test: /base\.scss$/,
         use: [
           {

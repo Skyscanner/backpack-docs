@@ -24,9 +24,9 @@ import DocsPageWrapper from '../../../components/DocsPageWrapper';
 import IntroBlurb from '../../../components/IntroBlurb';
 
 import Web from './WebTextPage';
-import Android from './AndroidTextPage';
-import IOS from './IOSTextPage';
-import Native from './NativeTextPage';
+import Android from './AndroidText.mdx';
+import Native from './NativeText.mdx';
+import IOS from './iOSText.mdx';
 
 const Page = () => (
   <DocsPageWrapper
@@ -39,9 +39,9 @@ const Page = () => (
         achieve semantic markup while retaining control over how the text looks.
       </IntroBlurb>,
     ]}
-    androidSubpage={<Android wrapped />}
-    iosSubpage={<IOS wrapped />}
-    webSubpage={<Web wrapped />}
+    androidSubpage={<Android />}
+    iosSubpage={<IOS />}
+    webSubpage={<Web />}
     nativeSubpage={<Native wrapped />}
   />
 );
