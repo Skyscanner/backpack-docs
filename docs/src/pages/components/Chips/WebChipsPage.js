@@ -23,8 +23,7 @@ import BpkSelectableChip, {
   BpkDismissibleChip,
   CHIP_TYPES,
 } from 'bpk-component-chip';
-import BpkLink from 'bpk-component-link';
-import { BpkCode } from 'bpk-component-code';
+import BpkRouterLink from 'bpk-component-router-link';
 import BpkButton from 'bpk-component-button';
 import { cssModules } from 'bpk-react-utils';
 import chipReadme from 'bpk-component-chip/README.md';
@@ -33,6 +32,8 @@ import HotelsIconSm from 'bpk-component-icon/sm/hotels';
 import CarsIconSm from 'bpk-component-icon/sm/cars';
 import TickCircleIconSm from 'bpk-component-icon/sm/tick-circle';
 
+import * as ROUTES from '../../../constants/routes';
+import AriaLiveDemo from '../../../components/AriaLiveDemo';
 import Paragraph from '../../../components/Paragraph';
 import { WebComponentPage } from '../../../components/ComponentPage';
 
@@ -223,20 +224,13 @@ class DismissibleChipContainer extends Component<
             </BpkDismissibleChip>
           )}
         </div>
-        <div
-          aria-live="assertive"
-          className={getClassName('bpk-docs-chips-page__aria-live-region')}
+        <AriaLiveDemo
+          className={getClassName('bpk-docs-chips-page__aria-live-demo')}
         >
-          <Paragraph>
-            Aria-live region: (this would usually be visually hidden)
-            {this.state.chipUpdates.map(chipUpdate => (
-              <>
-                <br />
-                {chipUpdate}
-              </>
-            ))}
-          </Paragraph>
-        </div>
+          {this.state.chipUpdates.map(chipUpdate => (
+            <Paragraph>{chipUpdate}</Paragraph>
+          ))}
+        </AriaLiveDemo>
       </div>
     );
   }
@@ -259,10 +253,8 @@ const components = [
         <br />
         <br />
         Note that if chips are being added or removed dynamically (like in the
-        example below), you should render an{' '}
-        <BpkLink href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions">
-          <BpkCode>aria-live</BpkCode>
-        </BpkLink>{' '}
+        example below), you should render a{' '}
+        <BpkRouterLink to={ROUTES.ARIA_LIVE}>BpkAriaLive</BpkRouterLink>{' '}
         container describing the updates taking place. By doing this, assistive
         technologies will know to inform the user when changes are made. By
         default, only additions to the container will be read out, so you

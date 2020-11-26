@@ -18,32 +18,15 @@
 
 @import '~bpk-mixins/index';
 
-.bpkdocs-aria-live-page {
-  &__chips-wrapper {
-    margin-bottom: $bpk-spacing-sm;
-  }
+.bpk-docs-aria-live-demo {
+  padding: $bpk-spacing-sm;
+  background: $bpk-color-sky-gray-tint-07;
+  color: $bpk-color-sky-gray-tint-03;
 
-  &__select-wrapper {
-    display: flex;
-    margin-bottom: $bpk-spacing-sm;
-    justify-content: space-between;
-    align-items: center;
-  }
+  @include bpk-border-sm($bpk-color-sky-gray-tint-03);
+  @include bpk-border-radius-sm;
 
-  &__select {
-    flex: 0.5;
-  }
-
-  &__switch {
-    flex: 0.3;
-  }
-
-  &__chip {
-    margin-right: $bpk-spacing-sm;
-    margin-bottom: $bpk-spacing-sm;
-  }
-
-  &__aria-live {
-    margin-top: $bpk-spacing-sm;
+  &__aria-content {
+    color: $bpk-color-sky-gray;
   }
 }

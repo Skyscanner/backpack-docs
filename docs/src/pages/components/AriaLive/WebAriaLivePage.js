@@ -19,7 +19,6 @@
 /* @flow strict */
 
 import React from 'react';
-import BpkAriaLive from 'bpk-component-aria-live';
 import BpkChip from 'bpk-component-chip';
 import BpkSwitch from 'bpk-component-switch';
 import BpkLink from 'bpk-component-link';
@@ -29,6 +28,7 @@ import BpkSelect from 'bpk-component-select';
 import readme from 'bpk-component-aria-live/README.md';
 import { cssModules } from 'bpk-react-utils';
 
+import AriaLiveDemo from '../../../components/AriaLiveDemo';
 import { WebComponentPage } from '../../../components/ComponentPage';
 import Paragraph from '../../../components/Paragraph';
 
@@ -96,28 +96,27 @@ class SelectExample extends React.Component<
             />
           </div>
         </div>
-        <BpkAriaLive
+        <AriaLiveDemo
           aria-atomic
           visible
           id={this.id}
           className={getClassName('bpkdocs-aria-live-page__aria-live')}
+          preamble={
+            <Paragraph>
+              This region has <BpkCode>id=&quot;{this.id}&quot;</BpkCode>.
+              <br />
+              It also has <BpkCode>aria-atomic=&quot;true&quot;</BpkCode> to
+              instruct assistive technologies to read out everything when
+              something changes, not just the part that changed.
+            </Paragraph>
+          }
         >
-          <Paragraph>
-            ARIA live region with <BpkCode>id=&quot;{this.id}&quot;</BpkCode>.
-            This content is relevant to everyone, not just assistive
-            technologies, so it is permanently visible.
-          </Paragraph>
-          <Paragraph>
-            It also has <BpkCode>aria-atomic=&quot;true&quot;</BpkCode> to
-            instruct assistive technologies to read out everything when
-            something changes, not just the part that changed.
-          </Paragraph>
           <Paragraph>
             <strong>
               Searching for {direct ? 'direct ' : ''}flights to {destination}.
             </strong>
           </Paragraph>
-        </BpkAriaLive>
+        </AriaLiveDemo>
       </div>
     );
   }
@@ -181,24 +180,23 @@ class ChipsExample extends React.Component<
             </BpkChip>
           ))}
         </div>
-        <BpkAriaLive
-          visible
+        <AriaLiveDemo
           id={this.id}
           className={getClassName('bpkdocs-aria-live-page__aria-live')}
+          preamble={
+            <Paragraph>
+              This region has <BpkCode>id=&quot;{this.id}&quot;</BpkCode>.
+              <br />
+              As the above chips are toggled, updates appear here.
+            </Paragraph>
+          }
         >
-          <Paragraph>
-            ARIA live region with <BpkCode>id=&quot;{this.id}&quot;</BpkCode>.
-            Ordinarily this would be only visible to assistive technologies.
-          </Paragraph>
-          <Paragraph>
-            As the above chips are toggled, updates appear here.
-          </Paragraph>
           {updates.map(update => (
             <Paragraph>
               <strong>{update}</strong>
             </Paragraph>
           ))}
-        </BpkAriaLive>
+        </AriaLiveDemo>
       </div>
     );
   }

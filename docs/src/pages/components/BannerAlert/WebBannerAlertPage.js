@@ -22,8 +22,7 @@ import { durationSm, fontWeightBold } from 'bpk-tokens/tokens/base.es6';
 import PropTypes from 'prop-types';
 import { cssModules, withDefaultProps } from 'bpk-react-utils';
 import BpkAnimateHeight from 'bpk-animate-height';
-import BpkLink from 'bpk-component-link';
-import { BpkCode } from 'bpk-component-code';
+import BpkRouterLink from 'bpk-component-router-link';
 import BpkBannerAlert, {
   ALERT_TYPES,
   BpkBannerAlertDismissable,
@@ -35,7 +34,9 @@ import CurrencyIcon from 'bpk-component-icon/sm/currency';
 import BpkButton from 'bpk-component-button';
 import bannerAlertReadme from 'bpk-component-banner-alert/README.md';
 
+import * as ROUTES from '../../../constants/routes';
 import { WebComponentPage } from '../../../components/ComponentPage';
+import AriaLiveDemo from '../../../components/AriaLiveDemo';
 import Paragraph from '../../../components/Paragraph';
 
 import STYLES from './bpk-banner-alerts-page.scss';
@@ -201,7 +202,7 @@ class BpkBannerAlertDismissDemo extends Component<any, DismissDemoState> {
         bannerAlerts: updatedBannerAlerts,
         bannerAlertUpdates: [
           ...prevState.bannerAlertUpdates,
-          'Alert dismissed',
+          `${this.bannerAlerts[index].message} Dismissed`,
         ],
         dirty: true,
       };
@@ -211,7 +212,10 @@ class BpkBannerAlertDismissDemo extends Component<any, DismissDemoState> {
   reset = () => {
     this.setState(prevState => ({
       bannerAlerts: JSON.parse(JSON.stringify(this.bannerAlerts)),
-      bannerAlertUpdates: [...prevState.bannerAlertUpdates, 'Alerts added'],
+      bannerAlertUpdates: [
+        ...prevState.bannerAlertUpdates,
+        'Multiple alerts have appeared',
+      ],
       dirty: false,
     }));
   };
@@ -242,20 +246,13 @@ class BpkBannerAlertDismissDemo extends Component<any, DismissDemoState> {
             Reset
           </BpkButton>
         </BpkAnimateHeight>
-        <div
-          aria-live="assertive"
-          className={getClassName('bpk-banner-alerts-page__aria-live-region')}
+        <AriaLiveDemo
+          className={getClassName('bpk-banner-alerts-page__aria-live-demo')}
         >
-          <Paragraph>
-            Aria-live region: (this would usually be visually hidden)
-            {this.state.bannerAlertUpdates.map(b => (
-              <>
-                <br />
-                {b}
-              </>
-            ))}
-          </Paragraph>
-        </div>
+          {this.state.bannerAlertUpdates.map(u => (
+            <Paragraph>{u}</Paragraph>
+          ))}
+        </AriaLiveDemo>
       </div>
     );
   }
@@ -296,7 +293,21 @@ class BpkBannerAlertFadeDemo extends Component<FadeDemoProps, FadeDemoState> {
 
       return {
         bannerAlertCount,
-        bannerAlertUpdates: [...prevState.bannerAlertUpdates, 'Neutral alert'],
+        bannerAlertUpdates: [
+          ...prevState.bannerAlertUpdates,
+          'Neutral alert with dismiss option.',
+        ],
+      };
+    });
+  };
+
+  removeBannerAlert = () => {
+    this.setState(prevState => {
+      return {
+        bannerAlertUpdates: [
+          ...prevState.bannerAlertUpdates,
+          'Neutral alert with dismiss option. Dismissed',
+        ],
       };
     });
   };
@@ -313,22 +324,16 @@ class BpkBannerAlertFadeDemo extends Component<FadeDemoProps, FadeDemoState> {
             type={this.props.type}
             animateOnEnter
             dismissButtonLabel="Dismiss"
+            onDismiss={() => this.removeBannerAlert()}
           />
         ))}
-        <div
-          aria-live="assertive"
-          className={getClassName('bpk-banner-alerts-page__aria-live-region')}
+        <AriaLiveDemo
+          className={getClassName('bpk-banner-alerts-page__aria-live-demo')}
         >
-          <Paragraph>
-            Aria-live region: (this would usually be visually hidden)
-            {this.state.bannerAlertUpdates.map(b => (
-              <>
-                <br />
-                {b}
-              </>
-            ))}
-          </Paragraph>
-        </div>
+          {this.state.bannerAlertUpdates.map(u => (
+            <Paragraph>{u}</Paragraph>
+          ))}
+        </AriaLiveDemo>
       </div>
     );
   }
@@ -444,10 +449,8 @@ const components = [
         <br />
         <br />
         Note that if banner-alerts are being added or removed dynamically (like
-        in the example below), you should render an{' '}
-        <BpkLink href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions">
-          <BpkCode>aria-live</BpkCode>
-        </BpkLink>{' '}
+        in the example below), you should render a{' '}
+        <BpkRouterLink to={ROUTES.ARIA_LIVE}>BpkAriaLive</BpkRouterLink>{' '}
         container describing the updates taking place. By doing this, assistive
         technologies will know to inform the user when changes are made. By
         default, only additions to the container will be read out, so you
