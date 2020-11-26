@@ -101,7 +101,7 @@ class SelectExample extends React.Component<
           visible
           id={this.id}
           className={getClassName('bpkdocs-aria-live-page__aria-live')}
-          preAmble={
+          preamble={
             <Paragraph>
               This region has <BpkCode>id=&quot;{this.id}&quot;</BpkCode>.
               <br />
@@ -183,7 +183,7 @@ class ChipsExample extends React.Component<
         <AriaLiveDemo
           id={this.id}
           className={getClassName('bpkdocs-aria-live-page__aria-live')}
-          preAmble={
+          preamble={
             <Paragraph>
               This region has <BpkCode>id=&quot;{this.id}&quot;</BpkCode>.
               <br />

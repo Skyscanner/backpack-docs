@@ -30,7 +30,7 @@ import STYLES from './AriaLiveDemo.scss';
 const getClassName = cssModules(STYLES);
 
 const AriaLiveDemo = props => {
-  const { preAmble, children, className, style, visible, ...rest } = props;
+  const { preamble, children, className, style, visible, ...rest } = props;
 
   return (
     <div
@@ -45,7 +45,7 @@ const AriaLiveDemo = props => {
           ? 'This content is relevant to everyone, not just assistive technologies, so it is permanently visible.'
           : 'This would usually be visually hidden, and only visible to assistive technologies. It is visible here for demo purposes.'}
       </Paragraph>
-      {preAmble}
+      {preamble}
       <BpkAriaLive
         visible
         className={getClassName('bpk-docs-aria-live-demo__aria-content')}
@@ -59,7 +59,7 @@ const AriaLiveDemo = props => {
 };
 
 AriaLiveDemo.propTypes = {
-  preAmble: PropTypes.node,
+  preamble: PropTypes.node,
   children: PropTypes.node,
   className: PropTypes.string,
   visible: PropTypes.boolean,
@@ -68,7 +68,7 @@ AriaLiveDemo.propTypes = {
 };
 
 AriaLiveDemo.defaultProps = {
-  preAmble: null,
+  preamble: null,
   children: null,
   className: null,
   visible: false,
