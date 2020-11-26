@@ -1,0 +1,47 @@
+import Readme from '../../../components/Readme';
+import AndroidComponentScreenshots from '../../../components/Screenshots/AndroidComponentScreenshots';
+
+import textReadme from '../../../../../backpack-android/docs/Text/README.md';
+import textSpanReadme from '../../../../../backpack-android/docs/TextSpans/README.md';
+
+<div style={{padding: '1rem 3.75rem 3.75rem', backgroundColor: '#f1f2f8'}}>
+
+# Default
+
+<AndroidComponentScreenshots 
+  lightMode="../../../../../backpack-android/docs/Text/screenshots/default.png" 
+  darkMode="../../../../../backpack-android/docs/Text/screenshots/default_dm.png" 
+  altText="Android default text" />
+
+# Emphasized
+
+<AndroidComponentScreenshots 
+  lightMode="../../../../../backpack-android/docs/Text/screenshots/emphasized.png" 
+  darkMode="../../../../../backpack-android/docs/Text/screenshots/emphasized_dm.png" 
+  altText="Android emphasized text" />
+
+# Heavy
+
+<AndroidComponentScreenshots 
+  lightMode="../../../../../backpack-android/docs/Text/screenshots/heavy.png" 
+  darkMode="../../../../../backpack-android/docs/Text/screenshots/heavy_dm.png" 
+  altText="Android heavy text" />
+
+# Text Implementation
+
+<Readme readme={textReadme} />
+
+# Text Span
+
+Text Spans are a set of styles to apply to characters sequence.
+
+<AndroidComponentScreenshots 
+  lightMode="../../../../../backpack-android/docs/TextSpans/screenshots/default.png" 
+  darkMode="../../../../../backpack-android/docs/TextSpans/screenshots/default_dm.png" 
+  altText="Android text spans" />
+
+# Text Span Implementation
+
+<Readme readme={textSpanReadme} />
+
+</div>

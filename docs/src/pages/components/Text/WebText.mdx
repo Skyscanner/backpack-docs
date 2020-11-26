@@ -1,0 +1,37 @@
+import BpkMarkdownRenderer from '../../../components/DocsPageBuilder/BpkMarkdownRenderer';
+import getMarkdownString from '../../../helpers/markdown-helper';
+
+
+import BpkText from 'bpk-component-text';
+import textReadme from 'bpk-component-text/README.md';
+
+<div style={{padding: '1rem 3.75rem 3.75rem'}}>
+
+# Default
+
+<div>
+  <BpkText textStyle="xxl" tagName="p">
+    Lorem ipsum
+  </BpkText>
+  <BpkText textStyle="xl" tagName="p">
+    Lorem ipsum
+  </BpkText>
+  <BpkText textStyle="lg" tagName="p">
+    Lorem ipsum
+  </BpkText>
+  <BpkText textStyle="base" tagName="p">
+    Lorem ipsum
+  </BpkText>
+  <BpkText textStyle="sm" tagName="p">
+    Lorem ipsum
+  </BpkText>
+  <BpkText textStyle="xs" tagName="p">
+    Lorem ipsum
+  </BpkText>
+</div>
+
+# Implementation
+
+<BpkMarkdownRenderer source={getMarkdownString(textReadme)} />
+
+</div>
