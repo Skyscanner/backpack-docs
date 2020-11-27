@@ -18,8 +18,6 @@
 
 /* @flow strict */
 
-/* eslint-disable backpack/use-tokens */
-
 import React from 'react';
 
 import ComponentScreenshots from '../DocsPageBuilder/ComponentScreenshots';
@@ -31,6 +29,13 @@ type Props = {
   androidAltText: string,
 };
 
+/* eslint-disable backpack/use-tokens */
+const dimensions = {
+  ios: { width: 750, height: 1334 },
+  android: { width: 1080, height: 1920 },
+};
+/* eslint-enable */
+
 const NativeComponentScreenshots = (props: Props) => {
   const { iOS, android, iOSAltText, androidAltText } = props;
 
@@ -38,15 +43,13 @@ const NativeComponentScreenshots = (props: Props) => {
     <ComponentScreenshots
       screenshots={[
         {
-          width: 750,
-          height: 1334,
+          ...dimensions.ios,
           src: `/${iOS}`,
           altText: iOSAltText,
           subText: '(iPhone 8 simulator)',
         },
         {
-          width: 1080,
-          height: 1920,
+          ...dimensions.android,
           src: `/${android}`,
           altText: androidAltText,
           subText: '(Google Pixel emulator)',

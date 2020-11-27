@@ -25,15 +25,15 @@ import BpkMarkdownRenderer from '../DocsPageBuilder/BpkMarkdownRenderer';
 import getMarkdownString from '../../helpers/markdown-helper';
 
 type Props = {
-  readme: string,
+  file: string,
 };
 
 const Readme = (props: Props) => {
-  const { readme } = props;
+  const { file } = props;
 
   return (
     <BpkContentContainer bareHtml alternate>
-      <BpkMarkdownRenderer source={getMarkdownString(readme)} />
+      <BpkMarkdownRenderer source={getMarkdownString(file)} />
     </BpkContentContainer>
   );
 };

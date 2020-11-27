@@ -18,8 +18,6 @@
 
 /* @flow strict */
 
-/* eslint-disable backpack/use-tokens */
-
 import React from 'react';
 
 import ComponentScreenshots from '../DocsPageBuilder/ComponentScreenshots';
@@ -30,6 +28,13 @@ type Props = {
   altText: String,
 };
 
+/* eslint-disable backpack/use-tokens */
+const dimensions = {
+  width: 1080,
+  height: 1920,
+};
+/* eslint-enable */
+
 const AndroidComponentScreenshots = (props: Props) => {
   const { lightMode, darkMode, altText } = props;
 
@@ -37,15 +42,13 @@ const AndroidComponentScreenshots = (props: Props) => {
     <ComponentScreenshots
       screenshots={[
         {
-          width: 1080,
-          height: 1920,
+          ...dimensions,
           src: `/${lightMode}`,
           altText,
           subText: '(Google Pixel emulator)',
         },
         {
-          width: 1080,
-          height: 1920,
+          ...dimensions,
           src: `/${darkMode}`,
           altText,
           subText: '(Google Pixel emulator - dark mode)',
