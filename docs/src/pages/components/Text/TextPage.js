@@ -20,6 +20,7 @@
 
 import React from 'react';
 
+import MDXContent from '../../../components/MDXContent';
 import DocsPageWrapper from '../../../components/DocsPageWrapper';
 import IntroBlurb from '../../../components/IntroBlurb';
 
@@ -39,10 +40,10 @@ const Page = () => (
         achieve semantic markup while retaining control over how the text looks.
       </IntroBlurb>,
     ]}
-    androidSubpage={<Android />}
-    iosSubpage={<IOS />}
+    androidSubpage={<MDXContent Content={Android} />}
+    iosSubpage={<MDXContent Content={IOS} />}
     webSubpage={<Web />}
-    nativeSubpage={<Native />}
+    nativeSubpage={<MDXContent Content={Native} />}
   />
 );
 
