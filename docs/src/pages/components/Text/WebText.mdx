@@ -1,7 +1,3 @@
-import BpkMarkdownRenderer from '../../../components/DocsPageBuilder/BpkMarkdownRenderer';
-import getMarkdownString from '../../../helpers/markdown-helper';
-
-
 import BpkText from 'bpk-component-text';
 import textReadme from 'bpk-component-text/README.md';
 
@@ -32,6 +28,6 @@ import textReadme from 'bpk-component-text/README.md';
 
 # Implementation
 
-<BpkMarkdownRenderer source={getMarkdownString(textReadme)} />
+<Readme file={textReadme} />
 
 </div>

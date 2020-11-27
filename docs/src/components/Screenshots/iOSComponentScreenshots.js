@@ -18,8 +18,6 @@
 
 /* @flow strict */
 
-/* eslint-disable backpack/use-tokens */
-
 import React from 'react';
 
 import ComponentScreenshots from '../DocsPageBuilder/ComponentScreenshots';
@@ -30,6 +28,13 @@ type Props = {
   altText: String,
 };
 
+/* eslint-disable backpack/use-tokens */
+const dimensions = {
+  width: 750,
+  height: 1334,
+};
+/* eslint-enable */
+
 const IOSComponentScreenshots = (props: Props) => {
   const { lightMode, darkMode, altText } = props;
 
@@ -37,15 +42,13 @@ const IOSComponentScreenshots = (props: Props) => {
     <ComponentScreenshots
       screenshots={[
         {
-          width: 750,
-          height: 1334,
+          ...dimensions,
           src: `/${lightMode}`,
           altText,
           subText: '(iPhone 8 simulator)',
         },
         {
-          width: 750,
-          height: 1334,
+          ...dimensions,
           src: `/${darkMode}`,
           altText,
           subText: '(iPhone 8 simulator - dark mode)',

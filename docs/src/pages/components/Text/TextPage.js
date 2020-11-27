@@ -42,7 +42,7 @@ const Page = () => (
     androidSubpage={<Android />}
     iosSubpage={<IOS />}
     webSubpage={<Web />}
-    nativeSubpage={<Native wrapped />}
+    nativeSubpage={<Native />}
   />
 );
 
