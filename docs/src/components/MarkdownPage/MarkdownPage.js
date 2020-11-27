@@ -21,6 +21,7 @@
 import React from 'react';
 import { cssModules } from 'bpk-react-utils';
 import Helmet from 'react-helmet';
+import BpkLink from 'bpk-component-link';
 
 import Heading from '../Heading';
 import IntroBlurb from '../IntroBlurb';
