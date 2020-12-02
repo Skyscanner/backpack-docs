@@ -26,16 +26,23 @@ import Helmet from 'react-helmet';
 import BpkMarkdownRenderer from '../DocsPageBuilder/BpkMarkdownRenderer';
 import Heading from '../Heading';
 import IntroBlurb from '../IntroBlurb';
+import MDXContent from '../MDXContent/MDXContent';
 
 import STYLES from './MarkdownPage.scss';
 
 const getClassName = cssModules(STYLES);
 
 type Props = {
-  content: string,
-  title: string,
-  fileName: ?string,
-  subtitle: ?string,
+  content: any,
+  fileName: string,
+  metaData: {
+    title: string,
+    subtitle: ?string,
+    podLink: ?string,
+    jitPackLink: ?string,
+    npmLink: ?string,
+    ghLink: ?string,
+  },
 };
 
 /*
@@ -68,29 +75,28 @@ const editPageLink = fileName => {
 };
 
 const MarkdownPage = (props: Props) => {
-  const { content, fileName, title, subtitle } = props;
+  const { content, fileName, metaData } = props;
 
-  const sanitizedContent = removeFrontMatter(content) + editPageLink(fileName);
-
+  // const sanitizedContent = removeFrontMatter(content) + editPageLink(fileName);
   return (
     <>
-      <Helmet title={title} />
+      <Helmet title={metaData.title} />
       <div className={getClassName('bpkdocs-markdown-page__page-head')}>
-        <Heading level="h1">{title}</Heading>
-        {props.subtitle && <IntroBlurb>{subtitle}</IntroBlurb>}
+        <Heading level="h1">{metaData.title}</Heading>
+        {metaData.subtitle && <IntroBlurb>{metaData.subtitle}</IntroBlurb>}
       </div>
-      <BpkContentContainer
+
+      <MDXContent Content={content} />
+
+      {/* <BpkContentContainer
         className={getClassName('bpkdocs-markdown-page__content')}
       >
+
+        <Content />
         <BpkMarkdownRenderer source={sanitizedContent} />
-      </BpkContentContainer>
+      </BpkContentContainer> */}
     </>
   );
-};
-
-MarkdownPage.defaultProps = {
-  fileName: null,
-  subtitle: null,
 };
 
 export default MarkdownPage;

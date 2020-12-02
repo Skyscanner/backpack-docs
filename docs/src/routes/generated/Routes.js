@@ -21,99 +21,91 @@ import React from 'react';
 import * as ROUTES from '../../constants/routes';
 import MarkdownPage from '../../components/MarkdownPage';
 
-import DEVELOPER_ACCESSIBILITY_GUIDELINES from '../../static-pages/accessibility.md';
-import COPYWRITING from '../../static-pages/copywriting.md';
-import ICONOGRAPHY from '../../static-pages/iconography.md';
-import ILLUSTRATION from '../../static-pages/illustration.md';
-import IN_USE from '../../static-pages/in-use.md';
-import LOGO from '../../static-pages/logo.md';
-import PHOTOGRAPHY from '../../static-pages/photography.md';
-import STRATEGY from '../../static-pages/strategy.md';
-import BACKPACK_REACT_SCRIPTS from '../../static-pages/backpack-react-scripts.md';
-import BASE_STYLESHEET from '../../static-pages/base-stylesheet.md';
-import GETTING_STARTED from '../../static-pages/getting-started.md';
-import PRINCIPLES from '../../static-pages/principles.md';
-import BACKPACK_STATUS from '../../static-pages/status.md';
-import UPDATING_THIS_WEBSITE from '../../static-pages/website-contribution-guide.md';
+import DEVELOPER_ACCESSIBILITY_GUIDELINES from '../../static-pages/accessibility.mdx';
+import COPYWRITING from '../../static-pages/copywriting.mdx';
+import ICONOGRAPHY from '../../static-pages/iconography.mdx';
+import ILLUSTRATION from '../../static-pages/illustration.mdx';
+import IN_USE from '../../static-pages/in-use.mdx';
+import LOGO from '../../static-pages/logo.mdx';
+import PHOTOGRAPHY from '../../static-pages/photography.mdx';
+import STRATEGY from '../../static-pages/strategy.mdx';
+import BACKPACK_REACT_SCRIPTS from '../../static-pages/backpack-react-scripts.mdx';
+import BASE_STYLESHEET from '../../static-pages/base-stylesheet.mdx';
+import GETTING_STARTED from '../../static-pages/getting-started.mdx';
+import PRINCIPLES from '../../static-pages/principles.mdx';
+import BACKPACK_STATUS from '../../static-pages/status.mdx';
+import UPDATING_THIS_WEBSITE from '../../static-pages/website-contribution-guide.mdx';
 
 export const guidelines = [{
     path: ROUTES.GENERATED_GUIDELINES_DEVELOPER_ACCESSIBILITY_GUIDELINES,
     component: () => (
       <MarkdownPage
-        fileName="accessibility.md"
-        title="Developer Accessibility Guidelines"
-        subtitle="To ensure that we are building the best possible products that work for everyone, we need to consider accessibility at every stage."
+        fileName="accessibility.mdx"
         content={DEVELOPER_ACCESSIBILITY_GUIDELINES}
+        metaData={{"title":"Developer Accessibility Guidelines","subtitle":"To ensure that we are building the best possible products that work for everyone, we need to consider accessibility at every stage.","category":"guidelines"}}
       />
     )
   },{
     path: ROUTES.GENERATED_GUIDELINES_COPYWRITING,
     component: () => (
       <MarkdownPage
-        fileName="copywriting.md"
-        title="Copywriting"
-        subtitle="Writing for Skyscanner? This basically makes you a hero."
+        fileName="copywriting.mdx"
         content={COPYWRITING}
+        metaData={{"title":"Copywriting","subtitle":"Writing for Skyscanner? This basically makes you a hero.","category":"guidelines"}}
       />
     )
   },{
     path: ROUTES.GENERATED_GUIDELINES_ICONOGRAPHY,
     component: () => (
       <MarkdownPage
-        fileName="iconography.md"
-        title="Iconography"
-        subtitle="Icons hold a vital role within our identity, guiding travellers through the complex information on-show in our product."
+        fileName="iconography.mdx"
         content={ICONOGRAPHY}
+        metaData={{"title":"Iconography","subtitle":"Icons hold a vital role within our identity, guiding travellers through the complex information on-show in our product.","category":"guidelines"}}
       />
     )
   },{
     path: ROUTES.GENERATED_GUIDELINES_ILLUSTRATION,
     component: () => (
       <MarkdownPage
-        fileName="illustration.md"
-        title="Illustration"
-        subtitle="Illustrations are our most versatile identity element, and we use them to great effect across a wide range of applications — from informative product flows to emotive advertising."
+        fileName="illustration.mdx"
         content={ILLUSTRATION}
+        metaData={{"title":"Illustration","subtitle":"Illustrations are our most versatile identity element, and we use them to great effect across a wide range of applications — from informative product flows to emotive advertising.","category":"guidelines","source":"https://github.com/skyscanner/backpack"}}
       />
     )
   },{
     path: ROUTES.GENERATED_GUIDELINES_IN_USE,
     component: () => (
       <MarkdownPage
-        fileName="in-use.md"
-        title="In use"
-        subtitle="This section contains an overview of best-practice applications. Here we've brought together all of the elements outlined to create a range of applications that span from product screens to out-of-home advertising."
+        fileName="in-use.mdx"
         content={IN_USE}
+        metaData={{"title":"In use","subtitle":"This section contains an overview of best-practice applications. Here we've brought together all of the elements outlined to create a range of applications that span from product screens to out-of-home advertising.","category":"guidelines"}}
       />
     )
   },{
     path: ROUTES.GENERATED_GUIDELINES_LOGO,
     component: () => (
       <MarkdownPage
-        fileName="logo.md"
-        title="Logo"
-        subtitle="Our logo is Skyscanner's most important visual element. It is the visual shorthand for our company, and the single graphic that our audiences will attach their emotion to."
+        fileName="logo.mdx"
         content={LOGO}
+        metaData={{"title":"Logo","subtitle":"Our logo is Skyscanner's most important visual element. It is the visual shorthand for our company, and the single graphic that our audiences will attach their emotion to.","category":"guidelines"}}
       />
     )
   },{
     path: ROUTES.GENERATED_GUIDELINES_PHOTOGRAPHY,
     component: () => (
       <MarkdownPage
-        fileName="photography.md"
-        title="Photography"
-        subtitle="Photography captures the spirit of our brand. It allows us to evoke strong emotions, and visually transport our audiences to far-away locations, as well as capturing realistic representations of people and places."
+        fileName="photography.mdx"
         content={PHOTOGRAPHY}
+        metaData={{"title":"Photography","subtitle":"Photography captures the spirit of our brand. It allows us to evoke strong emotions, and visually transport our audiences to far-away locations, as well as capturing realistic representations of people and places.","category":"guidelines"}}
       />
     )
   },{
     path: ROUTES.GENERATED_GUIDELINES_STRATEGY,
     component: () => (
       <MarkdownPage
-        fileName="strategy.md"
-        title="Strategy"
-        subtitle="Our brand strategy is the blueprint that gives our brand purpose and direction. It is the set of rules that we use to inform our decisions — from day-to-day queries to long-term challenges. This section will guide you through its components."
+        fileName="strategy.mdx"
         content={STRATEGY}
+        metaData={{"title":"Strategy","subtitle":"Our brand strategy is the blueprint that gives our brand purpose and direction. It is the set of rules that we use to inform our decisions — from day-to-day queries to long-term challenges. This section will guide you through its components.","category":"guidelines","platform":"web"}}
       />
     )
   }];
@@ -121,60 +113,54 @@ export const using = [{
     path: ROUTES.GENERATED_USING_BACKPACK_REACT_SCRIPTS,
     component: () => (
       <MarkdownPage
-        fileName="backpack-react-scripts.md"
-        title="Backpack React Scripts"
-        subtitle="Create React + Backpack web apps with no build configuration."
+        fileName="backpack-react-scripts.mdx"
         content={BACKPACK_REACT_SCRIPTS}
+        metaData={{"title":"Backpack React Scripts","subtitle":"Create React + Backpack web apps with no build configuration.","category":"using"}}
       />
     )
   },{
     path: ROUTES.GENERATED_USING_BASE_STYLESHEET,
     component: () => (
       <MarkdownPage
-        fileName="base-stylesheet.md"
-        title="Base stylesheet"
-        subtitle="All components are built on top of a lightweight base stylesheet. Ensure you include this on the page when consuming any Backpack components."
+        fileName="base-stylesheet.mdx"
         content={BASE_STYLESHEET}
+        metaData={{"title":"Base stylesheet","subtitle":"All components are built on top of a lightweight base stylesheet. Ensure you include this on the page when consuming any Backpack components.","category":"using"}}
       />
     )
   },{
     path: ROUTES.GENERATED_USING_GETTING_STARTED,
     component: () => (
       <MarkdownPage
-        fileName="getting-started.md"
-        title="Getting Started"
-        subtitle="Depending on the audience, there are a few ways to get started."
+        fileName="getting-started.mdx"
         content={GETTING_STARTED}
+        metaData={{"title":"Getting Started","subtitle":"Depending on the audience, there are a few ways to get started.","category":"using"}}
       />
     )
   },{
     path: ROUTES.GENERATED_USING_PRINCIPLES,
     component: () => (
       <MarkdownPage
-        fileName="principles.md"
-        title="Principles"
-        subtitle="Backpack components, features and configurations are created with the following principles in mind."
+        fileName="principles.mdx"
         content={PRINCIPLES}
+        metaData={{"title":"Principles","subtitle":"Backpack components, features and configurations are created with the following principles in mind.","category":"using"}}
       />
     )
   },{
     path: ROUTES.GENERATED_USING_BACKPACK_STATUS,
     component: () => (
       <MarkdownPage
-        fileName="status.md"
-        title="Backpack Status"
-        subtitle="Here you will find the current Backpack CI status and release versions."
+        fileName="status.mdx"
         content={BACKPACK_STATUS}
+        metaData={{"title":"Backpack Status","subtitle":"Here you will find the current Backpack CI status and release versions.","category":"using"}}
       />
     )
   },{
     path: ROUTES.GENERATED_USING_UPDATING_THIS_WEBSITE,
     component: () => (
       <MarkdownPage
-        fileName="website-contribution-guide.md"
-        title="Updating this website"
-        subtitle="Backpack belongs to everyone at Skyscanner. Changes are welcomed from anybody."
+        fileName="website-contribution-guide.mdx"
         content={UPDATING_THIS_WEBSITE}
+        metaData={{"title":"Updating this website","subtitle":"Backpack belongs to everyone at Skyscanner. Changes are welcomed from anybody.","category":"using"}}
       />
     )
   }];
