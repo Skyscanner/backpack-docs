@@ -193,9 +193,7 @@ const config = {
             loader: '@mdx-js/loader',
           },
           {
-            loader: path.resolve(
-              './scripts/webpack/convertFrontMatterToExport.js',
-            ),
+            loader: path.resolve('./scripts/webpack/removeFrontMatter.js'),
           },
         ],
       },

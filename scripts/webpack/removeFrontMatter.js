@@ -19,30 +19,14 @@
 /*
  Custom Webpack loader. Takes a string referring to a filename,
  runs it through gray-matter (https://www.npmjs.com/package/gray-matter)
- to split the front matter and content out, then returns it in
- MDX format, with the front matter replaced with a JS export named
- 'metadata'.
+ to split the front matter and content out, then returns just the content.
  */
-
-// Because it will attempt to change 'code' to 'BpkCode'.
-/* eslint-disable backpack/use-components */
 
 const matter = require('gray-matter');
 
 module.exports = src => {
   return new Promise(resolve => {
-    const { content, data } = matter(src);
-
-    // If no frontmatter was found, don't add a metadata export.
-    if (Object.keys(data).length === 0) {
-      return content;
-    }
-
-    const code = `export const metadata = ${JSON.stringify(data)}
-
-        ${content}
-          `;
-
-    return resolve(code);
+    const { content } = matter(src);
+    return resolve(content);
   });
 };
