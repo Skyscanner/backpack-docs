@@ -147,7 +147,7 @@ const BpkMarkdownRenderer = (props: Props) => {
 
 BpkMarkdownRenderer.propTypes = {
   source: PropTypes.string.isRequired,
-  darkBackground: PropTypes.boolean,
+  darkBackground: PropTypes.bool,
 };
 
 BpkMarkdownRenderer.defaultProps = {

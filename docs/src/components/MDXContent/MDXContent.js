@@ -19,6 +19,7 @@
 /* @flow strict */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import { MDXProvider } from '@mdx-js/react';
 import { cssModules } from 'bpk-react-utils';
 import BpkContentContainer from 'bpk-component-content-container';
@@ -26,11 +27,13 @@ import BpkContentContainer from 'bpk-component-content-container';
 import BpkMarkdownRenderer from '../DocsPageBuilder/BpkMarkdownRenderer';
 
 import STYLES from './MDXContent.scss';
+import Renderer from './renderers';
 
 const getClassName = cssModules(STYLES);
 
 type Props = {
   Content: any,
+  darkBackground: boolean,
   fileName: string,
 };
 
@@ -44,32 +47,24 @@ const editPageLink = fileName => {
 };
 
 const MDXContent = (props: Props) => {
-  const { Content, fileName } = props;
-
-  const renderers = {};
-
-  renderers.img = imageProps => {
-    const { alt, src, ...imageRest } = imageProps;
-    return (
-      // Can't use BpkImage here because it requires us to know width and height.
-      /* eslint-disable-next-line backpack/use-components */
-      <img
-        alt={alt}
-        src={src}
-        className={getClassName('bpkdocs-mdx-page__image')}
-        {...imageRest}
-      />
-    );
-  };
+  const { Content, darkBackground, fileName } = props;
 
   return (
     <BpkContentContainer className={getClassName('bpkdocs-mdx-page__content')}>
-      <MDXProvider components={renderers}>
+      <MDXProvider components={Renderer({ darkBackground })}>
         <Content />
         {fileName && <BpkMarkdownRenderer source={editPageLink(fileName)} />}
       </MDXProvider>
     </BpkContentContainer>
   );
+};
+
+MDXContent.propTypes = {
+  darkBackground: PropTypes.bool,
+};
+
+MDXContent.defaultProps = {
+  darkBackground: false,
 };
 
 export default MDXContent;

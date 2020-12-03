@@ -69,7 +69,7 @@ export const guidelines = [{
       <MarkdownPage
         fileName="illustration.mdx"
         content={ILLUSTRATION}
-        metaData={{"title":"Illustration","subtitle":"Illustrations are our most versatile identity element, and we use them to great effect across a wide range of applications — from informative product flows to emotive advertising.","category":"guidelines","source":"https://github.com/skyscanner/backpack"}}
+        metaData={{"title":"Illustration","subtitle":"Illustrations are our most versatile identity element, and we use them to great effect across a wide range of applications — from informative product flows to emotive advertising.","category":"guidelines"}}
       />
     )
   },{
@@ -105,7 +105,7 @@ export const guidelines = [{
       <MarkdownPage
         fileName="strategy.mdx"
         content={STRATEGY}
-        metaData={{"title":"Strategy","subtitle":"Our brand strategy is the blueprint that gives our brand purpose and direction. It is the set of rules that we use to inform our decisions — from day-to-day queries to long-term challenges. This section will guide you through its components.","category":"guidelines","platform":"web"}}
+        metaData={{"title":"Strategy","subtitle":"Our brand strategy is the blueprint that gives our brand purpose and direction. It is the set of rules that we use to inform our decisions — from day-to-day queries to long-term challenges. This section will guide you through its components.","category":"guidelines"}}
       />
     )
   }];

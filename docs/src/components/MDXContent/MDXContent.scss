@@ -18,6 +18,18 @@
 
 @import '~bpk-mixins/index';
 
+@mixin heading-style($spacing) {
+  margin-bottom: $spacing;
+
+  &:not(:first-of-type) {
+    margin-top: $spacing;
+
+    @include bpk-breakpoint-mobile {
+      margin-top: 0;
+    }
+  }
+}
+
 .bpkdocs-mdx-page {
   &__content {
     padding: $bpk-spacing-lg * 2;
@@ -25,6 +37,70 @@
 
     @include bpk-breakpoint-mobile {
       padding: $bpk-spacing-lg;
+    }
+  }
+
+  &__table {
+    // Using `!important` as we need to override the baremetal HTML styling, which takes precedence.
+    /* stylelint-disable declaration-no-important */
+    width: auto !important;
+    // Applying a custom border to the table as the `bpk-border` mixin using box-shadow has side-effects
+    // when used inside a scroll container. This is due to the box-shadow not being measured as part of the
+    // width of the child element.
+    /* stylelint-disable-next-line unit-blacklist */
+    border: solid 1px $bpk-color-sky-gray-tint-04;
+    box-shadow: none !important;
+    /* stylelint-enable */
+  }
+
+  &__mobile-scroll-container {
+    margin-bottom: $bpk-spacing-sm;
+  }
+
+  &__mobile-scroll-indicator {
+    &--trailing {
+      &--dark {
+        @include bpk-scroll-indicator-right($bpk-color-sky-gray-tint-06);
+      }
+
+      &--light {
+        @include bpk-scroll-indicator-right($bpk-color-sky-gray-tint-07);
+      }
+    }
+
+    &--leading {
+      &--dark {
+        @include bpk-scroll-indicator-left($bpk-color-sky-gray-tint-06);
+      }
+
+      &--light {
+        @include bpk-scroll-indicator-left($bpk-color-sky-gray-tint-07);
+      }
+    }
+  }
+
+  &__heading {
+    &-h2 {
+      @include heading-style($bpk-spacing-lg);
+    }
+
+    &-h3 {
+      @include heading-style($bpk-spacing-base);
+    }
+
+    &-h4 {
+      @include bpk-heading-4;
+      @include heading-style($bpk-spacing-md);
+    }
+
+    &-h5 {
+      @include bpk-heading-5;
+      @include heading-style($bpk-spacing-md);
+    }
+
+    &-h6 {
+      @include bpk-heading-6;
+      @include heading-style($bpk-spacing-md);
     }
   }
 
