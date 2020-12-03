@@ -17,9 +17,15 @@
  */
 
 /*
- Custom Webpack loader. Takes a string referring to a filename,
- runs it through gray-matter (https://www.npmjs.com/package/gray-matter)
- to split the front matter and content out, then returns just the content.
+ Custom Webpack loader. 
+ Replaces relative image references in Markdown files with React components using a
+ `require` statement, so that later in the process they can be captured by `file-loader`.
+ 
+ Turns:
+ ![alt text](./image.png)
+ 
+ into:
+ <img src={'/' + require('./image.png'} alt="alt text" />
  */
 
 const IMAGE_REG_EXP = /!\[(.*)\]\(([^https?].+)\)/g;
