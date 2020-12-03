@@ -172,7 +172,6 @@
     "flow-bin": "^0.135.0",
     "flow-typed": "^3.2.1",
     "fuse.js": "^6.4.1",
-    "gg-markdown-image-loader": "^2.1.0",
     "globby": "^11.0.1",
     "gray-matter": "^4.0.2",
     "husky": "^4.2.3",

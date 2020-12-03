@@ -27,4 +27,11 @@
       padding: $bpk-spacing-lg;
     }
   }
+
+  &__image {
+    max-width: 100%;
+    margin: $bpk-spacing-md 0;
+
+    @include bpk-border-radius-sm;
+  }
 }

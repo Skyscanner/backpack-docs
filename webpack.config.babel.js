@@ -195,16 +195,18 @@ const config = {
           {
             loader: path.resolve('./scripts/webpack/removeFrontMatter.js'),
           },
+          {
+            loader: path.resolve(
+              './scripts/webpack/replaceImagesWithRequires.js',
+            ),
+          },
         ],
       },
       {
         test: /\.md$/,
         use: [
           {
-            loader: 'gg-markdown-image-loader',
-            options: {
-              pathPrefix: '/',
-            },
+            loader: 'raw-loader',
           },
         ],
       },
