@@ -109,7 +109,6 @@ const Renderer = (props: Props) => {
     );
   };
 
-  renderers.link = BpkLink;
   renderers.p = Paragraph;
 
   renderers.table = (tableProps: { children: any }) => {
@@ -141,10 +140,14 @@ const Renderer = (props: Props) => {
   renderers.tbody = BpkTableBody;
   renderers.tr = BpkTableRow;
 
-  renderers.tableCell = (tableCellProps: {
-    children: any,
-    isHeader: boolean,
-  }) => {
+  renderers.th = (tableCellProps: { children: any, isHeader: boolean }) => {
+    const { isHeader, ...tableCellRest } = tableCellProps;
+    const CellComponent = isHeader ? BpkTableHeadCell : BpkTableCell;
+    // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/master/decisions/flowfixme.md'.
+    return <CellComponent {...tableCellRest} />;
+  };
+
+  renderers.td = (tableCellProps: { children: any, isHeader: boolean }) => {
     const { isHeader, ...tableCellRest } = tableCellProps;
     const CellComponent = isHeader ? BpkTableHeadCell : BpkTableCell;
     // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/master/decisions/flowfixme.md'.
