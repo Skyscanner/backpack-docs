@@ -32,9 +32,15 @@
 
   &__content {
     padding: $bpk-spacing-lg * 2;
+    background-color: $bpk-color-sky-gray-tint-07;
 
     @include bpk-breakpoint-mobile {
       padding: $bpk-spacing-lg;
     }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
   }
 }

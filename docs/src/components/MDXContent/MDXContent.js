@@ -20,43 +20,20 @@
 
 import React from 'react';
 import { MDXProvider } from '@mdx-js/react';
-import { cssModules } from 'bpk-react-utils';
-import BpkContentContainer from 'bpk-component-content-container';
-import BpkLink from 'bpk-component-link';
 
-import Heading from '../Heading';
-
-import STYLES from './MDXContent.scss';
 import Renderer from './renderers';
-
-const getClassName = cssModules(STYLES);
 
 type Props = {
   Content: any,
-  fileName: string,
 };
 
 const MDXContent = (props: Props) => {
-  const { Content, fileName } = props;
+  const { Content } = props;
 
   return (
-    <BpkContentContainer className={getClassName('bpkdocs-mdx-page__content')}>
-      <MDXProvider components={Renderer}>
-        <Content />
-        {fileName && (
-          <>
-            <Heading id="edit-page" level="h2">
-              Improve this page
-            </Heading>
-            <BpkLink
-              href={`https://github.com/skyscanner/backpack-docs/edit/master/docs/src/static-pages/${fileName}`}
-            >
-              Edit this page on GitHub
-            </BpkLink>
-          </>
-        )}
-      </MDXProvider>
-    </BpkContentContainer>
+    <MDXProvider components={Renderer}>
+      <Content />
+    </MDXProvider>
   );
 };
 

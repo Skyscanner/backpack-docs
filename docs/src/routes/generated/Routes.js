@@ -42,7 +42,7 @@ export const guidelines = [{
       <MarkdownPage
         fileName="accessibility.mdx"
         content={DEVELOPER_ACCESSIBILITY_GUIDELINES}
-        metaData={{"title":"Developer Accessibility Guidelines","subtitle":"To ensure that we are building the best possible products that work for everyone, we need to consider accessibility at every stage.","category":"guidelines"}}
+        {...{"title":"Developer Accessibility Guidelines","subtitle":"To ensure that we are building the best possible products that work for everyone, we need to consider accessibility at every stage.","category":"guidelines"}}
       />
     )
   },{
@@ -51,7 +51,7 @@ export const guidelines = [{
       <MarkdownPage
         fileName="copywriting.mdx"
         content={COPYWRITING}
-        metaData={{"title":"Copywriting","subtitle":"Writing for Skyscanner? This basically makes you a hero.","category":"guidelines"}}
+        {...{"title":"Copywriting","subtitle":"Writing for Skyscanner? This basically makes you a hero.","category":"guidelines"}}
       />
     )
   },{
@@ -60,7 +60,7 @@ export const guidelines = [{
       <MarkdownPage
         fileName="iconography.mdx"
         content={ICONOGRAPHY}
-        metaData={{"title":"Iconography","subtitle":"Icons hold a vital role within our identity, guiding travellers through the complex information on-show in our product.","category":"guidelines"}}
+        {...{"title":"Iconography","subtitle":"Icons hold a vital role within our identity, guiding travellers through the complex information on-show in our product.","category":"guidelines"}}
       />
     )
   },{
@@ -69,7 +69,7 @@ export const guidelines = [{
       <MarkdownPage
         fileName="illustration.mdx"
         content={ILLUSTRATION}
-        metaData={{"title":"Illustration","subtitle":"Illustrations are our most versatile identity element, and we use them to great effect across a wide range of applications — from informative product flows to emotive advertising.","category":"guidelines"}}
+        {...{"title":"Illustration","subtitle":"Illustrations are our most versatile identity element, and we use them to great effect across a wide range of applications — from informative product flows to emotive advertising.","category":"guidelines"}}
       />
     )
   },{
@@ -78,7 +78,7 @@ export const guidelines = [{
       <MarkdownPage
         fileName="in-use.mdx"
         content={IN_USE}
-        metaData={{"title":"In use","subtitle":"This section contains an overview of best-practice applications. Here we've brought together all of the elements outlined to create a range of applications that span from product screens to out-of-home advertising.","category":"guidelines"}}
+        {...{"title":"In use","subtitle":"This section contains an overview of best-practice applications. Here we've brought together all of the elements outlined to create a range of applications that span from product screens to out-of-home advertising.","category":"guidelines"}}
       />
     )
   },{
@@ -87,7 +87,7 @@ export const guidelines = [{
       <MarkdownPage
         fileName="logo.mdx"
         content={LOGO}
-        metaData={{"title":"Logo","subtitle":"Our logo is Skyscanner's most important visual element. It is the visual shorthand for our company, and the single graphic that our audiences will attach their emotion to.","category":"guidelines"}}
+        {...{"title":"Logo","subtitle":"Our logo is Skyscanner's most important visual element. It is the visual shorthand for our company, and the single graphic that our audiences will attach their emotion to.","category":"guidelines"}}
       />
     )
   },{
@@ -96,7 +96,7 @@ export const guidelines = [{
       <MarkdownPage
         fileName="photography.mdx"
         content={PHOTOGRAPHY}
-        metaData={{"title":"Photography","subtitle":"Photography captures the spirit of our brand. It allows us to evoke strong emotions, and visually transport our audiences to far-away locations, as well as capturing realistic representations of people and places.","category":"guidelines"}}
+        {...{"title":"Photography","subtitle":"Photography captures the spirit of our brand. It allows us to evoke strong emotions, and visually transport our audiences to far-away locations, as well as capturing realistic representations of people and places.","category":"guidelines"}}
       />
     )
   },{
@@ -105,7 +105,7 @@ export const guidelines = [{
       <MarkdownPage
         fileName="strategy.mdx"
         content={STRATEGY}
-        metaData={{"title":"Strategy","subtitle":"Our brand strategy is the blueprint that gives our brand purpose and direction. It is the set of rules that we use to inform our decisions — from day-to-day queries to long-term challenges. This section will guide you through its components.","category":"guidelines"}}
+        {...{"title":"Strategy","subtitle":"Our brand strategy is the blueprint that gives our brand purpose and direction. It is the set of rules that we use to inform our decisions — from day-to-day queries to long-term challenges. This section will guide you through its components.","category":"guidelines"}}
       />
     )
   }];
@@ -115,7 +115,7 @@ export const using = [{
       <MarkdownPage
         fileName="backpack-react-scripts.mdx"
         content={BACKPACK_REACT_SCRIPTS}
-        metaData={{"title":"Backpack React Scripts","subtitle":"Create React + Backpack web apps with no build configuration.","category":"using"}}
+        {...{"title":"Backpack React Scripts","subtitle":"Create React + Backpack web apps with no build configuration.","category":"using"}}
       />
     )
   },{
@@ -124,7 +124,7 @@ export const using = [{
       <MarkdownPage
         fileName="base-stylesheet.mdx"
         content={BASE_STYLESHEET}
-        metaData={{"title":"Base stylesheet","subtitle":"All components are built on top of a lightweight base stylesheet. Ensure you include this on the page when consuming any Backpack components.","category":"using"}}
+        {...{"title":"Base stylesheet","subtitle":"All components are built on top of a lightweight base stylesheet. Ensure you include this on the page when consuming any Backpack components.","category":"using"}}
       />
     )
   },{
@@ -133,7 +133,7 @@ export const using = [{
       <MarkdownPage
         fileName="getting-started.mdx"
         content={GETTING_STARTED}
-        metaData={{"title":"Getting Started","subtitle":"Depending on the audience, there are a few ways to get started.","category":"using"}}
+        {...{"title":"Getting Started","subtitle":"Depending on the audience, there are a few ways to get started.","category":"using"}}
       />
     )
   },{
@@ -142,7 +142,7 @@ export const using = [{
       <MarkdownPage
         fileName="principles.mdx"
         content={PRINCIPLES}
-        metaData={{"title":"Principles","subtitle":"Backpack components, features and configurations are created with the following principles in mind.","category":"using"}}
+        {...{"title":"Principles","subtitle":"Backpack components, features and configurations are created with the following principles in mind.","category":"using"}}
       />
     )
   },{
@@ -151,7 +151,7 @@ export const using = [{
       <MarkdownPage
         fileName="status.mdx"
         content={BACKPACK_STATUS}
-        metaData={{"title":"Backpack Status","subtitle":"Here you will find the current Backpack CI status and release versions.","category":"using"}}
+        {...{"title":"Backpack Status","subtitle":"Here you will find the current Backpack CI status and release versions.","category":"using"}}
       />
     )
   },{
@@ -160,7 +160,7 @@ export const using = [{
       <MarkdownPage
         fileName="website-contribution-guide.mdx"
         content={UPDATING_THIS_WEBSITE}
-        metaData={{"title":"Updating this website","subtitle":"Backpack belongs to everyone at Skyscanner. Changes are welcomed from anybody.","category":"using"}}
+        {...{"title":"Updating this website","subtitle":"Backpack belongs to everyone at Skyscanner. Changes are welcomed from anybody.","category":"using"}}
       />
     )
   }];
