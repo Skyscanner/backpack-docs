@@ -28,12 +28,9 @@ type Props = {
   altText: String,
 };
 
-/* eslint-disable backpack/use-tokens */
-const dimensions = {
-  width: 750,
-  height: 1334,
-};
-/* eslint-enable */
+// Dimensions of iPhone 8.
+// https://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions
+const aspectRatio = 750 / 1334;
 
 const IOSComponentScreenshots = (props: Props) => {
   const { lightMode, darkMode, altText } = props;
@@ -42,13 +39,13 @@ const IOSComponentScreenshots = (props: Props) => {
     <ComponentScreenshots
       screenshots={[
         {
-          ...dimensions,
+          aspectRatio,
           src: `/${lightMode}`,
           altText,
           subText: '(iPhone 8 simulator)',
         },
         {
-          ...dimensions,
+          aspectRatio,
           src: `/${darkMode}`,
           altText,
           subText: '(iPhone 8 simulator - dark mode)',

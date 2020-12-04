@@ -22,8 +22,9 @@ import React from 'react';
 import { MDXProvider } from '@mdx-js/react';
 import { cssModules } from 'bpk-react-utils';
 import BpkContentContainer from 'bpk-component-content-container';
+import BpkLink from 'bpk-component-link';
 
-import BpkMarkdownRenderer from '../DocsPageBuilder/BpkMarkdownRenderer';
+import Heading from '../Heading';
 
 import STYLES from './MDXContent.scss';
 import Renderer from './renderers';
@@ -35,15 +36,6 @@ type Props = {
   fileName: string,
 };
 
-const editPageLink = fileName => {
-  return `
-
-  ## Improve this page
-
-  [Edit this page on GitHub](https://github.com/skyscanner/backpack-docs/edit/master/docs/src/static-pages/${fileName})
-  `;
-};
-
 const MDXContent = (props: Props) => {
   const { Content, fileName } = props;
 
@@ -51,7 +43,18 @@ const MDXContent = (props: Props) => {
     <BpkContentContainer className={getClassName('bpkdocs-mdx-page__content')}>
       <MDXProvider components={Renderer}>
         <Content />
-        {fileName && <BpkMarkdownRenderer source={editPageLink(fileName)} />}
+        {fileName && (
+          <>
+            <Heading id="edit-page" level="h2">
+              Improve this page
+            </Heading>
+            <BpkLink
+              href={`https://github.com/skyscanner/backpack-docs/edit/master/docs/src/static-pages/${fileName}`}
+            >
+              Edit this page on GitHub
+            </BpkLink>
+          </>
+        )}
       </MDXProvider>
     </BpkContentContainer>
   );

@@ -29,12 +29,15 @@ type Props = {
   androidAltText: string,
 };
 
-/* eslint-disable backpack/use-tokens */
-const dimensions = {
-  ios: { width: 750, height: 1334 },
-  android: { width: 1080, height: 1920 },
+const aspectRatios = {
+  // Dimensions of Google Pixel 1.
+  // https://en.wikipedia.org/wiki/Pixel_(1st_generation)
+  android: 1080 / 1920,
+
+  // Dimensions of iPhone 8.
+  // https://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions
+  ios: 750 / 1334,
 };
-/* eslint-enable */
 
 const NativeComponentScreenshots = (props: Props) => {
   const { iOS, android, iOSAltText, androidAltText } = props;
@@ -43,13 +46,13 @@ const NativeComponentScreenshots = (props: Props) => {
     <ComponentScreenshots
       screenshots={[
         {
-          ...dimensions.ios,
+          aspectRatio: aspectRatios.ios,
           src: `/${iOS}`,
           altText: iOSAltText,
           subText: '(iPhone 8 simulator)',
         },
         {
-          ...dimensions.android,
+          aspectRatio: aspectRatios.android,
           src: `/${android}`,
           altText: androidAltText,
           subText: '(Google Pixel emulator)',

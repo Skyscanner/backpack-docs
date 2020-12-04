@@ -28,12 +28,9 @@ type Props = {
   altText: String,
 };
 
-/* eslint-disable backpack/use-tokens */
-const dimensions = {
-  width: 1080,
-  height: 1920,
-};
-/* eslint-enable */
+// Dimensions of Google Pixel 1.
+// https://en.wikipedia.org/wiki/Pixel_(1st_generation)
+const aspectRatio = 1080 / 1920;
 
 const AndroidComponentScreenshots = (props: Props) => {
   const { lightMode, darkMode, altText } = props;
@@ -42,13 +39,13 @@ const AndroidComponentScreenshots = (props: Props) => {
     <ComponentScreenshots
       screenshots={[
         {
-          ...dimensions,
+          aspectRatio,
           src: `/${lightMode}`,
           altText,
           subText: '(Google Pixel emulator)',
         },
         {
-          ...dimensions,
+          aspectRatio,
           src: `/${darkMode}`,
           altText,
           subText: '(Google Pixel emulator - dark mode)',
