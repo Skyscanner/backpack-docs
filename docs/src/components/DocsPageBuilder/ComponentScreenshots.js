@@ -56,9 +56,11 @@ const ComponentScreenshot = ({ title, subText, ...rest }) => {
       <BpkDescriptionTerm
         className={getClassName('bpkdocs-component-screenshots__item-title')}
       >
-        <BpkText tagName="h3" textStyle="xs">
-          {title}
-        </BpkText>
+        {title && (
+          <BpkText tagName="h3" textStyle="xs">
+            {title}
+          </BpkText>
+        )}
       </BpkDescriptionTerm>
       <BpkDescriptionDetails
         className={getClassName(
@@ -77,8 +79,12 @@ const ComponentScreenshot = ({ title, subText, ...rest }) => {
 };
 
 ComponentScreenshot.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   subText: PropTypes.string.isRequired,
+};
+
+ComponentScreenshot.defaultProps = {
+  title: null,
 };
 
 const ComponentScreenshots = ({ screenshots, ...rest }) => (
@@ -93,7 +99,7 @@ const ComponentScreenshots = ({ screenshots, ...rest }) => (
 ComponentScreenshots.propTypes = {
   screenshots: PropTypes.arrayOf(
     PropTypes.shape({
-      title: PropTypes.string.isRequired,
+      title: PropTypes.string,
       src: PropTypes.string.isRequired,
       width: PropTypes.number.isRequired,
       height: PropTypes.number.isRequired,
