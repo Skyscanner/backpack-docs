@@ -19,7 +19,6 @@
 /* @flow strict */
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import { MDXProvider } from '@mdx-js/react';
 import { cssModules } from 'bpk-react-utils';
 import BpkContentContainer from 'bpk-component-content-container';
@@ -33,7 +32,6 @@ const getClassName = cssModules(STYLES);
 
 type Props = {
   Content: any,
-  darkBackground: boolean,
   fileName: string,
 };
 
@@ -47,24 +45,16 @@ const editPageLink = fileName => {
 };
 
 const MDXContent = (props: Props) => {
-  const { Content, darkBackground, fileName } = props;
+  const { Content, fileName } = props;
 
   return (
     <BpkContentContainer className={getClassName('bpkdocs-mdx-page__content')}>
-      <MDXProvider components={Renderer({ darkBackground })}>
+      <MDXProvider components={Renderer}>
         <Content />
         {fileName && <BpkMarkdownRenderer source={editPageLink(fileName)} />}
       </MDXProvider>
     </BpkContentContainer>
   );
-};
-
-MDXContent.propTypes = {
-  darkBackground: PropTypes.bool,
-};
-
-MDXContent.defaultProps = {
-  darkBackground: false,
 };
 
 export default MDXContent;

@@ -59,23 +59,11 @@
 
   &__mobile-scroll-indicator {
     &--trailing {
-      &--dark {
-        @include bpk-scroll-indicator-right($bpk-color-sky-gray-tint-06);
-      }
-
-      &--light {
-        @include bpk-scroll-indicator-right($bpk-color-sky-gray-tint-07);
-      }
+      @include bpk-scroll-indicator-right($bpk-color-sky-gray-tint-07);
     }
 
     &--leading {
-      &--dark {
-        @include bpk-scroll-indicator-left($bpk-color-sky-gray-tint-06);
-      }
-
-      &--light {
-        @include bpk-scroll-indicator-left($bpk-color-sky-gray-tint-07);
-      }
+      @include bpk-scroll-indicator-left($bpk-color-sky-gray-tint-07);
     }
   }
 
