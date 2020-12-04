@@ -142,7 +142,7 @@ enrichedMarkdownFiles.forEach(({ fileName, data, id }) => {
       <MarkdownPage
         fileName="${fileName}"
         content={${id}}
-        metaData={${JSON.stringify(data)}}
+        {...${JSON.stringify(data)}}
       />
     )
   }`,
