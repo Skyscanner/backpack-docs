@@ -33,9 +33,6 @@ jobs:
           git submodule update --init --recursive
           npm run submodules:pull
 
-      - name: Clear the cache
-        run: npm cache clean --force
-
       - name: Install deps
         run: |
           nvm use
