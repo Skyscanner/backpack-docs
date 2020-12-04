@@ -40,7 +40,7 @@ console.log(
 // Get all the markdown files.
 const markdownFiles = fs
   .readdirSync(PATH_TO_MARKDOWN_FILES)
-  .filter(file => file.endsWith('.md'));
+  .filter(file => file.endsWith('.mdx'));
 
 if (markdownFiles.length === 0) {
   console.error(
@@ -95,12 +95,10 @@ const enrichedMarkdownFiles = markdownFiles.map(fileName => {
 
   return {
     fileName,
-    category: data.category,
     path: `/${data.category}/${urlTitle}`,
-    content,
     id,
-    title: data.title,
-    subtitle: data.subtitle,
+    content,
+    data,
     keywords,
   };
 });
@@ -110,9 +108,10 @@ const constantName = (category, id) => {
 };
 
 const constantStrings = [];
-enrichedMarkdownFiles.forEach(({ category, id, path }) => {
+
+enrichedMarkdownFiles.forEach(({ data, id, path }) => {
   constantStrings.push(
-    `export const ${constantName(category, id)} = '${path}';`,
+    `export const ${constantName(data.category, id)} = '${path}';`,
   );
 });
 
@@ -129,22 +128,21 @@ console.log(colors.green(`Updated ${PATH_TO_ROUTES_CONSTANTS_FILE}`));
 
 // Create the components that'll be used in 'docs/src/routes/generated/Routes.js'.
 const components = {};
-enrichedMarkdownFiles.forEach(({ category, fileName, title, subtitle, id }) => {
-  if (!components[category]) {
-    components[category] = [];
+enrichedMarkdownFiles.forEach(({ fileName, data, id }) => {
+  if (!components[data.category]) {
+    components[data.category] = [];
   }
 
   // Needs to be done as a string, because we can't use JSX here.
-  components[category].push({
+  components[data.category].push({
     import: `import ${id} from '../../static-pages/${fileName}';`,
     component: `{
-    path: ROUTES.${constantName(category, id)},
+    path: ROUTES.${constantName(data.category, id)},
     component: () => (
       <MarkdownPage
         fileName="${fileName}"
-        title="${title}"
-        subtitle="${subtitle}"
         content={${id}}
+        metaData={${JSON.stringify(data)}}
       />
     )
   }`,
@@ -174,15 +172,15 @@ console.log(colors.green(`Updated ${PATH_TO_ROUTES_FILE}`));
 
 // Create the links to appear in the sidebar.
 const links = {};
-enrichedMarkdownFiles.forEach(({ category, path, title, id, keywords }) => {
-  if (!links[category]) {
-    links[category] = [];
+enrichedMarkdownFiles.forEach(({ data, path, id, keywords }) => {
+  if (!links[data.category]) {
+    links[data.category] = [];
   }
 
-  links[category].push({
+  links[data.category].push({
     id,
     route: path,
-    children: title,
+    children: data.title,
     keywords,
   });
 });
@@ -191,6 +189,7 @@ enrichedMarkdownFiles.forEach(({ category, path, title, id, keywords }) => {
 const linksHeader = fs.readFileSync(
   `./scripts/build-process/templates/linksTemplate.js`,
 );
+
 fs.writeFileSync(
   PATH_TO_LINKS_FILE,
   `${linksHeader}\nexport default ${JSON.stringify(links)}`,
