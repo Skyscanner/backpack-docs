@@ -25,6 +25,7 @@ import CopyWebpackPlugin from 'copy-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
 import TerserPlugin from 'terser-webpack-plugin';
+import toc from 'remark-toc';
 
 import postCssPlugins from './scripts/webpack/postCssPlugins';
 import sassFunctions from './node_modules/bpk-mixins/sass-functions';
@@ -191,6 +192,8 @@ const config = {
           },
           {
             loader: '@mdx-js/loader',
+            // More information on the options can be found here: https://github.com/remarkjs/remark-toc#options
+            options: { remarkPlugins: [[toc, { tight: true, maxDepth: 2 }]] },
           },
           {
             loader: path.resolve('./scripts/webpack/removeFrontMatter.js'),
