@@ -31,15 +31,6 @@
 }
 
 .bpkdocs-mdx-page {
-  &__content {
-    padding: $bpk-spacing-lg * 2;
-    background-color: $bpk-color-sky-gray-tint-07;
-
-    @include bpk-breakpoint-mobile {
-      padding: $bpk-spacing-lg;
-    }
-  }
-
   &__table {
     // Using `!important` as we need to override the baremetal HTML styling, which takes precedence.
     /* stylelint-disable declaration-no-important */

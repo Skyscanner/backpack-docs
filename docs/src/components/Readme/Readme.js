@@ -19,22 +19,23 @@
 /* @flow strict */
 
 import React from 'react';
-import { MDXProvider } from '@mdx-js/react';
+import BpkContentContainer from 'bpk-component-content-container';
 
-import Renderer from './renderers';
+import BpkMarkdownRenderer from '../DocsPageBuilder/BpkMarkdownRenderer';
+import getMarkdownString from '../../helpers/markdown-helper';
 
 type Props = {
-  Content: any,
+  file: string,
 };
 
-const MDXContent = (props: Props) => {
-  const { Content } = props;
+const Readme = (props: Props) => {
+  const { file } = props;
 
   return (
-    <MDXProvider components={Renderer}>
-      <Content />
-    </MDXProvider>
+    <BpkContentContainer bareHtml alternate>
+      <BpkMarkdownRenderer source={getMarkdownString(file)} />
+    </BpkContentContainer>
   );
 };
 
-export default MDXContent;
+export default Readme;

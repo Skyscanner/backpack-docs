@@ -16,25 +16,6 @@
  * limitations under the License.
  */
 
-/* @flow strict */
+import Readme from './Readme';
 
-import React from 'react';
-import { MDXProvider } from '@mdx-js/react';
-
-import Renderer from './renderers';
-
-type Props = {
-  Content: any,
-};
-
-const MDXContent = (props: Props) => {
-  const { Content } = props;
-
-  return (
-    <MDXProvider components={Renderer}>
-      <Content />
-    </MDXProvider>
-  );
-};
-
-export default MDXContent;
+export default Readme;

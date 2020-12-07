@@ -322,7 +322,7 @@ const components = [
         <BpkTextarea
           id="textarea"
           name="textarea"
-          value={null}
+          value=""
           placeholder={null}
           onChange={() => null}
         />

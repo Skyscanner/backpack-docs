@@ -20,13 +20,14 @@
 
 import React from 'react';
 
+import MarkdownPage from '../../../components/MarkdownPage';
 import DocsPageWrapper from '../../../components/DocsPageWrapper';
 import IntroBlurb from '../../../components/IntroBlurb';
 
 import Web from './WebTextPage';
-import Android from './AndroidTextPage';
-import IOS from './IOSTextPage';
-import Native from './NativeTextPage';
+import Android, { metadata as androidMetadata } from './AndroidText.mdx';
+import Native, { metadata as nativeMetadata } from './NativeText.mdx';
+import IOS, { metadata as iosMetadata } from './iOSText.mdx';
 
 const Page = () => (
   <DocsPageWrapper
@@ -39,10 +40,10 @@ const Page = () => (
         achieve semantic markup while retaining control over how the text looks.
       </IntroBlurb>,
     ]}
-    androidSubpage={<Android wrapped />}
-    iosSubpage={<IOS wrapped />}
-    webSubpage={<Web wrapped />}
-    nativeSubpage={<Native wrapped />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
+    webSubpage={<Web />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );
 
