@@ -21,9 +21,15 @@ import React from 'react';
 import * as ROUTES from '../../constants/routes';
 import MarkdownPage from '../../components/MarkdownPage';
 
-import DEVELOPER_ACCESSIBILITY_GUIDELINES from '../../static-pages/accessibility.mdx';
+import BACKPACK_REACT_SCRIPTS from '../../static-pages/backpack-react-scripts.mdx';
+import BASE_STYLESHEET from '../../static-pages/base-stylesheet.mdx';
+import GETTING_STARTED from '../../static-pages/getting-started.mdx';
+import PRINCIPLES from '../../static-pages/principles.mdx';
+import BACKPACK_STATUS from '../../static-pages/status.mdx';
+import UPDATING_THIS_WEBSITE from '../../static-pages/website-contribution-guide.mdx';
 import COLOUR from '../../static-pages/colour.mdx';
 import COPYWRITING from '../../static-pages/copywriting.mdx';
+import DEVELOPER_ACCESSIBILITY_GUIDELINES from '../../static-pages/developer-accessibility.mdx';
 import GRAPHIC_DEVICES from '../../static-pages/graphic-devices.mdx';
 import ICONOGRAPHY from '../../static-pages/iconography.mdx';
 import ILLUSTRATION from '../../static-pages/illustration.mdx';
@@ -34,23 +40,63 @@ import SHADOWS from '../../static-pages/shadows.mdx';
 import STRATEGY from '../../static-pages/strategy.mdx';
 import TONE_OF_VOICE from '../../static-pages/tone-of-voice.mdx';
 import TYPOGRAPHY from '../../static-pages/typography.mdx';
-import BACKPACK_REACT_SCRIPTS from '../../static-pages/backpack-react-scripts.mdx';
-import BASE_STYLESHEET from '../../static-pages/base-stylesheet.mdx';
-import GETTING_STARTED from '../../static-pages/getting-started.mdx';
-import PRINCIPLES from '../../static-pages/principles.mdx';
-import BACKPACK_STATUS from '../../static-pages/status.mdx';
-import UPDATING_THIS_WEBSITE from '../../static-pages/website-contribution-guide.mdx';
 
-export const guidelines = [{
-    path: ROUTES.GENERATED_GUIDELINES_DEVELOPER_ACCESSIBILITY_GUIDELINES,
+export const using = [{
+    path: ROUTES.GENERATED_USING_BACKPACK_REACT_SCRIPTS,
     component: () => (
       <MarkdownPage
-        fileName="accessibility.mdx"
-        content={DEVELOPER_ACCESSIBILITY_GUIDELINES}
-        {...{"title":"Developer Accessibility Guidelines","subtitle":"To ensure that we are building the best possible products that work for everyone, we need to consider accessibility at every stage.","category":"guidelines"}}
+        fileName="backpack-react-scripts.mdx"
+        content={BACKPACK_REACT_SCRIPTS}
+        {...{"title":"Backpack React Scripts","subtitle":"Create React + Backpack web apps with no build configuration.","category":"using"}}
       />
     )
   },{
+    path: ROUTES.GENERATED_USING_BASE_STYLESHEET,
+    component: () => (
+      <MarkdownPage
+        fileName="base-stylesheet.mdx"
+        content={BASE_STYLESHEET}
+        {...{"title":"Base stylesheet","subtitle":"All components are built on top of a lightweight base stylesheet. Ensure you include this on the page when consuming any Backpack components.","category":"using"}}
+      />
+    )
+  },{
+    path: ROUTES.GENERATED_USING_GETTING_STARTED,
+    component: () => (
+      <MarkdownPage
+        fileName="getting-started.mdx"
+        content={GETTING_STARTED}
+        {...{"title":"Getting Started","subtitle":"Depending on the audience, there are a few ways to get started.","category":"using"}}
+      />
+    )
+  },{
+    path: ROUTES.GENERATED_USING_PRINCIPLES,
+    component: () => (
+      <MarkdownPage
+        fileName="principles.mdx"
+        content={PRINCIPLES}
+        {...{"title":"Principles","subtitle":"Backpack components, features and configurations are created with the following principles in mind.","category":"using"}}
+      />
+    )
+  },{
+    path: ROUTES.GENERATED_USING_BACKPACK_STATUS,
+    component: () => (
+      <MarkdownPage
+        fileName="status.mdx"
+        content={BACKPACK_STATUS}
+        {...{"title":"Backpack Status","subtitle":"Here you will find the current Backpack CI status and release versions.","category":"using"}}
+      />
+    )
+  },{
+    path: ROUTES.GENERATED_USING_UPDATING_THIS_WEBSITE,
+    component: () => (
+      <MarkdownPage
+        fileName="website-contribution-guide.mdx"
+        content={UPDATING_THIS_WEBSITE}
+        {...{"title":"Updating this website","subtitle":"Backpack belongs to everyone at Skyscanner. Changes are welcomed from anybody.","category":"using"}}
+      />
+    )
+  }];
+export const guidelines = [{
     path: ROUTES.GENERATED_GUIDELINES_COLOUR,
     component: () => (
       <MarkdownPage
@@ -66,6 +112,15 @@ export const guidelines = [{
         fileName="copywriting.mdx"
         content={COPYWRITING}
         {...{"title":"Copywriting","subtitle":"Writing for Skyscanner? This basically makes you a hero.","category":"guidelines"}}
+      />
+    )
+  },{
+    path: ROUTES.GENERATED_GUIDELINES_DEVELOPER_ACCESSIBILITY_GUIDELINES,
+    component: () => (
+      <MarkdownPage
+        fileName="developer-accessibility.mdx"
+        content={DEVELOPER_ACCESSIBILITY_GUIDELINES}
+        {...{"title":"Developer Accessibility Guidelines","subtitle":"To ensure that we are building the best possible products that work for everyone, we need to consider accessibility at every stage.","category":"guidelines"}}
       />
     )
   },{
@@ -156,61 +211,6 @@ export const guidelines = [{
         fileName="typography.mdx"
         content={TYPOGRAPHY}
         {...{"title":"Typography","category":"guidelines"}}
-      />
-    )
-  }];
-export const using = [{
-    path: ROUTES.GENERATED_USING_BACKPACK_REACT_SCRIPTS,
-    component: () => (
-      <MarkdownPage
-        fileName="backpack-react-scripts.mdx"
-        content={BACKPACK_REACT_SCRIPTS}
-        {...{"title":"Backpack React Scripts","subtitle":"Create React + Backpack web apps with no build configuration.","category":"using"}}
-      />
-    )
-  },{
-    path: ROUTES.GENERATED_USING_BASE_STYLESHEET,
-    component: () => (
-      <MarkdownPage
-        fileName="base-stylesheet.mdx"
-        content={BASE_STYLESHEET}
-        {...{"title":"Base stylesheet","subtitle":"All components are built on top of a lightweight base stylesheet. Ensure you include this on the page when consuming any Backpack components.","category":"using"}}
-      />
-    )
-  },{
-    path: ROUTES.GENERATED_USING_GETTING_STARTED,
-    component: () => (
-      <MarkdownPage
-        fileName="getting-started.mdx"
-        content={GETTING_STARTED}
-        {...{"title":"Getting Started","subtitle":"Depending on the audience, there are a few ways to get started.","category":"using"}}
-      />
-    )
-  },{
-    path: ROUTES.GENERATED_USING_PRINCIPLES,
-    component: () => (
-      <MarkdownPage
-        fileName="principles.mdx"
-        content={PRINCIPLES}
-        {...{"title":"Principles","subtitle":"Backpack components, features and configurations are created with the following principles in mind.","category":"using"}}
-      />
-    )
-  },{
-    path: ROUTES.GENERATED_USING_BACKPACK_STATUS,
-    component: () => (
-      <MarkdownPage
-        fileName="status.mdx"
-        content={BACKPACK_STATUS}
-        {...{"title":"Backpack Status","subtitle":"Here you will find the current Backpack CI status and release versions.","category":"using"}}
-      />
-    )
-  },{
-    path: ROUTES.GENERATED_USING_UPDATING_THIS_WEBSITE,
-    component: () => (
-      <MarkdownPage
-        fileName="website-contribution-guide.mdx"
-        content={UPDATING_THIS_WEBSITE}
-        {...{"title":"Updating this website","subtitle":"Backpack belongs to everyone at Skyscanner. Changes are welcomed from anybody.","category":"using"}}
       />
     )
   }];

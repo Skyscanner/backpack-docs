@@ -16,11 +16,11 @@
  * limitations under the License.
  */
 
-export const GENERATED_GUIDELINES_DEVELOPER_ACCESSIBILITY_GUIDELINES = '/guidelines/developer-accessibility-guidelines';
 export const GENERATED_USING_BACKPACK_REACT_SCRIPTS = '/using/backpack-react-scripts';
 export const GENERATED_USING_BASE_STYLESHEET = '/using/base-stylesheet';
 export const GENERATED_GUIDELINES_COLOUR = '/guidelines/colour';
 export const GENERATED_GUIDELINES_COPYWRITING = '/guidelines/copywriting';
+export const GENERATED_GUIDELINES_DEVELOPER_ACCESSIBILITY_GUIDELINES = '/guidelines/developer-accessibility-guidelines';
 export const GENERATED_USING_GETTING_STARTED = '/using/getting-started';
 export const GENERATED_GUIDELINES_GRAPHIC_DEVICES = '/guidelines/graphic-devices';
 export const GENERATED_GUIDELINES_ICONOGRAPHY = '/guidelines/iconography';
