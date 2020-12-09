@@ -522,12 +522,6 @@ export default [
         blank: true,
       },
       {
-        id: 'GITHUB',
-        route: externalRoutes.GITHUB,
-        children: 'GitHub',
-        blank: true,
-      },
-      {
         id: 'REQUESTS',
         route: externalRoutes.REQUEST,
         children: 'Request',

@@ -59,11 +59,6 @@ const sections = {
     link: ROUTES.COMPONENTS,
     icon: ComponentsIcon,
   },
-  GITHUB: {
-    title: 'GitHub',
-    link: 'https://github.com/Skyscanner/backpack',
-    external: true,
-  },
 };
 
 const BpkAlignedArrowDown = withAlignment(
