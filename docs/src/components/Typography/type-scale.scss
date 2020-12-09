@@ -20,6 +20,8 @@
 
 .bpk-docs-type-scale {
   display: flex;
+  height: $bpk-spacing-xxl * 11.2;
+  margin-top: $bpk-spacing-xxl;
 
   @include bpk-breakpoint-mobile {
     overflow: auto;

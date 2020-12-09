@@ -17,10 +17,10 @@
  */
 
 import ColorChart from './ColorChart';
-import colors from './colors';
-import darkModeColors from './darkModeColors';
-import dynamicColors from './dynamicColors';
+import Colors from './Colors';
+import DarkModeColors from './DarkModeColors';
+import DynamicColors from './DynamicColors';
 
 export default ColorChart;
 
-export { colors, darkModeColors, dynamicColors };
+export { Colors, DarkModeColors, DynamicColors };

@@ -17,7 +17,6 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
 import { cssModules } from 'bpk-react-utils';
 
@@ -25,14 +24,11 @@ import STYLES from './font-face.scss';
 
 const getClassName = cssModules(STYLES);
 
-const FontFace = props => {
-  const { className, ...rest } = props;
-
+const FontFace = () => {
   return (
     <div
       aria-label="Example of the Skyscanner Relative fontface"
-      className={getClassName('bpk-docs-font-face', className)}
-      {...rest}
+      className={getClassName('bpk-docs-font-face')}
     >
       <BpkText
         aria-hidden="true"
@@ -69,14 +65,6 @@ const FontFace = props => {
       </BpkText>
     </div>
   );
-};
-
-FontFace.propTypes = {
-  className: PropTypes.string,
-};
-
-FontFace.defaultProps = {
-  className: null,
 };
 
 export default FontFace;

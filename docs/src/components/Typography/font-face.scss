@@ -21,6 +21,7 @@
 .bpk-docs-font-face {
   display: flex;
   width: max-content;
+  margin-bottom: $bpk-spacing-xxl;
   flex-direction: column;
 
   &__text {

@@ -17,7 +17,6 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
 import { cssModules } from 'bpk-react-utils';
 
@@ -58,18 +57,18 @@ const formatSizes = sizes => {
 
 const getClassName = cssModules(STYLES);
 
-const TypeScale = props => {
-  const { className, ...rest } = props;
-
+const TypeScale = () => {
   return (
     <div
       aria-label="Type scale information"
-      className={getClassName('bpk-docs-type-scale', className)}
-      {...rest}
+      className={getClassName('bpk-docs-type-scale')}
     >
       <div aria-hidden="true">
         {intervals.map(interval => (
-          <div className={getClassName('bpk-docs-type-scale__row')}>
+          <div
+            className={getClassName('bpk-docs-type-scale__row')}
+            key={interval.style}
+          >
             <BpkText
               textStyle="xs"
               className={getClassName(
@@ -127,14 +126,6 @@ const TypeScale = props => {
       </div>
     </div>
   );
-};
-
-TypeScale.propTypes = {
-  className: PropTypes.string,
-};
-
-TypeScale.defaultProps = {
-  className: null,
 };
 
 export default TypeScale;
