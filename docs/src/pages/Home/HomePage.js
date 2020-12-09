@@ -29,12 +29,11 @@ import ComponentsImage from '../../static/components_hero.jpg';
 import DesignTokensImage from '../../static/design_tokens.jpg';
 import RequestImage from '../../static/request.jpg';
 import SassDocImage from '../../static/sassdoc.jpg';
-import GitHubImage from '../../static/github.jpg';
+import IconsImage from '../../static/icons.png';
 import UsingBackpackImage from '../../static/using_bpk.jpg';
 import GuidelinesImage from '../../static/guidelines.png';
 import ComponentsIcon from '../../static/components_icon.svg';
 import DesignTokensIcon from '../../static/design_tokens_icon.svg';
-import GitHubIcon from '../../static/github_icon.svg';
 import UsingBackpackIcon from '../../static/using_bpk_icon.svg';
 import GuidelinesIcon from '../../static/guidelines_icon.svg';
 import HeroImage from '../../static/hero.png';
@@ -58,11 +57,11 @@ const CARD_CONTENTS = [
     icon: ComponentsIcon,
   },
   {
-    key: 'guidelines',
-    title: 'Guidelines',
-    href: ROUTES.GUIDELINES,
-    image: GuidelinesImage,
-    icon: GuidelinesIcon,
+    key: 'icons',
+    title: 'Icons',
+    href: `${ROUTES.ICON}?platform=design`,
+    image: IconsImage,
+    icon: null,
   },
   {
     key: 'design-tokens',
@@ -71,6 +70,13 @@ const CARD_CONTENTS = [
     image: DesignTokensImage,
     icon: DesignTokensIcon,
     fullWidth: true,
+  },
+  {
+    key: 'guidelines',
+    title: 'Guidelines',
+    href: ROUTES.GUIDELINES,
+    image: GuidelinesImage,
+    icon: GuidelinesIcon,
   },
   {
     key: 'using-backpack',
@@ -94,16 +100,6 @@ const CARD_CONTENTS = [
     blank: true,
     image: RequestImage,
     icon: null,
-  },
-  {
-    key: 'github',
-    title: 'GitHub',
-    href: EXTERNAL_ROUTES.GITHUB,
-    blank: true,
-    image: GitHubImage,
-    icon: GitHubIcon,
-    iconWidth: '9.5625rem',
-    centerIcon: true,
   },
 ];
 
