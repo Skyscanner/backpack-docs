@@ -21,8 +21,7 @@
 import React from 'react';
 import { cssModules } from 'bpk-react-utils';
 import BpkLink from 'bpk-component-link';
-
-import Heading from '../Heading';
+import BpkButton from 'bpk-component-button';
 
 import STYLES from './MarkdownPage.scss';
 
@@ -54,145 +53,132 @@ const AdditionalLinks = (props: Props) => {
   }
 
   return (
-    <>
-      {/* JitPack link */}
-      {platform && platform === PLATFORMS.android && (
-        <>
-          <Heading level="h2">JitPack repository</Heading>
+    <div className={getClassName('bpkdocs-markdown-page__additional-links')}>
+      <div>
+        {/* JitPack link */}
+        {platform && platform === PLATFORMS.android && (
           <BpkLink
             href="https://jitpack.io/#skyscanner/backpack-android"
             blank
             className={getClassName('bpkdocs-markdown-page__link')}
           >
-            View on JitPack&nbsp;
             <img
               src="https://jitpack.io/v/skyscanner/backpack-android.svg"
               alt="View on JitPack"
             />
           </BpkLink>
-        </>
-      )}
+        )}
 
-      {/* CocoaPod link */}
-      {platform && platform === PLATFORMS.ios && (
-        <>
-          <Heading level="h2">CocoaPod</Heading>
+        {/* CocoaPod link */}
+        {platform && platform === PLATFORMS.ios && (
           <BpkLink
             href="https://cocoapods.org/pods/Backpack"
             blank
             className={getClassName('bpkdocs-markdown-page__link')}
           >
-            View on CocoaPods&nbsp;
             <img
               src="https://img.shields.io/cocoapods/v/Backpack.svg?style=flat"
               alt="View on CocoaPods"
             />
           </BpkLink>
-        </>
-      )}
+        )}
 
-      {/* RN npm link */}
-      {platform && platform === PLATFORMS.native && (
-        <>
-          <Heading level="h2">Class reference</Heading>
+        {/* RN npm link */}
+        {platform && platform === PLATFORMS.native && (
           <BpkLink
             href="https://www.npmjs.com/package/backpack-react-native"
             blank
             className={getClassName('bpkdocs-markdown-page__link')}
           >
-            View on npm&nbsp;
             <img
               src="https://badge.fury.io/js/backpack-react-native.svg"
               alt="View backpack-react-native on npm"
-              height={18}
             />
           </BpkLink>
-        </>
-      )}
+        )}
 
-      {/* Android documentation link */}
-      {platform && platform === PLATFORMS.android && documentationId && (
-        <>
-          <Heading level="h2">Class reference</Heading>
+        {/* Android documentation link */}
+        {platform && platform === PLATFORMS.android && documentationId && (
           <BpkLink
             href={`/android/versions/latest/${documentationId}`}
             blank
             className={getClassName('bpkdocs-markdown-page__link')}
           >
-            View on Backpack&apos;s Android documentation
+            <img
+              src="https://img.shields.io/badge/Class%20reference-Android-blue"
+              alt="View class reference"
+            />
           </BpkLink>
-        </>
-      )}
+        )}
 
-      {/* iOS documentation link */}
-      {platform && platform === PLATFORMS.ios && documentationId && (
-        <>
-          <Heading level="h2">Class reference</Heading>
+        {/* iOS documentation link */}
+        {platform && platform === PLATFORMS.ios && documentationId && (
           <BpkLink
             href={`/ios/versions/latest/Classes/${documentationId}.html`}
             blank
             className={getClassName('bpkdocs-markdown-page__link')}
           >
-            View on Backpack&apos;s iOS documentation
+            <img
+              src="https://img.shields.io/badge/Class%20reference-iOS-blue"
+              alt="View class reference"
+            />
           </BpkLink>
-        </>
-      )}
+        )}
 
-      {/* Android GitHub link */}
-      {platform && platform === PLATFORMS.android && githubPath && (
-        <>
-          <Heading level="h2">Source code</Heading>
+        {/* Android GitHub link */}
+        {platform && platform === PLATFORMS.android && githubPath && (
           <BpkLink
             href={`https://github.com/Skyscanner/backpack-android/tree/master/Backpack/src/main/java/net/skyscanner/backpack/${githubPath}`}
             blank
             className={getClassName('bpkdocs-markdown-page__link')}
           >
-            View on GitHub
+            <img
+              src="https://img.shields.io/badge/Source%20code-GitHub-lightgrey"
+              alt="View source code on GitHub"
+            />
           </BpkLink>
-        </>
-      )}
+        )}
 
-      {/* iOS GitHub link */}
-      {platform && platform === PLATFORMS.ios && githubPath && (
-        <>
-          <Heading level="h2">Source code</Heading>
+        {/* iOS GitHub link */}
+        {platform && platform === PLATFORMS.ios && githubPath && (
           <BpkLink
             href={`https://github.com/Skyscanner/backpack-ios/tree/master/Backpack/${githubPath}`}
             blank
             className={getClassName('bpkdocs-markdown-page__link')}
           >
-            View on GitHub
+            <img
+              src="https://img.shields.io/badge/Source%20code-GitHub-lightgrey"
+              alt="View source code on GitHub"
+            />
           </BpkLink>
-        </>
-      )}
+        )}
 
-      {/* RN GitHub link */}
-      {platform && platform === PLATFORMS.native && githubPath && (
-        <>
-          <Heading level="h2">Source code</Heading>
+        {/* RN GitHub link */}
+        {platform && platform === PLATFORMS.native && githubPath && (
           <BpkLink
             href={`https://github.com/Skyscanner/backpack-react-native/tree/master/lib/${githubPath}`}
             blank
             className={getClassName('bpkdocs-markdown-page__link')}
           >
-            View on GitHub
+            <img
+              src="https://img.shields.io/badge/Source%20code-GitHub-lightgrey"
+              alt="View source code on GitHub"
+            />
           </BpkLink>
-        </>
-      )}
+        )}
+      </div>
 
       {fileName && (
-        <>
-          <Heading id="edit-page" level="h2">
-            Improve this page
-          </Heading>
-          <BpkLink
-            href={`https://github.com/skyscanner/backpack-docs/edit/master/docs/src/static-pages/${fileName}`}
-          >
-            Edit this page on GitHub
-          </BpkLink>
-        </>
+        <BpkButton
+          secondary
+          blank
+          className={getClassName('bpkdocs-markdown-page__edit-button')}
+          href={`https://github.com/skyscanner/backpack-docs/edit/master/docs/src/static-pages/${fileName}`}
+        >
+          Edit page
+        </BpkButton>
       )}
-    </>
+    </div>
   );
 };
 
