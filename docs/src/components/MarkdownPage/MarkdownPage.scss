@@ -39,7 +39,20 @@
     }
   }
 
+  &__additional-links {
+    display: grid;
+    grid-template-columns: 1fr ($bpk-spacing-lg * 5);
+    align-items: center;
+  }
+
   &__link {
+    @include bpk-margin-trailing($bpk-spacing-xs);
+  }
+
+  &__edit-button {
+    position: absolute;
+    top: $bpk-spacing-md;
+    right: $bpk-spacing-md;
     display: flex;
     align-items: center;
   }

@@ -67,13 +67,13 @@ const MarkdownPage = (props: Props) => {
       <BpkContentContainer
         className={getClassName('bpkdocs-markdown-page__content')}
       >
-        <MDXContent Content={content} fileName={fileName} />
         <AdditionalLinks
           platform={platform}
           documentationId={documentationId}
           githubPath={githubPath}
           fileName={fileName}
         />
+        <MDXContent Content={content} fileName={fileName} />
       </BpkContentContainer>
     </>
   );
