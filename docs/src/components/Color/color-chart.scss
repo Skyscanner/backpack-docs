@@ -16,6 +16,27 @@
  * limitations under the License.
  */
 
-import page from './ToneOfVoicePage';
+@import '~bpk-mixins/index';
 
-export default page;
+.bpk-docs-colors-chart {
+  width: 100%;
+  max-width: 21 * $bpk-spacing-xxl;
+
+  &__item {
+    display: flex;
+    width: 100%;
+    max-width: $bpk-spacing-xxl;
+    height: $bpk-spacing-md;
+    justify-content: center;
+    align-items: center;
+    background-color: $bpk-color-sky-gray;
+  }
+
+  &__blob {
+    width: 80%;
+    max-width: $bpk-spacing-xs;
+    height: $bpk-spacing-xs;
+    border-radius: $bpk-border-radius-pill-lg;
+    background-color: $bpk-color-white;
+  }
+}

@@ -16,6 +16,34 @@
  * limitations under the License.
  */
 
-import page from './ShadowsPage';
+@import '~bpk-mixins/index';
 
-export default page;
+.bpk-docs-type-scale {
+  display: flex;
+  height: $bpk-spacing-xxl * 11.2;
+  margin-top: $bpk-spacing-xxl;
+
+  @include bpk-breakpoint-mobile {
+    overflow: auto;
+  }
+
+  &__row {
+    display: flex;
+    width: max-content;
+    margin-bottom: $bpk-spacing-base;
+    align-items: flex-end;
+  }
+
+  &__text {
+    margin-right: $bpk-spacing-md;
+
+    &--style {
+      width: $bpk-spacing-base * 2;
+      color: $bpk-color-abisko;
+    }
+
+    &--annotation {
+      color: $bpk-color-sky-gray-tint-03;
+    }
+  }
+}

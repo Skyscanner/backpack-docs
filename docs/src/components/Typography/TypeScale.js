@@ -17,7 +17,6 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
 import { cssModules } from 'bpk-react-utils';
 
@@ -27,6 +26,7 @@ const BOOK_OR_BOLD = 'Book or Bold';
 const BOOK_OR_BOLD_OR_BLACK = 'Book, Bold or Black';
 
 const intervals = [
+  // TODO: Once the Android support for 'caps' has been removed we need to remove this as the style does not match that supported by BpkText so throws an error in the browser console.
   { style: 'caps', sizes: [10], weights: BOOK_OR_BOLD },
   { style: 'xs', sizes: [12, 16], weights: BOOK_OR_BOLD },
   { style: 'sm', sizes: [14, 18], weights: BOOK_OR_BOLD },
@@ -57,21 +57,18 @@ const formatSizes = sizes => {
 
 const getClassName = cssModules(STYLES);
 
-const TypeScale = props => {
-  const { className, ...rest } = props;
-
+const TypeScale = () => {
   return (
     <div
       aria-label="Type scale information"
-      className={getClassName('bpk-docs-type-scale', className)}
-      {...rest}
+      className={getClassName('bpk-docs-type-scale')}
     >
-      <div
-        aria-hidden="true"
-        className={getClassName('bpk-docs-type-scale__table')}
-      >
+      <div aria-hidden="true">
         {intervals.map(interval => (
-          <div className={getClassName('bpk-docs-type-scale__row')}>
+          <div
+            className={getClassName('bpk-docs-type-scale__row')}
+            key={interval.style}
+          >
             <BpkText
               textStyle="xs"
               className={getClassName(
@@ -129,14 +126,6 @@ const TypeScale = props => {
       </div>
     </div>
   );
-};
-
-TypeScale.propTypes = {
-  className: PropTypes.string,
-};
-
-TypeScale.defaultProps = {
-  className: null,
 };
 
 export default TypeScale;

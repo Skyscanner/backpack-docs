@@ -16,6 +16,11 @@
  * limitations under the License.
  */
 
-import page from './GraphicDevicesPage';
+import ColorChart from './ColorChart';
+import Colors from './Colors';
+import DarkModeColors from './DarkModeColors';
+import DynamicColors from './DynamicColors';
 
-export default page;
+export default ColorChart;
+
+export { Colors, DarkModeColors, DynamicColors };

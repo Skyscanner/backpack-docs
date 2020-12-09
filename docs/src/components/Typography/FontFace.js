@@ -17,7 +17,6 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
 import { cssModules } from 'bpk-react-utils';
 
@@ -25,19 +24,16 @@ import STYLES from './font-face.scss';
 
 const getClassName = cssModules(STYLES);
 
-const FontFace = props => {
-  const { className, ...rest } = props;
-
+const FontFace = () => {
   return (
     <div
       aria-label="Example of the Skyscanner Relative fontface"
-      className={getClassName('bpk-docs-font-face', className)}
-      {...rest}
+      className={getClassName('bpk-docs-font-face')}
     >
       <BpkText
         aria-hidden="true"
         className={getClassName('bpk-docs-font-face__text')}
-        textStyle="xxl"
+        textStyle="base"
       >
         Book AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
       </BpkText>
@@ -47,14 +43,14 @@ const FontFace = props => {
           'bpk-docs-font-face__text',
           'bpk-docs-font-face__text--medium',
         )}
-        textStyle="xxl"
+        textStyle="base"
       >
         Medium AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
       </BpkText>
       <BpkText
         aria-hidden="true"
         className={getClassName('bpk-docs-font-face__text')}
-        textStyle="xxl"
+        textStyle="base"
         weight={WEIGHT_STYLES.bold}
       >
         Bold AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
@@ -62,21 +58,13 @@ const FontFace = props => {
       <BpkText
         aria-hidden="true"
         className={getClassName('bpk-docs-font-face__text')}
-        textStyle="xxl"
+        textStyle="base"
         weight={WEIGHT_STYLES.black}
       >
         Black AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
       </BpkText>
     </div>
   );
-};
-
-FontFace.propTypes = {
-  className: PropTypes.string,
-};
-
-FontFace.defaultProps = {
-  className: null,
 };
 
 export default FontFace;

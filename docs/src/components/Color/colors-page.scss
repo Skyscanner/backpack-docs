@@ -18,30 +18,13 @@
 
 @import '~bpk-mixins/index';
 
-.bpk-docs-typography-page {
+.bpk-docs-colors-page {
   display: flex;
   margin-left: -$bpk-spacing-sm;
   flex-wrap: wrap;
 
   &__hero {
-    background-color: $bpk-color-abisko;
-  }
-
-  &__section {
-    overflow: hidden;
-
-    &--type-scale {
-      padding-bottom: 0;
-    }
-  }
-
-  &__hello-relative {
-    margin-bottom: $bpk-spacing-xxl;
-  }
-
-  &__type-scale {
-    height: $bpk-spacing-xxl * 11.2;
-    margin-top: $bpk-spacing-xxl;
+    background-color: $bpk-color-monteverde;
   }
 
   &__image {

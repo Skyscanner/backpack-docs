@@ -22,13 +22,18 @@ import * as ROUTES from '../../constants/routes';
 import MarkdownPage from '../../components/MarkdownPage';
 
 import DEVELOPER_ACCESSIBILITY_GUIDELINES from '../../static-pages/accessibility.mdx';
+import COLOUR from '../../static-pages/colour.mdx';
 import COPYWRITING from '../../static-pages/copywriting.mdx';
+import GRAPHIC_DEVICES from '../../static-pages/graphic-devices.mdx';
 import ICONOGRAPHY from '../../static-pages/iconography.mdx';
 import ILLUSTRATION from '../../static-pages/illustration.mdx';
 import IN_USE from '../../static-pages/in-use.mdx';
 import LOGO from '../../static-pages/logo.mdx';
 import PHOTOGRAPHY from '../../static-pages/photography.mdx';
+import SHADOWS from '../../static-pages/shadows.mdx';
 import STRATEGY from '../../static-pages/strategy.mdx';
+import TONE_OF_VOICE from '../../static-pages/tone-of-voice.mdx';
+import TYPOGRAPHY from '../../static-pages/typography.mdx';
 import BACKPACK_REACT_SCRIPTS from '../../static-pages/backpack-react-scripts.mdx';
 import BASE_STYLESHEET from '../../static-pages/base-stylesheet.mdx';
 import GETTING_STARTED from '../../static-pages/getting-started.mdx';
@@ -46,12 +51,30 @@ export const guidelines = [{
       />
     )
   },{
+    path: ROUTES.GENERATED_GUIDELINES_COLOUR,
+    component: () => (
+      <MarkdownPage
+        fileName="colour.mdx"
+        content={COLOUR}
+        {...{"title":"Colour","category":"guidelines"}}
+      />
+    )
+  },{
     path: ROUTES.GENERATED_GUIDELINES_COPYWRITING,
     component: () => (
       <MarkdownPage
         fileName="copywriting.mdx"
         content={COPYWRITING}
         {...{"title":"Copywriting","subtitle":"Writing for Skyscanner? This basically makes you a hero.","category":"guidelines"}}
+      />
+    )
+  },{
+    path: ROUTES.GENERATED_GUIDELINES_GRAPHIC_DEVICES,
+    component: () => (
+      <MarkdownPage
+        fileName="graphic-devices.mdx"
+        content={GRAPHIC_DEVICES}
+        {...{"title":"Graphic Devices","category":"guidelines"}}
       />
     )
   },{
@@ -100,12 +123,39 @@ export const guidelines = [{
       />
     )
   },{
+    path: ROUTES.GENERATED_GUIDELINES_SHADOWS,
+    component: () => (
+      <MarkdownPage
+        fileName="shadows.mdx"
+        content={SHADOWS}
+        {...{"title":"Shadows","category":"guidelines"}}
+      />
+    )
+  },{
     path: ROUTES.GENERATED_GUIDELINES_STRATEGY,
     component: () => (
       <MarkdownPage
         fileName="strategy.mdx"
         content={STRATEGY}
         {...{"title":"Strategy","subtitle":"Our brand strategy is the blueprint that gives our brand purpose and direction. It is the set of rules that we use to inform our decisions — from day-to-day queries to long-term challenges. This section will guide you through its components.","category":"guidelines"}}
+      />
+    )
+  },{
+    path: ROUTES.GENERATED_GUIDELINES_TONE_OF_VOICE,
+    component: () => (
+      <MarkdownPage
+        fileName="tone-of-voice.mdx"
+        content={TONE_OF_VOICE}
+        {...{"title":"Tone of voice","category":"guidelines"}}
+      />
+    )
+  },{
+    path: ROUTES.GENERATED_GUIDELINES_TYPOGRAPHY,
+    component: () => (
+      <MarkdownPage
+        fileName="typography.mdx"
+        content={TYPOGRAPHY}
+        {...{"title":"Typography","category":"guidelines"}}
       />
     )
   }];
