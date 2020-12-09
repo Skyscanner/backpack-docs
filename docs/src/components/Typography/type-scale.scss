@@ -18,33 +18,30 @@
 
 @import '~bpk-mixins/index';
 
-.bpk-docs-typography-page {
+.bpk-docs-type-scale {
   display: flex;
-  margin-left: -$bpk-spacing-sm;
-  flex-wrap: wrap;
 
-  &__hero {
-    background-color: $bpk-color-abisko;
+  @include bpk-breakpoint-mobile {
+    overflow: auto;
   }
 
-  &__section {
-    overflow: hidden;
+  &__row {
+    display: flex;
+    width: max-content;
+    margin-bottom: $bpk-spacing-base;
+    align-items: flex-end;
+  }
 
-    &--type-scale {
-      padding-bottom: 0;
+  &__text {
+    margin-right: $bpk-spacing-md;
+
+    &--style {
+      width: $bpk-spacing-base * 2;
+      color: $bpk-color-abisko;
     }
-  }
 
-  &__hello-relative {
-    margin-bottom: $bpk-spacing-xxl;
-  }
-
-  &__type-scale {
-    height: $bpk-spacing-xxl * 11.2;
-    margin-top: $bpk-spacing-xxl;
-  }
-
-  &__image {
-    width: 100%;
+    &--annotation {
+      color: $bpk-color-sky-gray-tint-03;
+    }
   }
 }

@@ -1,0 +1,52 @@
+---
+title: Colour
+category: guidelines
+---
+
+import { Fragment } from 'react';
+
+import ColorChart, {colors, darkModeColors, dynamicColors} from '../components/Color'
+
+## Table of Contents
+
+## Introduction
+
+Our colour palette is built around a bold lead colour, Sky Blue. It represents clarity and optimism, and above all embodies the sky of a perfect trip — year round. 
+
+We are a multi-colour brand, and support Sky Blue with a wider palette of warm, natural colours that represent the rich hues found all over our planet — from bustling cities to untouched natural landscapes.
+
+## Palette
+
+<Fragment>
+  {colors}
+</Fragment>
+
+## Dark mode palette
+
+The Dark Mode palette extends our regular palette. The colours in this palette should <strong>never ever</strong> be used in light mode.
+
+<Fragment>
+  {darkModeColors}
+</Fragment>
+
+## Dark mode dynamic colours
+
+Dynamic colours are colour values which automatically adapt for light and dark modes. If you use these colours, the dark-mode variation will automatically be applied when a device&apos;s dark mode is enabled.
+
+<Fragment>
+  {dynamicColors}
+</Fragment>
+
+## Colour pairings
+
+For colour pairings to be accessible, they should meet the minimum contrast ratios outlined in the [WCAG contrast guidelines](https://www.w3.org/TR/WCAG21/#contrast-minimum). See the accessible pairings from our colour palette using the filters below.
+
+<Fragment>
+  <ColorChart />
+</Fragment>
+
+## Examples
+
+![Color pairings](../static/colours/colour_examples.png)
+
+## Links

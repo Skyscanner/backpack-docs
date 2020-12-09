@@ -16,6 +16,11 @@
  * limitations under the License.
  */
 
-import page from './ShadowsPage';
+import ColorChart from './ColorChart';
+import colors from './colors';
+import darkModeColors from './darkModeColors';
+import dynamicColors from './dynamicColors';
 
-export default page;
+export default ColorChart;
+
+export { colors, darkModeColors, dynamicColors };

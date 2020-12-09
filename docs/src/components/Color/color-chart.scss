@@ -18,44 +18,25 @@
 
 @import '~bpk-mixins/index';
 
-.bpkdocs-toneofvoice-page {
-  &__hero {
-    background: $bpk-color-panjin;
-    background-repeat: no-repeat;
-    background-position: right;
+.bpk-docs-colors-chart {
+  width: 100%;
+  max-width: 21 * $bpk-spacing-xxl;
+
+  &__item {
+    display: flex;
+    width: 100%;
+    max-width: $bpk-spacing-xxl;
+    height: $bpk-spacing-md;
+    justify-content: center;
+    align-items: center;
+    background-color: $bpk-color-sky-gray;
   }
 
-  &__traveller-first {
-    &--dont {
-      color: $bpk-color-panjin;
-    }
-  }
-
-  &__icon {
-    width: $bpk-spacing-xxl;
-    height: $bpk-spacing-xxl;
-
-    &--do {
-      fill: $bpk-color-monteverde;
-    }
-
-    &--dont {
-      fill: $bpk-color-panjin;
-    }
-  }
-
-  &__example-section {
-    padding-bottom: 0;
-  }
-
-  &__example-content-container {
-    margin-bottom: $bpk-spacing-base * -1;
-  }
-
-  &__example-card {
-    > :first-child {
-      display: block;
-      margin: 0 auto $bpk-spacing-xxl auto;
-    }
+  &__blob {
+    width: 80%;
+    max-width: $bpk-spacing-xs;
+    height: $bpk-spacing-xs;
+    border-radius: $bpk-border-radius-pill-lg;
+    background-color: $bpk-color-white;
   }
 }

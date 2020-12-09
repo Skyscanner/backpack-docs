@@ -16,6 +16,7 @@
  * limitations under the License.
  */
 
-import page from './TypographyPage';
+import FontFace from './FontFace';
+import TypeScale from './TypeScale';
 
-export default page;
+export { FontFace, TypeScale };

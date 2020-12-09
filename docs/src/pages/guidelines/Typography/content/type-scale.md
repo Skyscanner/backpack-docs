@@ -1,2 +1,0 @@
-We use a type scale system for type hierarchy and to create harmony across our products. 
-Our custom cut of Relative integrates our custom measures for leading and tracking allowing very minimal engineering customisation and being fit for purpose in it’s standard form.
