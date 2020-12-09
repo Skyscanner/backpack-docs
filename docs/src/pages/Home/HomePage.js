@@ -29,7 +29,7 @@ import ComponentsImage from '../../static/components_hero.jpg';
 import DesignTokensImage from '../../static/design_tokens.jpg';
 import RequestImage from '../../static/request.jpg';
 import SassDocImage from '../../static/sassdoc.jpg';
-import IconsImage from '../../static/icons.png';
+import IconsImage from '../../static/icons.jpg';
 import UsingBackpackImage from '../../static/using_bpk.jpg';
 import GuidelinesImage from '../../static/guidelines.png';
 import ComponentsIcon from '../../static/components_icon.svg';
