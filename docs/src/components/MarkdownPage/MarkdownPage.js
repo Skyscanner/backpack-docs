@@ -39,7 +39,7 @@ const SEOElements = (props: { subtitle: ?string, title: string }) => {
   return (
     <Helmet>
       <title>{title}</title>
-      <meta property="twitter:title" content={`${title} — Backpack`} />
+      <meta property="twitter:title" content={`${title} | Backpack`} />
       {description && <meta name="description" content={description} />}
       {description && <meta name="og:description" content={description} />}
     </Helmet>
