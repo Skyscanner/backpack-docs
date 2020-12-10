@@ -22,6 +22,7 @@ import BpkModal from 'bpk-component-modal';
 import { cssModules } from 'bpk-react-utils';
 import React, { Component, type Node } from 'react';
 import BpkBreakpoint, { BREAKPOINTS } from 'bpk-component-breakpoint';
+import BpkSkipLink from 'bpk-component-skip-link';
 
 import Sidebar from './Sidebar';
 import STYLES from './SideNavLayout.scss';
@@ -91,6 +92,11 @@ export default class SideNavLayout extends Component<Props, State> {
 
     return (
       <section className={getClassName('bpkdocs-side-nav-layout')}>
+        <BpkSkipLink
+          className={getClassName('bpkdocs-side-nav-layout__skip-link')}
+          label="Skip to main content"
+          href="#main-content"
+        />
         <BpkBreakpoint query={BREAKPOINTS.TABLET}>
           {isTablet =>
             isTablet ? (
@@ -123,7 +129,10 @@ export default class SideNavLayout extends Component<Props, State> {
             )
           }
         </BpkBreakpoint>
-        <section className={getClassName('bpkdocs-side-nav-layout__main')}>
+        <section
+          id="main-content"
+          className={getClassName('bpkdocs-side-nav-layout__main')}
+        >
           <MenuToggle onHamburgerClick={this.onHamburgerClick} />
           {children}
         </section>

@@ -30,6 +30,13 @@ const ComponentsLinks = [
     sort: true,
     links: [
       {
+        id: 'SKIP_LINK',
+        route: routes.SKIP_LINK,
+        children: 'Skip link',
+        tags: ['web'],
+        keywords: ['skiplink'],
+      },
+      {
         id: 'BOTTOM_NAV',
         route: routes.BOTTOM_NAV,
         children: 'Bottom Nav',

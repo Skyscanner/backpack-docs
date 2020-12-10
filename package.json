@@ -251,6 +251,7 @@
     "not ie < 9"
   ],
   "dependencies": {
+    "bpk-component-skip-link": "^1.0.1",
     "get-contrast-ratio": "^0.2.1"
   },
   "snyk": true

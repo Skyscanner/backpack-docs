@@ -16,38 +16,26 @@
  * limitations under the License.
  */
 
-@import '~bpk-mixins/index';
+/* @flow strict */
 
-.bpkdocs-side-nav-layout {
-  display: flex;
-  min-height: 35 * $bpk-spacing-xl;
-  overflow: hidden;
+import React from 'react';
 
-  @include bpk-breakpoint-tablet {
-    min-height: 20 * $bpk-spacing-xl;
-  }
+import DocsPageWrapper from '../../../components/DocsPageWrapper';
+import IntroBlurb from '../../../components/IntroBlurb';
 
-  &__sidebar-destop-wrapper {
-    display: flex;
+import WebSkipLinks from './WebSkipLinkPage';
 
-    @include bpk-breakpoint-tablet {
-      display: none;
-    }
-  }
+const SkipLinkPage = () => (
+  <DocsPageWrapper
+    title="Skip link"
+    blurb={[
+      <IntroBlurb>
+        Skip links help users of assistive technology as well as power-users
+        navigate our site quicker.
+      </IntroBlurb>,
+    ]}
+    webSubpage={<WebSkipLinks wrapped />}
+  />
+);
 
-  &__modal-content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__main {
-    min-width: 0;
-    flex: 1;
-  }
-
-  &__skip-link {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-  }
-}
+export default SkipLinkPage;

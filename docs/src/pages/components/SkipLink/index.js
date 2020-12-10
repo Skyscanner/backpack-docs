@@ -16,38 +16,8 @@
  * limitations under the License.
  */
 
-@import '~bpk-mixins/index';
+/* @flow strict */
 
-.bpkdocs-side-nav-layout {
-  display: flex;
-  min-height: 35 * $bpk-spacing-xl;
-  overflow: hidden;
+import page from './SkipLinkPage';
 
-  @include bpk-breakpoint-tablet {
-    min-height: 20 * $bpk-spacing-xl;
-  }
-
-  &__sidebar-destop-wrapper {
-    display: flex;
-
-    @include bpk-breakpoint-tablet {
-      display: none;
-    }
-  }
-
-  &__modal-content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__main {
-    min-width: 0;
-    flex: 1;
-  }
-
-  &__skip-link {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-  }
-}
+export default page;
