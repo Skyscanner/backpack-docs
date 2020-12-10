@@ -27,16 +27,19 @@ import Heading from '../Heading';
 import IntroBlurb from '../IntroBlurb';
 import MDXContent from '../MDXContent/MDXContent';
 
-import AdditionalLinks, { PLATFORMS } from './AdditionalLinks';
+import AdditionalLinks, { type PlatformType } from './AdditionalLinks';
 import STYLES from './MarkdownPage.scss';
 
 const getClassName = cssModules(STYLES);
 
-const SEOElements = (props: { description: ?string, title: ?string }) => {
-  const { description, title } = props;
+const SEOElements = (props: { subtitle: ?string, title: string }) => {
+  const { subtitle, title } = props;
+  const description =
+    subtitle || `${title} — Backpack, Skyscanner's design system`;
   return (
     <Helmet>
-      {title && <title>{title}</title>}
+      <title>{title}</title>
+      <meta property="twitter:title" content={`${title} — Backpack`} />
       {description && <meta name="description" content={description} />}
       {description && <meta name="og:description" content={description} />}
     </Helmet>
@@ -46,9 +49,9 @@ const SEOElements = (props: { description: ?string, title: ?string }) => {
 type Props = {
   content: any,
   fileName: string,
-  title: ?string,
+  title: string,
   subtitle: ?string,
-  platform: ?$Keys<typeof PLATFORMS>,
+  platform: ?PlatformType,
   documentationId: ?string,
   githubPath: ?string,
 };
@@ -64,10 +67,18 @@ const MarkdownPage = (props: Props) => {
     title,
   } = props;
 
+  /*
+  Currently we only want to include the page head for non-component
+  pages. Only component pages have platform metadata, so this is a
+  simple way to check for it. In the future we may wish to change this
+  logic.
+  */
+  const includePageHead = title && !platform;
+
   return (
     <>
-      <SEOElements title={title} description={subtitle} />
-      {title && (
+      <SEOElements title={title} subtitle={subtitle} />
+      {includePageHead && (
         <div className={getClassName('bpkdocs-markdown-page__page-head')}>
           <Heading level="h1">{title}</Heading>
           {subtitle && <IntroBlurb>{subtitle}</IntroBlurb>}
