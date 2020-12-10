@@ -32,6 +32,17 @@ import STYLES from './MarkdownPage.scss';
 
 const getClassName = cssModules(STYLES);
 
+const SEOElements = (props: { description: ?string, title: ?string }) => {
+  const { description, title } = props;
+  return (
+    <Helmet>
+      {title && <title>{title}</title>}
+      {description && <meta name="description" content={description} />}
+      {description && <meta name="og:description" content={description} />}
+    </Helmet>
+  );
+};
+
 type Props = {
   content: any,
   fileName: string,
@@ -55,14 +66,12 @@ const MarkdownPage = (props: Props) => {
 
   return (
     <>
+      <SEOElements title={title} description={subtitle} />
       {title && (
-        <>
-          <Helmet title={title} />
-          <div className={getClassName('bpkdocs-markdown-page__page-head')}>
-            <Heading level="h1">{title}</Heading>
-            {subtitle && <IntroBlurb>{subtitle}</IntroBlurb>}
-          </div>
-        </>
+        <div className={getClassName('bpkdocs-markdown-page__page-head')}>
+          <Heading level="h1">{title}</Heading>
+          {subtitle && <IntroBlurb>{subtitle}</IntroBlurb>}
+        </div>
       )}
       <BpkContentContainer
         className={getClassName('bpkdocs-markdown-page__content')}
