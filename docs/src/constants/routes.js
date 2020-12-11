@@ -96,6 +96,7 @@ export const BREAKPOINT = '/components/breakpoint';
 export const HORIZONTAL_GRID = '/components/horizontal-grid';
 export const SCROLLABLE_CALENDAR = '/components/scrollable-calendar';
 export const SLIDER = '/components/slider';
+export const SKIP_LINK = '/components/skip-link';
 export const DRAWER = '/components/drawer';
 export const DIALOG = '/components/dialog';
 export const FLAT_LIST = '/components/flat-list';

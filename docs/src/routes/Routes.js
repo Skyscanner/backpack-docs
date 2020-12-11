@@ -93,6 +93,7 @@ import RadioButtonPage from '../pages/components/RadioButton';
 import ScrollableCalendarPage from '../pages/components/ScrollableCalendar';
 import SectionListPage from '../pages/components/SectionList';
 import SlidersPage from '../pages/components/Sliders';
+import SkipLinkPage from '../pages/components/SkipLink';
 import SpinnerPage from '../pages/components/Spinner';
 import StarRatingPage from '../pages/components/StarRating';
 import SwitchPage from '../pages/components/Switch';
@@ -290,6 +291,7 @@ export const ROUTES_MAPPINGS = [
       },
       { path: ROUTES.SELECT, component: SelectPage },
       { path: ROUTES.SLIDER, component: SlidersPage },
+      { path: ROUTES.SKIP_LINK, component: SkipLinkPage },
       { path: ROUTES.SPINNER, component: SpinnerPage },
       {
         path: ROUTES.STAR_RATING,
