@@ -50,8 +50,8 @@ const SEOElements = (props: { subtitle: ?string, title: string }) => {
     <Helmet>
       <title>{title}</title>
       <meta property="twitter:title" content={`${title} — Backpack`} />
-      {description && <meta name="description" content={description} />}
-      {description && <meta name="og:description" content={description} />}
+      {description && <meta property="description" content={description} />}
+      {description && <meta property="og:description" content={description} />}
     </Helmet>
   );
 };
@@ -78,17 +78,17 @@ const MarkdownPage = (props: Props) => {
   } = props;
 
   /*
-  Currently we only want to include the page head for non-component
+  Currently we only want to include the page header for non-component
   pages. Only component pages have platform metadata, so this is a
   simple way to check for it. In the future we may wish to change this
   logic.
   */
-  const includePageHead = title && !platform;
+  const includePageHeader = title && !platform;
 
   return (
     <>
       <SEOElements title={title} subtitle={subtitle} />
-      {includePageHead && <PageHead title={title} subtitle={subtitle} />}
+      {includePageHeader && <PageHead title={title} subtitle={subtitle} />}
       <BpkContentContainer
         className={getClassName('bpkdocs-markdown-page__content')}
       >
