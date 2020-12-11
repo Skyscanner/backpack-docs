@@ -46,15 +46,25 @@ jobs:
       - name: Test
         run: npm test
 
-      - name: Build website
+      - name: Build website (master build)
         run: |
           nvm use
           npm run docs:dist
+        if: github.ref == 'refs/heads/master'
+
+      # As above, but with an extra environment variable.
+      - name: Build website (pull request build)
+        run: |
+          nvm use
+          npm run docs:dist
+        if: github.ref != 'refs/heads/master'
+        env:
+          BASE_PATH: /prs/${{ github.event.pull_request.number }}
 
       - name: Check site was built correctly
         run: test -e dist/index.html
 
-      - name: Deploy website
+      - name: Deploy website (master build)
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/master'
         with:
@@ -68,12 +78,12 @@ jobs:
         run: |
           mkdir build
           mv dist $PR_NUMBER
-          cp $PR_NUMBER build/
+          cp -R $PR_NUMBER build/
         if: github.ref != 'refs/heads/master'
         env:
           PR_NUMBER: ${{ github.event.pull_request.number }}
 
-      - name: Deploy pull request build
+      - name: Deploy website (pull request build)
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref != 'refs/heads/master'
         with:
@@ -82,3 +92,11 @@ jobs:
           keep_files: true
           external_repository: backpack/prs
           publish_branch: main
+
+      - name: Add a comment with a link to the pull request build
+        uses: unsplash/comment-on-pr@master
+        with:
+          msg: "Visit https://backpack.github.io/prs/${{ env.PR_NUMBER }} to see this build running in a browser."
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
