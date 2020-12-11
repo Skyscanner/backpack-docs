@@ -30,7 +30,7 @@ const SkipLinkPage = () => (
     title="Skip link"
     blurb={[
       <IntroBlurb>
-        Skip links help users of assistive technology as well as power-users
+        Skip links help users of assistive technology as well as power users
         navigate our site quicker.
       </IntroBlurb>,
     ]}

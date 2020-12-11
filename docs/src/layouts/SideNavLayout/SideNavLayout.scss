@@ -47,7 +47,12 @@
 
   &__skip-link {
     position: absolute;
-    top: 1rem;
-    left: 1rem;
+    top: $bpk-spacing-md;
+    left: $bpk-spacing-md;
+
+    // There's no point having this in smaller view-ports as the navigation is hidden anyway
+    @include bpk-breakpoint-tablet {
+      display: none;
+    }
   }
 }

@@ -19,6 +19,7 @@
 /* @flow strict */
 
 import React from 'react';
+import BpkLink from 'bpk-component-link';
 import BpkSkipLink from 'bpk-component-skip-link';
 import skipLinkReadme from 'bpk-component-skip-link/README.md';
 import { cssModules } from 'bpk-react-utils';
@@ -38,15 +39,22 @@ const components = [
       <Paragraph>
         Skip links benefit sighted keyboard or switch users by providing them
         with a way to skip over lengthy menus or filters. Skip links should be
-        absolute-positioned to ensure that when they become visible they do not
-        shift other content.
+        absolutely positioned to ensure that when they become visible they do
+        not shift other content.
         <br />
         <br />
         It’s ok for a skip link to overlap other content on the page, as long as
-        you are still able to tab forwards/backwards to that content. The skip
-        link is very noticeable, and doesn’t disappear immediately. These are
-        deliberate design decisions to ensure that a user tabbing quickly
+        you are still able to tab forwards or backwards to that content. The
+        skip link is very noticeable, and doesn’t disappear immediately. These
+        are deliberate design decisions to ensure that a user tabbing quickly
         through the page won’t miss the skip link.
+        <br />
+        <br />
+        For more information see this{' '}
+        <BpkLink href="https://www.nomensa.com/blog/2004/what-are-skip-links">
+          Nomensa blog about Skip Links
+        </BpkLink>
+        .
       </Paragraph>,
     ],
     examples: [
