@@ -64,20 +64,21 @@ jobs:
           external_repository: backpack/backpack.github.io
           publish_branch: master
 
-      - name: Rename dist folder to match ID of this pull request
-        run: mv dist $PR_NUMBER
+      - name: Copy dist folder into a new one matching the ID of this pull request
+        run: |
+          mkdir build
+          mv dist $PR_NUMBER
+          cp $PR_NUMBER build/
         if: github.ref != 'refs/heads/master'
         env:
           PR_NUMBER: ${{ github.event.pull_request.number }}
 
-      - name: Deploy PR build
+      - name: Deploy pull request build
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref != 'refs/heads/master'
         with:
           personal_token: ${{ secrets.DEPLOY_TOKEN }}
-          publish_dir: $PR_NUMBER/
+          publish_dir: build/
           keep_files: true
           external_repository: backpack/prs
           publish_branch: main
-        env:
-          PR_NUMBER: ${{ github.event.pull_request.number }}
