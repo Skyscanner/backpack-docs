@@ -30,21 +30,27 @@ export default ({ head = {}, html = '', assets = {} }) => `<!doctype html>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
 
-  <meta property="og:locale" content="en_GB">
   <meta name="description" content="Backpack is Skyscanner's open-source design system.">
+
   <meta property="og:description" content="Backpack is Skyscanner's open-source design system.">
-  <meta property="og:url" content="https://backpack.github.io">
-  <meta property="og:site_name" content="Backpack">
   <meta property="og:image" content="https://backpack.github.io/social-preview.png">
   <meta property="og:image:width" content="256">
   <meta property="og:image:height" content="256">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:site_name" content="Backpack">
+  <meta property="og:title" content="Backpack">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://backpack.github.io">
+
   <meta property="twitter:card" content="summary">
-  <meta property="twitter:image" content="https://backpack.github.io/social-preview.png">
-  <meta property="twitter:title" content="Backpack">
-  <meta property="twitter:site" content="@skyscanner">
   <meta property="twitter:creator" content="@skyscanner">
+  <meta property="twitter:image" content="https://backpack.github.io/social-preview.png">
+  <meta property="twitter:image:alt" content="Backpack — Skyscanner's design system">
+  <meta property="twitter:site" content="@skyscanner">
+  <meta property="twitter:title" content="Backpack">
 
   ${head.title.toString()}
+  ${head.meta.toString()}
   <link rel="stylesheet" href="/${assets.docs.css}">
   <link rel="apple-touch-icon" sizes="180x180" href="/${appleTouchIcon}">
 

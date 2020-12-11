@@ -43,7 +43,10 @@ const DefaultLayout = props => {
     >
       <div id="pagewrap">
         <Analytics />
-        <Helmet titleTemplate="%s | Backpack" />
+        <Helmet
+          titleTemplate="%s | Backpack"
+          defaultTitle="Backpack — Skyscanner's Design System"
+        />
         <main>{children}</main>
         <Footer />
       </div>

@@ -107,7 +107,7 @@ export default (() => {
         <Routes />
       </StaticRouter>,
     );
-    const head = Helmet.rewind();
+    const head = Helmet.renderStatic();
     return callback(null, template({ head, html, assets }));
   };
 })();

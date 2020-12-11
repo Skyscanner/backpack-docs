@@ -27,17 +27,41 @@ import Heading from '../Heading';
 import IntroBlurb from '../IntroBlurb';
 import MDXContent from '../MDXContent/MDXContent';
 
-import AdditionalLinks, { PLATFORMS } from './AdditionalLinks';
+import AdditionalLinks, { type PlatformType } from './AdditionalLinks';
 import STYLES from './MarkdownPage.scss';
 
 const getClassName = cssModules(STYLES);
 
+const PageHead = (props: { title: string, subtitle: ?string }) => {
+  const { title, subtitle } = props;
+  return (
+    <div className={getClassName('bpkdocs-markdown-page__page-head')}>
+      <Heading level="h1">{title}</Heading>
+      {subtitle && <IntroBlurb>{subtitle}</IntroBlurb>}
+    </div>
+  );
+};
+
+const SEOElements = (props: { subtitle: ?string, title: string }) => {
+  const { subtitle, title } = props;
+  const description =
+    subtitle || `${title} — Backpack, Skyscanner's design system`;
+  return (
+    <Helmet>
+      <title>{title}</title>
+      <meta property="twitter:title" content={`${title} — Backpack`} />
+      {description && <meta property="description" content={description} />}
+      {description && <meta property="og:description" content={description} />}
+    </Helmet>
+  );
+};
+
 type Props = {
   content: any,
   fileName: string,
-  title: ?string,
+  title: string,
   subtitle: ?string,
-  platform: ?$Keys<typeof PLATFORMS>,
+  platform: ?PlatformType,
   documentationId: ?string,
   githubPath: ?string,
 };
@@ -53,17 +77,18 @@ const MarkdownPage = (props: Props) => {
     title,
   } = props;
 
+  /*
+  Currently we only want to include the page header for non-component
+  pages. Only component pages have platform metadata, so this is a
+  simple way to check for it. In the future we may wish to change this
+  logic.
+  */
+  const includePageHeader = title && !platform;
+
   return (
     <>
-      {title && (
-        <>
-          <Helmet title={title} />
-          <div className={getClassName('bpkdocs-markdown-page__page-head')}>
-            <Heading level="h1">{title}</Heading>
-            {subtitle && <IntroBlurb>{subtitle}</IntroBlurb>}
-          </div>
-        </>
-      )}
+      <SEOElements title={title} subtitle={subtitle} />
+      {includePageHeader && <PageHead title={title} subtitle={subtitle} />}
       <BpkContentContainer
         className={getClassName('bpkdocs-markdown-page__content')}
       >

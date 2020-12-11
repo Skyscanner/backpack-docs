@@ -34,11 +34,13 @@ export const PLATFORMS = {
   native: 'native',
 };
 
+export type PlatformType = $Keys<typeof PLATFORMS>;
+
 type Props = {
   documentationId: ?string,
   fileName: ?string,
   githubPath: ?string,
-  platform: ?$Keys<typeof PLATFORMS>,
+  platform: ?PlatformType,
 };
 
 const AdditionalLinks = (props: Props) => {

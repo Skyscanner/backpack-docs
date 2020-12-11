@@ -18,7 +18,6 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
 import BpkText from 'bpk-component-text';
 import { cssModules } from 'bpk-react-utils';
 
@@ -143,14 +142,12 @@ const HomePage = (props, context) => {
 
   return (
     <section>
-      <Helmet title="Backpack" />
       <div
         style={{ backgroundImage: `url(${heroImage.image})` }}
         className={getClassName('bpkdocs-home-page__hero')}
       >
         <div className={getClassName('bpkdocs-home-page__hero-logo-container')}>
           <div style={{ flex: 1 }}>
-            {/* eslint-disable backpack/use-components */}
             <img
               role="heading"
               aria-level="1"
@@ -158,7 +155,6 @@ const HomePage = (props, context) => {
               className={getClassName('bpkdocs-home-page__hero-logo')}
               alt="Backpack"
             />
-            {/* eslint-enable backpack/use-components */}
             {process.env.BPK_BUILT_AT && (
               <UpdatedAt
                 date={new Date(process.env.BPK_BUILT_AT * 1000)}
