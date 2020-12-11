@@ -45,7 +45,7 @@ export default ({ head = {}, html = '', assets = {} }) => `<!doctype html>
   <meta property="twitter:card" content="summary">
   <meta property="twitter:creator" content="@skyscanner">
   <meta property="twitter:image" content="https://backpack.github.io/social-preview.png">
-  <meta name="twitter:image:alt" content="Backpack — Skyscanner's design system">
+  <meta property="twitter:image:alt" content="Backpack — Skyscanner's design system">
   <meta property="twitter:site" content="@skyscanner">
   <meta property="twitter:title" content="Backpack">
 
