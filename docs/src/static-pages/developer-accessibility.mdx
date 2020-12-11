@@ -55,7 +55,7 @@ Text is easier to read on solid colour backgrounds than backgrounds that are bus
 
 ### **Tests**
 
-- Use our [colour pairings chart]((/guidelines/colors/#section_pairings)) for accessible brand palette combinations
+- Use our [colour pairings chart](/guidelines/colors/#section_pairings) for accessible brand palette combinations
 - Use [Stark plugin](https://www.getstark.co/0) in Sketch or Figma to check colour contrast ratios
 - [Other contrast checkers](https://developer.paciellogroup.com/resources/contrastanalyser/) are good too
 - [Colour blindness simulator](https://www.color-blindness.com/coblis-color-blindness-simulator/) – view designs through different colour blind lenses
@@ -379,9 +379,10 @@ Many travellers interact with websites and apps using a keyboard, switch, or alt
 
 Make sure all interactive elements can be tabbed to in a predictable order, and activated without using a mouse or touching a screen.
 
-If large menus of filters are present on the page. Provide skip links for jumping over them to the main content. See [`BpkSkipLink`](components/skip-link?platform=web).
+If large menus of filters are present on the page. Provide skip links for jumping over them to the main content. See [`BpkSkipLink`](/components/skip-link?platform=web).
 
 ### **Tips**
+
 - Non-functional elements should not be focusable
 - Always provide an alternative to gesture-based interactions
 - The tabbing order should be left-to-right, top-to-bottom (or equivalent for RTL languages)
@@ -520,11 +521,12 @@ When needed, providing suitable ARIA annotations makes it easier for screen read
 Use sparingly. Add appropriate ARIA labels and roles on elements that should be read out by a screen reader. Hide elements that don't add value on their own.
 
 ### **Tips**
+
 - Only use ARIA labels and roles when they make the UI more understandable and standard HTML labels aren't enough
 - **Often elements don't need any extra labels or roles, so they shouldn't be added**
 - **Aria-labels should be a last resort when there is no other way to represent the content using suitable elements**
-- Use aria-live (see [`BpkAriaLive`](components/aria-live?platform=web) component) on widgets that have a changing state, like a progress bar
-- Prefer `aria-live="polite"` to `aria-live="assertive"` unless the update should interrupt the user immediately (see [`BpkAriaLive`](components/aria-live?platform=web) component).
+- Use aria-live (see [`BpkAriaLive`](/components/aria-live?platform=web) component) on widgets that have a changing state, like a progress bar
+- Prefer `aria-live="polite"` to `aria-live="assertive"` unless the update should interrupt the user immediately (see [`BpkAriaLive`](/components/aria-live?platform=web) component).
 - Use aria-expanded on toggles (eg menu toggles) to indicate whether they are open or closed
 - Use the HTML `for` attribute to link the label and input field
 - Use the HTML `aria-describedby` attribute to connect the input field to the hint element
