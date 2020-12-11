@@ -74,7 +74,7 @@ jobs:
           external_repository: backpack/backpack.github.io
           publish_branch: master
 
-      - name: Copy dist folder into a new one matching the ID of this pull request
+      - name: Prepare to deploy pull request build
         run: |
           mkdir build
           mv dist $PR_NUMBER
