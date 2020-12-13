@@ -143,7 +143,7 @@ const HomePage = (props, context) => {
   return (
     <section>
       <div
-        style={{ backgroundImage: `url(${heroImage.image})` }}
+        style={{ backgroundImage: `url(/${heroImage.image})` }}
         className={getClassName('bpkdocs-home-page__hero')}
       >
         <div className={getClassName('bpkdocs-home-page__hero-logo-container')}>
@@ -151,7 +151,7 @@ const HomePage = (props, context) => {
             <img
               role="heading"
               aria-level="1"
-              src={backpackLogo}
+              src={`/${backpackLogo}`}
               className={getClassName('bpkdocs-home-page__hero-logo')}
               alt="Backpack"
             />

@@ -76,6 +76,7 @@ const config = {
   output: {
     filename: `[name]${isProduction ? '_[chunkhash]' : ''}.js`,
     path: path.resolve(__dirname, 'dist'),
+    publicPath: BASE_PATH ? `${BASE_PATH}/` : '/',
     libraryTarget: 'umd',
     globalObject: 'this',
   },

@@ -73,13 +73,13 @@ const HomePageCard = (props: Props) => {
         >
           <div
             className={getClassName('bpkdocs-home-page-card__image')}
-            style={{ backgroundImage: `url(${image})` }}
+            style={{ backgroundImage: `url(/${image})` }}
             alt={title}
           />
           {icon && (
             /* eslint-disable backpack/use-components */
             <img
-              src={icon}
+              src={`/${icon}`}
               alt=""
               className={iconClassNames}
               style={{ width: iconWidth }}

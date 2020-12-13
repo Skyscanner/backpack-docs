@@ -30,10 +30,21 @@ import {
   matchPath,
 } from 'react-router-dom';
 import 'es6-promise/auto';
+import BpkLink from 'bpk-component-link';
 
 import Routes, { ROUTES_MAPPINGS } from './routes';
 import template from './template';
 import { extractAssets } from './webpackStats';
+import TopBanner from './components/TopBanner/TopBanner';
+
+/*
+ In our Webpack config file, we allow the base path to be set,
+ which lets this website be served from paths other than '/'.
+
+ This allows us to host pull request builds on subpaths of the main
+ website.
+ */
+const basePath = process.env.BASE_PATH ? `/${process.env.BASE_PATH}` : '';
 
 const ScrollToTop = withRouter(
   class extends React.Component {
@@ -61,8 +72,16 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
   const root = document.getElementById('react-mount');
 
   ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter basename={basePath}>
       <ScrollToTop>
+        {basePath !== '' && (
+          <TopBanner>
+            <strong>Pull request build</strong>
+            <BpkLink href="https://backpack.github.io">
+              Return to main site
+            </BpkLink>
+          </TopBanner>
+        )}
         <Routes />
       </ScrollToTop>
     </BrowserRouter>,
@@ -108,6 +127,6 @@ export default (() => {
       </StaticRouter>,
     );
     const head = Helmet.renderStatic();
-    return callback(null, template({ head, html, assets }));
+    return callback(null, template({ head, html, assets, basePath }));
   };
 })();
