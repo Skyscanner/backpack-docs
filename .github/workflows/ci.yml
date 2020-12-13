@@ -59,7 +59,7 @@ jobs:
           npm run docs:dist
         if: github.ref != 'refs/heads/master'
         env:
-          BASE_PATH: /prs/${{ github.event.pull_request.number }}
+          BASE_PATH: prs/${{ github.event.pull_request.number }}
 
       - name: Check site was built correctly
         run: test -e dist/index.html
