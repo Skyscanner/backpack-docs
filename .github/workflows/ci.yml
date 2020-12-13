@@ -74,7 +74,7 @@ jobs:
           external_repository: backpack/backpack.github.io
           publish_branch: master
 
-      - name: Copy dist folder into a new one matching the ID of this pull request
+      - name: Prepare to deploy (pull request build)
         run: |
           mkdir build
           mv dist $PR_NUMBER
@@ -93,7 +93,7 @@ jobs:
           external_repository: backpack/prs
           publish_branch: main
 
-      - name: Add a comment with a link to the pull request build
+      - name: Link to the pull request build
         uses: unsplash/comment-on-pr@master
         with:
           msg: "Visit https://backpack.github.io/prs/${{ env.PR_NUMBER }} to see this build running in a browser."

@@ -60,7 +60,7 @@ export default ({
   ${head.title.toString()}
   ${head.meta.toString()}
   <link rel="stylesheet" href="${basePath}/${assets.docs.css}">
-  <link rel="apple-touch-icon" sizes="180x180" href="${appleTouchIcon}">
+  <link rel="apple-touch-icon" sizes="180x180" href="/${appleTouchIcon}">
 
 </head>
 
