@@ -158,13 +158,11 @@ const SectionsList = (props: Props) => {
     <div className={outerClassnames.join(' ')}>
       <div className={getClassName('bpkdocs-sections-list__heading')}>
         {icon && (
-          /* eslint-disable backpack/use-components */
           <img
             alt=""
             src={`/${icon}`}
             className={getClassName('bpkdocs-sections-list__heading-icon')}
           />
-          /* eslint-enable backpack/use-components */
         )}
         <button
           type="button"

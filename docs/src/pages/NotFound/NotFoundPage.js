@@ -34,13 +34,11 @@ const NotFoundPage = props => {
     <section {...props}>
       <Helmet title="404" />
       <div className={getClassName('bpkdocs-not-found-page__wrapper')}>
-        {/* eslint-disable backpack/use-components */}
         <img
           className={getClassName('bpkdocs-not-found-page__logo')}
           alt="Backpack"
           src={BackpackLogoMark}
         />
-        {/* eslint-enable backpack/use-components */}
         <BpkText className={getClassName('bpkdocs-not-found-page__text')}>
           Oops! The page you&#39;re looking for doesn&#39;t exist.
           <br />

@@ -150,8 +150,6 @@ export const connect = (tokenSwitcher, table) => {
     render() {
       const { platform } = this.state;
 
-      // False positive; tries to replace 'table' with 'BpkTable'.
-      // eslint-disable-next-line backpack/use-components
       return React.cloneElement(table, {
         platform: platform || platforms.web.id,
       });

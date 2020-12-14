@@ -70,7 +70,6 @@ export default (props: Props) => {
           }
         </BpkBreakpoint>
         <Link to="/" className={getClassName('bpkdocs-sidebar__logo-link')}>
-          {/* eslint-disable backpack/use-components */}
           <img
             role="heading"
             aria-level="1"
@@ -78,7 +77,6 @@ export default (props: Props) => {
             className={getClassName('bpkdocs-sidebar__logo')}
             alt="Backpack"
           />
-          {/* eslint-enable backpack/use-components */}
         </Link>
       </div>
       <div className={getClassName('bpkdocs-sidebar__content')}>

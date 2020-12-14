@@ -105,13 +105,11 @@ export const createFromType = (type, defProps) => {
 const ApidocLink = ({ logo, renderLink }) => (
   <aside className={getClassName('bpkdocs-apidoc-link')}>
     {logo && (
-      /* eslint-disable backpack/use-components */
       <img
         className={getClassName('bpkdocs-apidoc-link__logo')}
         src={`/${logo.src}`}
         alt={logo.alt}
       />
-      /* eslint-enable backpack/use-components */
     )}
     {renderLink()}
   </aside>

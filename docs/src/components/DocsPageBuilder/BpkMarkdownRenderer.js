@@ -72,8 +72,6 @@ const BpkMarkdownRenderer = (props: Props) => {
   renderers.image = imageProps => {
     const { alt, src, ...imageRest } = imageProps;
     return (
-      // Can't use BpkImage here because it requires us to know width and height.
-      /* eslint-disable-next-line backpack/use-components */
       <img
         alt={alt}
         src={src}

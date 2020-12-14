@@ -33,9 +33,13 @@ describe('google-analytics-helper', () => {
   });
 
   it('does not fail when ga is not defined', () => {
-    const subject = getSubject();
-    subject.startGoogleAnalytics();
-    subject.sendPageView('foo');
+    const startGAandSendPageView = () => {
+      const subject = getSubject();
+      subject.startGoogleAnalytics();
+      subject.sendPageView('foo');
+    };
+
+    expect(startGAandSendPageView).not.toThrow();
   });
 
   it('does nothing when not running in production', () => {
@@ -53,9 +57,13 @@ describe('google-analytics-helper', () => {
     });
 
     it('does not fail when ga is not defined', () => {
-      const subject = getSubject();
-      subject.startGoogleAnalytics();
-      subject.sendPageView('foo');
+      const startGAandSendPageView = () => {
+        const subject = getSubject();
+        subject.startGoogleAnalytics();
+        subject.sendPageView('foo');
+      };
+
+      expect(startGAandSendPageView).not.toThrow();
     });
 
     it('uses `ga` function defined globally', () => {
