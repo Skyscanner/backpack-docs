@@ -19,6 +19,7 @@
 @import '~bpk-mixins/index';
 
 .bpkdocs-side-nav-layout {
+  position: relative;
   display: flex;
   min-height: 35 * $bpk-spacing-xl;
   overflow: hidden;
