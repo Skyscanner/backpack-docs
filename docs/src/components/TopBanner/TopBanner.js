@@ -25,8 +25,8 @@ import STYLES from './TopBanner.scss';
 const getClassName = cssModules(STYLES);
 
 const TopBanner = (props: {}) => {
-  const { ...rest } = props;
-  return <div {...rest} className={getClassName('bpkdocs-top-banner')} />;
+  const { className, ...rest } = props;
+  return <div {...rest} className={getClassName('bpkdocs-top-banner', className)} />;
 };
 
 export default TopBanner;
