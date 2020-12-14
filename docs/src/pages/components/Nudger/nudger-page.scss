@@ -19,5 +19,5 @@
 @import '~bpk-mixins/index';
 
 .bpk-nudger-configurable {
-  width: 7rem;
+  width: $bpk-spacing-xl * 4;
 }

@@ -29,7 +29,10 @@
 
   &__row {
     display: flex;
+    // False positive
+    /* stylelint-disable backpack/use-tokens */
     width: max-content;
+    /* stylelint-enable */
     margin-bottom: $bpk-spacing-base;
     align-items: flex-end;
   }

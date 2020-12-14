@@ -26,8 +26,11 @@
 
   &__swatch--primary {
     display: inline-block;
+    // False positive
+    /* stylelint-disable backpack/use-tokens */
     width: unset;
     height: unset;
+    /* stylelint-enable */
     padding: $bpk-spacing-lg;
 
     @include bpk-apply-primary-color-to(background-color);

@@ -19,7 +19,7 @@
 
 .bpk-docs-guidelines-page {
   &__section {
-    padding: $bpk-spacing-lg * 2;
+    padding: 2 * $bpk-spacing-lg;
 
     @include bpk-breakpoint-mobile {
       padding: $bpk-spacing-lg;
