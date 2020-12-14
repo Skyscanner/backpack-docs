@@ -16,6 +16,6 @@
  * limitations under the License.
  */
 
-import page from './AnimationPage';
+import Tokens from './Tokens';
 
-export default page;
+export default Tokens;
