@@ -95,6 +95,7 @@ jobs:
 
       - name: Link to the pull request build
         uses: unsplash/comment-on-pr@master
+        if: github.ref != 'refs/heads/master'
         with:
           msg: "Visit https://backpack.github.io/prs/${{ env.PR_NUMBER }} to see this build running in a browser."
         env:
