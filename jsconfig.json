@@ -11,9 +11,6 @@
             "static": [
                 "docs/src/static"
             ],
-            "backpack": [
-                "backpack"
-            ],
             "backpack-ios": [
                 "backpack-ios"
             ],

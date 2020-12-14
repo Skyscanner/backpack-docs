@@ -32,7 +32,6 @@ module.exports = function config(api) {
             helpers: './docs/src/helpers',
             components: './docs/src/components',
             static: './docs/src/static',
-            backpack: './backpack',
             'backpack-ios': './backpack-ios',
             'backpack-android': './backpack-android',
             'backpack-react-native': './backpack-react-native',
