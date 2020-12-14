@@ -38,9 +38,16 @@ const {
   ENABLE_CSS_MODULES,
   BPK_BUILT_AT,
   GOOGLE_MAPS_API_KEY,
+  BASE_PATH,
 } = process.env;
 const useCssModules = ENABLE_CSS_MODULES !== 'false';
 const isProduction = NODE_ENV === 'production';
+
+// Strings passed from environment variables must
+// be stringified or JS won't interpret them correctly.
+const getSafeString = input => {
+  return JSON.stringify(input);
+};
 
 const staticSiteGeneratorConfig = {
   paths: [
@@ -69,6 +76,7 @@ const config = {
   output: {
     filename: `[name]${isProduction ? '_[chunkhash]' : ''}.js`,
     path: path.resolve(__dirname, 'dist'),
+    publicPath: BASE_PATH ? `${BASE_PATH}/` : '',
     libraryTarget: 'umd',
     globalObject: 'this',
   },
@@ -238,8 +246,9 @@ config.plugins.push(
   new webpack.DefinePlugin({
     'process.env': {
       BPK_BUILT_AT,
-      GOOGLE_MAPS_API_KEY: JSON.stringify(GOOGLE_MAPS_API_KEY),
-      NODE_ENV: JSON.stringify(NODE_ENV),
+      BASE_PATH: getSafeString(BASE_PATH),
+      GOOGLE_MAPS_API_KEY: getSafeString(GOOGLE_MAPS_API_KEY),
+      NODE_ENV: getSafeString(NODE_ENV),
     },
   }),
 );
