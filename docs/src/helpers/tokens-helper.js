@@ -107,7 +107,7 @@ export const getTokenValue = (token: Token, platform: Platform): string => {
   return value || '-';
 };
 
-export const tokenSortFn = (token: Token) => {
+export const tokenSortFn = (token: { name: string, value: string }) => {
   if (token.name.indexOf('_XXS') !== -1) {
     return 0;
   }
@@ -142,7 +142,7 @@ export const tokenSortFn = (token: Token) => {
     return 10;
   }
 
-  return parseInt(token.value, 10) || token.value;
+  return parseInt(token.value, 10);
 };
 
 export const getTokens = (tokens: TokenList, keys: ?Array<string> = null) =>

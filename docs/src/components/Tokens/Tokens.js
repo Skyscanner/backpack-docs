@@ -33,11 +33,12 @@ import {
   getTokenValue,
   tokenSortFn,
   type RawTokens,
+  type Platform,
 } from '../../helpers/tokens-helper';
 
 type Props = {
   tokens: RawTokens,
-  platform: string,
+  platform: Platform,
   category: string,
 };
 
