@@ -16,6 +16,7 @@
  * limitations under the License.
  */
 
+export const GENERATED_TOKENS_ANIMATION = '/tokens/animation';
 export const GENERATED_USING_BACKPACK_REACT_SCRIPTS = '/using/backpack-react-scripts';
 export const GENERATED_USING_BASE_STYLESHEET = '/using/base-stylesheet';
 export const GENERATED_GUIDELINES_COLOUR = '/guidelines/colour';

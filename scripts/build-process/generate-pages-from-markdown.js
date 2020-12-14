@@ -31,7 +31,7 @@ const PATH_TO_LINKS_FILE = 'docs/src/layouts/generated/links.js';
 /*
 Valid values for the 'category' front matter
 */
-const ALLOWED_CATEGORIES = ['using', 'guidelines'];
+const ALLOWED_CATEGORIES = ['using', 'guidelines', 'tokens'];
 
 console.log(
   colors.cyan(`Looking for markdown files in ${PATH_TO_MARKDOWN_FILES}…`),

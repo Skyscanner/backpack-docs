@@ -22,7 +22,7 @@ import _ from 'lodash';
 // the browser default - typically 16px;
 const ROOT_FONT_SIZE = 16;
 
-type Platform = 'ios' | 'android' | 'web';
+export type Platform = 'ios' | 'android' | 'web';
 
 type Token = {
   name: string,
@@ -37,7 +37,7 @@ type Token = {
 
 type TokenList = { [string]: Token };
 
-type RawTokens = {
+export type RawTokens = {
   propKeys: Array<string>,
   props: TokenList,
 };
@@ -107,6 +107,44 @@ export const getTokenValue = (token: Token, platform: Platform): string => {
   return value || '-';
 };
 
+export const tokenSortFn = (token: Token) => {
+  if (token.name.indexOf('_XXS') !== -1) {
+    return 0;
+  }
+  if (token.name.indexOf('_XS') !== -1) {
+    return 1;
+  }
+  if (token.name.indexOf('_SM') !== -1) {
+    return 2;
+  }
+  if (token.name.indexOf('_MD') !== -1) {
+    return 3;
+  }
+  if (token.name.indexOf('_BASE') !== -1) {
+    return 4;
+  }
+  if (token.name.indexOf('_LG') !== -1) {
+    return 5;
+  }
+  if (token.name.indexOf('_XL') !== -1) {
+    return 6;
+  }
+  if (token.name.indexOf('_XXL') !== -1) {
+    return 7;
+  }
+  if (token.name.indexOf('_XXXL') !== -1) {
+    return 8;
+  }
+  if (token.name.indexOf('_XXXXL') !== -1) {
+    return 9;
+  }
+  if (token.name.indexOf('_XXXXXL') !== -1) {
+    return 10;
+  }
+
+  return parseInt(token.value, 10) || token.value;
+};
+
 export const getTokens = (tokens: TokenList, keys: ?Array<string> = null) =>
   _.chain(keys || Object.keys(tokens))
     .reduce((acc, key) => {
@@ -114,43 +152,7 @@ export const getTokens = (tokens: TokenList, keys: ?Array<string> = null) =>
       acc[key] = tokens[key];
       return acc;
     }, {})
-    .sortBy(token => {
-      if (token.name.indexOf('_XXS') !== -1) {
-        return 0;
-      }
-      if (token.name.indexOf('_XS') !== -1) {
-        return 1;
-      }
-      if (token.name.indexOf('_SM') !== -1) {
-        return 2;
-      }
-      if (token.name.indexOf('_MD') !== -1) {
-        return 3;
-      }
-      if (token.name.indexOf('_BASE') !== -1) {
-        return 4;
-      }
-      if (token.name.indexOf('_LG') !== -1) {
-        return 5;
-      }
-      if (token.name.indexOf('_XL') !== -1) {
-        return 6;
-      }
-      if (token.name.indexOf('_XXL') !== -1) {
-        return 7;
-      }
-      if (token.name.indexOf('_XXXL') !== -1) {
-        return 8;
-      }
-      if (token.name.indexOf('_XXXXL') !== -1) {
-        return 9;
-      }
-      if (token.name.indexOf('_XXXXXL') !== -1) {
-        return 10;
-      }
-
-      return parseInt(token.value, 10) || token.value;
-    })
+    .sortBy(tokenSortFn)
     .keyBy('name')
     .value();
 

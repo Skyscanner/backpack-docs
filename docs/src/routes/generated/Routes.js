@@ -21,6 +21,7 @@ import React from 'react';
 import * as ROUTES from '../../constants/routes';
 import MarkdownPage from '../../components/MarkdownPage';
 
+import ANIMATION from '../../static-pages/animation.mdx';
 import BACKPACK_REACT_SCRIPTS from '../../static-pages/backpack-react-scripts.mdx';
 import BASE_STYLESHEET from '../../static-pages/base-stylesheet.mdx';
 import GETTING_STARTED from '../../static-pages/getting-started.mdx';
@@ -41,6 +42,16 @@ import STRATEGY from '../../static-pages/strategy.mdx';
 import TONE_OF_VOICE from '../../static-pages/tone-of-voice.mdx';
 import TYPOGRAPHY from '../../static-pages/typography.mdx';
 
+export const tokens = [{
+    path: ROUTES.GENERATED_TOKENS_ANIMATION,
+    component: () => (
+      <MarkdownPage
+        fileName="animation.mdx"
+        content={ANIMATION}
+        {...{"title":"Animation","subtitle":"Animation values for use on Android, iOS and web.","category":"tokens"}}
+      />
+    )
+  }];
 export const using = [{
     path: ROUTES.GENERATED_USING_BACKPACK_REACT_SCRIPTS,
     component: () => (
