@@ -93,9 +93,8 @@ const Renderer = () => {
   renderers.img = (imageProps: { alt: string, src: string }) => {
     const { alt, src, ...imageRest } = imageProps;
     return (
-      // Can't use BpkImage here because it requires us to know width and height.
       // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/master/decisions/flowfixme.md'.
-      <img /* eslint-disable-line backpack/use-components */
+      <img
         alt={alt}
         src={src}
         className={getClassName('bpkdocs-mdx-page__image')}

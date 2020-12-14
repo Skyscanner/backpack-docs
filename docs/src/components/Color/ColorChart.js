@@ -178,8 +178,6 @@ class ColorChart extends Component<{}, State> {
           label="Decorative graphics (graphics that do not provide any information)"
         />
         <br />
-        {/* Doesn't work when using a BpkTable */}
-        {/* eslint-disable backpack/use-components */}
         <table
           aria-hidden="true"
           className={getClassName('bpk-docs-colors-chart')}
@@ -206,7 +204,6 @@ class ColorChart extends Component<{}, State> {
               </tr>
             ))}
         </table>
-        {/* eslint-enable backpack/use-components */}
       </Fragment>
     );
   }

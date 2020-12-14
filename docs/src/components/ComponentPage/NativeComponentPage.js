@@ -93,13 +93,11 @@ const NativeComponentPage = (props: Props) => {
               className={getClassName('bpkdocs-web-component-page__link')}
             >
               View on npm&nbsp;
-              {/* eslint-disable backpack/use-components */}
               <img
                 src="https://badge.fury.io/js/backpack-react-native.svg"
                 alt="View backpack-react-native on npm"
                 height={18}
               />
-              {/* eslint-enable backpack/use-components */}
             </BpkLink>
           ),
         },

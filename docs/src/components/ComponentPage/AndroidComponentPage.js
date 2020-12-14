@@ -109,12 +109,10 @@ const AndroidComponentPage = (props: Props) => {
         className={getClassName('bpkdocs-component-page__link')}
       >
         View on JitPack&nbsp;
-        {/* eslint-disable backpack/use-components */}
         <img
           src="https://jitpack.io/v/skyscanner/backpack-android.svg"
           alt="View on JitPack"
         />
-        {/* eslint-enable backpack/use-components */}
       </BpkLink>
     ),
   });
