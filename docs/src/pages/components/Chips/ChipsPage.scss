@@ -21,6 +21,7 @@
 .bpk-docs-chips-page {
   &__chip-container {
     display: flex;
+    margin: ($bpk-spacing-sm - $bpk-spacing-xs) -#{$bpk-spacing-xs} -#{$bpk-spacing-xs} -#{$bpk-spacing-xs};
     flex-wrap: wrap;
   }
 
