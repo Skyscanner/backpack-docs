@@ -247,7 +247,7 @@ config.plugins.push(
     'process.env': {
       BPK_BUILT_AT,
       BASE_PATH: getSafeString(BASE_PATH),
-      GOOGLE_MAPS_API_KEY: JSON.stringify(GOOGLE_MAPS_API_KEY),
+      GOOGLE_MAPS_API_KEY: getSafeString(GOOGLE_MAPS_API_KEY),
       NODE_ENV: getSafeString(NODE_ENV),
     },
   }),
