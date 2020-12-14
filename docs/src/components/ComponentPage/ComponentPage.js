@@ -170,6 +170,7 @@ const ComponentPage = (props: Props) => {
       {additionalContent &&
         additionalContent.map(content => (
           <div
+            key={content.id}
             id={content.id}
             className={getClassName('bpkdocs-component-page__section')}
           >

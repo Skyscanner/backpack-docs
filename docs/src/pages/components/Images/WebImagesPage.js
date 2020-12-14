@@ -55,8 +55,7 @@ const components = [
     examples: [
       <BpkImage
         altText="Lake"
-        width={816}
-        height={544}
+        aspectRatio={816 / 544}
         src={image1}
         srcSet={`${image1}?resize=320px:213px&quality=100 320w,
           ${image1}?resize=640px:226px&quality=100 640w,
@@ -79,8 +78,7 @@ const components = [
     examples: [
       <BpkImage
         altText="Lake"
-        width={816}
-        height={544}
+        aspectRatio={816 / 544}
         src={image1}
         srcSet={`${image1}?resize=320px:213px&quality=100 320w,
           ${image1}?resize=640px:226px&quality=100 640w,
@@ -104,8 +102,7 @@ const components = [
     examples: [
       <BpkImage
         altText="Waterfall"
-        width={612}
-        height={408}
+        aspectRatio={612 / 408}
         style={{ maxWidth: 512 }}
         src={image2}
         srcSet={`${image2}?resize=320px:213px&quality=100 320w,
@@ -198,7 +195,7 @@ const components = [
     blurb:
       'Use the background image component when you want the image to be the background of an element, with inner content.',
     examples: [
-      <BpkBackgroundImage altText="Lake" width={816} height={544} src={image1}>
+      <BpkBackgroundImage altText="Lake" aspectRatio={816 / 544} src={image1}>
         <div
           style={{
             opacity: 0.9,
