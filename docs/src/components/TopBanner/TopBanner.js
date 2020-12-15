@@ -17,17 +17,36 @@
  */
 /* @flow strict */
 
-import React from 'react';
+import React, { type Node } from 'react';
 import { cssModules } from 'bpk-react-utils';
+import BpkLink from 'bpk-component-link';
 
 import STYLES from './TopBanner.scss';
 
 const getClassName = cssModules(STYLES);
 
-const TopBanner = (props: { className: ?string }) => {
-  const { className, ...rest } = props;
+type Props = {
+  children: Node,
+  className: ?string,
+  links: Array<{ title: string, href: string }>,
+};
+
+const TopBanner = (props: Props) => {
+  const { children, className, links, ...rest } = props;
   return (
-    <div {...rest} className={getClassName('bpkdocs-top-banner', className)} />
+    <div {...rest} className={getClassName('bpkdocs-top-banner', className)}>
+      {children}
+      <div>
+        {links.map(link => (
+          <BpkLink
+            href={link.href}
+            className={getClassName('bpkdocs-top-banner__link')}
+          >
+            {link.title}
+          </BpkLink>
+        ))}
+      </div>
+    </div>
   );
 };
 
