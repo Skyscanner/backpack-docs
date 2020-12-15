@@ -20,11 +20,11 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-import MarkdownPage from '../../../components/MarkdownPage';
-
 import Android, { metadata as androidMetadata } from './AndroidBottomNav.mdx';
+
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
+import MarkdownPage from 'components/MarkdownPage';
 
 const Page = () => (
   <DocsPageWrapper

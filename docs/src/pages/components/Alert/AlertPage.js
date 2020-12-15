@@ -19,11 +19,12 @@
 /* @flow strict */
 
 import React from 'react';
+
+import Native, { metadata as nativeMetadata } from './NativeAlert.mdx';
+
 import IntroBlurb from 'components/IntroBlurb';
 import DocsPageWrapper from 'components/DocsPageWrapper';
 import MarkdownPage from 'components/MarkdownPage';
-
-import Native, { metadata as nativeMetadata } from './NativeAlert.mdx';
 
 const AlertPage = () => (
   <DocsPageWrapper

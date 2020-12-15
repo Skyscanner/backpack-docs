@@ -35,11 +35,12 @@ import BpkButton from 'bpk-component-button';
 import bannerAlertReadme from 'bpk-component-banner-alert/README.md';
 
 import * as ROUTES from '../../../constants/routes';
-import { WebComponentPage } from '../../../components/ComponentPage';
-import AriaLiveDemo from '../../../components/AriaLiveDemo';
-import Paragraph from '../../../components/Paragraph';
 
 import STYLES from './bpk-banner-alerts-page.scss';
+
+import { WebComponentPage } from 'components/ComponentPage';
+import AriaLiveDemo from 'components/AriaLiveDemo';
+import Paragraph from 'components/Paragraph';
 
 const getClassName = cssModules(STYLES);
 const componentClassName = getClassName('bpk-banner-alerts-page__component');

@@ -20,14 +20,14 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-import MarkdownPage from '../../../components/MarkdownPage';
-
 import Android, { metadata as androidMetadata } from './AndroidBadge.mdx';
 import IOS, { metadata as iosMetadata } from './IOSBadge.mdx';
 import WebBadge from './WebBadgePage';
 import Native, { metadata as nativeMetadata } from './NativeBadge.mdx';
+
+import MarkdownPage from 'components/MarkdownPage';
+import IntroBlurb from 'components/IntroBlurb';
+import DocsPageWrapper from 'components/DocsPageWrapper';
 
 const BadgePage = () => (
   <DocsPageWrapper

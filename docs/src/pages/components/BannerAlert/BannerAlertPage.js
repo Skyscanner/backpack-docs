@@ -20,12 +20,12 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-import MarkdownPage from '../../../components/MarkdownPage';
-
-import Native, { metaData as nativeMetadata } from './NativeBannerAlert.mdx';
+import Native, { metadata as nativeMetadata } from './NativeBannerAlert.mdx';
 import Web from './WebBannerAlertPage';
+
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
+import MarkdownPage from 'components/MarkdownPage';
 
 const Page = () => (
   <DocsPageWrapper
