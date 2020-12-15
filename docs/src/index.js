@@ -36,6 +36,7 @@ import Routes, { ROUTES_MAPPINGS } from './routes';
 import template from './template';
 import { extractAssets } from './webpackStats';
 import TopBanner from './components/TopBanner/TopBanner';
+import Meta from './meta';
 
 /*
  In our Webpack config file, we allow the base path to be set,
@@ -74,6 +75,7 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
   ReactDOM.render(
     <BrowserRouter basename={basePath}>
       <ScrollToTop>
+        <Meta basePath={basePath} />
         {basePath !== '' && (
           <TopBanner>
             <strong>Pull request build</strong>
