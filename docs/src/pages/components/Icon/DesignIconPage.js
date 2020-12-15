@@ -61,10 +61,10 @@ const blurb = [
   </IntroBlurb>,
   <Heading level="h2">Find the right icon</Heading>,
   <Paragraph>
-    Icons are provided in two sizes: small (18px) and large (24px). Both are
-    pixel-snapped for clarity at the intended usage sizes.
+    On web, icons are available at 18px and 24px. In apps, icons are available
+    at 16px and 24px.
   </Paragraph>,
-  <Paragraph>Note that some icons are only available at one size.</Paragraph>,
+  <Paragraph>Some icons are only available at one size.</Paragraph>,
   <IconSearchApp icons={iconsFinal} />,
   <Paragraph>
     <BpkButton href={`/${iconsSvgs}`}>
