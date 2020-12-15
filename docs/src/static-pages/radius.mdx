@@ -1,6 +1,6 @@
 ---
-title: Animation
-subtitle: Animation values for use on Android, iOS and web.
+title: Radius
+subtitle: Radii values for use on Android, iOS and web.
 category: tokens
 ---
 
@@ -14,9 +14,9 @@ import Tokens from 'components/Tokens'
 ## Android
 
 <Tokens
-  tokens={WEB_TOKENS}
+  tokens={ANDROID_TOKENS}
   platform="android"
-  matcher={({ category }) => category === 'animations' }
+  matcher={({ category }) => category === 'radii' }
 />
 
 ## iOS
@@ -24,7 +24,7 @@ import Tokens from 'components/Tokens'
 <Tokens
   tokens={IOS_TOKENS}
   platform="ios"
-  matcher={({ category }) => category === 'animations' }
+  matcher={({ category }) => category === 'radii' }
 />
 
 ## Web
@@ -32,5 +32,5 @@ import Tokens from 'components/Tokens'
 <Tokens
   tokens={WEB_TOKENS}
   platform="web"
-  matcher={({ category }) => category === 'animations' }
+  matcher={({ category }) => category === 'radii' }
 />

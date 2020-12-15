@@ -24,7 +24,7 @@ const ROOT_FONT_SIZE = 16;
 
 export type Platform = 'ios' | 'android' | 'web';
 
-type Token = {
+export type Token = {
   name: string,
   type: string,
   category: string,
@@ -107,39 +107,48 @@ export const getTokenValue = (token: Token, platform: Platform): string => {
   return value || '-';
 };
 
-export const tokenSortFn = (token: { name: string, value: string }) => {
-  if (token.name.indexOf('_XXS') !== -1) {
+const nameIncludes = (name: string, searchTerm: string) =>
+  name.toLowerCase().includes(`_${searchTerm}`);
+
+export const tokenNameToSizeNumber = (token: {
+  name: string,
+  value: string,
+}) => {
+  if (nameIncludes(token.name, 'caps')) {
     return 0;
   }
-  if (token.name.indexOf('_XS') !== -1) {
+  if (nameIncludes(token.name, 'xxs')) {
     return 1;
   }
-  if (token.name.indexOf('_SM') !== -1) {
+  if (nameIncludes(token.name, 'xs')) {
     return 2;
   }
-  if (token.name.indexOf('_MD') !== -1) {
+  if (nameIncludes(token.name, 'sm')) {
     return 3;
   }
-  if (token.name.indexOf('_BASE') !== -1) {
+  if (nameIncludes(token.name, 'md')) {
     return 4;
   }
-  if (token.name.indexOf('_LG') !== -1) {
+  if (nameIncludes(token.name, 'base')) {
     return 5;
   }
-  if (token.name.indexOf('_XL') !== -1) {
+  if (nameIncludes(token.name, 'lg')) {
     return 6;
   }
-  if (token.name.indexOf('_XXL') !== -1) {
+  if (nameIncludes(token.name, 'xl')) {
     return 7;
   }
-  if (token.name.indexOf('_XXXL') !== -1) {
+  if (nameIncludes(token.name, 'xxl')) {
     return 8;
   }
-  if (token.name.indexOf('_XXXXL') !== -1) {
+  if (nameIncludes(token.name, 'xxxl')) {
     return 9;
   }
-  if (token.name.indexOf('_XXXXXL') !== -1) {
+  if (nameIncludes(token.name, 'xxxxl')) {
     return 10;
+  }
+  if (nameIncludes(token.name, 'xxxxxl')) {
+    return 11;
   }
 
   return parseInt(token.value, 10);
@@ -152,7 +161,7 @@ export const getTokens = (tokens: TokenList, keys: ?Array<string> = null) =>
       acc[key] = tokens[key];
       return acc;
     }, {})
-    .sortBy(tokenSortFn)
+    .sortBy(tokenNameToSizeNumber)
     .keyBy('name')
     .value();
 
