@@ -23,9 +23,6 @@ import { cssModules } from 'bpk-react-utils';
 import ArrowIcon from 'bpk-component-icon/sm/arrow-right';
 import { withRtlSupport } from 'bpk-component-icon';
 
-import PageSearch from '../../components/PageSearch';
-import { setPlatformInLocalStorage } from '../../helpers/platform-helper';
-
 import NavListFilter, { type Option as FilterOption } from './NavListFilter';
 import STYLES from './NavList.scss';
 import sortLinks from './links-sorter';
@@ -34,6 +31,9 @@ import {
   type CategoryPropType,
   type Category,
 } from './common-types';
+
+import { setPlatformInLocalStorage } from 'helpers/platform-helper';
+import PageSearch from 'components/PageSearch';
 
 const getClassName = cssModules(STYLES);
 
