@@ -89,6 +89,8 @@ const enrichedMarkdownFiles = markdownFiles.map(fileName => {
   const id = data.title
     .toUpperCase()
     .split(' ')
+    .join('_')
+    .split('-')
     .join('_');
 
   const keywords = data.keywords ? data.keywords.split(',') : null;

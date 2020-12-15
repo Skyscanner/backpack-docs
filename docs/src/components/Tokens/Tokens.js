@@ -31,33 +31,34 @@ import {
 import {
   formatTokenName,
   getTokenValue,
-  tokenSortFn,
+  tokenNameToSizeNumber,
   type RawTokens,
   type Platform,
+  type Token,
 } from '../../helpers/tokens-helper';
 
 type Props = {
   tokens: RawTokens,
   platform: Platform,
-  category: string,
+  matcher: ?(Token) => boolean,
 };
 
 const Tokens = (props: Props) => {
-  const { tokens, platform, category } = props;
+  const { tokens, platform, matcher } = props;
 
-  const formattedAndFilteredtokens = Object.keys(tokens.props)
+  const filteredTokens = Object.keys(tokens.props)
     .map(key => {
       const token = tokens.props[key];
-      if (token.category === category && !token.deprecated) {
-        return {
-          name: formatTokenName(token.name),
-          value: getTokenValue(token, platform),
-        };
+      if (token.deprecated) {
+        return null;
       }
-      return null;
+      if (matcher && !matcher(token)) {
+        return null;
+      }
+      return token;
     })
     .filter(Boolean)
-    .sort(tokenSortFn);
+    .sort((a, b) => tokenNameToSizeNumber(a) - tokenNameToSizeNumber(b));
 
   return (
     <BpkTable alternate>
@@ -68,17 +69,17 @@ const Tokens = (props: Props) => {
         </BpkTableRow>
       </BpkTableHead>
       <BpkTableBody>
-        {!formattedAndFilteredtokens.length && (
+        {!filteredTokens.length && (
           <BpkTableRow key="notAvailable">
             <BpkTableCell colSpan="2">N/A</BpkTableCell>
           </BpkTableRow>
         )}
-        {!!formattedAndFilteredtokens.length &&
-          formattedAndFilteredtokens.map(token => {
+        {!!filteredTokens.length &&
+          filteredTokens.map(token => {
             return (
               <BpkTableRow key={token.name}>
-                <BpkTableCell>{token.name}</BpkTableCell>
-                <BpkTableCell>{token.value}</BpkTableCell>
+                <BpkTableCell>{formatTokenName(token.name)}</BpkTableCell>
+                <BpkTableCell>{getTokenValue(token, platform)}</BpkTableCell>
               </BpkTableRow>
             );
           })}

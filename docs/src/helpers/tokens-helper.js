@@ -24,7 +24,7 @@ const ROOT_FONT_SIZE = 16;
 
 export type Platform = 'ios' | 'android' | 'web';
 
-type Token = {
+export type Token = {
   name: string,
   type: string,
   category: string,
@@ -107,39 +107,48 @@ export const getTokenValue = (token: Token, platform: Platform): string => {
   return value || '-';
 };
 
-export const tokenSortFn = (token: { name: string, value: string }) => {
-  if (token.name.indexOf('_XXS') !== -1) {
+export const tokenNameToSizeNumber = (token: {
+  name: string,
+  value: string,
+}) => {
+  const nameIncludes = searchTerm =>
+    token.name.toLowerCase().includes(`_${searchTerm}`);
+
+  if (nameIncludes('caps')) {
     return 0;
   }
-  if (token.name.indexOf('_XS') !== -1) {
+  if (nameIncludes('xxs')) {
     return 1;
   }
-  if (token.name.indexOf('_SM') !== -1) {
+  if (nameIncludes('xs')) {
     return 2;
   }
-  if (token.name.indexOf('_MD') !== -1) {
+  if (nameIncludes('sm')) {
     return 3;
   }
-  if (token.name.indexOf('_BASE') !== -1) {
+  if (nameIncludes('md')) {
     return 4;
   }
-  if (token.name.indexOf('_LG') !== -1) {
+  if (nameIncludes('base')) {
     return 5;
   }
-  if (token.name.indexOf('_XL') !== -1) {
+  if (nameIncludes('lg')) {
     return 6;
   }
-  if (token.name.indexOf('_XXL') !== -1) {
+  if (nameIncludes('xl')) {
     return 7;
   }
-  if (token.name.indexOf('_XXXL') !== -1) {
+  if (nameIncludes('xxl')) {
     return 8;
   }
-  if (token.name.indexOf('_XXXXL') !== -1) {
+  if (nameIncludes('xxxl')) {
     return 9;
   }
-  if (token.name.indexOf('_XXXXXL') !== -1) {
+  if (nameIncludes('xxxxl')) {
     return 10;
+  }
+  if (nameIncludes('xxxxxl')) {
+    return 11;
   }
 
   return parseInt(token.value, 10);
@@ -152,7 +161,7 @@ export const getTokens = (tokens: TokenList, keys: ?Array<string> = null) =>
       acc[key] = tokens[key];
       return acc;
     }, {})
-    .sortBy(tokenSortFn)
+    .sortBy(tokenNameToSizeNumber)
     .keyBy('name')
     .value();
 

@@ -1,0 +1,81 @@
+---
+title: Typesetting
+subtitle: Typography values including font families, sizes, and line heights for use on Android, iOS and web.
+category: tokens
+---
+
+import ANDROID_TOKENS from 'bpk-tokens/tokens/base.raw.android.json';
+import IOS_TOKENS from 'bpk-tokens/tokens/base.raw.ios.json';
+import WEB_TOKENS from 'bpk-tokens/tokens/base.raw.json';
+import Tokens from '../components/Tokens'
+
+## Table of Contents
+
+## Android
+
+### Font weight
+
+When designing for iOS, use **Skyscanner Relative Android**.
+
+* Book
+* Emphasized (for emphasised text)
+* Heavy (for `font-size-xxl` only)
+
+### Font size
+
+<Tokens
+  tokens={ANDROID_TOKENS}
+  platform="android"
+  matcher={({ name, category }) => category === 'typesettings' && name.includes('FONT_SIZE')}
+/>
+
+## iOS
+
+### Font weight
+
+When designing for iOS, use **Skyscanner Relative iOS**.
+
+* Book
+* Emphasized (for emphasised text)
+* Heavy (for `font-size-xxl` only)
+
+### Font size
+
+<Tokens
+  tokens={IOS_TOKENS}
+  platform="ios"
+  matcher={({ name, category }) => category === 'typesettings' && name.includes('FONT_SIZE')}
+/>
+
+## Web
+
+### Font family
+
+<Tokens
+  tokens={WEB_TOKENS}
+  platform="web"
+  matcher={({ name }) => name.includes('FONT_FAMILY_BASE')}
+/>
+
+### Font weight
+
+When designing for web, use **Skyscanner Relative**.
+
+* Regular
+* Bold (for emphasised text)
+
+### Font size
+
+<Tokens
+  tokens={WEB_TOKENS}
+  platform="web"
+  matcher={({ name, category }) => category === 'typesettings' && name.includes('FONT_SIZE')}
+/>
+
+### Line height
+
+<Tokens
+  tokens={WEB_TOKENS}
+  platform="web"
+  matcher={({ name, category }) => category === 'typesettings' && name.includes('LINE_HEIGHT')}
+/>

@@ -1,6 +1,6 @@
 ---
-title: Animation
-subtitle: Animation values for use on Android, iOS and web.
+title: Border
+subtitle: Border values for use on Android, iOS and web.
 category: tokens
 ---
 
@@ -14,23 +14,23 @@ import Tokens from '../components/Tokens'
 ## Android
 
 <Tokens
-  tokens={WEB_TOKENS}
+  tokens={ANDROID_TOKENS}
   platform="android"
-  matcher={({ category }) => category === 'animations' }
+  matcher={({ category }) => category === 'borders' }
 />
 
 ## iOS
 
 <Tokens
-  tokens={IOS_TOKENS}
-  platform="ios"
-  matcher={({ category }) => category === 'animations' }
+  tokens={ANDROID_TOKENS}
+  platform="android"
+  matcher={({ category }) => category === 'borders' }
 />
 
 ## Web
 
 <Tokens
-  tokens={WEB_TOKENS}
-  platform="web"
-  matcher={({ category }) => category === 'animations' }
+  tokens={ANDROID_TOKENS}
+  platform="android"
+  matcher={({ category }) => category === 'borders' }
 />

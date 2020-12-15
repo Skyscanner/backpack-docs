@@ -22,6 +22,12 @@ import * as ROUTES from '../../constants/routes';
 import MarkdownPage from '../../components/MarkdownPage';
 
 import ANIMATION from '../../static-pages/animation.mdx';
+import BORDER from '../../static-pages/border.mdx';
+import RADIUS from '../../static-pages/radius.mdx';
+import SHADOW from '../../static-pages/shadow.mdx';
+import SPACING from '../../static-pages/spacing.mdx';
+import TYPESETTING from '../../static-pages/typesetting.mdx';
+import Z_INDEX from '../../static-pages/z-index.mdx';
 import BACKPACK_REACT_SCRIPTS from '../../static-pages/backpack-react-scripts.mdx';
 import BASE_STYLESHEET from '../../static-pages/base-stylesheet.mdx';
 import GETTING_STARTED from '../../static-pages/getting-started.mdx';
@@ -49,6 +55,60 @@ export const tokens = [{
         fileName="animation.mdx"
         content={ANIMATION}
         {...{"title":"Animation","subtitle":"Animation values for use on Android, iOS and web.","category":"tokens"}}
+      />
+    )
+  },{
+    path: ROUTES.GENERATED_TOKENS_BORDER,
+    component: () => (
+      <MarkdownPage
+        fileName="border.mdx"
+        content={BORDER}
+        {...{"title":"Border","subtitle":"Border values for use on Android, iOS and web.","category":"tokens"}}
+      />
+    )
+  },{
+    path: ROUTES.GENERATED_TOKENS_RADIUS,
+    component: () => (
+      <MarkdownPage
+        fileName="radius.mdx"
+        content={RADIUS}
+        {...{"title":"Radius","subtitle":"Radii values for use on Android, iOS and web.","category":"tokens"}}
+      />
+    )
+  },{
+    path: ROUTES.GENERATED_TOKENS_SHADOW,
+    component: () => (
+      <MarkdownPage
+        fileName="shadow.mdx"
+        content={SHADOW}
+        {...{"title":"Shadow","subtitle":"Shadow values for use on Android, iOS and web.","category":"tokens"}}
+      />
+    )
+  },{
+    path: ROUTES.GENERATED_TOKENS_SPACING,
+    component: () => (
+      <MarkdownPage
+        fileName="spacing.mdx"
+        content={SPACING}
+        {...{"title":"Spacing","subtitle":"Spacing values for use on Android, iOS and web.","category":"tokens"}}
+      />
+    )
+  },{
+    path: ROUTES.GENERATED_TOKENS_TYPESETTING,
+    component: () => (
+      <MarkdownPage
+        fileName="typesetting.mdx"
+        content={TYPESETTING}
+        {...{"title":"Typesetting","subtitle":"Typography values including font families, sizes, and line heights for use on Android, iOS and web.","category":"tokens"}}
+      />
+    )
+  },{
+    path: ROUTES.GENERATED_TOKENS_Z_INDEX,
+    component: () => (
+      <MarkdownPage
+        fileName="z-index.mdx"
+        content={Z_INDEX}
+        {...{"title":"Z-Index","subtitle":"Z-index values for use in web projects.","category":"tokens"}}
       />
     )
   }];
