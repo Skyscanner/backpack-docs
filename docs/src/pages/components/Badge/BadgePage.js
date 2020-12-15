@@ -20,13 +20,14 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-
-import AndroidBadge from './AndroidBadgePage';
-import IOSBadge from './IOSBadgePage';
+import Android, { metadata as androidMetadata } from './AndroidBadge.mdx';
+import IOS, { metadata as iosMetadata } from './IOSBadge.mdx';
 import WebBadge from './WebBadgePage';
-import NativeBadge from './NativeBadgePage';
+import Native, { metadata as nativeMetadata } from './NativeBadge.mdx';
+
+import MarkdownPage from 'components/MarkdownPage';
+import IntroBlurb from 'components/IntroBlurb';
+import DocsPageWrapper from 'components/DocsPageWrapper';
 
 const BadgePage = () => (
   <DocsPageWrapper
@@ -37,10 +38,10 @@ const BadgePage = () => (
         describe or highlight areas.
       </IntroBlurb>,
     ]}
-    androidSubpage={<AndroidBadge wrapped />}
-    iosSubpage={<IOSBadge wrapped />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
     webSubpage={<WebBadge wrapped />}
-    nativeSubpage={<NativeBadge wrapped />}
   />
 );
 

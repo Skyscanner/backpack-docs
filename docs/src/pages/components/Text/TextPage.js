@@ -20,14 +20,14 @@
 
 import React from 'react';
 
-import MarkdownPage from '../../../components/MarkdownPage';
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-
 import Web from './WebTextPage';
 import Android, { metadata as androidMetadata } from './AndroidText.mdx';
 import Native, { metadata as nativeMetadata } from './NativeText.mdx';
 import IOS, { metadata as iosMetadata } from './iOSText.mdx';
+
+import IntroBlurb from 'components/IntroBlurb';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import MarkdownPage from 'components/MarkdownPage';
 
 const Page = () => (
   <DocsPageWrapper

@@ -26,10 +26,10 @@ import BpkSmallHotelIcon from 'bpk-component-icon/sm/hotels';
 import { cssModules } from 'bpk-react-utils';
 import badgeReadme from 'bpk-component-badge/README.md';
 
-import { WebComponentPage } from '../../../components/ComponentPage';
-import Paragraph from '../../../components/Paragraph';
-
 import STYLES from './badge-page.scss';
+
+import { WebComponentPage } from 'components/ComponentPage';
+import Paragraph from 'components/Paragraph';
 
 const getClassName = cssModules(STYLES);
 const badgeClassName = getClassName('bpkdocs-badge-page__badge-spacing');

@@ -20,10 +20,11 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
+import IOS, { metadata as iosMetadata } from './IOSBottomSheet.mdx';
 
-import IOSBottomSheet from './IOSBottomSheetPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
+import MarkdownPage from 'components/MarkdownPage';
 
 const BottomSheetPage = () => (
   <DocsPageWrapper
@@ -34,7 +35,7 @@ const BottomSheetPage = () => (
         supplementary content that are anchored to the bottom of the screen.
       </IntroBlurb>,
     ]}
-    iosSubpage={<IOSBottomSheet wrapped />}
+    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
   />
 );
 

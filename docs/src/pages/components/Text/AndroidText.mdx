@@ -5,33 +5,43 @@ documentationId: net.skyscanner.backpack.text
 githubPath: text
 ---
 
-import Readme from '../../../components/Readme';
-import AndroidComponentScreenshots from '../../../components/Screenshots/AndroidComponentScreenshots';
+import Readme from 'components/Readme';
+import AndroidComponentScreenshots from 'components/Screenshots/AndroidComponentScreenshots';
 
-import textReadme from '../../../../../backpack-android/docs/Text/README.md';
-import textSpanReadme from '../../../../../backpack-android/docs/TextSpans/README.md';
+import textReadme from 'backpack-android/docs/Text/README.md';
+import textSpanReadme from 'backpack-android/docs/TextSpans/README.md';
+
+import TextDefault from 'backpack-android/docs/Text/screenshots/default.png';
+import TextDefaultDm from 'backpack-android/docs/Text/screenshots/default_dm.png'
+import TextEmphasized from 'backpack-android/docs/Text/screenshots/emphasized.png'
+import TextEmphasizedDm from 'backpack-android/docs/Text/screenshots/emphasized_dm.png'
+import TextHeavy from 'backpack-android/docs/Text/screenshots/heavy.png'
+import TextHeavyDm from 'backpack-android/docs/Text/screenshots/heavy_dm.png'
+
+import TextSpan from 'backpack-android/docs/TextSpans/screenshots/default.png'
+import TextSpanDm from 'backpack-android/docs/TextSpans/screenshots/default_dm.png'
 
 # Table of contents
 
 # Default
 
 <AndroidComponentScreenshots
-  lightMode="../../../../../backpack-android/docs/Text/screenshots/default.png"
-  darkMode="../../../../../backpack-android/docs/Text/screenshots/default_dm.png"
+  lightMode={TextDefault}
+  darkMode={TextDefaultDm}
   altText="Android default text" />
 
 # Emphasized
 
 <AndroidComponentScreenshots
-  lightMode="../../../../../backpack-android/docs/Text/screenshots/emphasized.png"
-  darkMode="../../../../../backpack-android/docs/Text/screenshots/emphasized_dm.png"
+  lightMode={TextEmphasized}
+  darkMode={TextEmphasizedDm}
   altText="Android emphasized text" />
 
 # Heavy
 
 <AndroidComponentScreenshots
-  lightMode="../../../../../backpack-android/docs/Text/screenshots/heavy.png"
-  darkMode="../../../../../backpack-android/docs/Text/screenshots/heavy_dm.png"
+  lightMode={TextHeavy}
+  darkMode={TextHeavyDm}
   altText="Android heavy text" />
 
 # Text Implementation
@@ -43,8 +53,8 @@ import textSpanReadme from '../../../../../backpack-android/docs/TextSpans/READM
 Text Spans are a set of styles to apply to characters sequence.
 
 <AndroidComponentScreenshots
-  lightMode="../../../../../backpack-android/docs/TextSpans/screenshots/default.png"
-  darkMode="../../../../../backpack-android/docs/TextSpans/screenshots/default_dm.png"
+  lightMode={TextSpan}
+  darkMode={TextSpanDm}
   altText="Android text spans" />
 
 # Text Span Implementation

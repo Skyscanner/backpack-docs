@@ -20,13 +20,14 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-
-import AndroidButtons from './AndroidButtonPage';
-import IOSButtons from './IOSButtonPage';
+import Android, { metadata as androidMetadata } from './AndroidButton.mdx';
+import IOS, { metadata as iosMetadata } from './IOSButtonPage.mdx';
 import WebButtons from './WebButtonPage';
-import NativeButtons from './NativeButtonPage';
+import Native, { metadata as nativeMetadata } from './NativeButtonPage.mdx';
+
+import MarkdownPage from 'components/MarkdownPage';
+import IntroBlurb from 'components/IntroBlurb';
+import DocsPageWrapper from 'components/DocsPageWrapper';
 
 const ButtonPage = () => (
   <DocsPageWrapper
@@ -36,10 +37,10 @@ const ButtonPage = () => (
         Buttons make common actions and navigation easy to perform.
       </IntroBlurb>,
     ]}
-    androidSubpage={<AndroidButtons wrapped />}
-    iosSubpage={<IOSButtons wrapped />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     webSubpage={<WebButtons wrapped />}
-    nativeSubpage={<NativeButtons wrapped />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );
 

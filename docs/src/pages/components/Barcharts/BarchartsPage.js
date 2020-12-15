@@ -17,122 +17,14 @@
  */
 
 import React from 'react';
-import BpkLink from 'bpk-component-link';
-import BpkBarchart from 'bpk-component-barchart';
-import { onePixelRem } from 'bpk-tokens/tokens/base.es6';
-import { withSelectedState } from 'bpk-component-barchart/hocs';
-import barchartReadme from 'bpk-component-barchart/README.md';
-import { updateOnDirectionChange } from 'bpk-component-rtl-toggle';
-import data from 'bpk-component-barchart/data.json';
 
-import { WebComponentPage } from '../../../components/ComponentPage';
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import Paragraph from '../../../components/Paragraph';
-import IntroBlurb from '../../../components/IntroBlurb';
-import Code from '../../../components/Code';
+import IOS, { metadata as iosMetadata } from './IOSBarChart.mdx';
+import Android, { metadata as androidMetadata } from './AndroidBarChart.mdx';
+import Web from './WebBarChartPage';
 
-import IOSBarChartPage from './IOSBarChartPage';
-import AndroidBarChartPage from './AndroidBarChartPage';
-
-const EnhancedBarchart = updateOnDirectionChange(BpkBarchart);
-const InteractiveBarchart = withSelectedState(EnhancedBarchart);
-
-const components = [
-  {
-    id: 'default',
-    title: 'Default',
-    blurb: [
-      <Paragraph>By default, bar charts come with axis labels.</Paragraph>,
-    ],
-    examples: [
-      <EnhancedBarchart
-        initialWidth={500}
-        initialHeight={300}
-        data={data.prices}
-        xScaleDataKey="month"
-        yScaleDataKey="price"
-        xAxisMargin={60}
-        yAxisLabel="Average price (£)"
-        xAxisLabel="Month"
-        style={{ minWidth: `calc(500 * ${onePixelRem})` }}
-      />,
-    ],
-  },
-  {
-    id: 'gridlines',
-    title: 'With gridlines',
-    blurb: [
-      <Paragraph>
-        It is possible to show gridlines for each tick on the Y axis.
-      </Paragraph>,
-    ],
-    examples: [
-      <EnhancedBarchart
-        initialWidth={500}
-        initialHeight={300}
-        data={data.prices}
-        xScaleDataKey="month"
-        yScaleDataKey="price"
-        xAxisMargin={60}
-        yAxisLabel="Average price (£)"
-        xAxisLabel="Month"
-        style={{ minWidth: `calc(500 * ${onePixelRem})` }}
-        showGridlines
-      />,
-    ],
-  },
-  {
-    id: 'ineractive',
-    title: 'Interactive',
-    blurb: [
-      <Paragraph>
-        The bars can be made interactive using the <Code>onBarClick</Code> &amp;{' '}
-        <Code>getBarSelection</Code> props.
-      </Paragraph>,
-    ],
-    examples: [
-      <InteractiveBarchart
-        initialWidth={500}
-        initialHeight={300}
-        data={data.prices}
-        xScaleDataKey="month"
-        yScaleDataKey="price"
-        xAxisMargin={60}
-        yAxisLabel="Average price (£)"
-        xAxisLabel="Month"
-        style={{ minWidth: `calc(500 * ${onePixelRem})` }}
-      />,
-    ],
-  },
-  {
-    id: 'outliers',
-    title: 'Outliers',
-    blurb: [
-      <Paragraph>
-        Outliers can be capped to indicate they are far off the scale. In this
-        case using{' '}
-        <BpkLink href="#outlierpercentage">
-          <Code>outlierPercentage</Code>
-        </BpkLink>{' '}
-        of 15.
-      </Paragraph>,
-    ],
-    examples: [
-      <EnhancedBarchart
-        initialWidth={500}
-        initialHeight={300}
-        data={data.prices}
-        xScaleDataKey="month"
-        yScaleDataKey="price"
-        xAxisMargin={60}
-        yAxisLabel="Average price (£)"
-        xAxisLabel="Month"
-        style={{ minWidth: `calc(500 * ${onePixelRem})` }}
-        outlierPercentage={15}
-      />,
-    ],
-  },
-];
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
+import MarkdownPage from 'components/MarkdownPage';
 
 const blurb = [
   <IntroBlurb>
@@ -142,21 +34,13 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const BarchartsSubPage = () => (
-  <WebComponentPage
-    examples={components}
-    readme={barchartReadme}
-    packageName="bpk-component-barchart"
-  />
-);
-
 const BarchartsPage = () => (
   <DocsPageWrapper
     title="Bar chart"
     blurb={blurb}
-    webSubpage={<BarchartsSubPage />}
-    androidSubpage={<AndroidBarChartPage />}
-    iosSubpage={<IOSBarChartPage wrapped />}
+    webSubpage={<Web />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
   />
 );
 
