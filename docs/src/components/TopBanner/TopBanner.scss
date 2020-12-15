@@ -23,5 +23,11 @@
   justify-content: space-between;
   background-color: $bpk-color-kolkata;
   color: $bpk-color-sky-blue-shade-03;
+  font-weight: bold;
   text-align: center;
+
+  &__link {
+    margin-left: $bpk-spacing-base;
+    color: $bpk-color-abisko;
+  }
 }
