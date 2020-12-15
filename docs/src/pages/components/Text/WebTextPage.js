@@ -20,7 +20,7 @@ import React from 'react';
 import BpkText from 'bpk-component-text';
 import textReadme from 'bpk-component-text/README.md';
 
-import { WebComponentPage } from '../../../components/ComponentPage';
+import { WebComponentPage } from 'components/ComponentPage';
 
 const TEXT = 'Lorem ipsum';
 
