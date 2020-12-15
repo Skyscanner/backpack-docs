@@ -77,7 +77,7 @@ const PullRequestBanner = () => {
   if (match) {
     const prNumber = match[0];
     links.push({
-      href: `https://github.com/Skyscanner/backpack-docs/pulls/${prNumber}`,
+      href: `https://github.com/Skyscanner/backpack-docs/pull/${prNumber}`,
       title: `View PR #${prNumber} on GitHub`,
     });
   }
