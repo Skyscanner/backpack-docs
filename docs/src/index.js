@@ -30,7 +30,6 @@ import {
   matchPath,
 } from 'react-router-dom';
 import 'es6-promise/auto';
-import BpkLink from 'bpk-component-link';
 
 import Routes, { ROUTES_MAPPINGS } from './routes';
 import template from './template';
@@ -68,20 +67,31 @@ const ScrollToTop = withRouter(
   },
 );
 
+const PullRequestBanner = () => {
+  if (!basePath) {
+    return null;
+  }
+
+  const links = [{ href: 'https://backpack.github.io', title: 'Main site' }];
+  const match = basePath.match(/(\d+)/);
+  if (match) {
+    const prNumber = match[0];
+    links.push({
+      href: `https://github.com/Skyscanner/backpack-docs/pull/${prNumber}`,
+      title: `View PR #${prNumber} on GitHub`,
+    });
+  }
+
+  return <TopBanner links={links}>Pull request build</TopBanner>;
+};
+
 if (typeof window !== 'undefined' && typeof document !== 'undefined') {
   const root = document.getElementById('react-mount');
 
   ReactDOM.render(
     <BrowserRouter basename={basePath}>
       <ScrollToTop>
-        {basePath !== '' && (
-          <TopBanner>
-            <strong>Pull request build</strong>
-            <BpkLink href="https://backpack.github.io">
-              Return to main site
-            </BpkLink>
-          </TopBanner>
-        )}
+        <PullRequestBanner />
         <Routes />
       </ScrollToTop>
     </BrowserRouter>,
