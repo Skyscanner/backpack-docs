@@ -107,47 +107,47 @@ export const getTokenValue = (token: Token, platform: Platform): string => {
   return value || '-';
 };
 
+const nameIncludes = (name: string, searchTerm: string) =>
+  name.toLowerCase().includes(`_${searchTerm}`);
+
 export const tokenNameToSizeNumber = (token: {
   name: string,
   value: string,
 }) => {
-  const nameIncludes = searchTerm =>
-    token.name.toLowerCase().includes(`_${searchTerm}`);
-
-  if (nameIncludes('caps')) {
+  if (nameIncludes(token.name, 'caps')) {
     return 0;
   }
-  if (nameIncludes('xxs')) {
+  if (nameIncludes(token.name, 'xxs')) {
     return 1;
   }
-  if (nameIncludes('xs')) {
+  if (nameIncludes(token.name, 'xs')) {
     return 2;
   }
-  if (nameIncludes('sm')) {
+  if (nameIncludes(token.name, 'sm')) {
     return 3;
   }
-  if (nameIncludes('md')) {
+  if (nameIncludes(token.name, 'md')) {
     return 4;
   }
-  if (nameIncludes('base')) {
+  if (nameIncludes(token.name, 'base')) {
     return 5;
   }
-  if (nameIncludes('lg')) {
+  if (nameIncludes(token.name, 'lg')) {
     return 6;
   }
-  if (nameIncludes('xl')) {
+  if (nameIncludes(token.name, 'xl')) {
     return 7;
   }
-  if (nameIncludes('xxl')) {
+  if (nameIncludes(token.name, 'xxl')) {
     return 8;
   }
-  if (nameIncludes('xxxl')) {
+  if (nameIncludes(token.name, 'xxxl')) {
     return 9;
   }
-  if (nameIncludes('xxxxl')) {
+  if (nameIncludes(token.name, 'xxxxl')) {
     return 10;
   }
-  if (nameIncludes('xxxxxl')) {
+  if (nameIncludes(token.name, 'xxxxxl')) {
     return 11;
   }
 
