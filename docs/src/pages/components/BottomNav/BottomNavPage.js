@@ -22,8 +22,9 @@ import React from 'react';
 
 import DocsPageWrapper from '../../../components/DocsPageWrapper';
 import IntroBlurb from '../../../components/IntroBlurb';
+import MarkdownPage from '../../../components/MarkdownPage';
 
-import Android from './AndroidBottomNavPage';
+import Android, { metadata as androidMetadata } from './AndroidBottomNav.mdx';
 
 const Page = () => (
   <DocsPageWrapper
@@ -33,7 +34,7 @@ const Page = () => (
         A Bottom Nav represents the primary way of navigation in an application.
       </IntroBlurb>,
     ]}
-    androidSubpage={<Android wrapped />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
   />
 );
 

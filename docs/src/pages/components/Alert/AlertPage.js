@@ -19,11 +19,11 @@
 /* @flow strict */
 
 import React from 'react';
-
-import NativeAlertPage from './NativeAlertPage';
-
 import IntroBlurb from 'components/IntroBlurb';
 import DocsPageWrapper from 'components/DocsPageWrapper';
+import MarkdownPage from 'components/MarkdownPage';
+
+import Native, { metadata as nativeMetadata } from './NativeAlert.mdx';
 
 const AlertPage = () => (
   <DocsPageWrapper
@@ -35,7 +35,7 @@ const AlertPage = () => (
         &apos;colorAccent&apos; property of the theme.
       </IntroBlurb>,
     ]}
-    nativeSubpage={<NativeAlertPage />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );
 

@@ -1,0 +1,51 @@
+---
+title: Alert
+platform: native
+githubPath: bpk-component-alert
+---
+
+import Readme from '../../../components/Readme';
+import NativeComponentScreenshots from '../../../components/Screenshots/NativeComponentScreenshots';
+
+import readme from '../../../../../backpack-react-native/lib/bpk-component-alert/README.md';
+
+import iosAlertDefault from '../../../../../backpack-react-native/lib/bpk-component-alert/screenshots/ios/default.png';
+import iosAlertCancelable from '../../../../../backpack-react-native/lib/bpk-component-alert/screenshots/ios/cancelable.png';
+import iosAlertThreeButton from '../../../../../backpack-react-native/lib/bpk-component-alert/screenshots/ios/three-button.png';
+import androidAlertDefault from '../../../../../backpack-react-native/lib/bpk-component-alert/screenshots/android/default.png';
+import androidAlertCancelable from '../../../../../backpack-react-native/lib/bpk-component-alert/screenshots/android/cancelable.png';
+import androidAlertThreeButton from '../../../../../backpack-react-native/lib/bpk-component-alert/screenshots/android/three-button.png';
+
+## Table of contents
+
+## Default
+
+<NativeComponentScreenshots
+  iOS={iosAlertDefault}
+  iOSAltText="iOS default alert component"
+  android={androidAlertDefault}
+  androidAltText="Android default alert component" />
+
+## Cancelable
+
+Android alerts can optionally be marked as `cancelable`. Clicking outside the bounds of the alert will dismiss it without a callback.
+
+<NativeComponentScreenshots
+  iOS={iosAlertCancelable}
+  iOSAltText="iOS cancelable alert component"
+  android={androidAlertCancelable}
+  androidAltText="Android cancelable alert component" />
+
+## Three Buttons
+
+iOS alerts can accommodate any number of buttons. Each button can optionally specify a style, which is one of `default`, `cancel` or `destructive`.
+
+<NativeComponentScreenshots
+  iOS={iosAlertThreeButton}
+  iOSAltText="iOS three button alert"
+  android={androidAlertThreeButton}
+  androidAltText="Android three button alert" />
+
+## Implementation
+
+<Readme file={readme} />

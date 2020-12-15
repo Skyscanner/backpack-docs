@@ -22,8 +22,9 @@ import React from 'react';
 
 import DocsPageWrapper from '../../../components/DocsPageWrapper';
 import IntroBlurb from '../../../components/IntroBlurb';
+import MarkdownPage from '../../../components/MarkdownPage';
 
-import Native from './NativeBannerAlertPage';
+import Native, { metaData as nativeMetadata } from './NativeBannerAlert.mdx';
 import Web from './WebBannerAlertPage';
 
 const Page = () => (
@@ -35,7 +36,7 @@ const Page = () => (
       </IntroBlurb>,
     ]}
     webSubpage={<Web wrapped />}
-    nativeSubpage={<Native wrapped />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );
 
