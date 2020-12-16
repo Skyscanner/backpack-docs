@@ -33,11 +33,12 @@ import CarsIconSm from 'bpk-component-icon/sm/cars';
 import TickCircleIconSm from 'bpk-component-icon/sm/tick-circle';
 
 import * as ROUTES from '../../../constants/routes';
-import AriaLiveDemo from '../../../components/AriaLiveDemo';
-import Paragraph from '../../../components/Paragraph';
-import { WebComponentPage } from '../../../components/ComponentPage';
 
 import STYLES from './ChipsPage.scss';
+
+import AriaLiveDemo from 'components/AriaLiveDemo';
+import Paragraph from 'components/Paragraph';
+import { WebComponentPage } from 'components/ComponentPage';
 
 const getClassName = cssModules(STYLES);
 

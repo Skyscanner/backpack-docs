@@ -20,10 +20,13 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
+import Android, {
+  metadata as androidMetadata,
+} from './AndroidFloatingActionButton.mdx';
 
-import AndroidFloatingActionButtonPage from './AndroidFloatingActionButtonPage';
+import MarkdownPage from 'components/MarkdownPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
 
 const FloatingActionButtonPage = () => (
   <DocsPageWrapper
@@ -34,7 +37,7 @@ const FloatingActionButtonPage = () => (
         application.
       </IntroBlurb>,
     ]}
-    androidSubpage={<AndroidFloatingActionButtonPage wrapped />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
   />
 );
 

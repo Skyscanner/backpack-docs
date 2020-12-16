@@ -18,10 +18,11 @@
 
 import React from 'react';
 
-import IntroBlurb from '../../../components/IntroBlurb';
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
+import Native, { metadata as nativeMetadata } from './NativeFlatList.mdx';
 
-import NativeFlatListPage from './NativeFlatListPage';
+import MarkdownPage from 'components/MarkdownPage';
+import IntroBlurb from 'components/IntroBlurb';
+import DocsPageWrapper from 'components/DocsPageWrapper';
 
 const blurb = [
   <IntroBlurb>
@@ -34,7 +35,7 @@ const FlatListPage = () => (
   <DocsPageWrapper
     title="Flat list"
     blurb={blurb}
-    nativeSubpage={<NativeFlatListPage />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );
 

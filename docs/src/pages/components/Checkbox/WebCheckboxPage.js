@@ -22,10 +22,11 @@ import { cssModules } from 'bpk-react-utils';
 import readme from 'bpk-component-checkbox/README.md';
 
 import InputContainer from '../Forms/InputContainer';
-import { WebComponentPage } from '../../../components/ComponentPage';
-import Paragraph from '../../../components/Paragraph';
 
 import STYLES from './checkbox-page.scss';
+
+import { WebComponentPage } from 'components/ComponentPage';
+import Paragraph from 'components/Paragraph';
 
 const getClassName = cssModules(STYLES);
 

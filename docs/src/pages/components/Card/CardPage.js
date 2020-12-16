@@ -20,14 +20,15 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import Paragraph from '../../../components/Paragraph';
-import IntroBlurb from '../../../components/IntroBlurb';
-
-import AndroidCard from './AndroidCardPage';
-import IOSCard from './IOSCardPage';
+import Android, { metadata as androidMetadata } from './AndroidCard.mdx';
+import IOS, { metadata as iosMetadata } from './IOSCard.mdx';
 import WebCard from './WebCardPage';
-import NativeCard from './NativeCardPage';
+import Native, { metadata as nativeMetadata } from './NativeCard.mdx';
+
+import IntroBlurb from 'components/IntroBlurb';
+import Paragraph from 'components/Paragraph';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import MarkdownPage from 'components/MarkdownPage';
 
 const Page = () => (
   <DocsPageWrapper
@@ -42,10 +43,10 @@ const Page = () => (
         elements.
       </Paragraph>,
     ]}
-    androidSubpage={<AndroidCard wrapped />}
-    iosSubpage={<IOSCard wrapped />}
-    webSubpage={<WebCard wrapped />}
-    nativeSubpage={<NativeCard wrapped />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
+    webSubpage={<WebCard />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );
 

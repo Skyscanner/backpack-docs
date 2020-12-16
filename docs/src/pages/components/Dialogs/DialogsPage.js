@@ -20,13 +20,14 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-
-import AndroidDialogs from './AndroidDialogPage';
-import IOSDialogs from './IOSDialogPage';
+import Android, { metadata as androidMetadata } from './AndroidDialog.mdx';
+import IOS, { metadata as iosMetadata } from './IOSDialog.mdx';
 import WebDialogs from './WebDialogPage';
-import NativeDialogs from './NativeDialogPage';
+import Native, { metadata as nativeMetadata } from './NativeDialog.mdx';
+
+import MarkdownPage from 'components/MarkdownPage';
+import IntroBlurb from 'components/IntroBlurb';
+import DocsPageWrapper from 'components/DocsPageWrapper';
 
 const blurb = [
   <IntroBlurb>
@@ -39,10 +40,10 @@ const DialogPage = () => (
   <DocsPageWrapper
     title="Dialog"
     blurb={blurb}
-    androidSubpage={<AndroidDialogs wrapped />}
-    iosSubpage={<IOSDialogs wrapped />}
-    webSubpage={<WebDialogs wrapped />}
-    nativeSubpage={<NativeDialogs wrapped />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
+    webSubpage={<WebDialogs />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );
 

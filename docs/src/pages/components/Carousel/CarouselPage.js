@@ -20,10 +20,11 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
+import Native, { metadata as nativeMetadata } from './NativeCarousel.mdx';
 
-import NativeCarouselPage from './NativeCarouselPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
+import MarkdownPage from 'components/MarkdownPage';
 
 const CarouselPage = () => (
   <DocsPageWrapper
@@ -33,7 +34,7 @@ const CarouselPage = () => (
         The carousel component allows a series of content to cycle horizontally.
       </IntroBlurb>,
     ]}
-    nativeSubpage={<NativeCarouselPage />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );
 

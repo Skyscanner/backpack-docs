@@ -20,13 +20,14 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-
-import AndroidFlare from './AndroidFlarePage';
-import IOSFlare from './IOSFlarePage';
+import Android, { metadata as androidMetadata } from './AndroidFlare.mdx';
+import IOS, { metadata as iosMetadata } from './IOSFlare.mdx';
 import WebFlare from './WebFlarePage';
-import NativeFlare from './NativeFlarePage';
+import Native, { metadata as nativeMetadata } from './NativeFlare.mdx';
+
+import MarkdownPage from 'components/MarkdownPage';
+import IntroBlurb from 'components/IntroBlurb';
+import DocsPageWrapper from 'components/DocsPageWrapper';
 
 const Page = () => (
   <DocsPageWrapper
@@ -37,10 +38,10 @@ const Page = () => (
         content.
       </IntroBlurb>,
     ]}
-    androidSubpage={<AndroidFlare wrapped />}
-    iosSubpage={<IOSFlare wrapped />}
-    webSubpage={<WebFlare wrapped />}
-    nativeSubpage={<NativeFlare wrapped />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
+    webSubpage={<WebFlare />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );
 

@@ -20,13 +20,16 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-
 import Web from './WebHorizontalNavPage';
-import Native from './NativeHorizontalNavPage';
-import Android from './AndroidHorizontalNavPage';
-import IOS from './IOSHorizontalNavPage';
+import Native, { metadata as nativeMetadata } from './NativeHorizontalNav.mdx';
+import Android, {
+  metadata as androidMetadata,
+} from './AndroidHorizontalNav.mdx';
+import IOS, { metadata as iosMetadata } from './IOSHorizontalNav.mdx';
+
+import MarkdownPage from 'components/MarkdownPage';
+import IntroBlurb from 'components/IntroBlurb';
+import DocsPageWrapper from 'components/DocsPageWrapper';
 
 const blurb = [
   <IntroBlurb>
@@ -40,9 +43,9 @@ const Page = () => (
     title="Horizontal navigation"
     blurb={blurb}
     webSubpage={<Web wrapped />}
-    nativeSubpage={<Native wrapped />}
-    androidSubpage={<Android wrapped />}
-    iosSubpage={<IOS wrapped />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
   />
 );
 

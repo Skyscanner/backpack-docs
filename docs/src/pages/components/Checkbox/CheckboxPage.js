@@ -20,11 +20,12 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-
-import AndroidPage from './AndroidCheckboxPage';
+import Android, { metadata as androidMetadata } from './AndroidCheckbox.mdx';
 import WebPage from './WebCheckboxPage';
+
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
+import MarkdownPage from 'components/MarkdownPage';
 
 const Page = () => (
   <DocsPageWrapper
@@ -34,7 +35,7 @@ const Page = () => (
         Checkboxes allow the user to select one or more items from a set.
       </IntroBlurb>,
     ]}
-    androidSubpage={<AndroidPage wrapped />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     webSubpage={<WebPage wrapped />}
   />
 );
