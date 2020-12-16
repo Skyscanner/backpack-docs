@@ -20,13 +20,14 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-
 import Web from './WebPanelsPage';
-import Android from './AndroidPanelPage';
-import IOS from './IOSPanelPage';
-import Native from './NativePanelsPage';
+import Android, { metadata as androidMetadata } from './AndroidPanel.mdx';
+import IOS, { metadata as iosMetadata } from './IOSPanel.mdx';
+import Native, { metadata as nativeMetadata } from './NativePanels.mdx';
+
+import MarkdownPage from 'components/MarkdownPage';
+import IntroBlurb from 'components/IntroBlurb';
+import DocsPageWrapper from 'components/DocsPageWrapper';
 
 const Page = () => (
   <DocsPageWrapper
@@ -37,10 +38,10 @@ const Page = () => (
         cards these are not clickable.
       </IntroBlurb>,
     ]}
-    androidSubpage={<Android wrapped />}
-    iosSubpage={<IOS wrapped />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     webSubpage={<Web wrapped />}
-    nativeSubpage={<Native wrapped />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );
 

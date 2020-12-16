@@ -1,0 +1,64 @@
+---
+title: Panel
+platform: native
+githubPath: bpk-component-panel
+---
+
+import Readme from 'components/Readme';
+import NativeComponentScreenshots from 'components/Screenshots/NativeComponentScreenshots';
+
+import readme from 'backpack-react-native/lib/bpk-component-panel/README.md';
+import iosPanelDefault from 'backpack-react-native/lib/bpk-component-panel/screenshots/ios/default.png';
+import androidPanelDefault from 'backpack-react-native/lib/bpk-component-panel/screenshots/android/default.png';
+import iosPanelWithoutPadding from 'backpack-react-native/lib/bpk-component-panel/screenshots/ios/without-padding.png';
+import androidPanelWithoutPadding from 'backpack-react-native/lib/bpk-component-panel/screenshots/android/without-padding.png';
+import iosPanelWithDivider from 'backpack-react-native/lib/bpk-component-panel/screenshots/ios/with-divider.png';
+import androidPanelWithDivider from 'backpack-react-native/lib/bpk-component-panel/screenshots/android/with-divider.png';
+import iosPanelWithDividerArrangedVertically from 'backpack-react-native/lib/bpk-component-panel/screenshots/ios/with-divider-arranged-vertically.png';
+import androidPanelWithDividerArrangedVertically from 'backpack-react-native/lib/bpk-component-panel/screenshots/android/with-divider-arranged-vertically.png';
+
+## Table of contents
+
+## Default
+
+The default panel comes with padding already applied to get you up and running quickly.
+
+<NativeComponentScreenshots
+  iOS={iosPanelDefault}
+  iOSAltText="iOS default panel"
+  android={androidPanelDefault}
+  androidAltText="Android default panel" />
+
+## Without padding
+
+For full flexibility, you can opt to remove the default padding e.g. to display full-bleed images.
+
+<NativeComponentScreenshots
+  iOS={iosPanelWithoutPadding}
+  iOSAltText="iOS panel without padding"
+  android={androidPanelWithoutPadding}
+  androidAltText="Android panel without padding" />
+
+## With divider
+
+Panels can have an added dividing line to divide their content into two distinct areas.
+
+<NativeComponentScreenshots
+  iOS={iosPanelWithDivider}
+  iOSAltText="iOS panel with divider"
+  android={androidPanelWithDivider}
+  androidAltText="Android panel with divider" />
+
+## With divider arranged vertically
+
+Panels can be configured to display both horizontally and vertically.
+
+<NativeComponentScreenshots
+  iOS={iosPanelWithDividerArrangedVertically}
+  iOSAltText="iOS with divider arranged vertically"
+  android={androidPanelWithDividerArrangedVertically}
+  androidAltText="Android with divider arranged vertically" />
+
+## Implementation
+
+<Readme file={readme} />

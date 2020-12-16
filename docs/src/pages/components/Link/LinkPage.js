@@ -20,12 +20,13 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-
 import Web from './WebLinksPage';
-import IOS from './IOSLinkPage';
-import Native from './NativeLinkPage';
+import IOS, { metadata as iosMetadata } from './IOSLink.mdx';
+import Native, { metadata as nativeMetadata } from './NativeLink.mdx';
+
+import IntroBlurb from 'components/IntroBlurb';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import MarkdownPage from 'components/MarkdownPage';
 
 const Page = () => (
   <DocsPageWrapper
@@ -36,8 +37,8 @@ const Page = () => (
       </IntroBlurb>,
     ]}
     webSubpage={<Web wrapped />}
-    iosSubpage={<IOS wrapped />}
-    nativeSubpage={<Native wrapped />}
+    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );
 

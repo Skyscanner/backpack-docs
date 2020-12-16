@@ -20,11 +20,12 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-
 import Web from './WebNudgersPage';
-import Native from './NativeNudgerPage';
+import Native, { metadata as nativeMetadata } from './NativeNudger.mdx';
+
+import MarkdownPage from 'components/MarkdownPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
 
 const Page = () => (
   <DocsPageWrapper
@@ -35,7 +36,7 @@ const Page = () => (
       </IntroBlurb>,
     ]}
     webSubpage={<Web wrapped />}
-    nativeSubpage={<Native wrapped />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );
 

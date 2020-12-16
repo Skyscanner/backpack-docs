@@ -21,14 +21,15 @@
 import React from 'react';
 import BpkRouterLink from 'bpk-component-router-link';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-
 import IconsDesignPage from './DesignIconPage';
-import Android from './AndroidIconPage';
-import IOS from './IOSIconPage';
+import Android, { metadata as androidMetadata } from './AndroidIcon.mdx';
+import IOS, { metadata as iosMetadata } from './IOSIcon.mdx';
 import Web from './WebIconsPage';
-import Native from './NativeIconsPage';
+import Native, { metadata as nativeMetadata } from './NativeIcon.mdx';
+
+import MarkdownPage from 'components/MarkdownPage';
+import IntroBlurb from 'components/IntroBlurb';
+import DocsPageWrapper from 'components/DocsPageWrapper';
 
 const Page = () => (
   <DocsPageWrapper
@@ -44,10 +45,10 @@ const Page = () => (
       </IntroBlurb>,
     ]}
     designSubpage={<IconsDesignPage wrapped />}
-    androidSubpage={<Android wrapped />}
-    iosSubpage={<IOS wrapped />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     webSubpage={<Web wrapped />}
-    nativeSubpage={<Native wrapped />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );
 

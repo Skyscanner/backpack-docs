@@ -20,12 +20,13 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-
 import Web from './WebOverlayPage';
-import Android from './AndroidOverlayPage';
-import IOS from './IOSOverlayPage';
+import Android, { metadata as androidMetadata } from './AndroidOverlay.mdx';
+import IOS, { metadata as iosMetadata } from './IOSOverlay.mdx';
+
+import MarkdownPage from 'components/MarkdownPage';
+import IntroBlurb from 'components/IntroBlurb';
+import DocsPageWrapper from 'components/DocsPageWrapper';
 
 const Page = () => (
   <DocsPageWrapper
@@ -35,8 +36,8 @@ const Page = () => (
         The overlay component applies a dark tint to its content.
       </IntroBlurb>,
     ]}
-    iosSubpage={<IOS />}
-    androidSubpage={<Android />}
+    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     webSubpage={<Web />}
   />
 );

@@ -1,0 +1,44 @@
+---
+title: Overlay
+platform: ios
+documentationId: BPKOverlayView
+githubPath: OverlayView
+---
+
+import Readme from 'components/Readme';
+import IOSComponentScreenshots from 'components/Screenshots/IOSComponentScreenshots';
+
+import readme from 'backpack-ios/Backpack/OverlayView/README.md';
+import screenshotDefault from 'backpack-ios/screenshots/iPhone 8-overlay-view___default_lm.png';
+import screenshotDefaultDm from 'backpack-ios/screenshots/iPhone 8-overlay-view___default_dm.png';
+import screenshotNoOverlay from 'backpack-ios/screenshots/iPhone 8-overlay-view___overlay-type-none_lm.png';
+import screenshotNoOverlayDm from 'backpack-ios/screenshots/iPhone 8-overlay-view___overlay-type-none_dm.png';
+import screenshotContent from 'backpack-ios/screenshots/iPhone 8-overlay-view___foreground-content_lm.png';
+import screenshotContentDm from 'backpack-ios/screenshots/iPhone 8-overlay-view___foreground-content_dm.png';
+
+## Table of contents
+
+## Default
+
+<IOSComponentScreenshots
+  lightMode={screenshotDefault}
+  darkMode={screenshotDefaultDm}
+  altText="iOS default overlay view" />
+
+## Disabled tint
+
+<IOSComponentScreenshots
+  lightMode={screenshotNoOverlay}
+  darkMode={screenshotNoOverlayDm}
+  altText="iOS overlay view with tint disabled" />
+  
+## Foreground content
+
+<IOSComponentScreenshots
+  lightMode={screenshotContent}
+  darkMode={screenshotContentDm}
+  altText="iOS overlay view with foreground content" />
+
+## Implementation
+
+<Readme file={readme} />

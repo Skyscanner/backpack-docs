@@ -18,115 +18,16 @@
 
 /* @flow strict */
 
-import React, { Component } from 'react';
-import BpkPhoneInput from 'bpk-component-phone-input';
-import readme from 'bpk-component-phone-input/README.md';
-import BpkImage from 'bpk-component-image';
+import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import { WebComponentPage } from '../../../components/ComponentPage';
-import IntroBlurb from '../../../components/IntroBlurb';
+import Web from './WebPhoneInputPage';
+import Native, { metadata as nativeMetadata } from './NativePhoneInput.mdx';
 
-import NativePhoneInput from './NativePhoneInputPage';
+import MarkdownPage from 'components/MarkdownPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
 
-const DIALING_CODE_TO_ID_MAP = {
-  '1_us': 'us',
-  '1_ca': 'ca',
-  '44_uk': 'uk',
-  '55_br': 'br',
-};
-
-const getFlag = dialingCode => {
-  const countryCode = DIALING_CODE_TO_ID_MAP[dialingCode];
-  const url = `https://images.skyscnr.com/images/country/flag/header/${countryCode}.png`;
-  return <BpkImage altText="Flag" aspectRatio={50 / 38} src={url} />;
-};
-
-type Props = {
-  large: boolean,
-};
-
-type State = {
-  dialingCode: string,
-  value: string,
-};
-
-class StoryContainer extends Component<Props, State> {
-  static defaultProps = {
-    large: false,
-  };
-
-  constructor(props: Props) {
-    super(props);
-    this.state = { dialingCode: '44_uk', value: '' };
-  }
-
-  onChange = evt => {
-    this.setState({ value: evt.target.value });
-  };
-
-  onDialingCodeChange = evt => {
-    this.setState({ dialingCode: evt.target.value });
-  };
-
-  render() {
-    return (
-      // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/master/decisions/flowfixme.md'.
-      <BpkPhoneInput
-        id="phone-input-id"
-        name="Telephone input"
-        label="Telephone number"
-        large={this.props.large}
-        onChange={this.onChange}
-        onDialingCodeChange={this.onDialingCodeChange}
-        value={this.state.value}
-        dialingCode={this.state.dialingCode}
-        dialingCodes={[
-          { code: '1_us', description: '+1 (US)', numberPrefix: '+1' },
-          { code: '1_ca', description: '+1 (CA)', numberPrefix: '+1' },
-          { code: '44_uk', description: '+44 (UK)', numberPrefix: '+44' },
-          { code: '55_br', description: '+55 (BR)', numberPrefix: '+55' },
-        ]}
-        dialingCodeProps={{
-          id: 'dialing-code',
-          name: 'Dialing code',
-          label: 'Dialing code',
-          'aria-label': 'Dialing code',
-          image: getFlag(this.state.dialingCode),
-        }}
-        {...this.props}
-      />
-    );
-  }
-}
-
-const components = [
-  {
-    id: 'default',
-    title: 'Default',
-    examples: [<StoryContainer />],
-  },
-  {
-    id: 'large',
-    title: 'Large',
-    examples: [<StoryContainer large />],
-  },
-  {
-    id: 'maskedInput',
-    title: 'Masked input',
-    examples: [<StoryContainer large dialingCodeMask />],
-  },
-];
-
-const WebSubPage = () => (
-  <WebComponentPage
-    examples={components}
-    readme={readme}
-    packageName="bpk-component-phone-input"
-  />
-);
-
-const BadgePage = () => (
+const PhoneInputPage = () => (
   <DocsPageWrapper
     title="Phone input"
     blurb={[
@@ -135,9 +36,9 @@ const BadgePage = () => (
         the collection of phone numbers.
       </IntroBlurb>,
     ]}
-    webSubpage={<WebSubPage />}
-    nativeSubpage={<NativePhoneInput />}
+    webSubpage={<Web />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );
 
-export default BadgePage;
+export default PhoneInputPage;

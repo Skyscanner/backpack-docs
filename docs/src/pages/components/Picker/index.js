@@ -16,6 +16,6 @@
  * limitations under the License.
  */
 
-import page from './NativePickerPage';
+import page from './PickerPage';
 
 export default page;

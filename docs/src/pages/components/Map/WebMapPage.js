@@ -34,9 +34,9 @@ import LeisureIconSm from 'bpk-component-icon/sm/leisure';
 import { withRtlSupport } from 'bpk-component-icon';
 import mapReadme from 'bpk-component-map/README.md';
 
-import { WebComponentPage } from '../../../components/ComponentPage';
-
 import STYLES from './MapPage.scss';
+
+import { WebComponentPage } from 'components/ComponentPage';
 
 const AlignedLandmarkIconSm = withRtlSupport(LandmarkIconSm);
 const AlignedBusIconSm = withRtlSupport(BusIconSm);
