@@ -24,7 +24,7 @@ import BpkHorizontalNav, {
   HORIZONTAL_NAV_TYPES,
 } from 'bpk-component-horizontal-nav';
 
-import { WebComponentPage } from '../../../components/ComponentPage';
+import { WebComponentPage } from 'components/ComponentPage';
 
 class HorizontalNavContainer extends Component {
   constructor() {

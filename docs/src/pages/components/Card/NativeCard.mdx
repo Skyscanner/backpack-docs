@@ -1,0 +1,86 @@
+---
+title: Card
+platform: native
+githubPath: bpk-component-card
+---
+
+import Readme from 'components/Readme';
+import NativeComponentScreenshots from 'components/Screenshots/NativeComponentScreenshots';
+
+import readme from 'backpack-react-native/lib/bpk-component-card/README.md';
+import iosCardDefault from 'backpack-react-native/lib/bpk-component-card/screenshots/ios/default.png';
+import androidCardDefault from 'backpack-react-native/lib/bpk-component-card/screenshots/android/default.png';
+import iosCardFocused from 'backpack-react-native/lib/bpk-component-card/screenshots/ios/focused.png';
+import androidCardFocused from 'backpack-react-native/lib/bpk-component-card/screenshots/android/focused.png';
+import iosCardCornerStyleLarge from 'backpack-react-native/lib/bpk-component-card/screenshots/ios/large-corner-style.png';
+import androidCardCornerStyleLarge from 'backpack-react-native/lib/bpk-component-card/screenshots/android/large-corner-style.png';
+import iosCardWithoutPadding from 'backpack-react-native/lib/bpk-component-card/screenshots/ios/without-padding.png';
+import androidCardWithoutPadding from 'backpack-react-native/lib/bpk-component-card/screenshots/android/without-padding.png';
+import iosCardWithDivider from 'backpack-react-native/lib/bpk-component-card/screenshots/ios/with-divider.png';
+import androidCardWithDivider from 'backpack-react-native/lib/bpk-component-card/screenshots/android/with-divider.png';
+import iosCardWithDividerArrangedVertically from 'backpack-react-native/lib/bpk-component-card/screenshots/ios/with-divider-arranged-vertically.png';
+import androidCardWithDividerArrangedVertically from 'backpack-react-native/lib/bpk-component-card/screenshots/android/with-divider-arranged-vertically.png';
+
+## Table of contents
+
+## Default
+
+The default card comes with padding already applied to get you up and running quickly.
+
+<NativeComponentScreenshots
+  iOS={iosCardDefault}
+  iOSAltText="iOS card component"
+  android={androidCardDefault}
+  androidAltText="Android card component" />
+
+## Without padding
+
+For full flexibility, you can opt to remove the default padding e.g. to display full-bleed images.
+
+<NativeComponentScreenshots
+  iOS={iosCardWithoutPadding}
+  iOSAltText="iOS card without padding"
+  android={androidCardWithoutPadding}
+  androidAltText="Android card without padding" />
+
+## Focused
+
+Cards can be focused to make them appear more prominently.
+
+<NativeComponentScreenshots
+  iOS={iosCardFocused}
+  iOSAltText="iOS card focused"
+  android={androidCardFocused}
+  androidAltText="Android card focused" />
+
+## Large corner style
+
+<NativeComponentScreenshots
+  iOS={iosCardCornerStyleLarge}
+  iOSAltText="iOS card with large corner style"
+  android={androidCardCornerStyleLarge}
+  androidAltText="Android card with large corner style" />
+
+## With divider
+
+Cards can have an added dividing line to divide their content into two distinct areas.
+
+<NativeComponentScreenshots
+  iOS={iosCardWithDivider}
+  iOSAltText="iOS card with divider"
+  android={androidCardWithDivider}
+  androidAltText="Android card with divider" />
+
+## With divider arranged vertically
+
+Cards can be configured to display both horizontally and vertically.
+
+<NativeComponentScreenshots
+  iOS={iosCardWithDividerArrangedVertically}
+  iOSAltText="iOS card with divider arranged vertically"
+  android={androidCardWithDividerArrangedVertically}
+  androidAltText="Android card with divider arranged vertically" />
+
+## Implementation
+
+<Readme file={readme} />

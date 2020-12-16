@@ -1,0 +1,39 @@
+---
+title: Dialog
+platform: android
+documentationId: net.skyscanner.backpack.dialog
+githubPath: dialog
+---
+
+import Readme from 'components/Readme';
+import AndroidComponentScreenshots from 'components/Screenshots/AndroidComponentScreenshots';
+
+import readme from 'backpack-android/docs/Dialog/README.md';
+import screenshotAlert from 'backpack-android/docs/Dialog/screenshots/with-cta.png';
+import screenshotAlertDm from 'backpack-android/docs/Dialog/screenshots/with-cta_dm.png';
+import screenshotBottomSheet from 'backpack-android/docs/Dialog/screenshots/delete-confirmation.png';
+import screenshotBottomSheetDm from 'backpack-android/docs/Dialog/screenshots/delete-confirmation_dm.png';
+
+## Table of contents
+
+## Alert
+
+Alert dialogs fade in to the centre of the screen and can contain zero or more buttons. Used as a call to action.
+
+<AndroidComponentScreenshots
+  lightMode={screenshotAlert}
+  darkMode={screenshotAlertDm}
+  altText="Android dialog with a call to action" />
+
+## Bottom sheet
+
+Bottom sheet dialogs slide up from the bottom of the screen and can contain zero or more buttons. Used for confirmation
+
+<AndroidComponentScreenshots
+  lightMode={screenshotBottomSheet}
+  darkMode={screenshotBottomSheetDm}
+  altText="Android bottom sheet dialog used for confirmation" />
+
+## Implementation
+
+<Readme file={readme} />
