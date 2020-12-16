@@ -69,7 +69,10 @@ const components = [
         Aligning an icon within text with textStyle &quot;base&quot; can be done
         using
         <Code>withAlignment</Code>, providing suitable spacings (see the{' '}
-        <BpkLink href={ROUTES.TYPESETTING}>Typesetting section</BpkLink>).
+        <BpkLink href={ROUTES.GENERATED_TOKENS_TYPESETTING}>
+          Typesetting section
+        </BpkLink>
+        ).
       </Paragraph>,
       <Paragraph>Using the HOC is done as follows:</Paragraph>,
       <CodeBlock>
