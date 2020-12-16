@@ -20,18 +20,19 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-
 import Web from './WebImagesPage';
-import Native from './NativeImagesPage';
+import Native, { metadata as nativeMetadata } from './NativeImages.mdx';
+
+import MarkdownPage from 'components/MarkdownPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
 
 const ImagesPage = () => (
   <DocsPageWrapper
     title="Image"
     blurb={[<IntroBlurb>A component for including images.</IntroBlurb>]}
     webSubpage={<Web wrapped />}
-    nativeSubpage={<Native wrapped />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );
 

@@ -16,33 +16,27 @@
  * limitations under the License.
  */
 
-/* @flow strict */
-
 import React from 'react';
 
-import WebNavigation from './WebNavigationBarPage';
-import Android, { metadata as androidMetadata } from './AndroidNavBar.mdx';
-import Native, { metadata as nativeMetadata } from './NativeNavigationBar.mdx';
-import IOS, { metadata as iosMetadata } from './IOSNavigationBar.mdx';
+import Native, { metadata as nativeMetadata } from './NativePicker.mdx';
 
 import IntroBlurb from 'components/IntroBlurb';
 import DocsPageWrapper from 'components/DocsPageWrapper';
 import MarkdownPage from 'components/MarkdownPage';
 
-const BadgePage = () => (
+const blurb = [
+  <IntroBlurb>
+    Pickers are used for selecting an option from a short list in a modal
+    context.
+  </IntroBlurb>,
+];
+
+const NativePickerPage = () => (
   <DocsPageWrapper
-    title="Navigation bar"
-    blurb={[
-      <IntroBlurb>
-        The navigation bar component encapsulates a title and icon/text actions
-        for controlling views.
-      </IntroBlurb>,
-    ]}
-    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
-    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    title="Picker"
+    blurb={blurb}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
-    webSubpage={<WebNavigation wrapped />}
   />
 );
 
-export default BadgePage;
+export default NativePickerPage;

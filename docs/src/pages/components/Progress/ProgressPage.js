@@ -20,12 +20,13 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-
 import WebProgress from './WebProgressPage';
-import NativeProgress from './NativeProgressPage';
-import IOSProgress from './IOSProgressBarPage';
+import Native, { metadata as nativeMetadata } from './NativeProgress.mdx';
+import IOS, { metadata as iosMetadata } from './IOSProgressBar.mdx';
+
+import MarkdownPage from 'components/MarkdownPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
 
 const ProgressPage = () => (
   <DocsPageWrapper
@@ -37,9 +38,9 @@ const ProgressPage = () => (
         the given task will take.
       </IntroBlurb>,
     ]}
-    webSubpage={<WebProgress wrapped />}
-    nativeSubpage={<NativeProgress wrapped />}
-    iosSubpage={<IOSProgress wrapped />}
+    webSubpage={<WebProgress />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
+    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
   />
 );
 

@@ -1,0 +1,38 @@
+---
+title: Nudger
+platform: native
+githubPath: bpk-component-nudger
+---
+
+import Readme from 'components/Readme';
+import NativeComponentScreenshots from 'components/Screenshots/NativeComponentScreenshots';
+
+import readme from 'backpack-react-native/lib/bpk-component-phone-input/README.md';
+import iosPhoneInputDialingCodeList from 'backpack-react-native/lib/bpk-component-phone-input/screenshots/ios/dialing-code-list.png';
+import iosPhoneInputPhoneNumberInput from 'backpack-react-native/lib/bpk-component-phone-input/screenshots/ios/phone-number-input.png';
+import androidPhoneInputDialingCodeList from 'backpack-react-native/lib/bpk-component-phone-input/screenshots/android/dialing-code-list.png';
+import androidPhoneInputPhoneNumberInput from 'backpack-react-native/lib/bpk-component-phone-input/screenshots/android/phone-number-input.png';
+
+## Table of contents
+
+## Dialing code list
+
+Consumers are responsible for using these two components together. The accessory view in the text input shall present the dialing code list when tapped and a selection should update the dialing code set in the input component.
+
+<NativeComponentScreenshots
+  iOS={iosPhoneInputDialingCodeList}
+  iOSAltText="iOS dialing code list component"
+  android={androidPhoneInputDialingCodeList}
+  androidAltText="Android dialing code list component" />
+
+## Phone number input
+
+<NativeComponentScreenshots
+  iOS={iosPhoneInputPhoneNumberInput}
+  iOSAltText="iOS dialing code list for phone input"
+  android={androidPhoneInputPhoneNumberInput}
+  androidAltText="Android dialing code list for phone input" />
+
+## Implementation
+
+<Readme file={readme} />

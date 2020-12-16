@@ -20,11 +20,12 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-
 import Web from './WebMapPage';
-import Native from './NativeMapPage';
+import Native, { metadata as nativeMetadata } from './NativeMap.mdx';
+
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
+import MarkdownPage from 'components/MarkdownPage';
 
 const blurb = [
   <IntroBlurb>The map component is for embedding maps into pages.</IntroBlurb>,
@@ -35,7 +36,7 @@ const MapPage = () => (
     title="Map"
     blurb={blurb}
     webSubpage={<Web />}
-    nativeSubpage={<Native />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );
 

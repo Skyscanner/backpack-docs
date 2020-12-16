@@ -31,10 +31,10 @@ import BpkText, { TEXT_STYLES } from 'bpk-component-text';
 import * as BREAKPOINTS from 'bpk-tokens/tokens/breakpoints.es6';
 import { cssModules } from 'bpk-react-utils';
 
-import { WebComponentPage } from '../../../components/ComponentPage';
-import Paragraph from '../../../components/Paragraph';
-
 import STYLES from './WebOverlayPage.scss';
+
+import { WebComponentPage } from 'components/ComponentPage';
+import Paragraph from 'components/Paragraph';
 
 const getClassNames = cssModules(STYLES);
 

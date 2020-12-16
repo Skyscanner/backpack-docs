@@ -1,0 +1,40 @@
+---
+title: Progress
+platform: native
+githubPath: bpk-component-progress
+---
+
+import Readme from 'components/Readme';
+import NativeComponentScreenshots from 'components/Screenshots/NativeComponentScreenshots';
+
+import readme from 'backpack-react-native/lib/bpk-component-progress/README.md';
+import iosProgressDefault from 'backpack-react-native/lib/bpk-component-progress/screenshots/ios/default.png';
+import androidProgressDefault from 'backpack-react-native/lib/bpk-component-progress/screenshots/android/default.png';
+import iosProgressBar from 'backpack-react-native/lib/bpk-component-progress/screenshots/ios/bar.png';
+import androidProgressBar from 'backpack-react-native/lib/bpk-component-progress/screenshots/android/bar.png';
+
+## Table of contents
+
+## Default
+
+The default progress bar is intended to be used as a stand alone component with margins all around.
+
+<NativeComponentScreenshots
+  iOS={iosProgressDefault}
+  iOSAltText="iOS progress bar"
+  android={androidProgressDefault}
+  androidAltText="Android progress bar" />
+
+## Bar
+
+The bar version of the progress bar has sharp corners and is intended to be connect to other areas of the UI, e.g at the top of the page and occupies the full width of its parent container.
+
+<NativeComponentScreenshots
+  iOS={iosProgressBar}
+  iOSAltText="iOS progress bar (bar)"
+  android={androidProgressBar}
+  androidAltText="Android progress bar (bar)" />
+
+## Implementation
+
+<Readme file={readme} />
