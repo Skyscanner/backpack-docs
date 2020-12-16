@@ -70,7 +70,7 @@ jobs:
         with:
           personal_token: ${{ secrets.DEPLOY_TOKEN }}
           publish_dir: dist/
-          keep_files: true
+          keep_files: false
           external_repository: backpack/backpack.github.io
           publish_branch: master
 
