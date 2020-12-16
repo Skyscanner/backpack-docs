@@ -18,13 +18,14 @@
 
 import React from 'react';
 
-import IntroBlurb from '../../../components/IntroBlurb';
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-
 import Web from './WebTextInputPage';
-import Android from './AndroidTextFieldPage';
-import IOS from './IOSTextInputPage';
-import Native from './NativeTextInputPage';
+import Android, { metadata as androidMetadata } from './AndroidTextInput.mdx';
+import IOS, { metadata as iosMetadata } from './IOSTextInput.mdx';
+import Native, { metadata as nativeMetadata } from './NativeTextInput.mdx';
+
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
+import MarkdownPage from 'components/MarkdownPage';
 
 const blurb = [
   <IntroBlurb>
@@ -37,10 +38,10 @@ const TextInputPage = () => (
   <DocsPageWrapper
     title="Text input"
     blurb={blurb}
-    iosSubpage={<IOS wrapped />}
-    nativeSubpage={<Native wrapped />}
-    androidSubpage={<Android wrapped />}
-    webSubpage={<Web wrapped />}
+    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    webSubpage={<Web />}
   />
 );
 

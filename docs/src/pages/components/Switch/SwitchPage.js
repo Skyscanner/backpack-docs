@@ -18,13 +18,14 @@
 
 import React from 'react';
 
-import IntroBlurb from '../../../components/IntroBlurb';
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-
 import WebSwitchPage from './WebSwitchPage';
-import AndroidSwitchPage from './AndroidSwitchPage';
-import IOSSwitchPage from './IOSSwitchPage';
-import NativeSwitchPage from './NativeSwitchPage';
+import Android, { metadata as androidMetadata } from './AndroidSwitch.mdx';
+import IOS, { metadata as iosMetadata } from './IOSSwitch.mdx';
+import Native, { metadata as nativeMetadata } from './NativeSwitch.mdx';
+
+import MarkdownPage from 'components/MarkdownPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
 
 const blurb = [
   <IntroBlurb>
@@ -37,9 +38,9 @@ const SwitchPage = () => (
   <DocsPageWrapper
     title="Switch"
     blurb={blurb}
-    androidSubpage={<AndroidSwitchPage wrapped />}
-    iosSubpage={<IOSSwitchPage wrapped />}
-    nativeSubpage={<NativeSwitchPage wrapped />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
     webSubpage={<WebSwitchPage wrapped />}
   />
 );

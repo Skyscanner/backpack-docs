@@ -21,8 +21,9 @@
 import React from 'react';
 
 import Web from './WebSectionListPage';
-import Native from './NativeSectionListPage';
+import Native, { metadata as nativeMetadata } from './NativeSectionList.mdx';
 
+import MarkdownPage from 'components/MarkdownPage';
 import DocsPageWrapper from 'components/DocsPageWrapper';
 import IntroBlurb from 'components/IntroBlurb';
 
@@ -38,7 +39,7 @@ const Page = () => (
       </IntroBlurb>,
     ]}
     webSubpage={<Web wrapped />}
-    nativeSubpage={<Native wrapped />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );
 

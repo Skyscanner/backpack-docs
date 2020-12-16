@@ -20,11 +20,12 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-
 import WebSelects from './WebSelectPage';
-import NativeSelects from './NativeSelectPage';
+import Native, { metadata as nativeMetadata } from './NativeSelect.mdx';
+
+import MarkdownPage from 'components/MarkdownPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
 
 const blurb = [
   <IntroBlurb>
@@ -36,7 +37,7 @@ const DialogsPage = () => (
   <DocsPageWrapper
     title="Select"
     blurb={blurb}
-    nativeSubpage={<NativeSelects wrapped />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
     webSubpage={<WebSelects wrapped />}
   />
 );

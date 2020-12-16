@@ -20,13 +20,14 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-
 import Web from './WebSpinnersPage';
-import Android from './AndroidSpinnerPage';
-import IOS from './IOSSpinnerPage';
-import Native from './NativeSpinnerPage';
+import Android, { metadata as androidMetadata } from './AndroidSpinner.mdx';
+import IOS, { metadata as iosMetadata } from './IOSSpinner.mdx';
+import Native, { metadata as nativeMetadata } from './NativeSpinner.mdx';
+
+import IntroBlurb from 'components/IntroBlurb';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import MarkdownPage from 'components/MarkdownPage';
 
 const blurb = [
   <IntroBlurb>
@@ -39,10 +40,10 @@ const Page = () => (
   <DocsPageWrapper
     title="Spinner"
     blurb={blurb}
-    androidSubpage={<Android wrapped />}
-    iosSubpage={<IOS wrapped />}
-    webSubpage={<Web wrapped />}
-    nativeSubpage={<Native wrapped />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
+    webSubpage={<Web />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );
 

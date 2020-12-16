@@ -25,9 +25,10 @@ import readme from 'bpk-component-select/README.md';
 
 import * as ROUTES from '../../../constants/routes';
 import InputContainer from '../Forms/InputContainer';
-import { WebComponentPage } from '../../../components/ComponentPage';
-import BpkParagraph from '../../../components/Paragraph';
 import STYLES from '../Forms/forms-page.scss';
+
+import { WebComponentPage } from 'components/ComponentPage';
+import BpkParagraph from 'components/Paragraph';
 
 const getClassName = cssModules(STYLES);
 

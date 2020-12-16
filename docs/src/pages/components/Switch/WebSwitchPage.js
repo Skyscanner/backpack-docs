@@ -20,8 +20,8 @@ import React from 'react';
 import BpkSwitch, { SWITCH_TYPES } from 'bpk-component-switch';
 import readme from 'bpk-component-switch/README.md';
 
-import Paragraph from '../../../components/Paragraph';
-import { WebComponentPage } from '../../../components/ComponentPage';
+import Paragraph from 'components/Paragraph';
+import { WebComponentPage } from 'components/ComponentPage';
 
 const components = [
   {
