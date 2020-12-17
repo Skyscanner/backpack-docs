@@ -20,11 +20,12 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
+import Android, { metadata as androidMetadata } from './AndroidToast.mdx';
+import IOS, { metadata as iosMetadata } from './IOSToast.mdx';
 
-import AndroidPage from './AndroidToastPage';
-import IOSPage from './IOSToastPage';
+import MarkdownPage from 'components/MarkdownPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
 
 const Page = () => (
   <DocsPageWrapper
@@ -35,8 +36,8 @@ const Page = () => (
         screen.
       </IntroBlurb>,
     ]}
-    androidSubpage={<AndroidPage wrapped />}
-    iosSubpage={<IOSPage wrapped />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
   />
 );
 

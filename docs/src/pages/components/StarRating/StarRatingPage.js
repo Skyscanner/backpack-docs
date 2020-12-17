@@ -20,13 +20,14 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-
 import Web from './WebStarRatingPage';
-import Android from './AndroidStarRatingPage';
-import Native from './NativeStarRatingPage';
-import IOS from './IOSStarRatingPage';
+import Android, { metadata as androidMetadata } from './AndroidStarRating.mdx';
+import Native, { metadata as nativeMetadata } from './NativeStarRating.mdx';
+import IOS, { metadata as iosMetadata } from './IOSStarRating.mdx';
+
+import MarkdownPage from 'components/MarkdownPage';
+import IntroBlurb from 'components/IntroBlurb';
+import DocsPageWrapper from 'components/DocsPageWrapper';
 
 const Page = () => (
   <DocsPageWrapper
@@ -37,9 +38,9 @@ const Page = () => (
       </IntroBlurb>,
     ]}
     webSubpage={<Web wrapped />}
-    nativeSubpage={<Native wrapped />}
-    androidSubpage={<Android wrapped />}
-    iosSubpage={<IOS wrapped />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
   />
 );
 

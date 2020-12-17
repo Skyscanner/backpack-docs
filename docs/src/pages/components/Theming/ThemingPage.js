@@ -18,25 +18,16 @@
 
 import React from 'react';
 import BpkLink from 'bpk-component-link';
-import BpkBlockquote from 'bpk-component-blockquote';
-import webReadme from 'bpk-theming/README.md';
-import { cssModules } from 'bpk-react-utils';
 
-import nativeReadme from '../../../../../backpack-react-native/lib/bpk-theming/README.md';
-import Paragraph from '../../../components/Paragraph';
-import IntroBlurb from '../../../components/IntroBlurb';
-import ColorSwatch from '../../../components/ColorSwatch';
-import {
-  WebComponentPage,
-  NativeComponentPage,
-} from '../../../components/ComponentPage';
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
+import Web from './WebThemingPage';
+import Native, { metadata as nativeMetadata } from './NativeTheming.mdx';
+import Android, { metadata as androidMetadata } from './AndroidTheming.mdx';
+import IOS, { metadata as iosMetadata } from './IOSTheming.mdx';
 
-import Android from './AndroidThemingPage';
-import IOS from './IOSThemingPage';
-import STYLES from './theming-page.scss';
-
-const getClassName = cssModules(STYLES);
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
+import Paragraph from 'components/Paragraph';
+import MarkdownPage from 'components/MarkdownPage';
 
 const CONTEXT_API_URL = 'https://reactjs.org/docs/context.html';
 const CSS_VARIABLES_URL =
@@ -63,70 +54,14 @@ const blurb = [
   </Paragraph>,
 ];
 
-const webComponents = [
-  {
-    id: 'about',
-    title: 'Technical implementation',
-    blurb: [
-      <BpkBlockquote>
-        <strong>Note:</strong> Backpack&#39;s theming is based on&nbsp;
-        <BpkLink href={CSS_VARIABLES_URL} blank>
-          CSS Variables
-        </BpkLink>
-        &nbsp;and thus will not be supported in some browsers. In these cases
-        Backpack components will gracefully degrade to the default Skyscanner
-        theme. For an overview of this check&nbsp;
-        <BpkLink href="https://caniuse.com/#feat=css-variables" blank>
-          caniuse
-        </BpkLink>
-        .
-      </BpkBlockquote>,
-    ],
-  },
-  {
-    id: 'colours',
-    title: 'Themeable colours',
-    blurb: [
-      <div>
-        <Paragraph>
-          The color swatches below change when a theme is applied.
-        </Paragraph>
-        <div className={getClassName('bpkdocs-theming-page__swatch-container')}>
-          <ColorSwatch
-            name="primary-color"
-            textColor="#FFF"
-            className={getClassName('bpkdocs-theming-page__swatch--primary')}
-          />
-        </div>
-      </div>,
-    ],
-  },
-];
-
-const WebThemingPage = () => (
-  <WebComponentPage
-    examples={webComponents}
-    readme={webReadme}
-    packageName="bpk-theming"
-  />
-);
-
-const NativeThemingPage = () => (
-  <NativeComponentPage
-    readme={nativeReadme}
-    screenshots={[]}
-    githubPath="bpk-theming"
-  />
-);
-
 const ThemingPage = () => (
   <DocsPageWrapper
     title="Theming"
     blurb={blurb}
-    webSubpage={<WebThemingPage />}
-    nativeSubpage={<NativeThemingPage />}
-    iosSubpage={<IOS />}
-    androidSubpage={<Android />}
+    webSubpage={<Web />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
+    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
   />
 );
 

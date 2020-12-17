@@ -26,7 +26,7 @@ import {
   SPINNER_TYPES,
 } from 'bpk-component-spinner';
 
-import { WebComponentPage } from '../../../components/ComponentPage';
+import { WebComponentPage } from 'components/ComponentPage';
 
 const components = [
   {

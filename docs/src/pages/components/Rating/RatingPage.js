@@ -20,13 +20,14 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-
 import WebRating from './WebRatingPage';
-import AndroidRating from './AndroidRatingPage';
-import IOSRating from './IOSRatingPage';
-import NativeRating from './NativeRatingPage';
+import Android, { metadata as androidMetadata } from './AndroidRating.mdx';
+import IOS, { metadata as iosMetadata } from './IOSRating.mdx';
+import Native, { metadata as nativeMetadata } from './NativeRating.mdx';
+
+import MarkdownPage from 'components/MarkdownPage';
+import IntroBlurb from 'components/IntroBlurb';
+import DocsPageWrapper from 'components/DocsPageWrapper';
 
 const Page = () => (
   <DocsPageWrapper
@@ -36,10 +37,10 @@ const Page = () => (
         The rating component is used to represent a score as an exact number.
       </IntroBlurb>,
     ]}
-    androidSubpage={<AndroidRating wrapped />}
-    iosSubpage={<IOSRating wrapped />}
-    nativeSubpage={<NativeRating wrapped />}
-    webSubpage={<WebRating wrapped />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
+    webSubpage={<WebRating />}
   />
 );
 

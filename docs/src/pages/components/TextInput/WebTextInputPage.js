@@ -27,9 +27,10 @@ import readme from 'bpk-component-input/README.md';
 import textareaReadme from 'bpk-component-textarea/README.md';
 
 import InputContainer from '../Forms/InputContainer';
-import { WebComponentPage } from '../../../components/ComponentPage';
-import BpkParagraph from '../../../components/Paragraph';
 import STYLES from '../Forms/forms-page.scss';
+
+import { WebComponentPage } from 'components/ComponentPage';
+import BpkParagraph from 'components/Paragraph';
 
 const getClassName = cssModules(STYLES);
 
