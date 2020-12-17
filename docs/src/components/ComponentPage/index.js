@@ -16,14 +16,7 @@
  * limitations under the License.
  */
 
-import AndroidComponentPage from './AndroidComponentPage';
-import IOSComponentPage from './IOSComponentPage';
 import NativeComponentPage from './NativeComponentPage';
 import WebComponentPage from './WebComponentPage';
 
-export {
-  AndroidComponentPage,
-  IOSComponentPage,
-  NativeComponentPage,
-  WebComponentPage,
-};
+export { NativeComponentPage, WebComponentPage };
