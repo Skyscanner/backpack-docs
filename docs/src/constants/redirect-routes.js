@@ -20,5 +20,5 @@ import * as ROUTES from './routes';
 
 // Deprecated routes, kept here for redirects
 export default {
-  '/style-guide/tone-of-voice': ROUTES.TONE_OF_VOICE,
+  '/style-guide/tone-of-voice': ROUTES.GENERATED_GUIDELINES_TONE_OF_VOICE,
 };
