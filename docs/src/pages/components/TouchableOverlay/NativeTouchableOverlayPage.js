@@ -21,15 +21,14 @@ import BpkLink from 'bpk-component-link';
 import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
 import BpkBlockquote from 'bpk-component-blockquote';
 
-import readme from '../../../../../backpack-react-native/lib/bpk-component-touchable-overlay/README.md';
-import iosScreenshotDefault from '../../../../../backpack-react-native/lib/bpk-component-touchable-overlay/screenshots/default.png';
-import iosScreenshotTouchableHighlight from '../../../../../backpack-react-native/lib/bpk-component-touchable-overlay/screenshots/touchable-highlight.png';
-import IntroBlurb from '../../../components/IntroBlurb';
-import { NativeComponentPage } from '../../../components/ComponentPage';
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
+import readme from 'backpack-react-native/lib/bpk-component-touchable-overlay/README.md';
+import iosScreenshotDefault from 'backpack-react-native/lib/bpk-component-touchable-overlay/screenshots/default.png';
+import iosScreenshotTouchableHighlight from 'backpack-react-native/lib/bpk-component-touchable-overlay/screenshots/touchable-highlight.png';
+import IntroBlurb from 'components/IntroBlurb';
+import { NativeComponentPage } from 'components/ComponentPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
 
-const touchableNativeFeedbackUrl =
-  '/components/native/touchable-native-feedback';
+const touchableNativeFeedbackUrl = 'components/touchable-native-feedback';
 
 const components = [
   {
