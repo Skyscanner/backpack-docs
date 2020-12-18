@@ -18,27 +18,22 @@
 
 import React from 'react';
 
-import getMarkdownString from '../../../helpers/markdown-helper';
-import BpkMarkdownRenderer from '../../../components/DocsPageBuilder/BpkMarkdownRenderer';
-import DocsPageBuilder from '../../../components/DocsPageBuilder';
-
 import why from './content/why.md';
 
-const components = [
+import getMarkdownString from 'helpers/markdown-helper';
+import BpkMarkdownRenderer from 'components/MarkdownRenderer/BpkMarkdownRenderer';
+import InfoPageBuilder from 'components/InfoPageBuilder';
+
+const sections = [
   {
     id: 'why',
     title: 'Why',
-    blurb: [<BpkMarkdownRenderer source={getMarkdownString(why)} />],
+    content: <BpkMarkdownRenderer source={getMarkdownString(why)} />,
   },
 ];
 
 const IOSButtonPage = ({ ...rest }) => (
-  <DocsPageBuilder
-    title="Overview"
-    components={components}
-    showMenu
-    {...rest}
-  />
+  <InfoPageBuilder title="Overview" sections={sections} {...rest} />
 );
 
 export default IOSButtonPage;

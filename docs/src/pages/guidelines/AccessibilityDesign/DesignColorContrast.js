@@ -20,15 +20,15 @@ import React from 'react';
 import BpkButton from 'bpk-component-button';
 import { cssModules } from 'bpk-react-utils';
 
-import getMarkdownString from '../../../helpers/markdown-helper';
-import BpkMarkdownRenderer from '../../../components/DocsPageBuilder/BpkMarkdownRenderer';
-import BpkDoDont from '../../../components/DocsPageBuilder/BpkDoDont';
-import Paragraph from '../../../components/Paragraph';
-import PresentationBlock from '../../../components/PresentationBlock';
-
 import STYLES from './accessibility-design-page.scss';
 import colorContrast1 from './content/colorContrast1.md';
 import colorContrast2 from './content/colorContrast2.md';
+
+import getMarkdownString from 'helpers/markdown-helper';
+import BpkDoDont from 'components/DoDont/BpkDoDont';
+import Paragraph from 'components/Paragraph';
+import PresentationBlock from 'components/PresentationBlock';
+import BpkMarkdownRenderer from 'components/MarkdownRenderer/BpkMarkdownRenderer';
 
 const getClassName = cssModules(STYLES);
 

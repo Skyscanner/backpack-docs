@@ -24,11 +24,12 @@ import BpkLink from 'bpk-component-link';
 import BpkContentContainer from 'bpk-component-content-container';
 
 import PresentationBlock from '../PresentationBlock/PresentationBlock';
-import BpkMarkdownRenderer from '../DocsPageBuilder/BpkMarkdownRenderer';
-import getMarkdownString from '../../helpers/markdown-helper';
 
 import STYLES from './ComponentPage.scss';
 import ComponentPage from './ComponentPage';
+
+import getMarkdownString from 'helpers/markdown-helper';
+import BpkMarkdownRenderer from 'components/MarkdownRenderer/BpkMarkdownRenderer';
 
 const getClassName = cssModules(STYLES);
 

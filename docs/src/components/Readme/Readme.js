@@ -21,8 +21,8 @@
 import React from 'react';
 import BpkContentContainer from 'bpk-component-content-container';
 
-import BpkMarkdownRenderer from '../DocsPageBuilder/BpkMarkdownRenderer';
-import getMarkdownString from '../../helpers/markdown-helper';
+import BpkMarkdownRenderer from 'components/MarkdownRenderer/BpkMarkdownRenderer';
+import getMarkdownString from 'helpers/markdown-helper';
 
 type Props = {
   file: string,

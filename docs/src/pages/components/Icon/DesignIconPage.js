@@ -25,9 +25,9 @@ import icons from 'bpk-component-icon/all';
 
 import IntroBlurb from 'components/IntroBlurb';
 import IconSearchApp from 'components/IconSearchApp';
-import DocsPageBuilder from 'components/DocsPageBuilder';
 import Heading from 'components/Heading';
 import Paragraph from 'components/Paragraph';
+import PageHead from 'components/PageHead';
 // This file can actually be resolved eslint is just confused
 // eslint-disable-next-line import/no-webpack-loader-syntax, import/extensions
 import iconsSvgs from '!!file-loader?name=[name].[hash].zip!zip-it-loader!./../../../../../node_modules/bpk-svgs/src/icons/icons';
@@ -72,8 +72,8 @@ const blurb = [
   </Paragraph>,
 ];
 
-const IconsDesignPage = ({ ...rest }) => (
-  <DocsPageBuilder title="Icons" blurb={blurb} {...rest} />
+const IconsDesignPage = () => (
+  <PageHead title="Icons" blurb={blurb} showBetaWarning={false} />
 );
 
 export default IconsDesignPage;

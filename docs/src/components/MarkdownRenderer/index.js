@@ -16,9 +16,6 @@
  * limitations under the License.
  */
 
-import Paragraph from '../Paragraph';
+import BpkMarkdownRenderer from './BpkMarkdownRenderer';
 
-import DocsPageBuilder from './DocsPageBuilder';
-
-export { Paragraph };
-export default DocsPageBuilder;
+export default BpkMarkdownRenderer;
