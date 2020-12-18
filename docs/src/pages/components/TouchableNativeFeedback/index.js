@@ -16,6 +16,6 @@
  * limitations under the License.
  */
 
-import page from './NativeTouchableNativeFeedbackPage';
+import page from './TouchableNativeFeedbackPage';
 
 export default page;
