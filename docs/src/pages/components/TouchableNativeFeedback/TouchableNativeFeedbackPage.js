@@ -18,41 +18,28 @@
 
 import React from 'react';
 import BpkLink from 'bpk-component-link';
+import BpkRouterLink from 'bpk-component-router-link';
 import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
 import BpkBlockquote from 'bpk-component-blockquote';
 
-import readme from 'backpack-react-native/lib/bpk-component-touchable-native-feedback/README.md';
-import androidScreenshotDefault from 'backpack-react-native/lib/bpk-component-touchable-native-feedback/screenshots/default.png';
-import IntroBlurb from 'components/IntroBlurb';
-import { NativeComponentPage } from 'components/ComponentPage';
-import DocsPageWrapper from 'components/DocsPageWrapper';
+import * as ROUTES from '../../../constants/routes';
 
-const touchableOverlay = 'components/touchable-native-feedback';
+import Native, {
+  metadata as nativeMetadata,
+} from './NativeTouchableNativeFeedback.mdx';
+
+import IntroBlurb from 'components/IntroBlurb';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import MarkdownPage from 'components/MarkdownPage';
+
 const RNTouchableNativeFeedback =
   'https://facebook.github.io/react-native/docs/touchablenativefeedback.html';
-
-const components = [
-  {
-    id: 'touchablenativefeedback',
-    title: 'Touchable native feedback',
-    screenshots: [
-      {
-        title: 'Touchable native feedback',
-        width: 750,
-        height: 1334,
-        src: `/${androidScreenshotDefault}`,
-        altText: 'Backpack touchable native feedback component',
-        subText: '(Google Pixel emulator)',
-      },
-    ],
-  },
-];
 
 const blurb = [
   <IntroBlurb>
     React Native&apos;s{' '}
     <BpkLink href={RNTouchableNativeFeedback} blank>
-      Touchable Native Feedback{' '}
+      Touchable Native Feedback
     </BpkLink>{' '}
     allows the use of <em>SelectableBackgroundBorderless</em> for the ripple
     effect. However, this is only supported only on Android API level 21 and
@@ -62,26 +49,18 @@ const blurb = [
   <BpkBlockquote>
     <BpkText weight={WEIGHT_STYLES.bold}>Note:</BpkText> This component is
     Android only, for iOS please use the{' '}
-    <BpkLink href={touchableOverlay} blank>
+    <BpkRouterLink to={ROUTES.TOUCHABLE_OVERLAY}>
       BpkTouchableOverlay{' '}
-    </BpkLink>{' '}
+    </BpkRouterLink>{' '}
     component.
   </BpkBlockquote>,
 ];
-
-const NativeTouchableNativeFeedbackSubPage = () => (
-  <NativeComponentPage
-    screenshots={components}
-    readme={readme}
-    githubPath="bpk-component-touchable-native-feedback"
-  />
-);
 
 const NativeTouchableNativeFeedbackPage = () => (
   <DocsPageWrapper
     title="Touchable native feedback"
     blurb={blurb}
-    nativeSubpage={<NativeTouchableNativeFeedbackSubPage />}
+    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );
 

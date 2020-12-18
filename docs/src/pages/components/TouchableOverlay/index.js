@@ -16,6 +16,6 @@
  * limitations under the License.
  */
 
-import page from './NativeTouchableOverlayPage';
+import page from './TouchableOverlayPage';
 
 export default page;
