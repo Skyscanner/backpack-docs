@@ -32,7 +32,7 @@ import { cssModules } from 'bpk-react-utils';
 import AirlineLogo from './AirlineLogo';
 import STYLES from './NavigationBarPage.scss';
 
-import { WebComponentPage } from 'components/ComponentPage';
+import WebComponentPage from 'components/ComponentPage';
 import Paragraph from 'components/Paragraph';
 
 const getClassNames = cssModules(STYLES);

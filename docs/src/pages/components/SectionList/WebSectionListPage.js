@@ -24,7 +24,7 @@ import BpkSectionList, {
 import sectionListReadme from 'bpk-component-section-list/README.md';
 import { BpkCode } from 'bpk-component-code';
 
-import { WebComponentPage } from 'components/ComponentPage';
+import WebComponentPage from 'components/ComponentPage';
 import Paragraph from 'components/Paragraph';
 
 const components = [

@@ -25,7 +25,7 @@ import BpkFormValidation from 'bpk-component-form-validation';
 import { cssModules } from 'bpk-react-utils';
 import readme from 'bpk-component-form-validation/README.md';
 
-import { WebComponentPage } from '../../../components/ComponentPage';
+import WebComponentPage from '../../../components/ComponentPage';
 import InputContainer from '../Forms/InputContainer';
 import STYLES from '../Forms/forms-page.scss';
 

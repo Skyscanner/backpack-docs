@@ -33,7 +33,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './WebOverlayPage.scss';
 
-import { WebComponentPage } from 'components/ComponentPage';
+import WebComponentPage from 'components/ComponentPage';
 import Paragraph from 'components/Paragraph';
 
 const getClassNames = cssModules(STYLES);

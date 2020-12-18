@@ -23,7 +23,7 @@ import BpkButton from 'bpk-component-button';
 import { BpkButtonLink } from 'bpk-component-link';
 import drawerReadme from 'bpk-component-drawer/README.md';
 
-import { WebComponentPage } from '../../../components/ComponentPage';
+import WebComponentPage from '../../../components/ComponentPage';
 import Paragraph from '../../../components/Paragraph';
 
 class DrawerContainer extends Component {

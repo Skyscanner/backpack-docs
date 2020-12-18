@@ -21,7 +21,7 @@
 import React from 'react';
 import mobileScrollContainerReadme from 'bpk-component-mobile-scroll-container/README.md';
 
-import { WebComponentPage } from '../../../components/ComponentPage';
+import WebComponentPage from '../../../components/ComponentPage';
 
 import BlockExample from './BlockExample';
 

@@ -25,7 +25,7 @@ import BpkScrollableCalendar, {
 } from 'bpk-component-scrollable-calendar';
 import scrollableCalendarReadme from 'bpk-component-scrollable-calendar/README.md';
 
-import { WebComponentPage } from '../../../components/ComponentPage';
+import WebComponentPage from '../../../components/ComponentPage';
 
 import {
   weekDays,

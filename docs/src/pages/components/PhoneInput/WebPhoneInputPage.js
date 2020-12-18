@@ -23,7 +23,7 @@ import BpkPhoneInput from 'bpk-component-phone-input';
 import readme from 'bpk-component-phone-input/README.md';
 import BpkImage from 'bpk-component-image';
 
-import { WebComponentPage } from 'components/ComponentPage';
+import WebComponentPage from 'components/ComponentPage';
 
 const DIALING_CODE_TO_ID_MAP = {
   '1_us': 'us',

@@ -24,7 +24,7 @@ import BpkSkipLink from 'bpk-component-skip-link';
 import skipLinkReadme from 'bpk-component-skip-link/README.md';
 import { cssModules } from 'bpk-react-utils';
 
-import { WebComponentPage } from '../../../components/ComponentPage';
+import WebComponentPage from '../../../components/ComponentPage';
 import Paragraph from '../../../components/Paragraph';
 
 import STYLES from './skip-link-page.scss';

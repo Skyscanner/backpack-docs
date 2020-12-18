@@ -39,7 +39,7 @@ import {
   spacingSm,
 } from 'bpk-tokens/tokens/base.es6';
 
-import { WebComponentPage } from 'components/ComponentPage';
+import WebComponentPage from 'components/ComponentPage';
 import Paragraph from 'components/Paragraph';
 
 const SingleItemAccordion = withSingleItemAccordionState(BpkAccordion);

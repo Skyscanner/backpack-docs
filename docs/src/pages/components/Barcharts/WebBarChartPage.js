@@ -25,7 +25,7 @@ import barchartReadme from 'bpk-component-barchart/README.md';
 import { updateOnDirectionChange } from 'bpk-component-rtl-toggle';
 import data from 'bpk-component-barchart/data.json';
 
-import { WebComponentPage } from 'components/ComponentPage';
+import WebComponentPage from 'components/ComponentPage';
 import Paragraph from 'components/Paragraph';
 import Code from 'components/Code';
 

@@ -29,7 +29,7 @@ import textareaReadme from 'bpk-component-textarea/README.md';
 import InputContainer from '../Forms/InputContainer';
 import STYLES from '../Forms/forms-page.scss';
 
-import { WebComponentPage } from 'components/ComponentPage';
+import WebComponentPage from 'components/ComponentPage';
 import BpkParagraph from 'components/Paragraph';
 
 const getClassName = cssModules(STYLES);

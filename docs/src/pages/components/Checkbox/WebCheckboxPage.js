@@ -25,7 +25,7 @@ import InputContainer from '../Forms/InputContainer';
 
 import STYLES from './checkbox-page.scss';
 
-import { WebComponentPage } from 'components/ComponentPage';
+import WebComponentPage from 'components/ComponentPage';
 import Paragraph from 'components/Paragraph';
 
 const getClassName = cssModules(STYLES);

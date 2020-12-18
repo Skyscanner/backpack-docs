@@ -39,7 +39,7 @@ import LongArrowRightIcon from 'bpk-component-icon/lg/long-arrow-right';
 import LongArrowRightIconSm from 'bpk-component-icon/sm/long-arrow-right';
 import AwardIcon from 'bpk-component-icon/lg/award';
 
-import { WebComponentPage } from '../../../components/ComponentPage';
+import WebComponentPage from '../../../components/ComponentPage';
 import Paragraph from '../../../components/Paragraph';
 import Code from '../../../components/Code';
 import CodeBlock from '../../../components/CodeBlock';

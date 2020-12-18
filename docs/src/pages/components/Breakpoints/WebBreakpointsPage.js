@@ -22,7 +22,7 @@ import BpkBreakpoint, { BREAKPOINTS } from 'bpk-component-breakpoint';
 import { cssModules } from 'bpk-react-utils';
 import breakpointReadme from 'bpk-component-breakpoint/README.md';
 
-import { WebComponentPage } from '../../../components/ComponentPage';
+import WebComponentPage from '../../../components/ComponentPage';
 
 import STYLES from './breakpoints-page.scss';
 

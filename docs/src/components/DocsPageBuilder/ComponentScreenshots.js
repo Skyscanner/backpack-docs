@@ -101,8 +101,7 @@ ComponentScreenshots.propTypes = {
     PropTypes.shape({
       title: PropTypes.string,
       src: PropTypes.string.isRequired,
-      width: PropTypes.number.isRequired,
-      height: PropTypes.number.isRequired,
+      aspectRatio: PropTypes.number.isRequired,
       altText: PropTypes.string.isRequired,
       subText: PropTypes.string.isRequired,
     }),

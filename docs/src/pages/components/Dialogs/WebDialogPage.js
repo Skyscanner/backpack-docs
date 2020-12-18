@@ -33,7 +33,7 @@ import {
 } from './DialogExamples';
 
 import Paragraph from 'components/Paragraph';
-import { WebComponentPage } from 'components/ComponentPage';
+import WebComponentPage from 'components/ComponentPage';
 
 const getClassName = cssModules(STYLES);
 
