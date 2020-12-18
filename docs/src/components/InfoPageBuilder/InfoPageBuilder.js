@@ -31,10 +31,10 @@ import { withButtonAlignment } from 'bpk-component-icon';
 import HeroSection from '../HeroSection';
 import Heading from '../Heading';
 import AlternatingPageContent from '../AlternatingPageContent';
-import BpkMarkdownRenderer from '../DocsPageBuilder/BpkMarkdownRenderer';
 
 import STYLES from './InfoPageBuilder.scss';
 
+import BpkMarkdownRenderer from 'components/MarkdownRenderer/BpkMarkdownRenderer';
 import getMarkdownString from 'helpers/markdown-helper';
 
 const getClassName = cssModules(STYLES);

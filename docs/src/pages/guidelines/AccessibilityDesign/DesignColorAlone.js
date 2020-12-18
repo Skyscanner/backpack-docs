@@ -23,17 +23,17 @@ import BpkImage, {
 } from 'bpk-component-image';
 import { cssModules } from 'bpk-react-utils';
 
-import getMarkdownString from '../../../helpers/markdown-helper';
-import BpkMarkdownRenderer from '../../../components/DocsPageBuilder/BpkMarkdownRenderer';
-import BpkDoDont from '../../../components/DocsPageBuilder/BpkDoDont';
-import Paragraph from '../../../components/Paragraph';
-import PresentationBlock from '../../../components/PresentationBlock';
-
 import STYLES from './accessibility-design-page.scss';
 import colorAlone1 from './content/colorAlone1.md';
 import colorAlone2 from './content/colorAlone2.md';
 import calendarGood from './content/calendar_good.png';
 import calendarBad from './content/calendar_bad.png';
+
+import PresentationBlock from 'components/PresentationBlock';
+import Paragraph from 'components/Paragraph';
+import BpkDoDont from 'components/DoDont/BpkDoDont';
+import getMarkdownString from 'helpers/markdown-helper';
+import BpkMarkdownRenderer from 'components/MarkdownRenderer/BpkMarkdownRenderer';
 
 const getClassName = cssModules(STYLES);
 

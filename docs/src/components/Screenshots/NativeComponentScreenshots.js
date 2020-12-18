@@ -20,7 +20,7 @@
 
 import React from 'react';
 
-import ComponentScreenshots from '../DocsPageBuilder/ComponentScreenshots';
+import ComponentScreenshots from './ComponentScreenshots';
 
 type Props = {
   iOS: string,

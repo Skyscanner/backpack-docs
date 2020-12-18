@@ -18,22 +18,10 @@
 
 import React from 'react';
 
-import DocsPageBuilder from '../../../components/DocsPageBuilder';
-import IntroBlurb from '../../../components/IntroBlurb';
-import Paragraph from '../../../components/Paragraph';
+import Design from './DesignPlaceholder.mdx';
 
-const blurb = [
-  <IntroBlurb>
-    Design guidelines don&apos;t yet exist for this component, but you can help.
-  </IntroBlurb>,
-  <Paragraph>
-    Get in touch and let&apos;s work together to define the patterns, usage
-    advice and more about how to use this component.
-  </Paragraph>,
-];
+import MarkdownPage from 'components/MarkdownPage';
 
-const DesignPlaceholderPage = ({ ...rest }) => (
-  <DocsPageBuilder title="Help wanted" blurb={blurb} {...rest} />
-);
+const DesignPlaceholderPage = () => <MarkdownPage content={Design} />;
 
 export default DesignPlaceholderPage;

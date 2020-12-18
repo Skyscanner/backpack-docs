@@ -19,11 +19,11 @@
 import React, { Fragment } from 'react';
 import { cssModules } from 'bpk-react-utils';
 
-import InfoPageBuilder from '../../../components/InfoPageBuilder';
-
 import DesignColorContrast from './DesignColorContrast';
 import DesignColorAlone from './DesignColorAlone';
 import STYLES from './accessibility-design-page.scss';
+
+import InfoPageBuilder from 'components/InfoPageBuilder';
 
 const getClassName = cssModules(STYLES);
 

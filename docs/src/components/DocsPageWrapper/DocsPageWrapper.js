@@ -129,7 +129,7 @@ const DocsPageWrapper = props => {
   const path = match.url;
 
   const platforms = {
-    design: designSubpage || <DesignPlaceholderPage wrapped />,
+    design: designSubpage || <DesignPlaceholderPage />,
     android: androidSubpage,
     ios: iosSubpage,
     native: nativeSubpage,
