@@ -24,7 +24,7 @@ import format from 'date-fns/format';
 import { weekDays } from 'bpk-component-calendar/test-utils';
 
 import * as ROUTES from '../../../constants/routes';
-import { WebComponentPage } from '../../../components/ComponentPage';
+import WebComponentPage from '../../../components/ComponentPage';
 import Paragraph from '../../../components/Paragraph';
 
 const formatDate = date => format(date, 'dd/MM/yyyy');

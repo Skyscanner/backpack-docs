@@ -28,7 +28,7 @@ import imagesReadme from 'bpk-component-image/README.md';
 import * as SPACINGS from 'bpk-tokens/tokens/base.es6';
 import * as BREAKPOINTS from 'bpk-tokens/tokens/breakpoints.es6';
 
-import { WebComponentPage } from 'components/ComponentPage';
+import WebComponentPage from 'components/ComponentPage';
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingImage = withLoadingBehavior(BpkImage);

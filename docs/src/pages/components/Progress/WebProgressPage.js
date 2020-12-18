@@ -22,7 +22,7 @@ import progressReadme from 'bpk-component-progress/README.md';
 import ProgressContainer from './ProgressContainer';
 import SteppedProgressContainer from './SteppedProgressContainer';
 
-import { WebComponentPage } from 'components/ComponentPage';
+import WebComponentPage from 'components/ComponentPage';
 import Paragraph from 'components/Paragraph';
 
 const components = [

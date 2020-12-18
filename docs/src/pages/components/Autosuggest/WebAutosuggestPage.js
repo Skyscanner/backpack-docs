@@ -28,7 +28,7 @@ import BpkAutosuggest, {
 import autosuggestReadme from 'bpk-component-autosuggest/README.md';
 
 import * as ROUTES from '../../../constants/routes';
-import { WebComponentPage } from '../../../components/ComponentPage';
+import WebComponentPage from '../../../components/ComponentPage';
 import Paragraph from '../../../components/Paragraph';
 
 const BpkFlightIcon = withRtlSupport(FlightIcon);

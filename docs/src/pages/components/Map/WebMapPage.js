@@ -36,7 +36,7 @@ import mapReadme from 'bpk-component-map/README.md';
 
 import STYLES from './MapPage.scss';
 
-import { WebComponentPage } from 'components/ComponentPage';
+import WebComponentPage from 'components/ComponentPage';
 
 const AlignedLandmarkIconSm = withRtlSupport(LandmarkIconSm);
 const AlignedBusIconSm = withRtlSupport(BusIconSm);

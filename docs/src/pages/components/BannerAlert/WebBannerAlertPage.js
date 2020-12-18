@@ -38,7 +38,7 @@ import * as ROUTES from '../../../constants/routes';
 
 import STYLES from './bpk-banner-alerts-page.scss';
 
-import { WebComponentPage } from 'components/ComponentPage';
+import WebComponentPage from 'components/ComponentPage';
 import AriaLiveDemo from 'components/AriaLiveDemo';
 import Paragraph from 'components/Paragraph';
 

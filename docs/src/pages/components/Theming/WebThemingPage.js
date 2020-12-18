@@ -26,7 +26,7 @@ import STYLES from './theming-page.scss';
 
 import Paragraph from 'components/Paragraph';
 import ColorSwatch from 'components/ColorSwatch';
-import { WebComponentPage } from 'components/ComponentPage';
+import WebComponentPage from 'components/ComponentPage';
 
 const getClassName = cssModules(STYLES);
 

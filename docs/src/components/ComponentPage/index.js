@@ -16,7 +16,6 @@
  * limitations under the License.
  */
 
-import NativeComponentPage from './NativeComponentPage';
 import WebComponentPage from './WebComponentPage';
 
-export { NativeComponentPage, WebComponentPage };
+export default WebComponentPage;

@@ -20,7 +20,7 @@ import React from 'react';
 import BpkPanel from 'bpk-component-panel';
 import panelReadme from 'bpk-component-panel/README.md';
 
-import { WebComponentPage } from 'components/ComponentPage';
+import WebComponentPage from 'components/ComponentPage';
 import Paragraph from 'components/Paragraph';
 
 const components = [

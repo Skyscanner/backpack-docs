@@ -29,7 +29,7 @@ import readme from 'bpk-component-aria-live/README.md';
 import { cssModules } from 'bpk-react-utils';
 
 import AriaLiveDemo from '../../../components/AriaLiveDemo';
-import { WebComponentPage } from '../../../components/ComponentPage';
+import WebComponentPage from '../../../components/ComponentPage';
 import Paragraph from '../../../components/Paragraph';
 
 import STYLES from './aria-live-page.scss';

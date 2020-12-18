@@ -39,7 +39,7 @@ import {
 
 import STYLES from './calendar-page.scss';
 
-import { WebComponentPage } from 'components/ComponentPage';
+import WebComponentPage from 'components/ComponentPage';
 import Paragraph from 'components/Paragraph';
 
 const getClassName = cssModules(STYLES);

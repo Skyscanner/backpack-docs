@@ -20,7 +20,7 @@ import React from 'react';
 import BpkCard from 'bpk-component-card';
 import cardReadme from 'bpk-component-card/README.md';
 
-import { WebComponentPage } from 'components/ComponentPage';
+import WebComponentPage from 'components/ComponentPage';
 import Paragraph from 'components/Paragraph';
 
 const components = [

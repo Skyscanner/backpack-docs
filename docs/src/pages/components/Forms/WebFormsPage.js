@@ -20,7 +20,7 @@ import React from 'react';
 import BpkLink from 'bpk-component-link';
 
 import * as ROUTES from '../../../constants/routes';
-import { WebComponentPage } from '../../../components/ComponentPage';
+import WebComponentPage from '../../../components/ComponentPage';
 
 const components = [
   {

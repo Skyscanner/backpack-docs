@@ -41,7 +41,7 @@ import * as ROUTES from '../../../constants/routes';
 
 import STYLES from './buttons-page.scss';
 
-import { WebComponentPage } from 'components/ComponentPage';
+import WebComponentPage from 'components/ComponentPage';
 import Paragraph from 'components/Paragraph';
 import Code from 'components/Code';
 

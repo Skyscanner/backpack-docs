@@ -24,7 +24,7 @@ import BpkButton from 'bpk-component-button';
 import { BpkButtonLink } from 'bpk-component-link';
 import modalReadme from 'bpk-component-modal/README.md';
 
-import { WebComponentPage } from '../../../components/ComponentPage';
+import WebComponentPage from '../../../components/ComponentPage';
 import Paragraph from '../../../components/Paragraph';
 
 import LoginFormExample from './LoginFormExample';
