@@ -21,7 +21,7 @@
 .bpkdocs-menu-toggle-image {
   display: flex;
   padding: $bpk-spacing-base;
-  justify-content: start;
+  justify-content: flex-start;
 
   &__hamburger {
     > svg {

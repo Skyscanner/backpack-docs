@@ -235,8 +235,7 @@
     "moduleNameMapper": {
       "react-transition-group/CSSTransition": "<rootDir>/scripts/stubs/cssTransitionStub.js",
       "^.+\\.s?css$": "<rootDir>/scripts/stubs/styleStub.js",
-      ".(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga|sketch|md|pdf)$": "<rootDir>/scripts/stubs/fileStub.js",
-      "docs/src/pages/BagCheckPage/BagCheckPage.js": "<rootDir>/scripts/stubs/fileStub.js"
+      ".(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga|md|pdf)$": "<rootDir>/scripts/stubs/fileStub.js"
     },
     "coverageThreshold": {
       "global": {
