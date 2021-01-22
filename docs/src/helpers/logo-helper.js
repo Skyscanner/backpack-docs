@@ -26,7 +26,7 @@ import BackpackLogoChristmas from '../static/backpack-logo-christmas.svg';
 import BackpackLogoChristmasGrey from '../static/backpack-logo-christmas-sky-grey.svg';
 
 export const getBackpackLogo = (overImage = false) => {
-  const companyUpdateLogo = true;
+  const companyUpdateLogo = false;
 
   const dateToday = new Date();
   const isPride = dateToday.getMonth() === 5;
