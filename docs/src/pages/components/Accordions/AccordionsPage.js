@@ -20,10 +20,11 @@
 
 import React from 'react';
 
+import MarkdownPage from '../../../components/MarkdownPage';
 import DocsPageWrapper from '../../../components/DocsPageWrapper';
 import IntroBlurb from '../../../components/IntroBlurb';
 
-import WebAccordionsPage from './WebAccordionsPage';
+import Web, { metadata as webMetadata } from './WebAccordionsPage.mdx';
 
 const blurb = [
   <IntroBlurb>
@@ -35,7 +36,7 @@ const AccordionsPage = () => (
   <DocsPageWrapper
     title="Accordion"
     blurb={blurb}
-    webSubpage={<WebAccordionsPage />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 

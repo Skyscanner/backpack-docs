@@ -1,0 +1,54 @@
+---
+title: Accordion
+platform: web
+githubPath: bpk-component-accordion
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+import readme from 'bpk-component-accordion/README.md';
+import {
+  SingleItemExample,
+  MultipleItemsOpenExample,
+  WithIconsExample,
+  WithBoldTitlesExample,
+} from 'bpk-component-accordion/examples';
+
+
+## Table of contents
+
+## Default
+
+By default, accordions allow only one section to be expanded at any time.
+
+<PresentationBlock>
+  <SingleItemExample />
+</PresentationBlock>
+
+## Multiple sections open
+
+Accordions can also be configured to allow multiple sections to be expanded simultaneously.
+
+<PresentationBlock>
+  <MultipleItemsOpenExample />
+</PresentationBlock>
+
+## With icon support
+
+Accordions support displaying icons in the title.
+
+<PresentationBlock>
+  <WithIconsExample />
+</PresentationBlock>
+
+## With bold headings
+
+Accordions support bold titles.
+
+<PresentationBlock>
+  <WithBoldTitlesExample />
+</PresentationBlock>
+
+## Implementation
+
+<Readme file={readme} />
