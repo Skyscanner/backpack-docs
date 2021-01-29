@@ -27,11 +27,11 @@ import STYLES from './MarkdownPage.scss';
 
 const getClassName = cssModules(STYLES);
 
-// TODO add web to this when we support web components in mdx
 export const PLATFORMS = {
   android: 'android',
   ios: 'ios',
   native: 'native',
+  web: 'web',
 };
 
 export type PlatformType = $Keys<typeof PLATFORMS>;
@@ -99,6 +99,20 @@ const AdditionalLinks = (props: Props) => {
           </BpkLink>
         )}
 
+        {/* Web npm link */}
+        {platform && platform === PLATFORMS.web && githubPath && (
+          <BpkLink
+            href={`https://www.npmjs.com/package/${githubPath}`}
+            blank
+            className={getClassName('bpkdocs-markdown-page__link')}
+          >
+            <img
+              src={`https://badge.fury.io/js/${githubPath}.svg`}
+              alt={`View ${githubPath} on npm`}
+            />
+          </BpkLink>
+        )}
+
         {/* Android documentation link */}
         {platform && platform === PLATFORMS.android && documentationId && (
           <BpkLink
@@ -159,6 +173,20 @@ const AdditionalLinks = (props: Props) => {
         {platform && platform === PLATFORMS.native && githubPath && (
           <BpkLink
             href={`https://github.com/Skyscanner/backpack-react-native/tree/master/lib/${githubPath}`}
+            blank
+            className={getClassName('bpkdocs-markdown-page__link')}
+          >
+            <img
+              src="https://img.shields.io/badge/Source%20code-GitHub-lightgrey"
+              alt="View source code on GitHub"
+            />
+          </BpkLink>
+        )}
+
+        {/* Web GitHub link */}
+        {platform && platform === PLATFORMS.web && githubPath && (
+          <BpkLink
+            href={`https://github.com/Skyscanner/backpack/tree/master/packages/${githubPath}`}
             blank
             className={getClassName('bpkdocs-markdown-page__link')}
           >

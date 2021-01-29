@@ -83,7 +83,7 @@
     "babel-loader": "^8.0.6",
     "babel-plugin-module-resolver": "^4.0.0",
     "bpk-animate-height": "3.0.57",
-    "bpk-component-accordion": "2.2.20",
+    "bpk-component-accordion": "2.2.22",
     "bpk-component-aria-live": "1.0.12",
     "bpk-component-autosuggest": "5.0.0",
     "bpk-component-badge": "2.0.101",
