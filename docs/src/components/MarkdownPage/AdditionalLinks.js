@@ -203,11 +203,7 @@ const AdditionalLinks = (props: Props) => {
           secondary
           blank
           className={getClassName('bpkdocs-markdown-page__edit-button')}
-          href={
-            platform
-              ? `https://github.com/skyscanner/backpack-docs/edit/master/docs/src/pages/components/${fileName}`
-              : `https://github.com/skyscanner/backpack-docs/edit/master/docs/src/static-pages/${fileName}`
-          }
+          href={`https://github.com/skyscanner/backpack-docs/edit/master${fileName}`}
         >
           Edit page
         </BpkButton>

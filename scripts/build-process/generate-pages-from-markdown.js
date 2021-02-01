@@ -142,7 +142,7 @@ enrichedMarkdownFiles.forEach(({ fileName, data, id }) => {
     path: ROUTES.${constantName(data.category, id)},
     component: () => (
       <MarkdownPage
-        fileName="${fileName}"
+        fileName="/docs/src/static-pages/${fileName}"
         content={${id}}
         {...${JSON.stringify(data)}}
       />

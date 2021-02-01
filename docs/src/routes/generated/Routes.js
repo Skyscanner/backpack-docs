@@ -52,7 +52,7 @@ export const tokens = [{
     path: ROUTES.GENERATED_TOKENS_ANIMATION,
     component: () => (
       <MarkdownPage
-        fileName="animation.mdx"
+        fileName="/docs/src/static-pages/animation.mdx"
         content={ANIMATION}
         {...{"title":"Animation","subtitle":"Animation values for use on Android, iOS and web.","category":"tokens"}}
       />
@@ -61,7 +61,7 @@ export const tokens = [{
     path: ROUTES.GENERATED_TOKENS_BORDER,
     component: () => (
       <MarkdownPage
-        fileName="border.mdx"
+        fileName="/docs/src/static-pages/border.mdx"
         content={BORDER}
         {...{"title":"Border","subtitle":"Border values for use on Android, iOS and web.","category":"tokens"}}
       />
@@ -70,7 +70,7 @@ export const tokens = [{
     path: ROUTES.GENERATED_TOKENS_RADIUS,
     component: () => (
       <MarkdownPage
-        fileName="radius.mdx"
+        fileName="/docs/src/static-pages/radius.mdx"
         content={RADIUS}
         {...{"title":"Radius","subtitle":"Radii values for use on Android, iOS and web.","category":"tokens"}}
       />
@@ -79,7 +79,7 @@ export const tokens = [{
     path: ROUTES.GENERATED_TOKENS_SHADOW,
     component: () => (
       <MarkdownPage
-        fileName="shadow.mdx"
+        fileName="/docs/src/static-pages/shadow.mdx"
         content={SHADOW}
         {...{"title":"Shadow","subtitle":"Shadow values for use on Android, iOS and web.","category":"tokens"}}
       />
@@ -88,7 +88,7 @@ export const tokens = [{
     path: ROUTES.GENERATED_TOKENS_SPACING,
     component: () => (
       <MarkdownPage
-        fileName="spacing.mdx"
+        fileName="/docs/src/static-pages/spacing.mdx"
         content={SPACING}
         {...{"title":"Spacing","subtitle":"Spacing values for use on Android, iOS and web.","category":"tokens"}}
       />
@@ -97,7 +97,7 @@ export const tokens = [{
     path: ROUTES.GENERATED_TOKENS_TYPESETTING,
     component: () => (
       <MarkdownPage
-        fileName="typesetting.mdx"
+        fileName="/docs/src/static-pages/typesetting.mdx"
         content={TYPESETTING}
         {...{"title":"Typesetting","subtitle":"Typography values including font families, sizes, and line heights for use on Android, iOS and web.","category":"tokens"}}
       />
@@ -106,7 +106,7 @@ export const tokens = [{
     path: ROUTES.GENERATED_TOKENS_Z_INDEX,
     component: () => (
       <MarkdownPage
-        fileName="z-index.mdx"
+        fileName="/docs/src/static-pages/z-index.mdx"
         content={Z_INDEX}
         {...{"title":"Z-Index","subtitle":"Z-index values for use in web projects.","category":"tokens"}}
       />
@@ -116,7 +116,7 @@ export const using = [{
     path: ROUTES.GENERATED_USING_BACKPACK_REACT_SCRIPTS,
     component: () => (
       <MarkdownPage
-        fileName="backpack-react-scripts.mdx"
+        fileName="/docs/src/static-pages/backpack-react-scripts.mdx"
         content={BACKPACK_REACT_SCRIPTS}
         {...{"title":"Backpack React Scripts","subtitle":"Create React + Backpack web apps with no build configuration.","category":"using"}}
       />
@@ -125,7 +125,7 @@ export const using = [{
     path: ROUTES.GENERATED_USING_BASE_STYLESHEET,
     component: () => (
       <MarkdownPage
-        fileName="base-stylesheet.mdx"
+        fileName="/docs/src/static-pages/base-stylesheet.mdx"
         content={BASE_STYLESHEET}
         {...{"title":"Base stylesheet","subtitle":"All components are built on top of a lightweight base stylesheet. Ensure you include this on the page when consuming any Backpack components.","category":"using"}}
       />
@@ -134,7 +134,7 @@ export const using = [{
     path: ROUTES.GENERATED_USING_GETTING_STARTED,
     component: () => (
       <MarkdownPage
-        fileName="getting-started.mdx"
+        fileName="/docs/src/static-pages/getting-started.mdx"
         content={GETTING_STARTED}
         {...{"title":"Getting Started","subtitle":"Depending on the audience, there are a few ways to get started.","category":"using"}}
       />
@@ -143,7 +143,7 @@ export const using = [{
     path: ROUTES.GENERATED_USING_PRINCIPLES,
     component: () => (
       <MarkdownPage
-        fileName="principles.mdx"
+        fileName="/docs/src/static-pages/principles.mdx"
         content={PRINCIPLES}
         {...{"title":"Principles","subtitle":"Backpack components, features and configurations are created with the following principles in mind.","category":"using"}}
       />
@@ -152,7 +152,7 @@ export const using = [{
     path: ROUTES.GENERATED_USING_BACKPACK_STATUS,
     component: () => (
       <MarkdownPage
-        fileName="status.mdx"
+        fileName="/docs/src/static-pages/status.mdx"
         content={BACKPACK_STATUS}
         {...{"title":"Backpack Status","subtitle":"Here you will find the current Backpack CI status and release versions.","category":"using"}}
       />
@@ -161,7 +161,7 @@ export const using = [{
     path: ROUTES.GENERATED_USING_UPDATING_THIS_WEBSITE,
     component: () => (
       <MarkdownPage
-        fileName="website-contribution-guide.mdx"
+        fileName="/docs/src/static-pages/website-contribution-guide.mdx"
         content={UPDATING_THIS_WEBSITE}
         {...{"title":"Updating this website","subtitle":"Backpack belongs to everyone at Skyscanner. Changes are welcomed from anybody.","category":"using"}}
       />
@@ -171,7 +171,7 @@ export const guidelines = [{
     path: ROUTES.GENERATED_GUIDELINES_COLOUR,
     component: () => (
       <MarkdownPage
-        fileName="colour.mdx"
+        fileName="/docs/src/static-pages/colour.mdx"
         content={COLOUR}
         {...{"title":"Colour","category":"guidelines"}}
       />
@@ -180,7 +180,7 @@ export const guidelines = [{
     path: ROUTES.GENERATED_GUIDELINES_COPYWRITING,
     component: () => (
       <MarkdownPage
-        fileName="copywriting.mdx"
+        fileName="/docs/src/static-pages/copywriting.mdx"
         content={COPYWRITING}
         {...{"title":"Copywriting","subtitle":"Writing for Skyscanner? This basically makes you a hero.","category":"guidelines"}}
       />
@@ -189,7 +189,7 @@ export const guidelines = [{
     path: ROUTES.GENERATED_GUIDELINES_DEVELOPER_ACCESSIBILITY_GUIDELINES,
     component: () => (
       <MarkdownPage
-        fileName="developer-accessibility.mdx"
+        fileName="/docs/src/static-pages/developer-accessibility.mdx"
         content={DEVELOPER_ACCESSIBILITY_GUIDELINES}
         {...{"title":"Developer Accessibility Guidelines","subtitle":"To ensure that we are building the best possible products that work for everyone, we need to consider accessibility at every stage.","category":"guidelines"}}
       />
@@ -198,7 +198,7 @@ export const guidelines = [{
     path: ROUTES.GENERATED_GUIDELINES_GRAPHIC_DEVICES,
     component: () => (
       <MarkdownPage
-        fileName="graphic-devices.mdx"
+        fileName="/docs/src/static-pages/graphic-devices.mdx"
         content={GRAPHIC_DEVICES}
         {...{"title":"Graphic Devices","category":"guidelines"}}
       />
@@ -207,7 +207,7 @@ export const guidelines = [{
     path: ROUTES.GENERATED_GUIDELINES_ICONOGRAPHY,
     component: () => (
       <MarkdownPage
-        fileName="iconography.mdx"
+        fileName="/docs/src/static-pages/iconography.mdx"
         content={ICONOGRAPHY}
         {...{"title":"Iconography","subtitle":"Icons hold a vital role within our identity, guiding travellers through the complex information on-show in our product.","category":"guidelines"}}
       />
@@ -216,7 +216,7 @@ export const guidelines = [{
     path: ROUTES.GENERATED_GUIDELINES_ILLUSTRATION,
     component: () => (
       <MarkdownPage
-        fileName="illustration.mdx"
+        fileName="/docs/src/static-pages/illustration.mdx"
         content={ILLUSTRATION}
         {...{"title":"Illustration","subtitle":"Illustrations are our most versatile identity element, and we use them to great effect across a wide range of applications — from informative product flows to emotive advertising.","category":"guidelines"}}
       />
@@ -225,7 +225,7 @@ export const guidelines = [{
     path: ROUTES.GENERATED_GUIDELINES_IN_USE,
     component: () => (
       <MarkdownPage
-        fileName="in-use.mdx"
+        fileName="/docs/src/static-pages/in-use.mdx"
         content={IN_USE}
         {...{"title":"In use","subtitle":"This section contains an overview of best-practice applications. Here we've brought together all of the elements outlined to create a range of applications that span from product screens to out-of-home advertising.","category":"guidelines"}}
       />
@@ -234,7 +234,7 @@ export const guidelines = [{
     path: ROUTES.GENERATED_GUIDELINES_LOGO,
     component: () => (
       <MarkdownPage
-        fileName="logo.mdx"
+        fileName="/docs/src/static-pages/logo.mdx"
         content={LOGO}
         {...{"title":"Logo","subtitle":"Our logo is Skyscanner's most important visual element. It is the visual shorthand for our company, and the single graphic that our audiences will attach their emotion to.","category":"guidelines"}}
       />
@@ -243,7 +243,7 @@ export const guidelines = [{
     path: ROUTES.GENERATED_GUIDELINES_PHOTOGRAPHY,
     component: () => (
       <MarkdownPage
-        fileName="photography.mdx"
+        fileName="/docs/src/static-pages/photography.mdx"
         content={PHOTOGRAPHY}
         {...{"title":"Photography","subtitle":"Photography captures the spirit of our brand. It allows us to evoke strong emotions, and visually transport our audiences to far-away locations, as well as capturing realistic representations of people and places.","category":"guidelines"}}
       />
@@ -252,7 +252,7 @@ export const guidelines = [{
     path: ROUTES.GENERATED_GUIDELINES_SHADOWS,
     component: () => (
       <MarkdownPage
-        fileName="shadows.mdx"
+        fileName="/docs/src/static-pages/shadows.mdx"
         content={SHADOWS}
         {...{"title":"Shadows","category":"guidelines"}}
       />
@@ -261,7 +261,7 @@ export const guidelines = [{
     path: ROUTES.GENERATED_GUIDELINES_STRATEGY,
     component: () => (
       <MarkdownPage
-        fileName="strategy.mdx"
+        fileName="/docs/src/static-pages/strategy.mdx"
         content={STRATEGY}
         {...{"title":"Strategy","subtitle":"Our brand strategy is the blueprint that gives our brand purpose and direction. It is the set of rules that we use to inform our decisions — from day-to-day queries to long-term challenges. This section will guide you through its components.","category":"guidelines"}}
       />
@@ -270,7 +270,7 @@ export const guidelines = [{
     path: ROUTES.GENERATED_GUIDELINES_TONE_OF_VOICE,
     component: () => (
       <MarkdownPage
-        fileName="tone-of-voice.mdx"
+        fileName="/docs/src/static-pages/tone-of-voice.mdx"
         content={TONE_OF_VOICE}
         {...{"title":"Tone of voice","category":"guidelines"}}
       />
@@ -279,7 +279,7 @@ export const guidelines = [{
     path: ROUTES.GENERATED_GUIDELINES_TYPOGRAPHY,
     component: () => (
       <MarkdownPage
-        fileName="typography.mdx"
+        fileName="/docs/src/static-pages/typography.mdx"
         content={TYPOGRAPHY}
         {...{"title":"Typography","category":"guidelines"}}
       />
