@@ -24,12 +24,27 @@
 
 const matter = require('gray-matter');
 
-module.exports = src => {
+const REPO_NAME = 'backpack-docs';
+
+const getFileName = fullPath => {
+  const splitPath = fullPath.split(REPO_NAME);
+  if (splitPath.length > 1) {
+    return splitPath[1];
+  }
+  return null;
+};
+
+module.exports = function loader(src) {
   return new Promise(resolve => {
     const { content, data } = matter(src);
 
     if (Object.keys(data).length === 0) {
       return resolve(content);
+    }
+
+    const fileName = getFileName(this.resourcePath);
+    if (fileName) {
+      data.fileName = fileName;
     }
 
     // Exports must go at the bottom, as exports before imports aren't allowed.
