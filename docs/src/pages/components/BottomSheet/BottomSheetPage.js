@@ -21,6 +21,7 @@
 import React from 'react';
 
 import IOS, { metadata as iosMetadata } from './IOSBottomSheet.mdx';
+import Android, { metadata as androidMetadata } from './AndroidBottomSheet.mdx';
 
 import DocsPageWrapper from 'components/DocsPageWrapper';
 import IntroBlurb from 'components/IntroBlurb';
@@ -35,6 +36,7 @@ const BottomSheetPage = () => (
         supplementary content that are anchored to the bottom of the screen.
       </IntroBlurb>,
     ]}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
   />
 );
