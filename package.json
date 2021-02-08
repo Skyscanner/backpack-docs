@@ -171,7 +171,7 @@
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-flowtype": "^4.5.3",
     "file-loader": "^6.0.0",
-    "flow-bin": "^0.135.0",
+    "flow-bin": "^0.144.0",
     "flow-typed": "^3.2.1",
     "fuse.js": "^6.4.1",
     "globby": "^11.0.1",
