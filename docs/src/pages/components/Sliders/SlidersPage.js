@@ -17,86 +17,22 @@
  */
 
 import React from 'react';
-import BpkSlider from 'bpk-component-slider';
-import sliderReadme from 'bpk-component-slider/README.md';
-import { updateOnDirectionChange } from 'bpk-component-rtl-toggle';
 
-import WebComponentPage from '../../../components/ComponentPage';
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import Paragraph from '../../../components/Paragraph';
-import IntroBlurb from '../../../components/IntroBlurb';
+import Web, { metadata as webMetadata } from './WebSlidersPage.mdx';
 
-const EnhancedSlider = updateOnDirectionChange(BpkSlider);
-const components = [
-  {
-    id: 'default',
-    title: 'Default',
-    blurb: [<Paragraph>This is the default slider.</Paragraph>],
-    examples: [<EnhancedSlider min={0} max={100} value={0} />],
-  },
-  {
-    id: 'large',
-    title: 'Large',
-    blurb: [
-      <Paragraph>This is a bigger version of the default slider.</Paragraph>,
-    ],
-    examples: [<EnhancedSlider min={0} max={100} value={0} large />],
-  },
-  {
-    id: 'range',
-    title: 'Range',
-    blurb: [<Paragraph>There can be a range of values.</Paragraph>],
-    examples: [
-      <EnhancedSlider min={0} max={100} value={[20, 80]} minDistance={0} />,
-    ],
-  },
-  {
-    id: 'stepped',
-    title: 'Stepped',
-    blurb: [<Paragraph>You can set steps.</Paragraph>],
-    examples: [
-      <EnhancedSlider
-        min={0}
-        max={100}
-        value={[20, 80]}
-        minDistance={0}
-        step={10}
-      />,
-    ],
-  },
-  {
-    id: 'minDistance',
-    title: 'Minimum distance',
-    blurb: [
-      <Paragraph>
-        You can set a minimum distance between the handlers.
-      </Paragraph>,
-    ],
-    examples: [
-      <EnhancedSlider min={0} max={100} value={[20, 80]} minDistance={15} />,
-    ],
-  },
-];
-
-const blurb = [
-  <IntroBlurb>
-    Sliders allow users to input a numeric value from a given range.
-  </IntroBlurb>,
-];
-
-const SlidersSubPage = () => (
-  <WebComponentPage
-    examples={components}
-    readme={sliderReadme}
-    packageName="bpk-component-slider"
-  />
-);
+import MarkdownPage from 'components/MarkdownPage';
+import IntroBlurb from 'components/IntroBlurb';
+import DocsPageWrapper from 'components/DocsPageWrapper';
 
 const SlidersPage = () => (
   <DocsPageWrapper
     title="Slider"
-    blurb={blurb}
-    webSubpage={<SlidersSubPage />}
+    blurb={[
+      <IntroBlurb>
+        Sliders allow users to input a numeric value from a given range.
+      </IntroBlurb>,
+    ]}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 

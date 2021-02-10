@@ -1,0 +1,69 @@
+---
+title: Slider
+platform: web
+githubPath: bpk-component-slider
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+import readme from 'bpk-component-slider/README.md';
+import {
+  SimpleSlider,
+  SimpleLargeSlider,
+  TimeSlider,
+  SimpleSliderWithSteps,
+  RangeSlider,
+  RangeSliderWithMinimumDistance,
+} from 'bpk-component-slider/examples';
+
+## Table of contents
+
+## Default
+
+<PresentationBlock>
+  <SimpleSlider />
+</PresentationBlock>
+
+## Large
+
+This is a larger version of the default slider.
+
+<PresentationBlock>
+  <SimpleLargeSlider />
+</PresentationBlock>
+
+## Stepped
+
+Steps can be used for larger increments.
+
+<PresentationBlock>
+  <SimpleSliderWithSteps />
+</PresentationBlock>
+
+## Range slider
+
+Sliders can be used to specify a range of values with multiple "handles".
+
+<PresentationBlock>
+  <RangeSlider />
+</PresentationBlock>
+
+## Range with minimum distance
+
+You can set a minimum distance between the minimum and maximum range values.
+
+<PresentationBlock>
+  <RangeSliderWithMinimumDistance />
+</PresentationBlock>
+
+## Non-integer values
+
+For non-integer values, it's necessary to use the `ariaLabel` and `ariaValuetext` props to provide assistive technology with meaningful values.
+
+<PresentationBlock>
+  <TimeSlider />
+</PresentationBlock>
+
+## Implementation
+
+<Readme file={readme} />
