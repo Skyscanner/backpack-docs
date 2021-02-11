@@ -139,7 +139,7 @@ const BpkMarkdownRenderer = (props: Props) => {
     const { language, value, ...codeBlockRest } = codeBlockProps;
     return <BpkCodeBlock {...codeBlockRest}>{value}</BpkCodeBlock>;
   };
-  // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/master/decisions/flowfixme.md'.
+  // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/main/decisions/flowfixme.md'.
   return <ReactMarkdown renderers={renderers} {...rest} />;
 };
 

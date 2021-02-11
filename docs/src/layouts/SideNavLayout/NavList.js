@@ -44,7 +44,7 @@ const NavLink = (props: LinkPropType) => {
 
   if (route) {
     return (
-      // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/master/decisions/flowfixme.md'.
+      // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/main/decisions/flowfixme.md'.
       <RouterNavLink
         className={getClassName('bpkdocs-side-nav-list__link')}
         activeClassName={getClassName('bpkdocs-side-nav-list__link--active')}
@@ -90,7 +90,7 @@ const NavListCategory = (props: NavListCategoryPropType) => (
           return x.tags && x.tags.indexOf(props.selectedFilter) >= 0;
         })
         .map(link => (
-          // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/master/decisions/flowfixme.md'.
+          // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/main/decisions/flowfixme.md'.
           <NavListItem key={link.id} {...link} onClick={props.onClick} />
         ))}
     </ul>
@@ -144,7 +144,7 @@ class NavList extends Component<NavListPropTypes, NavListState> {
         />
         <ul className={getClassName('bpkdocs-side-nav-list__list')}>
           {links.map(link => (
-            // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/master/decisions/flowfixme.md'.
+            // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/main/decisions/flowfixme.md'.
             <NavListCategory
               key={link.id}
               {...link}

@@ -118,7 +118,7 @@ const WebComponentPage = (props: Props) => {
     title: 'Source code',
     content: (
       <BpkLink
-        href={`https://github.com/Skyscanner/backpack/tree/master/packages/${packageName}`}
+        href={`https://github.com/Skyscanner/backpack/tree/main/packages/${packageName}`}
         blank
         className={getClassName('bpkdocs-component-page__link')}
       >

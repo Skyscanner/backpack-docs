@@ -81,7 +81,7 @@ export class DialogContainer extends Component<
     return (
       <div>
         <BpkButton onClick={this.onOpen}>Open Dialog</BpkButton>
-        {/* $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/master/decisions/flowfixme.md'. */}
+        {/* $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/main/decisions/flowfixme.md'. */}
         <BpkDialog
           closeLabel="Close dialog"
           id="default-dialog"
@@ -137,7 +137,7 @@ export class NonDismissibleDialogContainer extends Component<
     return (
       <div>
         <BpkButton onClick={this.onOpen}>Open Dialog</BpkButton>
-        {/* $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/master/decisions/flowfixme.md'. */}
+        {/* $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/main/decisions/flowfixme.md'. */}
         <BpkDialog
           id="non-dissmissible-dialog"
           className="my-classname"

@@ -58,7 +58,7 @@ const BpkDoDont = (props: Props) => {
   }
 
   return (
-    // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/master/decisions/flowfixme.md'.
+    // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/main/decisions/flowfixme.md'.
     <div className={classNames.join(' ')} {...rest}>
       <BpkText
         tagName="h4"

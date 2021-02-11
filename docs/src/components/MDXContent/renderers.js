@@ -76,7 +76,7 @@ const Renderer = () => {
         .replace(/\W/g, '-');
 
       return (
-        // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/master/decisions/flowfixme.md'.
+        // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/main/decisions/flowfixme.md'.
         <BpkText
           id={id}
           textStyle={TEXT_STYLES[TAG_NAMES.indexOf(tag)]}
@@ -93,7 +93,7 @@ const Renderer = () => {
   renderers.img = (imageProps: { alt: string, src: string }) => {
     const { alt, src, ...imageRest } = imageProps;
     return (
-      // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/master/decisions/flowfixme.md'.
+      // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/main/decisions/flowfixme.md'.
       <img
         alt={alt}
         src={src}
@@ -108,7 +108,7 @@ const Renderer = () => {
   renderers.table = (tableProps: { children: any }) => {
     const { children, ...tableRest } = tableProps;
     return (
-      // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/master/decisions/flowfixme.md'.
+      // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/main/decisions/flowfixme.md'.
       <BpkMobileScrollContainer
         className={getClassName('bpkdocs-mdx-page__mobile-scroll-container')}
         trailingIndicatorClassName={getClassName(
@@ -133,14 +133,14 @@ const Renderer = () => {
   renderers.th = (tableCellProps: { children: any, isHeader: boolean }) => {
     const { isHeader, ...tableCellRest } = tableCellProps;
     const CellComponent = isHeader ? BpkTableHeadCell : BpkTableCell;
-    // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/master/decisions/flowfixme.md'.
+    // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/main/decisions/flowfixme.md'.
     return <CellComponent {...tableCellRest} />;
   };
 
   renderers.td = (tableCellProps: { children: any, isHeader: boolean }) => {
     const { isHeader, ...tableCellRest } = tableCellProps;
     const CellComponent = isHeader ? BpkTableHeadCell : BpkTableCell;
-    // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/master/decisions/flowfixme.md'.
+    // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/main/decisions/flowfixme.md'.
     return <CellComponent {...tableCellRest} />;
   };
 
