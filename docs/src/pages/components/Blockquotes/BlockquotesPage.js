@@ -18,10 +18,11 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
+import Web, { metadata as webMetadata } from './WebBlockquotesPage.mdx';
 
-import WebBlockquotesPage from './WebBlockquotesPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
+import MarkdownPage from 'components/MarkdownPage';
 
 const blurb = [
   <IntroBlurb>
@@ -34,7 +35,7 @@ const BlockquotesPage = () => (
   <DocsPageWrapper
     title="Blockquote"
     blurb={blurb}
-    webSubpage={<WebBlockquotesPage />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 

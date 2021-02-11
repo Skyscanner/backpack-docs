@@ -31,12 +31,12 @@ import FlightIconSm from 'bpk-component-icon/sm/flight';
 import HotelsIconSm from 'bpk-component-icon/sm/hotels';
 import CarsIconSm from 'bpk-component-icon/sm/cars';
 import TickCircleIconSm from 'bpk-component-icon/sm/tick-circle';
+import { AriaLiveDemo } from 'bpk-component-aria-live/examples';
 
 import * as ROUTES from '../../../constants/routes';
 
 import STYLES from './ChipsPage.scss';
 
-import AriaLiveDemo from 'components/AriaLiveDemo';
 import Paragraph from 'components/Paragraph';
 import WebComponentPage from 'components/ComponentPage';
 

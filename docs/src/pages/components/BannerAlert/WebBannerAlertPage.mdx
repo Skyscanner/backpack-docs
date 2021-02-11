@@ -1,0 +1,49 @@
+---
+title: Banner Alert
+platform: web
+githubPath: bpk-component-banner-alert
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+import readme from 'bpk-component-banner-alert/README.md';
+
+## Table of contents
+
+## Default
+
+Banner alerts come in various styles to indicate success, warning or error, or some neutral information.
+
+<PresentationBlock></PresentationBlock>
+
+## With custom icon
+
+Banner alerts can be configured to show any icon.
+
+## Expandable
+
+They can be configured to display further information to the user in the form of an expandable panel.
+
+## Dismissible
+
+Banner alerts can be configured to include a close icon so that the user can dismiss them.
+
+Note that if banner-alerts are being added or removed dynamically (like in the example below), you should render a [BpkAriaLive](/components/aria-live) container describing the updates taking place. By doing this, assistive technologies will know to inform the user when changes are made. By default, only additions to the container will be read out, so you don't need to worry about removing entries again.
+
+<PresentationBlock></PresentationBlock>
+
+## With enter animation
+
+Banner alerts can be configured to animate when first added to the DOM.
+
+<PresentationBlock></PresentationBlock>
+
+## Event Alert
+
+Reserved for event-based messaging that has neither a positive or negative connotation. Avoid using this in other contexts.
+
+<PresentationBlock></PresentationBlock>
+
+## Implementation
+
+<Readme file={readme} />

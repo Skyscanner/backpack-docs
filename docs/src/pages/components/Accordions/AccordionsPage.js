@@ -20,11 +20,11 @@
 
 import React from 'react';
 
-import MarkdownPage from '../../../components/MarkdownPage';
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-
 import Web, { metadata as webMetadata } from './WebAccordionsPage.mdx';
+
+import MarkdownPage from 'components/MarkdownPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
 
 const blurb = [
   <IntroBlurb>

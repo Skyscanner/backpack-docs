@@ -18,10 +18,11 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
+import Web, { metadata as webMetadata } from './WebBreakpointsPage.mdx';
 
-import WebBreakpointsPage from './WebBreakpointsPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
+import MarkdownPage from 'components/MarkdownPage';
 
 const blurb = [
   <IntroBlurb>
@@ -35,7 +36,7 @@ const BreakpointsPage = () => (
   <DocsPageWrapper
     title="Breakpoint"
     blurb={blurb}
-    webSubpage={<WebBreakpointsPage />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 

@@ -20,12 +20,12 @@
 
 import React from 'react';
 
-import MarkdownPage from '../../../components/MarkdownPage';
 
 import Android, { metadata as androidMetadata } from './AndroidBadge.mdx';
 import IOS, { metadata as iosMetadata } from './IOSBadge.mdx';
 import Native, { metadata as nativeMetadata } from './NativeBadge.mdx';
 import Web, { metadata as webMetadata } from './WebBadgePage.mdx';
+import MarkdownPage from 'components/MarkdownPage';
 
 import IntroBlurb from 'components/IntroBlurb';
 import DocsPageWrapper from 'components/DocsPageWrapper';

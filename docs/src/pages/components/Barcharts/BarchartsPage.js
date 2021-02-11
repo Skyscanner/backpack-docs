@@ -20,7 +20,7 @@ import React from 'react';
 
 import IOS, { metadata as iosMetadata } from './IOSBarChart.mdx';
 import Android, { metadata as androidMetadata } from './AndroidBarChart.mdx';
-import Web from './WebBarChartPage';
+import Web, { metadata as webMetadata } from './WebBarchartsPage.mdx';
 
 import DocsPageWrapper from 'components/DocsPageWrapper';
 import IntroBlurb from 'components/IntroBlurb';
@@ -38,7 +38,7 @@ const BarchartsPage = () => (
   <DocsPageWrapper
     title="Bar chart"
     blurb={blurb}
-    webSubpage={<Web />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
   />
