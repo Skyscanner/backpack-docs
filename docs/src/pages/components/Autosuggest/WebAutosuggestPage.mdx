@@ -1,0 +1,60 @@
+---
+title: Autosuggest
+platform: web
+githubPath: bpk-component-autosuggest
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+import readme from 'bpk-component-autosuggest/README.md';
+import AutosuggestExample from 'bpk-component-autosuggest/examples';
+
+
+## Table of contents
+
+## Default
+
+This is the most basic method of displaying suggestions.
+
+Note that they can be indented (to indicate topology for example) - type "a" to see this demonstrated by the Glasgow office suggestion.
+
+<PresentationBlock>
+  <AutosuggestExample />
+</PresentationBlock>
+
+## Icons
+
+You can insert a [Backpack icon](/components/icon) next to each suggestion, useful for differentiation e.g. between airports, cities, and countries.
+
+<PresentationBlock>
+  <AutosuggestExample includeIcon />
+</PresentationBlock>
+
+## Subheadings
+
+Additional suggestion information can be displayed as a subheading.
+
+<PresentationBlock>
+  <AutosuggestExample includeSubheading />
+</PresentationBlock>
+
+## Tertiary label
+
+If subheadings are not enough, you can add some tertiary information too.
+
+<PresentationBlock>
+  <AutosuggestExample includeTertiaryLabel />
+</PresentationBlock>
+
+## Combination
+
+This example shows all of the above combined.
+
+<PresentationBlock>
+  <AutosuggestExample includeIcon includeSubheading includeTertiaryLabel/>
+</PresentationBlock>
+
+
+## Implementation
+
+<Readme file={readme} />

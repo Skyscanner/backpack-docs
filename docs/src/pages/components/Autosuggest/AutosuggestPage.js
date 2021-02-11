@@ -20,8 +20,9 @@ import React from 'react';
 
 import DocsPageWrapper from '../../../components/DocsPageWrapper';
 import IntroBlurb from '../../../components/IntroBlurb';
+import MarkdownPage from '../../../components/MarkdownPage';
 
-import WebAutosuggestPage from './WebAutosuggestPage';
+import Web, { metadata as webMetadata } from './WebAutosuggestPage.mdx';
 
 const blurb = [
   <IntroBlurb>
@@ -34,7 +35,7 @@ const AutosuggestPage = () => (
   <DocsPageWrapper
     title="Autosuggest"
     blurb={blurb}
-    webSubpage={<WebAutosuggestPage />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 

@@ -22,8 +22,9 @@ import React from 'react';
 
 import DocsPageWrapper from '../../../components/DocsPageWrapper';
 import IntroBlurb from '../../../components/IntroBlurb';
+import MarkdownPage from '../../../components/MarkdownPage';
 
-import Web from './WebAriaLivePage';
+import Web, { metadata as webMetadata } from './WebAriaLivePage.mdx';
 
 const Page = () => (
   <DocsPageWrapper
@@ -34,7 +35,7 @@ const Page = () => (
         content.
       </IntroBlurb>,
     ]}
-    webSubpage={<Web wrapped />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 

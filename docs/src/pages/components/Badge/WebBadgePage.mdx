@@ -1,0 +1,78 @@
+---
+title: Badge
+platform: web
+githubPath: bpk-component-badge
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+import readme from 'bpk-component-badge/README.md';
+import {
+  DefaultExample,
+  WithIconsExample,
+  CenteredExample,
+  DockedLeadingExample,
+  DockedTrailingExample,
+  WarningExample,
+  SuccessExample,
+  DestructiveExample,
+  LightExample,
+  InverseExample,
+  OutlineExample,
+} from 'bpk-component-badge/examples';
+
+
+## Table of contents
+
+## Default
+
+The default behaviour for a badge is to sit next to other objects with text aligned to the baseline.
+
+<PresentationBlock>
+  <DefaultExample />
+</PresentationBlock>
+
+## With icons
+
+When badges contain icons, the icons are resized to fit and have some margin applied. The badge's height also increases slightly.
+
+<PresentationBlock>
+  <WithIconsExample />
+</PresentationBlock>
+
+## Docked
+
+A badge can also be configured to have a top right, or top left modifier to pin it to the corner of its parent.
+
+<PresentationBlock>
+  <DockedTrailingExample />
+</PresentationBlock>
+
+## Success
+
+<PresentationBlock>
+  <SuccessExample />
+</PresentationBlock>
+
+## Light
+
+<PresentationBlock>
+  <LightExample />
+</PresentationBlock>
+
+## Inverse
+
+<PresentationBlock>
+  <InverseExample />
+</PresentationBlock>
+
+## Outline
+
+<PresentationBlock>
+  <OutlineExample />
+</PresentationBlock>
+
+
+## Implementation
+
+<Readme file={readme} />
