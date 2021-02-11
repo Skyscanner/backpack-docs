@@ -152,7 +152,7 @@ The web Map component page requires an environment variable named `GOOGLE_MAPS_A
 The documentation build will ensure the local submodules are up to date before using it so there is no need to do any git command directly. That being
 said, from time to time it's good to update the submodules to point to a newer commit so fewer changes will be pulled before each doc build.
 
-To do the above run `npm run submodules:update` and then `git push origin master`.
+To do the above run `npm run submodules:update` and then `git push origin main`.
 
 Sometimes you may encounter an error when running `npm test` or running linting, that states an error of `module not found`. This issue can be related to the submodules not being cloned when working with the codebase.
 

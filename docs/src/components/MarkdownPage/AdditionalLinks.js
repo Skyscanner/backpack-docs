@@ -144,7 +144,7 @@ const AdditionalLinks = (props: Props) => {
         {/* Android GitHub link */}
         {platform && platform === PLATFORMS.android && githubPath && (
           <BpkLink
-            href={`https://github.com/Skyscanner/backpack-android/tree/master/Backpack/src/main/java/net/skyscanner/backpack/${githubPath}`}
+            href={`https://github.com/Skyscanner/backpack-android/tree/main/Backpack/src/main/java/net/skyscanner/backpack/${githubPath}`}
             blank
             className={getClassName('bpkdocs-markdown-page__link')}
           >
@@ -158,7 +158,7 @@ const AdditionalLinks = (props: Props) => {
         {/* iOS GitHub link */}
         {platform && platform === PLATFORMS.ios && githubPath && (
           <BpkLink
-            href={`https://github.com/Skyscanner/backpack-ios/tree/master/Backpack/${githubPath}`}
+            href={`https://github.com/Skyscanner/backpack-ios/tree/main/Backpack/${githubPath}`}
             blank
             className={getClassName('bpkdocs-markdown-page__link')}
           >
@@ -172,7 +172,7 @@ const AdditionalLinks = (props: Props) => {
         {/* RN GitHub link */}
         {platform && platform === PLATFORMS.native && githubPath && (
           <BpkLink
-            href={`https://github.com/Skyscanner/backpack-react-native/tree/master/lib/${githubPath}`}
+            href={`https://github.com/Skyscanner/backpack-react-native/tree/main/lib/${githubPath}`}
             blank
             className={getClassName('bpkdocs-markdown-page__link')}
           >
@@ -186,7 +186,7 @@ const AdditionalLinks = (props: Props) => {
         {/* Web GitHub link */}
         {platform && platform === PLATFORMS.web && githubPath && (
           <BpkLink
-            href={`https://github.com/Skyscanner/backpack/tree/master/packages/${githubPath}`}
+            href={`https://github.com/Skyscanner/backpack/tree/main/packages/${githubPath}`}
             blank
             className={getClassName('bpkdocs-markdown-page__link')}
           >
@@ -203,7 +203,7 @@ const AdditionalLinks = (props: Props) => {
           secondary
           blank
           className={getClassName('bpkdocs-markdown-page__edit-button')}
-          href={`https://github.com/skyscanner/backpack-docs/edit/master${fileName}`}
+          href={`https://github.com/skyscanner/backpack-docs/edit/main${fileName}`}
         >
           Edit page
         </BpkButton>

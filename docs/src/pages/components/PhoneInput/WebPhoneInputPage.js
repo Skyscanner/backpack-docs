@@ -67,7 +67,7 @@ class StoryContainer extends Component<Props, State> {
 
   render() {
     return (
-      // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/master/decisions/flowfixme.md'.
+      // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/main/decisions/flowfixme.md'.
       <BpkPhoneInput
         id="phone-input-id"
         name="Telephone input"
