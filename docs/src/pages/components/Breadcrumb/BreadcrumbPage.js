@@ -19,10 +19,9 @@
 import React from 'react';
 
 import Web, { metadata as webMetadata } from './WebBreadcrumbPage.mdx';
+
 import IntroBlurb from 'components/IntroBlurb';
 import DocsPageWrapper from 'components/DocsPageWrapper';
-
-
 import MarkdownPage from 'components/MarkdownPage';
 
 const blurb = [

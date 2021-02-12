@@ -7,6 +7,24 @@ githubPath: bpk-component-banner-alert
 import Readme from 'components/Readme';
 import PresentationBlock from 'components/PresentationBlock';
 import readme from 'bpk-component-banner-alert/README.md';
+import {
+  Neutral,
+  Primary,
+  Success,
+  SuccessLongMessage,
+  Dismissable,
+  SuccessExpandable,
+  SuccessAnimateOnEnter,
+  SuccessWithReactRenderedMessage,
+  Warn,
+  ErrorExample,
+  Event,
+  SuccessDismissableBehaviour,
+  SuccessExpandableBehaviour,
+  SuccessAutomaticallyDismissed,
+  SuccessCustomIcon,
+  DocsDefault,
+} from 'bpk-component-banner-alert/examples';
 
 ## Table of contents
 
@@ -14,15 +32,25 @@ import readme from 'bpk-component-banner-alert/README.md';
 
 Banner alerts come in various styles to indicate success, warning or error, or some neutral information.
 
-<PresentationBlock></PresentationBlock>
+<PresentationBlock>
+  <DocsDefault />
+</PresentationBlock>
 
 ## With custom icon
 
 Banner alerts can be configured to show any icon.
 
+<PresentationBlock>
+  <SuccessCustomIcon />
+</PresentationBlock>
+
 ## Expandable
 
 They can be configured to display further information to the user in the form of an expandable panel.
+
+<PresentationBlock>
+  <SuccessExpandableBehaviour />
+</PresentationBlock>
 
 ## Dismissible
 
@@ -30,19 +58,25 @@ Banner alerts can be configured to include a close icon so that the user can dis
 
 Note that if banner-alerts are being added or removed dynamically (like in the example below), you should render a [BpkAriaLive](/components/aria-live) container describing the updates taking place. By doing this, assistive technologies will know to inform the user when changes are made. By default, only additions to the container will be read out, so you don't need to worry about removing entries again.
 
-<PresentationBlock></PresentationBlock>
+<PresentationBlock>
+  <SuccessDismissableBehaviour />
+</PresentationBlock>
 
 ## With enter animation
 
 Banner alerts can be configured to animate when first added to the DOM.
 
-<PresentationBlock></PresentationBlock>
+<PresentationBlock>
+  <SuccessAnimateOnEnter />
+</PresentationBlock>
 
 ## Event Alert
 
 Reserved for event-based messaging that has neither a positive or negative connotation. Avoid using this in other contexts.
 
-<PresentationBlock></PresentationBlock>
+<PresentationBlock>
+  <Event />
+</PresentationBlock>
 
 ## Implementation
 

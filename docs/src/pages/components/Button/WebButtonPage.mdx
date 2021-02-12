@@ -6,6 +6,7 @@ githubPath: bpk-component-button
 
 import Readme from 'components/Readme';
 import PresentationBlock from 'components/PresentationBlock';
+import UsageTable from 'components/UsageTable';
 import readme from 'bpk-component-button/README.md';
 import {
   PrimaryExample,
@@ -24,12 +25,22 @@ import {
   MixedExample,
   AnchorTagsExample,
 } from 'bpk-component-button/examples';
+import { DocsPrimary as LoadingExample } from 'bpk-component-loading-button/examples';
 
 ## Table of contents
 
 ## Usage advice
 
-TODO - DO AND DONT
+<UsageTable
+  data={{
+    dos: [
+      'Use the large and small sizes as they are provided, so that we deliver consistent, accessible buttons across the product.',
+    ],
+    donts: [
+      "Don't override font properties or the size of the button using custom styles, as you will make the component inconsistent and inaccessible.",
+    ],
+  }}
+/>
 
 ## Primary
 
@@ -82,7 +93,7 @@ Link buttons follow the same style as links and are used as a tertiary means of 
 ## Loading buttons
 
 <PresentationBlock>
-  <Loading />
+  <LoadingExample />
 </PresentationBlock>
 
 ## Implementation
