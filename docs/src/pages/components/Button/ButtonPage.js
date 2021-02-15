@@ -22,8 +22,8 @@ import React from 'react';
 
 import Android, { metadata as androidMetadata } from './AndroidButton.mdx';
 import IOS, { metadata as iosMetadata } from './IOSButtonPage.mdx';
-import WebButtons from './WebButtonPage';
 import Native, { metadata as nativeMetadata } from './NativeButtonPage.mdx';
+import Web, { metadata as webMetadata } from './WebButtonPage.mdx';
 
 import MarkdownPage from 'components/MarkdownPage';
 import IntroBlurb from 'components/IntroBlurb';
@@ -39,7 +39,7 @@ const ButtonPage = () => (
     ]}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
-    webSubpage={<WebButtons wrapped />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );

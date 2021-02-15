@@ -1,0 +1,59 @@
+---
+title: Bar chart
+platform: web
+githubPath: bpk-component-barchart
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+import readme from 'bpk-component-barchart/README.md';
+import {
+  AxesAndGridlines,
+  DefaultExample,
+  CustomScrollColors,
+  DefaultDisabledDataTable,
+  Interactive,
+  Outliers,
+  CustomTicks,
+  CustomTickLabels,
+  GridlinesExample,
+  CustomYAxisDomain,
+} from 'bpk-component-barchart/examples';
+
+## Table of contents
+
+## Default
+
+By default, bar charts come with axis labels.
+
+<PresentationBlock>
+  <DefaultExample />
+</PresentationBlock>
+
+## With gridlines
+
+It is possible to show gridlines for each tick on the Y axis.
+
+<PresentationBlock>
+  <GridlinesExample />
+</PresentationBlock>
+
+## Interactive
+
+The bars can be made interactive using the `onBarClick` and `getBarSelection` props.
+
+<PresentationBlock>
+  <Interactive />
+</PresentationBlock>
+
+## Outliers
+
+Outliers can be capped to indicate they are far off the scale. In this case using `outlierPercentage` of 15.s.
+
+<PresentationBlock>
+  <Outliers />
+</PresentationBlock>
+
+## Implementation
+
+<Readme file={readme} />

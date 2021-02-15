@@ -1,0 +1,101 @@
+---
+title: Button
+platform: web
+githubPath: bpk-component-button
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+import UsageTable from 'components/UsageTable';
+import readme from 'bpk-component-button/README.md';
+import {
+  PrimaryExample,
+  SecondaryExample,
+  DestructiveExample,
+  LinkExample,
+  FeaturedExample,
+  OutlineExample,
+  ComponentButtonPrimaryExample,
+  ComponentButtonSecondaryExample,
+  ComponentButtonDestructiveExample,
+  ComponentButtonLinkExample,
+  ComponentButtonLinkWithPaddingExample,
+  ComponentButtonFeaturedExample,
+  ComponentButtonOutlineExample,
+  MixedExample,
+  AnchorTagsExample,
+} from 'bpk-component-button/examples';
+import { DocsPrimary as LoadingExample } from 'bpk-component-loading-button/examples';
+
+## Table of contents
+
+## Usage advice
+
+<UsageTable
+  data={{
+    dos: [
+      'Use the large and small sizes as they are provided, so that we deliver consistent, accessible buttons across the product.',
+    ],
+    donts: [
+      "Don't override font properties or the size of the button using custom styles, as you will make the component inconsistent and inaccessible.",
+    ],
+  }}
+/>
+
+## Primary
+
+The Backpack primary button is available in two sizes and comes with styles for hover, active and disabled states.
+
+<PresentationBlock>
+  <ComponentButtonPrimaryExample />
+</PresentationBlock>
+
+## Secondary
+
+Similar to the primary button, the secondary version is available in two sizes and comes with styles for hover, active and disabled states.
+
+<PresentationBlock>
+  <SecondaryExample />
+</PresentationBlock>
+
+## Featured
+
+This button is reserved for featured actions.
+
+<PresentationBlock>
+  <FeaturedExample />
+</PresentationBlock>
+
+## Destructive
+
+This button can be used to highlight destructive actions.
+
+<PresentationBlock>
+  <DestructiveExample />
+</PresentationBlock>
+
+## Outline
+
+This button can be used on dark coloured backgrounds.
+
+<PresentationBlock darkBackground>
+  <OutlineExample />
+</PresentationBlock>
+
+## Link buttons
+
+Link buttons follow the same style as links and are used as a tertiary means of triggering actions. Like all other buttons, these are available in two sizes and have hover, active and disabled states.
+
+<PresentationBlock>
+  <ComponentButtonLinkWithPaddingExample />
+</PresentationBlock>
+
+## Loading buttons
+
+<PresentationBlock>
+  <LoadingExample />
+</PresentationBlock>
+
+## Implementation
+
+<Readme file={readme} />

@@ -1,0 +1,52 @@
+---
+title: ARIA Live
+platform: web
+githubPath: bpk-component-aria-live
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+import readme from 'bpk-component-aria-live/README.md';
+import {
+  ChipsExample,
+  SelectExample
+} from 'bpk-component-aria-live/examples';
+
+
+## Table of contents
+
+## About ARIA live regions
+
+It's common for pages to update without the content reloading completely. For example, a list of filters changing or an alert appearing. These changes are usually visually apparent but may not be obvious to users of assistive technologies.
+
+ARIA live regions fill this gap by providing a way to expose dynamic content changes in a way that can be announced by assistive technologies.
+
+Backpack's ARIA live component is a light wrapper that creates an ARIA live region and sets sensible defaults for how it should function.
+
+## Default
+
+By default, the ARIA live component is visually hidden and can only be seen by assistive technologies.
+
+In this example, as the chips are toggled on and off, text describing the changes appears in the ARIA live region below them. Ordinarily this would be only visible to assistive technologies, but for demonstration purposes the `visible` prop has been supplied to the component to make it visible to all.
+
+<PresentationBlock>
+  <ChipsExample />
+</PresentationBlock>
+
+## Visible
+
+Sometimes it's necessary for an ARIA live region to be visible to everyone, not just assistive technologies. Thevisible prop is available for these use cases.
+
+<PresentationBlock>
+  <SelectExample />
+</PresentationBlock>
+
+## Additional resources
+
+Mozilla's developer network has some excellent resources on how to use ARIA live regions correctly. [Mozilla: ARIA live regions](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions)
+
+ARIA roles can be difficult to understand at first. If you need help at any point, please speak to Skyscanner's internal Accessibility Guild who can advise on best practices.
+
+## Implementation
+
+<Readme file={readme} />

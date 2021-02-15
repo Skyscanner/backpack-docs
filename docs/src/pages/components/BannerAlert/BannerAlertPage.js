@@ -21,7 +21,7 @@
 import React from 'react';
 
 import Native, { metadata as nativeMetadata } from './NativeBannerAlert.mdx';
-import Web from './WebBannerAlertPage';
+import Web, { metadata as webMetadata } from './WebBannerAlertPage.mdx';
 
 import DocsPageWrapper from 'components/DocsPageWrapper';
 import IntroBlurb from 'components/IntroBlurb';
@@ -35,7 +35,7 @@ const Page = () => (
         Banner alerts provide inline feedback about an operation or task.
       </IntroBlurb>,
     ]}
-    webSubpage={<Web wrapped />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );
