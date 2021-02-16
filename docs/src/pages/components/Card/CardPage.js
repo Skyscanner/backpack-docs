@@ -22,8 +22,8 @@ import React from 'react';
 
 import Android, { metadata as androidMetadata } from './AndroidCard.mdx';
 import IOS, { metadata as iosMetadata } from './IOSCard.mdx';
-import WebCard from './WebCardPage';
 import Native, { metadata as nativeMetadata } from './NativeCard.mdx';
+import Web, { metadata as webMetadata } from './WebCard.mdx';
 
 import IntroBlurb from 'components/IntroBlurb';
 import Paragraph from 'components/Paragraph';
@@ -45,8 +45,8 @@ const Page = () => (
     ]}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
-    webSubpage={<WebCard />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 

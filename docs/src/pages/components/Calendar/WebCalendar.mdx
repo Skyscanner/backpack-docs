@@ -1,0 +1,60 @@
+---
+title: Calendar
+platform: web
+githubPath: bpk-component-calendar
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+import readme from 'bpk-component-calendar/README.md';
+
+import {
+  DefaultExample,
+  CalendarNavExample,
+  CalendarGridAndHeaderExample,
+  ArabicExample
+} from 'bpk-component-calendar/examples'
+
+## Table of contents
+
+## Default
+
+The default calendar configuration includes navigation to select months, select a date, and the ability to navigate via keyboard.
+
+<PresentationBlock>
+  <DefaultExample />
+</PresentationBlock>
+
+## Localised
+
+The calendar can be configured with locale data, including month names, weekday names, when the weekend is, the first day of the week and date formatting.
+
+In this example the calendar is localised to `ae-AE`.
+
+<PresentationBlock>
+  <ArabicExample />
+</PresentationBlock>
+
+## Calendar navigation
+
+The calendar nav component can be used independently to allow users to cycle through a group of months.
+
+<PresentationBlock>
+  <CalendarNavExample />
+</PresentationBlock>
+
+## Calendar grid
+
+Similarly, the calendar grid can be used on its own (the grid and header are separate components).
+
+<PresentationBlock>
+  <CalendarGridAndHeaderExample />
+</PresentationBlock>
+
+## Composability
+
+As the examples above show, most parts of the calendar (like the header and month picker) are independent components. This means you can combine these parts to create your own custom calendar to fit your specific use case where needed.
+
+## Implementation
+
+<Readme file={readme} />
