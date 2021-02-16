@@ -21,7 +21,7 @@ import React from 'react';
 import Android, { metadata as androidMetadata } from './AndroidCalendar.mdx';
 import IOS, { metadata as iosMetadata } from './IOSCalendar.mdx';
 import Native, { metadata as nativeMetadata } from './NativeCalendar.mdx';
-import WebCalendar from './WebCalendarPage';
+import Web, { metadata as webMetadata } from './WebCalendar.mdx';
 
 import IntroBlurb from 'components/IntroBlurb';
 import DocsPageWrapper from 'components/DocsPageWrapper';
@@ -40,7 +40,7 @@ const CalendarPage = () => (
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
-    webSubpage={<WebCalendar wrapped />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 

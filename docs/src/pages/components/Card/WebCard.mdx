@@ -1,0 +1,46 @@
+---
+title: Card
+platform: web
+githubPath: bpk-component-card
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+import readme from 'bpk-component-card/README.md';
+
+import {
+  DefaultExample,
+  WithHrefExample,
+  WithoutPaddingExample,
+} from 'bpk-component-card/examples'
+
+## Table of contents
+
+## Default
+
+By default, cards have built-in padding.
+
+<PresentationBlock>
+  <DefaultExample />
+</PresentationBlock>
+
+## Without padding
+
+The padding can be removed if needed.
+
+<PresentationBlock>
+  <WithoutPaddingExample />
+</PresentationBlock>
+
+## Used as a link
+
+Add a `href` prop to your card to turn it into a hyperlink.
+
+<PresentationBlock>
+  <WithHrefExample />
+</PresentationBlock>
+
+
+## Implementation
+
+<Readme file={readme} />
