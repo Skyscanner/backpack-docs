@@ -1,0 +1,61 @@
+---
+title: Chip
+platform: web
+githubPath: bpk-component-chip
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+import readme from 'bpk-component-chip/README.md';
+
+import {
+  SelectableChipsExample,
+  AllSelectableChipStylesExample,
+  WithIconsExample,
+  DismissibleChipsExample,
+} from 'bpk-component-chip/examples'
+
+## Table of contents
+
+## Selectable
+
+Selectable chips can be toggled on and off.
+
+<PresentationBlock>
+  <SelectableChipsExample />
+</PresentationBlock>
+
+## Dismissible
+
+Dismissible chips are useful when applying filters. They are designed to disappear when pressed, so they cannot be toggled on and off.
+
+Note that if chips are being added or removed dynamically (like in the example below), you should render a [BpkAriaLive](/components/aria-live) container describing the updates taking place.
+
+By doing this, assistive technologies will know to inform the user when changes are made. By default, only additions to the container will be read out, so you don't need to worry about removing entries again.
+
+<PresentationBlock>
+  <DismissibleChipsExample />
+</PresentationBlock>
+
+## With icons
+
+Using accessory views, chips can contain icons.
+
+Selectable chips can have a leading icon, a trailing icon, or both. Dismissible chips can only have a leading icon, because they already have a trailing close icon.
+
+<PresentationBlock>
+  <WithIconsExample />
+</PresentationBlock>
+
+## Different styles
+
+There are three styles of chips to choose from: _primary_, _success_ and _light_.
+
+<PresentationBlock>
+  <AllSelectableChipStylesExample />
+</PresentationBlock>
+
+
+## Implementation
+
+<Readme file={readme} />

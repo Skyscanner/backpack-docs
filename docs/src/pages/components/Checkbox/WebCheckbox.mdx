@@ -1,0 +1,75 @@
+---
+title: Checkbox
+platform: web
+githubPath: bpk-component-checkbox
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+import readme from 'bpk-component-checkbox/README.md';
+
+import {
+  DefaultExample,
+  IndeterminateExample,
+  DisabledExample,
+  InvalidExample,
+  WhiteExample,
+  RequiredExample,
+  SmallLabelExample,
+} from 'bpk-component-checkbox/examples'
+
+## Table of contents
+
+## Default
+
+<PresentationBlock>
+  <DefaultExample />
+</PresentationBlock>
+
+## Indeterminate
+
+The indeterminate prop is only a visual clue, it does not affect the checked state of the checkbox. This is used when there is a checkbox group and the parent displays this state when not all child checkboxes are selected.
+
+<PresentationBlock>
+  <IndeterminateExample />
+</PresentationBlock>
+
+## Disabled
+
+<PresentationBlock>
+  <DisabledExample />
+</PresentationBlock>
+
+## Disabled
+
+<PresentationBlock>
+  <InvalidExample />
+</PresentationBlock>
+
+## White
+
+You can change the label to white for displaying on dark backgrounds.
+
+<PresentationBlock>
+  <WhiteExample />
+</PresentationBlock>
+
+## Small label
+
+Use the `smallLabel` prop to reduce the font size of the label.
+
+<PresentationBlock>
+  <SmallLabelExample />
+</PresentationBlock>
+
+## Required
+
+Use the `required` prop to add a visual indicator that the checkbox is required.
+
+<PresentationBlock>
+  <RequiredExample />
+</PresentationBlock>
+
+## Implementation
+
+<Readme file={readme} />

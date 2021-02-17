@@ -22,8 +22,8 @@ import React from 'react';
 
 import Android, { metadata as androidMetadata } from './AndroidChip.mdx';
 import IOS, { metadata as iosMetadata } from './IOSChip.mdx';
-import Web from './WebChipsPage';
-import Native, { metadata as nativeMetadata } from './NativeChips.mdx';
+import Native, { metadata as nativeMetadata } from './NativeChip.mdx';
+import Web, { metadata as webMetadata } from './WebChip.mdx';
 
 import MarkdownPage from 'components/MarkdownPage';
 import IntroBlurb from 'components/IntroBlurb';
@@ -42,8 +42,8 @@ const ChipsPage = () => (
     blurb={blurb}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
-    webSubpage={<Web wrapped />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 
