@@ -21,7 +21,7 @@
 import React from 'react';
 
 import Android, { metadata as androidMetadata } from './AndroidCheckbox.mdx';
-import WebPage from './WebCheckboxPage';
+import Web, { metadata as webMetadata } from './WebCheckbox.mdx';
 
 import DocsPageWrapper from 'components/DocsPageWrapper';
 import IntroBlurb from 'components/IntroBlurb';
@@ -36,7 +36,7 @@ const Page = () => (
       </IntroBlurb>,
     ]}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
-    webSubpage={<WebPage wrapped />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 
