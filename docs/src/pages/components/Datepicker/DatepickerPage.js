@@ -20,10 +20,12 @@ import React from 'react';
 import BpkRouterLink from 'bpk-component-router-link';
 
 import * as ROUTES from '../../../constants/routes';
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
 
-import WebDatepickerPage from './WebDatepickerPage';
+import Web, { metadata as webMetadata } from './WebDatepicker.mdx';
+
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
+import MarkdownPage from 'components/MarkdownPage';
 
 const blurb = [
   <IntroBlurb>
@@ -38,7 +40,7 @@ const DatepickerPage = () => (
   <DocsPageWrapper
     title="Date picker"
     blurb={blurb}
-    webSubpage={<WebDatepickerPage />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 

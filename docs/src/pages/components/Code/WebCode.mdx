@@ -1,0 +1,38 @@
+---
+title: Code
+platform: web
+githubPath: bpk-component-code
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+import readme from 'bpk-component-code/README.md';
+
+import {
+  Inline,
+  InlineAlternate,
+  Block,
+  BlockAlternate
+} from 'bpk-component-code/examples';
+
+## Table of contents
+
+## Default 
+
+You can use the `BpkCode` component inline to produce the following:
+
+<PresentationBlock>
+  To install react use the following: <Inline />
+</PresentationBlock>
+
+## Block
+
+You can also use the component to create a block of code with the `BpkCodeBlock` to produce the following:
+
+<PresentationBlock>
+  <Block />
+</PresentationBlock>
+
+## Implementation
+
+<Readme file={readme} />
