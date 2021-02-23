@@ -18,10 +18,11 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
+import Web, { metadata as webMetadata } from './WebCode.mdx';
 
-import WebCodePage from './WebCodePage';
+import MarkdownPage from 'components/MarkdownPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
 
 const blurb = [
   <IntroBlurb>
@@ -31,7 +32,11 @@ const blurb = [
 ];
 
 const CodePage = () => (
-  <DocsPageWrapper title="Code" blurb={blurb} webSubpage={<WebCodePage />} />
+  <DocsPageWrapper
+    title="Code"
+    blurb={blurb}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
+  />
 );
 
 export default CodePage;
