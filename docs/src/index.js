@@ -19,8 +19,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import 'bpk-stylesheets/base';
+import 'bpk-stylesheets/font';
 import ReactDOM from 'react-dom';
 import 'bpk-stylesheets/base.css';
+import 'bpk-stylesheets/font.css';
 import Helmet from 'react-helmet';
 import ReactDOMServer from 'react-dom/server';
 import {
