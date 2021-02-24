@@ -64,6 +64,18 @@ const LinkPage = () => (
     readme={linkReadme}
     examples={components}
     packageName="bpk-component-link"
+    usageTable={{
+      dos: [
+        'Use an "aria-label" for each link on a page should clearly describe where it will take you if you choose to follow it. E.g. "A link to the Skyscanner privacy policy."',
+        'If links open in a new window, users should be informed of this.',
+        'If a link contains a document ensure users are aware of this (type and size of file).',
+        'CSS can be used to hide text to hide a portion of the link text to provide more information to users of screen readers.',
+        'Assigning aria-describedby and an ID can be used to associate text that is already present on the page with the link.',
+      ],
+      donts: [
+        "Don't just use the link text as this may not be descriptive. E.g 'privacy policy'.",
+      ],
+    }}
   />
 );
 
