@@ -68,7 +68,7 @@ const LinkPage = () => (
       dos: [
         'Each link on a page should clearly describe where it will take you if you choose to follow it. E.g. "Skyscanner privacy policy."',
         'If a link contains an element such as an icon you should ensure it has suitable alt text for assistive technologies.',
-        'If links open in a new window, users of assitive technologies should be informed of this by applying the appropriate aria-label. E.g. The aria-label could be "opens in a new tab".',
+        'If links open in a new window, users of assitive technologies should be informed of this by applying the appropriate aria-label which includes the text and the action. E.g. The aria-label could be "Skyscanner privacy policy, opens in a new tab".',
         'If a link contains a document ensure users are aware of this (type and size of file), this can either be provided in the link text or using an aria-label.',
         'CSS can be used to hide text to hide a portion of the link text to provide more information to users of screen readers.',
         'Assigning aria-describedby and an ID can be used to associate text that is already present on the page with the link.',
