@@ -66,14 +66,15 @@ const LinkPage = () => (
     packageName="bpk-component-link"
     usageTable={{
       dos: [
-        'Use an "aria-label" for each link on a page should clearly describe where it will take you if you choose to follow it. E.g. "A link to the Skyscanner privacy policy."',
-        'If links open in a new window, users should be informed of this.',
-        'If a link contains a document ensure users are aware of this (type and size of file).',
+        'Each link on a page should clearly describe where it will take you if you choose to follow it. E.g. "Skyscanner privacy policy."',
+        'If a link contains an element such as an icon you should ensure it has suitable alt text for assistive technologies.',
+        'If links open in a new window, users of assitive technologies should be informed of this by applying the appropriate aria-label. E.g. The aria-label could be "opens in a new tab".',
+        'If a link contains a document ensure users are aware of this (type and size of file), this can either be provided in the link text or using an aria-label.',
         'CSS can be used to hide text to hide a portion of the link text to provide more information to users of screen readers.',
         'Assigning aria-describedby and an ID can be used to associate text that is already present on the page with the link.',
       ],
       donts: [
-        "Don't just use the link text as this may not be descriptive. E.g 'privacy policy'.",
+        "Don't use an aria-label if the link is already completely satisfactory. aria-label should be used as a last resort.",
       ],
     }}
   />
