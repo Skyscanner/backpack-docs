@@ -161,7 +161,7 @@
     "colors": "^1.4.0",
     "copy-webpack-plugin": "^6.0.3",
     "core-js": "^3.6.1",
-    "css-loader": "^3.6.0",
+    "css-loader": "^5.1.0",
     "danger": "^10.2.1",
     "date-fns": "^2.14.0",
     "enzyme": "^3.11.0",
