@@ -1,0 +1,36 @@
+---
+title: Drawer
+platform: web
+githubPath: bpk-component-drawer
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+import readme from 'bpk-component-drawer/README.md';
+
+import {
+  DefaultExample,
+  CloseButtonTextExample
+} from 'bpk-component-drawer/examples';
+
+## Table of contents
+
+## Default
+
+The default drawer has a title and a close button
+
+<PresentationBlock>
+  <DefaultExample />
+</PresentationBlock>
+
+## Text button
+
+Drawers can be configured to display the close button as text - useful for when a close icon doesn&apos;t fit the context.
+
+<PresentationBlock>
+  <CloseButtonTextExample />
+</PresentationBlock>
+
+## Implementation
+
+<Readme file={readme} />

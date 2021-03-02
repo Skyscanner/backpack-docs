@@ -20,10 +20,12 @@ import React from 'react';
 import BpkRouterLink from 'bpk-component-router-link';
 
 import * as ROUTES from '../../../constants/routes';
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
 
-import WebFieldsetsPage from './WebFieldsetsPage';
+import Web, { metadata as webMetadata } from './WebFieldsets.mdx';
+
+import MarkdownPage from 'components/MarkdownPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
 
 const blurb = [
   <IntroBlurb>
@@ -43,7 +45,7 @@ const FieldsetPage = () => (
   <DocsPageWrapper
     title="Fieldset"
     blurb={blurb}
-    webSubpage={<WebFieldsetsPage />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 
