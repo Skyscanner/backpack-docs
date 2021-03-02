@@ -29,12 +29,8 @@ const components = [
     title: 'Default',
     blurb: [
       <Paragraph>
-        The switch component for web is exclusively for use on mobile viewports.
-        It must never be used on desktop screen sizes.
-      </Paragraph>,
-      <Paragraph>
-        It uses a regular HTML checkbox behind the scenes to maintain semantic
-        markup and good accessibility.
+        The switch component uses a regular HTML checkbox behind the scenes to
+        maintain semantic markup and good accessibility.
       </Paragraph>,
     ],
     examples: [
@@ -66,11 +62,9 @@ const WebSwitchPage = () => (
     readme={readme}
     usageTable={{
       dos: [
-        'Use on mobile viewports exclusively',
-        'Use for actions that cause immediate changes, for example applying a filter that takes effect when pressed.',
+        'Use for actions that cause immediate changes, for example toggling Wi-Fi on/off.',
       ],
       donts: [
-        "Don't use on desktop viewports",
         "Don't use for actions that have no immediate effect, like in a form. In that situation, use a checkbox.",
       ],
     }}
