@@ -1,0 +1,54 @@
+---
+title: Dialog
+platform: web
+githubPath: bpk-component-dialog
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+import readme from 'bpk-component-dialog/README.md';
+
+import {
+  DefaultExample,
+  WithIconExample,
+  NotDismissibleExample,
+  WithFlareExample,
+} from 'bpk-component-dialog/examples';
+
+## Table of contents
+
+## Default
+
+The default dialog gives you a blank canvas with a close icon. Tapping the scrim or close icon will dismiss it.
+
+<PresentationBlock>
+  <DefaultExample />
+</PresentationBlock>
+
+## Non dismissible
+
+In cases when you want the user to explicitly make or accept the choice, the non dismissible configuration means the dialog has no close icon, and tapping the scrim will not dismiss it. Instead, the user must interact with the dialog&apos;s content in order to dismiss it.
+
+<PresentationBlock>
+  <NotDismissibleExample />
+</PresentationBlock>
+
+## With icon
+
+The icon dialog creates a default dialog with an icon placed at the top. It comes in three styles: primary, warning and destructive.
+
+<PresentationBlock>
+  <WithIconExample />
+</PresentationBlock>
+
+## With flare
+
+The flare dialog creates a default dialog with a flare view added as the header.
+
+<PresentationBlock>
+  <WithFlareExample />
+</PresentationBlock>
+
+## Implementation
+
+<Readme file={readme} />

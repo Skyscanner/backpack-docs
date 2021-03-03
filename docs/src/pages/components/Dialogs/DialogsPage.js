@@ -22,8 +22,8 @@ import React from 'react';
 
 import Android, { metadata as androidMetadata } from './AndroidDialog.mdx';
 import IOS, { metadata as iosMetadata } from './IOSDialog.mdx';
-import WebDialogs from './WebDialogPage';
 import Native, { metadata as nativeMetadata } from './NativeDialog.mdx';
+import Web, { metadata as webMetadata } from './WebDialog.mdx';
 
 import MarkdownPage from 'components/MarkdownPage';
 import IntroBlurb from 'components/IntroBlurb';
@@ -42,7 +42,7 @@ const DialogPage = () => (
     blurb={blurb}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
-    webSubpage={<WebDialogs />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );
