@@ -20,9 +20,11 @@
 
 import React from 'react';
 
+import MarkdownPage from '../../../components/MarkdownPage';
 import DocsPageWrapper from '../../../components/DocsPageWrapper';
 import IntroBlurb from '../../../components/IntroBlurb';
 
+import Android, { metadata as androidMetadata } from './AndroidRadioButton.mdx';
 import WebPage from './WebRadioButtonPage';
 
 const Page = () => (
@@ -34,6 +36,7 @@ const Page = () => (
         set of options.
       </IntroBlurb>,
     ]}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     webSubpage={<WebPage wrapped />}
   />
 );

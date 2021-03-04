@@ -23,6 +23,7 @@ import React from 'react';
 import Web from './WebMapPage';
 import Native, { metadata as nativeMetadata } from './NativeMap.mdx';
 import IOS, { metadata as iosMetadata } from './IOSMap.mdx';
+import Android, { metadata as androidMetadata } from './AndroidMap.mdx';
 
 import DocsPageWrapper from 'components/DocsPageWrapper';
 import IntroBlurb from 'components/IntroBlurb';
@@ -39,6 +40,7 @@ const MapPage = () => (
     webSubpage={<Web />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
   />
 );
 
