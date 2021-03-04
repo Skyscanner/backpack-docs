@@ -47,7 +47,7 @@ const ComponentsLinks = [
         id: 'BOTTOM_SHEET',
         route: routes.BOTTOM_SHEET,
         children: 'Bottom sheet',
-        tags: ['ios'],
+        tags: ['ios', 'android'],
       },
       {
         id: 'TEXT',
@@ -272,7 +272,7 @@ const ComponentsLinks = [
         id: 'RADIO_BUTTON',
         route: routes.RADIO_BUTTON,
         children: 'Radio button',
-        tags: ['web'],
+        tags: ['web', 'android'],
       },
       {
         id: 'TICKET',
@@ -356,7 +356,7 @@ const ComponentsLinks = [
         id: 'MAP',
         route: routes.MAP,
         children: 'Map',
-        tags: ['web', 'native'],
+        tags: ['web', 'native', 'ios', 'android'],
       },
 
       {
