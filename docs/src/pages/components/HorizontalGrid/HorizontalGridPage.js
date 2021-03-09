@@ -18,10 +18,11 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
+import Web, { metadata as webMetadata } from './WebHorizontalGrid.mdx';
 
-import WebHorizontalGridPage from './WebHorizontalGridPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
+import MarkdownPage from 'components/MarkdownPage';
 
 const blurb = [
   <IntroBlurb>
@@ -33,7 +34,7 @@ const HorizontalGridPage = () => (
   <DocsPageWrapper
     title="Horizontal grid"
     blurb={blurb}
-    webSubpage={<WebHorizontalGridPage />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 

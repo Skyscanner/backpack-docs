@@ -23,6 +23,8 @@ import { cssModules } from 'bpk-react-utils';
 import BpkLink from 'bpk-component-link';
 import BpkButton from 'bpk-component-button';
 
+import sassdocLogo from '../../static/sassdoc-logo.svg';
+
 import STYLES from './MarkdownPage.scss';
 
 const getClassName = cssModules(STYLES);
@@ -41,10 +43,11 @@ type Props = {
   fileName: ?string,
   githubPath: ?string,
   platform: ?PlatformType,
+  sassdocId: ?string,
 };
 
 const AdditionalLinks = (props: Props) => {
-  const { documentationId, fileName, githubPath, platform } = props;
+  const { documentationId, fileName, githubPath, platform, sassdocId } = props;
 
   if (platform && !Object.keys(PLATFORMS).includes(platform)) {
     throw new Error(
@@ -109,6 +112,22 @@ const AdditionalLinks = (props: Props) => {
             <img
               src={`https://badge.fury.io/js/${githubPath}.svg`}
               alt={`View ${githubPath} on npm`}
+            />
+          </BpkLink>
+        )}
+
+        {/* Web sassdoc link */}
+        {platform && platform === PLATFORMS.web && sassdocId && (
+          <BpkLink
+            href={`/sassdoc/#${sassdocId}`}
+            blank
+            className={getClassName('bpkdocs-markdown-page__link')}
+          >
+            <img
+              width="55"
+              height="20"
+              src={`/${sassdocLogo}`}
+              alt={`View ${sassdocId} mixins and variables on our sassdoc`}
             />
           </BpkLink>
         )}

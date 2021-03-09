@@ -22,7 +22,7 @@ import React from 'react';
 
 import Android, { metadata as androidMetadata } from './AndroidFlare.mdx';
 import IOS, { metadata as iosMetadata } from './IOSFlare.mdx';
-import WebFlare from './WebFlarePage';
+import Web, { metadata as webMetadata } from './WebFlare.mdx';
 import Native, { metadata as nativeMetadata } from './NativeFlare.mdx';
 
 import MarkdownPage from 'components/MarkdownPage';
@@ -40,7 +40,7 @@ const Page = () => (
     ]}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
-    webSubpage={<WebFlare />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );

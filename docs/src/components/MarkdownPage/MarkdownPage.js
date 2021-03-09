@@ -64,6 +64,7 @@ type Props = {
   platform: ?PlatformType,
   documentationId: ?string,
   githubPath: ?string,
+  sassdocId: ?string,
 };
 
 const MarkdownPage = (props: Props) => {
@@ -73,6 +74,7 @@ const MarkdownPage = (props: Props) => {
     githubPath,
     fileName,
     platform,
+    sassdocId,
     subtitle,
     title,
   } = props;
@@ -97,6 +99,7 @@ const MarkdownPage = (props: Props) => {
           documentationId={documentationId}
           githubPath={githubPath}
           fileName={fileName}
+          sassdocId={sassdocId}
         />
         <MDXContent Content={content} fileName={fileName} />
       </BpkContentContainer>

@@ -20,10 +20,11 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
+import Web, { metadata as webMetadata } from './WebFormValidation.mdx';
 
-import WebValidation from './WebFormValidationPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
+import MarkdownPage from 'components/MarkdownPage';
 
 const blurb = [
   <IntroBlurb>
@@ -36,7 +37,7 @@ const FormValidationPage = () => (
   <DocsPageWrapper
     title="Validation"
     blurb={blurb}
-    webSubpage={<WebValidation wrapped />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 
