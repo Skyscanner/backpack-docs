@@ -119,7 +119,7 @@ class ColorChart extends Component<{}, State> {
           c2,
           show:
             this.isBrandCombination(c1, c2) &&
-            getContrastRatio(c1, c2) > desiredContrast,
+            getContrastRatio(c1, c2) >= desiredContrast,
         });
       });
       displayRows.push(displayRow);
