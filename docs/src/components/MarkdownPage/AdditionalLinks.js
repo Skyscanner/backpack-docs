@@ -127,7 +127,7 @@ const AdditionalLinks = (props: Props) => {
               width="55"
               height="20"
               src={`/${sassdocLogo}`}
-              alt={`View ${sassdocId} mixins and variables on our sassdoc`}
+              alt={`View ${sassdocId} mixins and variables on Backpack's Sassdoc`}
             />
           </BpkLink>
         )}
