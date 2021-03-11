@@ -1,0 +1,71 @@
+---
+title: Tooltip
+platform: web
+githubPath: bpk-component-tooltip
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+import UsageTable from 'components/UsageTable';
+import readme from 'bpk-component-tooltip/README.md';
+import {
+  DefaultExample,
+  DarkExample,
+  SideExample,
+  NoPaddingExample,
+} from 'bpk-component-tooltip/examples';
+
+## Table of contents
+
+## Usage advice
+
+<UsageTable
+  data={{
+      dos: [
+        'Use to provide additional information about an element on the page, shown on hover.',
+        'Use text only where possible.',
+        'For consistency, stick to using one type of tooltip (light or dark) throughout a product area or interface.',
+        "Be aware that tooltips don't work with touchscreens and only use when absolutely necessary."
+      ],
+      donts: [
+        "Don't use on touch devices (try using a popover instead).",
+        "Don't use for long or complex content or when content includes interaction (try using a popover or modal).",
+        "Don't use on interactive elements that can receive focus such as links, buttons and inputs.",
+        "Don't mix and match light and dark tooltips within the same product or interface.",
+      ],
+  }}
+/>
+
+## Default
+
+<PresentationBlock>
+  <DefaultExample />
+</PresentationBlock>
+
+## Dark appearance
+
+Tooltips can have a dark look too.
+
+<PresentationBlock>
+  <DarkExample />
+</PresentationBlock>
+
+## Alternative positioning
+
+Tooltips can be positioned on any side.
+
+<PresentationBlock>
+  <SideExample />
+</PresentationBlock>
+
+## Without padding
+
+Tooltips are also available without padding, for displaying full-width content within them. In this example, the tooltip contains a full-width line.
+
+<PresentationBlock>
+  <NoPaddingExample />
+</PresentationBlock>
+
+## Implementation
+
+<Readme file={readme} />

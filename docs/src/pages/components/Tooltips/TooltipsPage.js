@@ -17,174 +17,33 @@
  */
 
 import React from 'react';
-import BpkTooltip, { TOOLTIP_TYPES } from 'bpk-component-tooltip';
-import tooltipReadme from 'bpk-component-tooltip/README.md';
-import { spacingSm, colorMonteverde } from 'bpk-tokens/tokens/base.es6';
-import { cssModules } from 'bpk-react-utils';
 
-import WebComponentPage from '../../../components/ComponentPage';
 import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import Heading from '../../../components/Heading';
 import Paragraph from '../../../components/Paragraph';
 import IntroBlurb from '../../../components/IntroBlurb';
 
-import STYLES from './tooltips-page.scss';
+import Web, { metadata as webMetadata } from './WebTooltipPage.mdx';
 
-const getClassName = cssModules(STYLES);
-
-const components = [
-  {
-    id: 'default',
-    title: 'Default',
-    blurb: [
-      <Paragraph>
-        By default, tooltips come with some padding so all you need to do is
-        drop in some content.
-      </Paragraph>,
-    ],
-    examples: [
-      <BpkTooltip
-        id="my-tooltip"
-        target={
-          <Heading
-            level="h3"
-            className={getClassName('bpkdocs-tooltips-page__heading')}
-          >
-            LHR
-          </Heading>
-        }
-      >
-        London Heathrow
-      </BpkTooltip>,
-    ],
-  },
-  {
-    id: 'dark',
-    title: 'Dark',
-    blurb: [<Paragraph>Tooltips can have a dark look too.</Paragraph>],
-    examples: [
-      <BpkTooltip
-        id="my-tooltip"
-        type={TOOLTIP_TYPES.dark}
-        target={
-          <Heading
-            level="h3"
-            className={getClassName('bpkdocs-tooltips-page__heading')}
-          >
-            DAR
-          </Heading>
-        }
-      >
-        Dar es Salaam
-      </BpkTooltip>,
-    ],
-  },
-  {
-    id: 'alt-positioning',
-    title: 'Alternative positioning',
-    blurb: [
-      <Paragraph>
-        Tooltips can also be positioned to either side of the target element.
-      </Paragraph>,
-    ],
-    examples: [
-      <BpkTooltip
-        id="my-tooltip-2"
-        placement="right"
-        target={
-          <Heading
-            level="h3"
-            className={getClassName('bpkdocs-tooltips-page__heading')}
-          >
-            EDI
-          </Heading>
-        }
-      >
-        Edinburgh
-      </BpkTooltip>,
-    ],
-  },
-  {
-    id: 'without-padding',
-    title: 'Without padding',
-    blurb: [
-      <Paragraph>
-        Tooltips are also available without padding should you wish to display
-        fullwidth content e.g. an image.
-      </Paragraph>,
-      <Paragraph>
-        An example of this can be seen below where a coloured border is included
-        to denote directness for a tooltip used on the map.
-      </Paragraph>,
-    ],
-    examples: [
-      <BpkTooltip
-        id="my-tooltip-3"
-        padded={false}
-        target={
-          <Heading
-            level="h3"
-            className={getClassName('bpkdocs-tooltips-page__heading')}
-          >
-            JFK
-          </Heading>
-        }
-      >
-        <div
-          style={{
-            borderBottomWidth: '5px',
-            borderBottomColor: colorMonteverde,
-            borderBottomStyle: 'solid',
-            padding: spacingSm,
-          }}
-        >
-          New York John F. Kennedy
-        </div>
-      </BpkTooltip>,
-    ],
-  },
-];
+import MarkdownPage from 'components/MarkdownPage';
 
 const blurb = [
   <IntroBlurb>
     Tooltips appear on hover of a particular element and are used to provide
-    additional context/information to the user. They are generally text-only and
-    are triggered on pointer based interfaces.
+    additional context/information to the user. They are generally text only and
+    are triggered on pointer-based interfaces.
   </IntroBlurb>,
   <Paragraph>
-    By design, tooltips do not work on touch devices and is bad practice to do
-    so due to the lack of hover state. We also do not recommend using tooltips
-    on interactive elements that can receive focus, such as links, buttons, and
-    inputs.
+    Tooltips do not work on touchscreens, which represent a sizeable portion of
+    Skyscanner&apos;s audience on both desktop and mobile. You are strongly
+    advised to use an alternative solution where possible.
   </Paragraph>,
 ];
-
-const TooltipsSubPage = () => (
-  <WebComponentPage
-    examples={components}
-    readme={tooltipReadme}
-    usageTable={{
-      dos: [
-        'Use to provide additional information about an element on the page, shown on hover.',
-        'Use text only where possible.',
-        'For consistency, stick to using one type of tooltip (light or dark) throughout a product area or interface.',
-      ],
-      donts: [
-        "Don't use on touch devices (try using a popover instead).",
-        "Don't use for long or complex content or when content includes interaction (try using a popover or modal).",
-        "Don't use on interactive elements that can receive focus such as links, buttons and inputs.",
-        "Don't mix and match light and dark tooltips within the same product or interface.",
-      ],
-    }}
-    packageName="bpk-component-tooltip"
-  />
-);
 
 const TooltipsPage = () => (
   <DocsPageWrapper
     title="Tooltip"
     blurb={blurb}
-    webSubpage={<TooltipsSubPage />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 
