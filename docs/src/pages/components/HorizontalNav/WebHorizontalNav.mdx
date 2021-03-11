@@ -1,0 +1,54 @@
+---
+title: Horizontal navigation
+platform: web
+githubPath: bpk-component-horizontal-nav
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+import readme from 'bpk-component-horizontal-nav/README.md';
+import { 
+  DefaultExample, 
+  SpacedAroundExample, 
+  NotUnderlinedExample, 
+  LightAppearanceExample
+} from 'bpk-component-horizontal-nav/examples';
+import { colorSkyBlueShade02 } from 'bpk-tokens/tokens/base.es6';
+
+## Table of contents
+
+## Default
+
+By default, navigation items are left aligned.
+
+<PresentationBlock>
+  <DefaultExample />
+</PresentationBlock>
+
+## Space around
+
+Navigation items can be configured to have space around them.
+
+<PresentationBlock>
+  <SpacedAroundExample />
+</PresentationBlock>
+
+## Hide underline
+
+The border that covers the bottom of the component can be hidden.
+
+<PresentationBlock>
+  <NotUnderlinedExample />
+</PresentationBlock>
+
+## Light appearance
+
+An alternate appearance is available for display over dark backgrounds.
+
+<PresentationBlock style={{ backgroundColor: colorSkyBlueShade02 }}>
+  <LightAppearanceExample />
+</PresentationBlock>
+
+## Implementation
+
+<Readme file={readme} />
