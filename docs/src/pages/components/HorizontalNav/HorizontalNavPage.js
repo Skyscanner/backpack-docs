@@ -20,7 +20,7 @@
 
 import React from 'react';
 
-import Web from './WebHorizontalNavPage';
+import Web, { metadata as webMetadata } from './WebHorizontalNav.mdx';
 import Native, { metadata as nativeMetadata } from './NativeHorizontalNav.mdx';
 import Android, {
   metadata as androidMetadata,
@@ -42,7 +42,7 @@ const Page = () => (
   <DocsPageWrapper
     title="Horizontal navigation"
     blurb={blurb}
-    webSubpage={<Web wrapped />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
