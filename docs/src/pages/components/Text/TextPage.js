@@ -20,10 +20,10 @@
 
 import React from 'react';
 
-import Web from './WebTextPage';
 import Android, { metadata as androidMetadata } from './AndroidText.mdx';
 import Native, { metadata as nativeMetadata } from './NativeText.mdx';
 import IOS, { metadata as iosMetadata } from './iOSText.mdx';
+import Web, { metadata as webMetadata } from './WebText.mdx';
 
 import IntroBlurb from 'components/IntroBlurb';
 import DocsPageWrapper from 'components/DocsPageWrapper';
@@ -42,8 +42,8 @@ const Page = () => (
     ]}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
-    webSubpage={<Web />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 

@@ -24,6 +24,7 @@ import DocsPageWrapper from '../../../components/DocsPageWrapper';
 import IntroBlurb from '../../../components/IntroBlurb';
 
 import Web from './WebScrollableCalendarPage';
+// import Web, { metadata as webMetadata } from './WebScrollableCalendar.mdx';
 
 const ScrollableCalendarPage = () => (
   <DocsPageWrapper
@@ -35,7 +36,7 @@ const ScrollableCalendarPage = () => (
       </IntroBlurb>,
     ]}
     webSubpage={<Web wrapped />}
-    nativeSubpage={null}
+    // webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 

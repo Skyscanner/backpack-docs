@@ -1,0 +1,54 @@
+---
+title: Ticket
+platform: web
+githubPath: bpk-component-ticket
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+import UsageTable from 'components/UsageTable';
+import readme from 'bpk-component-ticket/README.md';
+import {
+  DefaultExample,
+  VerticalExample,
+  WithoutPaddingExample,
+  WithoutNotchesExample,
+} from 'bpk-component-ticket/examples';
+
+## Table of contents
+
+## Default
+
+The default ticket positions its stub content to the right of the main content.
+
+<PresentationBlock>
+  <DefaultExample />
+</PresentationBlock>
+
+## Vertical
+
+The stub can be positioned to the bottom as well.
+
+<PresentationBlock>
+  <VerticalExample />
+</PresentationBlock>
+
+## Without padding
+
+For full flexibility, you can opt to remove the default padding.
+
+<PresentationBlock>
+  <WithoutPaddingExample />
+</PresentationBlock>
+
+## Without notches
+
+You can also remove the notches from the ticket.
+
+<PresentationBlock>
+  <WithoutNotchesExample />
+</PresentationBlock>
+
+## Implementation
+
+<Readme file={readme} />
