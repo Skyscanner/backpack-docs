@@ -24,7 +24,7 @@ import BpkRouterLink from 'bpk-component-router-link';
 import IconsDesignPage from './DesignIconPage';
 import Android, { metadata as androidMetadata } from './AndroidIcon.mdx';
 import IOS, { metadata as iosMetadata } from './IOSIcon.mdx';
-import Web from './WebIconsPage';
+import Web, { metadata as webMetadata } from './WebIcon.mdx';
 import Native, { metadata as nativeMetadata } from './NativeIcon.mdx';
 
 import MarkdownPage from 'components/MarkdownPage';
@@ -47,7 +47,7 @@ const Page = () => (
     designSubpage={<IconsDesignPage wrapped />}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
-    webSubpage={<Web wrapped />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );

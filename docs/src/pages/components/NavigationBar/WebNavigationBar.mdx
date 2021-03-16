@@ -1,0 +1,53 @@
+---
+title: Navigation bar
+platform: web
+githubPath: bpk-component-navigation-bar
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+
+import {
+  DefaultExample,
+  LeadingIconOnlyExample,
+  WithLinksExample,
+  WithLogoExample,
+} from 'bpk-component-navigation-bar/examples';
+import readme from 'bpk-component-navigation-bar/README.md';
+
+## Table of contents
+
+## Default
+
+<PresentationBlock>
+  <LeadingIconOnlyExample />
+</PresentationBlock>
+
+## With text button
+
+The navigation bar can be composed with text buttons.
+
+<PresentationBlock>
+  <WithLinksExample />
+</PresentationBlock>
+
+
+## With icon button
+
+The navigation bar can be composed with different icon buttons.
+
+<PresentationBlock>
+  <DefaultExample />
+</PresentationBlock>
+
+## With a custom title element
+
+The title can include elements other than text.
+
+<PresentationBlock>
+  <WithLogoExample />
+</PresentationBlock>
+
+## Implementation
+
+<Readme file={readme} />

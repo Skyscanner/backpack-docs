@@ -1,0 +1,54 @@
+---
+title: Overlay
+platform: web
+githubPath: bpk-component-overlay
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+
+import { 
+  WithBpkImageExample, 
+  WithBpkImageNoTintExample,
+  WithBpkImageRoundedExample,
+  TextOverlaidOnImageExample
+} from 'bpk-component-overlay/examples';
+import readme from 'bpk-component-overlay/README.md';
+
+## Table of contents
+
+## Default
+
+Overlays apply a dark tint to their content.
+
+<PresentationBlock>
+  <WithBpkImageExample />
+</PresentationBlock>
+
+## Disabled tint
+
+The tint can be switched off, causing the content within to be displayed at full brightness.
+
+<PresentationBlock>
+  <WithBpkImageNoTintExample />
+</PresentationBlock>
+
+## Rounded corners
+
+The overlay can have rounded corners. Apply this when the content inside has rounded corners, to stop the overlay from covering them up.
+
+<PresentationBlock>
+  <WithBpkImageRoundedExample />
+</PresentationBlock>
+
+## Foreground content
+
+Use foreground content to display things on top of the overlay.
+
+<PresentationBlock>
+  <TextOverlaidOnImageExample />
+</PresentationBlock>
+
+## Implementation
+
+<Readme file={readme} />

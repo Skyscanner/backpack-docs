@@ -1,0 +1,61 @@
+---
+title: Form label
+platform: web
+githubPath: bpk-component-label
+sassdocId: forms-mixin-bpk-label
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+import UsageTable from 'components/UsageTable';
+
+import readme from 'bpk-component-label/README.md';
+import {
+  DefaultExample,
+  RequiredExample,
+  InvalidExample,
+  DisabledExample,
+} from 'bpk-component-label/examples'
+
+
+## Table of contents
+
+## Usage advice
+
+<UsageTable
+  data={{
+    dos: [
+      'Always use labels with form elements to provide context to the user.',
+      'Use the fieldset component which combines labels, fields and validation messages where possible.',
+    ],
+    donts: ['Rely on placeholders alone.'],
+  }}
+/>
+
+## Default
+
+<PresentationBlock>
+  <DefaultExample />
+</PresentationBlock>
+
+## Disabled
+
+<PresentationBlock>
+  <DisabledExample />
+</PresentationBlock>
+
+## Required
+
+<PresentationBlock>
+  <RequiredExample />
+</PresentationBlock>
+
+## Invalid
+
+<PresentationBlock>
+  <InvalidExample />
+</PresentationBlock>
+
+## Implementation
+
+<Readme file={readme} />

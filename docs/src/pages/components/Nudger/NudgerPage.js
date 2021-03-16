@@ -20,7 +20,7 @@
 
 import React from 'react';
 
-import Web from './WebNudgersPage';
+import Web, { metadata as webMetadata } from './WebNudger.mdx';
 import Native, { metadata as nativeMetadata } from './NativeNudger.mdx';
 
 import MarkdownPage from 'components/MarkdownPage';
@@ -35,7 +35,7 @@ const Page = () => (
         Nudgers allow users to quickly specify a value within a given range.
       </IntroBlurb>,
     ]}
-    webSubpage={<Web wrapped />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );

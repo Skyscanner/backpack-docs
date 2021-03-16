@@ -1,0 +1,41 @@
+---
+title: Nudger
+platform: web
+githubPath: bpk-component-nudger
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+
+import { StatefulExample, OutlineExample, ConfigurableExample } from 'bpk-component-nudger/examples';
+import readme from 'bpk-component-nudger/README.md';
+
+## Table of contents
+
+## Default
+
+Nudgers come with decrease and increase buttons on either side of the selected value. A minimum and maximum value need to be provided.
+
+<PresentationBlock>
+  <StatefulExample />
+</PresentationBlock>
+
+## Outline
+
+Outline version allows for the nudger to be used on dark backgrounds.
+
+<PresentationBlock darkBackground>
+  <OutlineExample />
+</PresentationBlock>
+
+## Configurable
+
+A configurable nudger to support non-numeric variants, for example dates and strings.
+
+<PresentationBlock>
+  <ConfigurableExample />
+</PresentationBlock>
+
+## Implementation
+
+<Readme file={readme} />

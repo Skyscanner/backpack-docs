@@ -16,90 +16,13 @@
  * limitations under the License.
  */
 
-import PropTypes from 'prop-types';
-import React, { Component } from 'react';
-import BpkPagination from 'bpk-component-pagination';
-import paginationReadme from 'bpk-component-pagination/README.md';
+import React from 'react';
 
-import WebComponentPage from '../../../components/ComponentPage';
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import Paragraph from '../../../components/Paragraph';
-import IntroBlurb from '../../../components/IntroBlurb';
+import Web, { metadata as webMetadata } from './WebPagination.mdx';
 
-class PaginationContainer extends Component {
-  constructor(props) {
-    super();
-
-    this.state = {
-      pageIndex: props.selectedPageIndex,
-    };
-  }
-
-  handleChange(pageIndex) {
-    this.setState({ pageIndex });
-  }
-
-  render() {
-    const { pageCount, visibleRange } = this.props;
-    return (
-      <div>
-        Page {this.state.pageIndex + 1}
-        <BpkPagination
-          pageCount={pageCount}
-          selectedPageIndex={this.state.pageIndex}
-          onPageChange={pageIndex => {
-            this.handleChange(pageIndex);
-          }}
-          previousLabel="previous"
-          nextLabel="next"
-          visibleRange={visibleRange}
-          paginationLabel="Pagination Navigation"
-          pageLabel={(page, isSelected) =>
-            `Go to page ${page}${
-              isSelected ? ', this is the current page' : ''
-            }.`
-          }
-        />
-      </div>
-    );
-  }
-}
-PaginationContainer.propTypes = {
-  selectedPageIndex: PropTypes.number,
-  pageCount: PropTypes.number.isRequired,
-  visibleRange: PropTypes.number,
-};
-
-PaginationContainer.defaultProps = {
-  visibleRange: 3,
-  selectedPageIndex: 0,
-};
-
-const components = [
-  {
-    id: 'default',
-    title: 'Default',
-    blurb: [<Paragraph>This is the default pagination.</Paragraph>],
-    examples: [<PaginationContainer pageCount={20} />],
-  },
-  {
-    id: 'visible-range',
-    title: 'Visible range',
-    blurb: [
-      <Paragraph>
-        Customize the range of pages to be displayed in the middle. e.g.
-        visibleRange={5}
-      </Paragraph>,
-    ],
-    examples: [
-      <PaginationContainer
-        pageCount={20}
-        visibleRange={5}
-        selectedPageIndex={6}
-      />,
-    ],
-  },
-];
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
+import MarkdownPage from 'components/MarkdownPage';
 
 const blurb = [
   <IntroBlurb>
@@ -108,19 +31,11 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const PaginationSubPage = () => (
-  <WebComponentPage
-    examples={components}
-    readme={paginationReadme}
-    packageName="bpk-component-pagination"
-  />
-);
-
 const PaginationPage = () => (
   <DocsPageWrapper
     title="Pagination"
     blurb={blurb}
-    webSubpage={<PaginationSubPage />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 
