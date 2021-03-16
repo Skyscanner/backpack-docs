@@ -18,17 +18,22 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
+import Web, { metadata as webMetadata } from './WebForms.mdx';
 
-import WebFormsPage from './WebFormsPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
+import MarkdownPage from 'components/MarkdownPage';
 
 const blurb = [
   <IntroBlurb>A range of common inputs for capturing user data.</IntroBlurb>,
 ];
 
 const FormsPage = () => (
-  <DocsPageWrapper title="Forms" blurb={blurb} webSubpage={<WebFormsPage />} />
+  <DocsPageWrapper
+    title="Forms"
+    blurb={blurb}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
+  />
 );
 
 export default FormsPage;

@@ -20,7 +20,7 @@
 
 import React from 'react';
 
-import WebNavigation from './WebNavigationBarPage';
+import Web, { metadata as webMetadata } from './WebNavigationBar.mdx';
 import Android, { metadata as androidMetadata } from './AndroidNavBar.mdx';
 import Native, { metadata as nativeMetadata } from './NativeNavigationBar.mdx';
 import IOS, { metadata as iosMetadata } from './IOSNavigationBar.mdx';
@@ -41,7 +41,7 @@ const BadgePage = () => (
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
-    webSubpage={<WebNavigation wrapped />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 

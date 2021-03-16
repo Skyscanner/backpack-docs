@@ -20,7 +20,7 @@
 
 import React from 'react';
 
-import Web from './WebImagesPage';
+import Web, { metadata as webMetadata } from './WebImages.mdx';
 import Native, { metadata as nativeMetadata } from './NativeImages.mdx';
 
 import MarkdownPage from 'components/MarkdownPage';
@@ -31,7 +31,7 @@ const ImagesPage = () => (
   <DocsPageWrapper
     title="Image"
     blurb={[<IntroBlurb>A component for including images.</IntroBlurb>]}
-    webSubpage={<Web wrapped />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );

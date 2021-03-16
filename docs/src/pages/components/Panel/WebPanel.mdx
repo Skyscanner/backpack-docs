@@ -1,0 +1,46 @@
+---
+title: Panel
+platform: web
+githubPath: bpk-component-panel
+sassdocId: panels
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+
+import { 
+  DefaultExample, 
+  WithoutPaddingExample, 
+  FullWidthExample 
+} from 'bpk-component-panel/examples';
+import readme from 'bpk-component-panel/README.md';
+
+## Table of contents
+
+## Default
+
+This is the default panel type which comes with padding already applied to get you up and running quickly.
+
+<PresentationBlock>
+  <DefaultExample />
+</PresentationBlock>
+
+## Without Padding
+
+As above, but without padding, allowing you to have full-bleed content or roll your own padding.
+
+<PresentationBlock>
+  <WithoutPaddingExample />
+</PresentationBlock>
+
+## Full width
+
+This option allows you to make a panel full width, which is especially useful on small viewports.
+
+<PresentationBlock>
+  <FullWidthExample />
+</PresentationBlock>
+
+## Implementation
+
+<Readme file={readme} />

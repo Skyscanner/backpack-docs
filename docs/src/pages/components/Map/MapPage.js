@@ -20,7 +20,7 @@
 
 import React from 'react';
 
-import Web from './WebMapPage';
+import Web, { metadata as webMetadata } from './WebMap.mdx';
 import Native, { metadata as nativeMetadata } from './NativeMap.mdx';
 import IOS, { metadata as iosMetadata } from './IOSMap.mdx';
 import Android, { metadata as androidMetadata } from './AndroidMap.mdx';
@@ -37,7 +37,7 @@ const MapPage = () => (
   <DocsPageWrapper
     title="Map"
     blurb={blurb}
-    webSubpage={<Web />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}

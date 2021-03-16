@@ -20,7 +20,7 @@
 
 import React from 'react';
 
-import Web from './WebLinksPage';
+import Web, { metadata as webMetadata } from './WebLink.mdx';
 import IOS, { metadata as iosMetadata } from './IOSLink.mdx';
 import Native, { metadata as nativeMetadata } from './NativeLink.mdx';
 
@@ -36,7 +36,7 @@ const Page = () => (
         This component enables links to other resources, pages or views.
       </IntroBlurb>,
     ]}
-    webSubpage={<Web wrapped />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />

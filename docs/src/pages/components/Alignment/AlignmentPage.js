@@ -23,8 +23,9 @@ import BpkLink from 'bpk-component-link';
 
 import * as ROUTES from '../../../constants/routes';
 
-import WebAlignmentPage from './WebAlignmentPage';
+import Web, { metadata as webMetadata } from './WebAlignment.mdx';
 
+import MarkdownPage from 'components/MarkdownPage';
 import DocsPageWrapper from 'components/DocsPageWrapper';
 import Heading from 'components/Heading';
 import Paragraph from 'components/Paragraph';
@@ -48,7 +49,7 @@ const AlignmentPage = () => (
   <DocsPageWrapper
     title="Alignment"
     blurb={blurb}
-    webSubpage={<WebAlignmentPage />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 

@@ -19,52 +19,12 @@
 /* @flow strict */
 
 import React from 'react';
-import navigationStackReadme from 'bpk-component-navigation-stack/README.md';
-import { cssModules } from 'bpk-react-utils';
 
-import WebComponentPage from '../../../components/ComponentPage';
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import Paragraph from '../../../components/Paragraph';
-import IntroBlurb from '../../../components/IntroBlurb';
+import Web, { metadata as webMetadata } from './WebNavigationStack.mdx';
 
-import {
-  View,
-  StackWithNavBar,
-  StatefulNavigationStack,
-  SimplePage,
-} from './page-components';
-import STYLES from './NavigationStackPage.scss';
-
-const getClassName = cssModules(STYLES);
-
-const components = [
-  {
-    id: 'default',
-    title: 'Default',
-    blurb: [],
-    examples: [
-      <StatefulNavigationStack
-        className={getClassName('bpk-navigation-stack-page')}
-        initialViews={[<SimplePage index={0} />]}
-      />,
-    ],
-  },
-  {
-    id: 'with-navigation-bar',
-    title: 'With navigation bar',
-    blurb: [
-      <Paragraph>
-        The navigation stack can be composed with the navigation bar component.
-      </Paragraph>,
-    ],
-    examples: [
-      <StackWithNavBar
-        className={getClassName('bpk-navigation-stack-page')}
-        initialViews={[<View index={0} />]}
-      />,
-    ],
-  },
-];
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
+import MarkdownPage from 'components/MarkdownPage';
 
 const blurb = [
   <IntroBlurb>
@@ -73,19 +33,11 @@ const blurb = [
   </IntroBlurb>,
 ];
 
-const NavigationStackSubPage = () => (
-  <WebComponentPage
-    examples={components}
-    readme={navigationStackReadme}
-    packageName="bpk-component-navigation-stack"
-  />
-);
-
 const NavigationStackPage = () => (
   <DocsPageWrapper
     title="Navigation stack"
     blurb={blurb}
-    webSubpage={<NavigationStackSubPage />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 

@@ -20,10 +20,11 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
+import Web, { metadata as webMetadata } from './WebFormLabel.mdx';
 
-import WebFormLabels from './WebFormLabelPage';
+import MarkdownPage from 'components/MarkdownPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
 
 const blurb = [
   <IntroBlurb>
@@ -36,7 +37,7 @@ const DialogsPage = () => (
   <DocsPageWrapper
     title="Form label"
     blurb={blurb}
-    webSubpage={<WebFormLabels wrapped />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 
