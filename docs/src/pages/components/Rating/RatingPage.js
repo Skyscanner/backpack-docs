@@ -20,10 +20,10 @@
 
 import React from 'react';
 
-import WebRating from './WebRatingPage';
 import Android, { metadata as androidMetadata } from './AndroidRating.mdx';
 import IOS, { metadata as iosMetadata } from './IOSRating.mdx';
 import Native, { metadata as nativeMetadata } from './NativeRating.mdx';
+import Web, { metadata as webMetadata } from './WebRating.mdx';
 
 import MarkdownPage from 'components/MarkdownPage';
 import IntroBlurb from 'components/IntroBlurb';
@@ -40,7 +40,7 @@ const Page = () => (
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
-    webSubpage={<WebRating />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 

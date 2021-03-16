@@ -20,10 +20,10 @@
 
 import React from 'react';
 
-import Web from './WebSpinnersPage';
 import Android, { metadata as androidMetadata } from './AndroidSpinner.mdx';
 import IOS, { metadata as iosMetadata } from './IOSSpinner.mdx';
 import Native, { metadata as nativeMetadata } from './NativeSpinner.mdx';
+import Web, { metadata as webMetadata } from './WebSpinner.mdx';
 
 import IntroBlurb from 'components/IntroBlurb';
 import DocsPageWrapper from 'components/DocsPageWrapper';
@@ -42,8 +42,8 @@ const Page = () => (
     blurb={blurb}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
-    webSubpage={<Web />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 

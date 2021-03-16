@@ -1,0 +1,36 @@
+---
+title: Star Rating
+platform: web
+githubPath: bpk-component-star-rating
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+import UsageTable from 'components/UsageTable';
+import readme from 'bpk-component-ticket/README.md';
+import {
+  FullStars,
+  Interactive,
+} from 'bpk-component-star-rating/examples';
+
+## Table of contents
+
+## Default
+
+By default, star ratings are shown in a static form. They're available in two sizes and can be set at half star intervals.
+
+<PresentationBlock>
+  <FullStars />
+</PresentationBlock>
+
+## Interactive
+
+This version allows users to leave feedback on a given feature or area by setting a rating.
+
+<PresentationBlock>
+  <Interactive />
+</PresentationBlock>
+
+## Implementation
+
+<Readme file={readme} />

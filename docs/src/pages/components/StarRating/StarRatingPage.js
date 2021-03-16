@@ -20,10 +20,10 @@
 
 import React from 'react';
 
-import Web from './WebStarRatingPage';
 import Android, { metadata as androidMetadata } from './AndroidStarRating.mdx';
 import Native, { metadata as nativeMetadata } from './NativeStarRating.mdx';
 import IOS, { metadata as iosMetadata } from './IOSStarRating.mdx';
+import Web, { metadata as webMetadata } from './WebStarRating.mdx';
 
 import MarkdownPage from 'components/MarkdownPage';
 import IntroBlurb from 'components/IntroBlurb';
@@ -37,10 +37,10 @@ const Page = () => (
         Star Ratings are used for displaying a score within a given range.
       </IntroBlurb>,
     ]}
-    webSubpage={<Web wrapped />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 
