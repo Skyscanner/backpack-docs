@@ -20,11 +20,11 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
+import Web, { metadata as webMetadata } from './WebScrollableCalendar.mdx';
 
-import Web from './WebScrollableCalendarPage';
-// import Web, { metadata as webMetadata } from './WebScrollableCalendar.mdx';
+import MarkdownPage from 'components/MarkdownPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
 
 const ScrollableCalendarPage = () => (
   <DocsPageWrapper
@@ -35,8 +35,7 @@ const ScrollableCalendarPage = () => (
         dates at a time.
       </IntroBlurb>,
     ]}
-    webSubpage={<Web wrapped />}
-    // webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 

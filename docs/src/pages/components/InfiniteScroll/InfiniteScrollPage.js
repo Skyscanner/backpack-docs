@@ -18,10 +18,11 @@
 
 import React from 'react';
 
-import IntroBlurb from '../../../components/IntroBlurb';
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
+import Web, { metadata as webMetadata } from './WebInfiniteScroll.mdx';
 
-import WebInfiniteScrollPage from './WebInfiniteScrollPage';
+import IntroBlurb from 'components/IntroBlurb';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import MarkdownPage from 'components/MarkdownPage';
 
 const blurb = [
   <IntroBlurb>
@@ -34,7 +35,7 @@ const InfiniteScrollPage = () => (
   <DocsPageWrapper
     title="Infinite scroll"
     blurb={blurb}
-    webSubpage={<WebInfiniteScrollPage />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 
