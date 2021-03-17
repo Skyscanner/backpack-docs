@@ -20,10 +20,11 @@
 
 import React from 'react';
 
-import IntroBlurb from '../../../components/IntroBlurb';
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
+import Web, { metadata as webMetadata } from './WebMobileScrollContainer.mdx';
 
-import WebMobileScrollContainerPage from './WebMobileScrollContainerPage';
+import IntroBlurb from 'components/IntroBlurb';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import MarkdownPage from 'components/MarkdownPage';
 
 const blurb = [
   <IntroBlurb>
@@ -36,7 +37,7 @@ const MobileScrollContainerPage = () => (
   <DocsPageWrapper
     title="Mobile scroll container"
     blurb={blurb}
-    webSubpage={<WebMobileScrollContainerPage />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 

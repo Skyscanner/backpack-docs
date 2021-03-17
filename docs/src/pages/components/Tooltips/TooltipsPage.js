@@ -18,12 +18,11 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import Paragraph from '../../../components/Paragraph';
-import IntroBlurb from '../../../components/IntroBlurb';
-
 import Web, { metadata as webMetadata } from './WebTooltipPage.mdx';
 
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import Paragraph from 'components/Paragraph';
+import IntroBlurb from 'components/IntroBlurb';
 import MarkdownPage from 'components/MarkdownPage';
 
 const blurb = [

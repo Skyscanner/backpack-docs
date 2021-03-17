@@ -20,10 +20,11 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
+import Web, { metadata as webMetadata } from './WebSkipLink.mdx';
 
-import WebSkipLinks from './WebSkipLinkPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
+import MarkdownPage from 'components/MarkdownPage';
 
 const SkipLinkPage = () => (
   <DocsPageWrapper
@@ -34,7 +35,7 @@ const SkipLinkPage = () => (
         navigate our site quicker.
       </IntroBlurb>,
     ]}
-    webSubpage={<WebSkipLinks wrapped />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 
