@@ -45,12 +45,6 @@ module.exports = function loader(src) {
       return resolve(content);
     }
 
-    console.warn(
-      `Resource path: ${this.resourcePath}. Filename: ${getFileName(
-        this.resourcePath,
-      )}\n\n`,
-    );
-
     const fileName = getFileName(this.resourcePath);
     if (fileName) {
       data.fileName = fileName;
