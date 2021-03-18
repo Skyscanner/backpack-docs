@@ -20,6 +20,9 @@
  Custom Webpack loader. Takes a string referring to a filename,
  runs it through gray-matter (https://www.npmjs.com/package/gray-matter)
  to split the front matter and content out, then returns just the content.
+
+ It also adds an extra front matter prop – 'filename' – to add the filename
+ of the current file.
  */
 
 const matter = require('gray-matter');
@@ -41,6 +44,12 @@ module.exports = function loader(src) {
     if (Object.keys(data).length === 0) {
       return resolve(content);
     }
+
+    console.warn(
+      `Resource path: ${this.resourcePath}. Filename: ${getFileName(
+        this.resourcePath,
+      )}\n\n`,
+    );
 
     const fileName = getFileName(this.resourcePath);
     if (fileName) {
