@@ -32,7 +32,7 @@ const REPO_NAME = 'backpack-docs';
 const getFileName = fullPath => {
   const splitPath = fullPath.split(REPO_NAME);
   if (splitPath.length > 1) {
-    return splitPath[1];
+    return splitPath[splitPath.length - 1];
   }
   return null;
 };
