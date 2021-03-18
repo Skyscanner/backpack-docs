@@ -20,10 +20,11 @@
 
 import React from 'react';
 
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
+import Web, { metadata as webMetadata } from './WebModals.mdx';
 
-import WebModalsPage from './WebModalsPage';
+import MarkdownPage from 'components/MarkdownPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
 
 const blurb = [
   <IntroBlurb>
@@ -33,7 +34,11 @@ const blurb = [
 ];
 
 const ModalsPage = () => (
-  <DocsPageWrapper title="Modal" blurb={blurb} webSubpage={<WebModalsPage />} />
+  <DocsPageWrapper
+    title="Modal"
+    blurb={blurb}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
+  />
 );
 
 export default ModalsPage;

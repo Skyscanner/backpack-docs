@@ -1,0 +1,52 @@
+---
+title: Infinite scroll
+platform: web
+githubPath: bpk-component-infinite-scroll
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+
+import { 
+  DefaultExample, 
+  LoadOneElementPerScrollExample,
+  StoppingAfterScrollsExample,
+  CustomLoadingItemExample,
+} from 'bpk-component-infinite-scroll/examples';
+import readme from 'bpk-component-infinite-scroll/README.md';
+
+## Table of contents
+
+## Default
+
+Loads five more list items upon reaching the bottom of the list.
+
+<PresentationBlock>
+  <DefaultExample />
+</PresentationBlock>
+
+## One element per scroll
+
+Loads one more list item upon reaching the bottom of the list.
+
+<PresentationBlock>
+  <LoadOneElementPerScrollExample />
+</PresentationBlock>
+
+## Partial load
+
+After 15 items have loaded, a button must be pressed to load more items.
+
+<PresentationBlock>
+  <StoppingAfterScrollsExample />
+</PresentationBlock>
+
+## Custom loading component
+
+<PresentationBlock>
+  <CustomLoadingItemExample />
+</PresentationBlock>
+
+## Implementation
+
+<Readme file={readme} />

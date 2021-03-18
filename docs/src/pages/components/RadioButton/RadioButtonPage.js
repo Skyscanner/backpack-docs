@@ -20,12 +20,12 @@
 
 import React from 'react';
 
-import MarkdownPage from '../../../components/MarkdownPage';
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
-
 import Android, { metadata as androidMetadata } from './AndroidRadioButton.mdx';
 import Web, { metadata as webMetadata } from './WebRadioButton.mdx';
+
+import MarkdownPage from 'components/MarkdownPage';
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
 
 const Page = () => (
   <DocsPageWrapper

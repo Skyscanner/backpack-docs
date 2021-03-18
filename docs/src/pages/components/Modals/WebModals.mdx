@@ -1,0 +1,63 @@
+---
+title: Modal
+platform: web
+githubPath: bpk-component-modal
+sassdocId: modals
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+import UsageTable from 'components/UsageTable';
+
+import { DefaultExample, CloseButtonTextExample, FullScreenExample } from 'bpk-component-modal/examples';
+import readme from 'bpk-component-modal/README.md';
+
+## Table of contents
+
+## Usage advice
+
+<UsageTable
+  data={{
+    dos: [
+      "Use for rich or complex content related to the current page.",
+      "Make sure it's very easy for users to dismiss them.",
+      'Consider how the "Back" action is used. Users should normally be able to use this to close a modal and return to the underlying page.',
+    ],
+    donts: [
+      "Don't use for alerts, errors and confirmations. Use a dialog instead.",
+      "Avoid opening dialogs, other modals or popovers from non-full screen modals. (It's ok on full-screen modals because in this case they won't be perceived as adding too many extra layers or visual noise",
+      "Don't overuse modals as interruptions, as they will get in the way of the user's main tasks, and may disrupt context. Never use a full screen modal as an interrupt.",
+      "Don't stack modals. Only one should be open at a time.",
+    ]
+  }}
+/>
+
+## Default modal
+
+The default modal has a title and a close button. On mobile viewports, it always occupies the entire screen. On desktop viewports, it comes in two widths: regular and wide.
+
+<PresentationBlock>
+  <DefaultExample />
+</PresentationBlock>
+
+## Text button
+
+Modals can be configured to display the close button as text - useful for when a close icon doesn&apos;t fit the context.
+
+<PresentationBlock>
+  <CloseButtonTextExample />
+</PresentationBlock>
+
+## Full screen
+
+Modals are always full screen on mobile.
+
+They can be configured to occupy the full screen on desktop too. This should only be used in exceptional circumstances as part of a considered workflow.
+
+<PresentationBlock>
+  <FullScreenExample />
+</PresentationBlock>
+
+## Implementation
+
+<Readme file={readme} />

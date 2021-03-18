@@ -20,11 +20,11 @@ import React from 'react';
 import BpkRouterLink from 'bpk-component-router-link';
 
 import * as ROUTES from '../../../constants/routes';
-import DocsPageWrapper from '../../../components/DocsPageWrapper';
-import IntroBlurb from '../../../components/IntroBlurb';
 
 import Web, { metadata as webMetadata } from './WebTicketsPage.mdx';
 
+import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
 import MarkdownPage from 'components/MarkdownPage';
 
 const blurb = [

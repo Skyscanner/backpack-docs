@@ -20,7 +20,7 @@
 
 import React from 'react';
 
-import WebProgress from './WebProgressPage';
+import Web, { metadata as webMetadata } from './WebProgress.mdx';
 import Native, { metadata as nativeMetadata } from './NativeProgress.mdx';
 import IOS, { metadata as iosMetadata } from './IOSProgressBar.mdx';
 
@@ -38,7 +38,7 @@ const ProgressPage = () => (
         the given task will take.
       </IntroBlurb>,
     ]}
-    webSubpage={<WebProgress />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
   />

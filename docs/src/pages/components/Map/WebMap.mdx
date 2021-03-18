@@ -1,0 +1,39 @@
+---
+title: Map
+platform: web
+githubPath: bpk-component-map
+---
+
+import Readme from 'components/Readme';
+import PresentationBlock from 'components/PresentationBlock';
+
+import { SimpleExample, WithIconMarkersExample, WithPriceMarkersExample } from 'bpk-component-map/examples'
+import readme from 'bpk-component-map/README.md';
+
+## Table of contents
+
+## Default
+
+<PresentationBlock>
+  <SimpleExample />
+</PresentationBlock>
+
+## Icon markers
+
+Use icon markers to display points of interest on a map. By default, they appear in Monteverde. When focused, they grow in size and turn white with a Monteverde border.
+
+<PresentationBlock>
+  <WithIconMarkersExample />
+</PresentationBlock>
+
+## Price markers
+
+Use price markers to display a collection of prices on a map. By default, they appear in sky blue. When focused, they grow in size and turn white, and when viewed they turn light blue.
+
+<PresentationBlock>
+  <WithPriceMarkersExample />
+</PresentationBlock>
+
+## Implementation
+
+<Readme file={readme} />

@@ -20,7 +20,7 @@
 
 import React from 'react';
 
-import Web from './WebPhoneInputPage';
+import Web, { metadata as webMetadata } from './WebPhoneInput.mdx';
 import Native, { metadata as nativeMetadata } from './NativePhoneInput.mdx';
 
 import MarkdownPage from 'components/MarkdownPage';
@@ -36,7 +36,7 @@ const PhoneInputPage = () => (
         the collection of phone numbers.
       </IntroBlurb>,
     ]}
-    webSubpage={<Web />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
   />
 );
