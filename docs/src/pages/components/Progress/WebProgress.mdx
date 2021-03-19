@@ -1,0 +1,55 @@
+---
+title: Progress bars
+platform: web
+githubPath: bpk-component-progress
+---
+
+
+import PresentationBlock from 'components/PresentationBlock';
+import UsageTable from 'components/UsageTable';
+
+import { DefaultExample, SmallExample, SteppedExample } from 'bpk-component-progress/examples';
+import Readme from 'bpk-component-progress/README.md';
+
+## Table of contents
+
+## Usage advice
+
+<UsageTable
+  data={{
+    dos: [
+      'Use exclusively for tracking user progress through a set of actions, for example a form.',
+    ],
+    donts: [
+      "Don't use in other contexts. This component is described to screen readers as a progress bar, so using it in other contexts harms accessibility.",
+    ],
+  }}
+/>
+
+## Default
+
+This is the default progress bar which animates in and automatically hides when complete.
+
+<PresentationBlock>
+  <DefaultExample />
+</PresentationBlock>
+
+## Small
+
+This is very similar to the default progress bar but is a little thinner to fit nicely inline, e.g. at the top of a page.
+
+<PresentationBlock>
+  <SmallExample />
+</PresentationBlock>
+
+## Stepped
+
+This option allows you to specify how many steps there are in a given task. These are great to guide users through longer processes such as completing a form.
+
+<PresentationBlock>
+  <SteppedExample />
+</PresentationBlock>
+
+## Implementation
+
+<Readme />

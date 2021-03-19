@@ -5,18 +5,14 @@ githubPath: bpk-component-table
 ---
 
 import {
-  BpkTable,
-  BpkTableHead,
-  BpkTableBody,
-  BpkTableRow,
-  BpkTableHeadCell,
-  BpkTableCell,
-} from 'bpk-component-table';
+  DefaultExample,
+  AlternateExample
+} from 'bpk-component-table/examples';
 
-import Readme from 'components/Readme';
+
 import PresentationBlock from 'components/PresentationBlock';
-import tablesReadme from 'bpk-component-table/README.md';
-import datatableReadme from 'bpk-component-datatable/README.md';
+import TablesReadme from 'bpk-component-table/README.md';
+import DatatableReadme from 'bpk-component-datatable/README.md';
 
 import { AutowidthExample } from 'bpk-component-datatable/examples';
 
@@ -27,35 +23,19 @@ import { AutowidthExample } from 'bpk-component-datatable/examples';
 A simple table component for displaying data in a tabular form.
 
 <PresentationBlock>
-  <BpkTable>
-    <BpkTableHead>
-      <BpkTableRow>
-        <BpkTableHeadCell>Heading 1</BpkTableHeadCell>
-        <BpkTableHeadCell>Heading 2</BpkTableHeadCell>
-        <BpkTableHeadCell>Heading 3</BpkTableHeadCell>
-        <BpkTableHeadCell>Heading 4</BpkTableHeadCell>
-      </BpkTableRow>
-    </BpkTableHead>
-    <BpkTableBody>
-      <BpkTableRow>
-        <BpkTableCell>Row 1, Data 1</BpkTableCell>
-        <BpkTableCell>Row 1, Data 2</BpkTableCell>
-        <BpkTableCell>Row 1, Data 3</BpkTableCell>
-        <BpkTableCell>Row 1, Data 4</BpkTableCell>
-      </BpkTableRow>
-      <BpkTableRow>
-        <BpkTableCell>Row 2, Data 1</BpkTableCell>
-        <BpkTableCell>Row 2, Data 2</BpkTableCell>
-        <BpkTableCell>Row 2, Data 3</BpkTableCell>
-        <BpkTableCell>Row 2, Data 4</BpkTableCell>
-      </BpkTableRow>
-    </BpkTableBody>
-  </BpkTable>,
+  <DefaultExample />
+</PresentationBlock>
+
+## Alternate appearance
+
+
+<PresentationBlock>
+  <AlternateExample />
 </PresentationBlock>
 
 ## Table implementation
 
-<Readme file={tablesReadme} />
+<TablesReadme />
 
 ## Data table
 
@@ -67,4 +47,4 @@ For more advanced use cases, data tables take an array of data and automatically
 
 ## Data table implementation
 
-<Readme file={datatableReadme} />
+<DatatableReadme />

@@ -1,0 +1,108 @@
+---
+title: Text input
+platform: web
+githubPath: bpk-component-input
+sassdocId: forms-mixin-bpk-input
+---
+
+
+import PresentationBlock from 'components/PresentationBlock';
+import UsageTable from 'components/UsageTable';
+
+import {
+  TextExample,
+  PlaceholderExample,
+  ValidExample,
+  InvalidExample,
+  DisabledExample,
+  ClearableExample,
+  EmailInputExample,
+  NumberInputExample,
+  PasswordInputExample,
+  TelephoneInputExample,
+  DockedExample,
+} from 'bpk-component-input/examples';
+import {
+  DefaultExample as TextareaDefault,
+  DisabledExample as TextareaDisabled,
+  InvalidExample as TextareaInvalid,
+} from 'bpk-component-textarea/examples';
+
+import TextInputReadme from 'bpk-component-input/README.md';
+import TextareaReadme from 'bpk-component-textarea/README.md';
+
+## Table of contents
+
+## Usage advice
+
+<UsageTable
+  data={{
+    dos: [
+      'Ensure every input has an associated label (for standalone search fields, it’s ok for this to be visually hidden).',
+      'Provide hint text (persistent, outside the field) if the traveller requires additional information in order to enter data correctly. For example, “DD/MM/YYYY”.',
+    ],
+    donts: [
+      'Use a placeholder instead of a label.',
+      'Use a placeholder instead of a hint.',
+      'Use a placeholder unless the field is a properly labelled search field.',
+    ]
+  }}
+/>
+
+## Default
+
+<PresentationBlock>
+  <TextExample />
+  <PlaceholderExample />
+</PresentationBlock>
+
+## Disabled
+
+<PresentationBlock>
+  <DisabledExample />
+</PresentationBlock>
+
+## Validation
+
+<PresentationBlock>
+  <ValidExample />
+  <InvalidExample />
+</PresentationBlock>
+
+## Clearable
+
+<PresentationBlock>
+  <ClearableExample />
+</PresentationBlock>
+
+
+## Input types
+
+<PresentationBlock>
+  <EmailInputExample />
+  <NumberInputExample />
+  <PasswordInputExample />
+  <TelephoneInputExample />
+</PresentationBlock>
+
+## Docked inputs
+
+<PresentationBlock>
+  <DockedExample />
+</PresentationBlock>
+
+## Multiline text input
+
+<PresentationBlock>
+  <TextareaDefault />
+  <TextareaDisabled />
+  <TextareaInvalid />
+</PresentationBlock>
+
+## Text input implementation
+
+<TextInputReadme />
+
+## Textarea implementation
+
+<TextareaReadme />

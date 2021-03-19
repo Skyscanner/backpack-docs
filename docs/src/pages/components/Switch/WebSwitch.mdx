@@ -1,0 +1,50 @@
+---
+title: Switch
+platform: web
+githubPath: bpk-component-switch
+---
+
+
+import PresentationBlock from 'components/PresentationBlock';
+import UsageTable from 'components/UsageTable';
+import Readme from 'bpk-component-switch/README.md';
+import {
+  DefaultExample,
+  EventExample,
+} from 'bpk-component-switch/examples';
+
+## Table of contents
+
+## Usage advice
+
+<UsageTable
+  data={{
+      dos: [
+        'Use for actions that cause immediate changes, for example toggling Wi-Fi on/off.',
+      ],
+      donts: [
+        "Don't use for actions that have no immediate effect, like in a form. In that situation, use a checkbox.",
+      ],
+  }}
+/>
+
+## Default
+
+The switch component uses a regular HTML checkbox behind the scenes to maintain semantic markup and good accessibility.
+
+<PresentationBlock>
+  <DefaultExample />
+</PresentationBlock>
+
+## Event
+
+Reserved for event-based messaging that has neither a positive or negative connotation. Avoid using this in other contexts.
+
+<PresentationBlock>
+  <EventExample />
+</PresentationBlock>
+
+
+## Implementation
+
+<Readme />

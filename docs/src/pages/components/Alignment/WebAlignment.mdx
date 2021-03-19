@@ -1,0 +1,89 @@
+---
+title: Alignment
+platform: web
+githubPath: bpk-component-icon
+---
+
+import PresentationBlock from 'components/PresentationBlock';
+
+import {
+  AlignToBaseTextExample,
+  AlignToLargeTextExample,
+  AlignSmallTextToIconExample,
+  AlignTextToIconExample,
+  AlignToButtonExample,
+  AlignToLargeButtonExample
+} from 'bpk-component-icon/examples';
+
+import {
+  AlignmentWithBaseTextCode,
+  AlignmentWithLargeTextCode,
+  IconAlignmentWithBaseTextCode,
+  IconAlignmentWithSmTextCode,
+  IconAlignmentWithButton,
+  IconAlignmentWithLargeButton,
+} from './CodeExamples'
+
+## Table of contents
+
+## Icon alignment within text with textStyle "base"
+
+Aligning an icon within text with textStyle "base" can be done using `withAlignment`, providing suitable spacings (see the [Typesetting section](/tokens/typesetting)).
+
+<PresentationBlock>
+  <AlignToBaseTextExample />
+</PresentationBlock>
+
+Using the HOC is done as follows:
+
+<AlignmentWithBaseTextCode />
+
+## Icon alignment within text with textStyle "lg"
+
+<PresentationBlock>
+  <AlignToLargeTextExample />
+</PresentationBlock>
+
+Similarly, within text with textStyle large, alignment can be achieved as follows:
+
+<AlignmentWithLargeTextCode />
+
+## Text with textStyle "base" alignment with an icon
+
+<PresentationBlock>
+  <AlignTextToIconExample />
+</PresentationBlock>
+
+If wishing to use an icon taller than the text, alignment must be performed on the text as follows:
+
+<IconAlignmentWithBaseTextCode />
+
+## Text with textStyle "sm" alignment with an icon
+
+<PresentationBlock>
+  <AlignSmallTextToIconExample />
+</PresentationBlock>
+
+Similarly, to use a small text, line height and the BpkText wrapper need to use the small size:
+
+<IconAlignmentWithSmTextCode />
+
+## Icon alignment within a button
+
+<PresentationBlock>
+  <AlignToButtonExample />
+</PresentationBlock>
+
+HOC wrappers exist for common alignment tasks, such as aligning an icon within a button. Other examples can be seen in the [buttons page](/components/button).
+
+<IconAlignmentWithButton />
+
+## Icon alignment within a large button
+
+<PresentationBlock>
+  <AlignToLargeButtonExample />
+</PresentationBlock>
+
+Similarly, a HOC exists for aligning icons to a large button. Other examples can be seen in the [buttons page](/components/button).
+
+<IconAlignmentWithLargeButton />

@@ -18,10 +18,10 @@
 
 import React from 'react';
 
-import WebSwitchPage from './WebSwitchPage';
 import Android, { metadata as androidMetadata } from './AndroidSwitch.mdx';
 import IOS, { metadata as iosMetadata } from './IOSSwitch.mdx';
 import Native, { metadata as nativeMetadata } from './NativeSwitch.mdx';
+import Web, { metadata as webMetadata } from './WebSwitch.mdx';
 
 import MarkdownPage from 'components/MarkdownPage';
 import DocsPageWrapper from 'components/DocsPageWrapper';
@@ -41,7 +41,7 @@ const SwitchPage = () => (
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
-    webSubpage={<WebSwitchPage wrapped />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 

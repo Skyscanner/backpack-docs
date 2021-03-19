@@ -20,8 +20,8 @@
 
 import React from 'react';
 
-import WebSelects from './WebSelectPage';
 import Native, { metadata as nativeMetadata } from './NativeSelect.mdx';
+import Web, { metadata as webMetadata } from './WebSelect.mdx';
 
 import MarkdownPage from 'components/MarkdownPage';
 import DocsPageWrapper from 'components/DocsPageWrapper';
@@ -38,7 +38,7 @@ const DialogsPage = () => (
     title="Select"
     blurb={blurb}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
-    webSubpage={<WebSelects wrapped />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 

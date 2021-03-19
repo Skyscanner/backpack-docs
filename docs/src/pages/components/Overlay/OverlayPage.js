@@ -20,7 +20,7 @@
 
 import React from 'react';
 
-import Web from './WebOverlayPage';
+import Web, { metadata as webMetadata } from './WebOverlay.mdx';
 import Android, { metadata as androidMetadata } from './AndroidOverlay.mdx';
 import IOS, { metadata as iosMetadata } from './IOSOverlay.mdx';
 
@@ -38,7 +38,7 @@ const Page = () => (
     ]}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
-    webSubpage={<Web />}
+    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 
