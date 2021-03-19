@@ -25,12 +25,14 @@
  */
 
 import React from 'react';
+import { BpkCodeBlock } from 'bpk-component-code';
 
-import CodeBlock from 'components/CodeBlock';
+import PresentationBlock from 'components/PresentationBlock';
 
 const AlignmentWithBaseTextCode = () => (
-  <CodeBlock>
-    {`import LongArrowRightIconSm from 'bpk-component-icon/sm/long-arrow-right';
+  <PresentationBlock>
+    <BpkCodeBlock>
+      {`import LongArrowRightIconSm from 'bpk-component-icon/sm/long-arrow-right';
 import { withAlignment } from 'bpk-component-icon';
 import { lineHeightBase, iconSizeSm, colors } from 'bpk-tokens/tokens/base.es6';
 import BpkText from 'bpk-component-text';
@@ -44,12 +46,14 @@ const AlignedArrow = withAlignment(
   &nbsp;
   <AlignedArrow fill={colors.colorSkyGrayTint01}/>
 </BpkText>`}
-  </CodeBlock>
+    </BpkCodeBlock>
+  </PresentationBlock>
 );
 
 const AlignmentWithLargeTextCode = () => (
-  <CodeBlock>
-    {`import LongArrowRightIcon from 'bpk-component-icon/lg/long-arrow-right';
+  <PresentationBlock>
+    <BpkCodeBlock>
+      {`import LongArrowRightIcon from 'bpk-component-icon/lg/long-arrow-right';
 import { withAlignment } from 'bpk-component-icon';
 import { lineHeightLg, iconSizeLg, colors } from 'bpk-tokens/tokens/base.es6';
 import BpkText from 'bpk-component-text';
@@ -64,12 +68,14 @@ const AlignedArrow = withAlignment(
   <AlignedArrow fill={colors.colorSkyGrayTint01}/>
 </BpkText>
 `}
-  </CodeBlock>
+    </BpkCodeBlock>
+  </PresentationBlock>
 );
 
 const IconAlignmentWithBaseTextCode = () => (
-  <CodeBlock>
-    {`import SearchIcon from 'bpk-component-icon/lg/search';
+  <PresentationBlock>
+    <BpkCodeBlock>
+      {`import SearchIcon from 'bpk-component-icon/lg/search';
 import { withAlignment } from 'bpk-component-icon';
 import { iconSizeLg, lineHeightBase, colors } from 'bpk-tokens/tokens/base.es6';
 import BpkText from 'bpk-component-text';
@@ -86,12 +92,14 @@ const AlignedSpan = withAlignment(
   </AlignedSpan>
 </BpkText>
 `}
-  </CodeBlock>
+    </BpkCodeBlock>
+  </PresentationBlock>
 );
 
 const IconAlignmentWithSmTextCode = () => (
-  <CodeBlock>
-    {`import SearchIcon from 'bpk-component-icon/lg/search';
+  <PresentationBlock>
+    <BpkCodeBlock>
+      {`import SearchIcon from 'bpk-component-icon/lg/search';
 import { withAlignment } from 'bpk-component-icon';
 import { iconSizeLg, lineHeightSm, colors } from 'bpk-tokens/tokens/base.es6';
 import BpkText from 'bpk-component-text';
@@ -108,12 +116,14 @@ const AlignedSpanSmall = withAlignment(
   </AlignedSpanSmall>
 </BpkText>
 `}
-  </CodeBlock>
+    </BpkCodeBlock>
+  </PresentationBlock>
 );
 
 const IconAlignmentWithButton = () => (
-  <CodeBlock>
-    {`import LongArrowRightIconSm from 'bpk-component-icon/sm/long-arrow-right';
+  <PresentationBlock>
+    <BpkCodeBlock>
+      {`import LongArrowRightIconSm from 'bpk-component-icon/sm/long-arrow-right';
 import { withButtonAlignment } from 'bpk-component-icon';
 import { colors } from 'bpk-tokens/tokens/base.es6';
 
@@ -125,12 +135,14 @@ const AlignedArrow = withButtonAlignment(LongArrowRightIconSm);
   <AlignedArrow fill={colors.colorWhite} />
 </BpkButton>
 `}
-  </CodeBlock>
+    </BpkCodeBlock>
+  </PresentationBlock>
 );
 
 const IconAlignmentWithLargeButton = () => (
-  <CodeBlock>
-    {`import LongArrowRightIcon from 'bpk-component-icon/lg/long-arrow-right';
+  <PresentationBlock>
+    <BpkCodeBlock>
+      {`import LongArrowRightIcon from 'bpk-component-icon/lg/long-arrow-right';
 import { withLargeButtonAlignment } from 'bpk-component-icon';
 
 const AlignedArrow = withLargeButtonAlignment(LongArrowRightIcon);
@@ -141,7 +153,8 @@ const AlignedArrow = withLargeButtonAlignment(LongArrowRightIcon);
   <AlignedArrow />
 </BpkButton>
 `}
-  </CodeBlock>
+    </BpkCodeBlock>
+  </PresentationBlock>
 );
 
 export {
