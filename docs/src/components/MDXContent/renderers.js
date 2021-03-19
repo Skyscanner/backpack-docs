@@ -18,7 +18,7 @@
 
 /* @flow strict */
 
-import React, { type Node } from 'react';
+import React from 'react';
 import { cssModules } from 'bpk-react-utils';
 import {
   BpkTable,
@@ -49,9 +49,14 @@ const Renderer = () => {
   renderers.a = BpkLink;
   renderers.blockquote = BpkBlockquote;
 
-  renderers.code = (codeBlockProps: { children: Node }) => {
-    const { ...rest } = codeBlockProps;
-    return <BpkCodeBlock {...rest} alternate />;
+  renderers.code = (codeBlockProps: { value: string }) => {
+    const { value, ...codeBlockRest } = codeBlockProps;
+    return <BpkCodeBlock {...codeBlockRest}>{value}</BpkCodeBlock>;
+  };
+
+  renderers.pre = (codeBlockProps: { value: string }) => {
+    const { value, ...codeBlockRest } = codeBlockProps;
+    return <BpkCodeBlock {...codeBlockRest}>{value}</BpkCodeBlock>;
   };
 
   TAG_NAMES.forEach(tag => {
@@ -127,14 +132,16 @@ const Renderer = () => {
 
   renderers.th = (tableCellProps: { children: any, isHeader: boolean }) => {
     const { isHeader, ...tableCellRest } = tableCellProps;
+    const CellComponent = isHeader ? BpkTableHeadCell : BpkTableCell;
     // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/main/decisions/flowfixme.md'.
-    return <BpkTableHeadCell alternate {...tableCellRest} />;
+    return <CellComponent {...tableCellRest} />;
   };
 
   renderers.td = (tableCellProps: { children: any, isHeader: boolean }) => {
     const { isHeader, ...tableCellRest } = tableCellProps;
+    const CellComponent = isHeader ? BpkTableHeadCell : BpkTableCell;
     // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/main/decisions/flowfixme.md'.
-    return <BpkTableCell {...tableCellRest} />;
+    return <CellComponent {...tableCellRest} />;
   };
 
   return renderers;
