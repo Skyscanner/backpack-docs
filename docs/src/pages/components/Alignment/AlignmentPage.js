@@ -20,6 +20,7 @@
 
 import React from 'react';
 import BpkLink from 'bpk-component-link';
+import { BpkCode } from 'bpk-component-code';
 
 import * as ROUTES from '../../../constants/routes';
 
@@ -30,7 +31,6 @@ import DocsPageWrapper from 'components/DocsPageWrapper';
 import Heading from 'components/Heading';
 import Paragraph from 'components/Paragraph';
 import IntroBlurb from 'components/IntroBlurb';
-import Code from 'components/Code';
 
 const blurb = [
   <IntroBlurb>
@@ -39,7 +39,7 @@ const blurb = [
   </IntroBlurb>,
   <Heading level="h3">Installation</Heading>,
   <Paragraph>
-    The alignment HOCs are provided in the <Code>bpk-component-icon</Code>{' '}
+    The alignment HOCs are provided in the <BpkCode>bpk-component-icon</BpkCode>{' '}
     package. See <BpkLink href={ROUTES.ICON}>Icons</BpkLink> for installation
     instructions.
   </Paragraph>,

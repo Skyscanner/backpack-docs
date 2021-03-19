@@ -193,7 +193,7 @@ const config = {
         ],
       },
       {
-        test: /\.mdx$/,
+        test: /\.(md|mdx)$/,
         use: [
           {
             loader: 'babel-loader',
@@ -213,14 +213,14 @@ const config = {
           },
         ],
       },
-      {
-        test: /\.md$/,
-        use: [
-          {
-            loader: 'raw-loader',
-          },
-        ],
-      },
+      // {
+      //   test: /\.md$/,
+      //   use: [
+      //     {
+      //       loader: 'raw-loader',
+      //     },
+      //   ],
+      // },
     ],
   },
 
