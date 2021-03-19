@@ -49,14 +49,9 @@ const Renderer = () => {
   renderers.a = BpkLink;
   renderers.blockquote = BpkBlockquote;
 
-  renderers.code = (codeBlockProps: { value: string }) => {
-    const { value, ...codeBlockRest } = codeBlockProps;
-    return <BpkCodeBlock {...codeBlockRest}>{value}</BpkCodeBlock>;
-  };
-
-  renderers.pre = (codeBlockProps: { value: string }) => {
-    const { value, ...codeBlockRest } = codeBlockProps;
-    return <BpkCodeBlock {...codeBlockRest}>{value}</BpkCodeBlock>;
+  renderers.code = (codeBlockProps: { children: any }) => {
+    const { ...rest } = codeBlockProps;
+    return <BpkCodeBlock {...rest} alternate />;
   };
 
   TAG_NAMES.forEach(tag => {
