@@ -213,14 +213,6 @@ const config = {
           },
         ],
       },
-      // {
-      //   test: /\.md$/,
-      //   use: [
-      //     {
-      //       loader: 'raw-loader',
-      //     },
-      //   ],
-      // },
     ],
   },
 
