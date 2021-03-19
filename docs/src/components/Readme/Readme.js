@@ -21,8 +21,12 @@
 import React from 'react';
 import BpkContentContainer from 'bpk-component-content-container';
 
-import BpkMarkdownRenderer from 'components/MarkdownRenderer/BpkMarkdownRenderer';
-import getMarkdownString from 'helpers/markdown-helper';
+import MDXContent from '../MDXContent';
+
+// import BpkMarkdownRenderer from 'components/MarkdownRenderer/BpkMarkdownRenderer';
+// import getMarkdownString from 'helpers/markdown-helper';
+
+// const mdx = require('@mdx-js/mdx');
 
 type Props = {
   file: string,
@@ -31,9 +35,13 @@ type Props = {
 const Readme = (props: Props) => {
   const { file } = props;
 
+  // const mdxText = mdx.sync(file);
+
   return (
     <BpkContentContainer bareHtml alternate>
-      <BpkMarkdownRenderer source={getMarkdownString(file)} />
+      {file}
+      {/* <MDXContent Content={mdxText} /> */}
+      {/* <BpkMarkdownRenderer source={getMarkdownString(file)} /> */}
     </BpkContentContainer>
   );
 };
