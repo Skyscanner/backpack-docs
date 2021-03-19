@@ -193,7 +193,7 @@ const config = {
         ],
       },
       {
-        test: /\.mdx$/,
+        test: /\.(md|mdx)$/,
         use: [
           {
             loader: 'babel-loader',
@@ -210,14 +210,6 @@ const config = {
             loader: path.resolve(
               './scripts/webpack/replaceImagesWithRequires.js',
             ),
-          },
-        ],
-      },
-      {
-        test: /\.md$/,
-        use: [
-          {
-            loader: 'raw-loader',
           },
         ],
       },
