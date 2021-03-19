@@ -18,7 +18,7 @@
 
 /* @flow strict */
 
-import React, { type Node } from 'react';
+import React from 'react';
 import { cssModules } from 'bpk-react-utils';
 import {
   BpkTable,
