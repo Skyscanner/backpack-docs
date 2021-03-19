@@ -160,7 +160,6 @@
     "chalk": "^4.1.0",
     "colors": "^1.4.0",
     "copy-webpack-plugin": "^6.0.3",
-    "core-js": "^3.6.1",
     "css-loader": "^3.6.0",
     "danger": "^10.2.1",
     "date-fns": "^2.14.0",
