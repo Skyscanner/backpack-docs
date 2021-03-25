@@ -42,7 +42,7 @@
     "submodules:lock": "sed 's/#ignore = all/ignore = all/g' .gitmodules > .gitmodules.tmp && mv .gitmodules.tmp .gitmodules",
     "spellcheck": "mdspell -r --en-gb --ignore-acronyms --ignore-numbers --no-suggestions '*.md' '**/*.md' '!**/node_modules/**/*.md' '!backpack/**/*.md' '!backpack-react-native/**/*.md' '!backpack-ios/**/*.md'  '!backpack-android/**/*.md'",
     "spellcheck:interactive": "mdspell --en-gb --ignore-acronyms --no-suggestions --ignore-numbers '*.md' '**/*.md' '!**/node_modules/**/*.md' '!backpack/**/*.md' '!backpack-react-native/**/*.md' '!backpack-ios/**/*.md'  '!backpack-android/**/*.md'",
-    "update-bpk-dependencies": "npx npm-check-updates -n '/^bpk\\-(.*)$/' -u",
+    "update-bpk-dependencies": "npx npm-check-updates '/^bpk\\-(.*)$/' -u && npm i",
     "lighthouse": "babel-node scripts/lighthouse/lighthouse.js",
     "snyk-protect": "snyk protect",
     "prepublish": "npm run snyk-protect"
