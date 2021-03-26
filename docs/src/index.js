@@ -37,7 +37,7 @@ import Routes, { ROUTES_MAPPINGS } from './routes';
 import template from './template';
 import { extractAssets } from './webpackStats';
 import TopBanner from './components/TopBanner/TopBanner';
-import Meta from './meta';
+import Meta from './Meta';
 
 /*
  In our Webpack config file, we allow the base path to be set,

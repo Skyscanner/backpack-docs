@@ -16,6 +16,12 @@
  * limitations under the License.
  */
 
+/*
+
+Add <meta /> elements in docs/src/Meta.js, **not here**, so that Helmet is aware of them.
+
+ */
+
 import './static/favicon.ico';
 import './static/social-preview.png';
 
