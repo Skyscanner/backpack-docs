@@ -4,8 +4,6 @@ ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   SNYK-JS-LODASH-567746:
-    - '@skyscanner/backpack-react-scripts > babel-preset-react-app > @babel/core > lodash':
-        patched: '2020-07-14T09:13:52.774Z'
     - babel-jest > @jest/transform > babel-plugin-istanbul > istanbul-lib-instrument > @babel/traverse > lodash:
         patched: '2020-07-14T09:13:52.774Z'
     - babel-jest > @jest/transform > babel-plugin-istanbul > istanbul-lib-instrument > @babel/generator > @babel/types > lodash:
