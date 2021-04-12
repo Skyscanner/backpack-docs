@@ -40,6 +40,7 @@ jobs:
 
       - name: Danger
         run: npm run danger
+        if: github.actor != 'dependabot[bot]'
         env:
           GITHUB_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
 
