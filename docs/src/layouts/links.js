@@ -260,7 +260,7 @@ const ComponentsLinks = [
         id: 'NUDGER',
         route: routes.NUDGER,
         children: 'Nudger',
-        tags: ['web', 'native'],
+        tags: ['web', 'native', 'ios'],
       },
       {
         id: 'PROGRESS',
