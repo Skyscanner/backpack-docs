@@ -4,7 +4,6 @@ platform: web
 githubPath: bpk-component-card
 ---
 
-
 import PresentationBlock from 'components/PresentationBlock';
 import Readme from 'bpk-component-card/README.md';
 
@@ -12,7 +11,8 @@ import {
   DefaultExample,
   WithHrefExample,
   WithoutPaddingExample,
-} from 'bpk-component-card/examples'
+  NonAtomicHrefExample,
+} from 'bpk-component-card/examples';
 
 ## Table of contents
 
@@ -40,6 +40,15 @@ Add a `href` prop to your card to turn it into a hyperlink.
   <WithHrefExample />
 </PresentationBlock>
 
+## Non-atomic
+
+By default cards are atomic. That means that assistive technology will see the card as a single item, whose value is the content.
+
+If the copy inside your card is lengthy, you should consider making it non-atomic and providing a CTA inside. The entire card will still be clickable/tappable, but will appear to AT as a dumb container.
+
+<PresentationBlock>
+  <NonAtomicHrefExample />
+</PresentationBlock>
 
 ## Implementation
 
