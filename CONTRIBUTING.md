@@ -75,8 +75,6 @@ For more help using submodules, see the [more detailed Submodules section](#subm
 
 Run `npm install` to install dependencies from npm.
 
-Then use `npm run build-backpack` to install dependencies for the web submodule, and ensure everything is built.
-
 #### Backpack documentation
 
 When adding documentation for a new component:
