@@ -58,7 +58,7 @@ jobs:
         run: |
           nvm use
           npm run docs:dist
-        if: github.ref != 'refs/heads/main'
+        if: github.actor != 'dependabot[bot]'
         env:
           BASE_PATH: prs/${{ github.event.pull_request.number }}
 
@@ -80,13 +80,13 @@ jobs:
           mkdir build
           mv dist $PR_NUMBER
           cp -R $PR_NUMBER build/
-        if: github.ref != 'refs/heads/main'
+        if: github.actor != 'dependabot[bot]'
         env:
           PR_NUMBER: ${{ github.event.pull_request.number }}
 
       - name: Deploy website (pull request build)
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref != 'refs/heads/main'
+        if: github.actor != 'dependabot[bot]'
         with:
           personal_token: ${{ secrets.DEPLOY_TOKEN }}
           publish_dir: build/
@@ -96,7 +96,7 @@ jobs:
 
       - name: Link to the pull request build
         uses: unsplash/comment-on-pr@master
-        if: github.ref != 'refs/heads/main'
+        if: github.actor != 'dependabot[bot]'
         with:
           msg: "Visit https://backpack.github.io/prs/${{ env.PR_NUMBER }} to see this build running in a browser."
         env:
