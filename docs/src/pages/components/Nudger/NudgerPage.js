@@ -23,6 +23,7 @@ import React from 'react';
 import Web, { metadata as webMetadata } from './WebNudger.mdx';
 import Native, { metadata as nativeMetadata } from './NativeNudger.mdx';
 import IOS, { metadata as iosMetadata } from './IOSNudger.mdx';
+import Android, { metadata as androidMetadata } from './AndroidNudger.mdx';
 
 import MarkdownPage from 'components/MarkdownPage';
 import DocsPageWrapper from 'components/DocsPageWrapper';
@@ -39,6 +40,7 @@ const Page = () => (
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
   />
 );
 
