@@ -9,23 +9,18 @@
       "github": "k0nserv"
     },
     {
-      "npm": "mattface",
-      "github": "matthewdavidson"
-    },
-    {
       "npm": "shaundon",
       "github": "shaundon"
     },
     {
-      "npm": "tiagohngl",
-      "github": "tiagoengel"
-    },
-    {
-      "github": "willhg"
-    },
-    {
       "npm": "ojcurt",
       "github": "olliecurtis"
+    },
+    {
+      "github": "marianeum"
+    },
+    {
+      "github": "bvitaliyg"
     }
   ]
 }
