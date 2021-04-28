@@ -26,6 +26,12 @@ import { includes } from 'lodash';
 import { danger, fail, warn, markdown } from 'danger';
 
 const getRandomFromArray = arr => arr[Math.floor(Math.random() * arr.length)];
+const currentYear = new Date().getFullYear();
+// Applies to js, css, scss and sh files that are not located in dist or flow-typed folders.
+const shouldContainLicensingInformation = filePath =>
+  filePath.match(/\.(js|css|scss|sh)$/) &&
+  !filePath.includes('dist/') &&
+  !filePath.includes('flow-typed/');
 
 const AVOID_EXACT_WORDS = [
   { word: 'react native', reason: 'Please use React Native with capitals' },
@@ -81,12 +87,7 @@ if (lockFileUpdated) {
 
 // New files should include the Backpack license heading.
 const unlicensedFiles = createdFiles.filter(filePath => {
-  // Applies to js, css, scss and sh files that are not located in dist or flow-typed folders.
-  if (
-    filePath.match(/\.(js|css|scss|sh)$/) &&
-    !filePath.includes('dist/') &&
-    !filePath.includes('flow-typed/')
-  ) {
+  if (shouldContainLicensingInformation(filePath)) {
     const fileContent = fs.readFileSync(filePath);
     return !fileContent.includes(
       'Licensed under the Apache License, Version 2.0 (the "License")',
@@ -99,6 +100,27 @@ if (unlicensedFiles.length > 0) {
     `These new files do not include the license heading: ${unlicensedFiles.join(
       ', ',
     )}`,
+  );
+}
+
+// Updated files should include the latest year in licensing header.
+const outdatedLicenses = fileChanges.filter(filePath => {
+  if (
+    shouldContainLicensingInformation(filePath) &&
+    !unlicensedFiles.includes(filePath)
+  ) {
+    const fileContent = fs.readFileSync(filePath);
+    return !fileContent.includes(
+      `Copyright 2016-${currentYear} Skyscanner Ltd`,
+    );
+  }
+  return false;
+});
+if (outdatedLicenses.length > 0) {
+  fail(
+    `These files contain an outdated licensing header: ${outdatedLicenses.join(
+      ', ',
+    )}. Please update to ${currentYear}.`,
   );
 }
 
