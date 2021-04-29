@@ -23,7 +23,7 @@
 import fs from 'fs';
 
 import { includes } from 'lodash';
-import { danger, fail, warn, markdown } from 'danger';
+import { danger, fail, warn, markdown, schedule } from 'danger';
 
 const getRandomFromArray = arr => arr[Math.floor(Math.random() * arr.length)];
 const currentYear = new Date().getFullYear();
@@ -38,10 +38,17 @@ const AVOID_EXACT_WORDS = [
 ];
 
 const author = danger.github.pr.user.login;
-const isPrExternal = !danger.github.api.orgs.checkMembership({
-  org: 'backpack',
-  username: author,
-});
+const isPrExternal = async () => {
+  try {
+    await danger.github.api.orgs.checkMembership({
+      org: 'backpack',
+      username: author,
+    });
+    return false;
+  } catch (err) {
+    return true;
+  }
+};
 
 const createdFiles = danger.git.created_files;
 const modifiedFiles = danger.git.modified_files;
@@ -67,17 +74,23 @@ const thanksGifs = [
 ];
 
 // Be nice to our neighbours.
-if (isPrExternal) {
-  markdown(`
-  # Hi ${author}!
-  Thanks for the PR 🎉! Contributions like yours help to improve the design system
-  for everybody and we appreciate you taking the effort to create this PR.
-  ![Thanks](${getRandomFromArray(thanksGifs)})
-  - [ ] Check this if you have read and followed the [contributing guidelines](https://github.com/Skyscanner/backpack-docs/blob/main/CONTRIBUTING.md)
-  If you're curious about how we review, please read through the
-  [code review guidelines](https://github.com/Skyscanner/backpack-docs/blob/main/CODE_REVIEW_GUIDELINES.md).
-  `);
-}
+schedule(async () => {
+  if (await isPrExternal()) {
+    markdown(`
+# Hi ${author}!
+
+Thanks for the PR 🎉! Contributions like yours help to improve the design system
+for everybody and we appreciate you taking the effort to create this PR.
+
+![Thanks](${getRandomFromArray(thanksGifs)})
+
+- [ ] Check this if you have read and followed the [contributing guidelines](https://github.com/Skyscanner/backpack-docs/blob/main/CONTRIBUTING.md)
+
+If you're curious about how we review, please read through the
+[code review guidelines](https://github.com/Skyscanner/backpack/blob/main/CODE_REVIEW_GUIDELINES.md).
+`);
+  }
+});
 
 // Ensure package-lock changes are intentional.
 const lockFileUpdated = includes(modifiedFiles, 'package-lock.json');
