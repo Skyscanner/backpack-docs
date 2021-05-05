@@ -18,7 +18,6 @@
 
 import React from 'react';
 import BpkLink from 'bpk-component-link';
-import BpkRouterLink from 'bpk-component-router-link';
 import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
 import BpkBlockquote from 'bpk-component-blockquote';
 
@@ -28,6 +27,7 @@ import Native, {
   metadata as nativeMetadata,
 } from './NativeTouchableNativeFeedback.mdx';
 
+import RouterLink from 'components/RouterLink';
 import IntroBlurb from 'components/IntroBlurb';
 import DocsPageWrapper from 'components/DocsPageWrapper';
 import MarkdownPage from 'components/MarkdownPage';
@@ -49,9 +49,7 @@ const blurb = [
   <BpkBlockquote>
     <BpkText weight={WEIGHT_STYLES.bold}>Note:</BpkText> This component is
     Android only, for iOS please use the{' '}
-    <BpkRouterLink to={ROUTES.TOUCHABLE_OVERLAY}>
-      BpkTouchableOverlay{' '}
-    </BpkRouterLink>{' '}
+    <RouterLink to={ROUTES.TOUCHABLE_OVERLAY}>BpkTouchableOverlay </RouterLink>{' '}
     component.
   </BpkBlockquote>,
 ];

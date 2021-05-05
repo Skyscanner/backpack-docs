@@ -578,7 +578,6 @@ bpk-component-phone-input
 bpk-component-popover
 bpk-component-progress
 bpk-component-radio
-bpk-component-router-link
 bpk-component-rtl-toggle
 bpk-component-scrollable-calendar
 bpk-component-section-list

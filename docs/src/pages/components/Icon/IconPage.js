@@ -19,7 +19,6 @@
 /* @flow strict */
 
 import React from 'react';
-import BpkRouterLink from 'bpk-component-router-link';
 
 import IconsDesignPage from './DesignIconPage';
 import Android, { metadata as androidMetadata } from './AndroidIcon.mdx';
@@ -27,6 +26,7 @@ import IOS, { metadata as iosMetadata } from './IOSIcon.mdx';
 import Web, { metadata as webMetadata } from './WebIcon.mdx';
 import Native, { metadata as nativeMetadata } from './NativeIcon.mdx';
 
+import RouterLink from 'components/RouterLink';
 import MarkdownPage from 'components/MarkdownPage';
 import IntroBlurb from 'components/IntroBlurb';
 import DocsPageWrapper from 'components/DocsPageWrapper';
@@ -38,9 +38,9 @@ const Page = () => (
       <IntroBlurb>
         A suite of icons for representing concepts, features and actions.
         Looking for the icon set? Check out the{' '}
-        <BpkRouterLink to="/components/icon?platform=design">
+        <RouterLink to="/components/icon?platform=design">
           design tab
-        </BpkRouterLink>{' '}
+        </RouterLink>{' '}
         for the list of available icons.
       </IntroBlurb>,
     ]}

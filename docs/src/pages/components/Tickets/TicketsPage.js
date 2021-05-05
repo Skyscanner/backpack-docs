@@ -17,12 +17,12 @@
  */
 
 import React from 'react';
-import BpkRouterLink from 'bpk-component-router-link';
 
 import * as ROUTES from '../../../constants/routes';
 
 import Web, { metadata as webMetadata } from './WebTicketsPage.mdx';
 
+import RouterLink from 'components/RouterLink';
 import DocsPageWrapper from 'components/DocsPageWrapper';
 import IntroBlurb from 'components/IntroBlurb';
 import MarkdownPage from 'components/MarkdownPage';
@@ -30,9 +30,9 @@ import MarkdownPage from 'components/MarkdownPage';
 const blurb = [
   <IntroBlurb>
     Tickets combine the look and feel of{' '}
-    <BpkRouterLink to={ROUTES.CARD}>Cards</BpkRouterLink> with an added
-    separation line to divide their content into two distinct areas. They can be
-    configured to display both horizontally and vertically.
+    <RouterLink to={ROUTES.CARD}>Cards</RouterLink> with an added separation
+    line to divide their content into two distinct areas. They can be configured
+    to display both horizontally and vertically.
   </IntroBlurb>,
 ];
 
