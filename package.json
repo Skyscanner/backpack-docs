@@ -195,7 +195,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
-    "react-router-dom": "^4.3.1",
+    "react-router-dom": "^5.2.0",
     "react-svg-loader": "^3.0.2",
     "react-test-renderer": "16.13.1",
     "remark-toc": "^7.0.0",

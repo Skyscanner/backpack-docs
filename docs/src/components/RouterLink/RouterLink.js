@@ -19,40 +19,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
-import { cssModules } from 'bpk-react-utils';
-
-import STYLES from './RouterLink.scss';
-
-const getClassName = cssModules(STYLES);
+import BpkLink from 'bpk-component-link';
 
 const BpkRouterLink = props => {
-  const classNames = [getClassName('bpkdocs-router-link')];
-  const { children, to, className, ...rest } = props;
-
-  if (className) {
-    classNames.push(className);
-  }
-
-  return (
-    <NavLink
-      className={classNames.join(' ')}
-      activeClassName={getClassName('bpkdocs-router-link--active')}
-      to={to}
-      {...rest}
-    >
-      {children}
-    </NavLink>
-  );
+  const { to, ...rest } = props;
+  return <NavLink to={to} component={BpkLink} {...rest} />;
 };
 
 BpkRouterLink.propTypes = {
   children: PropTypes.node.isRequired,
   to: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
-  className: PropTypes.string,
-};
-
-BpkRouterLink.defaultProps = {
-  className: null,
 };
 
 export default BpkRouterLink;
