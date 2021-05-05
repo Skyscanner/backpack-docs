@@ -17,12 +17,12 @@
  */
 
 import React from 'react';
-import BpkRouterLink from 'bpk-component-router-link';
 
 import * as ROUTES from '../../../constants/routes';
 
 import Web, { metadata as webMetadata } from './WebFieldsets.mdx';
 
+import RouterLink from 'components/RouterLink';
 import MarkdownPage from 'components/MarkdownPage';
 import DocsPageWrapper from 'components/DocsPageWrapper';
 import IntroBlurb from 'components/IntroBlurb';
@@ -30,12 +30,12 @@ import IntroBlurb from 'components/IntroBlurb';
 const blurb = [
   <IntroBlurb>
     Fieldsets encapsulate the composition of{' '}
-    <BpkRouterLink to={`${ROUTES.FORM}`}>form controls</BpkRouterLink>,{' '}
-    <BpkRouterLink to={`${ROUTES.FORM}#labels`}>labels</BpkRouterLink>
+    <RouterLink to={`${ROUTES.FORM}`}>form controls</RouterLink>,{' '}
+    <RouterLink to={`${ROUTES.FORM}#labels`}>labels</RouterLink>
     &nbsp;&amp;{' '}
-    <BpkRouterLink to={`${ROUTES.FORM}#validation`}>
+    <RouterLink to={`${ROUTES.FORM}#validation`}>
       validation messages
-    </BpkRouterLink>{' '}
+    </RouterLink>{' '}
     with the necessary attributes to ensure good accessibility for screen
     readers.
   </IntroBlurb>,

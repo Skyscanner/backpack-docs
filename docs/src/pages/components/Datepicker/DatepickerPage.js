@@ -17,12 +17,12 @@
  */
 
 import React from 'react';
-import BpkRouterLink from 'bpk-component-router-link';
 
 import * as ROUTES from '../../../constants/routes';
 
 import Web, { metadata as webMetadata } from './WebDatepicker.mdx';
 
+import RouterLink from 'components/RouterLink';
 import DocsPageWrapper from 'components/DocsPageWrapper';
 import IntroBlurb from 'components/IntroBlurb';
 import MarkdownPage from 'components/MarkdownPage';
@@ -31,8 +31,8 @@ const blurb = [
   <IntroBlurb>
     The date picker is an input control that allows the user to pick a single
     date. It embeds a{' '}
-    <BpkRouterLink to={ROUTES.CALENDAR}>calendar component</BpkRouterLink> in a{' '}
-    <BpkRouterLink to={ROUTES.POPOVER}>popover</BpkRouterLink>.
+    <RouterLink to={ROUTES.CALENDAR}>calendar component</RouterLink> in a{' '}
+    <RouterLink to={ROUTES.POPOVER}>popover</RouterLink>.
   </IntroBlurb>,
 ];
 
