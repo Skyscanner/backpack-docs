@@ -308,7 +308,7 @@ const ComponentsLinks = [
         id: 'SLIDER',
         route: routes.SLIDER,
         children: 'Slider',
-        tags: ['web'],
+        tags: ['web', 'android'],
       },
       {
         id: 'DRAWER',

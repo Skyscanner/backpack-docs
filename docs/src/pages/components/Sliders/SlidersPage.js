@@ -18,6 +18,7 @@
 
 import React from 'react';
 
+import Android, { metadata as androidMetadata } from './AndroidSlidersPage.mdx';
 import Web, { metadata as webMetadata } from './WebSlidersPage.mdx';
 
 import MarkdownPage from 'components/MarkdownPage';
@@ -32,6 +33,7 @@ const SlidersPage = () => (
         Sliders allow users to input a numeric value from a given range.
       </IntroBlurb>,
     ]}
+    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
