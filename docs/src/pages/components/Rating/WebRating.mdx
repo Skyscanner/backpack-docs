@@ -10,6 +10,7 @@ import UsageTable from 'components/UsageTable';
 import Readme from 'bpk-component-rating/README.md';
 import {
   DefaultExample,
+  ZeroToFiveScaleExample,
   Vertical,
   LargeSize,
   LargeVertical,
@@ -60,6 +61,16 @@ The rating component can have just a title with no subtitle. Here it's seen in b
 
 <PresentationBlock>
   <TitleOnly />
+</PresentationBlock>
+
+## Alternate scale
+
+By default, ratings follow a 0-10 scale. Set the `ratingScale` prop to use a 0-5 scale instead.
+
+The 0-5 scale should only be used in specific circumstances, like ratings coming from an external provider that use a 0-5 scale. Most things should use the 0-10 scale to give users consistency.
+
+<PresentationBlock>
+  <ZeroToFiveScaleExample />
 </PresentationBlock>
 
 ## Implementation
