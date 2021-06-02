@@ -34,7 +34,7 @@ const AlignmentWithBaseTextCode = () => (
     <BpkCodeBlock>
       {`import LongArrowRightIconSm from 'bpk-component-icon/sm/long-arrow-right';
 import { withAlignment } from 'bpk-component-icon';
-import { lineHeightBase, iconSizeSm, colors } from 'bpk-tokens/tokens/base.es6';
+import { lineHeightBase, iconSizeSm, colors } from '@skyscanner/bpk-web/tokens/base.es6';
 import BpkText from 'bpk-component-text';
 
 const AlignedArrow = withAlignment(
@@ -55,7 +55,7 @@ const AlignmentWithLargeTextCode = () => (
     <BpkCodeBlock>
       {`import LongArrowRightIcon from 'bpk-component-icon/lg/long-arrow-right';
 import { withAlignment } from 'bpk-component-icon';
-import { lineHeightLg, iconSizeLg, colors } from 'bpk-tokens/tokens/base.es6';
+import { lineHeightLg, iconSizeLg, colors } from '@skyscanner/bpk-web/tokens/base.es6';
 import BpkText from 'bpk-component-text';
 
 const AlignedArrow = withAlignment(
@@ -77,7 +77,7 @@ const IconAlignmentWithBaseTextCode = () => (
     <BpkCodeBlock>
       {`import SearchIcon from 'bpk-component-icon/lg/search';
 import { withAlignment } from 'bpk-component-icon';
-import { iconSizeLg, lineHeightBase, colors } from 'bpk-tokens/tokens/base.es6';
+import { iconSizeLg, lineHeightBase, colors } from '@skyscanner/bpk-web/tokens/base.es6';
 import BpkText from 'bpk-component-text';
 
 const AlignedSpan = withAlignment(
@@ -101,7 +101,7 @@ const IconAlignmentWithSmTextCode = () => (
     <BpkCodeBlock>
       {`import SearchIcon from 'bpk-component-icon/lg/search';
 import { withAlignment } from 'bpk-component-icon';
-import { iconSizeLg, lineHeightSm, colors } from 'bpk-tokens/tokens/base.es6';
+import { iconSizeLg, lineHeightSm, colors } from '@skyscanner/bpk-web/tokens/base.es6';
 import BpkText from 'bpk-component-text';
 
 const AlignedSpanSmall = withAlignment(
@@ -125,7 +125,7 @@ const IconAlignmentWithButton = () => (
     <BpkCodeBlock>
       {`import LongArrowRightIconSm from 'bpk-component-icon/sm/long-arrow-right';
 import { withButtonAlignment } from 'bpk-component-icon';
-import { colors } from 'bpk-tokens/tokens/base.es6';
+import { colors } from '@skyscanner/bpk-web/tokens/base.es6';
 
 const AlignedArrow = withButtonAlignment(LongArrowRightIconSm);
 
