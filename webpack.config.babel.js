@@ -59,7 +59,9 @@ const staticSiteGeneratorConfig = {
 
 const sassOptions = {
   prependData: BPK_TOKENS
-    ? fs.readFileSync(`packages/bpk-tokens/tokens/${BPK_TOKENS}.scss`)
+    ? fs.readFileSync(
+        `node_modules/@skyscanner/bpk-web/tokens/${BPK_TOKENS}.scss`,
+      )
     : '',
   sassOptions: {
     functions: sassFunctions,
@@ -86,7 +88,7 @@ const config = {
       {
         test: /\.jsx?$/,
         use: ['babel-loader'],
-        exclude: /node_modules\/(?!bpk-).*/,
+        exclude: /node_modules\/(?!bpk-|@skyscanner-).*/,
       },
       {
         test: /base\.scss$/,

@@ -27,7 +27,7 @@ describe('Routes', () => {
   describe('Icons.js', () => {
     it('Icons.js file should be empty', () => {
       const iconsJsFileContents = fs.readFileSync(
-        'node_modules/bpk-svgs/src/icons/icons.js',
+        'node_modules/@skyscanner/bpk-svgs/dist/svgs/icons.js',
       );
 
       expect(iconsJsFileContents.toString()).toEqual('');
