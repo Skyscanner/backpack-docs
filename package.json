@@ -179,7 +179,7 @@
     "globby": "^11.0.1",
     "gray-matter": "^4.0.2",
     "husky": "^4.2.3",
-    "jest": "^26.4.2",
+    "jest": "^27.0.5",
     "js-yaml": "^3.14.0",
     "json-loader": "^0.5.4",
     "lighthouse": "^7.0.0",
