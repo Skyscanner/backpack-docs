@@ -60,16 +60,16 @@ const AdditionalLinks = (props: Props) => {
   return (
     <div className={getClassName('bpkdocs-markdown-page__additional-links')}>
       <div>
-        {/* JitPack link */}
+        {/* Maven Central link */}
         {platform && platform === PLATFORMS.android && (
           <BpkLink
-            href="https://jitpack.io/#skyscanner/backpack-android"
+            href="https://search.maven.org/artifact/net.skyscanner.backpack/backpack-android"
             blank
             className={getClassName('bpkdocs-markdown-page__link')}
           >
             <img
-              src="https://jitpack.io/v/skyscanner/backpack-android.svg"
-              alt="View on JitPack"
+              src="https://img.shields.io/maven-central/v/net.skyscanner.backpack/backpack-android"
+              alt="View on Maven Central"
             />
           </BpkLink>
         )}
