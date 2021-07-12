@@ -60,7 +60,7 @@ const staticSiteGeneratorConfig = {
 const sassOptions = {
   prependData: BPK_TOKENS
     ? fs.readFileSync(
-        `node_modules/@skyscanner/bpk-web/tokens/${BPK_TOKENS}.scss`,
+        `node_modules/@skyscanner/bpk-foundations-web/tokens/${BPK_TOKENS}.scss`,
       )
     : '',
   sassOptions: {

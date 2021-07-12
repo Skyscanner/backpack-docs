@@ -23,7 +23,10 @@ import BpkGridToggle from 'bpk-component-grid-toggle';
 import BpkThemeToggle from 'bpk-component-theme-toggle';
 import BpkHeartIcon from 'bpk-component-icon/sm/heart';
 import { withAlignment, withDescription } from 'bpk-component-icon';
-import { lineHeightSm, iconSizeSm } from '@skyscanner/bpk-web/tokens/base.es6';
+import {
+  lineHeightSm,
+  iconSizeSm,
+} from '@skyscanner/bpk-foundations-web/tokens/base.es6';
 import BpkLink from 'bpk-component-link';
 
 import STYLES from './Footer.scss';

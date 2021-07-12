@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-import { colors } from '@skyscanner/bpk-web/tokens/base.es6';
+import { colors } from '@skyscanner/bpk-foundations-web/tokens/base.es6';
 
 const brandColorCombinations = [
   `${colors.colorSkyBlue}_${colors.colorValensole}`,

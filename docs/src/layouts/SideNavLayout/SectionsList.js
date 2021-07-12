@@ -25,7 +25,10 @@ import BpkAnimateHeight from 'bpk-animate-height';
 import { withAlignment } from 'bpk-component-icon';
 import BpkLargeArrowDown from 'bpk-component-icon/lg/arrow-down';
 import BpkLargeArrowUp from 'bpk-component-icon/lg/arrow-up';
-import { lineHeightLg, iconSizeLg } from '@skyscanner/bpk-web/tokens/base.es6';
+import {
+  lineHeightLg,
+  iconSizeLg,
+} from '@skyscanner/bpk-foundations-web/tokens/base.es6';
 import BpkBreakpoint, { BREAKPOINTS } from 'bpk-component-breakpoint';
 
 import ComponentsIcon from '../../static/components_icon.svg';
