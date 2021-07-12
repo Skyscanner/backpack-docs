@@ -23,7 +23,7 @@ import { cssModules } from 'bpk-react-utils';
 import getContrastRatio from 'get-contrast-ratio';
 import BpkText from 'bpk-component-text';
 import BpkRadio from 'bpk-component-radio';
-import { colors } from '@skyscanner/bpk-web/tokens/base.es6';
+import { colors } from '@skyscanner/bpk-foundations-web/tokens/base.es6';
 
 import STYLES from './color-chart.scss';
 import brandColorCombinations from './brandColorCombinations';
