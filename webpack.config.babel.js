@@ -87,8 +87,24 @@ const config = {
     rules: [
       {
         test: /\.jsx?$/,
-        use: ['babel-loader'],
-        exclude: /node_modules\/(?!bpk-|@skyscanner-).*/,
+        exclude: /node_modules\/?(!bpk-|!@skyscanner\/).*/,
+        use: {
+          loader: 'babel-loader',
+          // Added due to an error being thrown by d3-scale/numbers.js with
+          // regeneratorRuntime error not being defined due to polyfills being required
+          options: {
+            presets: [
+              [
+                '@babel/preset-env',
+                {
+                  targets: {
+                    node: 'current',
+                  },
+                },
+              ],
+            ],
+          },
+        },
       },
       {
         test: /base\.scss$/,
