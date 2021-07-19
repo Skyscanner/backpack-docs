@@ -170,7 +170,7 @@
     "es6-promise": "^4.2.8",
     "eslint-config-skyscanner": "^8.1.0",
     "eslint-import-resolver-alias": "^1.1.2",
-    "eslint-plugin-flowtype": "^4.5.3",
+    "eslint-plugin-flowtype": "^5.8.0",
     "eslint_d": "^9.1.1",
     "file-loader": "^6.0.0",
     "flow-bin": "^0.135.0",
