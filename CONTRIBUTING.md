@@ -85,7 +85,7 @@ When adding documentation for a new component:
 
  Assets from other repositories are accessed via git submodules, which are automatically updated when the docs are deployed.
 
- For help writing documentation, see Skyscanner's [copywriting guide](https://backpack.github.io/style-guide/copywriting) and Backpack's [guide for writing docs](/decisions/writing-docs.md).
+ For help writing documentation, see Skyscanner's [copywriting guide](https://backpack.github.io/guidelines/copywriting) and Backpack's [guide for writing docs](https://github.com/Skyscanner/backpack/blob/main/decisions/writing-docs.md).
 
 ## How to
 
