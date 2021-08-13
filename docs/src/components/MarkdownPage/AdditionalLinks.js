@@ -96,7 +96,7 @@ const AdditionalLinks = (props: Props) => {
             className={getClassName('bpkdocs-markdown-page__link')}
           >
             <img
-              src="https://badge.fury.io/js/backpack-react-native.svg"
+              src="https://img.shields.io/npm/v/backpack-react-native"
               alt="View backpack-react-native on npm"
             />
           </BpkLink>
@@ -110,7 +110,7 @@ const AdditionalLinks = (props: Props) => {
             className={getClassName('bpkdocs-markdown-page__link')}
           >
             <img
-              src={`https://badge.fury.io/js/${githubPath}.svg`}
+              src={`https://img.shields.io/npm/v/${githubPath}.svg`}
               alt={`View ${githubPath} on npm`}
             />
           </BpkLink>
