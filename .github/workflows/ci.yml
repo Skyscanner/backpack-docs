@@ -40,9 +40,9 @@ jobs:
 
       - name: Danger
         run: npm run danger
-        if: github.actor != 'dependabot[bot]'
+        if: github.actor != 'dependabot[bot]' && github.repository == github.event.pull_request.head.repo.full_name
         env:
-          GITHUB_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Test
         run: npm test
