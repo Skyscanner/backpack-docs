@@ -20,6 +20,7 @@
 
 import React from 'react';
 
+import Design, { metadata as designMetadata } from './Design.mdx';
 import Android, { metadata as androidMetadata } from './AndroidBadge.mdx';
 import IOS, { metadata as iosMetadata } from './IOSBadge.mdx';
 import Native, { metadata as nativeMetadata } from './NativeBadge.mdx';
@@ -42,6 +43,7 @@ const BadgePage = () => (
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
+    designSubpage={<MarkdownPage content={Design} {...designMetadata} />}
   />
 );
 
