@@ -32,6 +32,7 @@ import {
 } from '../../helpers/platform-helper';
 import Heading from '../Heading';
 import DesignPlaceholderPage from '../../pages/components/DesignPlaceholder';
+import AccessibilityPlaceholderPage from '../../pages/components/AccessibilityPlaceholder';
 
 import Blurb from './Blurb';
 import STYLES from './DocsPageWrapper.scss';
@@ -39,11 +40,12 @@ import STYLES from './DocsPageWrapper.scss';
 const getClassName = cssModules(STYLES);
 
 const contentShape = PropTypes.oneOfType([PropTypes.string, PropTypes.node]);
-const platformQueryParamRegex = /platform=(design|android|ios|native|web)/;
+const platformQueryParamRegex = /platform=(design|accessibility|android|ios|native|web)/;
 
 const PlatformNav = ({
   platform,
   onDesignClick,
+  onAccessibilityClick,
   onNativeClick,
   onWebClick,
   onAndroidClick,
@@ -63,6 +65,13 @@ const PlatformNav = ({
       onClick={onDesignClick}
     >
       Design
+    </BpkHorizontalNavItem>
+    <BpkHorizontalNavItem
+      name="accessibility"
+      selected={platform === 'accessibility'}
+      onClick={onAccessibilityClick}
+    >
+      Accessibility
     </BpkHorizontalNavItem>
     <BpkHorizontalNavItem
       name="android"
@@ -100,9 +109,16 @@ const PlatformNav = ({
 );
 
 PlatformNav.propTypes = {
-  platform: PropTypes.oneOf(['design', 'android', 'ios', 'native', 'web'])
-    .isRequired,
+  platform: PropTypes.oneOf([
+    'design',
+    'accessibility',
+    'android',
+    'ios',
+    'native',
+    'web',
+  ]).isRequired,
   onDesignClick: PropTypes.func.isRequired,
+  onAccessibilityClick: PropTypes.func.isRequired,
   onAndroidClick: PropTypes.func.isRequired,
   onIOSClick: PropTypes.func.isRequired,
   onNativeClick: PropTypes.func.isRequired,
@@ -117,6 +133,7 @@ const DocsPageWrapper = props => {
   const {
     blurb,
     designSubpage,
+    accessibilitySubpage,
     androidSubpage,
     iosSubpage,
     nativeSubpage,
@@ -130,6 +147,7 @@ const DocsPageWrapper = props => {
 
   const platforms = {
     design: designSubpage || <DesignPlaceholderPage />,
+    accessibility: accessibilitySubpage || <AccessibilityPlaceholderPage />,
     android: androidSubpage,
     ios: iosSubpage,
     native: nativeSubpage,
@@ -149,6 +167,8 @@ const DocsPageWrapper = props => {
     initiallySelectedPlatform = platformFromLocalStorage;
   } else if (designSubpage) {
     initiallySelectedPlatform = 'design';
+  } else if (accessibilitySubpage) {
+    initiallySelectedPlatform = 'accessibility';
   } else if (androidSubpage) {
     initiallySelectedPlatform = 'android';
   } else if (iosSubpage) {
@@ -188,6 +208,7 @@ const DocsPageWrapper = props => {
         <PlatformNav
           platform={initiallySelectedPlatform}
           onDesignClick={() => onPlatformClick('design')}
+          onAccessibilityClick={() => onPlatformClick('accessibility')}
           onAndroidClick={() => onPlatformClick('android')}
           onIOSClick={() => onPlatformClick('ios')}
           onNativeClick={() => onPlatformClick('native')}
@@ -218,6 +239,7 @@ DocsPageWrapper.propTypes = {
   }).isRequired,
   blurb: contentShape,
   designSubpage: PropTypes.element,
+  accessibilitySubpage: PropTypes.element,
   webSubpage: PropTypes.element,
   nativeSubpage: PropTypes.element,
   androidSubpage: PropTypes.element,
@@ -227,6 +249,7 @@ DocsPageWrapper.propTypes = {
 DocsPageWrapper.defaultProps = {
   blurb: null,
   designSubpage: null,
+  accessibilitySubpage: null,
   webSubpage: null,
   nativeSubpage: null,
   androidSubpage: null,
