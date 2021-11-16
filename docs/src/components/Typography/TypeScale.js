@@ -57,75 +57,73 @@ const formatSizes = sizes => {
 
 const getClassName = cssModules(STYLES);
 
-const TypeScale = () => {
-  return (
-    <div
-      aria-label="Type scale information"
-      className={getClassName('bpk-docs-type-scale')}
-    >
-      <div aria-hidden="true">
-        {intervals.map(interval => (
-          <div
-            className={getClassName('bpk-docs-type-scale__row')}
-            key={interval.style}
-          >
-            <BpkText
-              textStyle="xs"
-              className={getClassName(
-                'bpk-docs-type-scale__text',
-                'bpk-docs-type-scale__text--style',
-              )}
-            >
-              {interval.style && interval.style.toUpperCase()}
-            </BpkText>
-            <BpkText
-              textStyle={interval.style}
-              style={{
-                fontSize: interval.sizes[0],
-                lineHeight: `${interval.sizes[0]}px`,
-              }}
-              className={getClassName('bpk-docs-type-scale__text')}
-            >
-              {formatSizes(interval.sizes)}
-            </BpkText>
-            <BpkText
-              weight={WEIGHT_STYLES.bold}
-              textStyle={interval.style}
-              style={{
-                fontSize: interval.sizes[0],
-                lineHeight: `${interval.sizes[0]}px`,
-              }}
-              className={getClassName('bpk-docs-type-scale__text')}
-            >
-              {formatSizes(interval.sizes)}
-            </BpkText>
-            {interval.weights === BOOK_OR_BOLD_OR_BLACK && (
-              <BpkText
-                textStyle={interval.style}
-                style={{
-                  fontSize: interval.sizes[0],
-                  lineHeight: `${interval.sizes[0]}px`,
-                }}
-                className={getClassName('bpk-docs-type-scale__text')}
-                weight={WEIGHT_STYLES.black}
-              >
-                {formatSizes(interval.sizes)}
-              </BpkText>
+const TypeScale = () => (
+  <div
+    aria-label="Type scale information"
+    className={getClassName('bpk-docs-type-scale')}
+  >
+    <div aria-hidden="true">
+      {intervals.map(interval => (
+        <div
+          className={getClassName('bpk-docs-type-scale__row')}
+          key={interval.style}
+        >
+          <BpkText
+            textStyle="xs"
+            className={getClassName(
+              'bpk-docs-type-scale__text',
+              'bpk-docs-type-scale__text--style',
             )}
+          >
+            {interval.style && interval.style.toUpperCase()}
+          </BpkText>
+          <BpkText
+            textStyle={interval.style}
+            style={{
+              fontSize: interval.sizes[0],
+              lineHeight: `${interval.sizes[0]}px`,
+            }}
+            className={getClassName('bpk-docs-type-scale__text')}
+          >
+            {formatSizes(interval.sizes)}
+          </BpkText>
+          <BpkText
+            weight={WEIGHT_STYLES.bold}
+            textStyle={interval.style}
+            style={{
+              fontSize: interval.sizes[0],
+              lineHeight: `${interval.sizes[0]}px`,
+            }}
+            className={getClassName('bpk-docs-type-scale__text')}
+          >
+            {formatSizes(interval.sizes)}
+          </BpkText>
+          {interval.weights === BOOK_OR_BOLD_OR_BLACK && (
             <BpkText
-              textStyle="xs"
-              className={getClassName(
-                'bpk-docs-type-scale__text',
-                'bpk-docs-type-scale__text--annotation',
-              )}
+              textStyle={interval.style}
+              style={{
+                fontSize: interval.sizes[0],
+                lineHeight: `${interval.sizes[0]}px`,
+              }}
+              className={getClassName('bpk-docs-type-scale__text')}
+              weight={WEIGHT_STYLES.black}
             >
-              {interval.weights}
+              {formatSizes(interval.sizes)}
             </BpkText>
-          </div>
-        ))}
-      </div>
+          )}
+          <BpkText
+            textStyle="xs"
+            className={getClassName(
+              'bpk-docs-type-scale__text',
+              'bpk-docs-type-scale__text--annotation',
+            )}
+          >
+            {interval.weights}
+          </BpkText>
+        </div>
+      ))}
     </div>
-  );
-};
+  </div>
+);
 
 export default TypeScale;

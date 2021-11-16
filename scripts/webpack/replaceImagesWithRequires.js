@@ -31,18 +31,15 @@
 const IMAGE_REG_EXP = /!\[(.*)\]\(([^https?].+)\)/g;
 const PATH_PREFIX = '/';
 
-const sanitize = input => {
-  return input.replace(/"/g, '');
-};
+const sanitize = input => input.replace(/"/g, '');
 
-const createImg = (source, title) => {
-  return `<img src={"${PATH_PREFIX}" + require("${source}")} alt="${sanitize(
+const createImg = (source, title) =>
+  `<img src={"${PATH_PREFIX}" + require("${source}")} alt="${sanitize(
     title,
   )}" />`;
-};
 
-module.exports = src => {
-  return new Promise(resolve => {
+module.exports = src =>
+  new Promise(resolve => {
     const matches = src.matchAll(IMAGE_REG_EXP);
     const results = Array.from(matches);
 
@@ -58,4 +55,3 @@ module.exports = src => {
 
     resolve(updated);
   });
-};

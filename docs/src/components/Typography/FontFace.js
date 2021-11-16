@@ -24,47 +24,45 @@ import STYLES from './font-face.scss';
 
 const getClassName = cssModules(STYLES);
 
-const FontFace = () => {
-  return (
-    <div
-      aria-label="Example of the Skyscanner Relative fontface"
-      className={getClassName('bpk-docs-font-face')}
+const FontFace = () => (
+  <div
+    aria-label="Example of the Skyscanner Relative fontface"
+    className={getClassName('bpk-docs-font-face')}
+  >
+    <BpkText
+      aria-hidden="true"
+      className={getClassName('bpk-docs-font-face__text')}
+      textStyle="base"
     >
-      <BpkText
-        aria-hidden="true"
-        className={getClassName('bpk-docs-font-face__text')}
-        textStyle="base"
-      >
-        Book AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
-      </BpkText>
-      <BpkText
-        aria-hidden="true"
-        className={getClassName(
-          'bpk-docs-font-face__text',
-          'bpk-docs-font-face__text--medium',
-        )}
-        textStyle="base"
-      >
-        Medium AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
-      </BpkText>
-      <BpkText
-        aria-hidden="true"
-        className={getClassName('bpk-docs-font-face__text')}
-        textStyle="base"
-        weight={WEIGHT_STYLES.bold}
-      >
-        Bold AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
-      </BpkText>
-      <BpkText
-        aria-hidden="true"
-        className={getClassName('bpk-docs-font-face__text')}
-        textStyle="base"
-        weight={WEIGHT_STYLES.black}
-      >
-        Black AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
-      </BpkText>
-    </div>
-  );
-};
+      Book AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
+    </BpkText>
+    <BpkText
+      aria-hidden="true"
+      className={getClassName(
+        'bpk-docs-font-face__text',
+        'bpk-docs-font-face__text--medium',
+      )}
+      textStyle="base"
+    >
+      Medium AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
+    </BpkText>
+    <BpkText
+      aria-hidden="true"
+      className={getClassName('bpk-docs-font-face__text')}
+      textStyle="base"
+      weight={WEIGHT_STYLES.bold}
+    >
+      Bold AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
+    </BpkText>
+    <BpkText
+      aria-hidden="true"
+      className={getClassName('bpk-docs-font-face__text')}
+      textStyle="base"
+      weight={WEIGHT_STYLES.black}
+    >
+      Black AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
+    </BpkText>
+  </div>
+);
 
 export default FontFace;
