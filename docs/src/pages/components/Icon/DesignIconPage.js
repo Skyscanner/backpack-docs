@@ -29,7 +29,7 @@ import Heading from 'components/Heading';
 import Paragraph from 'components/Paragraph';
 import PageHead from 'components/PageHead';
 // This file can actually be resolved eslint is just confused
-// eslint-disable-next-line import/no-webpack-loader-syntax, import/extensions
+// eslint-disable-next-line import/no-webpack-loader-syntax
 import iconsSvgs from '!!file-loader?name=[name].[hash].zip!zip-it-loader!./../../../../../node_modules/@skyscanner/bpk-svgs/dist/svgs/icons';
 
 const AlignedBpkSmallDownloadIcon = withButtonAlignment(BpkSmallDownloadIcon);

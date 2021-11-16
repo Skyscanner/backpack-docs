@@ -29,38 +29,32 @@ import STYLES from './not-found-page.scss';
 
 const getClassName = cssModules(STYLES);
 
-const NotFoundPage = props => {
-  return (
-    <section {...props}>
-      <Helmet title="404" />
-      <div className={getClassName('bpkdocs-not-found-page__wrapper')}>
-        <img
-          className={getClassName('bpkdocs-not-found-page__logo')}
-          alt="Backpack"
-          src={BackpackLogoMark}
+const NotFoundPage = props => (
+  <section {...props}>
+    <Helmet title="404" />
+    <div className={getClassName('bpkdocs-not-found-page__wrapper')}>
+      <img
+        className={getClassName('bpkdocs-not-found-page__logo')}
+        alt="Backpack"
+        src={BackpackLogoMark}
+      />
+      <BpkText className={getClassName('bpkdocs-not-found-page__text')}>
+        Oops! The page you&#39;re looking for doesn&#39;t exist.
+        <br />
+        Try searching below or jump to the <BpkLink href="/">home page</BpkLink>
+        .
+      </BpkText>
+      <div className={getClassName('bpkdocs-not-found-page__search-container')}>
+        <PageSearch
+          inputProps={{ placeholder: 'Search' }}
+          inputClassName={getClassName('bpkdocs-not-found-page__search-input')}
+          wrapperClassName={getClassName(
+            'bpkdocs-not-found-page__search-results-wrapper',
+          )}
         />
-        <BpkText className={getClassName('bpkdocs-not-found-page__text')}>
-          Oops! The page you&#39;re looking for doesn&#39;t exist.
-          <br />
-          Try searching below or jump to the{' '}
-          <BpkLink href="/">home page</BpkLink>.
-        </BpkText>
-        <div
-          className={getClassName('bpkdocs-not-found-page__search-container')}
-        >
-          <PageSearch
-            inputProps={{ placeholder: 'Search' }}
-            inputClassName={getClassName(
-              'bpkdocs-not-found-page__search-input',
-            )}
-            wrapperClassName={getClassName(
-              'bpkdocs-not-found-page__search-results-wrapper',
-            )}
-          />
-        </div>
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
 
 export default NotFoundPage;

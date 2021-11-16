@@ -45,9 +45,7 @@ const isProduction = NODE_ENV === 'production';
 
 // Strings passed from environment variables must
 // be stringified or JS won't interpret them correctly.
-const getSafeString = input => {
-  return JSON.stringify(input);
-};
+const getSafeString = input => JSON.stringify(input);
 
 const staticSiteGeneratorConfig = {
   paths: [

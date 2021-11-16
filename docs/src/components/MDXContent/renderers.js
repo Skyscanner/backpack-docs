@@ -58,11 +58,10 @@ const Renderer = () => {
     renderers[tag] = (headingProps: { children: string }) => {
       const { children, ...headingRest } = headingProps;
 
-      const flatten = (text, child) => {
-        return typeof child === 'string'
+      const flatten = (text, child) =>
+        typeof child === 'string'
           ? text + child
           : React.Children.toArray(child.props.children).reduce(flatten, text);
-      };
 
       // https://github.com/remarkjs/react-markdown/issues/69#issuecomment-289860367
       const id = React.Children.toArray(children)

@@ -75,14 +75,12 @@ const Tokens = (props: Props) => {
           </BpkTableRow>
         )}
         {!!filteredTokens.length &&
-          filteredTokens.map(token => {
-            return (
-              <BpkTableRow key={token.name}>
-                <BpkTableCell>{formatTokenName(token.name)}</BpkTableCell>
-                <BpkTableCell>{getTokenValue(token, platform)}</BpkTableCell>
-              </BpkTableRow>
-            );
-          })}
+          filteredTokens.map(token => (
+            <BpkTableRow key={token.name}>
+              <BpkTableCell>{formatTokenName(token.name)}</BpkTableCell>
+              <BpkTableCell>{getTokenValue(token, platform)}</BpkTableCell>
+            </BpkTableRow>
+          ))}
       </BpkTableBody>
     </BpkTable>
   );

@@ -105,9 +105,8 @@ const enrichedMarkdownFiles = markdownFiles.map(fileName => {
   };
 });
 
-const constantName = (category, id) => {
-  return `GENERATED_${category.toUpperCase()}_${id}`;
-};
+const constantName = (category, id) =>
+  `GENERATED_${category.toUpperCase()}_${id}`;
 
 const constantStrings = [];
 
@@ -155,11 +154,12 @@ const importsString = Object.keys(components)
   .map(category => components[category].map(route => route.import).join('\n'))
   .join('\n');
 
-const routesString = Object.keys(components).map(category => {
-  return `export const ${category} = [${components[category]
-    .map(route => route.component)
-    .join(',')}];`;
-});
+const routesString = Object.keys(components).map(
+  category =>
+    `export const ${category} = [${components[category]
+      .map(route => route.component)
+      .join(',')}];`,
+);
 
 // Write the routes to a file.
 const routesHeader = fs.readFileSync(
