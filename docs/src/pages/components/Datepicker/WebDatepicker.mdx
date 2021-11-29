@@ -9,7 +9,9 @@ import PresentationBlock from 'components/PresentationBlock';
 import Readme from 'bpk-component-datepicker/README.md';
 
 import {
-  DefaultExample
+  DefaultExample,
+  RangeExample,
+  MultipleRangeInputExample
 } from 'bpk-component-datepicker/examples';
 
 ## Table of contents
@@ -20,6 +22,22 @@ Default calendar, input and popover configuration. See the [BpkCalendar document
 
 <PresentationBlock>
   <DefaultExample />
+</PresentationBlock>
+
+## With Ranges
+
+The datepicker can be configured to support ranges.
+
+<PresentationBlock>
+  <RangeExample />
+</PresentationBlock>
+
+## With multiple inputs
+
+If the datepicker is configured to use range mode the datepicker can be configured to open when supplying multiple inputs and triggering the same calendar to input a start and end date.
+
+<PresentationBlock>
+  <MultipleRangeInputExample />
 </PresentationBlock>
 
 ## Implementation
