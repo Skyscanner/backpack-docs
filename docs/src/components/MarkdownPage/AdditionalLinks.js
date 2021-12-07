@@ -135,7 +135,7 @@ const AdditionalLinks = (props: Props) => {
         {/* Android documentation link */}
         {platform && platform === PLATFORMS.android && documentationId && (
           <BpkLink
-            href={`/android/versions/latest/${documentationId}`}
+            href={`/android/Backpack/${documentationId}`}
             blank
             className={getClassName('bpkdocs-markdown-page__link')}
           >
