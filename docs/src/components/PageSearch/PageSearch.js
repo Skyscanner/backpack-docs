@@ -32,7 +32,7 @@ import { getMatchingPages } from './search';
 const FlattenedLinks = flatMap(LINKS, section => section.links);
 
 const convertTagsToPlatformsString = (
-  tags: ?Array<'android' | 'ios' | 'native' | 'web'>,
+  tags: ?Array<'android' | 'ios' | 'native' | 'web' | 'compose'>,
 ): ?string => {
   if (!tags) {
     return null;
@@ -40,6 +40,9 @@ const convertTagsToPlatformsString = (
   const platforms = [];
   if (tags.indexOf('android') !== -1) {
     platforms.push('Android');
+  }
+  if (tags.indexOf('compose') !== -1) {
+    platforms.push('Compose (Preview)');
   }
   if (tags.indexOf('ios') !== -1) {
     platforms.push('iOS');
