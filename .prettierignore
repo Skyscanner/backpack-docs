@@ -3,5 +3,6 @@ flow-typed
 dist
 coverage
 backpack-android
+backpack-compose
 backpack-ios
 backpack-react-native

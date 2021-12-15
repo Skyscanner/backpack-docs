@@ -29,6 +29,7 @@ const OPTIONS = {
   web: 'web',
   native: 'native',
   android: 'android',
+  compose: 'compose',
   ios: 'ios',
 };
 
@@ -87,6 +88,18 @@ const NavListFilter = (props: Props) => (
       onChange={e =>
         e.currentTarget.value === OPTIONS.android &&
         props.onSelectedFilterChange(OPTIONS.android)
+      }
+      white
+    />
+    <BpkRadio
+      className={getClassName('bpkdocs-nav-list-filter__option')}
+      value={OPTIONS.compose}
+      name="filter"
+      label="Compose (Preview)"
+      checked={props.selected === OPTIONS.compose}
+      onChange={e =>
+        e.currentTarget.value === OPTIONS.compose &&
+        props.onSelectedFilterChange(OPTIONS.compose)
       }
       white
     />

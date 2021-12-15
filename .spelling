@@ -205,6 +205,7 @@ ja-JP
 
 # Filenames, repos
 backpack-android
+backpack-compose
 backpack-ios
 backpack-react-native
 contributing.md

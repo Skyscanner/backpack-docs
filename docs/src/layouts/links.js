@@ -53,7 +53,7 @@ const ComponentsLinks = [
         id: 'TEXT',
         route: routes.TEXT,
         children: 'Text',
-        tags: ['web', 'native', 'android', 'ios'],
+        tags: ['web', 'native', 'android', 'ios', 'compose'],
       },
       {
         id: 'LINK',

@@ -39,7 +39,7 @@ import STYLES from './DocsPageWrapper.scss';
 const getClassName = cssModules(STYLES);
 
 const contentShape = PropTypes.oneOfType([PropTypes.string, PropTypes.node]);
-const platformQueryParamRegex = /platform=(design|android|ios|native|web)/;
+const platformQueryParamRegex = /platform=(design|android|ios|native|web|compose)/;
 
 const PlatformNav = ({
   platform,
@@ -47,10 +47,12 @@ const PlatformNav = ({
   onNativeClick,
   onWebClick,
   onAndroidClick,
+  onComposeClick,
   onIOSClick,
   disableNativeTab,
   disableWebTab,
   disableAndroidTab,
+  disableComposeTab,
   disableIOSTab,
 }) => (
   <BpkHorizontalNav
@@ -71,6 +73,14 @@ const PlatformNav = ({
       onClick={onAndroidClick}
     >
       Android
+    </BpkHorizontalNavItem>
+    <BpkHorizontalNavItem
+      name="compose"
+      disabled={disableComposeTab}
+      selected={platform === 'compose'}
+      onClick={onComposeClick}
+    >
+      Compose (Preview)
     </BpkHorizontalNavItem>
     <BpkHorizontalNavItem
       name="ios"
@@ -100,14 +110,22 @@ const PlatformNav = ({
 );
 
 PlatformNav.propTypes = {
-  platform: PropTypes.oneOf(['design', 'android', 'ios', 'native', 'web'])
-    .isRequired,
+  platform: PropTypes.oneOf([
+    'design',
+    'android',
+    'ios',
+    'native',
+    'web',
+    'compose',
+  ]).isRequired,
   onDesignClick: PropTypes.func.isRequired,
   onAndroidClick: PropTypes.func.isRequired,
+  onComposeClick: PropTypes.func.isRequired,
   onIOSClick: PropTypes.func.isRequired,
   onNativeClick: PropTypes.func.isRequired,
   onWebClick: PropTypes.func.isRequired,
   disableAndroidTab: PropTypes.bool.isRequired,
+  disableComposeTab: PropTypes.bool.isRequired,
   disableIOSTab: PropTypes.bool.isRequired,
   disableNativeTab: PropTypes.bool.isRequired,
   disableWebTab: PropTypes.bool.isRequired,
@@ -118,6 +136,7 @@ const DocsPageWrapper = props => {
     blurb,
     designSubpage,
     androidSubpage,
+    composeSubpage,
     iosSubpage,
     nativeSubpage,
     webSubpage,
@@ -131,6 +150,7 @@ const DocsPageWrapper = props => {
   const platforms = {
     design: designSubpage || <DesignPlaceholderPage />,
     android: androidSubpage,
+    compose: composeSubpage,
     ios: iosSubpage,
     native: nativeSubpage,
     web: webSubpage,
@@ -151,6 +171,8 @@ const DocsPageWrapper = props => {
     initiallySelectedPlatform = 'design';
   } else if (androidSubpage) {
     initiallySelectedPlatform = 'android';
+  } else if (composeSubpage) {
+    initiallySelectedPlatform = 'compose';
   } else if (iosSubpage) {
     initiallySelectedPlatform = 'ios';
   } else if (nativeSubpage) {
@@ -189,10 +211,12 @@ const DocsPageWrapper = props => {
           platform={initiallySelectedPlatform}
           onDesignClick={() => onPlatformClick('design')}
           onAndroidClick={() => onPlatformClick('android')}
+          onComposeClick={() => onPlatformClick('compose')}
           onIOSClick={() => onPlatformClick('ios')}
           onNativeClick={() => onPlatformClick('native')}
           onWebClick={() => onPlatformClick('web')}
           disableAndroidTab={!androidSubpage}
+          disableComposeTab={!composeSubpage}
           disableIOSTab={!iosSubpage}
           disableNativeTab={!nativeSubpage}
           disableWebTab={!webSubpage}
@@ -221,6 +245,7 @@ DocsPageWrapper.propTypes = {
   webSubpage: PropTypes.element,
   nativeSubpage: PropTypes.element,
   androidSubpage: PropTypes.element,
+  composeSubpage: PropTypes.element,
   iosSubpage: PropTypes.element,
 };
 
@@ -230,6 +255,7 @@ DocsPageWrapper.defaultProps = {
   webSubpage: null,
   nativeSubpage: null,
   androidSubpage: null,
+  composeSubpage: null,
   iosSubpage: null,
 };
 
