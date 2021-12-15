@@ -206,7 +206,7 @@ const AdditionalLinks = (props: Props) => {
         {/* Android compose GitHub link */}
         {platform && platform === PLATFORMS.compose && githubPath && (
           <BpkLink
-            href={`https://github.com/Skyscanner/backpack-android/tree/main/backpack-compose/src/main/java/net/skyscanner/backpack/compose/${githubPath}`}
+            href={`https://github.com/Skyscanner/backpack-android/tree/main/backpack-compose/src/main/kotlin/net/skyscanner/backpack/compose/${githubPath}`}
             blank
             className={getClassName('bpkdocs-markdown-page__link')}
           >
