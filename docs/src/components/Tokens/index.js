@@ -17,5 +17,7 @@
  */
 
 import Tokens from './Tokens';
+import WebTokens from './WebTokens';
 
 export default Tokens;
+export { WebTokens };
