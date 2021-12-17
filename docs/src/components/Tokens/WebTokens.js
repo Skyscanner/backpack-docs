@@ -54,12 +54,11 @@ const WebTokens = (props: Props) => {
         return null;
       }
 
-      const tokenSplit = key.toLowerCase().split('_');
       const pxValue = toPx(token.value);
 
       return {
         name: token.name,
-        engName: `$bpk-${tokenSplit[0]}-function-${tokenSplit[1]}()`,
+        engName: `bpk-${formatTokenName(token.name).replace('-v-2', '')}()`,
         value: pxValue ? `${token.value} (${pxValue})` : token.value,
       };
     })
