@@ -35,5 +35,5 @@ import Tokens, { WebTokens } from 'components/Tokens'
   tokens={WEB_TOKENS}
   platform="web"
   category="spacings"
-  matcher={({ category, name }) => category === 'spacings' && (name.includes('V2') || name.includes('NONE')) }
+  matcher={({ category, name }) => { return category === 'spacings' && (name.includes('V2') || name.includes('NONE')) }}
 />
