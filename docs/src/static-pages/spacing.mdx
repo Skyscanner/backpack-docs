@@ -7,7 +7,7 @@ category: tokens
 import ANDROID_TOKENS from '@skyscanner/bpk-foundations-android/tokens/base.raw.android.json';
 import IOS_TOKENS from '@skyscanner/bpk-foundations-ios/tokens/base.raw.ios.json';
 import WEB_TOKENS from '@skyscanner/bpk-foundations-web/tokens/base.raw.json';
-import Tokens from 'components/Tokens'
+import Tokens, { WebTokens } from 'components/Tokens'
 
 ## Table of Contents
 
@@ -31,9 +31,9 @@ import Tokens from 'components/Tokens'
 
 ## Web
 
-<Tokens
+<WebTokens
   tokens={WEB_TOKENS}
   platform="web"
   category="spacings"
-  matcher={({ category, name }) => category === 'spacings' && name.includes('SPACING')}
+  matcher={({ category, name }) => category === 'spacings' && (name.includes('V2') || name.includes('NONE')) }
 />
