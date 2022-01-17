@@ -35,7 +35,6 @@ import PRINCIPLES from '../../static-pages/principles.mdx';
 import BACKPACK_STATUS from '../../static-pages/status.mdx';
 import UPDATING_THIS_WEBSITE from '../../static-pages/website-contribution-guide.mdx';
 import COLOUR from '../../static-pages/colour.mdx';
-import COPYWRITING from '../../static-pages/copywriting.mdx';
 import DEVELOPER_ACCESSIBILITY_GUIDELINES from '../../static-pages/developer-accessibility.mdx';
 import GRAPHIC_DEVICES from '../../static-pages/graphic-devices.mdx';
 import ICONOGRAPHY from '../../static-pages/iconography.mdx';
@@ -45,7 +44,6 @@ import LOGO from '../../static-pages/logo.mdx';
 import PHOTOGRAPHY from '../../static-pages/photography.mdx';
 import SHADOWS from '../../static-pages/shadows.mdx';
 import STRATEGY from '../../static-pages/strategy.mdx';
-import TONE_OF_VOICE from '../../static-pages/tone-of-voice.mdx';
 import TYPOGRAPHY from '../../static-pages/typography.mdx';
 
 export const tokens = [{
@@ -177,15 +175,6 @@ export const guidelines = [{
       />
     )
   },{
-    path: ROUTES.GENERATED_GUIDELINES_COPYWRITING,
-    component: () => (
-      <MarkdownPage
-        fileName="/docs/src/static-pages/copywriting.mdx"
-        content={COPYWRITING}
-        {...{"title":"Copywriting","subtitle":"Writing for Skyscanner? This basically makes you a hero.","category":"guidelines"}}
-      />
-    )
-  },{
     path: ROUTES.GENERATED_GUIDELINES_DEVELOPER_ACCESSIBILITY_GUIDELINES,
     component: () => (
       <MarkdownPage
@@ -264,15 +253,6 @@ export const guidelines = [{
         fileName="/docs/src/static-pages/strategy.mdx"
         content={STRATEGY}
         {...{"title":"Strategy","subtitle":"Our brand strategy is the blueprint that gives our brand purpose and direction. It is the set of rules that we use to inform our decisions — from day-to-day queries to long-term challenges. This section will guide you through its components.","category":"guidelines"}}
-      />
-    )
-  },{
-    path: ROUTES.GENERATED_GUIDELINES_TONE_OF_VOICE,
-    component: () => (
-      <MarkdownPage
-        fileName="/docs/src/static-pages/tone-of-voice.mdx"
-        content={TONE_OF_VOICE}
-        {...{"title":"Tone of voice","category":"guidelines"}}
       />
     )
   },{
