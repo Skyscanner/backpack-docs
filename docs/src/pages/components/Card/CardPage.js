@@ -21,6 +21,7 @@
 import React from 'react';
 
 import Android, { metadata as androidMetadata } from './AndroidCard.mdx';
+import Compose, { metadata as composeMetadata } from './ComposeCard.mdx';
 import IOS, { metadata as iosMetadata } from './IOSCard.mdx';
 import Native, { metadata as nativeMetadata } from './NativeCard.mdx';
 import Web, { metadata as webMetadata } from './WebCard.mdx';
@@ -44,6 +45,7 @@ const Page = () => (
       </Paragraph>,
     ]}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}

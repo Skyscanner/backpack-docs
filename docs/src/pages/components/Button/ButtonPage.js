@@ -21,6 +21,7 @@
 import React from 'react';
 
 import Android, { metadata as androidMetadata } from './AndroidButton.mdx';
+import Compose, { metadata as composeMetadata } from './ComposeButton.mdx';
 import IOS, { metadata as iosMetadata } from './IOSButtonPage.mdx';
 import Native, { metadata as nativeMetadata } from './NativeButtonPage.mdx';
 import Web, { metadata as webMetadata } from './WebButtonPage.mdx';
@@ -38,6 +39,7 @@ const ButtonPage = () => (
       </IntroBlurb>,
     ]}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}

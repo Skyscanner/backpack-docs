@@ -114,7 +114,7 @@ const ComponentsLinks = [
         id: 'BUTTON',
         route: routes.BUTTON,
         children: 'Button',
-        tags: ['web', 'native', 'android', 'ios'],
+        tags: ['web', 'native', 'android', 'ios', 'compose'],
       },
       {
         id: 'ICON',
@@ -169,7 +169,7 @@ const ComponentsLinks = [
         id: 'CARD',
         route: routes.CARD,
         children: 'Card',
-        tags: ['web', 'native', 'android', 'ios'],
+        tags: ['web', 'native', 'android', 'ios', 'compose'],
       },
       {
         id: 'CHIP',
