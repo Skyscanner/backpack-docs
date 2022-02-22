@@ -1,7 +1,7 @@
 /*
  * Backpack - Skyscanner's Design System
  *
- * Copyright 2016-2021 Skyscanner Ltd
+ * Copyright 2016-2022 Skyscanner Ltd
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,6 +21,7 @@
 import React from 'react';
 
 import Android, { metadata as androidMetadata } from './AndroidButton.mdx';
+import Compose, { metadata as composeMetadata } from './ComposeButton.mdx';
 import IOS, { metadata as iosMetadata } from './IOSButtonPage.mdx';
 import Native, { metadata as nativeMetadata } from './NativeButtonPage.mdx';
 import Web, { metadata as webMetadata } from './WebButtonPage.mdx';
@@ -38,6 +39,7 @@ const ButtonPage = () => (
       </IntroBlurb>,
     ]}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}

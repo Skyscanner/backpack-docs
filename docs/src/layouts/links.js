@@ -1,7 +1,7 @@
 /*
  * Backpack - Skyscanner's Design System
  *
- * Copyright 2016-2021 Skyscanner Ltd
+ * Copyright 2016-2022 Skyscanner Ltd
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -114,7 +114,7 @@ const ComponentsLinks = [
         id: 'BUTTON',
         route: routes.BUTTON,
         children: 'Button',
-        tags: ['web', 'native', 'android', 'ios'],
+        tags: ['web', 'native', 'android', 'ios', 'compose'],
       },
       {
         id: 'ICON',
@@ -169,7 +169,7 @@ const ComponentsLinks = [
         id: 'CARD',
         route: routes.CARD,
         children: 'Card',
-        tags: ['web', 'native', 'android', 'ios'],
+        tags: ['web', 'native', 'android', 'ios', 'compose'],
       },
       {
         id: 'CHIP',
