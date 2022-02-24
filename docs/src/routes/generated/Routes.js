@@ -26,7 +26,6 @@ import BORDER from '../../static-pages/border.mdx';
 import RADIUS from '../../static-pages/radius.mdx';
 import SHADOW from '../../static-pages/shadow.mdx';
 import SPACING from '../../static-pages/spacing.mdx';
-import TYPESETTING from '../../static-pages/typesetting.mdx';
 import Z_INDEX from '../../static-pages/z-index.mdx';
 import BACKPACK_REACT_SCRIPTS from '../../static-pages/backpack-react-scripts.mdx';
 import BASE_STYLESHEET from '../../static-pages/base-stylesheet.mdx';
@@ -89,15 +88,6 @@ export const tokens = [{
         fileName="/docs/src/static-pages/spacing.mdx"
         content={SPACING}
         {...{"title":"Spacing","subtitle":"Spacing values for use on Android, iOS and web.","category":"tokens"}}
-      />
-    )
-  },{
-    path: ROUTES.GENERATED_TOKENS_TYPESETTING,
-    component: () => (
-      <MarkdownPage
-        fileName="/docs/src/static-pages/typesetting.mdx"
-        content={TYPESETTING}
-        {...{"title":"Typesetting","subtitle":"Typography values including font families, sizes, and line heights for use on Android, iOS and web.","category":"tokens"}}
       />
     )
   },{

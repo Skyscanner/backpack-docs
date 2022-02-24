@@ -3,30 +3,72 @@ title: Typography
 category: guidelines
 ---
 
-import { FontFace, TypeScale } from '../components/Typography';
-
 ## Table of contents
 
 ## Introduction
 
-Typography is the visualisation of our brand's voice, and we use it to communicate with our audiences in a wide range of tones.
+Everyone has a type. Skiing across an untouched piste? Yep. Being horizontal on a deserted beach? Phwoar. But we also have a thing for typography.
 
-From providing functional in-product travel details to expressive out-of home inspiration, our flexible typographic approach allows us to appear in the right way, at the right time.
+The relationship between weight, size, line height, reading width, font pairing and justification is complicated to get right – and easy to get wrong. These tiny details really change the UI – and most importantly – our travellers' experience.
 
-## Skyscanner Relative
+---
 
-<FontFace />
+## Typeface
 
-We use a type scale system for type hierarchy and to create harmony across our products. 
-Our custom cut of Relative integrates our custom measures for leading and tracking allowing very minimal engineering customisation and being fit for purpose in it’s standard form.
+#### Skyscanner Relative
 
-## Type scale
+![Typeface Skyscanner Relative](../static/typography/skyscanner_relative.jpg)
 
-We use a type scale system for type hierarchy and to create harmony across our products. 
-Our custom cut of Relative integrates our custom measures for leading and tracking allowing very minimal engineering customisation and being fit for purpose in it’s standard form.
+Our typeface is Skyscanner Relative, a unique type family of proportional graded weights. Its forms reflect the geometry of our symbol, with even stroke widths and slightly rounded corner profiles.
 
-<TypeScale />
+Optimised for use on-screen, we have worked alongside its creators, Colophon, to ensure fast load-times and perfect digital rendering.
 
-## Examples
+## Product Type scale
 
-![Typography product examples](../static/typography/typography_examples.png)
+<iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} width="800" height="1200" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fa0xD8Q9AS85pIEnNtBBf2s%2FCMS-Images%3Fnode-id%3D370%253A6306" allowfullscreen></iframe>
+
+#### Background
+
+Our product type is from the major third scale and is designed to fit our 8px baseline grid.  As the letter size increases, the line height decreases to match the intended use case. Paragraphs require more line height to allow for better legibility, whereas bold headline should never stretch beyond a line or two and can afford to be more tightly set. This achieves harmony within the scale, as well as accurate design that scales easily across multiple devices and platforms.
+
+
+#### Line height
+
+For everything to be optically balanced we need to use different line heights to achieve visual balance. For example, Hero uses a tight line height of 100%-110% (depending on Hero), whereas Body Longform uses line-height of 140% for better readability. When used stacked together, there's a perfect harmony between all styles. 
+
+![Typescale Example](../static/typography/typescale_example.jpg)
+
+
+#### Styles
+
+In the new product type scale we have 15 styles (plus two for labels), these are sub-organised into groups with semantic names. At a glance you can tell difference between subheading and body default. Let's take a look:
+
+| Style                      | Use case                                                                                                                                      |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Hero 1-5                   | Intended for large display copy. The five sizes offer flexibility around usage size with one weight. Typically, a page may contain this once. |
+| Heading 1-5                | Five heading sizes offer great flexibility for Headlines with one weight.                                                                     |
+| Paragraphs and body styles | These range between subheading and caption. These both have the largest line heights for comfortable reading of larger pieces of copy.        |
+| Footnote and caption       | Limited use cases for very small pieces of text.                                                                                              |
+| Labels                     | For use only inside of labels and buttons.                                                                                                    |
+
+#### Marketing type scale
+
+This is a full range of sizes, weights, and appropriate line heights for Marcom designs.
+
+<iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} width="800" height="1200" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fa0xD8Q9AS85pIEnNtBBf2s%2FCMS-Images%3Fnode-id%3D439%253A6494" allowfullscreen></iframe>
+
+## How to set typography using Backpack
+
+#### Web
+
+Using the BpkText component - [BpkText](https://backpack.github.io/components/text?platform=web)
+
+If using BpkText component is not possible, have a look at the Sass mixins we support here - [SassDoc](https://backpack.github.io/sassdoc/#typography)
+
+#### iOS
+
+Using the BPKLabel component - [BPKLabel](https://backpack.github.io/components/text?platform=ios)
+
+#### Android
+
+Using the BpkText component - [BpkText](https://backpack.github.io/components/text?platform=android)

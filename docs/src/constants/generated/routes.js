@@ -36,7 +36,6 @@ export const GENERATED_GUIDELINES_SHADOWS = '/guidelines/shadows';
 export const GENERATED_TOKENS_SPACING = '/tokens/spacing';
 export const GENERATED_USING_BACKPACK_STATUS = '/using/backpack-status';
 export const GENERATED_GUIDELINES_STRATEGY = '/guidelines/strategy';
-export const GENERATED_TOKENS_TYPESETTING = '/tokens/typesetting';
 export const GENERATED_GUIDELINES_TYPOGRAPHY = '/guidelines/typography';
 export const GENERATED_USING_UPDATING_THIS_WEBSITE = '/using/updating-this-website';
 export const GENERATED_TOKENS_Z_INDEX = '/tokens/z-index';
