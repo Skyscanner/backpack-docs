@@ -18,7 +18,8 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'bpk-react-utils';
+
+import { cssModules } from '../../../../backpack/packages/bpk-react-utils';
 
 import STYLES from './Heading.scss';
 

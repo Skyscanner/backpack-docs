@@ -18,8 +18,9 @@
 
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import BpkCheckbox from 'bpk-component-checkbox';
-import BpkInput from 'bpk-component-input';
+
+import BpkCheckbox from '../../../../../backpack/packages/bpk-component-checkbox';
+import BpkInput from '../../../../../backpack/packages/bpk-component-input';
 
 class InputContainer extends Component {
   constructor(props) {

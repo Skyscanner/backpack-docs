@@ -17,17 +17,21 @@
  */
 
 import React from 'react';
-import { cssModules } from 'bpk-react-utils';
-import BpkRtlToggle from 'bpk-component-rtl-toggle';
-import BpkGridToggle from 'bpk-component-grid-toggle';
-import BpkThemeToggle from 'bpk-component-theme-toggle';
-import BpkHeartIcon from 'bpk-component-icon/sm/heart';
-import { withAlignment, withDescription } from 'bpk-component-icon';
 import {
   lineHeightSm,
   iconSizeSm,
 } from '@skyscanner/bpk-foundations-web/tokens/base.es6';
-import BpkLink from 'bpk-component-link';
+
+import { cssModules } from '../../../../backpack/packages/bpk-react-utils';
+import BpkRtlToggle from '../../../../backpack/packages/bpk-component-rtl-toggle';
+import BpkGridToggle from '../../../../backpack/packages/bpk-component-grid-toggle';
+import BpkThemeToggle from '../../../../backpack/packages/bpk-component-theme-toggle';
+import BpkHeartIcon from '../../../../backpack/packages/bpk-component-icon/sm/heart';
+import {
+  withAlignment,
+  withDescription,
+} from '../../../../backpack/packages/bpk-component-icon';
+import BpkLink from '../../../../backpack/packages/bpk-component-link';
 
 import STYLES from './Footer.scss';
 

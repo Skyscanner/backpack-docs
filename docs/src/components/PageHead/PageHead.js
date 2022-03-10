@@ -18,13 +18,20 @@
 /* @flow strict */
 
 import React, { type Node } from 'react';
-import { cssModules } from 'bpk-react-utils';
-import BpkBannerAlert, { ALERT_TYPES } from 'bpk-component-banner-alert';
-import BpkLink from 'bpk-component-link';
-import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
-import { BpkList, BpkListItem } from 'bpk-component-list';
 import isString from 'lodash/isString';
 
+import { cssModules } from '../../../../backpack/packages/bpk-react-utils';
+import BpkBannerAlert, {
+  ALERT_TYPES,
+} from '../../../../backpack/packages/bpk-component-banner-alert';
+import BpkLink from '../../../../backpack/packages/bpk-component-link';
+import BpkText, {
+  WEIGHT_STYLES,
+} from '../../../../backpack/packages/bpk-component-text';
+import {
+  BpkList,
+  BpkListItem,
+} from '../../../../backpack/packages/bpk-component-list';
 import Heading from '../Heading';
 import Paragraph from '../Paragraph';
 

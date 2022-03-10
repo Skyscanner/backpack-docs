@@ -17,10 +17,12 @@
  */
 
 import React from 'react';
-import BpkLink from 'bpk-component-link';
-import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
-import BpkBlockquote from 'bpk-component-blockquote';
 
+import BpkLink from '../../../../../backpack/packages/bpk-component-link';
+import BpkText, {
+  WEIGHT_STYLES,
+} from '../../../../../backpack/packages/bpk-component-text';
+import BpkBlockquote from '../../../../../backpack/packages/bpk-component-blockquote';
 import * as ROUTES from '../../../constants/routes';
 
 import Native, {

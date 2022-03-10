@@ -19,6 +19,7 @@
 /* @flow strict */
 
 import React from 'react';
+
 import {
   BpkTable,
   BpkTableHead,
@@ -26,8 +27,7 @@ import {
   BpkTableRow,
   BpkTableHeadCell,
   BpkTableCell,
-} from 'bpk-component-table';
-
+} from '../../../../backpack/packages/bpk-component-table';
 import {
   formatTokenName,
   getTokenValue,

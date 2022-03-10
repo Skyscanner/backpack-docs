@@ -18,11 +18,12 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'bpk-react-utils';
+
+import { cssModules } from '../../../../backpack/packages/bpk-react-utils';
 import {
   BpkDescriptionDetails,
   BpkDescriptionTerm,
-} from 'bpk-component-description-list';
+} from '../../../../backpack/packages/bpk-component-description-list';
 
 import STYLES from './IconSearchResult.scss';
 import customPropTypes from './propTypes';

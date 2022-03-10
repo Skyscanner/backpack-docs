@@ -20,10 +20,12 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { cssModules } from 'bpk-react-utils';
-import BpkCloseButton from 'bpk-component-close-button';
-import BpkBreakpoint, { BREAKPOINTS } from 'bpk-component-breakpoint';
 
+import { cssModules } from '../../../../backpack/packages/bpk-react-utils';
+import BpkCloseButton from '../../../../backpack/packages/bpk-component-close-button';
+import BpkBreakpoint, {
+  BREAKPOINTS,
+} from '../../../../backpack/packages/bpk-component-breakpoint';
 import { getBackpackLogo } from '../../helpers/logo-helper';
 
 import NavList from './NavList';

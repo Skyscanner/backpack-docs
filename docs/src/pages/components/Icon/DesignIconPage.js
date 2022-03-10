@@ -18,10 +18,11 @@
 
 import _ from 'lodash';
 import React from 'react';
-import BpkButton from 'bpk-component-button';
-import { withButtonAlignment } from 'bpk-component-icon';
-import BpkSmallDownloadIcon from 'bpk-component-icon/sm/download';
-import icons from 'bpk-component-icon/all';
+
+import BpkButton from '../../../../../backpack/packages/bpk-component-button';
+import { withButtonAlignment } from '../../../../../backpack/packages/bpk-component-icon';
+import BpkSmallDownloadIcon from '../../../../../backpack/packages/bpk-component-icon/sm/download';
+import icons from '../../../../../backpack/packages/bpk-component-icon/all';
 
 import IntroBlurb from 'components/IntroBlurb';
 import IconSearchApp from 'components/IconSearchApp';

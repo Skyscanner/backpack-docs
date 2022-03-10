@@ -18,9 +18,12 @@
 
 import PropTypes from 'prop-types';
 import React from 'react';
-import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
-import { cssModules } from 'bpk-react-utils';
-import BpkFieldset from 'bpk-component-fieldset';
+
+import BpkInput, {
+  INPUT_TYPES,
+} from '../../../../backpack/packages/bpk-component-input';
+import { cssModules } from '../../../../backpack/packages/bpk-react-utils';
+import BpkFieldset from '../../../../backpack/packages/bpk-component-fieldset';
 
 import STYLES from './IconSearchForm.scss';
 

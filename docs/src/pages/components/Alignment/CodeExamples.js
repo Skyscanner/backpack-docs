@@ -25,17 +25,18 @@
  */
 
 import React from 'react';
-import { BpkCodeBlock } from 'bpk-component-code';
+
+import { BpkCodeBlock } from '../../../../../backpack/packages/bpk-component-code';
 
 import PresentationBlock from 'components/PresentationBlock';
 
 const AlignmentWithBaseTextCode = () => (
   <PresentationBlock>
     <BpkCodeBlock>
-      {`import LongArrowRightIconSm from 'bpk-component-icon/sm/long-arrow-right';
-import { withAlignment } from 'bpk-component-icon';
+      {`import LongArrowRightIconSm from '../../../../../backpack/packages/bpk-component-icon/sm/long-arrow-right';
+import { withAlignment } from '../../../../../backpack/packages/bpk-component-icon';
 import { lineHeightBase, iconSizeSm, colors } from '@skyscanner/bpk-foundations-web/tokens/base.es6';
-import BpkText from 'bpk-component-text';
+import BpkText from '../../../../../backpack/packages/bpk-component-text';
 
 const AlignedArrow = withAlignment(
   LongArrowRightIcon, lineHeightBase, iconSizeSm
@@ -53,10 +54,10 @@ const AlignedArrow = withAlignment(
 const AlignmentWithLargeTextCode = () => (
   <PresentationBlock>
     <BpkCodeBlock>
-      {`import LongArrowRightIcon from 'bpk-component-icon/lg/long-arrow-right';
-import { withAlignment } from 'bpk-component-icon';
+      {`import LongArrowRightIcon from '../../../../../backpack/packages/bpk-component-icon/lg/long-arrow-right';
+import { withAlignment } from '../../../../../backpack/packages/bpk-component-icon';
 import { lineHeightLg, iconSizeLg, colors } from '@skyscanner/bpk-foundations-web/tokens/base.es6';
-import BpkText from 'bpk-component-text';
+import BpkText from '../../../../../backpack/packages/bpk-component-text';
 
 const AlignedArrow = withAlignment(
   LongArrowRightIcon, lineHeightLg, iconSizeLg
@@ -75,10 +76,10 @@ const AlignedArrow = withAlignment(
 const IconAlignmentWithBaseTextCode = () => (
   <PresentationBlock>
     <BpkCodeBlock>
-      {`import SearchIcon from 'bpk-component-icon/lg/search';
-import { withAlignment } from 'bpk-component-icon';
+      {`import SearchIcon from '../../../../../backpack/packages/bpk-component-icon/lg/search';
+import { withAlignment } from '../../../../../backpack/packages/bpk-component-icon';
 import { iconSizeLg, lineHeightBase, colors } from '@skyscanner/bpk-foundations-web/tokens/base.es6';
-import BpkText from 'bpk-component-text';
+import BpkText from '../../../../../backpack/packages/bpk-component-text';
 
 const AlignedSpan = withAlignment(
   'span', iconSizeLg, lineHeightBase
@@ -99,10 +100,10 @@ const AlignedSpan = withAlignment(
 const IconAlignmentWithSmTextCode = () => (
   <PresentationBlock>
     <BpkCodeBlock>
-      {`import SearchIcon from 'bpk-component-icon/lg/search';
-import { withAlignment } from 'bpk-component-icon';
+      {`import SearchIcon from '../../../../../backpack/packages/bpk-component-icon/lg/search';
+import { withAlignment } from '../../../../../backpack/packages/bpk-component-icon';
 import { iconSizeLg, lineHeightSm, colors } from '@skyscanner/bpk-foundations-web/tokens/base.es6';
-import BpkText from 'bpk-component-text';
+import BpkText from '../../../../../backpack/packages/bpk-component-text';
 
 const AlignedSpanSmall = withAlignment(
   'span', iconSizeLg, lineHeightSm
@@ -123,8 +124,8 @@ const AlignedSpanSmall = withAlignment(
 const IconAlignmentWithButton = () => (
   <PresentationBlock>
     <BpkCodeBlock>
-      {`import LongArrowRightIconSm from 'bpk-component-icon/sm/long-arrow-right';
-import { withButtonAlignment } from 'bpk-component-icon';
+      {`import LongArrowRightIconSm from '../../../../../backpack/packages/bpk-component-icon/sm/long-arrow-right';
+import { withButtonAlignment } from '../../../../../backpack/packages/bpk-component-icon';
 import { colors } from '@skyscanner/bpk-foundations-web/tokens/base.es6';
 
 const AlignedArrow = withButtonAlignment(LongArrowRightIconSm);
@@ -142,8 +143,8 @@ const AlignedArrow = withButtonAlignment(LongArrowRightIconSm);
 const IconAlignmentWithLargeButton = () => (
   <PresentationBlock>
     <BpkCodeBlock>
-      {`import LongArrowRightIcon from 'bpk-component-icon/lg/long-arrow-right';
-import { withLargeButtonAlignment } from 'bpk-component-icon';
+      {`import LongArrowRightIcon from '../../../../../backpack/packages/bpk-component-icon/lg/long-arrow-right';
+import { withLargeButtonAlignment } from '../../../../../backpack/packages/bpk-component-icon';
 
 const AlignedArrow = withLargeButtonAlignment(LongArrowRightIcon);
 

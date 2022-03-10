@@ -20,12 +20,12 @@ import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import BpkContentContainer from 'bpk-component-content-container';
+
+import BpkContentContainer from '../../../../backpack/packages/bpk-component-content-container';
 import BpkHorizontalNav, {
   BpkHorizontalNavItem,
-} from 'bpk-component-horizontal-nav';
-import { cssModules } from 'bpk-react-utils';
-
+} from '../../../../backpack/packages/bpk-component-horizontal-nav';
+import { cssModules } from '../../../../backpack/packages/bpk-react-utils';
 import {
   setPlatformInLocalStorage,
   getPlatformFromLocalStorage,

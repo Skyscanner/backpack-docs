@@ -20,11 +20,11 @@
 
 import React, { Component } from 'react';
 import { withRouter, type RouterHistory } from 'react-router-dom';
-import BpkAutosuggest, {
-  BpkAutosuggestSuggestion,
-} from 'bpk-component-autosuggest';
 import { flatMap } from 'lodash';
 
+import BpkAutosuggest, {
+  BpkAutosuggestSuggestion,
+} from '../../../../backpack/packages/bpk-component-autosuggest';
 import LINKS from '../../layouts/links';
 
 import { getMatchingPages } from './search';

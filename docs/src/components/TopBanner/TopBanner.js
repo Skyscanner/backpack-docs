@@ -18,8 +18,9 @@
 /* @flow strict */
 
 import React, { type Node } from 'react';
-import { cssModules } from 'bpk-react-utils';
-import BpkLink from 'bpk-component-link';
+
+import { cssModules } from '../../../../backpack/packages/bpk-react-utils';
+import BpkLink from '../../../../backpack/packages/bpk-component-link';
 
 import STYLES from './TopBanner.scss';
 

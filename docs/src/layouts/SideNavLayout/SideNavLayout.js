@@ -18,11 +18,14 @@
 
 /* @flow strict */
 
-import BpkModal from 'bpk-component-modal';
-import { cssModules } from 'bpk-react-utils';
 import React, { Component, type Node } from 'react';
-import BpkBreakpoint, { BREAKPOINTS } from 'bpk-component-breakpoint';
-import BpkSkipLink from 'bpk-component-skip-link';
+
+import BpkModal from '../../../../backpack/packages/bpk-component-modal';
+import { cssModules } from '../../../../backpack/packages/bpk-react-utils';
+import BpkBreakpoint, {
+  BREAKPOINTS,
+} from '../../../../backpack/packages/bpk-component-breakpoint';
+import BpkSkipLink from '../../../../backpack/packages/bpk-component-skip-link';
 
 import Sidebar from './Sidebar';
 import STYLES from './SideNavLayout.scss';

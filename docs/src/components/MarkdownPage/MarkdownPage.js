@@ -19,10 +19,10 @@
 /* @flow strict */
 
 import React from 'react';
-import { cssModules } from 'bpk-react-utils';
 import Helmet from 'react-helmet';
-import BpkContentContainer from 'bpk-component-content-container';
 
+import { cssModules } from '../../../../backpack/packages/bpk-react-utils';
+import BpkContentContainer from '../../../../backpack/packages/bpk-component-content-container';
 import Heading from '../Heading';
 import IntroBlurb from '../IntroBlurb';
 import MDXContent from '../MDXContent/MDXContent';

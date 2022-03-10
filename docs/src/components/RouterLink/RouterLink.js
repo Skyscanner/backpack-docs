@@ -19,7 +19,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
-import BpkLink from 'bpk-component-link';
+
+import BpkLink from '../../../../backpack/packages/bpk-component-link';
 
 const BpkRouterLink = props => {
   const { to, ...rest } = props;

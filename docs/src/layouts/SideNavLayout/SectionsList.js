@@ -19,18 +19,20 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { cssModules } from 'bpk-react-utils';
 import omit from 'lodash/omit';
-import BpkAnimateHeight from 'bpk-animate-height';
-import { withAlignment } from 'bpk-component-icon';
-import BpkLargeArrowDown from 'bpk-component-icon/lg/arrow-down';
-import BpkLargeArrowUp from 'bpk-component-icon/lg/arrow-up';
 import {
   lineHeightLg,
   iconSizeLg,
 } from '@skyscanner/bpk-foundations-web/tokens/base.es6';
-import BpkBreakpoint, { BREAKPOINTS } from 'bpk-component-breakpoint';
 
+import { cssModules } from '../../../../backpack/packages/bpk-react-utils';
+import BpkAnimateHeight from '../../../../backpack/packages/bpk-animate-height';
+import { withAlignment } from '../../../../backpack/packages/bpk-component-icon';
+import BpkLargeArrowDown from '../../../../backpack/packages/bpk-component-icon/lg/arrow-down';
+import BpkLargeArrowUp from '../../../../backpack/packages/bpk-component-icon/lg/arrow-up';
+import BpkBreakpoint, {
+  BREAKPOINTS,
+} from '../../../../backpack/packages/bpk-component-breakpoint';
 import ComponentsIcon from '../../static/components_icon.svg';
 import DesignTokensIcon from '../../static/design_tokens_icon.svg';
 import UsingBackpackIcon from '../../static/using_bpk_icon.svg';

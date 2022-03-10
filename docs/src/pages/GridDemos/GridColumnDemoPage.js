@@ -18,12 +18,12 @@
 
 import React from 'react';
 import Helmet from 'react-helmet';
+
 import {
   BpkGridContainer,
   BpkGridRow,
   BpkGridColumn,
-} from 'bpk-component-grid';
-
+} from '../../../../backpack/packages/bpk-component-grid';
 import Heading from '../../components/Heading';
 
 import Lozenge from './Lozenge';

@@ -21,7 +21,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { format } from 'date-fns';
-import BpkText from 'bpk-component-text';
+
+import BpkText from '../../../../backpack/packages/bpk-component-text';
 
 const formatDate = (date: Date): string => format(date, 'dd/MM/yyyy');
 

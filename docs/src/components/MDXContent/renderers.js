@@ -19,7 +19,8 @@
 /* @flow strict */
 
 import React from 'react';
-import { cssModules } from 'bpk-react-utils';
+
+import { cssModules } from '../../../../backpack/packages/bpk-react-utils';
 import {
   BpkTable,
   BpkTableHead,
@@ -27,13 +28,12 @@ import {
   BpkTableRow,
   BpkTableCell,
   BpkTableHeadCell,
-} from 'bpk-component-table';
-import BpkText from 'bpk-component-text';
-import { BpkCodeBlock } from 'bpk-component-code';
-import BpkMobileScrollContainer from 'bpk-component-mobile-scroll-container';
-import BpkLink from 'bpk-component-link';
-import BpkBlockquote from 'bpk-component-blockquote';
-
+} from '../../../../backpack/packages/bpk-component-table';
+import BpkText from '../../../../backpack/packages/bpk-component-text';
+import { BpkCodeBlock } from '../../../../backpack/packages/bpk-component-code';
+import BpkMobileScrollContainer from '../../../../backpack/packages/bpk-component-mobile-scroll-container';
+import BpkLink from '../../../../backpack/packages/bpk-component-link';
+import BpkBlockquote from '../../../../backpack/packages/bpk-component-blockquote';
 import Paragraph from '../Paragraph';
 
 import STYLES from './MDXContent.scss';

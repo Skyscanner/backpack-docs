@@ -18,10 +18,13 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'bpk-react-utils';
-import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
-import BpkLink from 'bpk-component-link';
-import BpkButton from 'bpk-component-button';
+
+import { cssModules } from '../../../../backpack/packages/bpk-react-utils';
+import BpkText, {
+  WEIGHT_STYLES,
+} from '../../../../backpack/packages/bpk-component-text';
+import BpkLink from '../../../../backpack/packages/bpk-component-link';
+import BpkButton from '../../../../backpack/packages/bpk-component-button';
 
 import STYLES from './CookieBanner.scss';
 

@@ -19,10 +19,13 @@
 /* @flow strict */
 
 import React from 'react';
-import { cssModules } from 'bpk-react-utils';
-import MenuIcon from 'bpk-component-icon/lg/menu';
-import BpkCloseButton from 'bpk-component-close-button';
-import BpkBreakpoint, { BREAKPOINTS } from 'bpk-component-breakpoint';
+
+import { cssModules } from '../../../../backpack/packages/bpk-react-utils';
+import MenuIcon from '../../../../backpack/packages/bpk-component-icon/lg/menu';
+import BpkCloseButton from '../../../../backpack/packages/bpk-component-close-button';
+import BpkBreakpoint, {
+  BREAKPOINTS,
+} from '../../../../backpack/packages/bpk-component-breakpoint';
 
 import STYLES from './MenuToggle.scss';
 

@@ -19,10 +19,10 @@
 /* @flow strict */
 
 import React from 'react';
-import { cssModules } from 'bpk-react-utils';
-import BpkLink from 'bpk-component-link';
-import BpkButton from 'bpk-component-button';
 
+import { cssModules } from '../../../../backpack/packages/bpk-react-utils';
+import BpkLink from '../../../../backpack/packages/bpk-component-link';
+import BpkButton from '../../../../backpack/packages/bpk-component-button';
 import sassdocLogo from '../../static/sassdoc-logo.svg';
 
 import STYLES from './MarkdownPage.scss';
