@@ -35,6 +35,7 @@ module.exports = function config(api) {
             'backpack-ios': './backpack-ios',
             'backpack-android': './backpack-android',
             'backpack-react-native': './backpack-react-native',
+            'backpack': './backpack',
           },
         },
       ],

@@ -18,10 +18,11 @@
 
 import PropTypes from 'prop-types';
 import React from 'react';
-import { cssModules } from 'bpk-react-utils';
-import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
 
 import STYLES from './color-swatch.scss';
+
+import { cssModules } from 'backpack/packages/bpk-react-utils';
+import BpkText, { WEIGHT_STYLES } from 'backpack/packages/bpk-component-text';
 
 const getClassName = cssModules(STYLES);
 

@@ -19,13 +19,13 @@
 /* @flow strict */
 
 import React from 'react';
-import BpkLink from 'bpk-component-link';
-import { BpkCode } from 'bpk-component-code';
 
 import * as ROUTES from '../../../constants/routes';
 
 import Web, { metadata as webMetadata } from './WebAlignment.mdx';
 
+import BpkLink from 'backpack/packages/bpk-component-link';
+import { BpkCode } from 'backpack/packages/bpk-component-code';
 import MarkdownPage from 'components/MarkdownPage';
 import DocsPageWrapper from 'components/DocsPageWrapper';
 import Heading from 'components/Heading';

@@ -18,11 +18,12 @@
 /* @flow strict */
 import React from 'react';
 import PropTypes from 'prop-types';
-import BpkCard from 'bpk-component-card';
-import BpkText from 'bpk-component-text';
-import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './HomePageCard.scss';
+
+import BpkCard from 'backpack/packages/bpk-component-card';
+import BpkText from 'backpack/packages/bpk-component-text';
+import { cssModules } from 'backpack/packages/bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 

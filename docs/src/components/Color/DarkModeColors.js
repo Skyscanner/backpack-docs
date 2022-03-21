@@ -18,11 +18,12 @@
 
 import React from 'react';
 import { colors } from '@skyscanner/bpk-foundations-web/tokens/base.es6';
-import { cssModules } from 'bpk-react-utils';
 
 import ColorSwatch from '../ColorSwatch';
 
 import STYLES from './colors-page.scss';
+
+import { cssModules } from 'backpack/packages/bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 

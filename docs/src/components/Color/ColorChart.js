@@ -19,14 +19,15 @@
 /* @flow strict */
 
 import React, { Component, Fragment } from 'react';
-import { cssModules } from 'bpk-react-utils';
 import getContrastRatio from 'get-contrast-ratio';
-import BpkText from 'bpk-component-text';
-import BpkRadio from 'bpk-component-radio';
 import { colors } from '@skyscanner/bpk-foundations-web/tokens/base.es6';
 
 import STYLES from './color-chart.scss';
 import brandColorCombinations from './brandColorCombinations';
+
+import BpkRadio from 'backpack/packages/bpk-component-radio';
+import BpkText from 'backpack/packages/bpk-component-text';
+import { cssModules } from 'backpack/packages/bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 

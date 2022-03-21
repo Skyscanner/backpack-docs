@@ -20,9 +20,6 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { cssModules } from 'bpk-react-utils';
-import BpkCloseButton from 'bpk-component-close-button';
-import BpkBreakpoint, { BREAKPOINTS } from 'bpk-component-breakpoint';
 
 import { getBackpackLogo } from '../../helpers/logo-helper';
 
@@ -30,6 +27,12 @@ import NavList from './NavList';
 import STYLES from './Sidebar.scss';
 import SectionsList from './SectionsList';
 import { type Category } from './common-types';
+
+import BpkBreakpoint, {
+  BREAKPOINTS,
+} from 'backpack/packages/bpk-component-breakpoint';
+import BpkCloseButton from 'backpack/packages/bpk-component-close-button';
+import { cssModules } from 'backpack/packages/bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 

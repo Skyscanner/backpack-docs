@@ -18,10 +18,11 @@
 
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import BpkRadio from 'bpk-component-radio';
-import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './forms-page.scss';
+
+import BpkRadio from 'backpack/packages/bpk-component-radio';
+import { cssModules } from 'backpack/packages/bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 

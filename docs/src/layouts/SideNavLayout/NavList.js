@@ -19,9 +19,6 @@
 
 import React, { Component } from 'react';
 import { NavLink as RouterNavLink } from 'react-router-dom';
-import { cssModules } from 'bpk-react-utils';
-import ArrowIcon from 'bpk-component-icon/sm/arrow-right';
-import { withRtlSupport } from 'bpk-component-icon';
 
 import NavListFilter, { type Option as FilterOption } from './NavListFilter';
 import STYLES from './NavList.scss';
@@ -32,6 +29,9 @@ import {
   type Category,
 } from './common-types';
 
+import { withRtlSupport } from 'backpack/packages/bpk-component-icon';
+import ArrowIcon from 'backpack/packages/bpk-component-icon/sm/arrow-right';
+import { cssModules } from 'backpack/packages/bpk-react-utils';
 import { setPlatformInLocalStorage } from 'helpers/platform-helper';
 import PageSearch from 'components/PageSearch';
 

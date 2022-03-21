@@ -18,9 +18,10 @@
 
 import PropTypes from 'prop-types';
 import React from 'react';
-import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './grid-demo-pages.scss';
+
+import { cssModules } from 'backpack/packages/bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 

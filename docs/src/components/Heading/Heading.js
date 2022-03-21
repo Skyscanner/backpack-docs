@@ -18,9 +18,10 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './Heading.scss';
+
+import { cssModules } from 'backpack/packages/bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 

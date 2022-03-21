@@ -18,15 +18,16 @@
 
 import React from 'react';
 import Helmet from 'react-helmet';
-import {
-  BpkGridContainer,
-  BpkGridRow,
-  BpkGridColumn,
-} from 'bpk-component-grid';
 
 import Heading from '../../components/Heading';
 
 import Lozenge from './Lozenge';
+
+import {
+  BpkGridContainer,
+  BpkGridRow,
+  BpkGridColumn,
+} from 'backpack/packages/bpk-component-grid';
 
 const pageTitle = 'Grid Column Demo';
 
