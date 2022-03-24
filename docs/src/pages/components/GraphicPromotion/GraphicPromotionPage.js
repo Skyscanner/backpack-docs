@@ -16,27 +16,28 @@
  * limitations under the License.
  */
 
+/* @flow strict */
+
 import React from 'react';
 
-import Web, { metadata as webMetadata } from './WebGraphicPromo.mdx';
+import Web, { metadata as webMetadata } from './WebGraphicPromotion.mdx';
 
-import DocsPageWrapper from 'components/DocsPageWrapper';
-import IntroBlurb from 'components/IntroBlurb';
 import MarkdownPage from 'components/MarkdownPage';
+import IntroBlurb from 'components/IntroBlurb';
+import DocsPageWrapper from 'components/DocsPageWrapper';
 
-const blurb = [
-  <IntroBlurb>
-    The blockquote component allows the creation of a section that is quoted
-    from another source.
-  </IntroBlurb>,
-];
-
-const BlockquotesPage = () => (
+const Page = () => (
   <DocsPageWrapper
-    title="Blockquote"
-    blurb={blurb}
+    title="Graphic promotion"
+    blurb={[
+      <IntroBlurb>
+        The graphic promotion component is used to show advertisements. It has
+        different configurations depending on the type of promotion, e.g.
+        sponsored, Skyscanner advertisement, etc.
+      </IntroBlurb>,
+    ]}
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 
-export default BlockquotesPage;
+export default Page;

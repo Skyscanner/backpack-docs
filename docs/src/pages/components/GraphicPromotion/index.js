@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
-import page from './GraphicPromoPage';
+/* @flow strict */
+
+import page from './GraphicPromotionPage';
 
 export default page;

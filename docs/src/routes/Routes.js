@@ -58,6 +58,7 @@ import RatingPage from '../pages/components/Rating';
 import FormsPage from '../pages/components/Forms';
 import FormLabelPage from '../pages/components/FormLabel';
 import FormValidationPage from '../pages/components/FormValidation';
+import GraphicPromotionPage from '../pages/components/GraphicPromotion';
 import HorizontalGridPage from '../pages/components/HorizontalGrid';
 import HorizontalNavPage from '../pages/components/HorizontalNav';
 import IconPage from '../pages/components/Icon';
@@ -211,6 +212,7 @@ export const ROUTES_MAPPINGS = [
       { path: ROUTES.FORM, component: FormsPage },
       { path: ROUTES.FORM_LABEL, component: FormLabelPage },
       { path: ROUTES.FORM_VALIDATION, component: FormValidationPage },
+      { path: ROUTES.GRAPHIC_PROMOTION, component: GraphicPromotionPage },
       {
         path: ROUTES.HORIZONTAL_GRID,
         component: HorizontalGridPage,
