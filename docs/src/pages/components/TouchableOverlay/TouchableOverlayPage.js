@@ -17,8 +17,6 @@
  */
 
 import React from 'react';
-import BpkText, { WEIGHT_STYLES } from 'bpk-component-text';
-import BpkBlockquote from 'bpk-component-blockquote';
 
 import * as ROUTES from '../../../constants/routes';
 
@@ -26,6 +24,8 @@ import Native, {
   metadata as nativeMetadata,
 } from './NativeTouchableOverlay.mdx';
 
+import BpkText, { WEIGHT_STYLES } from 'backpack/packages/bpk-component-text';
+import BpkBlockquote from 'backpack/packages/bpk-component-blockquote';
 import RouterLink from 'components/RouterLink';
 import MarkdownPage from 'components/MarkdownPage';
 import IntroBlurb from 'components/IntroBlurb';

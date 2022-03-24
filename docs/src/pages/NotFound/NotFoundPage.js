@@ -18,14 +18,15 @@
 
 import React from 'react';
 import Helmet from 'react-helmet';
-import BpkText from 'bpk-component-text';
-import BpkLink from 'bpk-component-link';
-import { cssModules } from 'bpk-react-utils';
 
 import BackpackLogoMark from '../../static/backpack-logo-mark.svg';
 import PageSearch from '../../components/PageSearch';
 
 import STYLES from './not-found-page.scss';
+
+import BpkText from 'backpack/packages/bpk-component-text';
+import BpkLink from 'backpack/packages/bpk-component-link';
+import { cssModules } from 'backpack/packages/bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 

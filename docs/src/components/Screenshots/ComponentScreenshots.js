@@ -18,20 +18,21 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import BpkText from 'bpk-component-text';
-import BpkPanel from 'bpk-component-panel';
-import { cssModules } from 'bpk-react-utils';
+
+import STYLES from './ComponentScreenshots.scss';
+
+import BpkText from 'backpack/packages/bpk-component-text';
+import BpkPanel from 'backpack/packages/bpk-component-panel';
+import { cssModules } from 'backpack/packages/bpk-react-utils';
 import BpkImage, {
   withLazyLoading,
   withLoadingBehavior,
-} from 'bpk-component-image';
+} from 'backpack/packages/bpk-component-image';
 import {
   BpkDescriptionList,
   BpkDescriptionDetails,
   BpkDescriptionTerm,
-} from 'bpk-component-description-list';
-
-import STYLES from './ComponentScreenshots.scss';
+} from 'backpack/packages/bpk-component-description-list';
 
 const getClassName = cssModules(STYLES);
 const documentIfExists = typeof window !== 'undefined' ? document : null;

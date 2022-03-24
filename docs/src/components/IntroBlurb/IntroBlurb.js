@@ -16,10 +16,13 @@
  * limitations under the License.
  */
 
-import BpkText from 'bpk-component-text';
-import { cssModules, withDefaultProps } from 'bpk-react-utils';
-
 import STYLES from './IntroBlurb.scss';
+
+import BpkText from 'backpack/packages/bpk-component-text';
+import {
+  cssModules,
+  withDefaultProps,
+} from 'backpack/packages/bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 

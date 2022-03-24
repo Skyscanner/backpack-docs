@@ -20,11 +20,6 @@ import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import BpkContentContainer from 'bpk-component-content-container';
-import BpkHorizontalNav, {
-  BpkHorizontalNavItem,
-} from 'bpk-component-horizontal-nav';
-import { cssModules } from 'bpk-react-utils';
 
 import {
   setPlatformInLocalStorage,
@@ -35,6 +30,12 @@ import DesignPlaceholderPage from '../../pages/components/DesignPlaceholder';
 
 import Blurb from './Blurb';
 import STYLES from './DocsPageWrapper.scss';
+
+import { cssModules } from 'backpack/packages/bpk-react-utils';
+import BpkHorizontalNav, {
+  BpkHorizontalNavItem,
+} from 'backpack/packages/bpk-component-horizontal-nav';
+import BpkContentContainer from 'backpack/packages/bpk-component-content-container';
 
 const getClassName = cssModules(STYLES);
 

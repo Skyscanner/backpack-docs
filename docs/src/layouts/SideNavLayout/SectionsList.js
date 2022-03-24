@@ -19,17 +19,11 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { cssModules } from 'bpk-react-utils';
 import omit from 'lodash/omit';
-import BpkAnimateHeight from 'bpk-animate-height';
-import { withAlignment } from 'bpk-component-icon';
-import BpkLargeArrowDown from 'bpk-component-icon/lg/arrow-down';
-import BpkLargeArrowUp from 'bpk-component-icon/lg/arrow-up';
 import {
   lineHeightLg,
   iconSizeLg,
 } from '@skyscanner/bpk-foundations-web/tokens/base.es6';
-import BpkBreakpoint, { BREAKPOINTS } from 'bpk-component-breakpoint';
 
 import ComponentsIcon from '../../static/components_icon.svg';
 import DesignTokensIcon from '../../static/design_tokens_icon.svg';
@@ -38,6 +32,15 @@ import GuidelinesIcon from '../../static/guidelines_icon.svg';
 import * as ROUTES from '../../constants/routes';
 
 import STYLES from './SectionsList.scss';
+
+import BpkBreakpoint, {
+  BREAKPOINTS,
+} from 'backpack/packages/bpk-component-breakpoint';
+import BpkLargeArrowUp from 'backpack/packages/bpk-component-icon/lg/arrow-up';
+import BpkLargeArrowDown from 'backpack/packages/bpk-component-icon/lg/arrow-down';
+import { withAlignment } from 'backpack/packages/bpk-component-icon';
+import BpkAnimateHeight from 'backpack/packages/bpk-animate-height';
+import { cssModules } from 'backpack/packages/bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 

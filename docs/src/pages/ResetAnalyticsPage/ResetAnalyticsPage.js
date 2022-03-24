@@ -19,10 +19,11 @@
 /* @flow strict */
 
 import React, { useEffect, useState } from 'react';
-import BpkText from 'bpk-component-text';
-import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './reset-analytics.scss';
+
+import BpkText from 'backpack/packages/bpk-component-text';
+import { cssModules } from 'backpack/packages/bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 

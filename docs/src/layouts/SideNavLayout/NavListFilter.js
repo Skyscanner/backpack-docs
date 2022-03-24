@@ -17,10 +17,11 @@
  */
 /* @flow strict */
 import React from 'react';
-import { cssModules } from 'bpk-react-utils';
-import BpkRadio from 'bpk-component-radio';
 
 import STYLES from './NavListFilter.scss';
+
+import { cssModules } from 'backpack/packages/bpk-react-utils';
+import BpkRadio from 'backpack/packages/bpk-component-radio';
 
 const getClassName = cssModules(STYLES);
 

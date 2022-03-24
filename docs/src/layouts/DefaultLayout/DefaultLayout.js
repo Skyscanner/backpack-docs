@@ -19,15 +19,16 @@
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { updateOnThemeChange } from 'bpk-component-theme-toggle';
-import BpkThemeProvider from 'bpk-theming';
-import { cssModules } from 'bpk-react-utils';
 
 import themeAttributes from '../../themeableAttributes';
 import Footer from '../../components/Footer';
 import Analytics from '../../components/Analytics';
 
 import STYLES from './default-layout.scss';
+
+import { cssModules } from 'backpack/packages/bpk-react-utils';
+import BpkThemeProvider from 'backpack/packages/bpk-theming';
+import { updateOnThemeChange } from 'backpack/packages/bpk-component-theme-toggle';
 
 const EnhancedThemeProvider = updateOnThemeChange(BpkThemeProvider);
 const getClassName = cssModules(STYLES);

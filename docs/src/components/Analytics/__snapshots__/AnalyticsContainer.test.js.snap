@@ -17,7 +17,7 @@ exports[`AnalyticsContainer renders correctly 1`] = `
       className="bpkdocs-cookie-banner__message-wrapper"
     >
       <span
-        className="bpk-text bpk-text--base"
+        className="bpk-text bpk-text--body-default"
       >
         Skyscanner uses Google Analytics on this site to help us analyse its use and improve our services. You can opt out by pressing "reject" or at any other time by using the
          

@@ -19,11 +19,12 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import isString from 'lodash/isString';
-import { cssModules } from 'bpk-react-utils';
 
 import Paragraph from '../Paragraph';
 
 import STYLES from './DocsPageWrapper.scss';
+
+import { cssModules } from 'backpack/packages/bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 
