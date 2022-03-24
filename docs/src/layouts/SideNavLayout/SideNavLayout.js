@@ -18,16 +18,19 @@
 
 /* @flow strict */
 
-import BpkModal from 'bpk-component-modal';
-import { cssModules } from 'bpk-react-utils';
 import React, { Component, type Node } from 'react';
-import BpkBreakpoint, { BREAKPOINTS } from 'bpk-component-breakpoint';
-import BpkSkipLink from 'bpk-component-skip-link';
 
 import Sidebar from './Sidebar';
 import STYLES from './SideNavLayout.scss';
 import MenuToggle from './MenuToggle';
 import { type Category } from './common-types';
+
+import BpkSkipLink from 'backpack/packages/bpk-component-skip-link';
+import BpkBreakpoint, {
+  BREAKPOINTS,
+} from 'backpack/packages/bpk-component-breakpoint';
+import { cssModules } from 'backpack/packages/bpk-react-utils';
+import BpkModal from 'backpack/packages/bpk-component-modal';
 
 const getClassName = cssModules(STYLES);
 

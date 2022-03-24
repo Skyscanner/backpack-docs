@@ -19,6 +19,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import zip from 'lodash/zip';
+
+import STYLES from './UsageTable.scss';
+
 import {
   BpkTable,
   BpkTableHead,
@@ -26,12 +29,10 @@ import {
   BpkTableRow,
   BpkTableHeadCell,
   BpkTableCell,
-} from 'bpk-component-table';
-import { cssModules } from 'bpk-react-utils';
-import BpkTickIcon from 'bpk-component-icon/sm/tick-circle';
-import BpkCloseIcon from 'bpk-component-icon/sm/close-circle';
-
-import STYLES from './UsageTable.scss';
+} from 'backpack/packages/bpk-component-table';
+import { cssModules } from 'backpack/packages/bpk-react-utils';
+import BpkTickIcon from 'backpack/packages/bpk-component-icon/sm/tick-circle';
+import BpkCloseIcon from 'backpack/packages/bpk-component-icon/sm/close-circle';
 
 const getClassName = cssModules(STYLES);
 

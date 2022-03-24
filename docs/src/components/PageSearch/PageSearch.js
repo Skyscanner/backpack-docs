@@ -20,14 +20,15 @@
 
 import React, { Component } from 'react';
 import { withRouter, type RouterHistory } from 'react-router-dom';
-import BpkAutosuggest, {
-  BpkAutosuggestSuggestion,
-} from 'bpk-component-autosuggest';
 import { flatMap } from 'lodash';
 
 import LINKS from '../../layouts/links';
 
 import { getMatchingPages } from './search';
+
+import BpkAutosuggest, {
+  BpkAutosuggestSuggestion,
+} from 'backpack/packages/bpk-component-autosuggest';
 
 const FlattenedLinks = flatMap(LINKS, section => section.links);
 

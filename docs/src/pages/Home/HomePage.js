@@ -18,8 +18,6 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import BpkText from 'bpk-component-text';
-import { cssModules } from 'bpk-react-utils';
 
 import * as ROUTES from '../../constants/routes';
 import * as EXTERNAL_ROUTES from '../../constants/external-routes';
@@ -44,6 +42,9 @@ import PageSearch from '../../components/PageSearch';
 
 import UpdatedAt from './UpdatedAt';
 import STYLES from './home-page.scss';
+
+import { cssModules } from 'backpack/packages/bpk-react-utils';
+import BpkText from 'backpack/packages/bpk-component-text';
 
 const getClassName = cssModules(STYLES);
 

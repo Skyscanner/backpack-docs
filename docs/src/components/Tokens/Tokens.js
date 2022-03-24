@@ -19,14 +19,6 @@
 /* @flow strict */
 
 import React from 'react';
-import {
-  BpkTable,
-  BpkTableHead,
-  BpkTableBody,
-  BpkTableRow,
-  BpkTableHeadCell,
-  BpkTableCell,
-} from 'bpk-component-table';
 
 import {
   formatTokenName,
@@ -36,6 +28,15 @@ import {
   type Platform,
   type Token,
 } from '../../helpers/tokens-helper';
+
+import {
+  BpkTable,
+  BpkTableHead,
+  BpkTableBody,
+  BpkTableRow,
+  BpkTableHeadCell,
+  BpkTableCell,
+} from 'backpack/packages/bpk-component-table';
 
 type Props = {
   tokens: RawTokens,

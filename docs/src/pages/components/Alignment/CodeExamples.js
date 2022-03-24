@@ -25,8 +25,8 @@
  */
 
 import React from 'react';
-import { BpkCodeBlock } from 'bpk-component-code';
 
+import { BpkCodeBlock } from 'backpack/packages/bpk-component-code';
 import PresentationBlock from 'components/PresentationBlock';
 
 const AlignmentWithBaseTextCode = () => (

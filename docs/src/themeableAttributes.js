@@ -16,48 +16,48 @@
  * limitations under the License.
  */
 
-import { themeAttributes as accordionThemeAttributes } from 'bpk-component-accordion';
-import { themeAttributes as badgeThemeAttributes } from 'bpk-component-badge';
-import { themeAttributes as bannerAlertThemeAttributes } from 'bpk-component-banner-alert';
-import { themeAttributes as barchartThemeAttributes } from 'bpk-component-barchart';
-import { themeAttributes as blockquoteThemeAttributes } from 'bpk-component-blockquote';
+import { themeAttributes as accordionThemeAttributes } from 'backpack/packages/bpk-component-accordion';
+import { themeAttributes as badgeThemeAttributes } from 'backpack/packages/bpk-component-badge';
+import { themeAttributes as bannerAlertThemeAttributes } from 'backpack/packages/bpk-component-banner-alert';
+import { themeAttributes as barchartThemeAttributes } from 'backpack/packages/bpk-component-barchart';
+import { themeAttributes as blockquoteThemeAttributes } from 'backpack/packages/bpk-component-blockquote';
 import {
   buttonThemeAttributes,
   primaryThemeAttributes,
   secondaryThemeAttributes,
   destructiveThemeAttributes,
   featuredThemeAttributes,
-} from 'bpk-component-button';
-import { themeAttributes as calendarThemeAttributes } from 'bpk-component-calendar';
-import { themeAttributes as checkboxThemeAttributes } from 'bpk-component-checkbox';
-import { themeAttributes as datepickerThemeAttributes } from 'bpk-component-datepicker';
-import { themeAttributes as drawerThemeAttributes } from 'bpk-component-drawer';
-import { themeAttributes as fieldsetThemeAttributes } from 'bpk-component-fieldset';
-import { themeAttributes as formValidationThemeAttributes } from 'bpk-component-form-validation';
-import { themeAttributes as horizontalNavThemeAttributes } from 'bpk-component-horizontal-nav';
-import { themeAttributes as inputThemeAttributes } from 'bpk-component-input';
+} from 'backpack/packages/bpk-component-button';
+import { themeAttributes as calendarThemeAttributes } from 'backpack/packages/bpk-component-calendar';
+import { themeAttributes as checkboxThemeAttributes } from 'backpack/packages/bpk-component-checkbox';
+import { themeAttributes as datepickerThemeAttributes } from 'backpack/packages/bpk-component-datepicker';
+import { themeAttributes as drawerThemeAttributes } from 'backpack/packages/bpk-component-drawer';
+import { themeAttributes as fieldsetThemeAttributes } from 'backpack/packages/bpk-component-fieldset';
+import { themeAttributes as formValidationThemeAttributes } from 'backpack/packages/bpk-component-form-validation';
+import { themeAttributes as horizontalNavThemeAttributes } from 'backpack/packages/bpk-component-horizontal-nav';
+import { themeAttributes as inputThemeAttributes } from 'backpack/packages/bpk-component-input';
 import {
   linkAlternateThemeAttributes,
   themeAttributes as linkThemeAttributes,
-} from 'bpk-component-link';
+} from 'backpack/packages/bpk-component-link';
 import {
   defaultIconMarkerThemeAttributes,
   priceMarkerThemeAttributes,
-} from 'bpk-component-map';
-import { themeAttributes as modalThemeAttributes } from 'bpk-component-modal';
-import { themeAttributes as nudgerThemeAttributes } from 'bpk-component-nudger';
-import { themeAttributes as paginationThemeAttributes } from 'bpk-component-pagination';
-import { themeAttributes as popoverThemeAttributes } from 'bpk-component-popover';
-import { themeAttributes as progressThemeAttributes } from 'bpk-component-progress';
-import { themeAttributes as radioThemeAttributes } from 'bpk-component-radio';
-import { themeAttributes as ratingThemeAttributes } from 'bpk-component-rating';
-import { themeAttributes as selectThemeAttributes } from 'bpk-component-select';
-import { themeAttributes as sliderThemeAttributes } from 'bpk-component-slider';
-import { themeAttributes as spinnerThemeAttributes } from 'bpk-component-spinner';
-import { themeAttributes as switchThemeAttributues } from 'bpk-component-switch';
-import { themeAttributes as starRatingThemeAttributes } from 'bpk-component-star-rating';
-import { themeAttributes as textareaThemeAttributes } from 'bpk-component-textarea';
-import { themeAttributes as navigationBarThemeAttributes } from 'bpk-component-navigation-bar';
+} from 'backpack/packages/bpk-component-map';
+import { themeAttributes as modalThemeAttributes } from 'backpack/packages/bpk-component-modal';
+import { themeAttributes as nudgerThemeAttributes } from 'backpack/packages/bpk-component-nudger';
+import { themeAttributes as paginationThemeAttributes } from 'backpack/packages/bpk-component-pagination';
+import { themeAttributes as popoverThemeAttributes } from 'backpack/packages/bpk-component-popover';
+import { themeAttributes as progressThemeAttributes } from 'backpack/packages/bpk-component-progress';
+import { themeAttributes as radioThemeAttributes } from 'backpack/packages/bpk-component-radio';
+import { themeAttributes as ratingThemeAttributes } from 'backpack/packages/bpk-component-rating';
+import { themeAttributes as selectThemeAttributes } from 'backpack/packages/bpk-component-select';
+import { themeAttributes as sliderThemeAttributes } from 'backpack/packages/bpk-component-slider';
+import { themeAttributes as spinnerThemeAttributes } from 'backpack/packages/bpk-component-spinner';
+import { themeAttributes as switchThemeAttributues } from 'backpack/packages/bpk-component-switch';
+import { themeAttributes as starRatingThemeAttributes } from 'backpack/packages/bpk-component-star-rating';
+import { themeAttributes as textareaThemeAttributes } from 'backpack/packages/bpk-component-textarea';
+import { themeAttributes as navigationBarThemeAttributes } from 'backpack/packages/bpk-component-navigation-bar';
 
 const docsThemeAttributes = [
   'docsSidebarBackground',

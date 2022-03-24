@@ -19,14 +19,15 @@
 import _ from 'lodash';
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'bpk-react-utils';
-import { BpkDescriptionList } from 'bpk-component-description-list';
 
 import Heading from '../Heading';
 
 import STYLES from './IconSearchResults.scss';
 import customPropTypes from './propTypes';
 import IconSearchResult from './IconSearchResult';
+
+import { BpkDescriptionList } from 'backpack/packages/bpk-component-description-list';
+import { cssModules } from 'backpack/packages/bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 
