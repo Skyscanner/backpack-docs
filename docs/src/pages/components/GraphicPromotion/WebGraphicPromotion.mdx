@@ -6,8 +6,8 @@ githubPath: bpk-component-graphic-promotion
 
 
 import PresentationBlock from 'components/PresentationBlock';
-import Readme from 'bpk-component-graphic-promotion/README.md';
-import { DefaultExample } from 'bpk-component-graphic-promotion/examples';
+import Readme from 'backpack/packages/bpk-component-graphic-promotion/README.md';
+import { DefaultExample, CenterAlignedExample, RightAlignedExample, InvertedPortraitExample, MinimalisticExample, NonSponsoredExample } from 'backpack/examples/bpk-component-graphic-promotion/examples';
 
 ## Table of contents
 
@@ -31,17 +31,23 @@ import { DefaultExample } from 'bpk-component-graphic-promotion/examples';
 
 ## Inverted Portrait Example
 
+View this page on a mobile device to see the sponsored text and title change locations. This configuration does not affect desktop users.
+
 <PresentationBlock>
   <InvertedPortraitExample />
 </PresentationBlock>
 
-## MinimalisticExample
+## Minimalistic Example
+
+This configuration does not include the `subheading` and `tagline` props.
 
 <PresentationBlock>
   <MinimalisticExample />
 </PresentationBlock>
 
 ## Non-Sponsored Example
+
+Omitting the `sponsor` prop will remove the sponsored label and sponsor logo.
 
 <PresentationBlock>
   <NonSponsoredExample />

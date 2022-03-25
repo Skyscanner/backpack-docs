@@ -33,7 +33,7 @@ const Page = () => (
       <IntroBlurb>
         The graphic promotion component is used to show advertisements. It has
         different configurations depending on the type of promotion, e.g.
-        sponsored, Skyscanner advertisement, etc.
+        sponsored, Skyscanner advertisement, layout, etc.
       </IntroBlurb>,
     ]}
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
