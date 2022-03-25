@@ -30,6 +30,13 @@ const ComponentsLinks = [
     sort: true,
     links: [
       {
+        id: 'GRAPHIC_PROMOTION',
+        route: routes.GRAPHIC_PROMOTION,
+        children: 'Graphic promotion',
+        tags: ['web'],
+        keywords: ['graphic promotion', 'advert'],
+      },
+      {
         id: 'SKIP_LINK',
         route: routes.SKIP_LINK,
         children: 'Skip link',
