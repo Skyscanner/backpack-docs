@@ -29,7 +29,7 @@
     "start": "npm run docs",
     "docs": "npm run submodules:pull && npm run build-backpack && npm run generate-markdown-pages && BPK_BUILT_AT=$( date -u +%s ) webpack-dev-server --open",
     "docs:dist": "npm run submodules:pull && npm run clean:dist && npm run build-backpack && npm run generate-markdown-pages && NODE_ENV=production BPK_BUILT_AT=$( date -u +%s ) webpack --progress --display=minimal --bail",
-    "build-backpack": "(cd backpack && npm ci && npm run build && npm uninstall react react-dom)",
+    "build-backpack": "(cd backpack && npm ci && npm run build && npm uninstall react react-dom @storybook/addon-actions)",
     "test": "npm run lint && npm run flow && npm run spellcheck && npm run jest",
     "jest": "jest",
     "jest:coverage": "jest --coverage",
