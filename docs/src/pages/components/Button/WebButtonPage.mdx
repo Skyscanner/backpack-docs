@@ -9,20 +9,13 @@ import PresentationBlock from 'components/PresentationBlock';
 import UsageTable from 'components/UsageTable';
 import Readme from 'backpack/packages/bpk-component-button/README.md';
 import {
-  PrimaryExample,
+  PrimaryOnDarkExample,
+  PrimaryOnLightExample,
   SecondaryExample,
   DestructiveExample,
-  LinkExample,
   FeaturedExample,
-  OutlineExample,
   ComponentButtonPrimaryExample,
-  ComponentButtonSecondaryExample,
-  ComponentButtonDestructiveExample,
   ComponentButtonLinkExample,
-  ComponentButtonFeaturedExample,
-  ComponentButtonOutlineExample,
-  MixedExample,
-  AnchorTagsExample,
 } from 'backpack/examples/bpk-component-button/examples';
 import { DocsPrimary as LoadingExample } from 'backpack/examples/bpk-component-loading-button/examples';
 
@@ -73,12 +66,20 @@ This button can be used to highlight destructive actions.
   <DestructiveExample />
 </PresentationBlock>
 
-## Outline
+## Primary on dark
 
 This button can be used on dark coloured backgrounds.
 
 <PresentationBlock darkBackground>
-  <OutlineExample />
+  <PrimaryOnDarkExample />
+</PresentationBlock>
+
+## Primary on light
+
+This button can be used on light coloured backgrounds.
+
+<PresentationBlock>
+  <PrimaryOnLightExample />
 </PresentationBlock>
 
 ## Link buttons
