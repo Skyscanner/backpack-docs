@@ -81,7 +81,7 @@ const PlatformNav = ({
       selected={platform === 'compose'}
       onClick={onComposeClick}
     >
-      Compose
+      Compose (Preview)
     </BpkHorizontalNavItem>
     <BpkHorizontalNavItem
       name="ios"

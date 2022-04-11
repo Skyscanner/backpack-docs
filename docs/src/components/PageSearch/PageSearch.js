@@ -43,7 +43,7 @@ const convertTagsToPlatformsString = (
     platforms.push('Android');
   }
   if (tags.indexOf('compose') !== -1) {
-    platforms.push('Compose');
+    platforms.push('Compose (Preview)');
   }
   if (tags.indexOf('ios') !== -1) {
     platforms.push('iOS');
