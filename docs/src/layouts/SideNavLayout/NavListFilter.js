@@ -96,7 +96,7 @@ const NavListFilter = (props: Props) => (
       className={getClassName('bpkdocs-nav-list-filter__option')}
       value={OPTIONS.compose}
       name="filter"
-      label="Compose (Preview)"
+      label="Compose"
       checked={props.selected === OPTIONS.compose}
       onChange={e =>
         e.currentTarget.value === OPTIONS.compose &&
