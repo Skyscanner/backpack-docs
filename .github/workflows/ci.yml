@@ -28,10 +28,8 @@ jobs:
       - name: nvm use
         run: nvm use
 
-      - name: Check out submodules
-        run: |
-          git submodule update --init --recursive
-          npm run submodules:pull
+      - name: Checkout submodules
+        run: git submodule update --init --recursive
 
       - name: Install deps
         run: |
