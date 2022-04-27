@@ -11,5 +11,3 @@ updates:
   versioning-strategy: increase-if-necessary
   allow:
     - dependency-type: "direct"
-  ignore:
-    - dependency-name: "bpk-*"
