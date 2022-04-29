@@ -31,6 +31,7 @@ const OPTIONS = {
   native: 'native',
   android: 'android',
   compose: 'compose',
+  swiftui: 'swiftui',
   ios: 'ios',
 };
 
@@ -113,6 +114,18 @@ const NavListFilter = (props: Props) => (
       onChange={e =>
         e.currentTarget.value === OPTIONS.ios &&
         props.onSelectedFilterChange(OPTIONS.ios)
+      }
+      white
+    />
+    <BpkRadio
+      className={getClassName('bpkdocs-nav-list-filter__option')}
+      value={OPTIONS.swiftui}
+      name="filter"
+      label="SwiftUI (Preview)"
+      checked={props.selected === OPTIONS.swiftui}
+      onChange={e =>
+        e.currentTarget.value === OPTIONS.swiftui &&
+        props.onSelectedFilterChange(OPTIONS.swiftui)
       }
       white
     />

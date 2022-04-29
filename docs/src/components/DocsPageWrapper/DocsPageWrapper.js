@@ -50,11 +50,13 @@ const PlatformNav = ({
   onAndroidClick,
   onComposeClick,
   onIOSClick,
+  onSwiftUIClick,
   disableNativeTab,
   disableWebTab,
   disableAndroidTab,
   disableComposeTab,
   disableIOSTab,
+  disableSwiftUITab,
 }) => (
   <BpkHorizontalNav
     autoScrollToSelected
@@ -92,6 +94,14 @@ const PlatformNav = ({
       iOS
     </BpkHorizontalNavItem>
     <BpkHorizontalNavItem
+      name="swiftui"
+      disabled={disableSwiftUITab}
+      selected={platform === 'swiftui'}
+      onClick={onSwiftUIClick}
+    >
+      SwiftUI (Preview)
+    </BpkHorizontalNavItem>
+    <BpkHorizontalNavItem
       name="native"
       disabled={disableNativeTab}
       selected={platform === 'native'}
@@ -118,16 +128,19 @@ PlatformNav.propTypes = {
     'native',
     'web',
     'compose',
+    'swiftui',
   ]).isRequired,
   onDesignClick: PropTypes.func.isRequired,
   onAndroidClick: PropTypes.func.isRequired,
   onComposeClick: PropTypes.func.isRequired,
   onIOSClick: PropTypes.func.isRequired,
+  onSwiftUIClick: PropTypes.func.isRequired,
   onNativeClick: PropTypes.func.isRequired,
   onWebClick: PropTypes.func.isRequired,
   disableAndroidTab: PropTypes.bool.isRequired,
   disableComposeTab: PropTypes.bool.isRequired,
   disableIOSTab: PropTypes.bool.isRequired,
+  disableSwiftUITab: PropTypes.bool.isRequired,
   disableNativeTab: PropTypes.bool.isRequired,
   disableWebTab: PropTypes.bool.isRequired,
 };
@@ -138,6 +151,7 @@ const DocsPageWrapper = props => {
     designSubpage,
     androidSubpage,
     composeSubpage,
+    swiftuiSubpage,
     iosSubpage,
     nativeSubpage,
     webSubpage,
@@ -152,6 +166,7 @@ const DocsPageWrapper = props => {
     design: designSubpage || <DesignPlaceholderPage />,
     android: androidSubpage,
     compose: composeSubpage,
+    swiftui: swiftuiSubpage,
     ios: iosSubpage,
     native: nativeSubpage,
     web: webSubpage,
@@ -174,6 +189,8 @@ const DocsPageWrapper = props => {
     initiallySelectedPlatform = 'android';
   } else if (composeSubpage) {
     initiallySelectedPlatform = 'compose';
+  } else if (swiftuiSubpage) {
+    initiallySelectedPlatform = 'swiftui';
   } else if (iosSubpage) {
     initiallySelectedPlatform = 'ios';
   } else if (nativeSubpage) {
@@ -213,11 +230,13 @@ const DocsPageWrapper = props => {
           onDesignClick={() => onPlatformClick('design')}
           onAndroidClick={() => onPlatformClick('android')}
           onComposeClick={() => onPlatformClick('compose')}
+          onSwiftUIClick={() => onPlatformClick('swiftui')}
           onIOSClick={() => onPlatformClick('ios')}
           onNativeClick={() => onPlatformClick('native')}
           onWebClick={() => onPlatformClick('web')}
           disableAndroidTab={!androidSubpage}
           disableComposeTab={!composeSubpage}
+          disableSwiftUITab={!swiftuiSubpage}
           disableIOSTab={!iosSubpage}
           disableNativeTab={!nativeSubpage}
           disableWebTab={!webSubpage}
@@ -247,6 +266,7 @@ DocsPageWrapper.propTypes = {
   nativeSubpage: PropTypes.element,
   androidSubpage: PropTypes.element,
   composeSubpage: PropTypes.element,
+  swiftuiSubpage: PropTypes.element,
   iosSubpage: PropTypes.element,
 };
 
@@ -257,6 +277,7 @@ DocsPageWrapper.defaultProps = {
   nativeSubpage: null,
   androidSubpage: null,
   composeSubpage: null,
+  swiftuiSubpage: null,
   iosSubpage: null,
 };
 
