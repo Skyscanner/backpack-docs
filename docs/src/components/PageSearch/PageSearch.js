@@ -33,7 +33,7 @@ import BpkAutosuggest, {
 const FlattenedLinks = flatMap(LINKS, section => section.links);
 
 const convertTagsToPlatformsString = (
-  tags: ?Array<'android' | 'ios' | 'native' | 'web' | 'compose'>,
+  tags: ?Array<'android' | 'ios' | 'native' | 'web' | 'compose' | 'swiftui'>,
 ): ?string => {
   if (!tags) {
     return null;
@@ -44,6 +44,9 @@ const convertTagsToPlatformsString = (
   }
   if (tags.indexOf('compose') !== -1) {
     platforms.push('Compose');
+  }
+  if (tags.indexOf('swiftui') !== -1) {
+    platforms.push('swiftui');
   }
   if (tags.indexOf('ios') !== -1) {
     platforms.push('iOS');
