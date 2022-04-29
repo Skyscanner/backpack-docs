@@ -105,7 +105,7 @@ const AdditionalLinks = (props: Props) => {
           </BpkLink>
         )}
         {/* SwiftUI CocoaPod link */}
-        {platform && platform === PLATFORMS.ios && (
+        {platform && platform === PLATFORMS.swiftui && (
           <BpkLink
             href="https://cocoapods.org/pods/Backpack-SwiftUI"
             blank
@@ -205,7 +205,7 @@ const AdditionalLinks = (props: Props) => {
         )}
 
         {/* iOS SwiftUI documentation link */}
-        {platform && platform === PLATFORMS.ios && documentationId && (
+        {platform && platform === PLATFORMS.swiftui && documentationId && (
           <BpkLink
             href={`/ios/versions/latest/swiftui/Structs/${documentationId}.html`}
             blank
@@ -261,7 +261,7 @@ const AdditionalLinks = (props: Props) => {
         )}
 
         {/* SwiftUI GitHub link */}
-        {platform && platform === PLATFORMS.ios && githubPath && (
+        {platform && platform === PLATFORMS.swiftui && githubPath && (
           <BpkLink
             href={`https://github.com/Skyscanner/backpack-ios/tree/main/Backpack-SwiftUI/${githubPath}`}
             blank
