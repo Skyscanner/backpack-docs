@@ -99,7 +99,7 @@ const PlatformNav = ({
       selected={platform === 'swiftui'}
       onClick={onSwiftUIClick}
     >
-      iOS
+      SwiftUI (Preview)
     </BpkHorizontalNavItem>
     <BpkHorizontalNavItem
       name="native"
