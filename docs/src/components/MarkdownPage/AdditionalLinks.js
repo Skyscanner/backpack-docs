@@ -207,7 +207,7 @@ const AdditionalLinks = (props: Props) => {
         {/* iOS SwiftUI documentation link */}
         {platform && platform === PLATFORMS.ios && documentationId && (
           <BpkLink
-            href={`/ios/versions/latest/swiftui/Classes/${documentationId}.html`}
+            href={`/ios/versions/latest/swiftui/Structs/${documentationId}.html`}
             blank
             className={getClassName('bpkdocs-markdown-page__link')}
           >
