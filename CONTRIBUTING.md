@@ -46,14 +46,14 @@ limitations under the License.
 
 Backpack is developed using Node, using the following versions:
 
-* `LTS/Carbon` (Node ^8.12.0)
-* `^6.4.1` (npm)
+* `LTS/Gallium` (Node ^16.13.0)
+* `^8.1.0` (npm)
 
 This is enforced using a pre-install hook that calls out to [ensure-node-env](https://github.com/Skyscanner/ensure-node-env).
 
 If you use [nvm](https://github.com/creationix/nvm) or [nave](https://github.com/isaacs/nave) to manage your Node environment, Backpack has built-in support for these. Just run `nvm use` or `nave auto` to install the correct Node version.
 
-To install npm, use `npm install --global npm@^6.4.1`.
+To install npm, use `npm install --global npm@^8.1.0`.
 
 ### Code style
 
