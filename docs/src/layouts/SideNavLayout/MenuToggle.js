@@ -19,11 +19,11 @@
 /* @flow strict */
 
 import React from 'react';
+import MenuIcon from 'backpack/packages/bpk-component-icon/lg/menu'; // eslint-disable-line import/no-unresolved
 
 import STYLES from './MenuToggle.scss';
 
 import { cssModules } from 'backpack/packages/bpk-react-utils';
-import MenuIcon from 'backpack/packages/bpk-component-icon/lg/menu';
 import BpkCloseButton from 'backpack/packages/bpk-component-close-button';
 import BpkBreakpoint, {
   BREAKPOINTS,

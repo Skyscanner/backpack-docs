@@ -18,10 +18,10 @@
 
 import _ from 'lodash';
 import React from 'react';
+import BpkSmallDownloadIcon from 'backpack/packages/bpk-component-icon/sm/download'; // eslint-disable-line import/no-unresolved
 
 import BpkButton from 'backpack/packages/bpk-component-button';
 import { withButtonAlignment } from 'backpack/packages/bpk-component-icon';
-import BpkSmallDownloadIcon from 'backpack/packages/bpk-component-icon/sm/download';
 import icons from 'backpack/packages/bpk-component-icon/all';
 import IntroBlurb from 'components/IntroBlurb';
 import IconSearchApp from 'components/IconSearchApp';
