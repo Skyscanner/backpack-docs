@@ -19,7 +19,6 @@
 
 import React, { Component } from 'react';
 import { NavLink as RouterNavLink } from 'react-router-dom';
-import ArrowIcon from 'backpack/packages/bpk-component-icon/sm/arrow-right'; // eslint-disable-line import/no-unresolved
 
 import NavListFilter, { type Option as FilterOption } from './NavListFilter';
 import STYLES from './NavList.scss';
@@ -30,6 +29,7 @@ import {
   type Category,
 } from './common-types';
 
+import ArrowIcon from 'backpack/packages/bpk-component-icon/sm/arrow-right';
 import { withRtlSupport } from 'backpack/packages/bpk-component-icon';
 import { cssModules } from 'backpack/packages/bpk-react-utils';
 import { setPlatformInLocalStorage } from 'helpers/platform-helper';

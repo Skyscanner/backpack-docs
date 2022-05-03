@@ -24,8 +24,6 @@ import {
   lineHeightLg,
   iconSizeLg,
 } from '@skyscanner/bpk-foundations-web/tokens/base.es6';
-import BpkLargeArrowUp from 'backpack/packages/bpk-component-icon/lg/arrow-up'; // eslint-disable-line import/no-unresolved
-import BpkLargeArrowDown from 'backpack/packages/bpk-component-icon/lg/arrow-down'; // eslint-disable-line import/no-unresolved
 
 import ComponentsIcon from '../../static/components_icon.svg';
 import DesignTokensIcon from '../../static/design_tokens_icon.svg';
@@ -35,6 +33,8 @@ import * as ROUTES from '../../constants/routes';
 
 import STYLES from './SectionsList.scss';
 
+import BpkLargeArrowDown from 'backpack/packages/bpk-component-icon/lg/arrow-down';
+import BpkLargeArrowUp from 'backpack/packages/bpk-component-icon/lg/arrow-up';
 import BpkBreakpoint, {
   BREAKPOINTS,
 } from 'backpack/packages/bpk-component-breakpoint';

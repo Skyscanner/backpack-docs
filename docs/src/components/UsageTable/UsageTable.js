@@ -19,11 +19,11 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import zip from 'lodash/zip';
-import BpkTickIcon from 'backpack/packages/bpk-component-icon/sm/tick-circle'; // eslint-disable-line import/no-unresolved
-import BpkCloseIcon from 'backpack/packages/bpk-component-icon/sm/close-circle'; // eslint-disable-line import/no-unresolved
 
 import STYLES from './UsageTable.scss';
 
+import BpkTickIcon from 'backpack/packages/bpk-component-icon/sm/tick-circle';
+import BpkCloseIcon from 'backpack/packages/bpk-component-icon/sm/close-circle';
 import {
   BpkTable,
   BpkTableHead,

@@ -21,10 +21,10 @@ import {
   lineHeightSm,
   iconSizeSm,
 } from '@skyscanner/bpk-foundations-web/tokens/base.es6';
-import BpkHeartIcon from 'backpack/packages/bpk-component-icon/sm/heart'; // eslint-disable-line import/no-unresolved
 
 import STYLES from './Footer.scss';
 
+import BpkHeartIcon from 'backpack/packages/bpk-component-icon/sm/heart';
 import { cssModules } from 'backpack/packages/bpk-react-utils';
 import BpkRtlToggle from 'backpack/packages/bpk-component-rtl-toggle';
 import BpkGridToggle from 'backpack/packages/bpk-component-grid-toggle';
