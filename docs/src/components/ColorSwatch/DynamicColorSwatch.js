@@ -26,16 +26,16 @@ import BpkText, { WEIGHT_STYLES } from 'backpack/packages/bpk-component-text';
 
 const getClassName = cssModules(STYLES);
 
-const DynamicColorSwatch = props => {
+const DynamicColorSwatch = (props) => {
   const {
-    name,
-    lightColorName,
-    darkColorName,
-    lightColor,
-    darkColor,
-    textColor,
     border,
     className: userClassName,
+    darkColor,
+    darkColorName,
+    lightColor,
+    lightColorName,
+    name,
+    textColor,
     ...rest
   } = props;
   const style = {

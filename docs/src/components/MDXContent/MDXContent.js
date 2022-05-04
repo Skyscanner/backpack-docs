@@ -19,6 +19,7 @@
 /* @flow strict */
 
 import React from 'react';
+
 import { MDXProvider } from '@mdx-js/react';
 
 import Renderer from './renderers';

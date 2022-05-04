@@ -87,17 +87,17 @@ const TOKEN_FORMAT_MAP = {
     },
   },
   ios: {
-    size: value => (value ? `${value}pt` : value),
-    'font-size': value => (value ? `${value}pt` : value),
+    size: (value) => (value ? `${value}pt` : value),
+    'font-size': (value) => (value ? `${value}pt` : value),
   },
   android: {
-    size: value => (value ? `${value}dp` : value),
-    'font-size': value => (value ? `${value}sp` : value),
+    size: (value) => (value ? `${value}dp` : value),
+    'font-size': (value) => (value ? `${value}sp` : value),
   },
 };
 
 export const getTokenValue = (token: Token, platform: Platform): string => {
-  const { value, type } = token || {};
+  const { type, value } = token || {};
   const formats = TOKEN_FORMAT_MAP[platform] || {};
 
   if (formats[type]) {

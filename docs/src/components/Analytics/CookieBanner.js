@@ -28,7 +28,7 @@ import BpkButton from 'backpack/packages/bpk-component-button';
 
 const getClassName = cssModules(STYLES);
 
-const CookieBanner = ({ visible, onAccept, onReject, ...rest }) => {
+const CookieBanner = ({ onAccept, onReject, visible, ...rest }) => {
   if (!visible) {
     return null;
   }

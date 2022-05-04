@@ -17,6 +17,7 @@
  */
 
 import React from 'react';
+
 import { colors } from '@skyscanner/bpk-foundations-web/tokens/base.es6';
 
 import { DynamicColorSwatch } from '../ColorSwatch';

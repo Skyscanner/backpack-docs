@@ -33,23 +33,23 @@ import * as ROUTES from './docs/src/constants/routes';
 import redirects from './docs/src/constants/redirect-routes';
 
 const {
-  NODE_ENV,
+  BASE_PATH,
+  BPK_BUILT_AT,
   BPK_TOKENS,
   ENABLE_CSS_MODULES,
-  BPK_BUILT_AT,
   GOOGLE_MAPS_API_KEY,
-  BASE_PATH,
+  NODE_ENV,
 } = process.env;
 const useCssModules = ENABLE_CSS_MODULES !== 'false';
 const isProduction = NODE_ENV === 'production';
 
 // Strings passed from environment variables must
 // be stringified or JS won't interpret them correctly.
-const getSafeString = input => JSON.stringify(input);
+const getSafeString = (input) => JSON.stringify(input);
 
 const staticSiteGeneratorConfig = {
   paths: [
-    ...Object.keys(ROUTES).map(key => ROUTES[key]),
+    ...Object.keys(ROUTES).map((key) => ROUTES[key]),
     ...Object.keys(redirects),
     '/404.html',
   ],

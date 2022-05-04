@@ -29,7 +29,7 @@ const matter = require('gray-matter');
 
 const REPO_NAME = 'backpack-docs';
 
-const getFileName = fullPath => {
+const getFileName = (fullPath) => {
   const splitPath = fullPath.split(REPO_NAME);
   if (splitPath.length > 1) {
     return splitPath[splitPath.length - 1];
@@ -38,7 +38,7 @@ const getFileName = fullPath => {
 };
 
 module.exports = function loader(src) {
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     const { content, data } = matter(src);
 
     if (Object.keys(data).length === 0) {

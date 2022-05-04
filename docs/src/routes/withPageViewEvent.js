@@ -19,14 +19,14 @@ import React from 'react';
 
 import { sendPageView } from '../helpers/google-analytics-helper';
 
-const withPageViewEvent = Component => renderProps => {
+const withPageViewEvent = (Component) => (renderProps) => {
   const { location } = renderProps;
   const { pathname, search } = location;
   const isComponentRoute = pathname.indexOf('/components/') === 0;
   const platform = search
     .substring(1)
     .split('&')
-    .filter(a => a.indexOf('platform=') === 0)[0];
+    .filter((a) => a.indexOf('platform=') === 0)[0];
 
   // Component pages trigger the router twice, first without the platform in the URL
   // and then again with the platform, this makes sure we only trigger one pageview

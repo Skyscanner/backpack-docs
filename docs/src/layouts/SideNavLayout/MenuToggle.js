@@ -46,7 +46,7 @@ export default (props: Props) => {
 
   return (
     <BpkBreakpoint query={BREAKPOINTS.ABOVE_TABLET}>
-      {aboveTablet =>
+      {(aboveTablet) =>
         !aboveTablet && (
           <div className={menuToggleClassNames}>
             <BpkCloseButton

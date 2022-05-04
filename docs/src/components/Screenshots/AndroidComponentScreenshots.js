@@ -33,7 +33,7 @@ type Props = {
 const aspectRatio = 1080 / 1920;
 
 const AndroidComponentScreenshots = (props: Props) => {
-  const { lightMode, darkMode, altText } = props;
+  const { altText, darkMode, lightMode } = props;
 
   return (
     <ComponentScreenshots

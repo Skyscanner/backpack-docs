@@ -17,6 +17,7 @@
  */
 
 import React from 'react';
+
 import Helmet from 'react-helmet';
 
 import BackpackLogoMark from '../../static/backpack-logo-mark.svg';
@@ -30,7 +31,7 @@ import { cssModules } from 'backpack/packages/bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 
-const NotFoundPage = props => (
+const NotFoundPage = (props) => (
   <section {...props}>
     <Helmet title="404" />
     <div className={getClassName('bpkdocs-not-found-page__wrapper')}>

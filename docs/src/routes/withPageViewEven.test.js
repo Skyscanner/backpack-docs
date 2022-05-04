@@ -16,6 +16,7 @@
  * limitations under the License.
  */
 import React from 'react';
+
 import renderer from 'react-test-renderer';
 
 import withPageViewEvent from './withPageViewEvent';

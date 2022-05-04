@@ -19,6 +19,7 @@
 /* @flow strict */
 
 import React from 'react';
+
 import Helmet from 'react-helmet';
 
 type Props = {

@@ -19,6 +19,7 @@
 /* @flow */
 
 import React, { Component } from 'react';
+
 import { withRouter, type RouterHistory } from 'react-router-dom';
 import { flatMap } from 'lodash';
 
@@ -30,7 +31,7 @@ import BpkAutosuggest, {
   BpkAutosuggestSuggestion,
 } from 'backpack/packages/bpk-component-autosuggest';
 
-const FlattenedLinks = flatMap(LINKS, section => section.links);
+const FlattenedLinks = flatMap(LINKS, (section) => section.links);
 
 const convertTagsToPlatformsString = (
   tags: ?Array<'android' | 'ios' | 'native' | 'web' | 'compose' | 'swiftui'>,
@@ -127,7 +128,7 @@ class PageSearch extends Component<Props, State> {
     }
   };
 
-  renderSuggestion = suggestion => (
+  renderSuggestion = (suggestion) => (
     <BpkAutosuggestSuggestion
       value={suggestion.children}
       subHeading={convertTagsToPlatformsString(suggestion.tags)}
@@ -135,7 +136,7 @@ class PageSearch extends Component<Props, State> {
   );
 
   render() {
-    const { value, suggestions } = this.state;
+    const { suggestions, value } = this.state;
     const { inputClassName, wrapperClassName } = this.props;
     const inputProps = {
       id: 'search-pages',
@@ -144,7 +145,7 @@ class PageSearch extends Component<Props, State> {
       onChange: this.onChange,
       placeholder: 'Have a search first',
       className: inputClassName,
-      inputRef: ref => {
+      inputRef: (ref) => {
         this.inputRef = ref;
       },
     };

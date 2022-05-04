@@ -26,7 +26,7 @@ function checkLighthouseScore(audits = {}, thresholds = {}) {
   const successes = {};
   const weightedScores = [];
 
-  keys.forEach(key => {
+  keys.forEach((key) => {
     const score = get(audits, [key, 'score'], 0);
     if (score === null) {
       // lighthouse assigns null to non measurable.

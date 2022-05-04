@@ -41,6 +41,7 @@ import { getBackpackLogo } from '../../helpers/logo-helper';
 import PageSearch from '../../components/PageSearch';
 
 import UpdatedAt from './UpdatedAt';
+
 import STYLES from './home-page.scss';
 
 import { cssModules } from 'backpack/packages/bpk-react-utils';
@@ -196,7 +197,7 @@ const HomePage = (props, context) => {
         />
       </div>
       <div className={getClassName('bpkdocs-home-page__cards-container')}>
-        {CARD_CONTENTS.map(({ href, fullWidth, ...rest }) => (
+        {CARD_CONTENTS.map(({ fullWidth, href, ...rest }) => (
           <HomePageCard
             {...rest}
             href={rest.blank ? href : null}

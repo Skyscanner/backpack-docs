@@ -34,7 +34,7 @@ This function transforms them into a simpler array in the form:
 
 [haystack]
 */
-const transformResults = results => results.map(result => result.item);
+const transformResults = (results) => results.map((result) => result.item);
 
 const getMatchingPages = (
   needle: string,

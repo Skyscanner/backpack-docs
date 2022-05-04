@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-export default links =>
+export default (links) =>
   links.sort((a, b) => {
     const aHasRoute = !!a.route;
     const bHasRoute = !!b.route;

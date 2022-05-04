@@ -21,9 +21,10 @@
 import React, { Component, type Node } from 'react';
 
 import Sidebar from './Sidebar';
-import STYLES from './SideNavLayout.scss';
 import MenuToggle from './MenuToggle';
 import { type Category } from './common-types';
+
+import STYLES from './SideNavLayout.scss';
 
 import BpkSkipLink from 'backpack/packages/bpk-component-skip-link';
 import BpkBreakpoint, {
@@ -58,7 +59,7 @@ export default class SideNavLayout extends Component<Props, State> {
   }
 
   onMenuToggle = () => {
-    this.setState(prevState => ({
+    this.setState((prevState) => ({
       sectionListExpanded: !prevState.sectionListExpanded,
     }));
   };
@@ -80,7 +81,7 @@ export default class SideNavLayout extends Component<Props, State> {
 
   render() {
     const { children, links } = this.props;
-    const { modalOpen, sectionListExpanded, activeSection } = this.state;
+    const { activeSection, modalOpen, sectionListExpanded } = this.state;
 
     const sidebar = (
       <Sidebar
@@ -101,7 +102,7 @@ export default class SideNavLayout extends Component<Props, State> {
           href="#main-content"
         />
         <BpkBreakpoint query={BREAKPOINTS.TABLET}>
-          {isTablet =>
+          {(isTablet) =>
             isTablet ? (
               <BpkModal
                 id="mobile-nav-menu"

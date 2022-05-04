@@ -17,6 +17,7 @@
  */
 
 import React from 'react';
+
 import { Route, Redirect, Switch } from 'react-router-dom';
 
 import * as ROUTES from '../constants/routes';
@@ -296,21 +297,21 @@ export const ROUTES_MAPPINGS = [
   { path: ROUTES.GRID_COLUMN_DEMO, component: GridColumnDemoPage },
   { path: ROUTES.GRID_OFFSET_DEMO, component: GridOffsetDemoPage },
   { path: ROUTES.RESET_ANALYTICS, component: ResetAnalyticsPage },
-  ...Object.keys(redirects).map(from => ({
+  ...Object.keys(redirects).map((from) => ({
     path: from,
     redirect: redirects[from],
   })),
   { path: '*', component: NotFoundPage },
 ];
 
-const expandRoutes = routes =>
+const expandRoutes = (routes) =>
   routes.reduce((all, routeConfig) => {
     const {
       component: Component,
-      routes: childRoutes,
       layout: RouteLayout,
-      redirect,
       path,
+      redirect,
+      routes: childRoutes,
       ...routeProps
     } = routeConfig;
     if (Component) {

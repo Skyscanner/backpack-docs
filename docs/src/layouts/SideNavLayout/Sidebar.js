@@ -19,14 +19,16 @@
 /* @flow strict */
 
 import React from 'react';
+
 import { Link } from 'react-router-dom';
 
 import { getBackpackLogo } from '../../helpers/logo-helper';
 
 import NavList from './NavList';
-import STYLES from './Sidebar.scss';
 import SectionsList from './SectionsList';
 import { type Category } from './common-types';
+
+import STYLES from './Sidebar.scss';
 
 import BpkBreakpoint, {
   BREAKPOINTS,
@@ -49,10 +51,10 @@ export default (props: Props) => {
   const {
     activeSection,
     links,
-    sectionListExpanded,
-    onMobileModalClose,
     onMenuToggle,
+    onMobileModalClose,
     onSectionChange,
+    sectionListExpanded,
   } = props;
 
   const backpackLogo = getBackpackLogo();
@@ -61,7 +63,7 @@ export default (props: Props) => {
     <nav className={getClassName('bpkdocs-sidebar')}>
       <div className={getClassName('bpkdocs-sidebar__header')}>
         <BpkBreakpoint query={BREAKPOINTS.TABLET}>
-          {isTablet =>
+          {(isTablet) =>
             isTablet && (
               <BpkCloseButton
                 aria-expanded="true"
@@ -91,7 +93,9 @@ export default (props: Props) => {
           className={getClassName('bpkdocs-sidebar__section-list')}
         />
         <NavList
-          links={links.filter(link => [activeSection].indexOf(link.id) !== -1)}
+          links={links.filter(
+            (link) => [activeSection].indexOf(link.id) !== -1,
+          )}
           dimmed={sectionListExpanded}
           onClick={onMobileModalClose}
           supportsFiltering={activeSection === 'COMPONENTS'}

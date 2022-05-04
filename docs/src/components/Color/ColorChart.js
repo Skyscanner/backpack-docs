@@ -19,11 +19,14 @@
 /* @flow strict */
 
 import React, { Component, Fragment } from 'react';
+
 import getContrastRatio from 'get-contrast-ratio';
+
 import { colors } from '@skyscanner/bpk-foundations-web/tokens/base.es6';
 
-import STYLES from './color-chart.scss';
 import brandColorCombinations from './brandColorCombinations';
+
+import STYLES from './color-chart.scss';
 
 import BpkRadio from 'backpack/packages/bpk-component-radio';
 import BpkText from 'backpack/packages/bpk-component-text';
@@ -90,7 +93,7 @@ class ColorChart extends Component<{}, State> {
       c2: 'white',
       show: true,
     });
-    chartColors.forEach(c1 => {
+    chartColors.forEach((c1) => {
       colHeadings.push({
         c1,
         c2: c1,
@@ -107,14 +110,14 @@ class ColorChart extends Component<{}, State> {
     const displayRows = [];
     const colHeadings = this.createColHeadings();
     displayRows.push(colHeadings);
-    chartColors.forEach(c1 => {
+    chartColors.forEach((c1) => {
       const displayRow = [];
       displayRow.push({
         c1,
         c2: c1,
         show: true,
       });
-      chartColors.forEach(c2 => {
+      chartColors.forEach((c2) => {
         displayRow.push({
           c1,
           c2,
@@ -130,7 +133,7 @@ class ColorChart extends Component<{}, State> {
   };
 
   render() {
-    const { displayRows, desiredContrast } = this.state;
+    const { desiredContrast, displayRows } = this.state;
     if (displayRows === null) {
       return null;
     }
@@ -184,9 +187,9 @@ class ColorChart extends Component<{}, State> {
           className={getClassName('bpk-docs-colors-chart')}
         >
           {displayRows &&
-            displayRows.map(displayRow => (
+            displayRows.map((displayRow) => (
               <tr>
-                {displayRow.map(displayCell => (
+                {displayRow.map((displayCell) => (
                   <th>
                     <div
                       className={getClassName('bpk-docs-colors-chart__item')}

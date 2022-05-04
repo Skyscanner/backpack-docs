@@ -23,8 +23,9 @@ import 'bpk-stylesheets/font';
 import ReactDOM from 'react-dom';
 import 'bpk-stylesheets/base.css';
 import 'bpk-stylesheets/font.css';
-import Helmet from 'react-helmet';
 import ReactDOMServer from 'react-dom/server';
+
+import Helmet from 'react-helmet';
 import {
   BrowserRouter,
   StaticRouter,
@@ -104,7 +105,7 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
 }
 
 export default (() => {
-  const flattenRoutes = routes =>
+  const flattenRoutes = (routes) =>
     routes.reduce((all, route) => {
       all.push(route);
 
@@ -120,7 +121,7 @@ export default (() => {
   return (locals, callback) => {
     const assets = extractAssets(locals.webpackStats);
 
-    const match = flattenedRoutes.find(route =>
+    const match = flattenedRoutes.find((route) =>
       matchPath(locals.path, { exact: true, path: route.path }),
     );
 

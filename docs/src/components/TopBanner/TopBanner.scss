@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@import '~bpk-mixins';
+@import '~bpk-mixins.scss';
 
 .bpkdocs-top-banner {
   display: flex;
@@ -23,8 +23,9 @@
   justify-content: space-between;
   background-color: $bpk-color-kolkata;
   color: $bpk-color-sky-blue-shade-03;
-  font-weight: bold;
   text-align: center;
+
+  @include bpk-heading-5;
 
   &__link {
     margin-left: $bpk-spacing-base;

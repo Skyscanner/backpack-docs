@@ -54,7 +54,7 @@
       "git add"
     ],
     "*.scss": [
-      "stylelint --syntax scss"
+      "stylelint"
     ],
     "*.md": [
       "mdspell -r --en-gb --ignore-acronyms --ignore-numbers --no-suggestions"
@@ -77,6 +77,8 @@
     "@skyscanner/bpk-foundations-react-native": "^1.1.0",
     "@skyscanner/bpk-foundations-web": "^4.3.2",
     "@skyscanner/bpk-svgs": "^14.0.16",
+    "@skyscanner/eslint-config-skyscanner": "^12.0.0",
+    "@skyscanner/stylelint-config-skyscanner": "^6.0.0",
     "autoprefixer": "^9.8.6",
     "babel-jest": "^26.5.2",
     "babel-loader": "^8.0.6",
@@ -93,10 +95,9 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.5.0",
     "es6-promise": "^4.2.8",
-    "eslint-config-skyscanner": "^9.0.1",
+    "eslint_d": "^11.1.1",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-flowtype": "^4.5.3",
-    "eslint_d": "^11.1.1",
     "file-loader": "^6.0.0",
     "flow-bin": "^0.135.0",
     "flow-typed": "^3.2.1",
@@ -133,7 +134,6 @@
     "snyk": "^1.361.3",
     "static-site-generator-webpack-plugin": "^3.4.2",
     "style-loader": "^2.0.0",
-    "stylelint-config-skyscanner": "^3.0.4",
     "terser-webpack-plugin": "^4.1.0",
     "tinycolor2": "^1.4.1",
     "uglify-loader": "^3.0.0",

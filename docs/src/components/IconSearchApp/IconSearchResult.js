@@ -19,8 +19,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import STYLES from './IconSearchResult.scss';
 import customPropTypes from './propTypes';
+
+import STYLES from './IconSearchResult.scss';
 
 import { cssModules } from 'backpack/packages/bpk-react-utils';
 import {
@@ -30,7 +31,7 @@ import {
 
 const getClassName = cssModules(STYLES);
 
-const IconSearchResult = props => {
+const IconSearchResult = (props) => {
   const { categoryName, icons, searchQuery } = props;
 
   return (
@@ -45,7 +46,7 @@ const IconSearchResult = props => {
           className={getClassName('bpkdocs-icon-search-result__content')}
         >
           <ul className={getClassName('bpkdocs-icon-search-result__list')}>
-            {icons.map(icon => (
+            {icons.map((icon) => (
               <li
                 key={icon.name}
                 className={getClassName(

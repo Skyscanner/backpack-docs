@@ -18,6 +18,7 @@
 
 import PropTypes from 'prop-types';
 import React from 'react';
+
 import zip from 'lodash/zip';
 
 import STYLES from './UsageTable.scss';
@@ -36,9 +37,9 @@ import { cssModules } from 'backpack/packages/bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 
-const UsageTable = props => {
+const UsageTable = (props) => {
   const { data, ...rest } = props;
-  const { dos, donts } = data;
+  const { donts, dos } = data;
 
   const rows = zip(dos, donts);
 
@@ -65,9 +66,11 @@ const UsageTable = props => {
       </BpkTableHead>
       <BpkTableBody>
         {rows.map((cells, rowIndex) => (
+          // eslint-disable-next-line react/no-array-index-key
           <BpkTableRow key={rowIndex.toString()}>
             {cells.map((cell, cellIndex) => (
               <BpkTableCell
+                // eslint-disable-next-line react/no-array-index-key
                 key={cellIndex.toString()}
                 className={getClassName('bpkdocs-dos-and-donts__cell')}
               >

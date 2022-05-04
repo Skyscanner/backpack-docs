@@ -19,6 +19,7 @@
 /* @flow strict */
 
 import React from 'react';
+
 import Helmet from 'react-helmet';
 
 import Heading from '../Heading';
@@ -26,6 +27,7 @@ import IntroBlurb from '../IntroBlurb';
 import MDXContent from '../MDXContent/MDXContent';
 
 import AdditionalLinks, { type PlatformType } from './AdditionalLinks';
+
 import STYLES from './MarkdownPage.scss';
 
 import BpkContentContainer from 'backpack/packages/bpk-component-content-container';
@@ -34,7 +36,7 @@ import { cssModules } from 'backpack/packages/bpk-react-utils';
 const getClassName = cssModules(STYLES);
 
 const PageHead = (props: { title: string, subtitle: ?string }) => {
-  const { title, subtitle } = props;
+  const { subtitle, title } = props;
   return (
     <div className={getClassName('bpkdocs-markdown-page__page-head')}>
       <Heading level="h1">{title}</Heading>
@@ -72,8 +74,8 @@ const MarkdownPage = (props: Props) => {
   const {
     content,
     documentationId,
-    githubPath,
     fileName,
+    githubPath,
     platform,
     sassdocId,
     subtitle,

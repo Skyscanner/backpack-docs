@@ -23,7 +23,7 @@ const LOCAL_STORAGE_KEY = 'BPK_DOCS_platform_preference';
 export const getPlatformFromLocalStorage = () =>
   localstorage.getItem(LOCAL_STORAGE_KEY);
 
-export const setPlatformInLocalStorage = platformName => {
+export const setPlatformInLocalStorage = (platformName) => {
   if (platformName !== 'all') {
     localStorage.setItem(LOCAL_STORAGE_KEY, platformName);
   }

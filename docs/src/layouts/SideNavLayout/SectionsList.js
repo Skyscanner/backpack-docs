@@ -18,8 +18,10 @@
 /* @flow strict */
 
 import React from 'react';
+
 import { Link } from 'react-router-dom';
 import omit from 'lodash/omit';
+
 import {
   lineHeightLg,
   iconSizeLg,
@@ -79,7 +81,7 @@ const BpkAlignedArrowUp = withAlignment(
   iconSizeLg,
 );
 
-const omitActiveSection = activeSection => omit(sections, activeSection);
+const omitActiveSection = (activeSection) => omit(sections, activeSection);
 
 type SectionListItemProps = {
   link: string,
@@ -140,13 +142,8 @@ type Props = {
 };
 
 const SectionsList = (props: Props) => {
-  const {
-    activeSection,
-    expanded,
-    onMenuToggle,
-    onSectionChange,
-    className,
-  } = props;
+  const { activeSection, className, expanded, onMenuToggle, onSectionChange } =
+    props;
   const outerClassnames = [getClassName('bpkdocs-sections-list')];
   const listClassNames = [getClassName('bpkdocs-sections-list__list')];
   const Arrow = expanded ? BpkAlignedArrowUp : BpkAlignedArrowDown;
@@ -185,12 +182,12 @@ const SectionsList = (props: Props) => {
       </div>
       <BpkAnimateHeight height={expanded ? 'auto' : 0} duration={200}>
         <ul className={getClassName('bpkdocs-sections-list__list')}>
-          {Object.keys(omitActiveSection(activeSection)).map(section => (
+          {Object.keys(omitActiveSection(activeSection)).map((section) => (
             <BpkBreakpoint
               key={`${section}-${sections[section].title}`}
               query={BREAKPOINTS.TABLET}
             >
-              {isTablet => (
+              {(isTablet) => (
                 <SectionListItem
                   link={sections[section].link}
                   external={sections[section].external}

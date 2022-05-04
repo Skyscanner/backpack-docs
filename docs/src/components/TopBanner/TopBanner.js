@@ -38,7 +38,7 @@ const TopBanner = (props: Props) => {
     <div {...rest} className={getClassName('bpkdocs-top-banner', className)}>
       {children}
       <div>
-        {links.map(link => (
+        {links.map((link) => (
           <BpkLink
             href={link.href}
             className={getClassName('bpkdocs-top-banner__link')}

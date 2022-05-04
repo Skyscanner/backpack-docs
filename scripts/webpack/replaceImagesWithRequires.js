@@ -31,21 +31,21 @@
 const IMAGE_REG_EXP = /!\[(.*)\]\(([^https?].+)\)/g;
 const PATH_PREFIX = '/';
 
-const sanitize = input => input.replace(/"/g, '');
+const sanitize = (input) => input.replace(/"/g, '');
 
 const createImg = (source, title) =>
   `<img src={"${PATH_PREFIX}" + require("${source}")} alt="${sanitize(
     title,
   )}" />`;
 
-module.exports = src =>
-  new Promise(resolve => {
+module.exports = (src) =>
+  new Promise((resolve) => {
     const matches = src.matchAll(IMAGE_REG_EXP);
     const results = Array.from(matches);
 
     let updated = src;
 
-    results.forEach(result => {
+    results.forEach((result) => {
       const [markdownImageElement, imageTitle, imageSource] = result;
       updated = updated.replace(
         markdownImageElement,

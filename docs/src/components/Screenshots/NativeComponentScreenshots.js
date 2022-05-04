@@ -40,7 +40,7 @@ const aspectRatios = {
 };
 
 const NativeComponentScreenshots = (props: Props) => {
-  const { iOS, android, iOSAltText, androidAltText } = props;
+  const { android, androidAltText, iOS, iOSAltText } = props;
 
   return (
     <ComponentScreenshots

@@ -16,9 +16,10 @@
  * limitations under the License.
  */
 
-import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import React from 'react';
+
+import Helmet from 'react-helmet';
 import { withRouter } from 'react-router-dom';
 
 import {
@@ -29,6 +30,7 @@ import Heading from '../Heading';
 import DesignPlaceholderPage from '../../pages/components/DesignPlaceholder';
 
 import Blurb from './Blurb';
+
 import STYLES from './DocsPageWrapper.scss';
 
 import { cssModules } from 'backpack/packages/bpk-react-utils';
@@ -40,23 +42,24 @@ import BpkContentContainer from 'backpack/packages/bpk-component-content-contain
 const getClassName = cssModules(STYLES);
 
 const contentShape = PropTypes.oneOfType([PropTypes.string, PropTypes.node]);
-const platformQueryParamRegex = /platform=(design|android|ios|native|web|compose)/;
+const platformQueryParamRegex =
+  /platform=(design|android|ios|native|web|compose)/;
 
 const PlatformNav = ({
-  platform,
-  onDesignClick,
-  onNativeClick,
-  onWebClick,
-  onAndroidClick,
-  onComposeClick,
-  onIOSClick,
-  onSwiftUIClick,
-  disableNativeTab,
-  disableWebTab,
   disableAndroidTab,
   disableComposeTab,
   disableIOSTab,
+  disableNativeTab,
   disableSwiftUITab,
+  disableWebTab,
+  onAndroidClick,
+  onComposeClick,
+  onDesignClick,
+  onIOSClick,
+  onNativeClick,
+  onSwiftUIClick,
+  onWebClick,
+  platform,
 }) => (
   <BpkHorizontalNav
     autoScrollToSelected
@@ -145,20 +148,20 @@ PlatformNav.propTypes = {
   disableWebTab: PropTypes.bool.isRequired,
 };
 
-const DocsPageWrapper = props => {
+const DocsPageWrapper = (props) => {
   const {
-    blurb,
-    designSubpage,
     androidSubpage,
+    blurb,
     composeSubpage,
-    swiftuiSubpage,
-    iosSubpage,
-    nativeSubpage,
-    webSubpage,
-    title,
-    match,
+    designSubpage,
     history,
+    iosSubpage,
     location,
+    match,
+    nativeSubpage,
+    swiftuiSubpage,
+    title,
+    webSubpage,
   } = props;
   const path = match.url;
 
@@ -172,7 +175,7 @@ const DocsPageWrapper = props => {
     web: webSubpage,
   };
 
-  const canUsePlatformPreference = platformPreference => {
+  const canUsePlatformPreference = (platformPreference) => {
     if (!platformPreference) {
       return false;
     }
@@ -211,7 +214,7 @@ const DocsPageWrapper = props => {
 
   const initiallyRenderedSubpage = platforms[initiallySelectedPlatform];
 
-  const onPlatformClick = platformName => {
+  const onPlatformClick = (platformName) => {
     setPlatformInLocalStorage(platformName);
     history.push(`${path}?platform=${platformName}`);
   };

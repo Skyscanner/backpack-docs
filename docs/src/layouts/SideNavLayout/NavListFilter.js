@@ -39,7 +39,7 @@ export type Option = $Keys<typeof OPTIONS>;
 
 type Props = {
   selected: Option,
-  onSelectedFilterChange: Option => mixed,
+  onSelectedFilterChange: (Option) => mixed,
   className: ?string,
 };
 
@@ -51,7 +51,7 @@ const NavListFilter = (props: Props) => (
       name="filter"
       label="All"
       checked={props.selected === OPTIONS.all}
-      onChange={e =>
+      onChange={(e) =>
         e.currentTarget.value === OPTIONS.all &&
         props.onSelectedFilterChange(OPTIONS.all)
       }
@@ -63,7 +63,7 @@ const NavListFilter = (props: Props) => (
       name="filter"
       label="Web"
       checked={props.selected === OPTIONS.web}
-      onChange={e =>
+      onChange={(e) =>
         e.currentTarget.value === OPTIONS.web &&
         props.onSelectedFilterChange(OPTIONS.web)
       }
@@ -75,7 +75,7 @@ const NavListFilter = (props: Props) => (
       name="filter"
       label="React Native"
       checked={props.selected === OPTIONS.native}
-      onChange={e =>
+      onChange={(e) =>
         e.currentTarget.value === OPTIONS.native &&
         props.onSelectedFilterChange(OPTIONS.native)
       }
@@ -87,7 +87,7 @@ const NavListFilter = (props: Props) => (
       name="filter"
       label="Android"
       checked={props.selected === OPTIONS.android}
-      onChange={e =>
+      onChange={(e) =>
         e.currentTarget.value === OPTIONS.android &&
         props.onSelectedFilterChange(OPTIONS.android)
       }
@@ -99,7 +99,7 @@ const NavListFilter = (props: Props) => (
       name="filter"
       label="Compose"
       checked={props.selected === OPTIONS.compose}
-      onChange={e =>
+      onChange={(e) =>
         e.currentTarget.value === OPTIONS.compose &&
         props.onSelectedFilterChange(OPTIONS.compose)
       }
@@ -111,7 +111,7 @@ const NavListFilter = (props: Props) => (
       name="filter"
       label="iOS"
       checked={props.selected === OPTIONS.ios}
-      onChange={e =>
+      onChange={(e) =>
         e.currentTarget.value === OPTIONS.ios &&
         props.onSelectedFilterChange(OPTIONS.ios)
       }
@@ -123,7 +123,7 @@ const NavListFilter = (props: Props) => (
       name="filter"
       label="SwiftUI (Preview)"
       checked={props.selected === OPTIONS.swiftui}
-      onChange={e =>
+      onChange={(e) =>
         e.currentTarget.value === OPTIONS.swiftui &&
         props.onSelectedFilterChange(OPTIONS.swiftui)
       }
