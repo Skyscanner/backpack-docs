@@ -1,5 +1,14 @@
 version: 2
 updates:
+- package-ecosystem: gitsubmodule
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:00"
+  labels:
+    - dependabot
+    - submodules
+    - bpk
 - package-ecosystem: npm
   directory: "/"
   schedule:
