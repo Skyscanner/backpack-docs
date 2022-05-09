@@ -10,8 +10,8 @@
   "author": "Backpack Design System <backpack@skyscanner.net>",
   "license": "Apache-2.0",
   "engines": {
-    "node": "^12.13.0",
-    "npm": "^6.12.0"
+    "node": "^14.19.0",
+    "npm": "^6.14.6"
   },
   "scripts": {
     "preinstall": "npx ensure-node-env",
