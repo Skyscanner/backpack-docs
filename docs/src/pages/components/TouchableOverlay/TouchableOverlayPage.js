@@ -24,7 +24,7 @@ import Native, {
   metadata as nativeMetadata,
 } from './NativeTouchableOverlay.mdx';
 
-import BpkText, { WEIGHT_STYLES } from 'backpack/packages/bpk-component-text';
+import BpkText, { TEXT_STYLES } from 'backpack/packages/bpk-component-text';
 import BpkBlockquote from 'backpack/packages/bpk-component-blockquote';
 import RouterLink from 'components/RouterLink';
 import MarkdownPage from 'components/MarkdownPage';
@@ -41,8 +41,8 @@ const blurb = [
     below to see them both in action.
   </IntroBlurb>,
   <BpkBlockquote>
-    <BpkText weight={WEIGHT_STYLES.bold}>Note:</BpkText> This component is iOS
-    only, for Android please use{' '}
+    <BpkText textStyle={TEXT_STYLES.label1}>Note:</BpkText> This component is
+    iOS only, for Android please use{' '}
     <RouterLink to={ROUTES.TOUCHABLE_NATIVE_FEEDBACK}>
       BpkTouchableNativeFeedback
     </RouterLink>{' '}
