@@ -33,6 +33,7 @@
     "jest": "jest",
     "jest:coverage": "jest --coverage",
     "jest:watch": "jest --watch",
+    "jest:update": "jest --updateSnapshot",
     "danger": "danger ci",
     "prettier": "prettier --config .prettierrc --write \"**/*.js\"",
     "submodules:reset": "git checkout origin/main backpack-android backpack-ios backpack-react-native backpack && git submodule update --init --recursive",

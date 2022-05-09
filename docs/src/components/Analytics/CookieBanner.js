@@ -22,7 +22,7 @@ import PropTypes from 'prop-types';
 import STYLES from './CookieBanner.scss';
 
 import { cssModules } from 'backpack/packages/bpk-react-utils';
-import BpkText, { WEIGHT_STYLES } from 'backpack/packages/bpk-component-text';
+import BpkText, { TEXT_STYLES } from 'backpack/packages/bpk-component-text';
 import BpkLink from 'backpack/packages/bpk-component-link';
 import BpkButton from 'backpack/packages/bpk-component-button';
 
@@ -36,7 +36,7 @@ const CookieBanner = ({ onAccept, onReject, visible, ...rest }) => {
   return (
     <section className={getClassName('bpkdocs-cookie-banner')} {...rest}>
       <div className={getClassName('bpkdocs-cookie-banner__inner')}>
-        <BpkText textStyle="xl" weight={WEIGHT_STYLES.black} tagName="h2">
+        <BpkText textStyle={TEXT_STYLES.heading3} tagName="h2">
           Your data. Your choice.
         </BpkText>
         <div className={getClassName('bpkdocs-cookie-banner__message-wrapper')}>
