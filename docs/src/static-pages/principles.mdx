@@ -33,24 +33,3 @@ All applicable components should be themeable and be able to use colours from Sk
 ## Well documented
 
 Each component should be fully documented, showing each configuration together with explanations where suitable. Additionally the component's readme and available props should be shown. See our guide on [writing style](https://github.com/Skyscanner/backpack/blob/main/decisions/writing-docs.md) for best practices for writing documentation.
-
-# Declarative UI Components
-
-## What
-Backpack components must support Declarative UI.
-
-## Why
-With the new Design Systems (SwiftUI and Jetpack Compose) there's a need for defining how are we tackling the creation and maintenance of reusable Backpack Components.
-
-## How
-
-### New components
-* Create the component in new system only
-* Create wrapper in the old system if there's a need for that component to be used in the old system.
-
-### Creating Declarative UI version of an existing component
-Create the component using the new Declarative Framework.
-If the complxity of the component is too high, then Wrapping the old component with a Declarative API is recommended
-
-### Why not just wrapping everything?
-There is a Risk involved in wrapping components, like introducing bugs while mixing new and old systems as they may require data and delegation mapping.
