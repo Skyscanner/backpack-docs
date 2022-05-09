@@ -17,6 +17,7 @@
  */
 
 import React from 'react';
+
 import { Route, Redirect, Switch } from 'react-router-dom';
 
 import * as ROUTES from '../constants/routes';
@@ -307,10 +308,10 @@ const expandRoutes = routes =>
   routes.reduce((all, routeConfig) => {
     const {
       component: Component,
-      routes: childRoutes,
       layout: RouteLayout,
-      redirect,
       path,
+      redirect,
+      routes: childRoutes,
       ...routeProps
     } = routeConfig;
     if (Component) {

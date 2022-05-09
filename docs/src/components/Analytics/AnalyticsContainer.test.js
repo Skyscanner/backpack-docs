@@ -17,8 +17,9 @@
  */
 
 import React from 'react';
-import renderer from 'react-test-renderer';
 import ReactDOM from 'react-dom';
+
+import renderer from 'react-test-renderer';
 
 import AnalyticsContanier from './AnalyticsContainer';
 

@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-@import '~bpk-mixins/index';
-@import 'common';
+@import '~bpk-mixins/index.scss';
+@import 'common.scss';
 
 .bpkdocs-side-nav-list {
   &__list,
@@ -106,6 +106,7 @@
   &__link-active-icon {
     position: absolute;
     top: calc(50% - (#{$bpk-icon-size-sm} / 2));
+
     // HACK: Move sligthly further to the left to account for icon bounding box so
     // that the actual icon lines up with other content.
 

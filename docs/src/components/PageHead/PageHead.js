@@ -18,6 +18,7 @@
 /* @flow strict */
 
 import React, { type Node } from 'react';
+
 import isString from 'lodash/isString';
 
 import Heading from '../Heading';
@@ -88,7 +89,7 @@ const PageHead = (props: Props) => {
             </BpkText>
             <BpkList>
               {props.menu &&
-                props.menu.map(({ title, href }) => (
+                props.menu.map(({ href, title }) => (
                   <BpkListItem key={`menu-item-${href.substr(1)}`}>
                     <BpkLink href={href}>{title}</BpkLink>
                   </BpkListItem>

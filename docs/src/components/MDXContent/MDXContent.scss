@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-@import '~bpk-mixins/index';
+@import '~bpk-mixins/index.scss';
 
 @mixin heading-style($spacing) {
   margin-bottom: $spacing;
@@ -35,6 +35,7 @@
     // Using `!important` as we need to override the baremetal HTML styling, which takes precedence.
     /* stylelint-disable declaration-no-important */
     width: auto !important;
+
     // Applying a custom border to the table as the `bpk-border` mixin using box-shadow has side-effects
     // when used inside a scroll container. This is due to the box-shadow not being measured as part of the
     // width of the child element.

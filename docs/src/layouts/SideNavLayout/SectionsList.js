@@ -18,8 +18,10 @@
 /* @flow strict */
 
 import React from 'react';
+
 import { Link } from 'react-router-dom';
 import omit from 'lodash/omit';
+
 import {
   lineHeightLg,
   iconSizeLg,
@@ -142,10 +144,10 @@ type Props = {
 const SectionsList = (props: Props) => {
   const {
     activeSection,
+    className,
     expanded,
     onMenuToggle,
     onSectionChange,
-    className,
   } = props;
   const outerClassnames = [getClassName('bpkdocs-sections-list')];
   const listClassNames = [getClassName('bpkdocs-sections-list__list')];

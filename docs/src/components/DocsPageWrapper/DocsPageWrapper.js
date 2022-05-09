@@ -16,9 +16,10 @@
  * limitations under the License.
  */
 
-import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import React from 'react';
+
+import Helmet from 'react-helmet';
 import { withRouter } from 'react-router-dom';
 
 import {
@@ -29,6 +30,7 @@ import Heading from '../Heading';
 import DesignPlaceholderPage from '../../pages/components/DesignPlaceholder';
 
 import Blurb from './Blurb';
+
 import STYLES from './DocsPageWrapper.scss';
 
 import { cssModules } from 'backpack/packages/bpk-react-utils';
@@ -43,20 +45,20 @@ const contentShape = PropTypes.oneOfType([PropTypes.string, PropTypes.node]);
 const platformQueryParamRegex = /platform=(design|android|ios|native|web|compose)/;
 
 const PlatformNav = ({
-  platform,
-  onDesignClick,
-  onNativeClick,
-  onWebClick,
-  onAndroidClick,
-  onComposeClick,
-  onIOSClick,
-  onSwiftUIClick,
-  disableNativeTab,
-  disableWebTab,
   disableAndroidTab,
   disableComposeTab,
   disableIOSTab,
+  disableNativeTab,
   disableSwiftUITab,
+  disableWebTab,
+  onAndroidClick,
+  onComposeClick,
+  onDesignClick,
+  onIOSClick,
+  onNativeClick,
+  onSwiftUIClick,
+  onWebClick,
+  platform,
 }) => (
   <BpkHorizontalNav
     autoScrollToSelected
@@ -147,18 +149,18 @@ PlatformNav.propTypes = {
 
 const DocsPageWrapper = props => {
   const {
-    blurb,
-    designSubpage,
     androidSubpage,
+    blurb,
     composeSubpage,
-    swiftuiSubpage,
-    iosSubpage,
-    nativeSubpage,
-    webSubpage,
-    title,
-    match,
+    designSubpage,
     history,
+    iosSubpage,
     location,
+    match,
+    nativeSubpage,
+    swiftuiSubpage,
+    title,
+    webSubpage,
   } = props;
   const path = match.url;
 

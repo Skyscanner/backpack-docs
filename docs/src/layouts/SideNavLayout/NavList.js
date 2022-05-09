@@ -18,16 +18,18 @@
 /* @flow strict */
 
 import React, { Component } from 'react';
+
 import { NavLink as RouterNavLink } from 'react-router-dom';
 
 import NavListFilter, { type Option as FilterOption } from './NavListFilter';
-import STYLES from './NavList.scss';
 import sortLinks from './links-sorter';
 import {
   type LinkPropType,
   type CategoryPropType,
   type Category,
 } from './common-types';
+
+import STYLES from './NavList.scss';
 
 import { withRtlSupport } from 'backpack/packages/bpk-component-icon';
 import ArrowIcon from 'backpack/packages/bpk-component-icon/sm/arrow-right';

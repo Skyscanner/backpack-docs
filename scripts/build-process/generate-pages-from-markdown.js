@@ -129,7 +129,7 @@ console.log(colors.green(`Updated ${PATH_TO_ROUTES_CONSTANTS_FILE}`));
 
 // Create the components that'll be used in 'docs/src/routes/generated/Routes.js'.
 const components = {};
-enrichedMarkdownFiles.forEach(({ fileName, data, id }) => {
+enrichedMarkdownFiles.forEach(({ data, fileName, id }) => {
   if (!components[data.category]) {
     components[data.category] = [];
   }
@@ -174,7 +174,7 @@ console.log(colors.green(`Updated ${PATH_TO_ROUTES_FILE}`));
 
 // Create the links to appear in the sidebar.
 const links = {};
-enrichedMarkdownFiles.forEach(({ data, path, id, keywords }) => {
+enrichedMarkdownFiles.forEach(({ data, id, keywords, path }) => {
   if (!links[data.category]) {
     links[data.category] = [];
   }

@@ -43,7 +43,7 @@ type Props = {
 };
 
 const WebTokens = (props: Props) => {
-  const { tokens, matcher } = props;
+  const { matcher, tokens } = props;
 
   const filteredTokens = Object.keys(tokens.props)
     .map(key => {

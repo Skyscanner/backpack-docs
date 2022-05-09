@@ -19,11 +19,14 @@
 /* @flow strict */
 
 import React, { Component, Fragment } from 'react';
+
 import getContrastRatio from 'get-contrast-ratio';
+
 import { colors } from '@skyscanner/bpk-foundations-web/tokens/base.es6';
 
-import STYLES from './color-chart.scss';
 import brandColorCombinations from './brandColorCombinations';
+
+import STYLES from './color-chart.scss';
 
 import BpkRadio from 'backpack/packages/bpk-component-radio';
 import BpkText from 'backpack/packages/bpk-component-text';
@@ -130,7 +133,7 @@ class ColorChart extends Component<{}, State> {
   };
 
   render() {
-    const { displayRows, desiredContrast } = this.state;
+    const { desiredContrast, displayRows } = this.state;
     if (displayRows === null) {
       return null;
     }

@@ -18,6 +18,7 @@
 
 import PropTypes from 'prop-types';
 import React from 'react';
+
 import isString from 'lodash/isString';
 
 import Paragraph from '../Paragraph';

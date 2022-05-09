@@ -40,14 +40,14 @@ export type Props = {
 
 const HomePageCard = (props: Props) => {
   const {
-    title,
-    href,
-    image,
-    icon,
     blank,
     centerIcon,
-    iconWidth,
     className,
+    href,
+    icon,
+    iconWidth,
+    image,
+    title,
     ...rest
   } = props;
 

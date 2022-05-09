@@ -45,7 +45,7 @@ type Props = {
 };
 
 const Tokens = (props: Props) => {
-  const { tokens, platform, matcher } = props;
+  const { matcher, platform, tokens } = props;
 
   const filteredTokens = Object.keys(tokens.props)
     .map(key => {

@@ -28,12 +28,12 @@ const getClassName = cssModules(STYLES);
 
 const ColorSwatch = props => {
   const {
-    name,
-    color,
-    textColor,
-    colorValues,
     border,
     className: userClassName,
+    color,
+    colorValues,
+    name,
+    textColor,
     ...rest
   } = props;
   const style = {
