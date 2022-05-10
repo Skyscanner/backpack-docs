@@ -17,6 +17,7 @@
  */
 
 import React from 'react';
+
 import Helmet from 'react-helmet';
 
 import BackpackLogoMark from '../../static/backpack-logo-mark.svg';

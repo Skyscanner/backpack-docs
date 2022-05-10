@@ -20,6 +20,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import { format } from 'date-fns';
 
 import BpkText from 'backpack/packages/bpk-component-text';

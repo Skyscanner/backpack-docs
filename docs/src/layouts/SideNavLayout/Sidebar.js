@@ -19,14 +19,16 @@
 /* @flow strict */
 
 import React from 'react';
+
 import { Link } from 'react-router-dom';
 
 import { getBackpackLogo } from '../../helpers/logo-helper';
 
 import NavList from './NavList';
-import STYLES from './Sidebar.scss';
 import SectionsList from './SectionsList';
 import { type Category } from './common-types';
+
+import STYLES from './Sidebar.scss';
 
 import BpkBreakpoint, {
   BREAKPOINTS,
@@ -49,10 +51,10 @@ export default (props: Props) => {
   const {
     activeSection,
     links,
-    sectionListExpanded,
-    onMobileModalClose,
     onMenuToggle,
+    onMobileModalClose,
     onSectionChange,
+    sectionListExpanded,
   } = props;
 
   const backpackLogo = getBackpackLogo();

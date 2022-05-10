@@ -16,9 +16,10 @@
  * limitations under the License.
  */
 
-import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import React from 'react';
+
+import Helmet from 'react-helmet';
 
 import themeAttributes from '../../themeableAttributes';
 import Footer from '../../components/Footer';

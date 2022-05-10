@@ -18,6 +18,7 @@
 /* @flow strict */
 
 import React, { type Node } from 'react';
+
 import isString from 'lodash/isString';
 
 import Heading from '../Heading';
@@ -30,7 +31,7 @@ import BpkBannerAlert, {
   ALERT_TYPES,
 } from 'backpack/packages/bpk-component-banner-alert';
 import BpkLink from 'backpack/packages/bpk-component-link';
-import BpkText, { WEIGHT_STYLES } from 'backpack/packages/bpk-component-text';
+import BpkText, { TEXT_STYLES } from 'backpack/packages/bpk-component-text';
 import { BpkList, BpkListItem } from 'backpack/packages/bpk-component-list';
 
 const getClassName = cssModules(STYLES);
@@ -80,7 +81,7 @@ const PageHead = (props: Props) => {
         {showMenu && (
           <div>
             <BpkText
-              weight={WEIGHT_STYLES.bold}
+              textStyle={TEXT_STYLES.heading5}
               tagName="h2"
               className={getClassName('bpkdocs-page-head__in-section')}
             >
@@ -88,7 +89,7 @@ const PageHead = (props: Props) => {
             </BpkText>
             <BpkList>
               {props.menu &&
-                props.menu.map(({ title, href }) => (
+                props.menu.map(({ href, title }) => (
                   <BpkListItem key={`menu-item-${href.substr(1)}`}>
                     <BpkLink href={href}>{title}</BpkLink>
                   </BpkListItem>

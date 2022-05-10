@@ -33,7 +33,7 @@ type Props = {
 const aspectRatio = 750 / 1334;
 
 const IOSComponentScreenshots = (props: Props) => {
-  const { lightMode, darkMode, altText } = props;
+  const { altText, darkMode, lightMode } = props;
 
   return (
     <ComponentScreenshots

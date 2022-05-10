@@ -15,10 +15,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@import '~bpk-mixins/index';
+@import '~bpk-mixins/index.scss';
 
 $bpk-logo-offset: $bpk-one-pixel-rem * 58;
-
 $bpk-outer-container-width-desktop: $bpk-breakpoint-desktop;
 $bpk-center-content-width-desktop: $bpk-outer-container-width-desktop;
 

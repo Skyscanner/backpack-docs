@@ -97,7 +97,7 @@ const TOKEN_FORMAT_MAP = {
 };
 
 export const getTokenValue = (token: Token, platform: Platform): string => {
-  const { value, type } = token || {};
+  const { type, value } = token || {};
   const formats = TOKEN_FORMAT_MAP[platform] || {};
 
   if (formats[type]) {

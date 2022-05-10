@@ -46,7 +46,7 @@ const generateId = (title = '') => {
   return `${title.toLowerCase().replace(' ', '-')}-${counter}`;
 };
 
-const ComponentScreenshot = ({ title, subText, ...rest }) => {
+const ComponentScreenshot = ({ subText, title, ...rest }) => {
   const subTextId = generateId(title);
 
   return (

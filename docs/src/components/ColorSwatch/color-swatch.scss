@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-@import '~bpk-mixins/index';
+@import '~bpk-mixins/index.scss';
 
 .bpkdocs-color-swatch {
   display: flex;
@@ -26,8 +26,7 @@
   margin-bottom: $bpk-spacing-sm;
   margin-left: $bpk-spacing-sm;
   padding: $bpk-spacing-base $bpk-spacing-sm;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   justify-content: space-between;
   color: $bpk-color-sky-gray-tint-01;
 

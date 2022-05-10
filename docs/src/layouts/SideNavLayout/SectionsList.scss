@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-@import '~bpk-mixins/index';
-@import 'common';
+@import '~bpk-mixins/index.scss';
+@import 'common.scss';
 
 $bpk-heading-button-padding: $bpk-spacing-md;
 
@@ -52,7 +52,7 @@ $bpk-heading-button-padding: $bpk-spacing-md;
 
   &__heading-button-arrow {
     margin-left: $bpk-spacing-sm;
-    fill: currentColor;
+    fill: currentcolor;
 
     @include bpk-rtl {
       margin-right: $bpk-spacing-sm;

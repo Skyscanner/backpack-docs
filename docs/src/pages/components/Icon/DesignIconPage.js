@@ -16,8 +16,12 @@
  * limitations under the License.
  */
 
-import _ from 'lodash';
 import React from 'react';
+
+import _ from 'lodash';
+// This file can actually be resolved eslint is just confused
+// eslint-disable-next-line import/no-webpack-loader-syntax
+import iconsSvgs from '!!file-loader?name=[name].[hash].zip!zip-it-loader!./../../../../../node_modules/@skyscanner/bpk-svgs/dist/svgs/icons';
 
 import BpkButton from 'backpack/packages/bpk-component-button';
 import { withButtonAlignment } from 'backpack/packages/bpk-component-icon';
@@ -28,9 +32,6 @@ import IconSearchApp from 'components/IconSearchApp';
 import Heading from 'components/Heading';
 import Paragraph from 'components/Paragraph';
 import PageHead from 'components/PageHead';
-// This file can actually be resolved eslint is just confused
-// eslint-disable-next-line import/no-webpack-loader-syntax
-import iconsSvgs from '!!file-loader?name=[name].[hash].zip!zip-it-loader!./../../../../../node_modules/@skyscanner/bpk-svgs/dist/svgs/icons';
 
 const AlignedBpkSmallDownloadIcon = withButtonAlignment(BpkSmallDownloadIcon);
 

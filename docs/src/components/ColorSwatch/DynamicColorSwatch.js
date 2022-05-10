@@ -22,20 +22,20 @@ import React from 'react';
 import STYLES from './color-swatch.scss';
 
 import { cssModules } from 'backpack/packages/bpk-react-utils';
-import BpkText, { WEIGHT_STYLES } from 'backpack/packages/bpk-component-text';
+import BpkText, { TEXT_STYLES } from 'backpack/packages/bpk-component-text';
 
 const getClassName = cssModules(STYLES);
 
 const DynamicColorSwatch = props => {
   const {
-    name,
-    lightColorName,
-    darkColorName,
-    lightColor,
-    darkColor,
-    textColor,
     border,
     className: userClassName,
+    darkColor,
+    darkColorName,
+    lightColor,
+    lightColorName,
+    name,
+    textColor,
     ...rest
   } = props;
   const style = {
@@ -53,7 +53,7 @@ const DynamicColorSwatch = props => {
   return (
     <div style={style} className={className} {...rest}>
       <div>
-        <BpkText tagName="h3" textStyle="xl" weight={WEIGHT_STYLES.bold}>
+        <BpkText tagName="h3" textStyle={TEXT_STYLES.heading3}>
           {name}
         </BpkText>
       </div>

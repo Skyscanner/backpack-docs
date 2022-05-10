@@ -7,6 +7,7 @@
 .*/node_modules/jsonlint/.*
 .*/node_modules/jsonlint-mod/.*
 .*/node_modules/config-chain/test/broken.json
+.*/node_modules/resolve/test/resolver/malformed_package_json/package.json
 
 [include]
 

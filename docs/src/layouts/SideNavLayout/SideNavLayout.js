@@ -21,9 +21,10 @@
 import React, { Component, type Node } from 'react';
 
 import Sidebar from './Sidebar';
-import STYLES from './SideNavLayout.scss';
 import MenuToggle from './MenuToggle';
 import { type Category } from './common-types';
+
+import STYLES from './SideNavLayout.scss';
 
 import BpkSkipLink from 'backpack/packages/bpk-component-skip-link';
 import BpkBreakpoint, {
@@ -80,7 +81,7 @@ export default class SideNavLayout extends Component<Props, State> {
 
   render() {
     const { children, links } = this.props;
-    const { modalOpen, sectionListExpanded, activeSection } = this.state;
+    const { activeSection, modalOpen, sectionListExpanded } = this.state;
 
     const sidebar = (
       <Sidebar

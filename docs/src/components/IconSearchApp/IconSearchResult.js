@@ -19,8 +19,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import STYLES from './IconSearchResult.scss';
 import customPropTypes from './propTypes';
+
+import STYLES from './IconSearchResult.scss';
 
 import { cssModules } from 'backpack/packages/bpk-react-utils';
 import {

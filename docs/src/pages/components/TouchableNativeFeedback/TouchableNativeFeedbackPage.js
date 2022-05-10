@@ -25,7 +25,7 @@ import Native, {
 } from './NativeTouchableNativeFeedback.mdx';
 
 import BpkLink from 'backpack/packages/bpk-component-link';
-import BpkText, { WEIGHT_STYLES } from 'backpack/packages/bpk-component-text';
+import BpkText, { TEXT_STYLES } from 'backpack/packages/bpk-component-text';
 import BpkBlockquote from 'backpack/packages/bpk-component-blockquote';
 import RouterLink from 'components/RouterLink';
 import IntroBlurb from 'components/IntroBlurb';
@@ -47,7 +47,7 @@ const blurb = [
     your app from crashing on unsupported devices.
   </IntroBlurb>,
   <BpkBlockquote>
-    <BpkText weight={WEIGHT_STYLES.bold}>Note:</BpkText> This component is
+    <BpkText textStyle={TEXT_STYLES.label1}>Note:</BpkText> This component is
     Android only, for iOS please use the{' '}
     <RouterLink to={ROUTES.TOUCHABLE_OVERLAY}>BpkTouchableOverlay </RouterLink>{' '}
     component.

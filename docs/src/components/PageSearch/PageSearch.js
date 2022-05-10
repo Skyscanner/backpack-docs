@@ -19,6 +19,7 @@
 /* @flow */
 
 import React, { Component } from 'react';
+
 import { withRouter, type RouterHistory } from 'react-router-dom';
 import { flatMap } from 'lodash';
 
@@ -135,7 +136,7 @@ class PageSearch extends Component<Props, State> {
   );
 
   render() {
-    const { value, suggestions } = this.state;
+    const { suggestions, value } = this.state;
     const { inputClassName, wrapperClassName } = this.props;
     const inputProps = {
       id: 'search-pages',
