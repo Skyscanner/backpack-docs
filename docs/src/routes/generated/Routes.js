@@ -23,6 +23,7 @@ import MarkdownPage from '../../components/MarkdownPage';
 
 import ANIMATION from '../../static-pages/animation.mdx';
 import BORDER from '../../static-pages/border.mdx';
+import LAYOUT_GRIDS from '../../static-pages/layout-grids.mdx';
 import RADIUS from '../../static-pages/radius.mdx';
 import SHADOW from '../../static-pages/shadow.mdx';
 import SPACING from '../../static-pages/spacing.mdx';
@@ -61,6 +62,15 @@ export const tokens = [{
         fileName="/docs/src/static-pages/border.mdx"
         content={BORDER}
         {...{"title":"Border","subtitle":"Border values for use on Android, iOS and web.","category":"tokens"}}
+      />
+    )
+  },{
+    path: ROUTES.GENERATED_TOKENS_LAYOUT_GRIDS,
+    component: () => (
+      <MarkdownPage
+        fileName="/docs/src/static-pages/layout-grids.mdx"
+        content={LAYOUT_GRIDS}
+        {...{"title":"Layout grids","subtitle":"Layout grids tokens for use on web.","category":"tokens"}}
       />
     )
   },{
