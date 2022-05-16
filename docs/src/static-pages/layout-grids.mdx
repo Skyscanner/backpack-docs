@@ -1,0 +1,26 @@
+---
+title: Layout grids
+subtitle: Layout grids tokens for use on web.
+category: tokens
+---
+
+import WEB_TOKENS from '@skyscanner/bpk-foundations-web/tokens/base.raw.json';
+import Tokens from 'components/Tokens'
+
+## Table of Contents
+
+## Breakpoints
+
+<Tokens
+  tokens={WEB_TOKENS}
+  platform="web"
+  matcher={({ category, name }) => category === 'breakpoints' && !name.includes('MARGIN') }
+/>
+
+## Breakpoint Margins
+
+<Tokens
+  tokens={WEB_TOKENS}
+  platform="web"
+  matcher={({ category, name }) => category === 'breakpoints' && name.includes('MARGIN') }
+/>
