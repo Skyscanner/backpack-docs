@@ -42,7 +42,7 @@ import BpkContentContainer from 'backpack/packages/bpk-component-content-contain
 const getClassName = cssModules(STYLES);
 
 const contentShape = PropTypes.oneOfType([PropTypes.string, PropTypes.node]);
-const platformQueryParamRegex = /platform=(design|android|ios|native|web|compose)/;
+const platformQueryParamRegex = /platform=(design|android|ios|native|web|compose|swiftui)/;
 
 const PlatformNav = ({
   disableAndroidTab,

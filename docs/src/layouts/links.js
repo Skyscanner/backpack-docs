@@ -60,7 +60,7 @@ const ComponentsLinks = [
         id: 'TEXT',
         route: routes.TEXT,
         children: 'Text',
-        tags: ['web', 'native', 'android', 'ios', 'compose'],
+        tags: ['web', 'native', 'android', 'ios', 'compose', 'swiftui'],
       },
       {
         id: 'LINK',
