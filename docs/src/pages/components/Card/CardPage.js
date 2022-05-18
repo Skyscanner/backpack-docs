@@ -25,6 +25,7 @@ import Compose, { metadata as composeMetadata } from './ComposeCard.mdx';
 import IOS, { metadata as iosMetadata } from './IOSCard.mdx';
 import Native, { metadata as nativeMetadata } from './NativeCard.mdx';
 import Web, { metadata as webMetadata } from './WebCard.mdx';
+import SwiftUI, { metadata as swiftuiMetadata } from './SwiftUICard.mdx';
 
 import IntroBlurb from 'components/IntroBlurb';
 import Paragraph from 'components/Paragraph';
@@ -46,6 +47,7 @@ const Page = () => (
     ]}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
+    swiftuiSubpage={<MarkdownPage content={SwiftUI} {...swiftuiMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
