@@ -25,6 +25,7 @@ import Compose, { metadata as composeMetadata } from './ComposeButton.mdx';
 import IOS, { metadata as iosMetadata } from './IOSButtonPage.mdx';
 import Native, { metadata as nativeMetadata } from './NativeButtonPage.mdx';
 import Web, { metadata as webMetadata } from './WebButtonPage.mdx';
+import SwiftUI, { metadata as swiftuiMetadata } from './SwiftUIButtonPage.mdx';
 
 import MarkdownPage from 'components/MarkdownPage';
 import IntroBlurb from 'components/IntroBlurb';
@@ -40,6 +41,7 @@ const ButtonPage = () => (
     ]}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
+    swiftuiSubpage={<MarkdownPage content={SwiftUI} {...swiftuiMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
