@@ -121,13 +121,13 @@ const ComponentsLinks = [
         id: 'BUTTON',
         route: routes.BUTTON,
         children: 'Button',
-        tags: ['web', 'native', 'android', 'ios', 'compose'],
+        tags: ['web', 'native', 'android', 'ios', 'compose', 'swiftui'],
       },
       {
         id: 'ICON',
         route: routes.ICON,
         children: 'Icon',
-        tags: ['design', 'web', 'native', 'android', 'ios'],
+        tags: ['design', 'web', 'native', 'android', 'ios', 'swiftui'],
       },
       {
         id: 'SPINNER',
@@ -176,7 +176,7 @@ const ComponentsLinks = [
         id: 'CARD',
         route: routes.CARD,
         children: 'Card',
-        tags: ['web', 'native', 'android', 'ios', 'compose'],
+        tags: ['web', 'native', 'android', 'ios', 'compose', 'swiftui'],
       },
       {
         id: 'CHIP',
