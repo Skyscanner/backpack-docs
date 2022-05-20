@@ -10,15 +10,10 @@ import UsageTable from 'components/UsageTable';
 import Readme from 'backpack/packages/bpk-component-rating/README.md';
 import {
   DefaultExample,
-  ZeroToFiveScaleExample,
-  Vertical,
-  LargeSize,
-  LargeVertical,
-  SmallSize,
-  SmallVertical,
-  TitleOnly,
-  PillRatings,
-  PillTitleOnly,
+  LargeSizeExample,
+  ShowScaleExample,
+  TitleOnlyExample,
+  ZeroToTenScaleExample,
 } from 'backpack/examples/bpk-component-rating/examples';
 
 ## Table of contents
@@ -31,28 +26,10 @@ The rating component's appearance changes based on the value provided.
   <DefaultExample />
 </PresentationBlock>
 
-## Small rating
-
-<PresentationBlock>
-  <SmallSize />
-</PresentationBlock>
-
 ## Large rating
 
 <PresentationBlock>
-  <LargeSize />
-</PresentationBlock>
-
-## Pill-style rating
-
-<PresentationBlock>
-  <PillRatings />
-</PresentationBlock>
-
-## Vertical rating
-
-<PresentationBlock>
-  <Vertical />
+  <LargeSizeExample />
 </PresentationBlock>
 
 ## Title-only ratings
@@ -60,17 +37,17 @@ The rating component's appearance changes based on the value provided.
 The rating component can have just a title with no subtitle. Here it's seen in both horizontal and vertical styles.
 
 <PresentationBlock>
-  <TitleOnly />
+  <TitleOnlyExample />
 </PresentationBlock>
 
 ## Alternate scale
 
-By default, ratings follow a 0-10 scale. Set the `ratingScale` prop to use a 0-5 scale instead.
+By default, ratings follow a 0-5 scale. Set the `ratingScale` prop to use a 0-10 scale instead.
 
-The 0-5 scale should only be used in specific circumstances, like ratings coming from an external provider that use a 0-5 scale. Most things should use the 0-10 scale to give users consistency.
+The 0-10 scale should only be used in specific circumstances, like ratings coming from an external provider that use a 0-10 scale. Most things should use the 0-5 scale to give users consistency.
 
 <PresentationBlock>
-  <ZeroToFiveScaleExample />
+  <ZeroToTenScaleExample />
 </PresentationBlock>
 
 ## Implementation
