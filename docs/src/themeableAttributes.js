@@ -50,7 +50,6 @@ import { themeAttributes as paginationThemeAttributes } from 'backpack/packages/
 import { themeAttributes as popoverThemeAttributes } from 'backpack/packages/bpk-component-popover';
 import { themeAttributes as progressThemeAttributes } from 'backpack/packages/bpk-component-progress';
 import { themeAttributes as radioThemeAttributes } from 'backpack/packages/bpk-component-radio';
-import { themeAttributes as ratingThemeAttributes } from 'backpack/packages/bpk-component-rating';
 import { themeAttributes as selectThemeAttributes } from 'backpack/packages/bpk-component-select';
 import { themeAttributes as sliderThemeAttributes } from 'backpack/packages/bpk-component-slider';
 import { themeAttributes as spinnerThemeAttributes } from 'backpack/packages/bpk-component-spinner';
@@ -95,7 +94,6 @@ export default [
   ...popoverThemeAttributes,
   ...progressThemeAttributes,
   ...radioThemeAttributes,
-  ...ratingThemeAttributes,
   ...selectThemeAttributes,
   ...sliderThemeAttributes,
   ...spinnerThemeAttributes,
