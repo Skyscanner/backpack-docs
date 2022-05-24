@@ -17,5 +17,9 @@
  */
 
 import TypographyTokensMigrationGuidePage from './TypographyTokensMigrationGuidePage';
+import TypographyBpkTextMigrationGuidePage from './TypographyBpkTextMigrationGuidePage';
 
-export default TypographyTokensMigrationGuidePage;
+export {
+  TypographyTokensMigrationGuidePage,
+  TypographyBpkTextMigrationGuidePage,
+};

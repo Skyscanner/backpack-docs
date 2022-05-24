@@ -29,5 +29,11 @@
 
   th {
     border-right: $bpk-border-size-sm solid $bpk-color-sky-gray-tint-06;
+
+    @include bpk-label-1;
+  }
+
+  &--old-style {
+    width: 80%;
   }
 }

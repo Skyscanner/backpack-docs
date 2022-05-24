@@ -18,7 +18,7 @@
 
 import React from 'react';
 
-import STYLES from './TypographyTokensMigrationGuidePage.scss';
+import STYLES from './typography-migration-guide-pages.scss';
 
 import {
   BpkTable,
@@ -280,7 +280,7 @@ const TypographyTokensMigrationGuidePage = () => (
         <BpkTableCell>
           <MultilineParagraph
             text={
-              '$bpk-text-xxl-font-weight\n--------------------------------\n$bpk-font-weight-book\n--------------------------------$bpk-font-weight-bold\n--------------------------------\n$bpk-font-weight-black\n--------------------------------\nno weight'
+              '$bpk-text-xxl-font-weight\n--------------------------------\n$bpk-font-weight-book\n--------------------------------\n$bpk-font-weight-bold\n--------------------------------\n$bpk-font-weight-black\n--------------------------------\nno weight'
             }
           />
         </BpkTableCell>
@@ -304,7 +304,7 @@ const TypographyTokensMigrationGuidePage = () => (
         <BpkTableCell>
           <MultilineParagraph
             text={
-              '$bpk-text-xxxl-font-weight\n--------------------------------\n$bpk-font-weight-book\n--------------------------------$bpk-font-weight-bold\n--------------------------------\n$bpk-font-weight-black\n--------------------------------\nno weight'
+              '$bpk-text-xxxl-font-weight\n--------------------------------\n$bpk-font-weight-book\n--------------------------------\n$bpk-font-weight-bold\n--------------------------------\n$bpk-font-weight-black\n--------------------------------\nno weight'
             }
           />
         </BpkTableCell>
@@ -328,7 +328,7 @@ const TypographyTokensMigrationGuidePage = () => (
         <BpkTableCell>
           <MultilineParagraph
             text={
-              '$bpk-text-xxxxl-font-weight\n--------------------------------\n$bpk-font-weight-book\n--------------------------------$bpk-font-weight-bold\n--------------------------------\n$bpk-font-weight-black\n--------------------------------\nno weight'
+              '$bpk-text-xxxxl-font-weight\n--------------------------------\n$bpk-font-weight-book\n--------------------------------\n$bpk-font-weight-bold\n--------------------------------\n$bpk-font-weight-black\n--------------------------------\nno weight'
             }
           />
         </BpkTableCell>
@@ -352,7 +352,7 @@ const TypographyTokensMigrationGuidePage = () => (
         <BpkTableCell>
           <MultilineParagraph
             text={
-              '$bpk-text-xxxxxl-font-weight\n--------------------------------\n$bpk-font-weight-book\n--------------------------------$bpk-font-weight-bold\n--------------------------------\n$bpk-font-weight-black\n--------------------------------\nno weight'
+              '$bpk-text-xxxxxl-font-weight\n--------------------------------\n$bpk-font-weight-book\n--------------------------------\n$bpk-font-weight-bold\n--------------------------------\n$bpk-font-weight-black\n--------------------------------\nno weight'
             }
           />
         </BpkTableCell>
