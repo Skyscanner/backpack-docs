@@ -27,6 +27,7 @@ export const GENERATED_GUIDELINES_GRAPHIC_DEVICES = '/guidelines/graphic-devices
 export const GENERATED_GUIDELINES_ICONOGRAPHY = '/guidelines/iconography';
 export const GENERATED_GUIDELINES_ILLUSTRATION = '/guidelines/illustration';
 export const GENERATED_GUIDELINES_IN_USE = '/guidelines/in-use';
+export const GENERATED_TOKENS_LAYOUT_GRIDS = '/tokens/layout-grids';
 export const GENERATED_GUIDELINES_LOGO = '/guidelines/logo';
 export const GENERATED_GUIDELINES_PHOTOGRAPHY = '/guidelines/photography';
 export const GENERATED_USING_PRINCIPLES = '/using/principles';

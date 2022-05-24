@@ -1,0 +1,30 @@
+---
+title: Layout grids
+subtitle: Layout grids tokens for use on web.
+category: tokens
+---
+
+import WEB_TOKENS from '@skyscanner/bpk-foundations-web/tokens/base.raw.json';
+import Tokens from 'components/Tokens'
+
+## Table of Contents
+
+## Breakpoints
+
+<Tokens
+  tokens={WEB_TOKENS}
+  platform="web"
+  matcher={({ category, name }) => category === 'breakpoints' && !name.includes('MARGIN') }
+/>
+
+## Breakpoint Margins
+
+These tokens should be used as an empty space to the left-and-right of the screen.
+Nothing goes in this area, it acts as intentional white space so text doesn't touch the edge of a display.
+This typically increases as screen sizes become larger.
+
+<Tokens
+  tokens={WEB_TOKENS}
+  platform="web"
+  matcher={({ category, name }) => category === 'breakpoints' && name.includes('MARGIN') }
+/>

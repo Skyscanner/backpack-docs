@@ -60,7 +60,7 @@ const ComponentsLinks = [
         id: 'TEXT',
         route: routes.TEXT,
         children: 'Text',
-        tags: ['web', 'native', 'android', 'ios', 'compose'],
+        tags: ['web', 'native', 'android', 'ios', 'compose', 'swiftui'],
       },
       {
         id: 'LINK',
@@ -121,7 +121,7 @@ const ComponentsLinks = [
         id: 'BUTTON',
         route: routes.BUTTON,
         children: 'Button',
-        tags: ['web', 'native', 'android', 'ios', 'compose'],
+        tags: ['web', 'native', 'android', 'ios', 'compose', 'swiftui'],
       },
       {
         id: 'ICON',
@@ -176,7 +176,7 @@ const ComponentsLinks = [
         id: 'CARD',
         route: routes.CARD,
         children: 'Card',
-        tags: ['web', 'native', 'android', 'ios', 'compose'],
+        tags: ['web', 'native', 'android', 'ios', 'compose', 'swiftui'],
       },
       {
         id: 'CHIP',

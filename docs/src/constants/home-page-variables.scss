@@ -51,11 +51,19 @@ $bpk-card-spacing-mobile: $bpk-spacing-md;
   // stylelint-disable-next-line
   @include bpk-breakpoint-tablet {
     width: 100%;
-    padding: 0 $bpk-spacing-lg;
+    padding: 0 $bpk-breakpoint-tablet-margin;
+  }
+
+  @include bpk-breakpoint-small-tablet-only {
+    padding: 0 $bpk-breakpoint-small-tablet-margin;
   }
 
   @include bpk-breakpoint-mobile {
-    padding: 0 $bpk-spacing-md;
+    padding: 0 $bpk-breakpoint-mobile-margin;
+  }
+
+  @include bpk-breakpoint-small-mobile {
+    padding: 0 $bpk-breakpoint-small-mobile-margin;
   }
 
   @media (max-width: $bpk-breakpoint-desktop) {
