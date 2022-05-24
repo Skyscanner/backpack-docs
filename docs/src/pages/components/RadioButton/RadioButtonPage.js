@@ -21,6 +21,7 @@
 import React from 'react';
 
 import Android, { metadata as androidMetadata } from './AndroidRadioButton.mdx';
+import Compose, { metadata as composeMetadata } from './ComposeRadioButton.mdx';
 import Web, { metadata as webMetadata } from './WebRadioButton.mdx';
 
 import MarkdownPage from 'components/MarkdownPage';
@@ -37,6 +38,7 @@ const Page = () => (
       </IntroBlurb>,
     ]}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );

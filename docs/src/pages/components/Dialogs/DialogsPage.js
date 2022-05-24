@@ -21,6 +21,7 @@
 import React from 'react';
 
 import Android, { metadata as androidMetadata } from './AndroidDialog.mdx';
+import Compose, { metadata as composeMetadata } from './ComposeDialog.mdx';
 import IOS, { metadata as iosMetadata } from './IOSDialog.mdx';
 import Native, { metadata as nativeMetadata } from './NativeDialog.mdx';
 import Web, { metadata as webMetadata } from './WebDialog.mdx';
@@ -41,6 +42,7 @@ const DialogPage = () => (
     title="Dialog"
     blurb={blurb}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}

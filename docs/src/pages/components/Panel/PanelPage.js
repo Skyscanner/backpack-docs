@@ -22,6 +22,7 @@ import React from 'react';
 
 import Web, { metadata as webMetadata } from './WebPanel.mdx';
 import Android, { metadata as androidMetadata } from './AndroidPanel.mdx';
+import Compose, { metadata as composeMetadata } from './ComposePanel.mdx';
 import IOS, { metadata as iosMetadata } from './IOSPanel.mdx';
 import Native, { metadata as nativeMetadata } from './NativePanels.mdx';
 
@@ -39,6 +40,7 @@ const Page = () => (
       </IntroBlurb>,
     ]}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
