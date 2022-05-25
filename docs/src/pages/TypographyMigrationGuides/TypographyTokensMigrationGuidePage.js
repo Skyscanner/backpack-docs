@@ -68,22 +68,20 @@ const TypographyTokensMigrationGuidePage = () => (
         <BpkTableRow>
           <BpkTableCell>
             <MultilineParagraph
+              text={'$bpk-text-xs-font-size\n$bpk-font-size-xs'}
+            />
+          </BpkTableCell>
+          <BpkTableCell>
+            <MultilineParagraph
               text={
-                '$bpk-text-xs-font-size\n--------------------------------\n$bpk-font-size-xs'
+                '$bpk-text-xs-font-weight\n$bpk-font-weight-book\nno weight'
               }
             />
           </BpkTableCell>
           <BpkTableCell>
             <MultilineParagraph
               text={
-                '$bpk-text-xs-font-weight\n--------------------------------\n$bpk-font-weight-book\n--------------------------------\nno weight'
-              }
-            />
-          </BpkTableCell>
-          <BpkTableCell>
-            <MultilineParagraph
-              text={
-                '$bpk-text-xs-line-height\n--------------------------------\n$bpk-line-height-xs\n--------------------------------\nno line height'
+                '$bpk-text-xs-line-height\n$bpk-line-height-xs\nno line height'
               }
             />
           </BpkTableCell>
