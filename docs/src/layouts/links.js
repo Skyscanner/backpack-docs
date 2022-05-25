@@ -96,7 +96,7 @@ const ComponentsLinks = [
         id: 'CHECKBOX',
         route: routes.CHECKBOX,
         children: 'Checkbox',
-        tags: ['android', 'web'],
+        tags: ['android', 'compose', 'web'],
         keywords: ['switch', 'toggle'],
       },
       {
@@ -194,7 +194,7 @@ const ComponentsLinks = [
         id: 'PANEL',
         route: routes.PANEL,
         children: 'Panel',
-        tags: ['web', 'native', 'android', 'ios'],
+        tags: ['web', 'native', 'android', 'comppose', 'ios'],
       },
       {
         id: 'IMAGE',
@@ -279,7 +279,7 @@ const ComponentsLinks = [
         id: 'RADIO_BUTTON',
         route: routes.RADIO_BUTTON,
         children: 'Radio button',
-        tags: ['web', 'android'],
+        tags: ['web', 'android', 'compose'],
       },
       {
         id: 'TICKET',
@@ -333,7 +333,7 @@ const ComponentsLinks = [
         id: 'DIALOG',
         route: routes.DIALOG,
         children: 'Dialog',
-        tags: ['web', 'android', 'native', 'ios'],
+        tags: ['web', 'android', 'compose', 'native', 'ios'],
       },
       {
         id: 'NAVIGATION_BAR',
@@ -419,7 +419,7 @@ const ComponentsLinks = [
         id: 'NATIVE_SWITCH',
         route: routes.SWITCH,
         children: 'Switch',
-        tags: ['native', 'android', 'ios', 'web'],
+        tags: ['native', 'android', 'compose', 'ios', 'web'],
         keywords: ['switch', 'toggle', 'checkbox'],
       },
       {

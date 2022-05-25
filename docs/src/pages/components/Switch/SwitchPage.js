@@ -19,6 +19,7 @@
 import React from 'react';
 
 import Android, { metadata as androidMetadata } from './AndroidSwitch.mdx';
+import Compose, { metadata as composeMetadata } from './ComposeSwitch.mdx';
 import IOS, { metadata as iosMetadata } from './IOSSwitch.mdx';
 import Native, { metadata as nativeMetadata } from './NativeSwitch.mdx';
 import Web, { metadata as webMetadata } from './WebSwitch.mdx';
@@ -39,6 +40,7 @@ const SwitchPage = () => (
     title="Switch"
     blurb={blurb}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
