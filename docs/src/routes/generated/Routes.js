@@ -23,7 +23,7 @@ import MarkdownPage from '../../components/MarkdownPage';
 
 import ANIMATION from '../../static-pages/animation.mdx';
 import BORDER from '../../static-pages/border.mdx';
-import LAYOUT_GRIDS from '../../static-pages/layout-grids.mdx';
+import LAYOUT_GRID_MARGINS from '../../static-pages/layout-grid-margins.mdx';
 import RADIUS from '../../static-pages/radius.mdx';
 import SHADOW from '../../static-pages/shadow.mdx';
 import SPACING from '../../static-pages/spacing.mdx';
@@ -40,6 +40,7 @@ import GRAPHIC_DEVICES from '../../static-pages/graphic-devices.mdx';
 import ICONOGRAPHY from '../../static-pages/iconography.mdx';
 import ILLUSTRATION from '../../static-pages/illustration.mdx';
 import IN_USE from '../../static-pages/in-use.mdx';
+import LAYOUT_GRIDS from '../../static-pages/layout-grids.mdx';
 import LOGO from '../../static-pages/logo.mdx';
 import PHOTOGRAPHY from '../../static-pages/photography.mdx';
 import SHADOWS from '../../static-pages/shadows.mdx';
@@ -65,12 +66,12 @@ export const tokens = [{
       />
     )
   },{
-    path: ROUTES.GENERATED_TOKENS_LAYOUT_GRIDS,
+    path: ROUTES.GENERATED_TOKENS_LAYOUT_GRID_MARGINS,
     component: () => (
       <MarkdownPage
-        fileName="/docs/src/static-pages/layout-grids.mdx"
-        content={LAYOUT_GRIDS}
-        {...{"title":"Layout grids","subtitle":"Layout grids tokens for use on web.","category":"tokens"}}
+        fileName="/docs/src/static-pages/layout-grid-margins.mdx"
+        content={LAYOUT_GRID_MARGINS}
+        {...{"title":"Layout Grid Margins","subtitle":"Layout grids tokens for use on web.","category":"tokens"}}
       />
     )
   },{
@@ -220,6 +221,15 @@ export const guidelines = [{
       />
     )
   },{
+    path: ROUTES.GENERATED_GUIDELINES_LAYOUT_GRIDS,
+    component: () => (
+      <MarkdownPage
+        fileName="/docs/src/static-pages/layout-grids.mdx"
+        content={LAYOUT_GRIDS}
+        {...{"title":"Layout Grids","subtitle":"Layout Grids are the collective term for breakpoints, margins, columns and gutters. They help build consistent designs, and form a familiar experience for travellers.","category":"guidelines"}}
+      />
+    )
+  },{
     path: ROUTES.GENERATED_GUIDELINES_LOGO,
     component: () => (
       <MarkdownPage
@@ -261,7 +271,7 @@ export const guidelines = [{
       <MarkdownPage
         fileName="/docs/src/static-pages/typography.mdx"
         content={TYPOGRAPHY}
-        {...{"title":"Typography","category":"guidelines"}}
+        {...{"title":"Typography","subtitle":"Everyone has a type. Skiing across an untouched piste? Yep. Being horizontal on a deserted beach? Phwoar. But we also have a thing for typography. The relationship between weight, size, line height, reading width, font pairing and justification is complicated to get right – and easy to get wrong. These tiny details really change the UI – and most importantly – our travellers' experience.","category":"guidelines"}}
       />
     )
   }];
