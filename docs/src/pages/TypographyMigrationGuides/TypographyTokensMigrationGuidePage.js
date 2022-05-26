@@ -90,16 +90,14 @@ const TypographyTokensMigrationGuidePage = () => (
         <BpkTableRow>
           <BpkTableCell>
             <MultilineParagraph
-              text={
-                '$bpk-text-xs-font-size\n--------------------------------\n$bpk-font-size-xs'
-              }
+              text={'$bpk-text-xs-font-size\n$bpk-font-size-xs'}
             />
           </BpkTableCell>
           <BpkTableCell>$bpk-font-weight-bold</BpkTableCell>
           <BpkTableCell>
             <MultilineParagraph
               text={
-                '$bpk-text-xs-line-height\n--------------------------------\n$bpk-line-height-xs\n--------------------------------\nno line height'
+                '$bpk-text-xs-line-height\n$bpk-line-height-xs\nno line height'
               }
             />
           </BpkTableCell>
@@ -108,22 +106,20 @@ const TypographyTokensMigrationGuidePage = () => (
         <BpkTableRow>
           <BpkTableCell>
             <MultilineParagraph
+              text={'$bpk-text-sm-font-size\n$bpk-font-size-sm'}
+            />
+          </BpkTableCell>
+          <BpkTableCell>
+            <MultilineParagraph
               text={
-                '$bpk-text-sm-font-size\n--------------------------------\n$bpk-font-size-sm'
+                '$bpk-text-sm-font-weight\n$bpk-font-weight-book\nno weight'
               }
             />
           </BpkTableCell>
           <BpkTableCell>
             <MultilineParagraph
               text={
-                '$bpk-text-sm-font-weight\n--------------------------------\n$bpk-font-weight-book\n--------------------------------\nno weight'
-              }
-            />
-          </BpkTableCell>
-          <BpkTableCell>
-            <MultilineParagraph
-              text={
-                '$bpk-text-sm-line-height\n--------------------------------\n$bpk-line-height-sm\n--------------------------------\nno line height'
+                '$bpk-text-sm-line-height\n$bpk-line-height-sm\nno line height'
               }
             />
           </BpkTableCell>
@@ -132,16 +128,14 @@ const TypographyTokensMigrationGuidePage = () => (
         <BpkTableRow>
           <BpkTableCell>
             <MultilineParagraph
-              text={
-                '$bpk-text-sm-font-size\n--------------------------------\n$bpk-font-size-sm'
-              }
+              text={'$bpk-text-sm-font-size\n$bpk-font-size-sm'}
             />
           </BpkTableCell>
           <BpkTableCell>$bpk-font-weight-bold</BpkTableCell>
           <BpkTableCell>
             <MultilineParagraph
               text={
-                '$bpk-text-sm-line-height\n--------------------------------\n$bpk-line-height-sm\n--------------------------------\nno line height'
+                '$bpk-text-sm-line-height\n$bpk-line-height-sm\nno line height'
               }
             />
           </BpkTableCell>
@@ -150,22 +144,20 @@ const TypographyTokensMigrationGuidePage = () => (
         <BpkTableRow>
           <BpkTableCell>
             <MultilineParagraph
+              text={'$bpk-text-base-font-size\n$bpk-font-size-base'}
+            />
+          </BpkTableCell>
+          <BpkTableCell>
+            <MultilineParagraph
               text={
-                '$bpk-text-base-font-size\n--------------------------------\n$bpk-font-size-base'
+                '$bpk-text-base-font-weight\n$bpk-font-weight-book\nno weight'
               }
             />
           </BpkTableCell>
           <BpkTableCell>
             <MultilineParagraph
               text={
-                '$bpk-text-base-font-weight\n--------------------------------\n$bpk-font-weight-book\n--------------------------------\nno weight'
-              }
-            />
-          </BpkTableCell>
-          <BpkTableCell>
-            <MultilineParagraph
-              text={
-                '$bpk-text-base-line-height\n--------------------------------\n$bpk-line-height-base\n--------------------------------\nno line height'
+                '$bpk-text-base-line-height\n$bpk-line-height-base\nno line height'
               }
             />
           </BpkTableCell>
@@ -175,7 +167,7 @@ const TypographyTokensMigrationGuidePage = () => (
           <BpkTableCell>
             <MultilineParagraph
               text={
-                '$bpk-text-base-font-size\n--------------------------------\n$bpk-font-size-base\n--------------------------------\nno font size'
+                '$bpk-text-base-font-size\n$bpk-font-size-base\nno font size'
               }
             />
           </BpkTableCell>
@@ -183,7 +175,7 @@ const TypographyTokensMigrationGuidePage = () => (
           <BpkTableCell>
             <MultilineParagraph
               text={
-                '$bpk-text-base-line-height\n--------------------------------\n$bpk-line-height-base\n--------------------------------\nno line height'
+                '$bpk-text-base-line-height\n$bpk-line-height-base\nno line height'
               }
             />
           </BpkTableCell>
@@ -195,22 +187,20 @@ const TypographyTokensMigrationGuidePage = () => (
         <BpkTableRow>
           <BpkTableCell>
             <MultilineParagraph
+              text={'$bpk-text-lg-font-size\n$bpk-font-size-lg'}
+            />
+          </BpkTableCell>
+          <BpkTableCell>
+            <MultilineParagraph
               text={
-                '$bpk-text-lg-font-size\n--------------------------------\n$bpk-font-size-lg'
+                '$bpk-text-lg-font-weight\n$bpk-font-weight-book\nno weight'
               }
             />
           </BpkTableCell>
           <BpkTableCell>
             <MultilineParagraph
               text={
-                '$bpk-text-lg-font-weight\n--------------------------------\n$bpk-font-weight-book\n--------------------------------\nno weight'
-              }
-            />
-          </BpkTableCell>
-          <BpkTableCell>
-            <MultilineParagraph
-              text={
-                '$bpk-text-lg-line-height\n--------------------------------\n$bpk-line-height-lg\n--------------------------------\nno line height'
+                '$bpk-text-lg-line-height\n$bpk-line-height-lg\nno line height'
               }
             />
           </BpkTableCell>
@@ -219,16 +209,14 @@ const TypographyTokensMigrationGuidePage = () => (
         <BpkTableRow>
           <BpkTableCell>
             <MultilineParagraph
-              text={
-                '$bpk-text-lg-font-size\n--------------------------------\n$bpk-font-size-lg'
-              }
+              text={'$bpk-text-lg-font-size\n$bpk-font-size-lg'}
             />
           </BpkTableCell>
           <BpkTableCell>$bpk-font-weight-bold</BpkTableCell>
           <BpkTableCell>
             <MultilineParagraph
               text={
-                '$bpk-text-lg-line-height\n--------------------------------\n$bpk-line-height-lg\n--------------------------------\nno line height'
+                '$bpk-text-lg-line-height\n$bpk-line-height-lg\nno line height'
               }
             />
           </BpkTableCell>
@@ -237,22 +225,20 @@ const TypographyTokensMigrationGuidePage = () => (
         <BpkTableRow>
           <BpkTableCell>
             <MultilineParagraph
+              text={'$bpk-text-xl-font-size\n$bpk-font-size-xl'}
+            />
+          </BpkTableCell>
+          <BpkTableCell>
+            <MultilineParagraph
               text={
-                '$bpk-text-xl-font-size\n--------------------------------\n$bpk-font-size-xl'
+                '$bpk-text-xl-font-weight\n$bpk-font-weight-book\nno weight'
               }
             />
           </BpkTableCell>
           <BpkTableCell>
             <MultilineParagraph
               text={
-                '$bpk-text-xl-font-weight\n--------------------------------\n$bpk-font-weight-book\n--------------------------------\nno weight'
-              }
-            />
-          </BpkTableCell>
-          <BpkTableCell>
-            <MultilineParagraph
-              text={
-                '$bpk-text-xl-line-height\n--------------------------------\n$bpk-line-height-xl\n--------------------------------\nno line height'
+                '$bpk-text-xl-line-height\n$bpk-line-height-xl\nno line height'
               }
             />
           </BpkTableCell>
@@ -261,22 +247,18 @@ const TypographyTokensMigrationGuidePage = () => (
         <BpkTableRow>
           <BpkTableCell>
             <MultilineParagraph
-              text={
-                '$bpk-text-xl-font-size\n--------------------------------\n$bpk-font-size-xl'
-              }
+              text={'$bpk-text-xl-font-size\n$bpk-font-size-xl'}
+            />
+          </BpkTableCell>
+          <BpkTableCell>
+            <MultilineParagraph
+              text={'$bpk-font-weight-bold\n$bpk-font-weight-black'}
             />
           </BpkTableCell>
           <BpkTableCell>
             <MultilineParagraph
               text={
-                '$bpk-font-weight-bold\n--------------------------------\n$bpk-font-weight-black'
-              }
-            />
-          </BpkTableCell>
-          <BpkTableCell>
-            <MultilineParagraph
-              text={
-                '$bpk-text-xl-line-height\n--------------------------------\n$bpk-line-height-xl\n--------------------------------\nno line height'
+                '$bpk-text-xl-line-height\n$bpk-line-height-xl\nno line height'
               }
             />
           </BpkTableCell>
@@ -285,22 +267,20 @@ const TypographyTokensMigrationGuidePage = () => (
         <BpkTableRow>
           <BpkTableCell>
             <MultilineParagraph
+              text={'$bpk-text-xxl-font-size\n$bpk-font-size-xxl'}
+            />
+          </BpkTableCell>
+          <BpkTableCell>
+            <MultilineParagraph
               text={
-                '$bpk-text-xxl-font-size\n--------------------------------\n$bpk-font-size-xxl'
+                '$bpk-text-xxl-font-weight\n$bpk-font-weight-book\n$bpk-font-weight-bold\n$bpk-font-weight-black\nno weight'
               }
             />
           </BpkTableCell>
           <BpkTableCell>
             <MultilineParagraph
               text={
-                '$bpk-text-xxl-font-weight\n--------------------------------\n$bpk-font-weight-book\n--------------------------------\n$bpk-font-weight-bold\n--------------------------------\n$bpk-font-weight-black\n--------------------------------\nno weight'
-              }
-            />
-          </BpkTableCell>
-          <BpkTableCell>
-            <MultilineParagraph
-              text={
-                '$bpk-text-xxl-line-height\n--------------------------------\n$bpk-line-height-xxl\n--------------------------------\nno line height'
+                '$bpk-text-xxl-line-height\n$bpk-line-height-xxl\nno line height'
               }
             />
           </BpkTableCell>
@@ -309,22 +289,20 @@ const TypographyTokensMigrationGuidePage = () => (
         <BpkTableRow>
           <BpkTableCell>
             <MultilineParagraph
+              text={'$bpk-text-xxxl-font-size\n$bpk-font-size-xxxl'}
+            />
+          </BpkTableCell>
+          <BpkTableCell>
+            <MultilineParagraph
               text={
-                '$bpk-text-xxxl-font-size\n--------------------------------\n$bpk-font-size-xxxl'
+                '$bpk-text-xxxl-font-weight\n$bpk-font-weight-book\n$bpk-font-weight-bold\n$bpk-font-weight-black\nno weight'
               }
             />
           </BpkTableCell>
           <BpkTableCell>
             <MultilineParagraph
               text={
-                '$bpk-text-xxxl-font-weight\n--------------------------------\n$bpk-font-weight-book\n--------------------------------\n$bpk-font-weight-bold\n--------------------------------\n$bpk-font-weight-black\n--------------------------------\nno weight'
-              }
-            />
-          </BpkTableCell>
-          <BpkTableCell>
-            <MultilineParagraph
-              text={
-                '$bpk-text-xxxl-line-height\n--------------------------------\n$bpk-line-height-xxxl\n--------------------------------\nno line height'
+                '$bpk-text-xxxl-line-height\n$bpk-line-height-xxxl\nno line height'
               }
             />
           </BpkTableCell>
@@ -333,22 +311,20 @@ const TypographyTokensMigrationGuidePage = () => (
         <BpkTableRow>
           <BpkTableCell>
             <MultilineParagraph
+              text={'$bpk-text-xxxxl-font-size\n$bpk-font-size-xxxxl'}
+            />
+          </BpkTableCell>
+          <BpkTableCell>
+            <MultilineParagraph
               text={
-                '$bpk-text-xxxxl-font-size\n--------------------------------\n$bpk-font-size-xxxxl'
+                '$bpk-text-xxxxl-font-weight\n$bpk-font-weight-book\n$bpk-font-weight-bold\n$bpk-font-weight-black\nno weight'
               }
             />
           </BpkTableCell>
           <BpkTableCell>
             <MultilineParagraph
               text={
-                '$bpk-text-xxxxl-font-weight\n--------------------------------\n$bpk-font-weight-book\n--------------------------------\n$bpk-font-weight-bold\n--------------------------------\n$bpk-font-weight-black\n--------------------------------\nno weight'
-              }
-            />
-          </BpkTableCell>
-          <BpkTableCell>
-            <MultilineParagraph
-              text={
-                '$bpk-text-xxxxl-line-height\n--------------------------------\n$bpk-line-height-xxxxl\n--------------------------------\nno line height'
+                '$bpk-text-xxxxl-line-height\n$bpk-line-height-xxxxl\nno line height'
               }
             />
           </BpkTableCell>
@@ -357,22 +333,20 @@ const TypographyTokensMigrationGuidePage = () => (
         <BpkTableRow>
           <BpkTableCell>
             <MultilineParagraph
+              text={'$bpk-text-xxxxxl-font-size\n$bpk-font-size-xxxxxl'}
+            />
+          </BpkTableCell>
+          <BpkTableCell>
+            <MultilineParagraph
               text={
-                '$bpk-text-xxxxxl-font-size\n--------------------------------\n$bpk-font-size-xxxxxl'
+                '$bpk-text-xxxxxl-font-weight\n$bpk-font-weight-book\n$bpk-font-weight-bold\n$bpk-font-weight-black\nno weight'
               }
             />
           </BpkTableCell>
           <BpkTableCell>
             <MultilineParagraph
               text={
-                '$bpk-text-xxxxxl-font-weight\n--------------------------------\n$bpk-font-weight-book\n--------------------------------\n$bpk-font-weight-bold\n--------------------------------\n$bpk-font-weight-black\n--------------------------------\nno weight'
-              }
-            />
-          </BpkTableCell>
-          <BpkTableCell>
-            <MultilineParagraph
-              text={
-                '$bpk-text-xxxxxl-line-height\n--------------------------------\n$bpk-line-height-xxxxxl\n--------------------------------\nno line height'
+                '$bpk-text-xxxxxl-line-height\n$bpk-line-height-xxxxxl\nno line height'
               }
             />
           </BpkTableCell>
