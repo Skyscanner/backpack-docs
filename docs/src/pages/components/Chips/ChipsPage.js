@@ -21,6 +21,7 @@
 import React from 'react';
 
 import Android, { metadata as androidMetadata } from './AndroidChip.mdx';
+import Compose, { metadata as composeMetadata } from './ComposeChip.mdx';
 import IOS, { metadata as iosMetadata } from './IOSChip.mdx';
 import Native, { metadata as nativeMetadata } from './NativeChip.mdx';
 import Web, { metadata as webMetadata } from './WebChip.mdx';
@@ -41,6 +42,7 @@ const ChipsPage = () => (
     title="Chip"
     blurb={blurb}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}

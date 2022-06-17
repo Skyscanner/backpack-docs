@@ -22,6 +22,7 @@ import React from 'react';
 
 import Web, { metadata as webMetadata } from './WebNavigationBar.mdx';
 import Android, { metadata as androidMetadata } from './AndroidNavBar.mdx';
+import Compose, { metadata as composeMetadata } from './ComposeNavBar.mdx';
 import Native, { metadata as nativeMetadata } from './NativeNavigationBar.mdx';
 import IOS, { metadata as iosMetadata } from './IOSNavigationBar.mdx';
 
@@ -40,6 +41,7 @@ const BadgePage = () => (
     ]}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />

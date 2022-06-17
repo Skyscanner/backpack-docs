@@ -22,6 +22,7 @@ import React from 'react';
 
 import IconsDesignPage from './DesignIconPage';
 import Android, { metadata as androidMetadata } from './AndroidIcon.mdx';
+import Compose, { metadata as composeMetadata } from './ComposeIcon.mdx';
 import IOS, { metadata as iosMetadata } from './IOSIcon.mdx';
 import Web, { metadata as webMetadata } from './WebIcon.mdx';
 import Native, { metadata as nativeMetadata } from './NativeIcon.mdx';
@@ -46,6 +47,7 @@ const Page = () => (
     ]}
     designSubpage={<IconsDesignPage wrapped />}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
