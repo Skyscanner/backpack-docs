@@ -142,6 +142,12 @@ const ComponentsLinks = [
         tags: ['android'],
       },
       {
+        id: 'PRICE',
+        route: routes.PRICE,
+        children: 'Price',
+        tags: ['web'],
+      },
+      {
         id: 'RATING',
         route: routes.RATING,
         children: 'Rating',
