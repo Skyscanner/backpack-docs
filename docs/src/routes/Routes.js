@@ -56,7 +56,6 @@ import FieldsetsPage from '../pages/components/Fieldsets';
 import FlarePage from '../pages/components/Flare';
 import FloatingActionButtonPage from '../pages/components/FloatingActionButton';
 import PricePage from '../pages/components/Price';
-import RatingPage from '../pages/components/Rating';
 import FloatingNotificationPage from '../pages/components/FloatingNotification';
 import FormsPage from '../pages/components/Forms';
 import FormLabelPage from '../pages/components/FormLabel';
