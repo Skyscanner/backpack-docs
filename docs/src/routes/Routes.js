@@ -57,6 +57,7 @@ import FlarePage from '../pages/components/Flare';
 import FloatingActionButtonPage from '../pages/components/FloatingActionButton';
 import PricePage from '../pages/components/Price';
 import RatingPage from '../pages/components/Rating';
+import FloatingNotificationPage from '../pages/components/FloatingNotification';
 import FormsPage from '../pages/components/Forms';
 import FormLabelPage from '../pages/components/FormLabel';
 import FormValidationPage from '../pages/components/FormValidation';
@@ -85,6 +86,7 @@ import PhoneInputPage from '../pages/components/PhoneInput';
 import PopoversPage from '../pages/components/Popovers';
 import ProgressPage from '../pages/components/Progress';
 import RadioButtonPage from '../pages/components/RadioButton';
+import RatingPage from '../pages/components/Rating';
 import ScrollableCalendarPage from '../pages/components/ScrollableCalendar';
 import SectionListPage from '../pages/components/SectionList';
 import SlidersPage from '../pages/components/Sliders';
@@ -198,6 +200,10 @@ export const ROUTES_MAPPINGS = [
       {
         path: ROUTES.PRICE,
         component: PricePage,
+      },
+      {
+        path: ROUTES.FLOATING_NOTIFICATION,
+        component: FloatingNotificationPage,
       },
       {
         path: ROUTES.TOAST,

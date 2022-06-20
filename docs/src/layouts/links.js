@@ -30,6 +30,13 @@ const ComponentsLinks = [
     sort: true,
     links: [
       {
+        id: 'FLOATING_NOTIFICATION',
+        route: routes.FLOATING_NOTIFICATION,
+        children: 'Floating notification',
+        tags: ['web'],
+        keywords: ['banner', 'notification', 'snackbar', 'toast'],
+      },
+      {
         id: 'GRAPHIC_PROMOTION',
         route: routes.GRAPHIC_PROMOTION,
         children: 'Graphic promotion',
