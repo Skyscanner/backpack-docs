@@ -134,13 +134,13 @@ const ComponentsLinks = [
         id: 'ICON',
         route: routes.ICON,
         children: 'Icon',
-        tags: ['design', 'web', 'native', 'android', 'ios'],
+        tags: ['design', 'web', 'native', 'android', 'ios', 'compose'],
       },
       {
         id: 'SPINNER',
         route: routes.SPINNER,
         children: 'Spinner',
-        tags: ['web', 'native', 'android', 'ios'],
+        tags: ['web', 'native', 'android', 'ios', 'compose'],
       },
       {
         id: 'FLOATING_ACTION_BUTTON',
@@ -195,13 +195,13 @@ const ComponentsLinks = [
         id: 'CHIP',
         route: routes.CHIP,
         children: 'Chip',
-        tags: ['web', 'native', 'android', 'ios'],
+        tags: ['web', 'native', 'android', 'ios', 'compose'],
       },
       {
         id: 'BADGE',
         route: routes.BADGE,
         children: 'Badge',
-        tags: ['web', 'native', 'android', 'ios'],
+        tags: ['web', 'native', 'android', 'ios', 'compose'],
       },
       {
         id: 'PANEL',
@@ -352,7 +352,7 @@ const ComponentsLinks = [
         id: 'NAVIGATION_BAR',
         route: routes.NAVIGATION_BAR,
         children: 'Navigation bar',
-        tags: ['web', 'android', 'native', 'ios'],
+        tags: ['web', 'android', 'native', 'ios', 'compose'],
       },
       {
         id: 'NAVIGATION_STACK',
@@ -469,7 +469,7 @@ const ComponentsLinks = [
         id: 'FLARE',
         route: routes.FLARE,
         children: 'Flare',
-        tags: ['web', 'ios', 'native', 'android'],
+        tags: ['web', 'ios', 'native', 'android', 'compose'],
       },
       {
         id: 'ARIA_LIVE',
