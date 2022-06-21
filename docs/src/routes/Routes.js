@@ -55,6 +55,7 @@ import DrawerPage from '../pages/components/Drawer';
 import FieldsetsPage from '../pages/components/Fieldsets';
 import FlarePage from '../pages/components/Flare';
 import FloatingActionButtonPage from '../pages/components/FloatingActionButton';
+import PricePage from '../pages/components/Price';
 import FloatingNotificationPage from '../pages/components/FloatingNotification';
 import FormsPage from '../pages/components/Forms';
 import FormLabelPage from '../pages/components/FormLabel';
@@ -194,6 +195,10 @@ export const ROUTES_MAPPINGS = [
       {
         path: ROUTES.FLOATING_ACTION_BUTTON,
         component: FloatingActionButtonPage,
+      },
+      {
+        path: ROUTES.PRICE,
+        component: PricePage,
       },
       {
         path: ROUTES.FLOATING_NOTIFICATION,

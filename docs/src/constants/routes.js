@@ -39,6 +39,7 @@ export const BOTTOM_SHEET = '/components/bottom-sheet';
 export const ICON = '/components/icon';
 export const SPINNER = '/components/spinner';
 export const FLOATING_ACTION_BUTTON = '/components/floating-action-button';
+export const PRICE = '/components/price';
 export const RATING = '/components/rating';
 export const TOAST = '/components/toast';
 export const CHECKBOX = '/components/checkbox';
