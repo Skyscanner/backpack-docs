@@ -21,6 +21,7 @@
 import React from 'react';
 
 import Android, { metadata as androidMetadata } from './AndroidSpinner.mdx';
+import Compose, { metadata as composeMetadata } from './ComposeSpinner.mdx';
 import IOS, { metadata as iosMetadata } from './IOSSpinner.mdx';
 import Native, { metadata as nativeMetadata } from './NativeSpinner.mdx';
 import Web, { metadata as webMetadata } from './WebSpinner.mdx';
@@ -41,6 +42,7 @@ const Page = () => (
     title="Spinner"
     blurb={blurb}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
