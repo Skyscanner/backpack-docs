@@ -143,6 +143,12 @@ const ComponentsLinks = [
         tags: ['web', 'native', 'android', 'ios', 'compose'],
       },
       {
+        id: 'SPLIT_INPUT',
+        route: routes.SPLIT_INPUT,
+        children: 'Split input',
+        tags: ['web'],
+      },
+      {
         id: 'FLOATING_ACTION_BUTTON',
         route: routes.FLOATING_ACTION_BUTTON,
         children: 'Floating action button',

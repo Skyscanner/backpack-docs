@@ -91,6 +91,7 @@ import SectionListPage from '../pages/components/SectionList';
 import SlidersPage from '../pages/components/Sliders';
 import SkipLinkPage from '../pages/components/SkipLink';
 import SpinnerPage from '../pages/components/Spinner';
+import SplitInputPage from '../pages/components/SplitInput';
 import StarRatingPage from '../pages/components/StarRating';
 import SwitchPage from '../pages/components/Switch';
 import TablesPage from '../pages/components/Tables';
@@ -284,6 +285,7 @@ export const ROUTES_MAPPINGS = [
       { path: ROUTES.SLIDER, component: SlidersPage },
       { path: ROUTES.SKIP_LINK, component: SkipLinkPage },
       { path: ROUTES.SPINNER, component: SpinnerPage },
+      { path: ROUTES.SPLIT_INPUT, component: SplitInputPage },
       {
         path: ROUTES.STAR_RATING,
         component: StarRatingPage,
