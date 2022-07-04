@@ -361,12 +361,6 @@ const ComponentsLinks = [
         tags: ['web', 'android', 'native', 'ios', 'compose'],
       },
       {
-        id: 'NAVIGATION_STACK',
-        route: routes.NAVIGATION_STACK,
-        children: 'Navigation stack',
-        tags: ['web'],
-      },
-      {
         id: 'BREAKPOINT',
         route: routes.BREAKPOINT,
         children: 'Breakpoint',
