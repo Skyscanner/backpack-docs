@@ -77,7 +77,6 @@ import SelectPage from '../pages/components/Select';
 import TouchableNativeFeedbackPage from '../pages/components/TouchableNativeFeedback';
 import TouchableOverlayPage from '../pages/components/TouchableOverlay';
 import NavigationBarPage from '../pages/components/NavigationBar';
-import NavigationStackPage from '../pages/components/NavigationStack';
 import NudgerPage from '../pages/components/Nudger';
 import PaginationPage from '../pages/components/Pagination';
 import PanelPage from '../pages/components/Panel';
@@ -254,10 +253,6 @@ export const ROUTES_MAPPINGS = [
       {
         path: ROUTES.NAVIGATION_BAR,
         component: NavigationBarPage,
-      },
-      {
-        path: ROUTES.NAVIGATION_STACK,
-        component: NavigationStackPage,
       },
       { path: ROUTES.NUDGER, component: NudgerPage },
       { path: ROUTES.PAGINATION, component: PaginationPage },
