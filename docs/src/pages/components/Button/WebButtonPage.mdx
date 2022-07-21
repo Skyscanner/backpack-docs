@@ -114,14 +114,56 @@ This button can be used on light coloured backgrounds.
   <LoadingExample />
 </PresentationBlock>
 
+## Accessibility considerations
+
+### Repeated button labels
+
+Sometimes design requires showing buttons that are visually the same, for example, seeing 'Select' repeated multiple times on a search results page.
+
+Visually impaired visitors can get context by manually navigating around the content. Still, when exploring via buttons, they often hear 'Select', 'Select', and 'Select', with no context regarding what will be selected.
+
+To improve the experience, Designers & UX writers should supply what information a visitor may need to help them make their choice. Use CSS or ARIA to give visually impaired users this information.
+
+### Icon-only buttons
+
+Buttons always require a label for people to understand their meaning.
+
+If a visual label isn't present then an accessible name should be provided to include visually impaired visitors. Designers & UX writers should supply this label.
+
+<!--- ### Link buttons and links
+
+Once link has been designed, this documentation may need updating to include guidance on when to use and not to use (see: https://marcysutton.com/links-vs-buttons-in-modern-web-applications
+
+--->
+
+### Disabled states
+
+The `disabled` attribute prevents click and focus, creating an annoying experience for some visitors, such as visually impaired screen reader users who may not quickly locate a submit button on a long form.
+
+Using `aria-disabled` allows these visitors to focus on the button and announce the status. Considerations need to be made on click events. Click could be prevented or enabled with the click event taking the visitor to the first missing form element.
+
+### Loading states
+
+When a button is in its loading state, it is disabled from further interaction until the action completes or the action fails to complete.
+
+Visually impaired visitors should also be updated on progress. If a visual label is not on the loading button, then visually hidden text should update when significant events happen. To further improve the experience, time-based feedback could reassure the visitor that something is still happening.
+
+
 ## Accessibility testing
 
 ### Keyboard testing
 
 1. Press `TAB` until the button receives focus.
 2. Ensure that the button has a recognisable outline to clearly identify the state.
-3. Pressing `SPACEBAR` or `ENTER` will activate the button.
-4. Press `TAB` again to move to the next focusable item, or `SHIFT` + `TAB` to move to the previous item.
+3. Press `SPACEBAR` or `ENTER` to activate the button.
+
+### Screen reader testing
+
+1. Press `TAB` until the button receives focus.
+2. Ensure that the purpose of the button is clear.
+3. Check that the button announces itself as having a role of button.
+4. Ensure that the state of the button is clear, for example, `pressed`, `expanded` or `disabled`.
+5. Press `SPACEBAR` or `ENTER` to activate the button.
 
 ## Implementation
 
