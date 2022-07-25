@@ -213,7 +213,7 @@ const ComponentsLinks = [
         id: 'PANEL',
         route: routes.PANEL,
         children: 'Panel',
-        tags: ['web', 'native', 'android', 'comppose', 'ios'],
+        tags: ['web', 'native', 'android', 'compose', 'ios'],
       },
       {
         id: 'IMAGE',
