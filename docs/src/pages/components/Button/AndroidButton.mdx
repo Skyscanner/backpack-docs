@@ -40,6 +40,39 @@ import LinkDm from 'backpack-android/docs/view/Button/screenshots/link_dm.png';
   darkMode={LinkDm}
   altText="Button (link buttons)" />
 
+ ## Accessibility considerations
+
+ ### Icon-only buttons
+
+ Buttons always require a label for people to understand their meaning.
+
+ If a visual label isn't present then an accessible name should be provided to include visually impaired visitors. Designers & UX writers should supply this label.
+
+ ### Loading states
+
+ When a button is in its loading state, it is disabled from further interaction until the action completes or the action fails to complete.
+
+ Visually impaired visitors should also be updated on progress. If a visual label is not on the loading button, then an accessible name should be provided. After completion focus should be placed on the most sensible location based on the previous interaction, for example a heading element, modal window, or a control.
+
+ ## Accessibility testing
+
+
+ <!-- Removed the keyboard testing, this is in the Web area, and although we could test with a Bluetooth keyboard I think the primary focus needs to be to cover SR testing -->
+
+ <!-- ### Keyboard testing
+
+ 1. Press `TAB` until the button receives focus.
+ 2. Ensure that the button has a recognisable outline to clearly identify the state.
+ 3. Press `SPACEBAR` or `ENTER` to activate the button. --> 
+
+ ### Screen reader testing
+
+ #### Talkback
+
+ 1. Swipe right to the button.
+ 2. Ensure the purpose and role are clear, and announced. For example, 'Search flights, button'.
+ 3. If the button has a state, such as expanded, collapsed, or disabled, then this should also be announced.
+
 ## Button Implementation
 
 <ButtonReadme />
