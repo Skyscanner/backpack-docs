@@ -310,13 +310,13 @@ const ComponentsLinks = [
         id: 'HORIZONTAL_NAV',
         route: routes.HORIZONTAL_NAV,
         children: 'Horizontal navigation',
-        tags: ['web', 'native', 'android', 'ios'],
+        tags: ['web', 'native', 'android', 'compose', 'ios'],
       },
       {
         id: 'FIELDSET',
         route: routes.FIELDSET,
         children: 'Fieldset',
-        tags: ['web'],
+        tags: ['web', 'compose'],
       },
       {
         id: 'STAR_RATING',
@@ -402,7 +402,7 @@ const ComponentsLinks = [
         id: 'NATIVE_INPUT',
         route: routes.TEXT_INPUT,
         children: 'Text input',
-        tags: ['native', 'ios', 'android', 'web'],
+        tags: ['native', 'ios', 'android', 'compose', 'web'],
       },
       // TODO: Uncomment later.
       // {

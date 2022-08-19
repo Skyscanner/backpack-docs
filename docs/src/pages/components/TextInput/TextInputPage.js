@@ -20,6 +20,7 @@ import React from 'react';
 
 import Web, { metadata as webMetadata } from './WebTextInput.mdx';
 import Android, { metadata as androidMetadata } from './AndroidTextInput.mdx';
+import Compose, { metadata as composeMetadata } from './ComposeTextInput.mdx';
 import IOS, { metadata as iosMetadata } from './IOSTextInput.mdx';
 import Native, { metadata as nativeMetadata } from './NativeTextInput.mdx';
 
@@ -41,6 +42,7 @@ const TextInputPage = () => (
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
