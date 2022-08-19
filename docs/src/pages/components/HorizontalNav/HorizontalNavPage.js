@@ -25,6 +25,9 @@ import Native, { metadata as nativeMetadata } from './NativeHorizontalNav.mdx';
 import Android, {
   metadata as androidMetadata,
 } from './AndroidHorizontalNav.mdx';
+import Compose, {
+  metadata as composeMetadata,
+} from './ComposeHorizontalNav.mdx';
 import IOS, { metadata as iosMetadata } from './IOSHorizontalNav.mdx';
 
 import MarkdownPage from 'components/MarkdownPage';
@@ -45,6 +48,7 @@ const Page = () => (
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
   />
 );

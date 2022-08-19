@@ -21,6 +21,7 @@ import React from 'react';
 import * as ROUTES from '../../../constants/routes';
 
 import Web, { metadata as webMetadata } from './WebFieldsets.mdx';
+import Compose, { metadata as composeMetadata } from './ComposeFieldsets.mdx';
 
 import RouterLink from 'components/RouterLink';
 import MarkdownPage from 'components/MarkdownPage';
@@ -46,6 +47,7 @@ const FieldsetPage = () => (
     title="Fieldset"
     blurb={blurb}
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
+    composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
   />
 );
 
