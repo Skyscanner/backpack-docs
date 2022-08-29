@@ -397,6 +397,12 @@ const ComponentsLinks = [
         children: 'Breadcrumb',
         tags: ['web'],
       },
+      {
+        id: 'CONTENT_CARDS',
+        route: routes.CONTENT_CARDS,
+        children: 'Content Cards',
+        tags: ['web'],
+      },
       // Native components.
       {
         id: 'NATIVE_FLAT_LIST',
