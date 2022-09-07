@@ -8,16 +8,10 @@ githubPath: bpk-component-barchart
 import PresentationBlock from 'components/PresentationBlock';
 import Readme from 'backpack/packages/bpk-component-barchart/README.md';
 import {
-  AxesAndGridlines,
   DefaultExample,
-  CustomScrollColors,
-  DefaultDisabledDataTable,
-  Interactive,
-  Outliers,
-  CustomTicks,
-  CustomTickLabels,
+  InteractiveExample,
+  OutliersExample,
   GridlinesExample,
-  CustomYAxisDomain,
 } from 'backpack/examples/bpk-component-barchart/examples';
 
 ## Table of contents
@@ -43,7 +37,7 @@ It is possible to show gridlines for each tick on the Y axis.
 The bars can be made interactive using the `onBarClick` and `getBarSelection` props.
 
 <PresentationBlock>
-  <Interactive />
+  <InteractiveExample />
 </PresentationBlock>
 
 ## Outliers
@@ -51,7 +45,7 @@ The bars can be made interactive using the `onBarClick` and `getBarSelection` pr
 Outliers can be capped to indicate they are far off the scale. In this case using `outlierPercentage` of 15.s.
 
 <PresentationBlock>
-  <Outliers />
+  <OutliersExample />
 </PresentationBlock>
 
 ## Implementation

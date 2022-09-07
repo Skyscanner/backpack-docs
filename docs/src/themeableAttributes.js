@@ -16,7 +16,6 @@
  * limitations under the License.
  */
 
-import { themeAttributes as accordionThemeAttributes } from 'backpack/packages/bpk-component-accordion';
 import { themeAttributes as badgeThemeAttributes } from 'backpack/packages/bpk-component-badge';
 import { themeAttributes as bannerAlertThemeAttributes } from 'backpack/packages/bpk-component-banner-alert';
 import { themeAttributes as barchartThemeAttributes } from 'backpack/packages/bpk-component-barchart';
@@ -68,7 +67,6 @@ const docsThemeAttributes = [
 ];
 
 export default [
-  ...accordionThemeAttributes,
   ...badgeThemeAttributes,
   ...bannerAlertThemeAttributes,
   ...barchartThemeAttributes,

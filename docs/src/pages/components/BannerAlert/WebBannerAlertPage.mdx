@@ -8,22 +8,12 @@ githubPath: bpk-component-banner-alert
 import PresentationBlock from 'components/PresentationBlock';
 import Readme from 'backpack/packages/bpk-component-banner-alert/README.md';
 import {
-  Neutral,
-  Primary,
-  Success,
-  SuccessLongMessage,
-  Dismissable,
-  SuccessExpandable,
-  SuccessAnimateOnEnter,
-  SuccessWithReactRenderedMessage,
-  Warn,
-  ErrorExample,
-  Event,
-  SuccessDismissableBehaviour,
-  SuccessExpandableBehaviour,
-  SuccessAutomaticallyDismissed,
-  SuccessCustomIcon,
-  DocsDefault,
+  SuccessAnimateOnEnterExample,
+  EventExample,
+  SuccessDismissableBehaviourExample,
+  SuccessExpandableBehaviourExample,
+  SuccessCustomIconExample,
+  DocsDefaultExample,
 } from 'backpack/examples/bpk-component-banner-alert/examples';
 
 ## Table of contents
@@ -33,7 +23,7 @@ import {
 Banner alerts come in various styles to indicate success, warning or error, or some neutral information.
 
 <PresentationBlock>
-  <DocsDefault />
+  <DocsDefaultExample />
 </PresentationBlock>
 
 ## With custom icon
@@ -41,7 +31,7 @@ Banner alerts come in various styles to indicate success, warning or error, or s
 Banner alerts can be configured to show any icon.
 
 <PresentationBlock>
-  <SuccessCustomIcon />
+  <SuccessCustomIconExample />
 </PresentationBlock>
 
 ## Expandable
@@ -49,7 +39,7 @@ Banner alerts can be configured to show any icon.
 They can be configured to display further information to the user in the form of an expandable panel.
 
 <PresentationBlock>
-  <SuccessExpandableBehaviour />
+  <SuccessExpandableBehaviourExample />
 </PresentationBlock>
 
 ## Dismissible
@@ -59,7 +49,7 @@ Banner alerts can be configured to include a close icon so that the user can dis
 Note that if banner-alerts are being added or removed dynamically (like in the example below), you should render a [BpkAriaLive](/components/aria-live) container describing the updates taking place. By doing this, assistive technologies will know to inform the user when changes are made. By default, only additions to the container will be read out, so you don't need to worry about removing entries again.
 
 <PresentationBlock>
-  <SuccessDismissableBehaviour />
+  <SuccessDismissableBehaviourExample />
 </PresentationBlock>
 
 ## With enter animation
@@ -67,7 +57,7 @@ Note that if banner-alerts are being added or removed dynamically (like in the e
 Banner alerts can be configured to animate when first added to the DOM.
 
 <PresentationBlock>
-  <SuccessAnimateOnEnter />
+  <SuccessAnimateOnEnterExample />
 </PresentationBlock>
 
 ## Event Alert
@@ -75,7 +65,7 @@ Banner alerts can be configured to animate when first added to the DOM.
 Reserved for event-based messaging that has neither a positive or negative connotation. Avoid using this in other contexts.
 
 <PresentationBlock>
-  <Event />
+  <EventExample />
 </PresentationBlock>
 
 ## Implementation
