@@ -20,33 +20,25 @@
 
 import React from 'react';
 
-import Android, { metadata as androidMetadata } from './AndroidBadge.mdx';
-import Compose, { metadata as composeMetadata } from './ComposeBadge.mdx';
-import IOS, { metadata as iosMetadata } from './IOSBadge.mdx';
-import Native, { metadata as nativeMetadata } from './NativeBadge.mdx';
-import Web, { metadata as webMetadata } from './WebBadgePage.mdx';
-import SwiftUI, { metadata as swiftuiMetadata } from './SwiftUIBadge.mdx';
+import IOS, { metadata as iosMetadata } from './IOSSKeleton.mdx';
+import SwiftUI, { metadata as swiftuiMetadata } from './SwiftUISkeleton.mdx';
 
 import DocsPageWrapper from 'components/DocsPageWrapper';
 import IntroBlurb from 'components/IntroBlurb';
 import MarkdownPage from 'components/MarkdownPage';
 
-const BadgePage = () => (
+const SkeletonPage = () => (
   <DocsPageWrapper
-    title="Badge"
+    title="Skeleton"
     blurb={[
       <IntroBlurb>
-        Badges are labels which hold small amounts of information used to
-        describe or highlight areas.
+        Skeleton are used to indicate the user interface is loading. And help the traveler get a 
+        feel on how the page layout will be once data is loaded in.
       </IntroBlurb>,
     ]}
-    androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
-    composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
     swiftuiSubpage={<MarkdownPage content={SwiftUI} {...swiftuiMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
-    nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}
-    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 
-export default BadgePage;
+export default SkeletonPage;

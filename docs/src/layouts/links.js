@@ -44,6 +44,13 @@ const ComponentsLinks = [
         keywords: ['graphic promotion', 'advert'],
       },
       {
+        id: 'SKELETON',
+        route: routes.SKELETON,
+        children: 'Skeleton',
+        tags: ['ios', 'swiftui'],
+        keywords: ['skeleton', 'skeleton loader', 'loader'],
+      },
+      {
         id: 'SKIP_LINK',
         route: routes.SKIP_LINK,
         children: 'Skip link',
@@ -140,7 +147,7 @@ const ComponentsLinks = [
         id: 'SPINNER',
         route: routes.SPINNER,
         children: 'Spinner',
-        tags: ['web', 'native', 'android', 'ios', 'compose'],
+        tags: ['web', 'native', 'android', 'ios', 'compose', 'swiftui'],
       },
       {
         id: 'SPLIT_INPUT',
@@ -207,7 +214,7 @@ const ComponentsLinks = [
         id: 'BADGE',
         route: routes.BADGE,
         children: 'Badge',
-        tags: ['web', 'native', 'android', 'ios', 'compose'],
+        tags: ['web', 'native', 'android', 'ios', 'compose', 'swiftui'],
       },
       {
         id: 'PANEL',
