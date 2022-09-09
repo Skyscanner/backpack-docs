@@ -491,6 +491,12 @@ const ComponentsLinks = [
         children: 'Theming',
         tags: ['web', 'native', 'android', 'ios'],
       },
+      {
+        id: 'SKELETON',
+        route: routes.SKELETON,
+        children: 'Skeleton',
+        tags: ['android', 'compose'],
+      },
     ],
   },
 ];

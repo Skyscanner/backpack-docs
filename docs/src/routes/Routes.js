@@ -74,6 +74,7 @@ import ModalsPage from '../pages/components/Modals';
 import FlatListPage from '../pages/components/FlatList';
 import PickerPage from '../pages/components/Picker';
 import SelectPage from '../pages/components/Select';
+import SkeletonPage from '../pages/components/Skeleton';
 import TouchableNativeFeedbackPage from '../pages/components/TouchableNativeFeedback';
 import TouchableOverlayPage from '../pages/components/TouchableOverlay';
 import NavigationBarPage from '../pages/components/NavigationBar';
@@ -277,6 +278,7 @@ export const ROUTES_MAPPINGS = [
         component: SectionListPage,
       },
       { path: ROUTES.SELECT, component: SelectPage },
+      { path: ROUTES.SKELETON, component: SkeletonPage },
       { path: ROUTES.SLIDER, component: SlidersPage },
       { path: ROUTES.SKIP_LINK, component: SkipLinkPage },
       { path: ROUTES.SPINNER, component: SpinnerPage },
