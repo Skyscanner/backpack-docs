@@ -100,6 +100,7 @@ export const FLARE = '/components/flare';
 export const BOTTOM_NAV = '/components/bottom-nav';
 export const GRAPHIC_PROMOTION = '/components/graphic-promotion';
 export const FLOATING_NOTIFICATION = '/components/floating-notification';
+export const SKELETON = '/components/skeleton';
 
 export const ALIGNMENT = '/components/alignment';
 export const THEMING = '/components/theming';
