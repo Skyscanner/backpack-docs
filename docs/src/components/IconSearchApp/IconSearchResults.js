@@ -33,7 +33,7 @@ import { cssModules } from 'backpack/packages/bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 
-const IconSearchResults = props => {
+const IconSearchResults = (props) => {
   const { icons, searchQuery } = props;
 
   const categories = _.groupBy(icons, 'categoryName');

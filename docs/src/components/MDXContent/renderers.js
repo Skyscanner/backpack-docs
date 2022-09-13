@@ -55,7 +55,7 @@ const Renderer = () => {
     return <BpkCodeBlock {...rest} alternate />;
   };
 
-  TAG_NAMES.forEach(tag => {
+  TAG_NAMES.forEach((tag) => {
     renderers[tag] = (headingProps: { children: string }) => {
       const { children, ...headingRest } = headingProps;
 

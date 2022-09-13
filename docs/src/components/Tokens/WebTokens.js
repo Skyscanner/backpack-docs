@@ -46,7 +46,7 @@ const WebTokens = (props: Props) => {
   const { matcher, tokens } = props;
 
   const filteredTokens = Object.keys(tokens.props)
-    .map(key => {
+    .map((key) => {
       const token = tokens.props[key];
       if (token.deprecated) {
         return null;
@@ -82,7 +82,7 @@ const WebTokens = (props: Props) => {
           </BpkTableRow>
         )}
         {!!filteredTokens.length &&
-          filteredTokens.map(token => (
+          filteredTokens.map((token) => (
             <BpkTableRow key={token.name}>
               <BpkTableCell>
                 {formatTokenName(token.name).replace('-v-2', '')}

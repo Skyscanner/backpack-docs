@@ -45,18 +45,18 @@ const isProduction = NODE_ENV === 'production';
 
 // Strings passed from environment variables must
 // be stringified or JS won't interpret them correctly.
-const getSafeString = input => JSON.stringify(input);
+const getSafeString = (input) => JSON.stringify(input);
 
 const staticSiteGeneratorConfig = {
   paths: [
-    ...Object.keys(ROUTES).map(key => ROUTES[key]),
+    ...Object.keys(ROUTES).map((key) => ROUTES[key]),
     ...Object.keys(redirects),
     '/404.html',
   ],
 };
 
 const sassOptions = {
-  prependData: BPK_TOKENS
+  additionalData: BPK_TOKENS
     ? fs.readFileSync(
         `node_modules/@skyscanner/bpk-foundations-web/tokens/${BPK_TOKENS}.scss`,
       )
@@ -84,34 +84,31 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.[jt]sx?$/,
         exclude: /node_modules\/?(!bpk-|!@skyscanner\/).*/,
-        use: {
-          loader: 'babel-loader',
-          // Added due to an error being thrown by d3-scale/numbers.js with
-          // regeneratorRuntime error not being defined due to polyfills being required
-          options: {
-            presets: [
-              [
-                '@babel/preset-env',
-                {
-                  targets: {
-                    node: 'current',
-                  },
-                },
-              ],
-            ],
-          },
+        loader: 'babel-loader',
+        // Added due to an error being thrown by d3-scale/numbers.js with
+        // regeneratorRuntime error not being defined due to polyfills being required
+        options: {
+          presets: [['@babel/preset-env']],
         },
       },
+      // {
+      //   test: /\.[jt]sx?$/,
+      //   include: /node_modules\/@skyscanner\/bpk-svgs.*/,
+
+      //   loader: 'babel-loader',
+      //   // Added due to an error being thrown by d3-scale/numbers.js with
+      //   // regeneratorRuntime error not being defined due to polyfills being required
+      //   options: {
+      //     presets: [['@babel/preset-env']],
+      //   },
+      // },
       {
         test: /base\.scss$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: !isProduction,
-            },
           },
           {
             loader: 'css-loader',
@@ -134,9 +131,6 @@ const config = {
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: !isProduction,
-            },
           },
           {
             loader: 'css-loader',
@@ -166,9 +160,6 @@ const config = {
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: !isProduction,
-            },
           },
           {
             loader: 'css-loader',

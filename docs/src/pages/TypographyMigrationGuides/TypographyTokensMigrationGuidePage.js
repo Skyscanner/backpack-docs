@@ -33,9 +33,9 @@ import { cssModules } from 'backpack/packages/bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 
-const MultilineParagraph = props => {
+const MultilineParagraph = (props) => {
   const { text } = props;
-  const newText = text.split('\n').map(str => <p>{str}</p>);
+  const newText = text.split('\n').map((str) => <p>{str}</p>);
 
   return newText;
 };

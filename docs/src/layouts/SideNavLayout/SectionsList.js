@@ -35,11 +35,11 @@ import * as ROUTES from '../../constants/routes';
 
 import STYLES from './SectionsList.scss';
 
+import BpkLargeArrowDown from 'backpack/packages/bpk-component-icon/lg/arrow-down';
+import BpkLargeArrowUp from 'backpack/packages/bpk-component-icon/lg/arrow-up';
 import BpkBreakpoint, {
   BREAKPOINTS,
 } from 'backpack/packages/bpk-component-breakpoint';
-import BpkLargeArrowUp from 'backpack/packages/bpk-component-icon/lg/arrow-up';
-import BpkLargeArrowDown from 'backpack/packages/bpk-component-icon/lg/arrow-down';
 import { withAlignment } from 'backpack/packages/bpk-component-icon';
 import BpkAnimateHeight from 'backpack/packages/bpk-animate-height';
 import { cssModules } from 'backpack/packages/bpk-react-utils';
@@ -81,7 +81,7 @@ const BpkAlignedArrowUp = withAlignment(
   iconSizeLg,
 );
 
-const omitActiveSection = activeSection => omit(sections, activeSection);
+const omitActiveSection = (activeSection) => omit(sections, activeSection);
 
 type SectionListItemProps = {
   link: string,
@@ -142,13 +142,8 @@ type Props = {
 };
 
 const SectionsList = (props: Props) => {
-  const {
-    activeSection,
-    className,
-    expanded,
-    onMenuToggle,
-    onSectionChange,
-  } = props;
+  const { activeSection, className, expanded, onMenuToggle, onSectionChange } =
+    props;
   const outerClassnames = [getClassName('bpkdocs-sections-list')];
   const listClassNames = [getClassName('bpkdocs-sections-list__list')];
   const Arrow = expanded ? BpkAlignedArrowUp : BpkAlignedArrowDown;
@@ -187,12 +182,12 @@ const SectionsList = (props: Props) => {
       </div>
       <BpkAnimateHeight height={expanded ? 'auto' : 0} duration={200}>
         <ul className={getClassName('bpkdocs-sections-list__list')}>
-          {Object.keys(omitActiveSection(activeSection)).map(section => (
+          {Object.keys(omitActiveSection(activeSection)).map((section) => (
             <BpkBreakpoint
               key={`${section}-${sections[section].title}`}
               query={BREAKPOINTS.TABLET}
             >
-              {isTablet => (
+              {(isTablet) => (
                 <SectionListItem
                   link={sections[section].link}
                   external={sections[section].external}

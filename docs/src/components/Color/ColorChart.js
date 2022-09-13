@@ -93,7 +93,7 @@ class ColorChart extends Component<{}, State> {
       c2: 'white',
       show: true,
     });
-    chartColors.forEach(c1 => {
+    chartColors.forEach((c1) => {
       colHeadings.push({
         c1,
         c2: c1,
@@ -110,14 +110,14 @@ class ColorChart extends Component<{}, State> {
     const displayRows = [];
     const colHeadings = this.createColHeadings();
     displayRows.push(colHeadings);
-    chartColors.forEach(c1 => {
+    chartColors.forEach((c1) => {
       const displayRow = [];
       displayRow.push({
         c1,
         c2: c1,
         show: true,
       });
-      chartColors.forEach(c2 => {
+      chartColors.forEach((c2) => {
         displayRow.push({
           c1,
           c2,
@@ -187,9 +187,9 @@ class ColorChart extends Component<{}, State> {
           className={getClassName('bpk-docs-colors-chart')}
         >
           {displayRows &&
-            displayRows.map(displayRow => (
+            displayRows.map((displayRow) => (
               <tr>
-                {displayRow.map(displayCell => (
+                {displayRow.map((displayCell) => (
                   <th>
                     <div
                       className={getClassName('bpk-docs-colors-chart__item')}

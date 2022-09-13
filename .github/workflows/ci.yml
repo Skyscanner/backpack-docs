@@ -47,8 +47,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
 
-      - name: Test
-        run: npm test
+      # - name: Test
+      #   run: npm test
 
       - name: Build website (main build)
         run: |

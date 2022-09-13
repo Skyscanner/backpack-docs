@@ -87,12 +87,12 @@ const TOKEN_FORMAT_MAP = {
     },
   },
   ios: {
-    size: value => (value ? `${value}pt` : value),
-    'font-size': value => (value ? `${value}pt` : value),
+    size: (value) => (value ? `${value}pt` : value),
+    'font-size': (value) => (value ? `${value}pt` : value),
   },
   android: {
-    size: value => (value ? `${value}dp` : value),
-    'font-size': value => (value ? `${value}sp` : value),
+    size: (value) => (value ? `${value}dp` : value),
+    'font-size': (value) => (value ? `${value}sp` : value),
   },
 };
 

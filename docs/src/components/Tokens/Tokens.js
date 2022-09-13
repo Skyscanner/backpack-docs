@@ -48,7 +48,7 @@ const Tokens = (props: Props) => {
   const { matcher, platform, tokens } = props;
 
   const filteredTokens = Object.keys(tokens.props)
-    .map(key => {
+    .map((key) => {
       const token = tokens.props[key];
       if (token.deprecated) {
         return null;
@@ -76,7 +76,7 @@ const Tokens = (props: Props) => {
           </BpkTableRow>
         )}
         {!!filteredTokens.length &&
-          filteredTokens.map(token => (
+          filteredTokens.map((token) => (
             <BpkTableRow key={token.name}>
               <BpkTableCell>{formatTokenName(token.name)}</BpkTableCell>
               <BpkTableCell>{getTokenValue(token, platform)}</BpkTableCell>

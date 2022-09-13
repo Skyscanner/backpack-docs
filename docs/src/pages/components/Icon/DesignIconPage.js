@@ -23,9 +23,9 @@ import _ from 'lodash';
 // eslint-disable-next-line import/no-webpack-loader-syntax
 import iconsSvgs from '!!file-loader?name=[name].[hash].zip!zip-it-loader!./../../../../../node_modules/@skyscanner/bpk-svgs/dist/svgs/icons';
 
+import BpkSmallDownloadIcon from 'backpack/packages/bpk-component-icon/sm/download';
 import BpkButton from 'backpack/packages/bpk-component-button';
 import { withButtonAlignment } from 'backpack/packages/bpk-component-icon';
-import BpkSmallDownloadIcon from 'backpack/packages/bpk-component-icon/sm/download';
 import icons from 'backpack/packages/bpk-component-icon/all';
 import IntroBlurb from 'components/IntroBlurb';
 import IconSearchApp from 'components/IconSearchApp';
@@ -40,11 +40,11 @@ const friendlyNameMap = {
   lg: 'Large',
 };
 
-const getFriendlyName = id => friendlyNameMap[id] || id;
+const getFriendlyName = (id) => friendlyNameMap[id] || id;
 
 const iconsFinal = _(icons)
   .flatMap((category, categoryId) =>
-    Object.keys(category).map(name => ({
+    Object.keys(category).map((name) => ({
       name,
       categoryId,
       categoryName: getFriendlyName(categoryId),

@@ -43,7 +43,7 @@ export const startGoogleAnalytics = () => {
  * @param {String} page the page receiving the event.
  * @returns {void}
  */
-export const sendPageView = page => {
+export const sendPageView = (page) => {
   if (page == null || page === '') {
     throw new Error('page should not be null or empty');
   }

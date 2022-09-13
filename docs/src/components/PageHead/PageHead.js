@@ -36,7 +36,7 @@ import { BpkList, BpkListItem } from 'backpack/packages/bpk-component-list';
 
 const getClassName = cssModules(STYLES);
 
-const toNodes = children => {
+const toNodes = (children) => {
   if (!children) {
     return null;
   }

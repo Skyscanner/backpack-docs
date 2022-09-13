@@ -42,7 +42,8 @@ import BpkContentContainer from 'backpack/packages/bpk-component-content-contain
 const getClassName = cssModules(STYLES);
 
 const contentShape = PropTypes.oneOfType([PropTypes.string, PropTypes.node]);
-const platformQueryParamRegex = /platform=(design|android|ios|native|web|compose|swiftui)/;
+const platformQueryParamRegex =
+  /platform=(design|android|ios|native|web|compose|swiftui)/;
 
 const PlatformNav = ({
   disableAndroidTab,
@@ -147,7 +148,7 @@ PlatformNav.propTypes = {
   disableWebTab: PropTypes.bool.isRequired,
 };
 
-const DocsPageWrapper = props => {
+const DocsPageWrapper = (props) => {
   const {
     androidSubpage,
     blurb,
@@ -174,7 +175,7 @@ const DocsPageWrapper = props => {
     web: webSubpage,
   };
 
-  const canUsePlatformPreference = platformPreference => {
+  const canUsePlatformPreference = (platformPreference) => {
     if (!platformPreference) {
       return false;
     }
@@ -213,7 +214,7 @@ const DocsPageWrapper = props => {
 
   const initiallyRenderedSubpage = platforms[initiallySelectedPlatform];
 
-  const onPlatformClick = platformName => {
+  const onPlatformClick = (platformName) => {
     setPlatformInLocalStorage(platformName);
     history.push(`${path}?platform=${platformName}`);
   };

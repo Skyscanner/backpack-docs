@@ -34,7 +34,7 @@ import { updateOnThemeChange } from 'backpack/packages/bpk-component-theme-toggl
 const EnhancedThemeProvider = updateOnThemeChange(BpkThemeProvider);
 const getClassName = cssModules(STYLES);
 
-const DefaultLayout = props => {
+const DefaultLayout = (props) => {
   const { children } = props;
 
   return (

@@ -28,12 +28,12 @@ import BpkFieldset from 'backpack/packages/bpk-component-fieldset';
 const getClassName = cssModules(STYLES);
 const FILTER_INPUT_ID = 'icon_search_form_filter';
 
-const IconSearchForm = props => {
+const IconSearchForm = (props) => {
   const { filterValue, onFilterChange } = props;
 
   return (
     <form
-      onSubmit={e => e.preventDefault()}
+      onSubmit={(e) => e.preventDefault()}
       className={getClassName('bpkdocs-icon-search-form')}
     >
       <BpkFieldset
@@ -46,7 +46,7 @@ const IconSearchForm = props => {
           type={INPUT_TYPES.TEXT}
           name="filter"
           value={filterValue}
-          onChange={e => onFilterChange(e.target.value)}
+          onChange={(e) => onFilterChange(e.target.value)}
           placeholder="Filter by name"
         />
       </BpkFieldset>

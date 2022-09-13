@@ -31,8 +31,8 @@ import {
 
 import STYLES from './NavList.scss';
 
-import { withRtlSupport } from 'backpack/packages/bpk-component-icon';
 import ArrowIcon from 'backpack/packages/bpk-component-icon/sm/arrow-right';
+import { withRtlSupport } from 'backpack/packages/bpk-component-icon';
 import { cssModules } from 'backpack/packages/bpk-react-utils';
 import { setPlatformInLocalStorage } from 'helpers/platform-helper';
 import PageSearch from 'components/PageSearch';
@@ -84,14 +84,14 @@ const NavListCategory = (props: NavListCategoryPropType) => (
   <li className={getClassName('bpkdocs-side-nav-list__list-item')}>
     <ul className={getClassName('bpkdocs-side-nav-list__category-list')}>
       {(props.sort ? sortLinks(props.links) : props.links)
-        .filter(x => {
+        .filter((x) => {
           if (!props.selectedFilter || props.selectedFilter === 'all') {
             return true;
           }
 
           return x.tags && x.tags.indexOf(props.selectedFilter) >= 0;
         })
-        .map(link => (
+        .map((link) => (
           // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/main/decisions/flowfixme.md'.
           <NavListItem key={link.id} {...link} onClick={props.onClick} />
         ))}
@@ -145,7 +145,7 @@ class NavList extends Component<NavListPropTypes, NavListState> {
           wrapperClassName={getClassName('bpkdocs-side-nav-list__search')}
         />
         <ul className={getClassName('bpkdocs-side-nav-list__list')}>
-          {links.map(link => (
+          {links.map((link) => (
             // $FlowFixMe[cannot-spread-inexact] - inexact rest. See 'https://github.com/Skyscanner/backpack/blob/main/decisions/flowfixme.md'.
             <NavListCategory
               key={link.id}

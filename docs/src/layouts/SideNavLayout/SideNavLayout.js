@@ -59,7 +59,7 @@ export default class SideNavLayout extends Component<Props, State> {
   }
 
   onMenuToggle = () => {
-    this.setState(prevState => ({
+    this.setState((prevState) => ({
       sectionListExpanded: !prevState.sectionListExpanded,
     }));
   };
@@ -102,7 +102,7 @@ export default class SideNavLayout extends Component<Props, State> {
           href="#main-content"
         />
         <BpkBreakpoint query={BREAKPOINTS.TABLET}>
-          {isTablet =>
+          {(isTablet) =>
             isTablet ? (
               <BpkModal
                 id="mobile-nav-menu"

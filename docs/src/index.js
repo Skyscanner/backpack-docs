@@ -105,7 +105,7 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
 }
 
 export default (() => {
-  const flattenRoutes = routes =>
+  const flattenRoutes = (routes) =>
     routes.reduce((all, route) => {
       all.push(route);
 
@@ -121,7 +121,7 @@ export default (() => {
   return (locals, callback) => {
     const assets = extractAssets(locals.webpackStats);
 
-    const match = flattenedRoutes.find(route =>
+    const match = flattenedRoutes.find((route) =>
       matchPath(locals.path, { exact: true, path: route.path }),
     );
 

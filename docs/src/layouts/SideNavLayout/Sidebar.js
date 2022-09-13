@@ -63,7 +63,7 @@ export default (props: Props) => {
     <nav className={getClassName('bpkdocs-sidebar')}>
       <div className={getClassName('bpkdocs-sidebar__header')}>
         <BpkBreakpoint query={BREAKPOINTS.TABLET}>
-          {isTablet =>
+          {(isTablet) =>
             isTablet && (
               <BpkCloseButton
                 aria-expanded="true"
@@ -93,7 +93,9 @@ export default (props: Props) => {
           className={getClassName('bpkdocs-sidebar__section-list')}
         />
         <NavList
-          links={links.filter(link => [activeSection].indexOf(link.id) !== -1)}
+          links={links.filter(
+            (link) => [activeSection].indexOf(link.id) !== -1,
+          )}
           dimmed={sectionListExpanded}
           onClick={onMobileModalClose}
           supportsFiltering={activeSection === 'COMPONENTS'}

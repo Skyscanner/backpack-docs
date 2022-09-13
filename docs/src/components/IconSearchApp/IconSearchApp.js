@@ -22,10 +22,10 @@ import customPropTypes from './propTypes';
 import IconSearchForm from './IconSearchForm';
 import IconSearchResults from './IconSearchResults';
 
-const IconSearchApp = props => {
+const IconSearchApp = (props) => {
   const [filterValue, setFilterValue] = useState('');
 
-  const onFilterChange = newValue => {
+  const onFilterChange = (newValue) => {
     setFilterValue(newValue);
   };
 
@@ -33,7 +33,7 @@ const IconSearchApp = props => {
     const { icons } = props;
 
     return icons.filter(
-      icon => icon.name.indexOf(filterValue.toLowerCase()) !== -1,
+      (icon) => icon.name.indexOf(filterValue.toLowerCase()) !== -1,
     );
   };
 

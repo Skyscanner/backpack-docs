@@ -22,8 +22,8 @@ import React from 'react';
 
 import STYLES from './MenuToggle.scss';
 
-import { cssModules } from 'backpack/packages/bpk-react-utils';
 import MenuIcon from 'backpack/packages/bpk-component-icon/lg/menu';
+import { cssModules } from 'backpack/packages/bpk-react-utils';
 import BpkCloseButton from 'backpack/packages/bpk-component-close-button';
 import BpkBreakpoint, {
   BREAKPOINTS,
@@ -46,7 +46,7 @@ export default (props: Props) => {
 
   return (
     <BpkBreakpoint query={BREAKPOINTS.ABOVE_TABLET}>
-      {aboveTablet =>
+      {(aboveTablet) =>
         !aboveTablet && (
           <div className={menuToggleClassNames}>
             <BpkCloseButton

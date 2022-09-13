@@ -25,7 +25,7 @@ import { cssModules } from 'backpack/packages/bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 
-const PresentationBlock = props => {
+const PresentationBlock = (props) => {
   const classNames = [getClassName('bpkdocs-presentation-block')];
   const { className, darkBackground, ...rest } = props;
 

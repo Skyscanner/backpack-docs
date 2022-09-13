@@ -20,7 +20,18 @@ module.exports = function config(api) {
   api.cache(true);
 
   return {
-    presets: ['@babel/env', '@babel/react', '@babel/preset-flow'],
+    presets: [
+      [
+        '@babel/env',
+        {
+          targets: {
+            node: 'current',
+          },
+        },
+      ],
+      '@babel/react',
+      '@babel/preset-flow',
+    ],
     plugins: [
       '@babel/plugin-proposal-object-rest-spread',
       '@babel/plugin-proposal-class-properties',

@@ -23,6 +23,8 @@ import zip from 'lodash/zip';
 
 import STYLES from './UsageTable.scss';
 
+import BpkTickIcon from 'backpack/packages/bpk-component-icon/sm/tick-circle';
+import BpkCloseIcon from 'backpack/packages/bpk-component-icon/sm/close-circle';
 import {
   BpkTable,
   BpkTableHead,
@@ -32,12 +34,10 @@ import {
   BpkTableCell,
 } from 'backpack/packages/bpk-component-table';
 import { cssModules } from 'backpack/packages/bpk-react-utils';
-import BpkTickIcon from 'backpack/packages/bpk-component-icon/sm/tick-circle';
-import BpkCloseIcon from 'backpack/packages/bpk-component-icon/sm/close-circle';
 
 const getClassName = cssModules(STYLES);
 
-const UsageTable = props => {
+const UsageTable = (props) => {
   const { data, ...rest } = props;
   const { donts, dos } = data;
 

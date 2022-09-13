@@ -25,7 +25,7 @@ import { cssModules } from 'backpack/packages/bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 
-const Heading = props => {
+const Heading = (props) => {
   const { className, level: TagName, ...rest } = props;
 
   const classNames = [

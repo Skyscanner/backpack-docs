@@ -40,7 +40,7 @@ console.log(
 // Get all the markdown files.
 const markdownFiles = fs
   .readdirSync(PATH_TO_MARKDOWN_FILES)
-  .filter(file => file.endsWith('.mdx'));
+  .filter((file) => file.endsWith('.mdx'));
 
 if (markdownFiles.length === 0) {
   console.error(
@@ -52,7 +52,7 @@ if (markdownFiles.length === 0) {
 console.log(colors.cyan(`Found ${markdownFiles.length} markdown files.`));
 
 // Run each file through the frontmatter parser to extract metadata.
-const enrichedMarkdownFiles = markdownFiles.map(fileName => {
+const enrichedMarkdownFiles = markdownFiles.map((fileName) => {
   const fileContents = fs.readFileSync(`${PATH_TO_MARKDOWN_FILES}/${fileName}`);
   const { content, data, errors } = frontmatter(fileContents);
   if (errors && errors.length > 0) {
@@ -81,17 +81,9 @@ const enrichedMarkdownFiles = markdownFiles.map(fileName => {
     return null;
   }
 
-  const urlTitle = data.title
-    .toLowerCase()
-    .split(' ')
-    .join('-');
+  const urlTitle = data.title.toLowerCase().split(' ').join('-');
 
-  const id = data.title
-    .toUpperCase()
-    .split(' ')
-    .join('_')
-    .split('-')
-    .join('_');
+  const id = data.title.toUpperCase().split(' ').join('_').split('-').join('_');
 
   const keywords = data.keywords ? data.keywords.split(',') : null;
 
@@ -151,13 +143,15 @@ enrichedMarkdownFiles.forEach(({ data, fileName, id }) => {
 });
 
 const importsString = Object.keys(components)
-  .map(category => components[category].map(route => route.import).join('\n'))
+  .map((category) =>
+    components[category].map((route) => route.import).join('\n'),
+  )
   .join('\n');
 
 const routesString = Object.keys(components).map(
-  category =>
+  (category) =>
     `export const ${category} = [${components[category]
-      .map(route => route.component)
+      .map((route) => route.component)
       .join(',')}];`,
 );
 

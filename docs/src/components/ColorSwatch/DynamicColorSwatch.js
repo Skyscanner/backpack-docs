@@ -26,7 +26,7 @@ import BpkText, { TEXT_STYLES } from 'backpack/packages/bpk-component-text';
 
 const getClassName = cssModules(STYLES);
 
-const DynamicColorSwatch = props => {
+const DynamicColorSwatch = (props) => {
   const {
     border,
     className: userClassName,

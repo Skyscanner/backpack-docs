@@ -318,14 +318,14 @@ export const ROUTES_MAPPINGS = [
     path: ROUTES.TYPOGRAPHY_BPK_TEXT_MIGRATION_GUIDE,
     component: TypographyBpkTextMigrationGuidePage,
   },
-  ...Object.keys(redirects).map(from => ({
+  ...Object.keys(redirects).map((from) => ({
     path: from,
     redirect: redirects[from],
   })),
   { path: '*', component: NotFoundPage },
 ];
 
-const expandRoutes = routes =>
+const expandRoutes = (routes) =>
   routes.reduce((all, routeConfig) => {
     const {
       component: Component,

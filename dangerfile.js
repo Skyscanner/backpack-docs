@@ -25,10 +25,10 @@ import fs from 'fs';
 import { includes } from 'lodash';
 import { danger, fail, warn, markdown, schedule } from 'danger';
 
-const getRandomFromArray = arr => arr[Math.floor(Math.random() * arr.length)];
+const getRandomFromArray = (arr) => arr[Math.floor(Math.random() * arr.length)];
 const currentYear = new Date().getFullYear();
 // Applies to js, css, scss and sh files that are not located in dist or flow-typed folders.
-const shouldContainLicensingInformation = filePath =>
+const shouldContainLicensingInformation = (filePath) =>
   filePath.match(/\.(js|css|scss|sh)$/) &&
   !filePath.includes('dist/') &&
   !filePath.includes('flow-typed/');
@@ -53,7 +53,7 @@ const isPrExternal = async () => {
 const createdFiles = danger.git.created_files;
 const modifiedFiles = danger.git.modified_files;
 const fileChanges = [...modifiedFiles, ...createdFiles];
-const markdownChanges = fileChanges.filter(path => path.endsWith('md'));
+const markdownChanges = fileChanges.filter((path) => path.endsWith('md'));
 
 const thanksGifs = [
   'https://media.giphy.com/media/KJ1f5iTl4Oo7u/giphy.gif', // T.Hanks
@@ -99,7 +99,7 @@ if (lockFileUpdated) {
 }
 
 // New files should include the Backpack license heading.
-const unlicensedFiles = createdFiles.filter(filePath => {
+const unlicensedFiles = createdFiles.filter((filePath) => {
   if (shouldContainLicensingInformation(filePath)) {
     const fileContent = fs.readFileSync(filePath);
     return !fileContent.includes(
@@ -117,7 +117,7 @@ if (unlicensedFiles.length > 0) {
 }
 
 // Updated files should include the latest year in licensing header.
-const outdatedLicenses = fileChanges.filter(filePath => {
+const outdatedLicenses = fileChanges.filter((filePath) => {
   if (
     shouldContainLicensingInformation(filePath) &&
     !unlicensedFiles.includes(filePath)
@@ -135,14 +135,14 @@ if (outdatedLicenses.length > 0) {
   );
 }
 
-markdownChanges.forEach(path => {
+markdownChanges.forEach((path) => {
   const fileContent = fs.readFileSync(path);
 
   fileContent
     .toString()
     .split(/\r?\n/)
     .forEach((line, lineIndex) => {
-      AVOID_EXACT_WORDS.forEach(phrase => {
+      AVOID_EXACT_WORDS.forEach((phrase) => {
         if (line.includes(phrase.word)) {
           warn(`${phrase.reason} on line ${lineIndex + 1} in ${path}`);
         }

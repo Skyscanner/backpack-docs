@@ -26,7 +26,7 @@ import BpkText, { TEXT_STYLES } from 'backpack/packages/bpk-component-text';
 
 const getClassName = cssModules(STYLES);
 
-const ColorSwatch = props => {
+const ColorSwatch = (props) => {
   const {
     border,
     className: userClassName,
