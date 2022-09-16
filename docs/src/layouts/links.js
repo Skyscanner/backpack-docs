@@ -495,7 +495,7 @@ const ComponentsLinks = [
         id: 'SKELETON',
         route: routes.SKELETON,
         children: 'Skeleton',
-        tags: ['android', 'compose'],
+        tags: ['android', 'compose', 'ios', 'swiftui'],
       },
     ],
   },

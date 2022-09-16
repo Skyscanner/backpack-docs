@@ -22,6 +22,10 @@ import React from 'react';
 
 import Android, { metadata as androidMetadata } from './AndroidSkeleton.mdx';
 import Compose, { metadata as composeMetadata } from './ComposeSkeleton.mdx';
+import IOS, { metadata as iosMetadata } from './IOSSkeletonPage.mdx';
+import SwiftUI, {
+  metadata as swiftuiMetadata,
+} from './SwiftUISkeletonPage.mdx';
 
 import MarkdownPage from 'components/MarkdownPage';
 import DocsPageWrapper from 'components/DocsPageWrapper';
@@ -40,6 +44,8 @@ const DialogsPage = () => (
     blurb={blurb}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
+    iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
+    swiftuiSubpage={<MarkdownPage content={SwiftUI} {...swiftuiMetadata} />}
   />
 );
 
