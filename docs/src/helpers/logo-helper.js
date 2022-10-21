@@ -22,6 +22,7 @@ import BackpackLogoPinkWhite from '../static/backpack-logo-pink-white.svg';
 import BackpackLogoPinkGrey from '../static/backpack-logo-pink-sky-grey.svg';
 import BackpackLogoPride from '../static/backpack-logo-pride.svg';
 import BackpackLogoPrideGrey from '../static/backpack-logo-pride-sky-grey.svg';
+import BackpackLogoSpooky from '../static/backpack-logo-spooky.svg';
 import BackpackLogoChristmas from '../static/backpack-logo-christmas.svg';
 import BackpackLogoChristmasGrey from '../static/backpack-logo-christmas-sky-grey.svg';
 
@@ -30,6 +31,7 @@ export const getBackpackLogo = (overImage = false) => {
 
   const dateToday = new Date();
   const isPride = dateToday.getMonth() === 5;
+  const isSpooky = dateToday.getMonth() === 9;
   const isChristmas =
     dateToday.getMonth() === 11 ||
     (dateToday.getMonth() === 0 && dateToday.getDate() < 7);
@@ -38,6 +40,9 @@ export const getBackpackLogo = (overImage = false) => {
   if (overImage) {
     if (isPride) {
       return BackpackLogoPrideGrey;
+    }
+    if (isSpooky) {
+      return BackpackLogoSpooky;
     }
     if (isChristmas) {
       return BackpackLogoChristmasGrey;
@@ -50,6 +55,9 @@ export const getBackpackLogo = (overImage = false) => {
 
   if (isPride) {
     return BackpackLogoPride;
+  }
+  if (isSpooky) {
+    return BackpackLogoSpooky;
   }
   if (isChristmas) {
     return BackpackLogoChristmas;
