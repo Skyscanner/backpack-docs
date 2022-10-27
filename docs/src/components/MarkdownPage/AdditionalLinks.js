@@ -91,33 +91,6 @@ const AdditionalLinks = (props: Props) => {
           </BpkLink>
         )}
 
-        {/* UIKit CocoaPod link */}
-        {platform && platform === PLATFORMS.ios && (
-          <BpkLink
-            href="https://cocoapods.org/pods/Backpack"
-            blank
-            className={getClassName('bpkdocs-markdown-page__link')}
-          >
-            <img
-              src="https://img.shields.io/cocoapods/v/Backpack.svg?style=flat"
-              alt="View on CocoaPods"
-            />
-          </BpkLink>
-        )}
-        {/* SwiftUI CocoaPod link */}
-        {platform && platform === PLATFORMS.swiftui && (
-          <BpkLink
-            href="https://cocoapods.org/pods/Backpack-SwiftUI"
-            blank
-            className={getClassName('bpkdocs-markdown-page__link')}
-          >
-            <img
-              src="https://img.shields.io/cocoapods/v/Backpack-SwiftUI.svg?style=flat"
-              alt="View on CocoaPods"
-            />
-          </BpkLink>
-        )}
-
         {/* RN npm link */}
         {platform && platform === PLATFORMS.native && (
           <BpkLink
@@ -190,34 +163,6 @@ const AdditionalLinks = (props: Props) => {
           </BpkLink>
         )}
 
-        {/* iOS UIKit documentation link */}
-        {platform && platform === PLATFORMS.ios && documentationId && (
-          <BpkLink
-            href={`/ios/versions/latest/uikit/Classes/${documentationId}.html`}
-            blank
-            className={getClassName('bpkdocs-markdown-page__link')}
-          >
-            <img
-              src="https://img.shields.io/badge/Class%20reference-iOS-blue"
-              alt="View class reference"
-            />
-          </BpkLink>
-        )}
-
-        {/* iOS SwiftUI documentation link */}
-        {platform && platform === PLATFORMS.swiftui && documentationId && (
-          <BpkLink
-            href={`/ios/versions/latest/swiftui/Structs/${documentationId}.html`}
-            blank
-            className={getClassName('bpkdocs-markdown-page__link')}
-          >
-            <img
-              src="https://img.shields.io/badge/Class%20reference-iOS-blue"
-              alt="View class reference"
-            />
-          </BpkLink>
-        )}
-
         {/* Android view GitHub link */}
         {platform && platform === PLATFORMS.android && githubPath && (
           <BpkLink
@@ -236,34 +181,6 @@ const AdditionalLinks = (props: Props) => {
         {platform && platform === PLATFORMS.compose && githubPath && (
           <BpkLink
             href={`https://github.com/Skyscanner/backpack-android/tree/main/backpack-compose/src/main/kotlin/net/skyscanner/backpack/compose/${githubPath}`}
-            blank
-            className={getClassName('bpkdocs-markdown-page__link')}
-          >
-            <img
-              src="https://img.shields.io/badge/Source%20code-GitHub-lightgrey"
-              alt="View source code on GitHub"
-            />
-          </BpkLink>
-        )}
-
-        {/* iOS GitHub link */}
-        {platform && platform === PLATFORMS.ios && githubPath && (
-          <BpkLink
-            href={`https://github.com/Skyscanner/backpack-ios/tree/main/Backpack/${githubPath}`}
-            blank
-            className={getClassName('bpkdocs-markdown-page__link')}
-          >
-            <img
-              src="https://img.shields.io/badge/Source%20code-GitHub-lightgrey"
-              alt="View source code on GitHub"
-            />
-          </BpkLink>
-        )}
-
-        {/* SwiftUI GitHub link */}
-        {platform && platform === PLATFORMS.swiftui && githubPath && (
-          <BpkLink
-            href={`https://github.com/Skyscanner/backpack-ios/tree/main/Backpack-SwiftUI/${githubPath}`}
             blank
             className={getClassName('bpkdocs-markdown-page__link')}
           >
