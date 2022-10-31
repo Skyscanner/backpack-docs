@@ -42,7 +42,6 @@ export const PLATFORMS = {
 export type PlatformType = $Keys<typeof PLATFORMS>;
 
 type Props = {
-  documentationId: ?string,
   fileName: ?string,
   githubPath: ?string,
   platform: ?PlatformType,
