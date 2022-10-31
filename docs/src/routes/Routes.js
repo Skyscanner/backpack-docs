@@ -257,8 +257,8 @@ export const ROUTES_MAPPINGS = [
         component: NavigationBarPage,
       },
       { path: ROUTES.NUDGER, component: NudgerPage },
-      { path: ROUTES.PAGINATION, component: PaginationPage },
       { path: ROUTES.PAGE_INDICATOR, component: PageIndicatorPage },
+      { path: ROUTES.PAGINATION, component: PaginationPage },
       { path: ROUTES.PANEL, component: PanelPage },
       {
         path: ROUTES.PHONE_INPUT,
