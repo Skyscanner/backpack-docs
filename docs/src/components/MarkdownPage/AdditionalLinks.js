@@ -63,34 +63,6 @@ const AdditionalLinks = (props: Props) => {
   return (
     <div className={getClassName('bpkdocs-markdown-page__additional-links')}>
       <div>
-        {/* Android view Maven Central link */}
-        {platform && platform === PLATFORMS.android && (
-          <BpkLink
-            href="https://search.maven.org/artifact/net.skyscanner.backpack/backpack-android"
-            blank
-            className={getClassName('bpkdocs-markdown-page__link')}
-          >
-            <img
-              src="https://img.shields.io/maven-central/v/net.skyscanner.backpack/backpack-android"
-              alt="View on Maven Central"
-            />
-          </BpkLink>
-        )}
-
-        {/* Android compose Maven Central link */}
-        {platform && platform === PLATFORMS.compose && (
-          <BpkLink
-            href="https://search.maven.org/artifact/net.skyscanner.backpack/backpack-compose"
-            blank
-            className={getClassName('bpkdocs-markdown-page__link')}
-          >
-            <img
-              src="https://img.shields.io/maven-central/v/net.skyscanner.backpack/backpack-compose"
-              alt="View on Maven Central"
-            />
-          </BpkLink>
-        )}
-
         {/* RN npm link */}
         {platform && platform === PLATFORMS.native && (
           <BpkLink
@@ -131,62 +103,6 @@ const AdditionalLinks = (props: Props) => {
               height="20"
               src={`/${sassdocLogo}`}
               alt={`View ${sassdocId} mixins and variables on Backpack's Sassdoc`}
-            />
-          </BpkLink>
-        )}
-
-        {/* Android view documentation link */}
-        {platform && platform === PLATFORMS.android && documentationId && (
-          <BpkLink
-            href={`/android/Backpack/${documentationId}`}
-            blank
-            className={getClassName('bpkdocs-markdown-page__link')}
-          >
-            <img
-              src="https://img.shields.io/badge/Class%20reference-Android-blue"
-              alt="View class reference"
-            />
-          </BpkLink>
-        )}
-
-        {/* Android compose documentation link */}
-        {platform && platform === PLATFORMS.compose && documentationId && (
-          <BpkLink
-            href={`/android/backpack-compose/${documentationId}`}
-            blank
-            className={getClassName('bpkdocs-markdown-page__link')}
-          >
-            <img
-              src="https://img.shields.io/badge/Class%20reference-Android-blue"
-              alt="View class reference"
-            />
-          </BpkLink>
-        )}
-
-        {/* Android view GitHub link */}
-        {platform && platform === PLATFORMS.android && githubPath && (
-          <BpkLink
-            href={`https://github.com/Skyscanner/backpack-android/tree/main/Backpack/src/main/java/net/skyscanner/backpack/${githubPath}`}
-            blank
-            className={getClassName('bpkdocs-markdown-page__link')}
-          >
-            <img
-              src="https://img.shields.io/badge/Source%20code-GitHub-lightgrey"
-              alt="View source code on GitHub"
-            />
-          </BpkLink>
-        )}
-
-        {/* Android compose GitHub link */}
-        {platform && platform === PLATFORMS.compose && githubPath && (
-          <BpkLink
-            href={`https://github.com/Skyscanner/backpack-android/tree/main/backpack-compose/src/main/kotlin/net/skyscanner/backpack/compose/${githubPath}`}
-            blank
-            className={getClassName('bpkdocs-markdown-page__link')}
-          >
-            <img
-              src="https://img.shields.io/badge/Source%20code-GitHub-lightgrey"
-              alt="View source code on GitHub"
             />
           </BpkLink>
         )}
