@@ -26,8 +26,8 @@ import MarkdownPage from 'components/MarkdownPage';
 
 const blurb = [
   <IntroBlurb>
-    The page indicator is a new component which indicates the current page in a
-    stack of pages.
+    The page indicator component is used to indicate a stack of pages or images
+    in a group and highlight the current selected page or images.
   </IntroBlurb>,
 ];
 
