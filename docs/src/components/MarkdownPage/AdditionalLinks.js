@@ -50,7 +50,7 @@ type Props = {
 };
 
 const AdditionalLinks = (props: Props) => {
-  const { documentationId, fileName, githubPath, platform, sassdocId } = props;
+  const { fileName, githubPath, platform, sassdocId } = props;
 
   if (platform && !Object.keys(PLATFORMS).includes(platform)) {
     throw new Error(
