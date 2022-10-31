@@ -79,6 +79,7 @@ import TouchableNativeFeedbackPage from '../pages/components/TouchableNativeFeed
 import TouchableOverlayPage from '../pages/components/TouchableOverlay';
 import NavigationBarPage from '../pages/components/NavigationBar';
 import NudgerPage from '../pages/components/Nudger';
+import PageIndicatorPage from '../pages/components/PageIndicator';
 import PaginationPage from '../pages/components/Pagination';
 import PanelPage from '../pages/components/Panel';
 import PhoneInputPage from '../pages/components/PhoneInput';
@@ -257,6 +258,7 @@ export const ROUTES_MAPPINGS = [
       },
       { path: ROUTES.NUDGER, component: NudgerPage },
       { path: ROUTES.PAGINATION, component: PaginationPage },
+      { path: ROUTES.PAGE_INDICATOR, component: PageIndicatorPage },
       { path: ROUTES.PANEL, component: PanelPage },
       {
         path: ROUTES.PHONE_INPUT,

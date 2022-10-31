@@ -1,0 +1,45 @@
+---
+title: PageIndicator
+platform: web
+githubPath: bpk-component-page-indicator
+---
+
+
+import PresentationBlock from 'components/PresentationBlock';
+
+import {
+  DefaultExample,
+  OverImageExample,
+  WithNavExample,
+} from 'backpack/examples/bpk-component-page-indicator/examples';
+import Readme from 'backpack/packages/bpk-component-page-indicator/README.md';
+
+## Table of contents
+
+## Default
+
+This is the default page indicator. Tap the indicators to see the scrolling effect.
+
+<PresentationBlock>
+  <DefaultExample />
+</PresentationBlock>
+
+## With Nav
+
+The page indicator can also be controlled by nav buttons on both sides.
+
+<PresentationBlock>
+  <WithNavExample />
+</PresentationBlock>
+
+## Over Image
+
+When the page indicator is used on an image, we provide the props `variant={VARIANT.overImage}` option to apply the over image style.
+
+<PresentationBlock>
+  <OverImageExample />
+</PresentationBlock>
+
+## Implementation
+
+<Readme />

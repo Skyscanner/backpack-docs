@@ -343,6 +343,12 @@ const ComponentsLinks = [
         tags: ['web'],
       },
       {
+        id: 'PAGE_INDICATOR',
+        route: routes.PAGE_INDICATOR,
+        children: 'Page indicator',
+        tags: ['web'],
+      },
+      {
         id: 'PAGINATION',
         route: routes.PAGINATION,
         children: 'Pagination',
