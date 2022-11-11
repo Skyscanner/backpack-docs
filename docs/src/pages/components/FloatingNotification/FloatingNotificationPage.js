@@ -20,7 +20,9 @@
 
 import React from 'react';
 
-import Compose, { metadata as composeMetadata } from './ComposeFloatingNotification.mdx';
+import Compose, {
+  metadata as composeMetadata,
+} from './ComposeFloatingNotification.mdx';
 import Web, { metadata as webMetadata } from './WebFloatingNotification.mdx';
 
 import IntroBlurb from 'components/IntroBlurb';
