@@ -22,6 +22,7 @@ import React from 'react';
 
 import IOS, { metadata as iosMetadata } from './IOSBottomSheet.mdx';
 import Android, { metadata as androidMetadata } from './AndroidBottomSheet.mdx';
+import Compose, { metadata as composeMetadata } from './ComposeBottomSheet.mdx';
 
 import DocsPageWrapper from 'components/DocsPageWrapper';
 import IntroBlurb from 'components/IntroBlurb';
@@ -37,6 +38,7 @@ const BottomSheetPage = () => (
       </IntroBlurb>,
     ]}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
   />
 );
