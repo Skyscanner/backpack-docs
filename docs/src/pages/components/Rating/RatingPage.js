@@ -21,6 +21,7 @@
 import React from 'react';
 
 import Android, { metadata as androidMetadata } from './AndroidRating.mdx';
+import Compose, { metadata as composeMetadata } from './ComposeRating.mdx';
 import IOS, { metadata as iosMetadata } from './IOSRating.mdx';
 import Native, { metadata as nativeMetadata } from './NativeRating.mdx';
 import Web, { metadata as webMetadata } from './WebRating.mdx';
@@ -37,6 +38,7 @@ const Page = () => (
         The rating component is used to represent a score as an exact number.
       </IntroBlurb>,
     ]}
+    composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
     iosSubpage={<MarkdownPage content={IOS} {...iosMetadata} />}
     nativeSubpage={<MarkdownPage content={Native} {...nativeMetadata} />}

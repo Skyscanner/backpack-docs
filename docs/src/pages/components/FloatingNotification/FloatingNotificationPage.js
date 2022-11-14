@@ -20,6 +20,9 @@
 
 import React from 'react';
 
+import Compose, {
+  metadata as composeMetadata,
+} from './ComposeFloatingNotification.mdx';
 import Web, { metadata as webMetadata } from './WebFloatingNotification.mdx';
 
 import IntroBlurb from 'components/IntroBlurb';
@@ -36,6 +39,7 @@ const Page = () => (
         which may allow the user to view or undo the action.
       </IntroBlurb>,
     ]}
+    composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
