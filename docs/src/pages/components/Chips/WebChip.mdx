@@ -9,10 +9,9 @@ import PresentationBlock from 'components/PresentationBlock';
 import Readme from 'backpack/packages/bpk-component-chip/README.md';
 
 import {
-  SelectableChipsExample,
-  WithIconsExample,
-  DismissibleChipsExample,
-  DropdownChipsExample,
+  AllSelectableChipsExample,
+  AllDismissibleChipsExample,
+  AllDropdownChipsExample,
   AllTypesExample,
 } from 'backpack/examples/bpk-component-chip/examples'
 
@@ -23,7 +22,7 @@ import {
 Selectable chips can be toggled on and off.
 
 <PresentationBlock>
-  <SelectableChipsExample />
+  <AllSelectableChipsExample />
 </PresentationBlock>
 
 ## Dropdown
@@ -31,7 +30,7 @@ Selectable chips can be toggled on and off.
 Dropdown chips can be toggled on and off and have a trailing chevron down icon.
 
 <PresentationBlock>
-  <DropdownChipsExample />
+  <AllDropdownChipsExample />
 </PresentationBlock>
 
 ## Dismissible
@@ -43,17 +42,7 @@ Note that if chips are being added or removed dynamically (like in the example b
 By doing this, assistive technologies will know to inform the user when changes are made. By default, only additions to the container will be read out, so you don't need to worry about removing entries again.
 
 <PresentationBlock>
-  <DismissibleChipsExample />
-</PresentationBlock>
-
-## With icons
-
-Using accessory views, chips can contain icons.
-
-Selectable chips can have a leading icon, a trailing icon, or both. Dismissible chips and Dropdown chips can only have a leading icon, because they already have a trailing close icon.
-
-<PresentationBlock>
-  <WithIconsExample />
+  <AllDismissibleChipsExample />
 </PresentationBlock>
 
 ## Different styles
