@@ -73,6 +73,7 @@ export const TICKET = '/components/ticket';
 export const HORIZONTAL_NAV = '/components/horizontal-nav';
 export const FIELDSET = '/components/fieldset';
 export const BARCHART = '/components/barchart';
+export const PAGE_INDICATOR = '/components/page-indicator';
 export const PAGINATION = '/components/pagination';
 export const STAR_RATING = '/components/star-rating';
 export const BREAKPOINT = '/components/breakpoint';

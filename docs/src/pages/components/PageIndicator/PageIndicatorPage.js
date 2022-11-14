@@ -16,32 +16,27 @@
  * limitations under the License.
  */
 
-/* @flow strict */
-
 import React from 'react';
 
-import Compose, {
-  metadata as composeMetadata,
-} from './ComposeFloatingNotification.mdx';
-import Web, { metadata as webMetadata } from './WebFloatingNotification.mdx';
+import Web, { metadata as webMetadata } from './WebPageIndicator.mdx';
 
-import IntroBlurb from 'components/IntroBlurb';
 import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
 import MarkdownPage from 'components/MarkdownPage';
 
-const Page = () => (
+const blurb = [
+  <IntroBlurb>
+    The page indicator component is used to indicate a stack of pages or images
+    in a group and highlight the current selected page or images.
+  </IntroBlurb>,
+];
+
+const PageIndicatorPage = () => (
   <DocsPageWrapper
-    title="Floating notification"
-    blurb={[
-      <IntroBlurb>
-        The floating notification informs the user that an action has been
-        taken. It can optionally include an icon and/or call-to-action (CTA)
-        which may allow the user to view or undo the action.
-      </IntroBlurb>,
-    ]}
-    composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
+    title="Page indicator"
+    blurb={blurb}
     webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 
-export default Page;
+export default PageIndicatorPage;

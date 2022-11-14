@@ -33,7 +33,7 @@ const ComponentsLinks = [
         id: 'FLOATING_NOTIFICATION',
         route: routes.FLOATING_NOTIFICATION,
         children: 'Floating notification',
-        tags: ['web'],
+        tags: ['web', 'compose'],
         keywords: ['banner', 'notification', 'snackbar', 'toast'],
       },
       {
@@ -61,7 +61,7 @@ const ComponentsLinks = [
         id: 'BOTTOM_SHEET',
         route: routes.BOTTOM_SHEET,
         children: 'Bottom sheet',
-        tags: ['ios', 'android'],
+        tags: ['ios', 'android', 'compose'],
       },
       {
         id: 'TEXT',
@@ -164,7 +164,7 @@ const ComponentsLinks = [
         id: 'RATING',
         route: routes.RATING,
         children: 'Rating',
-        tags: ['web', 'android', 'ios', 'native'],
+        tags: ['web', 'android', 'ios', 'native', 'compose'],
       },
       {
         id: 'FORM',
@@ -261,7 +261,7 @@ const ComponentsLinks = [
         id: 'CALENDAR',
         route: routes.CALENDAR,
         children: 'Calendar',
-        tags: ['web', 'native', 'android', 'ios'],
+        tags: ['web', 'native', 'android', 'ios', 'compose'],
       },
       {
         id: 'DATEPICKER',
@@ -286,7 +286,7 @@ const ComponentsLinks = [
         id: 'NUDGER',
         route: routes.NUDGER,
         children: 'Nudger',
-        tags: ['web', 'native', 'ios', 'android'],
+        tags: ['web', 'native', 'ios', 'android', 'compose'],
       },
       {
         id: 'PROGRESS',
@@ -340,6 +340,12 @@ const ComponentsLinks = [
         id: 'DRAWER',
         route: routes.DRAWER,
         children: 'Drawer',
+        tags: ['web'],
+      },
+      {
+        id: 'PAGE_INDICATOR',
+        route: routes.PAGE_INDICATOR,
+        children: 'Page indicator',
         tags: ['web'],
       },
       {
