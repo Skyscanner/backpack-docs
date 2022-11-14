@@ -48,6 +48,7 @@ import CardPage from '../pages/components/Card';
 import CarouselPage from '../pages/components/Carousel';
 import ChipsPage from '../pages/components/Chips';
 import CodePage from '../pages/components/Code';
+import ContentCardsPage from '../pages/components/ContentCards';
 import DatepickerPage from '../pages/components/Datepicker';
 import DescriptionListsPage from '../pages/components/DescriptionLists';
 import DialogsPage from '../pages/components/Dialogs';
@@ -181,6 +182,7 @@ export const ROUTES_MAPPINGS = [
       { path: ROUTES.CAROUSEL, component: CarouselPage },
       { path: ROUTES.CHIP, component: ChipsPage },
       { path: ROUTES.CODE, component: CodePage },
+      { path: ROUTES.CONTENT_CARDS, component: ContentCardsPage },
       { path: ROUTES.DATEPICKER, component: DatepickerPage },
       {
         path: ROUTES.DESCRIPTION_LIST,
