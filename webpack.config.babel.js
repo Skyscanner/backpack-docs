@@ -84,7 +84,7 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.[jt]sx?$/,
         exclude: /node_modules\/?(!bpk-|!@skyscanner\/).*/,
         use: {
           loader: 'babel-loader',
@@ -230,6 +230,9 @@ const config = {
         ],
       },
     ],
+  },
+  resolve: {
+    extensions: ['.js', '.json', '.wasm', '.tsx', '.ts'],
   },
 
   plugins: [
