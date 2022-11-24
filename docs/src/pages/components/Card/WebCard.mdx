@@ -12,6 +12,8 @@ import {
   WithHrefExample,
   WithoutPaddingExample,
   NonAtomicHrefExample,
+  DefaultDividedCardExample,
+  VerticalDividedCardExample,
 } from 'backpack/examples/bpk-component-card/examples';
 
 ## Table of contents
@@ -48,6 +50,22 @@ If the copy inside your card is lengthy, you should consider making it non-atomi
 
 <PresentationBlock>
   <NonAtomicHrefExample />
+</PresentationBlock>
+
+## With divider
+
+There is a another component `BpkDividedCard`, which wraps the `BpkCard` compoent with a divider. And it doesn't have padding and also support `href` prop.
+
+<PresentationBlock>
+  <DefaultDividedCardExample />
+</PresentationBlock>
+
+## With divider arranged vertically
+
+`BpkDividedCard` could be vertical through the `orientation` prop.
+
+<PresentationBlock>
+  <VerticalDividedCardExample />
 </PresentationBlock>
 
 ## Implementation
