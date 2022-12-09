@@ -147,9 +147,9 @@ The web Map component page requires an environment variable named `GOOGLE_MAPS_A
 
 `backpack`, `backpack-android`, `backpack-ios` and `backpack-react-native` folders are git submodules.
 
-When working with the documentation for new or existing components based on recent changes in a platform you will need to update the submodule for that platform in order to pull the latest code from the platform (e.g. READMEs or Web examples)
+When working with the documentation for new or existing components based on recent changes in a platform you will need to update the submodule for that platform in order to pull the latest code from the platform (e.g. `READMEs` or Web examples)
 
-In order to pull the latest run the following command subsituting for the platform you wish to pull: `git submodule update --remote <submodule to update>`.
+In order to pull the latest run the following command substituting for the platform you wish to pull: `git submodule update --remote <submodule to update>`.
 
 ## And finally..
 
