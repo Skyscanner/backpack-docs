@@ -147,14 +147,9 @@ The web Map component page requires an environment variable named `GOOGLE_MAPS_A
 
 `backpack`, `backpack-android`, `backpack-ios` and `backpack-react-native` folders are git submodules.
 
-The documentation build will ensure the local submodules are up to date before using it so there is no need to do any git command directly. That being
-said, from time to time it's good to update the submodules to point to a newer commit so fewer changes will be pulled before each doc build.
+When working with the documentation for new or existing components based on recent changes in a platform you will need to update the submodule for that platform in order to pull the latest code from the platform (e.g. `READMEs` or Web examples)
 
-To do the above run `npm run submodules:update` and then `git push origin main`.
-
-Sometimes you may encounter an error when running `npm test` or running linting, that states an error of `module not found`. This issue can be related to the submodules not being cloned when working with the codebase.
-
-If this issue occurs run `git submodule update --init --recursive` which will clone all the submodules to your local codebase.
+In order to pull the latest run the following command substituting for the platform you wish to pull: `git submodule update --remote <submodule to update>`.
 
 ## And finally..
 
