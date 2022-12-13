@@ -54,7 +54,7 @@ const ComponentsLinks = [
         id: 'BOTTOM_NAV',
         route: routes.BOTTOM_NAV,
         children: 'Bottom Nav',
-        tags: ['android'],
+        tags: ['android', 'compose'],
         keywords: ['navigation bar'],
       },
       {
