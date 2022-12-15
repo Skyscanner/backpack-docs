@@ -37,7 +37,6 @@ import { cssModules } from 'backpack/packages/bpk-react-utils';
 import BpkHorizontalNav, {
   BpkHorizontalNavItem,
 } from 'backpack/packages/bpk-component-horizontal-nav';
-import BpkContentContainer from 'backpack/packages/bpk-component-content-container';
 
 const getClassName = cssModules(STYLES);
 
@@ -219,7 +218,7 @@ const DocsPageWrapper = props => {
   };
 
   return (
-    <BpkContentContainer className={getClassName('bpkdocs-page-wrapper')}>
+    <div className={getClassName('bpkdocs-page-wrapper')}>
       <Helmet title={props.title} />
       <div className={getClassName('bpkdocs-page-wrapper__inner')}>
         <Heading level="h1">{title}</Heading>
@@ -245,7 +244,7 @@ const DocsPageWrapper = props => {
         />
         {initiallyRenderedSubpage}
       </div>
-    </BpkContentContainer>
+    </div>
   );
 };
 
