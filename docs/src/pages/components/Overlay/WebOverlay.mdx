@@ -8,45 +8,58 @@ githubPath: bpk-component-overlay
 import PresentationBlock from 'components/PresentationBlock';
 
 import {
-  WithBpkImageExample,
-  WithBpkImageNoTintExample,
-  WithBpkImageRoundedExample,
-  TextOverlaidOnImageExample
+  SolidExamples,
+  TopExamples,
+  BottomExamples,
+  LeftExamples,
+  RightExamples,
+  VignetteExample,
+  WithForegroundContentExample,
 } from 'backpack/examples/bpk-component-overlay/examples';
 import Readme from 'backpack/packages/bpk-component-overlay/README.md';
 
 ## Table of contents
 
-## Default
-
-Overlays apply a dark tint to their content.
+## Solid
 
 <PresentationBlock>
-  <WithBpkImageExample />
+  <SolidExamples />
 </PresentationBlock>
 
-## Disabled tint
-
-The tint can be switched off, causing the content within to be displayed at full brightness.
+## Top
 
 <PresentationBlock>
-  <WithBpkImageNoTintExample />
+  <TopExamples />
 </PresentationBlock>
 
-## Rounded corners
-
-The overlay can have rounded corners. Apply this when the content inside has rounded corners, to stop the overlay from covering them up.
+## Bottom
 
 <PresentationBlock>
-  <WithBpkImageRoundedExample />
+  <BottomExamples />
 </PresentationBlock>
 
-## Foreground content
-
-Use foreground content to display things on top of the overlay.
+## Left
 
 <PresentationBlock>
-  <TextOverlaidOnImageExample />
+  <LeftExamples />
+</PresentationBlock>
+
+## Right
+
+<PresentationBlock>
+  <RightExamples />
+</PresentationBlock>
+
+## Vignette
+
+<PresentationBlock>
+  <VignetteExample />
+</PresentationBlock>
+
+## With foreground content
+
+<PresentationBlock>
+  <WithForegroundContentExample />
 </PresentationBlock>
 
 ## Implementation

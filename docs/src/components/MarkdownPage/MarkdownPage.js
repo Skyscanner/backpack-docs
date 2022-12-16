@@ -30,7 +30,6 @@ import AdditionalLinks, { type PlatformType } from './AdditionalLinks';
 
 import STYLES from './MarkdownPage.scss';
 
-import BpkContentContainer from 'backpack/packages/bpk-component-content-container';
 import { cssModules } from 'backpack/packages/bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
@@ -94,9 +93,7 @@ const MarkdownPage = (props: Props) => {
     <>
       <SEOElements title={title} subtitle={subtitle} />
       {includePageHeader && <PageHead title={title} subtitle={subtitle} />}
-      <BpkContentContainer
-        className={getClassName('bpkdocs-markdown-page__content')}
-      >
+      <div className={getClassName('bpkdocs-markdown-page__content')}>
         <AdditionalLinks
           platform={platform}
           documentationId={documentationId}
@@ -105,7 +102,7 @@ const MarkdownPage = (props: Props) => {
           sassdocId={sassdocId}
         />
         <MDXContent Content={content} fileName={fileName} />
-      </BpkContentContainer>
+      </div>
     </>
   );
 };
