@@ -21,6 +21,7 @@
 import React from 'react';
 
 import Android, { metadata as androidMetadata } from './AndroidBottomNav.mdx';
+import Compose, { metadata as composeMetadata } from './ComposeBottomNav.mdx';
 
 import DocsPageWrapper from 'components/DocsPageWrapper';
 import IntroBlurb from 'components/IntroBlurb';
@@ -35,6 +36,7 @@ const Page = () => (
       </IntroBlurb>,
     ]}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
   />
 );
 
