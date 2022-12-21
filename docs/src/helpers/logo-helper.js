@@ -24,7 +24,6 @@ import BackpackLogoPride from '../static/backpack-logo-pride.svg';
 import BackpackLogoPrideGrey from '../static/backpack-logo-pride-sky-grey.svg';
 import BackpackLogoSpooky from '../static/backpack-logo-spooky.svg';
 import BackpackLogoChristmas from '../static/backpack-logo-christmas.svg';
-import BackpackLogoChristmasGrey from '../static/backpack-logo-christmas-sky-grey.svg';
 
 export const getBackpackLogo = (overImage = false) => {
   const companyUpdateLogo = false;
@@ -45,7 +44,7 @@ export const getBackpackLogo = (overImage = false) => {
       return BackpackLogoSpooky;
     }
     if (isChristmas) {
-      return BackpackLogoChristmasGrey;
+      return BackpackLogoChristmas;
     }
     if (companyUpdateLogo) {
       return BackpackLogoPinkGrey;
