@@ -23,6 +23,9 @@ import React from 'react';
 import Android, {
   metadata as androidMetadata,
 } from './AndroidFloatingActionButton.mdx';
+import Compose, {
+  metadata as composeMetadata,
+} from './ComposeFloatingActionButton.mdx';
 
 import MarkdownPage from 'components/MarkdownPage';
 import DocsPageWrapper from 'components/DocsPageWrapper';
@@ -38,6 +41,7 @@ const FloatingActionButtonPage = () => (
       </IntroBlurb>,
     ]}
     androidSubpage={<MarkdownPage content={Android} {...androidMetadata} />}
+    composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
   />
 );
 

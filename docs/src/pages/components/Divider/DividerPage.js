@@ -16,24 +16,24 @@
  * limitations under the License.
  */
 
-/* @flow strict */
-
 import React from 'react';
 
-import Web, { metadata as webMetadata } from './WebPrice.mdx';
-import Compose, { metadata as composeMetadata } from './ComposePrice.mdx';
+import Compose, { metadata as composeMetadata } from './ComposeDivider.mdx';
 
-import MarkdownPage from 'components/MarkdownPage';
-import IntroBlurb from 'components/IntroBlurb';
 import DocsPageWrapper from 'components/DocsPageWrapper';
+import IntroBlurb from 'components/IntroBlurb';
+import MarkdownPage from 'components/MarkdownPage';
 
-const Page = () => (
+const blurb = [
+  <IntroBlurb>Component used to visually divide different items.</IntroBlurb>,
+];
+
+const DividerPage = () => (
   <DocsPageWrapper
-    title="Price"
-    blurb={[<IntroBlurb>Component used to display price.</IntroBlurb>]}
+    title="Divider"
+    blurb={blurb}
     composeSubpage={<MarkdownPage content={Compose} {...composeMetadata} />}
-    webSubpage={<MarkdownPage content={Web} {...webMetadata} />}
   />
 );
 
-export default Page;
+export default DividerPage;
