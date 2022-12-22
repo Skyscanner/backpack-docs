@@ -58,6 +58,8 @@ export const ALERT = '/components/alert';
 export const OVERLAY = '/components/overlay';
 export const ARIA_LIVE = '/components/aria-live';
 export const CONTENT_CARDS = '/components/content-cards';
+export const DIVIDER = '/components/divider';
+export const CARD_BUTTON = '/components/cardbutton';
 
 export const MOBILE_SCROLL_CONTAINER = '/components/mobile-scroll-container';
 export const MODAL = '/components/modal';

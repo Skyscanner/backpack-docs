@@ -45,6 +45,7 @@ import BreadcrumbPage from '../pages/components/Breadcrumb';
 import ButtonPage from '../pages/components/Button';
 import CalendarPage from '../pages/components/Calendar';
 import CardPage from '../pages/components/Card';
+import CardButtonPage from '../pages/components/CardButton';
 import CarouselPage from '../pages/components/Carousel';
 import ChipsPage from '../pages/components/Chips';
 import CodePage from '../pages/components/Code';
@@ -52,6 +53,7 @@ import ContentCardsPage from '../pages/components/ContentCards';
 import DatepickerPage from '../pages/components/Datepicker';
 import DescriptionListsPage from '../pages/components/DescriptionLists';
 import DialogsPage from '../pages/components/Dialogs';
+import DividerPage from '../pages/components/Divider';
 import DrawerPage from '../pages/components/Drawer';
 import FieldsetsPage from '../pages/components/Fieldsets';
 import FlarePage from '../pages/components/Flare';
@@ -179,6 +181,7 @@ export const ROUTES_MAPPINGS = [
       { path: ROUTES.BUTTON, component: ButtonPage },
       { path: ROUTES.CALENDAR, component: CalendarPage },
       { path: ROUTES.CARD, component: CardPage },
+      { path: ROUTES.CARD_BUTTON, component: CardButtonPage },
       { path: ROUTES.CAROUSEL, component: CarouselPage },
       { path: ROUTES.CHIP, component: ChipsPage },
       { path: ROUTES.CODE, component: CodePage },
@@ -189,6 +192,7 @@ export const ROUTES_MAPPINGS = [
         component: DescriptionListsPage,
       },
       { path: ROUTES.DIALOG, component: DialogsPage },
+      { path: ROUTES.DIVIDER, component: DividerPage },
       { path: ROUTES.DRAWER, component: DrawerPage },
       { path: ROUTES.FIELDSET, component: FieldsetsPage },
       { path: ROUTES.FLARE, component: FlarePage },
