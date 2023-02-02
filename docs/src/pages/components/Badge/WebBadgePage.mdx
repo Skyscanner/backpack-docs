@@ -7,37 +7,26 @@ githubPath: bpk-component-badge
 
 import PresentationBlock from 'components/PresentationBlock';
 import Readme from 'backpack/packages/bpk-component-badge/README.md';
-import {
+import {  
   DefaultExample,
+  WarningExample,
+  SuccessExample,
+  CriticalExample,
+  InverseExample,
+  OutlineExample,
+  StrongExample,
+  BrandExample,
   CenteredExample,
   DockedLeadingExample,
   DockedTrailingExample,
-  WarningExample,
-  SuccessExample,
-  DestructiveExample,
-  StrongExample,
-  BrandExample,
-  LightExample,
-  InverseExample,
-  OutlineExample,
 } from 'backpack/examples/bpk-component-badge/examples';
 
 ## Table of contents
 
 ## Default
 
-The default behaviour for a badge is to sit next to other objects with text aligned to the baseline.
-
 <PresentationBlock>
   <DefaultExample />
-</PresentationBlock>
-
-## Docked
-
-A badge can also be configured to have a top right, or top left modifier to pin it to the corner of its parent.
-
-<PresentationBlock>
-  <DockedTrailingExample />
 </PresentationBlock>
 
 ## Success
@@ -46,10 +35,16 @@ A badge can also be configured to have a top right, or top left modifier to pin 
   <SuccessExample />
 </PresentationBlock>
 
-## Destructive
+## Warning
 
 <PresentationBlock>
-  <DestructiveExample />
+  <WarningExample />
+</PresentationBlock>
+
+## Critical
+
+<PresentationBlock>
+  <CriticalExample />
 </PresentationBlock>
 
 ## Strong
@@ -64,12 +59,6 @@ A badge can also be configured to have a top right, or top left modifier to pin 
   <BrandExample />
 </PresentationBlock>
 
-## Light
-
-<PresentationBlock>
-  <LightExample />
-</PresentationBlock>
-
 ## Inverse
 
 <PresentationBlock>
@@ -80,6 +69,15 @@ A badge can also be configured to have a top right, or top left modifier to pin 
 
 <PresentationBlock>
   <OutlineExample />
+</PresentationBlock>
+
+
+## Docked
+
+A badge can also be configured to have a top right, or top left modifier to pin it to the corner of its parent.
+
+<PresentationBlock>
+  <DockedTrailingExample />
 </PresentationBlock>
 
 ## Implementation
