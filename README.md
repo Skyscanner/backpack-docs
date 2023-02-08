@@ -4,6 +4,8 @@
 
 [![Build Status](https://github.com/Skyscanner/backpack-docs/workflows/Backpack%20Docs%20CI/badge.svg)](https://github.com/Skyscanner/backpack-docs/actions)
 
+This repository contains the code of the old Backpack documentation site. See our new docs at [skyscanner.design](https://www.skyscanner.design).
+
 ## Quick links
 
 - [Documentation](https://backpack.github.io/)
