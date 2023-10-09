@@ -107,7 +107,7 @@
     "globby": "^11.0.1",
     "gray-matter": "^4.0.2",
     "husky": "^7.0.0",
-    "jest": "^26.4.2",
+    "jest": "^29.7.0",
     "js-yaml": "^3.14.0",
     "json-loader": "^0.5.4",
     "lighthouse": "^7.0.0",
